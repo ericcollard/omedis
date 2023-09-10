@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\UsersController;
 
 /*
 |--------------------------------------------------------------------------
@@ -25,4 +26,15 @@ Route::middleware([
     Route::get('/dashboard', function () {
         return view('dashboard');
     })->name('dashboard');
+    Route::get('/users', [UsersController::class, 'index'])->name('users.index');
+    Route::get('/users/emails', [UsersController::class, 'emails'])->name('users.emails');
+    Route::get('/users/jsonIndex', [UsersController::class, 'jsonIndex'])->name('users.jsonIndex');
+    Route::get('/users/{user}', [UsersController::class, 'show'])->name('users.show');
+    Route::get('/users/{user}/edit', [UsersController::class, 'edit'])->name('users.edit');
+    Route::patch('/users/{user}',[UsersController::class, 'update'])->name('users.update');
+    Route::delete('/users/{user}',[UsersController::class, 'destroy'])->name('users.destroy');
+    Route::post('/users/{user}/avatar',[UsersController::class, 'storeAvatar'])->name('users.avatar.store');
+
+
+
 });
