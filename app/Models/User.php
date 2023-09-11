@@ -137,6 +137,6 @@ class User extends Authenticatable
 
     public function path()
     {
-        return route('users.show', $this);
+        return route('user.show', $this);
     }
 }

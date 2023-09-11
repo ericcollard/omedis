@@ -1,8 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\UsersController;
-
+use App\Http\Controllers\UserController;
+use App\Http\Controllers\DataTypeController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -26,15 +26,18 @@ Route::middleware([
     Route::get('/dashboard', function () {
         return view('dashboard');
     })->name('dashboard');
-    Route::get('/users', [UsersController::class, 'index'])->name('users.index');
-    Route::get('/users/emails', [UsersController::class, 'emails'])->name('users.emails');
-    Route::get('/users/jsonIndex', [UsersController::class, 'jsonIndex'])->name('users.jsonIndex');
-    Route::get('/users/{user}', [UsersController::class, 'show'])->name('users.show');
-    Route::get('/users/{user}/edit', [UsersController::class, 'edit'])->name('users.edit');
-    Route::patch('/users/{user}',[UsersController::class, 'update'])->name('users.update');
-    Route::delete('/users/{user}',[UsersController::class, 'destroy'])->name('users.destroy');
-    Route::post('/users/{user}/avatar',[UsersController::class, 'storeAvatar'])->name('users.avatar.store');
+    Route::get('/user', [UserController::class, 'index'])->name('user.index');
+    Route::get('/user/emails', [UserController::class, 'emails'])->name('user.emails');
+    Route::get('/user/jsonIndex', [UserController::class, 'jsonIndex'])->name('user.jsonIndex');
+    Route::get('/user/{user}', [UserController::class, 'show'])->name('user.show');
+    Route::get('/user/{user}/edit', [UserController::class, 'edit'])->name('user.edit');
+    Route::patch('/user/{user}',[UserController::class, 'update'])->name('user.update');
+    Route::delete('/user/{user}',[UserController::class, 'destroy'])->name('user.destroy');
+    Route::post('/user/{user}/avatar',[UserController::class, 'storeAvatar'])->name('user.avatar.store');
 
-
-
+    Route::get('/datatype', [DataTypeController::class, 'index'])->name('datatype.index');
+    Route::get('/datatype/{datatype}', [DataTypeController::class, 'show'])->name('datatype.show');
+    Route::get('/datatype/{datatype}/edit', [DataTypeController::class, 'edit'])->name('datatype.edit');
+    Route::patch('/datatype/{datatype}',[DataTypeController::class, 'update'])->name('datatype.update');
+    Route::delete('/datatype/{datatype}',[DataTypeController::class, 'destroy'])->name('datatype.destroy');
 });

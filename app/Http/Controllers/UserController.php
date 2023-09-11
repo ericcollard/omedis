@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\DataTables\UsersDataTable;
+use App\DataTables\UserDataTable;
 use App\Models\User;
 use Exception;
 use Illuminate\Contracts\Foundation\Application;
@@ -13,7 +13,7 @@ use Illuminate\Http\RedirectResponse;
 use Illuminate\Support\Carbon;
 use Illuminate\Validation\ValidationException;
 
-class UsersController extends Controller
+class UserController extends Controller
 {
     /**
      * Create the controller instance.
@@ -29,9 +29,9 @@ class UsersController extends Controller
      * Display a listing of the resource.
      *
      */
-    public function index(UsersDataTable $dataTable)
+    public function index(UserDataTable $dataTable)
     {
-        return $dataTable->render('users.index');
+        return $dataTable->render('user.index');
     }
 
     /**
@@ -46,7 +46,7 @@ class UsersController extends Controller
         }
 
         $users = User::all();
-        return view('users.emails', ['users' => $users]);
+        return view('user.emails', ['users' => $users]);
     }
 
 
@@ -80,7 +80,7 @@ class UsersController extends Controller
      */
     public function show(User $user)
     {
-        return view('users.show', ['user' => $user]);
+        return view('user.show', ['user' => $user]);
     }
 
     /**
@@ -91,7 +91,7 @@ class UsersController extends Controller
      */
     public function edit(User $user)
     {
-        return view('users.edit', ['user' => $user]);
+        return view('user.edit', ['user' => $user]);
     }
 
     /**
@@ -122,7 +122,7 @@ class UsersController extends Controller
 
         $user->update($data);
 
-        return redirect(route('user.show',['user' => $user]))->with( ['message' => 'Fiche pharmacie mise à jour', 'alert' => 'success']);
+        return redirect(route('user.show',['user' => $user]))->with( ['message' => 'Fiche mise à jour', 'alert' => 'success']);
 
     }
 

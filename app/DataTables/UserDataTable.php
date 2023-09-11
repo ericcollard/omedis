@@ -12,7 +12,7 @@ use Yajra\DataTables\Html\Editor\Editor;
 use Yajra\DataTables\Html\Editor\Fields;
 use Yajra\DataTables\Services\DataTable;
 
-class UsersDataTable extends DataTable
+class UserDataTable extends DataTable
 {
     /**
      * Build the DataTable class.
@@ -22,7 +22,10 @@ class UsersDataTable extends DataTable
     public function dataTable(QueryBuilder $query): EloquentDataTable
     {
         return (new EloquentDataTable($query))
-            ->addColumn('action', 'users.action')
+            ->addColumn('id', function ($user) {
+                return '<a href="'. $user->path() .'">'. $user->id .'</a>';
+            })
+            ->rawColumns(['id'])
             ->setRowId('id');
     }
 
@@ -62,11 +65,6 @@ class UsersDataTable extends DataTable
     public function getColumns(): array
     {
         return [
-            Column::computed('action')
-                  ->exportable(false)
-                  ->printable(false)
-                  ->width(60)
-                  ->addClass('text-center'),
             Column::make('id'),
             Column::make('name'),
             Column::make('email'),
