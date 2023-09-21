@@ -24,7 +24,11 @@ class AttributeController extends Controller
      */
     public function create()
     {
-        //
+        $action = URL::route('attribute.store');
+        $method = 'POST';
+
+        $attribute = new attribute();
+        return view('attribute.edit', compact('action','attribute', 'method'));
     }
 
     /**

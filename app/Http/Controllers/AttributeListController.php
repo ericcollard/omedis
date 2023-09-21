@@ -24,7 +24,11 @@ class AttributeListController extends Controller
      */
     public function create()
     {
-        //
+        $action = URL::route('attributelist.store');
+        $method = 'POST';
+
+        $attributelist = new attributeList();
+        return view('attributelist.edit', compact('action','attributelist', 'method'));
     }
 
     /**

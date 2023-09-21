@@ -24,7 +24,11 @@ class UnitController extends Controller
      */
     public function create()
     {
-        //
+        $action = URL::route('unit.store');
+        $method = 'POST';
+
+        $unit = new Unit();
+        return view('unit.edit', compact('action','unit', 'method'));
     }
 
     /**
