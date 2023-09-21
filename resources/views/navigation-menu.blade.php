@@ -24,6 +24,18 @@
                     <x-nav-link href="{{ route('datatype.index') }}" :active="request()->routeIs('datatype.index')">
                         {{ __('Datatypes') }}
                     </x-nav-link>
+                    <x-nav-link href="{{ route('unit.index') }}" :active="request()->routeIs('unit.index')">
+                        {{ __('Units') }}
+                    </x-nav-link>
+                    <x-nav-link href="{{ route('attribute.index') }}" :active="request()->routeIs('attribute.index')">
+                        {{ __('Attributes') }}
+                    </x-nav-link>
+                    <x-nav-link href="{{ route('attributelist.index') }}" :active="request()->routeIs('attributelist.index')">
+                        {{ __('Attribute Lists') }}
+                    </x-nav-link>
+                    <x-nav-link href="{{ route('attributelistvalue.index') }}" :active="request()->routeIs('attributelistvalue.index')">
+                        {{ __('Attribute List Values') }}
+                    </x-nav-link>
 
 
 

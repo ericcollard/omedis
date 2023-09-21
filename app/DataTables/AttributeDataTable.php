@@ -2,7 +2,7 @@
 
 namespace App\DataTables;
 
-use App\Models\DataType;
+use App\Models\Attribute;
 use Illuminate\Database\Eloquent\Builder as QueryBuilder;
 use Yajra\DataTables\EloquentDataTable;
 use Yajra\DataTables\Html\Builder as HtmlBuilder;
@@ -12,7 +12,7 @@ use Yajra\DataTables\Html\Editor\Editor;
 use Yajra\DataTables\Html\Editor\Fields;
 use Yajra\DataTables\Services\DataTable;
 
-class DataTypeDataTable extends DataTable
+class AttributeDataTable extends DataTable
 {
     /**
      * Build the DataTable class.
@@ -23,8 +23,8 @@ class DataTypeDataTable extends DataTable
     {
         return (new EloquentDataTable($query))
             ->addColumn('action', function ($row) {
-                $edit_route = route('datatype.edit',$row->id);
-                $delete_route = route('datatype.destroy',$row->id);
+                $edit_route = route('attribute.edit',$row->id);
+                $delete_route = route('attribute.destroy',$row->id);
                 $x = '
                     <button type="submit" class="btn btn-warning btn-sm">
                         <a href="'.$edit_route.'" style="color: inherit">
@@ -43,13 +43,34 @@ class DataTypeDataTable extends DataTable
                 ';
                 return $x;
             })
-            ->rawColumns(['action']);
+            ->addColumn('data_type_id', function ($attribute) {
+                if ($attribute->datatype)
+                    return "<a href='".route('datatype.edit',$attribute->datatype)."'>".
+                        $attribute->datatype->name."</a>";
+                else
+                    return "";
+            })
+            ->addColumn('attribute_list_id', function ($attribute) {
+                if ($attribute->attributeList)
+                    return "<a href='".route('attributelist.edit',$attribute->attributeList)."'>".
+                        $attribute->attributeList->name."</a>";
+                else
+                    return "";
+            })
+            ->addColumn('unit_id', function ($attribute) {
+                if ($attribute->unit)
+                    return "<a href='".route('unit.edit',$attribute->unit)."'>".
+                        $attribute->unit->name."</a>";
+                else
+                    return "";
+            })
+            ->rawColumns(['action','data_type_id','attribute_list_id','unit_id']);
     }
 
     /**
      * Get the query source of dataTable.
      */
-    public function query(DataType $model): QueryBuilder
+    public function query(Attribute $model): QueryBuilder
     {
         return $model->newQuery();
     }
@@ -60,7 +81,7 @@ class DataTypeDataTable extends DataTable
     public function html(): HtmlBuilder
     {
         return $this->builder()
-                    ->setTableId('datatype-table')
+                    ->setTableId('attribute-table')
                     ->columns($this->getColumns())
                     ->minifiedAjax()
                     //->dom('Bfrtip')
@@ -74,12 +95,10 @@ class DataTypeDataTable extends DataTable
                         Button::make( [
                             'text' =>'Nouveau',
                             'action' => "function (e, dt, button, config) {
-                                    window.location = '".route('datatype.create')."';
-                                }",
+                                                    window.location = '".route('attribute.create')."';
+                                                }",
                             'className' => 'ml-2',
                         ]),
-
-
                     ]);
     }
 
@@ -92,6 +111,26 @@ class DataTypeDataTable extends DataTable
             Column::make('id'),
             Column::make('name'),
             Column::make('comment'),
+            Column::make('required'),
+            Column::make([
+                'data' => 'data_type_id',
+                'title' => 'Data type',
+                'searchable' => false,
+                'sortable' => false,
+            ]),
+            Column::make([
+                'data' => 'attribute_list_id',
+                'title' => 'Attribute list',
+                'searchable' => false,
+                'sortable' => false,
+            ]),
+            Column::make([
+                'data' => 'unit_id',
+                'title' => 'Unit',
+                'searchable' => false,
+                'sortable' => false,
+            ]),
+
             Column::make([
                 'data' => 'action',
                 'title' => '...',
@@ -106,6 +145,6 @@ class DataTypeDataTable extends DataTable
      */
     protected function filename(): string
     {
-        return 'DataType_' . date('YmdHis');
+        return 'Attribute_' . date('YmdHis');
     }
 }

@@ -6,7 +6,6 @@ use App\Http\Requests\StoreDataTypeRequest;
 use App\Http\Requests\UpdateDataTypeRequest;
 use App\Models\DataType;
 use App\DataTables\DataTypeDataTable;
-use Illuminate\Http\RedirectResponse;
 use PDOException;
 use Illuminate\Support\Facades\URL;
 

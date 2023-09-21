@@ -1,0 +1,69 @@
+<?php
+
+namespace App\Http\Controllers;
+
+use App\Models\AttributeList;
+use Illuminate\Http\Request;
+use App\DataTables\AttributeListDataTable;
+use PDOException;
+use Illuminate\Support\Facades\URL;
+
+
+class AttributeListController extends Controller
+{
+    /**
+     * Display a listing of the resource.
+     */
+    public function index(AttributeListDataTable $dataTable)
+    {
+        return $dataTable->render('attributelist.index');
+    }
+
+    /**
+     * Show the form for creating a new resource.
+     */
+    public function create()
+    {
+        //
+    }
+
+    /**
+     * Store a newly created resource in storage.
+     */
+    public function store(Request $request)
+    {
+        //
+    }
+
+    /**
+     * Display the specified resource.
+     */
+    public function show(AttributeList $attributeList)
+    {
+        dd($attributeList->getValuesSample());
+    }
+
+    /**
+     * Show the form for editing the specified resource.
+     */
+    public function edit(AttributeList $attributeList)
+    {
+        //
+    }
+
+    /**
+     * Update the specified resource in storage.
+     */
+    public function update(Request $request, AttributeList $attributeList)
+    {
+        //
+    }
+
+    /**
+     * Remove the specified resource from storage.
+     */
+    public function destroy(AttributeList $attributeList)
+    {
+        //
+    }
+}

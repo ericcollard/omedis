@@ -4,6 +4,10 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\DataTypeController;
 use App\Http\Controllers\UnitController;
+use App\Http\Controllers\AttributeController;
+use App\Http\Controllers\AttributeListValueController;
+use App\Http\Controllers\AttributeListController;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -45,5 +49,8 @@ Route::middleware([
     Route::post('/datatype',[DataTypeController::class, 'store'])->name('datatype.store');
 
     Route::resource('unit', UnitController::class);
+    Route::resource('attribute', AttributeController::class);
+    Route::resource('attributelistvalue', AttributeListValueController::class);
+    Route::resource('attributelist', AttributeListController::class);
 
 });

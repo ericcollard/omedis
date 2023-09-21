@@ -2,7 +2,7 @@
 
 namespace App\DataTables;
 
-use App\Models\DataType;
+use App\Models\AttributeList;
 use Illuminate\Database\Eloquent\Builder as QueryBuilder;
 use Yajra\DataTables\EloquentDataTable;
 use Yajra\DataTables\Html\Builder as HtmlBuilder;
@@ -12,7 +12,7 @@ use Yajra\DataTables\Html\Editor\Editor;
 use Yajra\DataTables\Html\Editor\Fields;
 use Yajra\DataTables\Services\DataTable;
 
-class DataTypeDataTable extends DataTable
+class AttributeListDataTable extends DataTable
 {
     /**
      * Build the DataTable class.
@@ -23,8 +23,8 @@ class DataTypeDataTable extends DataTable
     {
         return (new EloquentDataTable($query))
             ->addColumn('action', function ($row) {
-                $edit_route = route('datatype.edit',$row->id);
-                $delete_route = route('datatype.destroy',$row->id);
+                $edit_route = route('attributelist.edit',$row->id);
+                $delete_route = route('attributelist.destroy',$row->id);
                 $x = '
                     <button type="submit" class="btn btn-warning btn-sm">
                         <a href="'.$edit_route.'" style="color: inherit">
@@ -43,13 +43,16 @@ class DataTypeDataTable extends DataTable
                 ';
                 return $x;
             })
+            ->addColumn('values', function ($attributeList) {
+                return $attributeList->getValuesCount()." values ( ".$attributeList->getValuesSample()." )";
+            })
             ->rawColumns(['action']);
     }
 
     /**
      * Get the query source of dataTable.
      */
-    public function query(DataType $model): QueryBuilder
+    public function query(AttributeList $model): QueryBuilder
     {
         return $model->newQuery();
     }
@@ -60,7 +63,7 @@ class DataTypeDataTable extends DataTable
     public function html(): HtmlBuilder
     {
         return $this->builder()
-                    ->setTableId('datatype-table')
+                    ->setTableId('attributelist-table')
                     ->columns($this->getColumns())
                     ->minifiedAjax()
                     //->dom('Bfrtip')
@@ -74,12 +77,10 @@ class DataTypeDataTable extends DataTable
                         Button::make( [
                             'text' =>'Nouveau',
                             'action' => "function (e, dt, button, config) {
-                                    window.location = '".route('datatype.create')."';
-                                }",
+                                                    window.location = '".route('attributelist.create')."';
+                                                }",
                             'className' => 'ml-2',
                         ]),
-
-
                     ]);
     }
 
@@ -92,6 +93,13 @@ class DataTypeDataTable extends DataTable
             Column::make('id'),
             Column::make('name'),
             Column::make('comment'),
+            Column::make([
+                'data' => 'values',
+                'title' => 'Valeurs',
+                'searchable' => false,
+                'sortable' => false,
+            ]),
+
             Column::make([
                 'data' => 'action',
                 'title' => '...',
@@ -106,6 +114,6 @@ class DataTypeDataTable extends DataTable
      */
     protected function filename(): string
     {
-        return 'DataType_' . date('YmdHis');
+        return 'AttributeList_' . date('YmdHis');
     }
 }

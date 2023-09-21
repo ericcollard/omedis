@@ -15,6 +15,7 @@ return new class extends Migration
             $table->id();
             $table->string('name');
             $table->text('comment')->nullable();
+            $table->boolean('required')->default(false);
             $table->foreignId('attribute_list_id')->nullable()->constrained('attribute_lists');
             $table->foreignId('unit_id')->nullable()->constrained('units');
             $table->foreignId('data_type_id')->constrained('data_types');

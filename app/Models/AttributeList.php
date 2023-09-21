@@ -4,6 +4,7 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Relations\HasMany;
 
 class AttributeList extends Model
 {
@@ -13,4 +14,28 @@ class AttributeList extends Model
         'name',
         'comment'
     ];
+
+    public function attributeListValues(): HasMany
+    {
+        return $this->hasMany(AttributeListValue::class);
+    }
+
+    public function getValuesCount()
+    {
+        return $this->attributeListValues()->get()->count();
+    }
+
+    public function getValuesSample()
+    {
+        $str = "";
+        $first_values = $this->attributeListValues()->take(2)->get();
+        foreach($first_values as $value) {
+            //dd($value->name);
+            if (strlen($str) > 0) $str.=", ";
+            $str.= $value->name;
+
+        }
+        return $str." ...";
+    }
+
 }

@@ -19,6 +19,7 @@ class AttributeSeeder extends Seeder
                 array (
                     'id' => 1,
                     'name' => 'Wholesale Price',
+                    'required' => true,
                     'comment' => 'Standard purchase price excuding VAT',
                     'data_type_id' => 6,
                     'unit_id' => 4,
@@ -28,6 +29,7 @@ class AttributeSeeder extends Seeder
                 array (
                     'id' => 2,
                     'name' => 'Retail Price',
+                    'required' => true,
                     'comment' => 'Recommanded retail price including VAT',
                     'data_type_id' => 6,
                     'unit_id' => 4,
@@ -37,6 +39,7 @@ class AttributeSeeder extends Seeder
                 array (
                     'id' => 3,
                     'name' => 'Pictures',
+                    'required' => false,
                     'comment' => 'Product picture links, semi-column separated',
                     'data_type_id' => 2,
                     'unit_id' => 1,
@@ -46,6 +49,7 @@ class AttributeSeeder extends Seeder
                 array (
                     'id' => 4,
                     'name' => 'Category',
+                    'required' => true,
                     'comment' => 'Commercial category',
                     'data_type_id' => 1,
                     'attribute_list_id' => 6,
@@ -55,6 +59,7 @@ class AttributeSeeder extends Seeder
                 array (
                     'id' => 5,
                     'name' => 'EAN',
+                    'required' => true,
                     'comment' => 'EAN code',
                     'data_type_id' => 2,
                     'unit_id' => 1,
@@ -64,9 +69,10 @@ class AttributeSeeder extends Seeder
                 array (
                     'id' => 6,
                     'name' => 'Brand',
+                    'required' => true,
                     'comment' => 'Product brand',
                     'data_type_id' => 1,
-                    'attribute_list_id' => 6,
+                    'attribute_list_id' => 7,
                     'unit_id' => null,
                 ),
         ));
