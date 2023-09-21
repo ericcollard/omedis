@@ -48,7 +48,10 @@ class UnitController extends Controller
      */
     public function edit(Unit $unit)
     {
-        //
+        $action = URL::route('unit.update',['unit' => $unit]);
+        $method = 'PATCH';
+
+        return view('unit.edit', compact('action', 'method','unit'));
     }
 
     /**

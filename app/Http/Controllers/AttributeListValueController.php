@@ -49,9 +49,12 @@ class AttributeListValueController extends Controller
     /**
      * Show the form for editing the specified resource.
      */
-    public function edit(AttributeListValue $attributeListValue)
+    public function edit(AttributeListValue $attributelistvalue)
     {
-        //
+        $action = URL::route('attributelistvalue.update',['attributelistvalue' => $attributelistvalue]);
+        $method = 'PATCH';
+
+        return view('attributelistvalue.edit', compact('action', 'method','attributelistvalue'));
     }
 
     /**

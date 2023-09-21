@@ -50,7 +50,10 @@ class AttributeController extends Controller
      */
     public function edit(Attribute $attribute)
     {
-        //
+        $action = URL::route('attribute.update',['attribute' => $attribute]);
+        $method = 'PATCH';
+
+        return view('attribute.edit', compact('action', 'method','attribute'));
     }
 
     /**
