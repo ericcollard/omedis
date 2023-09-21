@@ -45,11 +45,11 @@ class DataTypeController extends Controller
         try {
 
             $data = $request->all();
-            $brand = DataType::create($data);
+            $datatype = DataType::create($data);
 
         } catch (\Exception $e) {
             // catch exception when trying to insert invalid reply (spam or missing data)
-            abort(403, "Impossibleto create new data");
+            abort(403, "Impossible to create new data");
         }
 
         return redirect(route('datatype.index'))->with( ['message' => 'Data created', 'alert' => 'success']);

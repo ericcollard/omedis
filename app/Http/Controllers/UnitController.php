@@ -36,7 +36,22 @@ class UnitController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $this->validate(request(), [
+                'name' =>  'required',
+            ]
+        );
+
+        try {
+
+            $data = $request->all();
+            $unit = Unit::create($data);
+
+        } catch (\Exception $e) {
+            // catch exception when trying to insert invalid reply (spam or missing data)
+            abort(403, "Impossible to create new data");
+        }
+
+        return redirect(route('unit.index'))->with( ['message' => 'Data created', 'alert' => 'success']);
     }
 
     /**
@@ -63,7 +78,17 @@ class UnitController extends Controller
      */
     public function update(Request $request, Unit $unit)
     {
-        //
+        $request->validate([
+            'name' => 'required',
+        ]);
+
+        $unit->name = $request->name;
+        $unit->comment = $request->comment;
+
+        $unit->save();
+
+        return redirect()->route('unit.index')
+            ->with(['alert' => 'success', 'message' => 'Data updated' ]);
     }
 
     /**

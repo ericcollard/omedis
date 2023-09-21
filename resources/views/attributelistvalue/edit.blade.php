@@ -58,6 +58,23 @@
                                         @enderror
                                     </div>
                                 </div>
+                                <div class="col-xs-12 col-sm-12 col-md-12 mb-4">
+                                    <div class="form-group">
+                                        <label for="attribute_list_id">Attribute list :</label>
+
+                                        <select name="attribute_list_id" id="attribute_list_id" class="form-control" required>
+                                            <option value="">Choose an attribute list ...</option>
+                                            @foreach($attributelists as $attributelist)
+                                                <option value='{{ $attributelist->id }}' {{ $attributelistvalue->attribute_list_id ? ($attributelistvalue->attribute_list_id == $attributelist->id ? 'selected' : '') : ( old('attribute_list_id') == $attributelist->id ? 'selected' : '') }}>{{ $attributelist->name }}</option>
+                                            @endforeach
+                                        </select>
+                                        @error('attribute_list_id')
+                                        <div class="alert alert-danger mt-1 mb-1">{{ $message }}</div>
+                                        @enderror
+
+
+                                    </div>
+                                </div>
 
                                 <div class="col-xs-12 col-sm-12 col-md-12 mb-4">
                                     <button type="submit" class="btn btn-primary">Submit</button>

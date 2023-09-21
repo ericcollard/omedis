@@ -36,7 +36,22 @@ class AttributeController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $this->validate(request(), [
+                'name' =>  'required',
+            ]
+        );
+
+        try {
+
+            $data = $request->all();
+            $attribute = Attribute::create($data);
+
+        } catch (\Exception $e) {
+            // catch exception when trying to insert invalid reply (spam or missing data)
+            abort(403, "Impossible to create new data");
+        }
+
+        return redirect(route('attribute.index'))->with( ['message' => 'Data created', 'alert' => 'success']);
     }
 
     /**
