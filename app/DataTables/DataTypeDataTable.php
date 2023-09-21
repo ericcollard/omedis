@@ -22,11 +22,28 @@ class DataTypeDataTable extends DataTable
     public function dataTable(QueryBuilder $query): EloquentDataTable
     {
         return (new EloquentDataTable($query))
-            ->addColumn('id', function ($datatype) {
-                return '<a href="'. $datatype->path() .'">'. $datatype->id .'</a>';
+            ->addColumn('action', function ($row) {
+                $edit_route = route('datatype.edit',$row->id);
+                $delete_route = route('datatype.destroy',$row->id);
+                $x = '
+                    <button type="submit" class="btn btn-warning btn-sm">
+                        <a href="'.$edit_route.'" style="color: inherit">
+                            <i class="fa fa-pencil" aria-hidden="true"></i>
+                                Edit
+                            </a>
+                    </button>
+                    <form class="d-sm-inline-block" action="'.$delete_route.'" method="POST">
+                    '.csrf_field().'
+                    '.method_field("DELETE").'
+                    <button type="submit" class="btn btn-danger btn-sm ml-2"
+                        onclick="return confirm(\'Are You Sure Want to Delete?\')">
+                        <i class="fa fa-trash" aria-hidden="true"></i> Delete
+                        </button>
+                    </form>
+                ';
+                return $x;
             })
-            ->rawColumns(['id'])
-            ->setRowId('id');
+            ->rawColumns(['action']);
     }
 
     /**
@@ -47,15 +64,22 @@ class DataTypeDataTable extends DataTable
                     ->columns($this->getColumns())
                     ->minifiedAjax()
                     //->dom('Bfrtip')
-                    ->orderBy(1)
+                    ->orderBy(0)
                     ->selectStyleSingle()
                     ->buttons([
                         Button::make('excel'),
-                        Button::make('csv'),
-                        Button::make('pdf'),
-                        Button::make('print'),
                         Button::make('reset'),
-                        Button::make('reload')
+                        Button::make('reload'),
+
+                        Button::make( [
+                            'text' =>'Nouveau',
+                            'action' => "function (e, dt, button, config) {
+                                    window.location = '".route('datatype.create')."';
+                                }",
+                            'className' => 'ml-2',
+                        ]),
+
+
                     ]);
     }
 
@@ -68,6 +92,12 @@ class DataTypeDataTable extends DataTable
             Column::make('id'),
             Column::make('name'),
             Column::make('comment'),
+            Column::make([
+                'data' => 'action',
+                'title' => '...',
+                'searchable' => false,
+                'sortable' => false,
+            ]),
         ];
     }
 

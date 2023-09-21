@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\DataTypeController;
+use App\Http\Controllers\UnitController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -36,8 +37,13 @@ Route::middleware([
     Route::post('/user/{user}/avatar',[UserController::class, 'storeAvatar'])->name('user.avatar.store');
 
     Route::get('/datatype', [DataTypeController::class, 'index'])->name('datatype.index');
+    Route::get('/datatype/create', [DataTypeController::class, 'create'])->name('datatype.create');
     Route::get('/datatype/{datatype}', [DataTypeController::class, 'show'])->name('datatype.show');
     Route::get('/datatype/{datatype}/edit', [DataTypeController::class, 'edit'])->name('datatype.edit');
     Route::patch('/datatype/{datatype}',[DataTypeController::class, 'update'])->name('datatype.update');
     Route::delete('/datatype/{datatype}',[DataTypeController::class, 'destroy'])->name('datatype.destroy');
+    Route::post('/datatype',[DataTypeController::class, 'store'])->name('datatype.store');
+
+    Route::resource('unit', UnitController::class);
+
 });

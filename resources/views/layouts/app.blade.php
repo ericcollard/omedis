@@ -32,6 +32,13 @@
                 </header>
             @endif
 
+            @if(Session::has('message'))
+                <div class="alert alert-{{ Session::get('alert', 'success') }} alert-dismissible fade show mt-2" role="alert">
+                    <strong>{{ __(Session::get('alert', 'success')) }} !</strong> {{ Session::get('message', '') }}
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                </div>
+            @endif
+
             <!-- Page Content -->
             <main>
                 {{ $slot }}

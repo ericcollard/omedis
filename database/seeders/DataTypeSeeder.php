@@ -18,8 +18,8 @@ class DataTypeSeeder extends Seeder
             0 =>
                 array (
                     'id' => 1,
-                    'name' => 'text',
-                    'comment' => 'Text field without length limit',
+                    'name' => 'selection',
+                    'comment' => 'Value choosen in a closed list of values',
                 ),
             1 =>
                 array (
@@ -50,6 +50,12 @@ class DataTypeSeeder extends Seeder
                     'id' => 6,
                     'name' => 'money',
                     'comment' => 'numeric value with 2 decimals representing a price',
+                ),
+            6 =>
+                array (
+                    'id' => 7,
+                    'name' => 'text',
+                    'comment' => 'Text field without length limit',
                 ),
         ));
     }

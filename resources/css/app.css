@@ -5,3 +5,7 @@
 [x-cloak] {
     display: none;
 }
+
+button a {
+    text-decoration: none;
+}

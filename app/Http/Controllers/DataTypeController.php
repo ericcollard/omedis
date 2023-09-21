@@ -6,6 +6,9 @@ use App\Http\Requests\StoreDataTypeRequest;
 use App\Http\Requests\UpdateDataTypeRequest;
 use App\Models\DataType;
 use App\DataTables\DataTypeDataTable;
+use Illuminate\Http\RedirectResponse;
+use PDOException;
+use Illuminate\Support\Facades\URL;
 
 class DataTypeController extends Controller
 {
@@ -23,7 +26,11 @@ class DataTypeController extends Controller
      */
     public function create()
     {
-        //
+        $action = URL::route('datatype.store');
+        $method = 'POST';
+
+        $datatype = new DataType();
+        return view('datatype.edit', compact('action','datatype', 'method'));
     }
 
     /**
@@ -31,38 +38,76 @@ class DataTypeController extends Controller
      */
     public function store(StoreDataTypeRequest $request)
     {
-        //
+        $this->validate(request(), [
+                'name' =>  'required',
+            ]
+        );
+
+        try {
+
+            $data = $request->all();
+            $brand = DataType::create($data);
+
+        } catch (\Exception $e) {
+            // catch exception when trying to insert invalid reply (spam or missing data)
+            abort(403, "Impossibleto create new data");
+        }
+
+        return redirect(route('datatype.index'))->with( ['message' => 'Data created', 'alert' => 'success']);
+
     }
 
     /**
      * Display the specified resource.
      */
-    public function show(DataType $dataType)
+    public function show(DataType $datatype)
     {
-        //
+        return view('datatype.show', ['datatype' => $datatype]);
     }
 
     /**
      * Show the form for editing the specified resource.
      */
-    public function edit(DataType $dataType)
+    public function edit(DataType $datatype)
     {
-        //
+        $action = URL::route('datatype.update',['datatype' => $datatype]);
+        $method = 'PATCH';
+
+        return view('datatype.edit', compact('action', 'method','datatype'));
     }
 
     /**
      * Update the specified resource in storage.
      */
-    public function update(UpdateDataTypeRequest $request, DataType $dataType)
+    public function update(UpdateDataTypeRequest $request, DataType $datatype)
     {
-        //
+        $request->validate([
+            'name' => 'required',
+        ]);
+
+        $datatype->name = $request->name;
+        $datatype->comment = $request->comment;
+
+        $datatype->save();
+
+        return redirect()->route('datatype.index')
+            ->with(['alert' => 'success', 'message' => 'Data updated' ]);
     }
 
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(DataType $dataType)
+    public function destroy(DataType $datatype)
     {
-        //
+        try{
+            $datatype->delete();
+        } catch(PDOException $e)
+        {
+            return redirect(route('datatype.index'))->with( ['message' => 'Data used - impossible to remove', 'alert' => 'danger']);
+
+        }
+        $datatype->delete();
+        return redirect(route('datatype.index'))->with( ['message' => 'Data removed', 'alert' => 'success']);
+
     }
 }
