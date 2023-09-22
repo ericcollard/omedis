@@ -27,16 +27,8 @@ class AttributeListValueController extends Controller
      */
     public function create($attributelist = null)
     {
-        if ($attributelist) {
-            $action = URL::route('attributelistvalue.forlist.store',['attributelist' => $attributelist]);
-            $actioncancel = URL::route('attributelistvalue.forlist.index',['attributelist' => $attributelist]);
-        }
-        else
-        {
-            $action = URL::route('attributelistvalue.store');
-            $actioncancel = URL::route('attributelistvalue.index');
-        }
-
+        $action = URL::route('attributelistvalue.store',['attributelist' => $attributelist]);
+        $actioncancel = URL::route('attributelistvalue.index',['attributelist' => $attributelist]);
         $method = 'POST';
 
         $attributelistvalue = new attributeListValue();
@@ -69,11 +61,7 @@ class AttributeListValueController extends Controller
             // catch exception when trying to insert invalid reply (spam or missing data)
             abort(403, "Impossible to create new data");
         }
-
-        if ($attributelist)
-            return redirect(route('attributelistvalue.forlist.index',[$attributelist]))->with( ['message' => 'Data created', 'alert' => 'success']);
-        else
-            return redirect(route('attributelistvalue.index'))->with( ['message' => 'Data created', 'alert' => 'success']);
+        return redirect(route('attributelistvalue.index',[$attributelist]))->with( ['message' => 'Data created', 'alert' => 'success']);
     }
 
     /**
@@ -89,16 +77,9 @@ class AttributeListValueController extends Controller
      */
     public function edit(AttributeListValue $attributelistvalue,$attributelist = null)
     {
-        if ($attributelist) {
-            $action = URL::route('attributelistvalue.forlist.update',['attributelistvalue' => $attributelistvalue,'attributelist' => $attributelist]);
-            $actioncancel = URL::route('attributelistvalue.forlist.index',['attributelist' => $attributelist]);
-        }
-        else
-        {
-            $action = URL::route('attributelistvalue.update',['attributelistvalue' => $attributelistvalue]);
-            $actioncancel = URL::route('attributelistvalue.index');
-        }
-         $method = 'PATCH';
+        $action = URL::route('attributelistvalue.update',['attributelistvalue' => $attributelistvalue,'attributelist' => $attributelist]);
+        $actioncancel = URL::route('attributelistvalue.index',['attributelist' => $attributelist]);
+        $method = 'PATCH';
         $attributelists = AttributeList::all();
         return view('attributelistvalue.edit', compact('action','actioncancel','method','attributelistvalue','attributelists'));
     }
@@ -118,12 +99,8 @@ class AttributeListValueController extends Controller
 
         $attributeListValue->save();
 
-        if ($attributelist)
-            return redirect()->route('attributelistvalue.forlist.index',[$attributelist])
+        return redirect()->route('attributelistvalue.index',[$attributelist])
                 ->with(['alert' => 'success', 'message' => 'Data updated' ]);
-        else
-            return redirect()->route('attributelistvalue.index')
-            ->with(['alert' => 'success', 'message' => 'Data updated' ]);
     }
 
     /**
@@ -135,14 +112,11 @@ class AttributeListValueController extends Controller
             $attributeListValue->delete();
         } catch(PDOException $e)
         {
-            return redirect(route('attributelistvalue.index'))->with( ['message' => 'Data used - impossible to remove', 'alert' => 'danger']);
+            return redirect(route('attributelistvalue.index',[$attributelist]))->with( ['message' => 'Data used - impossible to remove', 'alert' => 'danger']);
 
         }
         $attributeListValue->delete();
-        if ($attributelist)
-            return redirect(route('attributelistvalue.forlist.index',[$attributelist]))->with( ['message' => 'Data removed', 'alert' => 'success']);
-        else
-            return redirect(route('attributelistvalue.index'))->with( ['message' => 'Data removed', 'alert' => 'success']);
+        return redirect(route('attributelistvalue.index',[$attributelist]))->with( ['message' => 'Data removed', 'alert' => 'success']);
 
     }
 }

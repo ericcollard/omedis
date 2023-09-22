@@ -23,16 +23,9 @@ class AttributeListValueDataTable extends DataTable
     {
         return (new EloquentDataTable($query))
             ->addColumn('action', function ($attribute) {
-                if ($this->attributelist) {
-                    $edit_route = route('attributelistvalue.forlist.edit', [$attribute, $this->attributelist]);
-                    $delete_route = route('attributelistvalue.forlist.destroy',[$attribute,$this->attributelist]);
-                }
-                else
-                {
-                    $edit_route = route('attributelistvalue.edit',$attribute);
-                    $delete_route = route('attributelistvalue.destroy',$attribute);
-                }
 
+                $edit_route = route('attributelistvalue.edit', [$attribute, $this->attributelist]);
+                $delete_route = route('attributelistvalue.destroy',[$attribute,$this->attributelist]);
 
                 $x = '
                     <button type="submit" class="btn btn-warning btn-sm">
@@ -95,40 +88,11 @@ class AttributeListValueDataTable extends DataTable
                         Button::make( [
                             'text' =>'Create value',
                             'action' => "function (e, dt, button, config) {
-                                                            window.location = '".route('attributelistvalue.create')."';
+                                                            window.location = '".route('attributelistvalue.create',[$this->attributelist])."';
                                                         }",
                             'className' => 'ml-2',
                         ]),
                     ]);
-        if ($this->attributelist)
-            $builder->buttons([
-                Button::make('excel'),
-                Button::make('reset'),
-                Button::make('reload'),
-
-                Button::make( [
-                    'text' =>'Create value',
-                    'action' => "function (e, dt, button, config) {
-                                                            window.location = '".route('attributelistvalue.forlist.create',[$this->attributelist])."';
-                                                        }",
-                    'className' => 'ml-2',
-                ]),
-            ]);
-        else
-            $builder->buttons([
-                Button::make('excel'),
-                Button::make('reset'),
-                Button::make('reload'),
-
-                Button::make( [
-                    'text' =>'Create',
-                    'action' => "function (e, dt, button, config) {
-                                                            window.location = '".route('attributelistvalue.create')."';
-                                                        }",
-                    'className' => 'ml-2',
-                ]),
-            ]);
-
 
         return $builder;
     }

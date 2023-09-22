@@ -50,12 +50,13 @@ Route::middleware([
 
     Route::resource('unit', UnitController::class);
     Route::resource('attribute', AttributeController::class);
-    Route::resource('attributelistvalue', AttributeListValueController::class);
     Route::resource('attributelist', AttributeListController::class);
-    Route::get('attributelistvalue-forlist/{attributelist}', [AttributeListValueController::class, 'index'])->name('attributelistvalue.forlist.index');
-    Route::get('attributelistvalue-forlist/create/{attributelist}', [AttributeListValueController::class, 'create'])->name('attributelistvalue.forlist.create');
-    Route::get('attributelistvalue-forlist/{attributelistvalue}/edit/{attributelist}', [AttributeListValueController::class, 'edit'])->name('attributelistvalue.forlist.edit');
-    Route::patch('attributelistvalue-forlist/{attributelistvalue}/{attributelist}',[AttributeListValueController::class, 'update'])->name('attributelistvalue.forlist.update');
-    Route::post('attributelistvalue-forlist/{attributelist}',[AttributeListValueController::class, 'store'])->name('attributelistvalue.forlist.store');
-    Route::delete('attributelistvalue-forlist/{attributelistvalue}/{attributelist}',[AttributeListValueController::class, 'destroy'])->name('attributelistvalue.forlist.destroy');
+
+    // attributelistvalue avec paramètre optionnel pour transmettre le contexte
+    Route::get('attributelistvalue/{attributelistvalue}/edit/{attributelist?}', [AttributeListValueController::class, 'edit'])->name('attributelistvalue.edit');
+    Route::get('attributelistvalue/create/{attributelist?}', [AttributeListValueController::class, 'create'])->name('attributelistvalue.create');
+    Route::get('attributelistvalue/{attributelist?}', [AttributeListValueController::class, 'index'])->name('attributelistvalue.index');
+    Route::patch('attributelistvalue/{attributelistvalue}/{attributelist?}',[AttributeListValueController::class, 'update'])->name('attributelistvalue.update');
+    Route::post('attributelistvalue/{attributelist?}',[AttributeListValueController::class, 'store'])->name('attributelistvalue.store');
+    Route::delete('attributelistvalue/{attributelistvalue}/{attributelist?}',[AttributeListValueController::class, 'destroy'])->name('attributelistvalue.destroy');
 });

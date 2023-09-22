@@ -84,7 +84,7 @@
                                 No data
                             @endforelse
                         </p>
-                        <p><a href="{{ route('attributelistvalue.forlist.index',[$attributelist]) }}">Manage list of values for the current attribute list</a></p>
+                        <p><a href="{{ route('attributelistvalue.index',[$attributelist]) }}">Manage list of values for the current attribute list</a></p>
                     </div>
                 </div>
 
