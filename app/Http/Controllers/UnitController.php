@@ -96,6 +96,14 @@ class UnitController extends Controller
      */
     public function destroy(Unit $unit)
     {
-        //
+        try{
+            $unit->delete();
+        } catch(PDOException $e)
+        {
+            return redirect(route('unit.index'))->with( ['message' => 'Data used - impossible to remove', 'alert' => 'danger']);
+
+        }
+        $unit->delete();
+        return redirect(route('unit.index'))->with( ['message' => 'Data removed', 'alert' => 'success']);
     }
 }

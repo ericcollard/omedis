@@ -71,8 +71,6 @@
                                         @error('attribute_list_id')
                                         <div class="alert alert-danger mt-1 mb-1">{{ $message }}</div>
                                         @enderror
-
-
                                     </div>
                                 </div>
 

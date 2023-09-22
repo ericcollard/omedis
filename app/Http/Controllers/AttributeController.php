@@ -3,6 +3,9 @@
 namespace App\Http\Controllers;
 
 use App\Models\Attribute;
+use App\Models\AttributeList;
+use App\Models\DataType;
+use App\Models\Unit;
 use Illuminate\Http\Request;
 use App\DataTables\AttributeDataTable;
 use PDOException;
@@ -28,7 +31,10 @@ class AttributeController extends Controller
         $method = 'POST';
 
         $attribute = new attribute();
-        return view('attribute.edit', compact('action','attribute', 'method'));
+        $attributelists = AttributeList::all();
+        $units = Unit::all();
+        $datatypes = DataType::all();
+        return view('attribute.edit', compact('action','attribute', 'method','attributelists','units','datatypes' ));
     }
 
     /**
@@ -38,6 +44,7 @@ class AttributeController extends Controller
     {
         $this->validate(request(), [
                 'name' =>  'required',
+                'data_type_id' =>  'required',
             ]
         );
 
@@ -45,6 +52,7 @@ class AttributeController extends Controller
 
             $data = $request->all();
             $attribute = Attribute::create($data);
+            $attribute->required = false;
 
         } catch (\Exception $e) {
             // catch exception when trying to insert invalid reply (spam or missing data)
@@ -59,9 +67,7 @@ class AttributeController extends Controller
      */
     public function show(Attribute $attribute)
     {
-        echo $attribute->dataType->name;
-        echo ($attribute->unit ? $attribute->unit->name : '');
-        echo ($attribute->attributeList ? $attribute->attributeList->name : '');
+        //
     }
 
     /**
@@ -72,7 +78,10 @@ class AttributeController extends Controller
         $action = URL::route('attribute.update',['attribute' => $attribute]);
         $method = 'PATCH';
 
-        return view('attribute.edit', compact('action', 'method','attribute'));
+        $attributelists = AttributeList::all();
+        $units = Unit::all();
+        $datatypes = DataType::all();
+        return view('attribute.edit', compact('action', 'method','attribute','attributelists','units','datatypes'  ));
     }
 
     /**
@@ -80,7 +89,21 @@ class AttributeController extends Controller
      */
     public function update(Request $request, Attribute $attribute)
     {
-        //
+        $request->validate([
+            'name' => 'required',
+            'data_type_id' =>  'required',
+        ]);
+        $attribute->name = $request->name;
+        $attribute->comment = $request->comment;
+        $attribute->required = $request->required;
+        $attribute->attribute_list_id = $request->attribute_list_id;
+        $attribute->unit_id = $request->unit_id;
+        $attribute->data_type_id = $request->data_type_id;
+
+        $attribute->save();
+
+        return redirect()->route('attribute.index')
+            ->with(['alert' => 'success', 'message' => 'Data updated' ]);
     }
 
     /**
@@ -88,6 +111,14 @@ class AttributeController extends Controller
      */
     public function destroy(Attribute $attribute)
     {
-        //
+        try{
+            $attribute->delete();
+        } catch(PDOException $e)
+        {
+            return redirect(route('attribute.index'))->with( ['message' => 'Data used - impossible to remove', 'alert' => 'danger']);
+
+        }
+        $attribute->delete();
+        return redirect(route('attribute.index'))->with( ['message' => 'Data removed', 'alert' => 'success']);
     }
 }

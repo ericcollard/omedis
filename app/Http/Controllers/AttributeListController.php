@@ -99,6 +99,14 @@ class AttributeListController extends Controller
      */
     public function destroy(AttributeList $attributeList)
     {
-        //
+        try{
+            $attributeList->delete();
+        } catch(PDOException $e)
+        {
+            return redirect(route('attributelist.index'))->with( ['message' => 'Data used - impossible to remove', 'alert' => 'danger']);
+
+        }
+        $attributeList->delete();
+        return redirect(route('attributelist.index'))->with( ['message' => 'Data removed', 'alert' => 'success']);
     }
 }

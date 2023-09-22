@@ -43,7 +43,7 @@
                                 <div class="col-xs-12 col-sm-12 col-md-12 mb-4">
                                     <div class="form-group">
                                         <strong>Name:</strong>
-                                        <input type="text" name="name" value="{{ $attribute->name }}" class="form-control" placeholder="Attribute name">
+                                        <input type="text" name="name" value="{{ $attribute->name }}" class="form-control" placeholder="Attribute name"  required>
                                         @error('name')
                                         <div class="alert alert-danger mt-1 mb-1">{{ $message }}</div>
                                         @enderror
@@ -58,6 +58,61 @@
                                         @enderror
                                     </div>
                                 </div>
+                                <div class="col-xs-12 col-sm-12 col-md-12 mb-4">
+                                    <div class="form-group">
+                                        <strong>required:</strong>
+                                        <input type="text" name="required" value="{{ $attribute->required }}" class="form-control" placeholder="required"  required>
+                                        @error('required')
+                                        <div class="alert alert-danger mt-1 mb-1">{{ $message }}</div>
+                                        @enderror
+                                    </div>
+                                </div>
+                                <div class="col-xs-12 col-sm-12 col-md-12 mb-4">
+                                    <div class="form-group">
+                                        <label for="data_type_id">Data type :</label>
+
+                                        <select name="data_type_id" id="data_type_id" class="form-control" required>
+                                            <option value="">Choose a data type ...</option>
+                                            @foreach($datatypes as $datatype)
+                                                <option value='{{ $datatype->id }}' {{ $attribute->data_type_id ? ($attribute->data_type_id == $datatype->id ? 'selected' : '') : ( old('data_type_id') == $datatype->id ? 'selected' : '') }}>{{ $datatype->name }}</option>
+                                            @endforeach
+                                        </select>
+                                        @error('data_type_id')
+                                        <div class="alert alert-danger mt-1 mb-1">{{ $message }}</div>
+                                        @enderror
+                                    </div>
+                                </div>
+                                <div class="col-xs-12 col-sm-12 col-md-12 mb-4">
+                                    <div class="form-group">
+                                        <label for="attribute_list_id">Attribute list :</label>
+
+                                        <select name="attribute_list_id" id="attribute_list_id" class="form-control">
+                                            <option value="">Choose an attribute list ...</option>
+                                            @foreach($attributelists as $attributelist)
+                                                <option value='{{ $attributelist->id }}' {{ $attribute->attribute_list_id ? ($attribute->attribute_list_id == $attributelist->id ? 'selected' : '') : ( old('attribute_list_id') == $attributelist->id ? 'selected' : '') }}>{{ $attributelist->name }}</option>
+                                            @endforeach
+                                        </select>
+                                        @error('attribute_list_id')
+                                        <div class="alert alert-danger mt-1 mb-1">{{ $message }}</div>
+                                        @enderror
+                                    </div>
+                                </div>
+                                <div class="col-xs-12 col-sm-12 col-md-12 mb-4">
+                                    <div class="form-group">
+                                        <label for="unit_id">Unit :</label>
+
+                                        <select name="unit_id" id="unit_id" class="form-control">
+                                            <option value="">Choose an unit  ...</option>
+                                            @foreach($units as $unit)
+                                                <option value='{{ $unit->id }}' {{ $attribute->unit_id ? ($attribute->unit_id  == $unit->id ? 'selected' : '') : ( old('unit_id') == $unit->id ? 'selected' : '') }}>{{ $unit->name }}</option>
+                                            @endforeach
+                                        </select>
+                                        @error('unit_id')
+                                        <div class="alert alert-danger mt-1 mb-1">{{ $message }}</div>
+                                        @enderror
+                                    </div>
+                                </div>
+
 
                                 <div class="col-xs-12 col-sm-12 col-md-12 mb-4">
                                     <button type="submit" class="btn btn-primary">Submit</button>
