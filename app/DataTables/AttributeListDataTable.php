@@ -75,7 +75,7 @@ class AttributeListDataTable extends DataTable
                         Button::make('reload'),
 
                         Button::make( [
-                            'text' =>'Nouveau',
+                            'text' =>'Create value',
                             'action' => "function (e, dt, button, config) {
                                                     window.location = '".route('attributelist.create')."';
                                                 }",

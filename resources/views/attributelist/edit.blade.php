@@ -69,10 +69,31 @@
                     </div>
                 </div>
 
+                <div class="card mt-4">
+                    <div class="card-header">
+                        <h3 class="font-semibold text-xl text-gray-800 dark:text-gray-200 leading-tight">
+                            <i class="fa fa-pencil"></i> {{ __('values') }}
+                        </h3>
+
+                    </div>
+                    <div class="card-body">
+                        <p>
+                            @forelse($attributelist->attributeListValues as $value)
+                                "{{ $value->name }}",
+                            @empty
+                                No data
+                            @endforelse
+                        </p>
+                        <p><a href="{{ route('attributelistvalue.forlist.index',[$attributelist]) }}">Manage list of values for the current attribute list</a></p>
+                    </div>
+                </div>
+
             </div>
 
 
         </div>
     </div>
+
+
 </x-app-layout>
 <?php

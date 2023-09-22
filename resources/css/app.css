@@ -6,6 +6,14 @@
     display: none;
 }
 
+body a {
+    text-decoration: none;
+}
+
 button a {
+    text-decoration: none;
+}
+
+table.dataTable a {
     text-decoration: none;
 }

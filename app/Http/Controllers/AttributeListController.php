@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\DataTables\AttributeListValueDataTable;
 use App\Models\AttributeList;
 use Illuminate\Http\Request;
 use App\DataTables\AttributeListDataTable;
@@ -67,6 +68,8 @@ class AttributeListController extends Controller
      */
     public function edit(AttributeList $attributelist)
     {
+
+
         $action = URL::route('attributelist.update',['attributelist' => $attributelist]);
         $method = 'PATCH';
 
@@ -78,7 +81,17 @@ class AttributeListController extends Controller
      */
     public function update(Request $request, AttributeList $attributeList)
     {
-        //
+        $request->validate([
+            'name' => 'required',
+        ]);
+
+        $attributeList->name = $request->name;
+        $attributeList->comment = $request->comment;
+
+        $attributeList->save();
+
+        return redirect()->route('attributelist.index')
+            ->with(['alert' => 'success', 'message' => 'Data updated' ]);
     }
 
     /**

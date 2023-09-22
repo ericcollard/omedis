@@ -52,5 +52,10 @@ Route::middleware([
     Route::resource('attribute', AttributeController::class);
     Route::resource('attributelistvalue', AttributeListValueController::class);
     Route::resource('attributelist', AttributeListController::class);
-
+    Route::get('attributelistvalue-forlist/{attributelist}', [AttributeListValueController::class, 'index'])->name('attributelistvalue.forlist.index');
+    Route::get('attributelistvalue-forlist/create/{attributelist}', [AttributeListValueController::class, 'create'])->name('attributelistvalue.forlist.create');
+    Route::get('attributelistvalue-forlist/{attributelistvalue}/edit/{attributelist}', [AttributeListValueController::class, 'edit'])->name('attributelistvalue.forlist.edit');
+    Route::patch('attributelistvalue-forlist/{attributelistvalue}/{attributelist}',[AttributeListValueController::class, 'update'])->name('attributelistvalue.forlist.update');
+    Route::post('attributelistvalue-forlist/{attributelist}',[AttributeListValueController::class, 'store'])->name('attributelistvalue.forlist.store');
+    Route::delete('attributelistvalue-forlist/{attributelistvalue}/{attributelist}',[AttributeListValueController::class, 'destroy'])->name('attributelistvalue.forlist.destroy');
 });

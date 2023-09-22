@@ -12,7 +12,9 @@
 
     <div>
         <div class="max-w-7xl mx-auto py-10 sm:px-6 lg:px-8">
-
+            @if ($attributelist)
+                <p>Values filtred for Attribute List : {{ $attributelist->name }}</p>
+            @endif
             <div class="container">
                 {{ $dataTable->table() }}
             </div>

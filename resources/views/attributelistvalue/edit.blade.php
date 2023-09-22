@@ -78,7 +78,7 @@
 
                                 <div class="col-xs-12 col-sm-12 col-md-12 mb-4">
                                     <button type="submit" class="btn btn-primary">Submit</button>
-                                    <a class="btn btn-danger" href="{{ route('attributelistvalue.index') }}"><i class="fa fa-btn fa-bank"></i> Cancel</a>
+                                    <a class="btn btn-danger" href="{{ $actioncancel }}"><i class="fa fa-btn fa-bank"></i> Cancel</a>
                                 </div>
                             </div>
 

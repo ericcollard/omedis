@@ -14,28 +14,45 @@ class AttributeListValueController extends Controller
     /**
      * Display a listing of the resource.
      */
-    public function index(AttributeListValueDataTable $dataTable)
+    public function index(AttributeListValueDataTable $dataTable,$attributelist = null)
     {
-        return $dataTable->render('attributelistvalue.index');
+        if ($attributelist)
+            $dataTable->with('attributelist', $attributelist);
+
+        return $dataTable->render('attributelistvalue.index',compact('attributelist'));
     }
 
     /**
      * Show the form for creating a new resource.
      */
-    public function create()
+    public function create($attributelist = null)
     {
-        $action = URL::route('attributelistvalue.store');
+        if ($attributelist) {
+            $action = URL::route('attributelistvalue.forlist.store',['attributelist' => $attributelist]);
+            $actioncancel = URL::route('attributelistvalue.forlist.index',['attributelist' => $attributelist]);
+        }
+        else
+        {
+            $action = URL::route('attributelistvalue.store');
+            $actioncancel = URL::route('attributelistvalue.index');
+        }
+
         $method = 'POST';
 
         $attributelistvalue = new attributeListValue();
         $attributelists = AttributeList::all();
-        return view('attributelistvalue.edit', compact('action','attributelistvalue', 'method','attributelists'));
+
+        // initialiser la valeur si elle est fournie en argument
+        if ($attributelist)
+            $attributelistvalue->attribute_list_id = $attributelist->id;
+
+        return view('attributelistvalue.edit', compact('action','actioncancel','attributelistvalue', 'method','attributelists'));
     }
 
     /**
      * Store a newly created resource in storage.
      */
-    public function store(Request $request)
+    public function store(Request $request,$attributelist = null)
     {
         $this->validate(request(), [
                 'name' =>  'required',
@@ -53,7 +70,10 @@ class AttributeListValueController extends Controller
             abort(403, "Impossible to create new data");
         }
 
-        return redirect(route('attributelistvalue.index'))->with( ['message' => 'Data created', 'alert' => 'success']);
+        if ($attributelist)
+            return redirect(route('attributelistvalue.forlist.index',[$attributelist]))->with( ['message' => 'Data created', 'alert' => 'success']);
+        else
+            return redirect(route('attributelistvalue.index'))->with( ['message' => 'Data created', 'alert' => 'success']);
     }
 
     /**
@@ -61,49 +81,68 @@ class AttributeListValueController extends Controller
      */
     public function show(AttributeListValue $attributeListValue)
     {
-        echo "test";
-        echo $attributeListValue->name;
-        echo $attributeListValue->comment;
-        dd($attributeListValue->attributeList->name) ;
-        //dd($attributeListValue);
+        //
     }
 
     /**
      * Show the form for editing the specified resource.
      */
-    public function edit(AttributeListValue $attributelistvalue)
+    public function edit(AttributeListValue $attributelistvalue,$attributelist = null)
     {
-        $action = URL::route('attributelistvalue.update',['attributelistvalue' => $attributelistvalue]);
-        $method = 'PATCH';
+        if ($attributelist) {
+            $action = URL::route('attributelistvalue.forlist.update',['attributelistvalue' => $attributelistvalue,'attributelist' => $attributelist]);
+            $actioncancel = URL::route('attributelistvalue.forlist.index',['attributelist' => $attributelist]);
+        }
+        else
+        {
+            $action = URL::route('attributelistvalue.update',['attributelistvalue' => $attributelistvalue]);
+            $actioncancel = URL::route('attributelistvalue.index');
+        }
+         $method = 'PATCH';
         $attributelists = AttributeList::all();
-        return view('attributelistvalue.edit', compact('action', 'method','attributelistvalue','attributelists'));
+        return view('attributelistvalue.edit', compact('action','actioncancel','method','attributelistvalue','attributelists'));
     }
 
     /**
      * Update the specified resource in storage.
      */
-    public function update(Request $request, AttributeListValue $attributeListValue)
+    public function update(Request $request, AttributeListValue $attributeListValue,$attributelist = null)
     {
         $request->validate([
             'name' => 'required',
             'attribute_list_id' =>  'required',
         ]);
-
         $attributeListValue->name = $request->name;
         $attributeListValue->comment = $request->comment;
         $attributeListValue->attribute_list_id = $request->attribute_list_id;
 
         $attributeListValue->save();
 
-        return redirect()->route('attributelistvalue.index')
+        if ($attributelist)
+            return redirect()->route('attributelistvalue.forlist.index',[$attributelist])
+                ->with(['alert' => 'success', 'message' => 'Data updated' ]);
+        else
+            return redirect()->route('attributelistvalue.index')
             ->with(['alert' => 'success', 'message' => 'Data updated' ]);
     }
 
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(AttributeListValue $attributeListValue)
+    public function destroy(AttributeListValue $attributeListValue,$attributelist = null)
     {
-        //
+        try{
+            $attributeListValue->delete();
+        } catch(PDOException $e)
+        {
+            return redirect(route('attributelistvalue.index'))->with( ['message' => 'Data used - impossible to remove', 'alert' => 'danger']);
+
+        }
+        $attributeListValue->delete();
+        if ($attributelist)
+            return redirect(route('attributelistvalue.forlist.index',[$attributelist]))->with( ['message' => 'Data removed', 'alert' => 'success']);
+        else
+            return redirect(route('attributelistvalue.index'))->with( ['message' => 'Data removed', 'alert' => 'success']);
+
     }
 }

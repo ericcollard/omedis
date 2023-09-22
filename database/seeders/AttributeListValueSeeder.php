@@ -46,8 +46,8 @@ class AttributeListValueSeeder extends Seeder
             4 =>
                 array (
                     'id' => 5,
-                    'name' => '1.4',
-                    'attribute_list_id' => 1,
+                    'name' => 'Black',
+                    'attribute_list_id' => 2,
                     'comment' => null,
                 ),
         ));
