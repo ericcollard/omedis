@@ -14,6 +14,12 @@ use Yajra\DataTables\Services\DataTable;
 
 class AttributeListDataTable extends DataTable
 {
+    protected string|array $exportColumns = [
+        'id',
+        'name',
+        'comment',
+    ];
+
     /**
      * Build the DataTable class.
      *

@@ -14,6 +14,14 @@ use Yajra\DataTables\Services\DataTable;
 
 class DataTypeDataTable extends DataTable
 {
+
+    protected string|array $exportColumns = [
+        'id',
+        'name',
+        'comment',
+    ];
+
+
     /**
      * Build the DataTable class.
      *
