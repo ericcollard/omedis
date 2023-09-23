@@ -64,7 +64,13 @@ class AttributeDataTable extends DataTable
                 else
                     return "";
             })
-            ->rawColumns(['action','data_type_id','attribute_list_id','unit_id']);
+            ->addColumn('required', function ($attribute) {
+                if ($attribute->required == 0)
+                    return "<div class='text-info'>Optional</div>";
+                else
+                    return "<div class='text-warning'>Required</div>";
+            })
+            ->rawColumns(['action','data_type_id','attribute_list_id','unit_id','required']);
     }
 
     /**

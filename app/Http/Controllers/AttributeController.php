@@ -8,6 +8,8 @@ use App\Models\DataType;
 use App\Models\Unit;
 use Illuminate\Http\Request;
 use App\DataTables\AttributeDataTable;
+use Illuminate\Support\Facades\Validator;
+use Illuminate\Support\Str;
 use PDOException;
 use Illuminate\Support\Facades\URL;
 
@@ -31,6 +33,7 @@ class AttributeController extends Controller
         $method = 'POST';
 
         $attribute = new attribute();
+        $attribute->required = false;
         $attributelists = AttributeList::all();
         $units = Unit::all();
         $datatypes = DataType::all();
@@ -43,16 +46,19 @@ class AttributeController extends Controller
     public function store(Request $request)
     {
         $this->validate(request(), [
-                'name' =>  'required',
+                'name' => 'required',
                 'data_type_id' =>  'required',
+                'attribute_list_id' => 'required_if:data_type_id,1',
+                'unit_id' => 'required_unless:data_type_id,1'
             ]
         );
 
         try {
-
             $data = $request->all();
             $attribute = Attribute::create($data);
-            $attribute->required = false;
+            // logique
+            $attribute->applyLogic();
+            $attribute->save();
 
         } catch (\Exception $e) {
             // catch exception when trying to insert invalid reply (spam or missing data)
@@ -89,22 +95,33 @@ class AttributeController extends Controller
      */
     public function update(Request $request, Attribute $attribute)
     {
+
         $request->validate([
             'name' => 'required',
             'data_type_id' =>  'required',
+            'attribute_list_id' => 'required_if:data_type_id,1',
+            'unit_id' => 'required_unless:data_type_id,1'
         ]);
+
+
         $attribute->name = $request->name;
         $attribute->comment = $request->comment;
         $attribute->required = $request->required;
+        if (! $request->required)
+            $attribute->required = 0;
         $attribute->attribute_list_id = $request->attribute_list_id;
         $attribute->unit_id = $request->unit_id;
         $attribute->data_type_id = $request->data_type_id;
+
+        // logique
+        $attribute->applyLogic();
 
         $attribute->save();
 
         return redirect()->route('attribute.index')
             ->with(['alert' => 'success', 'message' => 'Data updated' ]);
     }
+
 
     /**
      * Remove the specified resource from storage.
@@ -116,7 +133,6 @@ class AttributeController extends Controller
         } catch(PDOException $e)
         {
             return redirect(route('attribute.index'))->with( ['message' => 'Data used - impossible to remove', 'alert' => 'danger']);
-
         }
         $attribute->delete();
         return redirect(route('attribute.index'))->with( ['message' => 'Data removed', 'alert' => 'success']);

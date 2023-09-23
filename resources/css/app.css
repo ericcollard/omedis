@@ -10,10 +10,10 @@ body a {
     text-decoration: none;
 }
 
-button a {
-    text-decoration: none;
+.form-label {
+    font-weight: bold;
 }
 
-table.dataTable a {
-    text-decoration: none;
+.form-text {
+    color:#6366f1;
 }

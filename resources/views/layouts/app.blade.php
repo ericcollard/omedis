@@ -16,6 +16,11 @@
 
         <!-- Styles -->
         @livewireStyles
+        <style>
+            :root {
+                --bs-secondary-color: #91959b;
+            }
+        </style>
     </head>
     <body class="font-sans antialiased">
         <x-banner />
