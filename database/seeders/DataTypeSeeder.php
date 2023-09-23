@@ -19,7 +19,7 @@ class DataTypeSeeder extends Seeder
                 array (
                     'id' => 1,
                     'name' => 'selection',
-                    'comment' => 'Value choosen in a closed list of values',
+                    'comment' => 'Value choosen in a closed list of string values',
                 ),
             1 =>
                 array (
@@ -31,25 +31,25 @@ class DataTypeSeeder extends Seeder
                 array (
                     'id' => 3,
                     'name' => 'boolean',
-                    'comment' => 'Values : True or False',
+                    'comment' => 'Values : 0 (false) or 1 (true)',
                 ),
             3 =>
                 array (
                     'id' => 4,
                     'name' => 'integer',
-                    'comment' => 'numeric value without decimal',
+                    'comment' => 'numeric value without decimal part',
                 ),
             4 =>
                 array (
                     'id' => 5,
                     'name' => 'float',
-                    'comment' => 'numeric value with decimals',
+                    'comment' => 'Numeric value with maximum 4 digits decimal part. Decimal separator: "."',
                 ),
             5 =>
                 array (
                     'id' => 6,
                     'name' => 'money',
-                    'comment' => 'numeric value with 2 decimals representing a price',
+                    'comment' => 'Numeric value with maximum 2 digits decimal part. Decimal separator: "."',
                 ),
             6 =>
                 array (

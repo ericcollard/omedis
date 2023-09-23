@@ -18,35 +18,35 @@ class AttributeListValueSeeder extends Seeder
             0 =>
                 array (
                     'id' => 1,
-                    'name' => '1.0',
-                    'comment' => '1.0 square meter',
+                    'name' => 'black',
+                    'comment' => null,
                     'attribute_list_id' => 1
                 ),
             1 =>
                 array (
                     'id' => 2,
-                    'name' => '1.1',
+                    'name' => 'white',
                     'attribute_list_id' => 1,
                     'comment' => null,
                 ),
             2 =>
                 array (
                     'id' => 3,
-                    'name' => '1.2',
+                    'name' => 'grey',
                     'attribute_list_id' => 1,
                     'comment' => null,
                 ),
             3 =>
                 array (
                     'id' => 4,
-                    'name' => '1.3',
+                    'name' => 'red',
                     'attribute_list_id' => 1,
                     'comment' => null,
                 ),
             4 =>
                 array (
                     'id' => 5,
-                    'name' => 'Black',
+                    'name' => 'windsurf/board/freeride',
                     'attribute_list_id' => 2,
                     'comment' => null,
                 ),

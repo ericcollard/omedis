@@ -18,9 +18,9 @@ class AttributeSeeder extends Seeder
             0 =>
                 array (
                     'id' => 1,
-                    'name' => 'Wholesale Price',
+                    'name' => 'wholesale-price',
                     'required' => true,
-                    'comment' => 'Standard purchase price excuding VAT',
+                    'comment' => 'Wholesale Price : Standard purchase price excuding VAT',
                     'data_type_id' => 6,
                     'unit_id' => 4,
                     'attribute_list_id' => null,
@@ -28,9 +28,9 @@ class AttributeSeeder extends Seeder
             1 =>
                 array (
                     'id' => 2,
-                    'name' => 'Retail Price',
+                    'name' => 'retail-price',
                     'required' => true,
-                    'comment' => 'Recommanded retail price including VAT',
+                    'comment' => 'Retail Price : Recommanded retail price including VAT',
                     'data_type_id' => 6,
                     'unit_id' => 4,
                     'attribute_list_id' => null,
@@ -38,9 +38,9 @@ class AttributeSeeder extends Seeder
             2 =>
                 array (
                     'id' => 3,
-                    'name' => 'Pictures',
+                    'name' => 'pictures',
                     'required' => false,
-                    'comment' => 'Product picture links, semi-column separated',
+                    'comment' => 'Product picture links, semicolon separated',
                     'data_type_id' => 2,
                     'unit_id' => 1,
                     'attribute_list_id' => null,
@@ -48,19 +48,19 @@ class AttributeSeeder extends Seeder
             3 =>
                 array (
                     'id' => 4,
-                    'name' => 'Category',
+                    'name' => 'category',
                     'required' => true,
-                    'comment' => 'Commercial category',
+                    'comment' => 'Commercial category for product classification',
                     'data_type_id' => 1,
-                    'attribute_list_id' => 6,
+                    'attribute_list_id' => 2,
                     'unit_id' => null,
                 ),
             4 =>
                 array (
                     'id' => 5,
-                    'name' => 'EAN',
+                    'name' => 'ean',
                     'required' => true,
-                    'comment' => 'EAN code',
+                    'comment' => 'EAN code : unique identifier for one product variant delivered by GS1 autority or similar',
                     'data_type_id' => 2,
                     'unit_id' => 1,
                     'attribute_list_id' => null,
@@ -68,11 +68,11 @@ class AttributeSeeder extends Seeder
             5 =>
                 array (
                     'id' => 6,
-                    'name' => 'Brand',
+                    'name' => 'brand',
                     'required' => true,
                     'comment' => 'Product brand',
                     'data_type_id' => 1,
-                    'attribute_list_id' => 7,
+                    'attribute_list_id' => 3,
                     'unit_id' => null,
                 ),
         ));

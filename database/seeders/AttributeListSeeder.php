@@ -15,45 +15,21 @@ class AttributeListSeeder extends Seeder
         \DB::table('attribute_lists')->delete();
 
         \DB::table('attribute_lists')->insert(array (
-            0 =>
-                array (
-                    'id' => 1,
-                    'name' => 'Surface (m2)',
-                    'comment' => 'Surface in square meter',
-                ),
             1 =>
                 array (
-                    'id' => 2,
-                    'name' => 'Color',
+                    'id' => 1,
+                    'name' => 'color',
                     'comment' => 'Color name',
                 ),
             2 =>
                 array (
-                    'id' => 3,
-                    'name' => 'Size (m)',
+                    'id' => 2,
+                    'name' => 'Category',
                     'comment' => null,
                 ),
             3 =>
                 array (
-                    'id' => 4,
-                    'name' => 'Size (cm)',
-                    'comment' => null,
-                ),
-            4 =>
-                array (
-                    'id' => 5,
-                    'name' => 'Size (mm)',
-                    'comment' => null,
-                ),
-            5 =>
-                array (
-                    'id' => 6,
-                    'name' => 'Category',
-                    'comment' => null,
-                ),
-            6 =>
-                array (
-                    'id' => 7,
+                    'id' => 3,
                     'name' => 'Brand',
                     'comment' => null,
                 ),

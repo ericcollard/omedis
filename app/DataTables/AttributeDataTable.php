@@ -128,7 +128,7 @@ class AttributeDataTable extends DataTable
         return [
             Column::make('id'),
             Column::make('name'),
-            Column::make('comment'),
+            Column::make('comment')->style('width: 200px'),
             Column::make('required'),
             Column::make([
                 'data' => 'data_type_id',

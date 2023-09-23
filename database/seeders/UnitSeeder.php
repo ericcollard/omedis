@@ -18,31 +18,31 @@ class UnitSeeder extends Seeder
             0 =>
                 array (
                     'id' => 1,
-                    'name' => 'None',
-                    'comment' => 'No unit for string as an exemple',
+                    'name' => 'none',
+                    'comment' => 'No unit, for string as an exemple',
                 ),
             1 =>
                 array (
                     'id' => 2,
-                    'name' => 'Meter',
+                    'name' => 'meter',
                     'comment' => 'Size in meters',
                 ),
             2 =>
                 array (
                     'id' => 3,
-                    'name' => 'Kg',
+                    'name' => 'kg',
                     'comment' => 'Weight in kilograms',
                 ),
             3 =>
                 array (
                     'id' => 4,
-                    'name' => 'Eur',
+                    'name' => 'eur',
                     'comment' => 'Europeen currency',
                 ),
             4 =>
                 array (
                     'id' => 5,
-                    'name' => 'Usd',
+                    'name' => 'usd',
                     'comment' => 'US Dollars currency',
                 ),
         ));
