@@ -45,6 +45,10 @@ class UnitController extends Controller
 
             $data = $request->all();
             $unit = Unit::create($data);
+            // logique
+            $unit->applyLogic();
+            $unit->save();
+
 
         } catch (\Exception $e) {
             // catch exception when trying to insert invalid reply (spam or missing data)
@@ -84,7 +88,8 @@ class UnitController extends Controller
 
         $unit->name = $request->name;
         $unit->comment = $request->comment;
-
+        // logique
+        $unit->applyLogic();
         $unit->save();
 
         return redirect()->route('unit.index')

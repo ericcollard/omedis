@@ -46,6 +46,9 @@ class DataTypeController extends Controller
 
             $data = $request->all();
             $datatype = DataType::create($data);
+            // logique
+            $datatype->applyLogic();
+            $datatype->save();
 
         } catch (\Exception $e) {
             // catch exception when trying to insert invalid reply (spam or missing data)
@@ -86,7 +89,8 @@ class DataTypeController extends Controller
 
         $datatype->name = $request->name;
         $datatype->comment = $request->comment;
-
+        // logique
+        $datatype->applyLogic();
         $datatype->save();
 
         return redirect()->route('datatype.index')

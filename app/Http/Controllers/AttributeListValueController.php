@@ -57,6 +57,11 @@ class AttributeListValueController extends Controller
             $data = $request->all();
             $attributelistvalue = AttributeListValue::create($data);
 
+            // logique
+            $attributelistvalue->applyLogic();
+            $attributelistvalue->save();
+
+
         } catch (\Exception $e) {
             // catch exception when trying to insert invalid reply (spam or missing data)
             abort(403, "Impossible to create new data");
@@ -96,7 +101,8 @@ class AttributeListValueController extends Controller
         $attributeListValue->name = $request->name;
         $attributeListValue->comment = $request->comment;
         $attributeListValue->attribute_list_id = $request->attribute_list_id;
-
+        // logique
+        $attributeListValue->applyLogic();
         $attributeListValue->save();
 
         return redirect()->route('attributelistvalue.index',[$attributelist])

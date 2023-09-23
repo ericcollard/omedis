@@ -4,6 +4,7 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Support\Str;
 
 class Unit extends Model
 {
@@ -13,5 +14,12 @@ class Unit extends Model
         'name',
         'comment'
     ];
+
+    public function applyLogic()
+    {
+
+        // mise en forme nom
+        $this->name = Str::of($this->name)->slug('-');
+    }
 
 }

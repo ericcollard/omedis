@@ -46,6 +46,9 @@ class AttributeListController extends Controller
 
             $data = $request->all();
             $attributelist = AttributeList::create($data);
+            // logique
+            $attributelist->applyLogic();
+            $attributelist->save();
 
         } catch (\Exception $e) {
             // catch exception when trying to insert invalid reply (spam or missing data)
@@ -87,7 +90,8 @@ class AttributeListController extends Controller
 
         $attributeList->name = $request->name;
         $attributeList->comment = $request->comment;
-
+        // logique
+        $attributeList->applyLogic();
         $attributeList->save();
 
         return redirect()->route('attributelist.index')
