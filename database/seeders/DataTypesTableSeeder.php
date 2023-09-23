@@ -1,0 +1,82 @@
+<?php
+
+namespace Database\Seeders;
+
+use Illuminate\Database\Seeder;
+
+class DataTypesTableSeeder extends Seeder
+{
+
+    /**
+     * Auto generated seed file
+     *
+     * @return void
+     */
+    public function run()
+    {
+        
+
+        \DB::table('data_types')->delete();
+        
+        \DB::table('data_types')->insert(array (
+            0 => 
+            array (
+                'id' => 1,
+                'name' => 'selection',
+                'comment' => 'Value choosen in a closed list of string values',
+                'created_at' => NULL,
+                'updated_at' => NULL,
+            ),
+            1 => 
+            array (
+                'id' => 2,
+                'name' => 'string',
+                'comment' => 'Text field without 256 char limit',
+                'created_at' => NULL,
+                'updated_at' => NULL,
+            ),
+            2 => 
+            array (
+                'id' => 3,
+                'name' => 'boolean',
+            'comment' => 'Values : 0 (false) or 1 (true)',
+                'created_at' => NULL,
+                'updated_at' => NULL,
+            ),
+            3 => 
+            array (
+                'id' => 4,
+                'name' => 'integer',
+                'comment' => 'numeric value without decimal part',
+                'created_at' => NULL,
+                'updated_at' => NULL,
+            ),
+            4 => 
+            array (
+                'id' => 5,
+                'name' => 'float',
+                'comment' => 'Numeric value with maximum 4 digits decimal part. Decimal separator: "."',
+                'created_at' => NULL,
+                'updated_at' => NULL,
+            ),
+            5 => 
+            array (
+                'id' => 6,
+                'name' => 'money',
+                'comment' => 'Numeric value with maximum 2 digits decimal part. Decimal separator: "."',
+                'created_at' => NULL,
+                'updated_at' => NULL,
+            ),
+            6 => 
+            array (
+                'id' => 7,
+                'name' => 'text',
+                'comment' => 'Text field without length limit',
+                'created_at' => NULL,
+                'updated_at' => NULL,
+            ),
+        ));
+        
+        
+    }
+}
