@@ -52,7 +52,7 @@
                                 <div class="col-xs-12 col-sm-12 col-md-12 mb-4">
                                     <div class="form-group">
                                         <strong>Comment:</strong>
-                                        <input type="text" name="comment" value="{{ $attributelist->comment }}" class="form-control" placeholder="Comment">
+                                        <textarea rows="4", cols="54" id="comment" name="comment" style="resize:none" class="form-control" placeholder="Comment">{{ $attributelist->comment }}</textarea>
                                         @error('comment')
                                         <div class="alert alert-danger mt-1 mb-1">{{ $message }}</div>
                                         @enderror

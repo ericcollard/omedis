@@ -65,7 +65,7 @@
                                 <div class="col-xs-12 col-sm-12 col-md-12 mb-4">
                                     <div class="form-group">
                                         <label for="comment" class="form-label">Comment</label>
-                                        <input type="text" name="comment" value="{{ old('comment', $attribute->comment) }}" class="form-control" placeholder="Comment"  aria-describedby="commentHelp">
+                                        <textarea rows="4", cols="54" id="comment" name="comment" style="resize:none" class="form-control" placeholder="Comment"  aria-describedby="commentHelp">{{ old('comment', $attribute->comment) }}</textarea>
                                         <div id="commentHelp" class="form-text">Human friendly name for the current attribute, with any comment that may help understanding & usage.</div>
                                         @error('comment')
                                         <div class="alert alert-danger mt-1 mb-1">{{ $message }}</div>
