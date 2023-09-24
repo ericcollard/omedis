@@ -38,11 +38,51 @@ class AttributeDataTable extends DataTable
                 $edit_route = route('attribute.edit',$row->id);
                 $delete_route = route('attribute.destroy',$row->id);
                 $x = '
-                    action
+                    <button type="submit" class="btn btn-warning btn-sm">
+                        <a href="'.$edit_route.'" style="color: inherit">
+                            <i class="fa fa-pencil" aria-hidden="true"></i>
+                                Edit
+                            </a>
+                    </button>
+                    <form class="d-sm-inline-block" action="'.$delete_route.'" method="POST">
+                    '.csrf_field().'
+                    '.method_field("DELETE").'
+                    <button type="submit" class="btn btn-danger btn-sm ml-2"
+                        onclick="return confirm(\'Are You Sure Want to Delete?\')">
+                        <i class="fa fa-trash" aria-hidden="true"></i> Delete
+                        </button>
+                    </form>
                 ';
                 return $x;
             })
-            ->rawColumns(['action']);
+            ->addColumn('data_type_id', function ($attribute) {
+                if ($attribute->datatype)
+                    return "<a href='".route('datatype.edit',$attribute->datatype)."'>".
+                        $attribute->datatype->name."</a>";
+                else
+                    return "";
+            })
+            ->addColumn('attribute_list_id', function ($attribute) {
+                if ($attribute->attributeList)
+                    return "<a href='".route('attributelist.edit',$attribute->attributeList)."'>".
+                        $attribute->attributeList->name."</a>";
+                else
+                    return "";
+            })
+            ->addColumn('unit_id', function ($attribute) {
+                if ($attribute->unit)
+                    return "<a href='".route('unit.edit',$attribute->unit)."'>".
+                        $attribute->unit->name."</a>";
+                else
+                    return "";
+            })
+            ->addColumn('required', function ($attribute) {
+                if ($attribute->required == 0)
+                    return "<div class='text-info'>Optional</div>";
+                else
+                    return "<div class='text-warning'>Required</div>";
+            })
+            ->rawColumns(['action','data_type_id','attribute_list_id','unit_id','required']);
     }
 
     /**
