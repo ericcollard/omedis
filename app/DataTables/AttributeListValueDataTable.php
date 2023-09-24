@@ -30,10 +30,10 @@ class AttributeListValueDataTable extends DataTable
     public function dataTable(QueryBuilder $query): EloquentDataTable
     {
         return (new EloquentDataTable($query))
-            ->addColumn('action', function ($attribute) {
+            ->addColumn('action', function ($attributelistvalue) {
 
-                $edit_route = route('attributelistvalue.edit', [$attribute, $this->attributelist]);
-                $delete_route = route('attributelistvalue.destroy',[$attribute,$this->attributelist]);
+                $edit_route = route('attributelistvalue.edit', [$attributelistvalue, $this->attributelist]);
+                $delete_route = route('attributelistvalue.destroy',[$attributelistvalue,$this->attributelist]);
 
                 $x = '
                     <button type="submit" class="btn btn-warning btn-sm">
@@ -53,10 +53,10 @@ class AttributeListValueDataTable extends DataTable
                 ';
                 return $x;
             })
-            ->addColumn('attribute_list_id', function ($attribute) {
-                if ($attribute->attributeList)
-                    return "<a href='".route('attributelist.edit',$attribute->attributeList)."'>".
-                        $attribute->attributeList->name."</a>";
+            ->addColumn('attribute_list_id', function ($attributelistvalue) {
+                if ($attributelistvalue->attributeList)
+                    return "<a href='".route('attributelist.edit',$attributelistvalue->attributeList)."'>".
+                        $attributelistvalue->attributeList->name."</a>";
                 else
                     return "";
             })
