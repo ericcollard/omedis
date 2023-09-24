@@ -1,1 +1,1 @@
-<img src="{{ url('logo.png') }}" />
+<img src="{{ asset('storage/logo.png') }}" />
