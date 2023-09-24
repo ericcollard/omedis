@@ -14,12 +14,12 @@ class AttributeListsTableSeeder extends Seeder
      */
     public function run()
     {
-
+        
 
         \DB::table('attribute_lists')->delete();
-
+        
         \DB::table('attribute_lists')->insert(array (
-            0 =>
+            0 => 
             array (
                 'id' => 1,
                 'name' => 'color',
@@ -27,15 +27,15 @@ class AttributeListsTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            1 =>
+            1 => 
             array (
                 'id' => 2,
                 'name' => 'category',
-                'comment' => NULL,
+                'comment' => 'Commercial category name',
                 'created_at' => NULL,
-                'updated_at' => NULL,
+                'updated_at' => '2023-09-23 15:49:33',
             ),
-            2 =>
+            2 => 
             array (
                 'id' => 3,
                 'name' => 'Brand',
@@ -44,7 +44,7 @@ class AttributeListsTableSeeder extends Seeder
                 'updated_at' => NULL,
             ),
         ));
-
-
+        
+        
     }
 }

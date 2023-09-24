@@ -30,34 +30,146 @@ class UnitsTableSeeder extends Seeder
             1 => 
             array (
                 'id' => 2,
-                'name' => 'meter',
-                'comment' => 'Size in meters',
+                'name' => 'm',
+            'comment' => 'Meters (SI)',
                 'created_at' => NULL,
-                'updated_at' => NULL,
+                'updated_at' => '2023-09-23 15:54:30',
             ),
             2 => 
             array (
                 'id' => 3,
-                'name' => 'kg',
-                'comment' => 'Weight in kilograms',
+                'name' => 'cm',
+                'comment' => 'Centimeter',
                 'created_at' => NULL,
-                'updated_at' => NULL,
+                'updated_at' => '2023-09-23 15:54:40',
             ),
             3 => 
             array (
                 'id' => 4,
-                'name' => 'eur',
-                'comment' => 'Europeen currency',
+                'name' => 'mm',
+                'comment' => 'Milimeter',
                 'created_at' => NULL,
-                'updated_at' => NULL,
+                'updated_at' => '2023-09-23 15:54:52',
             ),
             4 => 
             array (
                 'id' => 5,
-                'name' => 'usd',
-                'comment' => 'US Dollars currency',
+                'name' => 'kg',
+            'comment' => 'Kilogram (SI)',
                 'created_at' => NULL,
-                'updated_at' => NULL,
+                'updated_at' => '2023-09-23 15:55:10',
+            ),
+            5 => 
+            array (
+                'id' => 6,
+                'name' => 'g',
+            'comment' => 'Gram (1/1000 kg)',
+                'created_at' => '2023-09-23 15:55:29',
+                'updated_at' => '2023-09-23 15:55:29',
+            ),
+            6 => 
+            array (
+                'id' => 7,
+                'name' => 'm2',
+            'comment' => 'Square meter surface (SI)',
+                'created_at' => '2023-09-23 15:56:05',
+                'updated_at' => '2023-09-23 15:56:59',
+            ),
+            7 => 
+            array (
+                'id' => 8,
+                'name' => 'm3',
+            'comment' => 'Cubic meter volume (SI)',
+                'created_at' => '2023-09-23 15:56:23',
+                'updated_at' => '2023-09-23 15:57:07',
+            ),
+            8 => 
+            array (
+                'id' => 9,
+                'name' => 'l',
+            'comment' => 'Liter (volume)',
+                'created_at' => '2023-09-23 15:56:43',
+                'updated_at' => '2023-09-23 15:56:43',
+            ),
+            9 => 
+            array (
+                'id' => 10,
+                'name' => 's',
+            'comment' => 'Second (duration)',
+                'created_at' => '2023-09-23 15:57:39',
+                'updated_at' => '2023-09-23 15:57:39',
+            ),
+            10 => 
+            array (
+                'id' => 11,
+                'name' => 'inch',
+            'comment' => 'Inch (Pouce) : imperial length unit (=2,54cm)',
+                'created_at' => '2023-09-23 16:00:19',
+                'updated_at' => '2023-09-23 16:00:19',
+            ),
+            11 => 
+            array (
+                'id' => 12,
+                'name' => 'ft',
+            'comment' => 'Foot (pied) : impérial length unit (=30,48cm)',
+                'created_at' => '2023-09-23 16:01:13',
+                'updated_at' => '2023-09-23 16:01:13',
+            ),
+            12 => 
+            array (
+                'id' => 13,
+                'name' => 'yd',
+            'comment' => 'Yard : imperial length unit (=91,44cm)',
+                'created_at' => '2023-09-23 16:01:45',
+                'updated_at' => '2023-09-23 16:01:45',
+            ),
+            13 => 
+            array (
+                'id' => 14,
+                'name' => 'mile',
+            'comment' => 'Mile : imperial length unit (=1,609344km)',
+                'created_at' => '2023-09-23 16:02:33',
+                'updated_at' => '2023-09-23 16:02:33',
+            ),
+            14 => 
+            array (
+                'id' => 15,
+                'name' => 'deg',
+            'comment' => 'Degree (angle unit)',
+                'created_at' => '2023-09-23 16:03:44',
+                'updated_at' => '2023-09-23 16:03:44',
+            ),
+            15 => 
+            array (
+                'id' => 16,
+                'name' => 'eur',
+            'comment' => 'Europeen currency (money)',
+                'created_at' => '2023-09-23 16:04:22',
+                'updated_at' => '2023-09-23 16:04:22',
+            ),
+            16 => 
+            array (
+                'id' => 17,
+                'name' => 'usd',
+            'comment' => 'US dollars currency (money)',
+                'created_at' => '2023-09-23 16:04:34',
+                'updated_at' => '2023-09-23 16:04:34',
+            ),
+            17 => 
+            array (
+                'id' => 18,
+                'name' => 'gbp',
+            'comment' => 'Great Britain pound (Livre sterling) : currency',
+                'created_at' => '2023-09-23 16:05:51',
+                'updated_at' => '2023-09-23 16:05:51',
+            ),
+            18 => 
+            array (
+                'id' => 19,
+                'name' => 'chf',
+            'comment' => 'Suiss currency unit (money)',
+                'created_at' => '2023-09-23 16:06:12',
+                'updated_at' => '2023-09-23 16:06:12',
             ),
         ));
         
