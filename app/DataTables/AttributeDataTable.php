@@ -56,13 +56,33 @@ class AttributeDataTable extends DataTable
                 return $x;
             })
             ->addColumn('data_type_id', function ($attribute) {
-                if ($attribute->dataType)
-                    return $attribute->id;
+                if ($attribute->datatype)
+                    return "<a href='".route('datatype.edit',$attribute->dataType)."'>".
+                        $attribute->datatype->name."</a>";
                 else
-                    return $attribute->id;
+                    return "";
             })
-            ->rawColumns(['action','data_type_id']);
-    }
+            ->addColumn('attribute_list_id', function ($attribute) {
+                if ($attribute->attributeList)
+                    return "<a href='".route('attributelist.edit',$attribute->attributeList)."'>".
+                        $attribute->attributeList->name."</a>";
+                else
+                    return "";
+            })
+            ->addColumn('unit_id', function ($attribute) {
+                if ($attribute->unit)
+                    return "<a href='".route('unit.edit',$attribute->unit)."'>".
+                        $attribute->unit->name."</a>";
+                else
+                    return "";
+            })
+            ->addColumn('required', function ($attribute) {
+                if ($attribute->required == 0)
+                    return "<div class='text-info'>Optional</div>";
+                else
+                    return "<div class='text-warning'>Required</div>";
+            })
+            ->rawColumns(['action','data_type_id','attribute_list_id','unit_id','required']);    }
 
     /**
      * Get the query source of dataTable.
