@@ -73,7 +73,7 @@ class AttributeController extends Controller
      */
     public function show(Attribute $attribute)
     {
-        //
+        return $attribute->dataType()->get()->name;
     }
 
     /**
