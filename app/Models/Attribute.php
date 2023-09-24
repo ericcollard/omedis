@@ -22,7 +22,7 @@ class Attribute extends Model
 
     public function dataType(): BelongsTo
     {
-        return $this->belongsTo(Datatype::class);
+        return $this->belongsTo(DataType::class);
     }
 
     public function unit(): BelongsTo
