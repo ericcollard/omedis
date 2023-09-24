@@ -56,7 +56,10 @@ class AttributeDataTable extends DataTable
                 return $x;
             })
             ->addColumn('data_type_id', function ($attribute) {
-                 return $attribute->id;
+                if ($attribute->datatype)
+                    return $attribute->id;
+                else
+                    return $attribute->id;
             })
             ->rawColumns(['action','data_type_id']);
     }
