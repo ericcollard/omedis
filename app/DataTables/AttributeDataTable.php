@@ -56,11 +56,7 @@ class AttributeDataTable extends DataTable
                 return $x;
             })
             ->addColumn('data_type_id', function ($attribute) {
-                if ($attribute->datatype)
-                    return "<a href='".route('datatype.edit',$attribute->datatype)."'>".
-                        $attribute->datatype->name."</a>";
-                else
-                    return "";
+                 return $attribute->id;
             })
             ->rawColumns(['action','data_type_id']);
     }
