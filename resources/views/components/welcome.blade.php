@@ -10,7 +10,7 @@
         securing and making reliable information exchanges. This is increasing efficiency in instore and online
         b2c business.
     </p>
-    <img src="{{ url('omedis-principe.png') }}" class="w-48 h-auto md:w-80 md:h-auto md:rounded-none mx-auto"/>
+    <img src="{{ asset('storage/omedis-principe.png') }}" class="w-48 h-auto md:w-80 md:h-auto md:rounded-none mx-auto"/>
 </div>
 
 <div class="bg-gray-200 dark:bg-gray-800 bg-opacity-25 grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8 p-6 lg:p-8">

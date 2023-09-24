@@ -8,7 +8,7 @@
                     <a href="{{ route('dashboard') }}">
                         <x-application-mark class="block h-9 w-auto" />
                         <x-slot name="logo">
-                            <img src="{{ url('logo.png') }}" />
+                            <img src="{{ asset('storage/logo.png') }}" />
                         </x-slot>
                     </a>
                 </div>
