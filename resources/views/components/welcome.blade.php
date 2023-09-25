@@ -1,16 +1,40 @@
-<div class="p-6 lg:p-8 bg-white dark:bg-gray-800 dark:bg-gradient-to-bl dark:from-gray-700/50 dark:via-transparent border-b border-gray-200 dark:border-gray-700">
+<div class=" grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8 p-6 lg:p-8 bg-white dark:bg-gray-800 dark:bg-gradient-to-bl dark:from-gray-700/50 dark:via-transparent border-b border-gray-200 dark:border-gray-700">
+    <div>
+        <div class="flex items-center">
+            <h1 class="text-xl font-semibold text-gray-900 dark:text-white">
+                Outdoor Market Electronic Data Interchange Standard
+            </h1>
+        </div>
+        <img src="{{ asset('storage/omedis-principe.png') }}" class="w-48 h-auto md:w-80 md:h-auto md:rounded-none mx-auto"/>
+        <p class="mt-4 text-gray-500 dark:text-gray-400 text-sm leading-relaxed">
+            OMEDIS is defining the industry standard in Commercial
+            Product Data Exchange between suppliers and retailers. Thanks to this standard, partners can speed up,
+            securing and making reliable information exchanges. <strong>LET'S SPEAK THE SAME LANGAGE !</strong>
+        </p>
+    </div>
 
-    <h1 class="mt-8 text-2xl font-medium text-gray-900 dark:text-white">
-        Welcome to omEDIs !
-    </h1>
+    <div>
+        <div class="flex items-center">
+            <h2 class="text-xl font-semibold text-gray-900 dark:text-white">
+                Save time, save money, increase business
+            </h2>
+        </div>
 
-    <p class="mt-6 text-gray-500 dark:text-gray-400 leading-relaxed">
-        The Outdoor Market Electronic Data Interchange Standard is defining the industry standard in Commercial
-        Product Data Exchange between suppliers and retailers. Thanks to this standard, partners can speed up,
-        securing and making reliable information exchanges. This is increasing efficiency in instore and online
-        b2c business.
-    </p>
-    <img src="{{ asset('storage/omedis-principe.png') }}" class="w-48 h-auto md:w-80 md:h-auto md:rounded-none mx-auto"/>
+        <ul class="mt-4 text-gray-500 dark:text-gray-400 text-sm leading-relaxed">
+            <li><i class="fa-regular fa-star fa-2xs"></i> Dramatically reduce time sped for Data Entry</li>
+            <li><i class="fa-regular fa-star fa-2xs"></i> Increase data reliability</li>
+            <li><i class="fa-regular fa-star fa-2xs"></i> Reduce price update delay</li>
+            <li><i class="fa-regular fa-star fa-2xs"></i> Enhance product visibility on e-commerce website</li>
+            <li><i class="fa-regular fa-star fa-2xs"></i> Speed up business</li>
+            <li><i class="fa-regular fa-star fa-2xs"></i> Increasing efficiency for both instore and online business</li>
+
+        </ul>
+        <p class="mt-4 text-gray-500 dark:text-gray-400 text-sm leading-relaxed">
+        Spending hours in data entry has definitely no added value. By speed up and securing product data update, let's focuse on service, advice and b2c trade
+        </p>
+    </div>
+
+
 </div>
 
 <div class="bg-gray-200 dark:bg-gray-800 bg-opacity-25 grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8 p-6 lg:p-8">
@@ -20,16 +44,17 @@
                 <path stroke-linecap="round" stroke-linejoin="round" d="M12 6.042A8.967 8.967 0 006 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 016 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 016-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0018 18a8.967 8.967 0 00-6 2.292m0-14.25v14.25" />
             </svg>
             <h2 class="ml-3 text-xl font-semibold text-gray-900 dark:text-white">
-                <a href="https://laravel.com/docs">Documentation</a>
+                <a href="{{ route('documentation') }}">Documentation</a>
             </h2>
         </div>
 
         <p class="mt-4 text-gray-500 dark:text-gray-400 text-sm leading-relaxed">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis auctor eu odio sed viverra. Donec ligula ante, hendrerit sed metus nec, ornare sodales tellus. Vestibulum sit amet luctus lorem. Nunc pretium turpis velit, nec molestie metus commodo laoreet.
+            What is an EDI ? Why EDI for outdoor industry ? Why a standard ? What is OMEDIS ? What is not OMEDIS ? OMEDIS more in details.
+            <br/>The documentation is presenting the OMEDIS concept, the way to use it, the way to collaborate, and the associated tools.
         </p>
 
         <p class="mt-4 text-sm">
-            <a href="https://laravel.com/docs" class="inline-flex items-center font-semibold text-indigo-700 dark:text-indigo-300">
+            <a href="{{ route('documentation') }}" class="inline-flex items-center font-semibold text-indigo-700 dark:text-indigo-300">
                 Explore the documentation
 
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" class="ml-1 w-5 h-5 fill-indigo-500 dark:fill-indigo-200">

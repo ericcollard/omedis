@@ -19,6 +19,7 @@ class AttributeListValueDataTable extends DataTable
         'id',
         'name',
         'comment',
+        'attribute_list_id'
     ];
 
 
