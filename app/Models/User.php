@@ -6,6 +6,7 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
+use Illuminate\Support\Facades\Hash;
 use Laravel\Fortify\TwoFactorAuthenticatable;
 use Laravel\Jetstream\HasProfilePhoto;
 use Laravel\Sanctum\HasApiTokens;
@@ -133,6 +134,17 @@ class User extends Authenticatable
         }
 
         return $roles;
+    }
+
+    // Only accept a valid password and
+    // hash a password before saving
+    public function setPasswordAttribute($password)
+    {
+        if ( $password !== null & $password !== "" )
+        {
+            //$this->attributes['password'] = bcrypt($password);
+            $this->attributes['password'] = Hash::needsRehash($password) ? bcrypt($password) : $password;
+        }
     }
 
     public function path()

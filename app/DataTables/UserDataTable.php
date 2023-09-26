@@ -25,7 +25,28 @@ class UserDataTable extends DataTable
             ->addColumn('id', function ($user) {
                 return '<a href="'. $user->path() .'">'. $user->id .'</a>';
             })
-            ->rawColumns(['id'])
+            ->addColumn('action', function ($row) {
+                $edit_route = route('user.edit',$row->id);
+                $delete_route = route('user.destroy',$row->id);
+                $x = '
+                    <button type="submit" class="btn btn-warning btn-sm">
+                        <a href="'.$edit_route.'" style="color: inherit">
+                            <i class="fa fa-pencil" aria-hidden="true"></i>
+                                Edit
+                            </a>
+                    </button>
+                    <form class="d-sm-inline-block" action="'.$delete_route.'" method="POST">
+                    '.csrf_field().'
+                    '.method_field("DELETE").'
+                    <button type="submit" class="btn btn-danger btn-sm ml-2"
+                        onclick="return confirm(\'Are You Sure Want to Delete?\')">
+                        <i class="fa fa-trash" aria-hidden="true"></i> Delete
+                        </button>
+                    </form>
+                ';
+                return $x;
+            })
+            ->rawColumns(['id','action'])
             ->setRowId('id');
     }
 
@@ -70,6 +91,12 @@ class UserDataTable extends DataTable
             Column::make('email'),
             Column::make('roles'),
             Column::make('phone'),
+            Column::make([
+                'data' => 'action',
+                'title' => '...',
+                'searchable' => false,
+                'sortable' => false,
+            ]),
         ];
     }
 

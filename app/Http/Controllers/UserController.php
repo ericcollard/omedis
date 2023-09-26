@@ -11,6 +11,7 @@ use Illuminate\Contracts\View\Factory;
 use Illuminate\Contracts\View\View;
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Support\Carbon;
+use Illuminate\Support\Facades\URL;
 use Illuminate\Validation\ValidationException;
 
 class UserController extends Controller
@@ -91,7 +92,10 @@ class UserController extends Controller
      */
     public function edit(User $user)
     {
-        return view('user.edit', ['user' => $user]);
+        $action = URL::route('user.update',['user' => $user]);
+        $method = 'PATCH';
+
+        return view('user.edit', compact('action', 'method','user'));
     }
 
     /**
@@ -105,24 +109,27 @@ class UserController extends Controller
     {
         $this->validate(request(), [
                 'name' =>  'required',
-                'email' =>  'required',
             ]
         );
 
         $data = request()->all();
 
+        /*
+        if (!$data['password'])
+        {
+            unset($data['password']);
+        }
+        */
+        //dd($data);
         if (array_key_exists('email_verified_at',$data) )
         {
             $data['email_verified_at'] = Carbon::createFromFormat('d/m/Y', $data['email_verified_at'])->format('Y-m-d');
         }
-        if (array_key_exists('last_login',$data) )
-        {
-            $data['last_login'] = Carbon::createFromFormat('d/m/Y', $data['last_login'])->format('Y-m-d');
-        }
 
         $user->update($data);
 
-        return redirect(route('user.show',['user' => $user]))->with( ['message' => 'Fiche mise à jour', 'alert' => 'success']);
+        return redirect()->route('user.index')
+            ->with(['alert' => 'success', 'message' => 'Data updated' ]);
 
     }
 
