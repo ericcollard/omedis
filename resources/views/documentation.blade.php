@@ -27,7 +27,7 @@
                         <li><i class="fa-regular fa-star fa-2xs"></i> <a href="#p4">What is OMEDIS ?</a></li>
                         <li><i class="fa-regular fa-star fa-2xs"></i> <a href="#p5">What is not OMEDIS ?</a></li>
                         <li><i class="fa-regular fa-star fa-2xs"></i> <a href="#p6">OMEDIS more in details</a></li>
-
+                        <li><i class="fa-regular fa-star fa-2xs"></i> <a href="#p7">Data exchange structure</a></li>
                     </ul>
                 </div>
             </div>
@@ -98,6 +98,22 @@
                         <br/>- A list of datatype (Ex. String, Currency, Integer, Boolean), and the way to represent data for each data type
                         <br/>- Attribute list values : for a certain type of data, values have to be chosen in a closed list of possible values, like colors, categories, brand name, etc.). Omedis is maintaining an up-to-date list of authorized values.
                         <br/>- the list of attributes describing each product and variant, including mandatory and optional attributes
+                    </p>
+
+                    <h2 id="p7" class="mt-4 text-lg font-semibold text-gray-500 dark:text-white">Data exchange structure</h2>
+                    <p class="mt-4 text-gray-500 dark:text-gray-400 text-sm leading-relaxed">
+                        Once defined the contend and standard of data, let's jump into the stucture of exchange
+                        <br/><strong>Data container</strong> : datas can be send by digital file, or REST API
+                        <br/><strong>Data file type</strong> : if using a file, we suggest to use exclusively xml or csv file. We shoud avoid excel native file since contend is highly dependant from regional settings of the source computer.
+                        <br/><strong>CSV file</strong> : if using csv file, please report to the RFC 4180 standard.
+                        The field separator has to be comma, end of line CR/LF, coding UTF-8, any field quoted with double quote.
+                        First line has to be the list of attribute name, conform to OMEDIS attributes name.
+                        <br/><strong>XML file</strong> : if using XML file, please conform to XML 1.0 Specification, using UTF-8 encoding.
+                        <br/><strong>File contend</strong> : when using a digital file, data has to be organised with records (xml record or csv line) and fields.
+                        Each record is representing one product variant. Interpreting program will group variants thanks to their product name.
+                        So different variant have to strictly share the same product name, and be declared in consecutive records.
+                        Each field has top be one of those defined in OMEDIS <a href="{{ route('attribute.index') }}">Attributes</a>.
+                        </br>
                     </p>
                 </div>
 
