@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\Unit;
 use Illuminate\Http\Request;
 use App\DataTables\UnitDataTable;
+use Illuminate\Support\Facades\Gate;
 use PDOException;
 use Illuminate\Support\Facades\URL;
 
@@ -24,6 +25,7 @@ class UnitController extends Controller
      */
     public function create()
     {
+        Gate::authorize('udpate-data');
         $action = URL::route('unit.store');
         $method = 'POST';
 
@@ -36,6 +38,7 @@ class UnitController extends Controller
      */
     public function store(Request $request)
     {
+        Gate::authorize('udpate-data');
         $this->validate(request(), [
                 'name' =>  'required',
             ]
@@ -71,6 +74,8 @@ class UnitController extends Controller
      */
     public function edit(Unit $unit)
     {
+        Gate::authorize('udpate-data');
+
         $action = URL::route('unit.update',['unit' => $unit]);
         $method = 'PATCH';
 
@@ -82,6 +87,7 @@ class UnitController extends Controller
      */
     public function update(Request $request, Unit $unit)
     {
+        Gate::authorize('udpate-data');
         $request->validate([
             'name' => 'required',
         ]);
@@ -101,6 +107,7 @@ class UnitController extends Controller
      */
     public function destroy(Unit $unit)
     {
+        Gate::authorize('udpate-data');
         try{
             $unit->delete();
         } catch(PDOException $e)

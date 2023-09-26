@@ -6,6 +6,7 @@ use App\DataTables\AttributeListValueDataTable;
 use App\Models\AttributeList;
 use Illuminate\Http\Request;
 use App\DataTables\AttributeListDataTable;
+use Illuminate\Support\Facades\Gate;
 use PDOException;
 use Illuminate\Support\Facades\URL;
 
@@ -25,6 +26,7 @@ class AttributeListController extends Controller
      */
     public function create()
     {
+        Gate::authorize('udpate-data');
         $action = URL::route('attributelist.store');
         $method = 'POST';
 
@@ -37,6 +39,7 @@ class AttributeListController extends Controller
      */
     public function store(Request $request)
     {
+        Gate::authorize('udpate-data');
         $this->validate(request(), [
                 'name' =>  'required',
             ]
@@ -71,7 +74,7 @@ class AttributeListController extends Controller
      */
     public function edit(AttributeList $attributelist)
     {
-
+        Gate::authorize('udpate-data');
 
         $action = URL::route('attributelist.update',['attributelist' => $attributelist]);
         $method = 'PATCH';
@@ -84,6 +87,7 @@ class AttributeListController extends Controller
      */
     public function update(Request $request, AttributeList $attributeList)
     {
+        Gate::authorize('udpate-data');
         $request->validate([
             'name' => 'required',
         ]);
@@ -103,6 +107,7 @@ class AttributeListController extends Controller
      */
     public function destroy(AttributeList $attributeList)
     {
+        Gate::authorize('udpate-data');
         try{
             $attributeList->delete();
         } catch(PDOException $e)

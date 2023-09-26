@@ -6,6 +6,7 @@ use App\Http\Requests\StoreDataTypeRequest;
 use App\Http\Requests\UpdateDataTypeRequest;
 use App\Models\DataType;
 use App\DataTables\DataTypeDataTable;
+use Illuminate\Support\Facades\Gate;
 use PDOException;
 use Illuminate\Support\Facades\URL;
 
@@ -25,6 +26,7 @@ class DataTypeController extends Controller
      */
     public function create()
     {
+        Gate::authorize('udpate-data');
         $action = URL::route('datatype.store');
         $method = 'POST';
 
@@ -37,6 +39,7 @@ class DataTypeController extends Controller
      */
     public function store(StoreDataTypeRequest $request)
     {
+        Gate::authorize('udpate-data');
         $this->validate(request(), [
                 'name' =>  'required',
             ]
@@ -72,6 +75,7 @@ class DataTypeController extends Controller
      */
     public function edit(DataType $datatype)
     {
+        Gate::authorize('udpate-data');
         $action = URL::route('datatype.update',['datatype' => $datatype]);
         $method = 'PATCH';
 
@@ -83,6 +87,7 @@ class DataTypeController extends Controller
      */
     public function update(UpdateDataTypeRequest $request, DataType $datatype)
     {
+        Gate::authorize('udpate-data');
         $request->validate([
             'name' => 'required',
         ]);
@@ -102,6 +107,7 @@ class DataTypeController extends Controller
      */
     public function destroy(DataType $datatype)
     {
+        Gate::authorize('udpate-data');
         try{
             $datatype->delete();
         } catch(PDOException $e)

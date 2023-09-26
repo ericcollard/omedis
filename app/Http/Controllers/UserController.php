@@ -11,6 +11,7 @@ use Illuminate\Contracts\View\Factory;
 use Illuminate\Contracts\View\View;
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Support\Carbon;
+use Illuminate\Support\Facades\Gate;
 use Illuminate\Support\Facades\URL;
 use Illuminate\Validation\ValidationException;
 
@@ -41,7 +42,7 @@ class UserController extends Controller
      */
     public function emails()
     {
-
+        Gate::authorize('udpate-user');
         if (Auth()->user()->cannot('seeEmails', Auth()->user())) {
             abort(403);
         }
@@ -61,6 +62,7 @@ class UserController extends Controller
      */
     public function storeAvatar(Request $request, User $user): RedirectResponse
     {
+        Gate::authorize('udpate-user');
         $this->validate($request, [
             'avatar' => ['required', 'image', 'dimensions:max_width=500,max_height=500']
         ]);
@@ -92,6 +94,7 @@ class UserController extends Controller
      */
     public function edit(User $user)
     {
+        Gate::authorize('udpate-user');
         $action = URL::route('user.update',['user' => $user]);
         $method = 'PATCH';
 
@@ -107,6 +110,7 @@ class UserController extends Controller
      */
     public function update(User $user): RedirectResponse
     {
+        Gate::authorize('udpate-user');
         $this->validate(request(), [
                 'name' =>  'required',
             ]
@@ -142,6 +146,7 @@ class UserController extends Controller
      */
     public function destroy(User $user): RedirectResponse
     {
+        Gate::authorize('udpate-user');
         $user->delete();
         return redirect(route('user.list'))->with( ['message' => 'Fiche supprimée', 'alert' => 'success']);
     }

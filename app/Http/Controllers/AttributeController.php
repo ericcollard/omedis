@@ -8,6 +8,7 @@ use App\Models\DataType;
 use App\Models\Unit;
 use Illuminate\Http\Request;
 use App\DataTables\AttributeDataTable;
+use Illuminate\Support\Facades\Gate;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Support\Str;
 use PDOException;
@@ -29,6 +30,7 @@ class AttributeController extends Controller
      */
     public function create()
     {
+        Gate::authorize('udpate-data');
         $action = URL::route('attribute.store');
         $method = 'POST';
 
@@ -45,6 +47,7 @@ class AttributeController extends Controller
      */
     public function store(Request $request)
     {
+        Gate::authorize('udpate-data');
         $this->validate(request(), [
                 'name' => 'required',
                 'data_type_id' =>  'required',
@@ -81,6 +84,7 @@ class AttributeController extends Controller
      */
     public function edit(Attribute $attribute)
     {
+        Gate::authorize('udpate-data');
         $action = URL::route('attribute.update',['attribute' => $attribute]);
         $method = 'PATCH';
 
@@ -95,7 +99,7 @@ class AttributeController extends Controller
      */
     public function update(Request $request, Attribute $attribute)
     {
-
+        Gate::authorize('udpate-data');
         $request->validate([
             'name' => 'required',
             'data_type_id' =>  'required',
@@ -128,6 +132,7 @@ class AttributeController extends Controller
      */
     public function destroy(Attribute $attribute)
     {
+        Gate::authorize('udpate-data');
         try{
             $attribute->delete();
         } catch(PDOException $e)

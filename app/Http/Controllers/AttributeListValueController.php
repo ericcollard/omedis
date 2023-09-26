@@ -6,6 +6,7 @@ use App\Models\AttributeList;
 use App\Models\AttributeListValue;
 use Illuminate\Http\Request;
 use App\DataTables\AttributeListValueDataTable;
+use Illuminate\Support\Facades\Gate;
 use PDOException;
 use Illuminate\Support\Facades\URL;
 
@@ -27,6 +28,7 @@ class AttributeListValueController extends Controller
      */
     public function create($attributelist = null)
     {
+        Gate::authorize('udpate-data');
         $action = URL::route('attributelistvalue.store',['attributelist' => $attributelist]);
         $actioncancel = URL::route('attributelistvalue.index',['attributelist' => $attributelist]);
         $method = 'POST';
@@ -46,6 +48,7 @@ class AttributeListValueController extends Controller
      */
     public function store(Request $request,$attributelist = null)
     {
+        Gate::authorize('udpate-data');
         $this->validate(request(), [
                 'name' =>  'required',
                 'attribute_list_id' =>  'required',
@@ -82,6 +85,7 @@ class AttributeListValueController extends Controller
      */
     public function edit(AttributeListValue $attributelistvalue,$attributelist = null)
     {
+        Gate::authorize('udpate-data');
         $action = URL::route('attributelistvalue.update',['attributelistvalue' => $attributelistvalue,'attributelist' => $attributelist]);
         $actioncancel = URL::route('attributelistvalue.index',['attributelist' => $attributelist]);
         $method = 'PATCH';
@@ -94,6 +98,7 @@ class AttributeListValueController extends Controller
      */
     public function update(Request $request, AttributeListValue $attributeListValue,$attributelist = null)
     {
+        Gate::authorize('udpate-data');
         $request->validate([
             'name' => 'required',
             'attribute_list_id' =>  'required',
@@ -114,6 +119,7 @@ class AttributeListValueController extends Controller
      */
     public function destroy(AttributeListValue $attributeListValue,$attributelist = null)
     {
+        Gate::authorize('udpate-data');
         try{
             $attributeListValue->delete();
         } catch(PDOException $e)
