@@ -19,7 +19,7 @@ use App\Http\Controllers\AttributeListController;
 |
 */
 
-Route::get('/', function () {  return view('welcome');  });
+Route::get('/', function () {   return view('dashboard');  })->name('home');
 Route::get('/dashboard', function () {   return view('dashboard');  })->name('dashboard');
 Route::get('/documentation', function () {   return view('documentation');  })->name('documentation');
 
