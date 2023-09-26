@@ -54,7 +54,7 @@ Route::get('/attribute/{attribute}', [AttributeController::class, 'show'])->name
 Route::get('/attribute/{attribute}/edit', [AttributeController::class, 'edit'])->name('attribute.edit')->middleware(['auth:sanctum',config('jetstream.auth_session'),'verified',]);
 Route::patch('/attribute/{attribute}',[AttributeController::class, 'update'])->name('attribute.update')->middleware(['auth:sanctum',config('jetstream.auth_session'),'verified',]);
 Route::delete('/attribute/{attribute}',[AttributeController::class, 'destroy'])->name('attribute.destroy')->middleware(['auth:sanctum',config('jetstream.auth_session'),'verified',]);
-Route::post('/attribute',[AttributeController::class, 'store'])->name('unit.store')->middleware(['auth:sanctum',config('jetstream.auth_session'),'verified',]);
+Route::post('/attribute',[AttributeController::class, 'store'])->name('attribute.store')->middleware(['auth:sanctum',config('jetstream.auth_session'),'verified',]);
 
 Route::get('/attributelist', [AttributeListController::class, 'index'])->name('attributelist.index');
 Route::get('/attributelist/create', [AttributeListController::class, 'create'])->name('attributelist.create')->middleware(['auth:sanctum',config('jetstream.auth_session'),'verified',]);
@@ -62,7 +62,7 @@ Route::get('/attributelist/{attributelist}', [AttributeListController::class, 's
 Route::get('/attributelist/{attributelist}/edit', [AttributeListController::class, 'edit'])->name('attributelist.edit')->middleware(['auth:sanctum',config('jetstream.auth_session'),'verified',]);
 Route::patch('/attributelist/{attributelist}',[AttributeListController::class, 'update'])->name('attributelist.update')->middleware(['auth:sanctum',config('jetstream.auth_session'),'verified',]);
 Route::delete('/attributelist/{attributelist}',[AttributeListController::class, 'destroy'])->name('attributelist.destroy')->middleware(['auth:sanctum',config('jetstream.auth_session'),'verified',]);
-Route::post('/attributelist',[AttributeListController::class, 'store'])->name('unit.store')->middleware(['auth:sanctum',config('jetstream.auth_session'),'verified',]);
+Route::post('/attributelist',[AttributeListController::class, 'store'])->name('attributelist.store')->middleware(['auth:sanctum',config('jetstream.auth_session'),'verified',]);
 
 // attributelistvalue avec paramètre optionnel pour transmettre le contexte
 Route::get('attributelistvalue/{attributelistvalue}/edit/{attributelist?}', [AttributeListValueController::class, 'edit'])->name('attributelistvalue.edit')->middleware(['auth:sanctum',config('jetstream.auth_session'),'verified',]);
