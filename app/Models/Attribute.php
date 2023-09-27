@@ -8,7 +8,7 @@ use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Str;
 
-class Attribute extends Model
+class Attribute extends Mymodel
 {
     use HasFactory;
 
@@ -21,22 +21,6 @@ class Attribute extends Model
         'user_id',
         'data_type_id'
     ];
-
-    public static function boot()
-    {
-        parent::boot();
-        static::creating(function($model)
-        {
-            $user = Auth::user();
-            $model->user_id = $user->getAuthIdentifier();
-        });
-        static::updating(function($model)
-        {
-            $user = Auth::user();
-            $model->user_id = $user->getAuthIdentifier();
-        });
-    }
-
 
     public function user(): BelongsTo
     {

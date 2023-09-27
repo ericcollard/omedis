@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\HistoryController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\DataTypeController;
@@ -73,3 +74,4 @@ Route::patch('attributelistvalue/{attributelistvalue}/{attributelist?}',[Attribu
 Route::post('attributelistvalue/{attributelist?}',[AttributeListValueController::class, 'store'])->name('attributelistvalue.store')->middleware(['auth:sanctum',config('jetstream.auth_session'),'verified',]);
 Route::delete('attributelistvalue/{attributelistvalue}/{attributelist?}',[AttributeListValueController::class, 'destroy'])->name('attributelistvalue.destroy')->middleware(['auth:sanctum',config('jetstream.auth_session'),'verified',]);
 
+Route::get('history', [HistoryController::class, 'index'])->name('history.index');

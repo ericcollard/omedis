@@ -8,7 +8,7 @@ use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Str;
 
-class AttributeListValue extends Model
+class AttributeListValue extends Mymodel
 {
     use HasFactory;
 

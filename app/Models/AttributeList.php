@@ -9,7 +9,7 @@ use Illuminate\Database\Eloquent\Relations\HasMany;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Str;
 
-class AttributeList extends Model
+class AttributeList extends Mymodel
 {
     use HasFactory;
     protected $fillable = [

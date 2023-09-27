@@ -8,7 +8,7 @@ use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Str;
 
-class DataType extends Model
+class DataType extends Mymodel
 {
     use HasFactory;
 

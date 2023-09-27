@@ -14,69 +14,76 @@ class DataTypesTableSeeder extends Seeder
      */
     public function run()
     {
-
+        
 
         \DB::table('data_types')->delete();
-
+        
         \DB::table('data_types')->insert(array (
-            0 =>
+            0 => 
             array (
                 'id' => 1,
                 'name' => 'selection',
                 'comment' => 'Value choosen in a closed list of string values',
+                'user_id' => 1,
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            1 =>
+            1 => 
             array (
                 'id' => 2,
                 'name' => 'string',
                 'comment' => 'Text field without 256 char limit. Utf-8 encoded characters.',
+                'user_id' => 1,
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            2 =>
+            2 => 
             array (
                 'id' => 3,
                 'name' => 'boolean',
             'comment' => 'Values : 0 (false) or 1 (true). Encoded as integer numeric value',
+                'user_id' => 1,
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            3 =>
+            3 => 
             array (
                 'id' => 4,
                 'name' => 'integer',
                 'comment' => 'Positive numeric value without decimal part. Max : 2147483647',
+                'user_id' => 1,
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            4 =>
+            4 => 
             array (
                 'id' => 5,
                 'name' => 'float',
                 'comment' => 'Numeric value with maximum 4 digits decimal part. Decimal separator: ".", no thousand separator. Ex. "123456.45"',
+                'user_id' => 1,
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            5 =>
+            5 => 
             array (
                 'id' => 6,
                 'name' => 'money',
                 'comment' => 'Numeric value with maximum 2 digits decimal part. Decimal separator: ".", no thousand separator.Ex. "123.45"',
+                'user_id' => 1,
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            6 =>
+            6 => 
             array (
                 'id' => 7,
                 'name' => 'text',
                 'comment' => 'Text field without length limit. Utf-8 encoded characters.',
+                'user_id' => 1,
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
         ));
-
-
+        
+        
     }
 }

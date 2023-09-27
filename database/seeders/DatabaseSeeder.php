@@ -7,6 +7,8 @@ use Illuminate\Database\Seeder;
 
 class DatabaseSeeder extends Seeder
 {
+
+    //php artisan iseed users,data_types,units,attribute_lists,attribute_list_values,attributes,histories --force --clean
     /**
      * Seed the application's database.
      */
@@ -19,5 +21,6 @@ class DatabaseSeeder extends Seeder
         $this->call(AttributeListsTableSeeder::class);
         $this->call(AttributeListValuesTableSeeder::class);
         $this->call(AttributesTableSeeder::class);
+        $this->call(HistoriesTableSeeder::class);
     }
 }
