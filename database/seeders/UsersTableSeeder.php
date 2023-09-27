@@ -65,6 +65,29 @@ class UsersTableSeeder extends Seeder
                 'created_at' => '2022-06-01 02:00:00',
                 'updated_at' => '2022-07-21 16:35:50',
             ),
+            2 => 
+            array (
+                'id' => 3,
+                'name' => 'Damien GOSSELIN',
+                'email' => 'damien@f-onekites.com',
+                'email_verified_at' => '2022-06-01 00:00:00',
+                'password' => '$2y$10$WXg23nzsPfu2ootQqVxt1uAngBAglxWWVYT0mcfC5tc4vESfDWx12',
+                'two_factor_secret' => NULL,
+                'two_factor_recovery_codes' => NULL,
+                'two_factor_confirmed_at' => NULL,
+                'remember_token' => NULL,
+                'current_team_id' => NULL,
+                'profile_photo_path' => NULL,
+                'roles' => '["ROLE_CONTRIBUTOR"]',
+                'adress' => NULL,
+                'postal_code' => NULL,
+                'city' => NULL,
+                'phone' => '04 67 99 99 33',
+                'last_login' => '2022-06-01 02:00:00',
+                'comment' => NULL,
+                'created_at' => '2022-06-01 02:00:00',
+                'updated_at' => '2023-09-27 15:25:16',
+            ),
         ));
         
         
