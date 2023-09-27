@@ -77,7 +77,7 @@ class AttributeListValueController extends Controller
      */
     public function show(AttributeListValue $attributeListValue)
     {
-        //
+        return view('attributelistvalue.show', compact('attributeListValue'));
     }
 
     /**

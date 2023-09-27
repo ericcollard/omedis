@@ -57,21 +57,21 @@ class AttributeDataTable extends DataTable
             })
             ->addColumn('data_type_id', function ($attribute) {
                 if ($attribute->datatype)
-                    return "<a href='".route('datatype.edit',$attribute->dataType)."'>".
+                    return "<a href='".route('datatype.show',$attribute->dataType)."'>".
                         $attribute->datatype->name."</a>";
                 else
                     return "";
             })
             ->addColumn('attribute_list_id', function ($attribute) {
                 if ($attribute->attributeList)
-                    return "<a href='".route('attributelist.edit',$attribute->attributeList)."'>".
+                    return "<a href='".route('attributelist.show',$attribute->attributeList)."'>".
                         $attribute->attributeList->name."</a>";
                 else
                     return "";
             })
             ->addColumn('unit_id', function ($attribute) {
                 if ($attribute->unit)
-                    return "<a href='".route('unit.edit',$attribute->unit)."'>".
+                    return "<a href='".route('unit.show',$attribute->unit)."'>".
                         $attribute->unit->name."</a>";
                 else
                     return "";

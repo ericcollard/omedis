@@ -16,6 +16,7 @@ return new class extends Migration
             $table->string('name');
             $table->text('comment')->nullable();
             $table->foreignId('attribute_list_id')->constrained('attribute_lists')->cascadeOnDelete();
+            $table->integer('user_id')->default(1);
             $table->timestamps();
         });
     }

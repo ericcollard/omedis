@@ -65,6 +65,7 @@ Route::delete('/attributelist/{attributelist}',[AttributeListController::class, 
 Route::post('/attributelist',[AttributeListController::class, 'store'])->name('attributelist.store')->middleware(['auth:sanctum',config('jetstream.auth_session'),'verified',]);
 
 // attributelistvalue avec paramètre optionnel pour transmettre le contexte
+Route::get('attributelistvalue/show/{attributelistvalue}', [AttributeListValueController::class, 'show'])->name('attributelistvalue.show');
 Route::get('attributelistvalue/{attributelistvalue}/edit/{attributelist?}', [AttributeListValueController::class, 'edit'])->name('attributelistvalue.edit')->middleware(['auth:sanctum',config('jetstream.auth_session'),'verified',]);
 Route::get('attributelistvalue/create/{attributelist?}', [AttributeListValueController::class, 'create'])->name('attributelistvalue.create')->middleware(['auth:sanctum',config('jetstream.auth_session'),'verified',]);
 Route::get('attributelistvalue/{attributelist?}', [AttributeListValueController::class, 'index'])->name('attributelistvalue.index');

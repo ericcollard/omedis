@@ -5,6 +5,7 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Str;
 
 class Attribute extends Model
@@ -17,8 +18,30 @@ class Attribute extends Model
         'required',
         'attribute_list_id',
         'unit_id',
+        'user_id',
         'data_type_id'
     ];
+
+    public static function boot()
+    {
+        parent::boot();
+        static::creating(function($model)
+        {
+            $user = Auth::user();
+            $model->user_id = $user->getAuthIdentifier();
+        });
+        static::updating(function($model)
+        {
+            $user = Auth::user();
+            $model->user_id = $user->getAuthIdentifier();
+        });
+    }
+
+
+    public function user(): BelongsTo
+    {
+        return $this->belongsTo(User::class);
+    }
 
     public function dataType(): BelongsTo
     {

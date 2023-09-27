@@ -115,6 +115,14 @@
                         Each field has top be one of those defined in OMEDIS <a href="{{ route('attribute.index') }}">Attributes</a>.
                         </br>
                     </p>
+
+                    <h2 id="p6" class="mt-4 text-lg font-semibold text-gray-500 dark:text-white">How to read OMEDIS standard</h2>
+                    <p class="mt-4 text-gray-500 dark:text-gray-400 text-sm leading-relaxed">
+                        Each product variant (corresponding to one EAN code) is represented by one xml record or one csv line
+                        containing :
+                        <br/> > a set of attribute listed in the <a href="{{ route('attribute.index') }}">Attribute repository</a>.
+                        Some of them are required (can't be omitted) like <a href="{{ route('attribute.show',1) }}">name</a>, other are optionnal
+                    </p>
                 </div>
 
             </div>

@@ -66,7 +66,7 @@ class AttributeListController extends Controller
      */
     public function show(AttributeList $attributeList)
     {
-        dd($attributeList->getValuesSample());
+        return view('attributelist.show', compact('attributeList'));
     }
 
     /**
