@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\HistoryController;
+use App\Http\Controllers\VariantController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\DataTypeController;
@@ -78,5 +79,8 @@ Route::get('attributelistvalue/{attributelist?}', [AttributeListValueController:
 Route::patch('attributelistvalue/{attributelistvalue}/{attributelist?}',[AttributeListValueController::class, 'update'])->name('attributelistvalue.update')->middleware(['auth:sanctum',config('jetstream.auth_session'),'verified',]);
 Route::post('attributelistvalue/{attributelist?}',[AttributeListValueController::class, 'store'])->name('attributelistvalue.store')->middleware(['auth:sanctum',config('jetstream.auth_session'),'verified',]);
 Route::delete('attributelistvalue/{attributelistvalue}/{attributelist?}',[AttributeListValueController::class, 'destroy'])->name('attributelistvalue.destroy')->middleware(['auth:sanctum',config('jetstream.auth_session'),'verified',]);
+
+Route::get('variant', [VariantController::class, 'index'])->name('variant.index');
+Route::get('variant/{variant}', [VariantController::class, 'show'])->name('variant.show');
 
 Route::get('history', [HistoryController::class, 'index'])->name('history.index');

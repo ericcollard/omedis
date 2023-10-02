@@ -21,66 +21,66 @@ class DataTypesTableSeeder extends Seeder
         \DB::table('data_types')->insert(array (
             0 => 
             array (
-                'comment' => 'Value choosen in a closed list of string values',
-                'created_at' => NULL,
                 'id' => 1,
                 'name' => 'selection',
-                'updated_at' => NULL,
+                'comment' => 'Value choosen in a closed list of string values',
                 'user_id' => 1,
+                'created_at' => NULL,
+                'updated_at' => NULL,
             ),
             1 => 
             array (
-                'comment' => 'Text field without 256 char limit. Utf-8 encoded characters.',
-                'created_at' => NULL,
                 'id' => 2,
                 'name' => 'string',
-                'updated_at' => NULL,
+                'comment' => 'Text field without 256 char limit. Utf-8 encoded characters.',
                 'user_id' => 1,
+                'created_at' => NULL,
+                'updated_at' => NULL,
             ),
             2 => 
             array (
-            'comment' => 'Values : 0 (false) or 1 (true). Encoded as integer numeric value',
-                'created_at' => NULL,
                 'id' => 3,
                 'name' => 'boolean',
-                'updated_at' => NULL,
+            'comment' => 'Values : 0 (false) or 1 (true). Encoded as integer numeric value',
                 'user_id' => 1,
+                'created_at' => NULL,
+                'updated_at' => NULL,
             ),
             3 => 
             array (
-                'comment' => 'Positive numeric value without decimal part. Max : 2147483647',
-                'created_at' => NULL,
                 'id' => 4,
                 'name' => 'integer',
-                'updated_at' => NULL,
+                'comment' => 'Positive numeric value without decimal part. Max : 2147483647',
                 'user_id' => 1,
+                'created_at' => NULL,
+                'updated_at' => NULL,
             ),
             4 => 
             array (
-                'comment' => 'Numeric value with maximum 4 digits decimal part. Decimal separator: ".", no thousand separator. Ex. "123456.45"',
-                'created_at' => NULL,
                 'id' => 5,
                 'name' => 'float',
-                'updated_at' => NULL,
+                'comment' => 'Numeric value with maximum 4 digits decimal part. Decimal separator: ".", no thousand separator. Ex. "123456.45"',
                 'user_id' => 1,
+                'created_at' => NULL,
+                'updated_at' => NULL,
             ),
             5 => 
             array (
-                'comment' => 'Numeric value with maximum 2 digits decimal part. Decimal separator: ".", no thousand separator.Ex. "123.45"',
-                'created_at' => NULL,
                 'id' => 6,
                 'name' => 'money',
-                'updated_at' => NULL,
+                'comment' => 'Numeric value with maximum 2 digits decimal part. Decimal separator: ".", no thousand separator.Ex. "123.45"',
                 'user_id' => 1,
+                'created_at' => NULL,
+                'updated_at' => NULL,
             ),
             6 => 
             array (
-                'comment' => 'Text field without length limit. Utf-8 encoded characters.',
-                'created_at' => NULL,
                 'id' => 7,
                 'name' => 'text',
-                'updated_at' => NULL,
+                'comment' => 'Text field without length limit. Utf-8 encoded characters.',
                 'user_id' => 1,
+                'created_at' => NULL,
+                'updated_at' => NULL,
             ),
         ));
         

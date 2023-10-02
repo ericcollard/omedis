@@ -21,66 +21,66 @@ class AttributeListsTableSeeder extends Seeder
         \DB::table('attribute_lists')->insert(array (
             0 => 
             array (
-                'comment' => 'Color name',
-                'created_at' => NULL,
                 'id' => 1,
                 'name' => 'color',
-                'updated_at' => NULL,
+                'comment' => 'Color name',
                 'user_id' => 1,
+                'created_at' => NULL,
+                'updated_at' => NULL,
             ),
             1 => 
             array (
-                'comment' => 'Commercial category name',
-                'created_at' => NULL,
                 'id' => 2,
                 'name' => 'category',
-                'updated_at' => '2023-09-23 15:49:33',
+                'comment' => 'Commercial category name',
                 'user_id' => 1,
+                'created_at' => NULL,
+                'updated_at' => '2023-09-23 15:49:33',
             ),
             2 => 
             array (
-                'comment' => NULL,
-                'created_at' => NULL,
                 'id' => 3,
                 'name' => 'brand',
-                'updated_at' => NULL,
+                'comment' => NULL,
                 'user_id' => 1,
+                'created_at' => NULL,
+                'updated_at' => NULL,
             ),
             3 => 
             array (
-                'comment' => 'Clothing size system based on S/M/L',
-                'created_at' => NULL,
                 'id' => 4,
                 'name' => 'size-int',
-                'updated_at' => NULL,
+                'comment' => 'Clothing size system based on S/M/L',
                 'user_id' => 1,
+                'created_at' => NULL,
+                'updated_at' => NULL,
             ),
             4 => 
             array (
-            'comment' => 'Clothing size system based on EU system (36/38/40/42)',
-                'created_at' => NULL,
                 'id' => 5,
                 'name' => 'size-eu',
-                'updated_at' => NULL,
+            'comment' => 'Clothing size system based on EU system (36/38/40/42)',
                 'user_id' => 1,
+                'created_at' => NULL,
+                'updated_at' => NULL,
             ),
             5 => 
             array (
-            'comment' => 'Clothing size system based on UK system (2/4/6/8)',
-                'created_at' => NULL,
                 'id' => 6,
                 'name' => 'size-uk',
-                'updated_at' => NULL,
+            'comment' => 'Clothing size system based on UK system (2/4/6/8)',
                 'user_id' => 1,
+                'created_at' => NULL,
+                'updated_at' => NULL,
             ),
             6 => 
             array (
-            'comment' => 'Clothing size system based on US system (2/4/6/8)',
-                'created_at' => NULL,
                 'id' => 7,
                 'name' => 'size-us',
-                'updated_at' => NULL,
+            'comment' => 'Clothing size system based on US system (2/4/6/8)',
                 'user_id' => 1,
+                'created_at' => NULL,
+                'updated_at' => NULL,
             ),
         ));
         
