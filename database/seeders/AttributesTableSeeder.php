@@ -321,16 +321,14 @@ class AttributesTableSeeder extends Seeder
             23 => 
             array (
                 'attribute_list_id' => NULL,
-                'comment' => 'Size in Feets - Variant index attribute
-You must use the symbol “prime” which is a single quotation mark “ ‘ “ after feet part ... even when there is no inches part.
-Sample : 5\'6 , 5\'4, 5\'2, ... 5\', 4\'9',
+                'comment' => 'Size in Feets - Variant index attribute',
                 'created_at' => '2023-09-28 21:22:35',
                 'data_type_id' => 2,
                 'id' => 24,
                 'name' => 'size-ft-var',
                 'required' => 0,
                 'unit_id' => 12,
-                'updated_at' => '2023-10-02 15:26:44',
+                'updated_at' => '2023-10-02 18:48:26',
                 'user_id' => 2,
             ),
             24 => 

@@ -22,8 +22,11 @@
                             <p><a href="{{ URL::to( 'storage/sample.csv')  }}" target="_blank">Download the sample file</a></p>
                         </h3>
 
-                        <h4>Errors</h4>
-                        <p>{!! $errors !!}</p>
+                        @if ($errors != "")
+                            <h4>Errors detected during file reading :</h4>
+                            <p>{!! $errors !!}</p>
+                        @endif
+
                     </div>
                     <div class="card-body">
                         @foreach ($lines as $line_key => $line)

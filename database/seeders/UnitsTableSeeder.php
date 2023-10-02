@@ -120,12 +120,14 @@ class UnitsTableSeeder extends Seeder
             ),
             11 => 
             array (
-            'comment' => 'Foot (pied) : impérial length unit (=30,48cm)',
+            'comment' => 'Foot (pied) : impérial length unit (=30,48cm)
+You must use the symbol “prime” which is a single quotation mark “ ‘ “ after feet part ... even when there is no inches part.
+Sample : 5\'6 , 5\'4, 5\'2, ... 5\', 4\'9',
                 'created_at' => '2023-09-23 16:01:13',
                 'id' => 12,
                 'name' => 'ft',
-                'updated_at' => '2023-09-23 16:01:13',
-                'user_id' => 1,
+                'updated_at' => '2023-10-02 18:48:40',
+                'user_id' => 2,
             ),
             12 => 
             array (

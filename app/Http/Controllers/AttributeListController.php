@@ -164,6 +164,32 @@ class AttributeListController extends Controller
         }
     }
 
+    public function categories()
+    {
+        $row = 1;
+        $categories = [];
+        if (($handle = fopen('../storage/app/public/categories.csv','r')) !== FALSE) {
+            while (($data = fgetcsv($handle, 1000, ",")) !== FALSE) {
+                $num = count($data);
+                $categories[] = $data[0];
+            }
+            fclose($handle);
+        }
+        foreach  ($categories as $category) {
+            echo "<p>".$category.' // '.Str::of($category)->slug('-').'</p>';
+
+
+            DB::table('attribute_list_values')->insert(
+                array('name' => Str::of($category)->slug('-'),
+                    'comment' => Str::of($category)->slug(' '),
+                    'attribute_list_id' => 2,
+                    'user_id' => 1)
+            );
+
+
+        }
+    }
+
     public function colors()
     {
 
