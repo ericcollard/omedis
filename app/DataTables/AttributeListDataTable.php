@@ -52,7 +52,14 @@ class AttributeListDataTable extends DataTable
             ->addColumn('values', function ($attributeList) {
                 return $attributeList->getValuesCount()." values ( ".$attributeList->getValuesSample()." )";
             })
-            ->rawColumns(['action']);
+            ->addColumn('name', function ($attributeList) {
+                if ($attributeList->name)
+                    return "<a href='".route('attributelist.show',$attributeList)."'>".
+                        $attributeList->name."</a>";
+                else
+                    return "";
+            })
+            ->rawColumns(['action','name']);
     }
 
     /**

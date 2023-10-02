@@ -40,7 +40,11 @@
                     <div class="card-body">
                         <ul>
                             @forelse($attributeList->attributeListValues as $value)
-                                <li>{{ $value->id }} - {{ $value->name }}</li>
+                                <li>{{ $value->id }} - {{ $value->name }} - {{ $value->comment }}
+                                    @if ($value->hex)
+                                        {!! $value->hex !!}
+                                        @endif
+                                </li>
                             @empty
                                 No data
                             @endforelse
@@ -48,6 +52,7 @@
 
                     </div>
                 </div>
+
 
             </div>
 

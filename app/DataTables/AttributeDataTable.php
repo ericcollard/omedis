@@ -36,12 +36,19 @@ class AttributeDataTable extends DataTable
         return (new EloquentDataTable($query))
             ->addColumn('action', function ($row) {
                 $edit_route = route('attribute.edit',$row->id);
+                $duplic_route = route('attribute.duplicate',$row->id);
                 $delete_route = route('attribute.destroy',$row->id);
                 $x = '
                     <button type="submit" class="btn btn-warning btn-sm">
                         <a href="'.$edit_route.'" style="color: inherit">
                             <i class="fa fa-pencil" aria-hidden="true"></i>
                                 Edit
+                            </a>
+                    </button>
+                    <button type="submit" class="btn btn-warning btn-sm">
+                        <a href="'.$duplic_route.'" style="color: inherit">
+                            <i class="fa fa-clone" aria-hidden="true"></i>
+                                Duplicate
                             </a>
                     </button>
                     <form class="d-sm-inline-block" action="'.$delete_route.'" method="POST">
@@ -82,7 +89,14 @@ class AttributeDataTable extends DataTable
                 else
                     return "<div class='text-warning'>Required</div>";
             })
-            ->rawColumns(['action','data_type_id','attribute_list_id','unit_id','required']);    }
+            ->addColumn('name', function ($attribute) {
+                if ($attribute->name)
+                    return "<a href='".route('attribute.show',$attribute)."'>".
+                        $attribute->name."</a>";
+                else
+                    return "";
+            })
+            ->rawColumns(['action','data_type_id','attribute_list_id','unit_id','required','name']);    }
 
     /**
      * Get the query source of dataTable.

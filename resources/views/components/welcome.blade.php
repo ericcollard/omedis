@@ -70,23 +70,22 @@
                 <path stroke-linecap="round" d="M15.75 10.5l4.72-4.72a.75.75 0 011.28.53v11.38a.75.75 0 01-1.28.53l-4.72-4.72M4.5 18.75h9a2.25 2.25 0 002.25-2.25v-9a2.25 2.25 0 00-2.25-2.25h-9A2.25 2.25 0 002.25 7.5v9a2.25 2.25 0 002.25 2.25z" />
             </svg>
             <h2 class="ml-3 text-xl font-semibold text-gray-900 dark:text-white">
-                <a href="https://laracasts.com">Omedis chanel</a>
+                <a href="https://laracasts.com">Tools</a>
             </h2>
         </div>
 
         <p class="mt-4 text-gray-500 dark:text-gray-400 text-sm leading-relaxed">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis auctor eu odio sed viverra. Donec ligula ante, hendrerit sed metus nec, ornare sodales tellus. Vestibulum sit amet luctus lorem. Nunc pretium turpis velit, nec molestie metus commodo laoreet.
+            <ul>
+                <li><a href="{{ route('attribute.csvsample') }}">Download csv file sample, based on OMEDIS standard</a></li>
+                <li><a href="{{ route('attribute.csvsample') }}">Download xml file sample, based on OMEDIS standard</a></li>
+            </ul>
+
+
+
+
+
         </p>
 
-        <p class="mt-4 text-sm">
-            <a href="https://laracasts.com" class="inline-flex items-center font-semibold text-indigo-700 dark:text-indigo-300">
-                Start watching
-
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" class="ml-1 w-5 h-5 fill-indigo-500 dark:fill-indigo-200">
-                    <path fill-rule="evenodd" d="M5 10a.75.75 0 01.75-.75h6.638L10.23 7.29a.75.75 0 111.04-1.08l3.5 3.25a.75.75 0 010 1.08l-3.5 3.25a.75.75 0 11-1.04-1.08l2.158-1.96H5.75A.75.75 0 015 10z" clip-rule="evenodd" />
-                </svg>
-            </a>
-        </p>
     </div>
 
     <div>
@@ -100,7 +99,7 @@
         </div>
 
         <p class="mt-4 text-gray-500 dark:text-gray-400 text-sm leading-relaxed">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis auctor eu odio sed viverra. Donec ligula ante, hendrerit sed metus nec, ornare sodales tellus. Vestibulum sit amet luctus lorem. Nunc pretium turpis velit, nec molestie metus commodo laoreet.
+            Defining a standard is a typically collaborative task. Everyone is welcome to contribute to this standard. Feel free to <a href = "mailto:info@glissattitude.com">join us</a>
         </p>
     </div>
 
@@ -115,7 +114,9 @@
         </div>
 
         <p class="mt-4 text-gray-500 dark:text-gray-400 text-sm leading-relaxed">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis auctor eu odio sed viverra. Donec ligula ante, hendrerit sed metus nec, ornare sodales tellus. Vestibulum sit amet luctus lorem. Nunc pretium turpis velit, nec molestie metus commodo laoreet.
+            Most data and pieces of information about OMEDIS are freely accessible on this website without any credential.
+            However, being authenticated, you will have access to more detailed information, and will be able to collaborate
+            on this project. You can <a href="register">create you account here</a> of <a href="login">log in</a> if you already have an account.
         </p>
     </div>
 </div>

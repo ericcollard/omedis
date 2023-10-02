@@ -61,7 +61,30 @@ class AttributeListValueDataTable extends DataTable
                 else
                     return "";
             })
-            ->rawColumns(['action','attribute_list_id']);
+            ->addColumn('comment', function ($attributelistvalue) {
+                if ($attributelistvalue->comment)
+                {
+                    $pos = strpos($attributelistvalue->comment, '#');
+                    if ($pos > 0)
+                    {
+                        $hex = substr ($attributelistvalue->comment, $pos+1, 6) ;
+                        if ( ctype_xdigit($hex)) {
+                            $outStr ="";
+                            $outStr.= "<svg width='20' height='20'>";
+                            $outStr.= " <rect width='20' height='20' style='fill:#".$hex."'/>";
+                            $outStr.= "</svg>";
+                            return $outStr." ".$attributelistvalue->comment;
+                        }
+                        else
+                            return $attributelistvalue->comment;
+                    }
+                    else
+                        return $attributelistvalue->comment;
+                }
+                else
+                    return "";
+            })
+            ->rawColumns(['action','attribute_list_id','comment']);
     }
 
     /**

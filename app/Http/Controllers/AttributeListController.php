@@ -6,7 +6,9 @@ use App\DataTables\AttributeListValueDataTable;
 use App\Models\AttributeList;
 use Illuminate\Http\Request;
 use App\DataTables\AttributeListDataTable;
+use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Gate;
+use Illuminate\Support\Str;
 use PDOException;
 use Illuminate\Support\Facades\URL;
 
@@ -66,6 +68,23 @@ class AttributeListController extends Controller
      */
     public function show(AttributeList $attributeList)
     {
+
+        foreach ($attributeList->attributeListValues as $attributeListValue) {
+            if ($attributeListValue->comment) {
+                $pos = strpos($attributeListValue->comment, '#');
+                if ($pos > 0) {
+                    $hex = substr($attributeListValue->comment, $pos + 1, 6);
+                    if (ctype_xdigit($hex)) {
+                        $outStr = "";
+                        $outStr .= "<svg width='20' height='20'>";
+                        $outStr .= " <rect width='20' height='20' style='fill:#" . $hex . "'/>";
+                        $outStr .= "</svg>";
+                        $attributeListValue->hex = $outStr;
+                    }
+                }
+            }
+
+        }
         return view('attributelist.show', compact('attributeList'));
     }
 
@@ -118,4 +137,109 @@ class AttributeListController extends Controller
         $attributeList->delete();
         return redirect(route('attributelist.index'))->with( ['message' => 'Data removed', 'alert' => 'success']);
     }
+
+
+    public function colors()
+    {
+
+        $row = 1;
+        $colors = [];
+        if (($handle = fopen('../storage/app/public/colornames1.csv','r')) !== FALSE) {
+            while (($data = fgetcsv($handle, 1000, ",")) !== FALSE) {
+                $num = count($data);
+                if ($data[0] != 'name') {
+                    $colors[] = [ 'name' => $data[0],
+                        'hex' => $data[1], ];
+                }
+
+
+            }
+            fclose($handle);
+
+            usort($colors, [$this, 'cmp']);
+
+            foreach  ($colors as $color) {
+                echo "<p>".$color['name'].'-'.$color['hex'].'-'.$this->calcualteHue($color['hex'])['hue'].'</p>';
+                echo "<svg width='20' height='20'>";
+                echo " <rect width='20' height='20' style='fill:".$color['hex']."'/>";
+                echo "</svg>";
+
+
+                DB::table('attribute_list_values')->insert(
+                    array('name' => Str::of($color['name'])->slug('-'),
+                        'comment' => $color['name']." ".$color['hex'],
+                        'attribute_list_id' => 1,
+                        'user_id' => 1)
+                );
+
+            }
+        }
+    }
+
+    function cmp($a, $b)
+    {
+        $hsv1 = $this->calcualteHue($a['hex']);
+        $hsv2 = $this->calcualteHue($b['hex']);
+
+        return ($hsv1['hue'] + $hsv1['saturation'] + $hsv1['value']) <=> ($hsv2['hue'] + $hsv2['saturation'] + $hsv2['value']);
+        /*
+        if ($ha > $hb)
+            return 1;
+        elseif ($ha < $hb)
+            return -1;
+        else
+            return 0;*/
+    }
+
+
+    function calcualteHue($hex) {
+
+        $hex      = str_replace('#', '', $hex);
+        $length   = strlen($hex);
+        $rgb['r'] = hexdec($length == 6 ? substr($hex, 0, 2) : ($length == 3 ? str_repeat(substr($hex, 0, 1), 2) : 0));
+        $rgb['g'] = hexdec($length == 6 ? substr($hex, 2, 2) : ($length == 3 ? str_repeat(substr($hex, 1, 1), 2) : 0));
+        $rgb['b'] = hexdec($length == 6 ? substr($hex, 4, 2) : ($length == 3 ? str_repeat(substr($hex, 2, 1), 2) : 0));
+
+        $red = $rgb['r'] / 255;
+        $green = $rgb['g'] / 255;
+        $blue = $rgb['b'] / 255;
+
+        $min = min($red, $green, $blue);
+        $max = max($red, $green, $blue);
+
+        switch ($max) {
+            case 0:
+                // If the max value is 0.
+                $hue = 0;
+                $saturation = 0;
+                $value = 0;
+                break;
+            case $min:
+                // If the maximum and minimum values are the same.
+                $hue = 0;
+                $saturation = 0;
+                $value = round($max, 4);
+                break;
+            default:
+                $delta = $max - $min;
+                if ($red == $max) {
+                    $hue = 0 + ($green - $blue) / $delta;
+                } elseif ($green == $max) {
+                    $hue = 2 + ($blue - $red) / $delta;
+                } else {
+                    $hue = 4 + ($red - $green) / $delta;
+                }
+                $hue *= 60;
+                if ($hue < 0) {
+                    $hue += 360;
+                }
+                $saturation = $delta / $max;
+                $value = round($max, 4);
+        }
+
+
+        return ['hue' => $hue, 'saturation' => $saturation, 'value' => $value];
+    }
+
+
 }

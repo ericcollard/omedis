@@ -16,8 +16,8 @@ return new class extends Migration
             $table->string('model');
             $table->string('action');
             $table->string('user_id');
-            $table->string('old_values');
-            $table->string('new_values');
+            $table->text('old_values');
+            $table->text('new_values');
             $table->timestamps();
         });
     }

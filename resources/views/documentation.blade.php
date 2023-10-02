@@ -28,6 +28,7 @@
                         <li><i class="fa-regular fa-star fa-2xs"></i> <a href="#p5">What is not OMEDIS ?</a></li>
                         <li><i class="fa-regular fa-star fa-2xs"></i> <a href="#p6">OMEDIS more in details</a></li>
                         <li><i class="fa-regular fa-star fa-2xs"></i> <a href="#p7">Data exchange structure</a></li>
+                        <li><i class="fa-regular fa-star fa-2xs"></i> <a href="#p8">How to use OMEDIS standard</a></li>
                     </ul>
                 </div>
             </div>
@@ -35,8 +36,8 @@
                 <div class="container">
                     <h2 id="p1" class="mt-4 text-lg font-semibold text-gray-500 dark:text-white">What is EDI ?</h2>
                     <p class="mt-4 text-gray-500 dark:text-gray-400 text-sm leading-relaxed">
-                        EDI acronym is for Electronic Data Interchange. EDI is a technique that replaces physical exchanges of documents between companies (data, orders, invoices, delivery slips, etc.) with exchanges, according to a standardised format.
-                        The data are structured according to reference international technical standards (e.g. Edifact).
+                        EDI acronym is for Electronic Data Interchange. EDI is a technique that replaces physical exchange of documents between companies (data, orders, invoices, delivery slips, etc.) according to a standardised format.
+                        The data are structured according to referenced international technical standards (e.g. Edifact).
                     </p>
 
                     <h2 id="p2" class="mt-4 text-lg font-semibold text-gray-500 dark:text-white">Why EDI for outdoor industry ?</h2>
@@ -44,9 +45,10 @@
                         From now on, all retailers are using an invoicing/stock management IT tool and/or an e-commerce website.
                         Therefore, they all need to integrate product-related business data into some computer system.
                         Inter-company electronic data interchange is therefore now at the heart of our daily work.
-                        Thanks to the will of offering best possible product for each need, the volume of data is growing exponentially with ever-longer lists of products.
-                        <br/>On the retailer side, integration of these data is beginning to weigh significantly on the work-hours, and all this input time is not devoted to customers.
-                        So it is essential to rationalize these exchanges and automate as much as possible the tedious data entry tasks.
+                        Thanks to the will for brands offering best possible product for each need, the volume of data is growing exponentially with ever-longer lists of products.
+                        <br/>On the retailer side, integration of these data is beginning to weight significantly on the work-hours.
+                        On top of all this time that is no more devoted to customers, manual input is a large source of errors as well.
+                        <br/>So it is essential to rationalize these exchanges and automate as much as possible the tedious data entry tasks.
                     </p>
 
                     <h2 id="p3" class="mt-4 text-lg font-semibold text-gray-500 dark:text-white">Why a standard ?</h2>
@@ -63,7 +65,7 @@
                         <br/>The standard is fixing the official way to exchange this value between two computing systems.
                         <br/><br/>
                         Let's take a second exemple with a string value, representing the category of product for classification.
-                        Depending on company, you can find the following value :
+                        Depending on company internal classification, you can find the following value :
                         <br/>- "Windsurf boardbag"
                         <br/>- "Windsurf Board Protection"
                         <br/>- "windsurf-protection-boardbag"
@@ -71,6 +73,11 @@
                         <br/>- ...
                         <br/>The standard is fixing a list of possible values, that each computing systems can relate to his own internal representation.
                         <br/>
+
+                        <br/><img src="{{ asset('storage/onlyonetime.jpg') }}" />
+                        <br/>Thanks to this standard, each supplier has only to develop one translation program from his own EPR to OMEDIS.
+                        Each retailer has only to develop one translation program from OMEDIS to his own retail management system.
+                        <br/>This avoid multiplicity of translation programs like today, for both side.
                     </p>
 
                     <h2 id="p4" class="mt-4 text-lg font-semibold text-gray-500 dark:text-white">What is OMEDIS ?</h2>
@@ -79,49 +86,61 @@
                         This includes technical data like size or weight, business data like wholesale price or retail price,
                         marketing data like marketing description or pictures.
                         <br/>
-                        OMEDIS is a collective repository that can be updated by the community, letting everyone be aware of updates.
+                        OMEDIS is base on a collective public repository that can be updated by the community, letting everyone be aware of updates.
                         <br/>
                         OMEDIS is freely accessible, and will stay free lifetime, because standardisation of exchange is a win-win feature for all partners.
                     </p>
 
                     <h2 id="p5" class="mt-4 text-lg font-semibold text-gray-500 dark:text-white">What is not OMEDIS ?</h2>
                     <p class="mt-4 text-gray-500 dark:text-gray-400 text-sm leading-relaxed">
-                        OMEDIS is not a software, but only a standard definition. It does nothing, except helping partners to exchange data with efficiency.
-                        <br/>OMEDIS will not manage the exchange of data. This stay the role of partners
-                        <br/>OMEDIS is not a goal but a middelware
+                        OMEDIS is not a software, but only a standard definition. The current website is only the tool giving easy access to the standard definition.
+                        <br/>OMEDIS does nothing, except helping partners to exchange data with efficiency.
+                        <br/>OMEDIS will not manage the exchange of data. This stay the role of partners that can contrôle the diffusion.
+                        <br/>OMEDIS is not a goal but only a middleware
                     </p>
 
                     <h2 id="p6" class="mt-4 text-lg font-semibold text-gray-500 dark:text-white">OMEDIS more in details</h2>
                     <p class="mt-4 text-gray-500 dark:text-gray-400 text-sm leading-relaxed">
                         OMEDIS is defining
-                        <br/>- A list of units (Ex. Eur, Usd, Liter, Meter, Kilogram), and the way to name and use them
-                        <br/>- A list of datatype (Ex. String, Currency, Integer, Boolean), and the way to represent data for each data type
-                        <br/>- Attribute list values : for a certain type of data, values have to be chosen in a closed list of possible values, like colors, categories, brand name, etc.). Omedis is maintaining an up-to-date list of authorized values.
-                        <br/>- the list of attributes describing each product and variant, including mandatory and optional attributes
+                        <br/>- A list of units (Ex. Eur, Usd, Liter, Meter, Kilogram), the way to name them, and the way to use them
+                        <br/>- A list of datatype (Ex. String, Currency, Integer, Boolean), and the way to write data for each data type (character coding, delimiters, limits etc.)
+                        <br/>- Attribute list values : for certain type of attributes, values have to be chosen in a closed list of possible values, like colors, categories, brand name, etc.). Omedis is maintaining an up-to-date list of authorized values.
+                        <br/>- The list of attributes describing each product and variant, including mandatory and optional attributes
                     </p>
 
                     <h2 id="p7" class="mt-4 text-lg font-semibold text-gray-500 dark:text-white">Data exchange structure</h2>
                     <p class="mt-4 text-gray-500 dark:text-gray-400 text-sm leading-relaxed">
-                        Once defined the contend and standard of data, let's jump into the stucture of exchange
-                        <br/><strong>Data container</strong> : datas can be send by digital file, or REST API
-                        <br/><strong>Data file type</strong> : if using a file, we suggest to use exclusively xml or csv file. We shoud avoid excel native file since contend is highly dependant from regional settings of the source computer.
-                        <br/><strong>CSV file</strong> : if using csv file, please report to the RFC 4180 standard.
+                        Once defined the contend and standard of data, let's jump into the structure of exchange (how data are organised and transmitted)
+                        <br/><strong>Data container</strong> : datas can be sent by digital file, or REST API
+                        <br/><strong>Data file type</strong> : if using a file, we suggest to use exclusively xml or csv file. We
+                        should avoid excel native file since contend is highly dependant from regional settings of the source computer.
+                        <br/><strong>CSV file (tabular like file)</strong> : if using csv file, please report to the RFC 4180 standard.
                         The field separator has to be comma, end of line CR/LF, coding UTF-8, any field quoted with double quote.
                         First line has to be the list of attribute name, conform to OMEDIS attributes name.
-                        <br/><strong>XML file</strong> : if using XML file, please conform to XML 1.0 Specification, using UTF-8 encoding.
+                        <br/><img src="{{ asset('storage/omedis-data-file-logic.jpg') }}" />
+                        <br/><strong>XML file (dataset file)</strong> : if using XML file, please conform to XML 1.0 Specification,
+                        using UTF-8 encoding.
+                        <br/><img src="{{ asset('storage/omedis-data-set-logic.jpg') }}" />
                         <br/><strong>File contend</strong> : when using a digital file, data has to be organised with records (xml record or csv line) and fields.
-                        Each record is representing one product variant. Interpreting program will group variants thanks to their product name.
-                        So different variant have to strictly share the same product name, and be declared in consecutive records.
-                        Each field has top be one of those defined in OMEDIS <a href="{{ route('attribute.index') }}">Attributes</a>.
-                        </br>
+                        Each record is representing one product variant.
+                        <br/>When using a tabular like file (eg csv), different variant of a same product need to <strong>strictly share the same product name</strong>,
+                        and be declared in consecutive records.
+                        This is the way interpreting programs will group variants in a same product.
+                        With dataset file, this rules is not required since variants are grouped in a "product-template" tag.
                     </p>
 
-                    <h2 id="p6" class="mt-4 text-lg font-semibold text-gray-500 dark:text-white">How to read OMEDIS standard</h2>
+                    <h2 id="p8" class="mt-4 text-lg font-semibold text-gray-500 dark:text-white">How to use OMEDIS standard</h2>
                     <p class="mt-4 text-gray-500 dark:text-gray-400 text-sm leading-relaxed">
                         Each product variant (corresponding to one EAN code) is represented by one xml record or one csv line
                         containing :
                         <br/> > a set of attribute listed in the <a href="{{ route('attribute.index') }}">Attribute repository</a>.
-                        Some of them are required (can't be omitted) like <a href="{{ route('attribute.show',1) }}">name</a>, other are optionnal
+                        Some of them are required (can't be omitted) like <a href="{{ route('attribute.show',1) }}">name</a>, other are optional
+                        <br/> > for each attribute, one value that is directly depending on the <a href="{{ route('datatype.index',1) }}">datatype</a> declared for this attribute
+                        <br/> > If the datatype is "selection", the value has to be selected in the corresponding attribute value list like <a href="{{ route('attributelist.show',1) }}">color</a>
+                        <br/> > If the datatype is something else, the value is free as soon as it fit the recommandation defined in the datatype like <a href="{{ route('datatype.show',6) }}">money</a>
+                        <br/>
+                        <br/>
+
                     </p>
                 </div>
 

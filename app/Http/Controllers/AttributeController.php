@@ -71,6 +71,21 @@ class AttributeController extends Controller
         return redirect(route('attribute.index'))->with( ['message' => 'Data created', 'alert' => 'success']);
     }
 
+    public function duplicate(Attribute $attribute)
+    {
+        $data = [
+            'name' => $attribute->name.'-copy',
+            'comment' => $attribute->comment,
+            'required' => $attribute->required,
+            'attribute_list_id' => $attribute->attribute_list_id,
+            'unit_id' => $attribute->unit_id,
+            'user_id' => $attribute->user_id,
+            'data_type_id' => $attribute->data_type_id,
+        ];
+        $newAttribute = Attribute::create($data);
+        return redirect(route('attribute.edit',$newAttribute))->with( ['message' => 'Data duplicated', 'alert' => 'success']);
+    }
+
     /**
      * Display the specified resource.
      */
@@ -141,5 +156,11 @@ class AttributeController extends Controller
         }
         $attribute->delete();
         return redirect(route('attribute.index'))->with( ['message' => 'Data removed', 'alert' => 'success']);
+    }
+
+    public function csvsample()
+    {
+        $attributes = Attribute::all();
+        return view('attribute.csvsample', compact('attributes'));
     }
 }
