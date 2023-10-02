@@ -19,9 +19,32 @@
                     <div class="card-header">
                         <h3 class="font-semibold text-xl text-gray-800 dark:text-gray-200 leading-tight">
                             <i class="fa-regular fa-user"></i> CSV Sample file
+                            <p><a href="{{ URL::to( 'storage/sample.csv')  }}" target="_blank">Download the sample file</a></p>
                         </h3>
+
+                        <h4>Errors</h4>
+                        <p>{!! $errors !!}</p>
                     </div>
                     <div class="card-body">
+                        @foreach ($lines as $line_key => $line)
+                            @if ($line_key > 0)
+                            <p>Line #{{ $line_key - 1 }} :
+                                <ul>
+                                @foreach ($line as $field_key => $field)
+                                        <li>
+                                            <strong>{{ $attributes[$field_key]->name }}:</strong>
+                                            {{ $field }}
+                                            @if ($attributes[$field_key]->datatype != 'selection' and $attributes[$field_key]->unit and $attributes[$field_key]->unit->name != 'none' and strlen($field) > 0)
+                                                {{ $attributes[$field_key]->unit->name }}
+                                            @endif
+                                        </li>
+                                @endforeach
+                                </ul>
+
+                            </p>
+                            @endif
+                        @endforeach
+
 
 
                     </div>

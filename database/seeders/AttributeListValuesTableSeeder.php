@@ -46397,6 +46397,3056 @@ class AttributeListValuesTableSeeder extends Seeder
                 'updated_at' => NULL,
                 'user_id' => 1,
             ),
+            136 => 
+            array (
+                'attribute_list_id' => 3,
+                'comment' => 'AB+',
+                'created_at' => NULL,
+                'id' => 9302,
+                'name' => 'ab',
+                'updated_at' => NULL,
+                'user_id' => 1,
+            ),
+            137 => 
+            array (
+                'attribute_list_id' => 3,
+                'comment' => 'ABS',
+                'created_at' => NULL,
+                'id' => 9303,
+                'name' => 'abs',
+                'updated_at' => NULL,
+                'user_id' => 1,
+            ),
+            138 => 
+            array (
+                'attribute_list_id' => 3,
+                'comment' => 'ACCURATE LINE',
+                'created_at' => NULL,
+                'id' => 9304,
+                'name' => 'accurate-line',
+                'updated_at' => NULL,
+                'user_id' => 1,
+            ),
+            139 => 
+            array (
+                'attribute_list_id' => 3,
+                'comment' => 'ACE',
+                'created_at' => NULL,
+                'id' => 9305,
+                'name' => 'ace',
+                'updated_at' => NULL,
+                'user_id' => 1,
+            ),
+            140 => 
+            array (
+                'attribute_list_id' => 3,
+                'comment' => 'AERON',
+                'created_at' => NULL,
+                'id' => 9306,
+                'name' => 'aeron',
+                'updated_at' => NULL,
+                'user_id' => 1,
+            ),
+            141 => 
+            array (
+                'attribute_list_id' => 3,
+                'comment' => 'AEROTECH',
+                'created_at' => NULL,
+                'id' => 9307,
+                'name' => 'aerotech',
+                'updated_at' => NULL,
+                'user_id' => 1,
+            ),
+            142 => 
+            array (
+                'attribute_list_id' => 3,
+                'comment' => 'AFS',
+                'created_at' => NULL,
+                'id' => 9308,
+                'name' => 'afs',
+                'updated_at' => NULL,
+                'user_id' => 1,
+            ),
+            143 => 
+            array (
+                'attribute_list_id' => 3,
+                'comment' => 'AFTER',
+                'created_at' => NULL,
+                'id' => 9309,
+                'name' => 'after',
+                'updated_at' => NULL,
+                'user_id' => 1,
+            ),
+            144 => 
+            array (
+                'attribute_list_id' => 3,
+                'comment' => 'AHD',
+                'created_at' => NULL,
+                'id' => 9310,
+                'name' => 'ahd',
+                'updated_at' => NULL,
+                'user_id' => 1,
+            ),
+            145 => 
+            array (
+                'attribute_list_id' => 3,
+                'comment' => 'AIRUSH',
+                'created_at' => NULL,
+                'id' => 9311,
+                'name' => 'airush',
+                'updated_at' => NULL,
+                'user_id' => 1,
+            ),
+            146 => 
+            array (
+                'attribute_list_id' => 3,
+                'comment' => 'AL360',
+                'created_at' => NULL,
+                'id' => 9312,
+                'name' => 'al360',
+                'updated_at' => NULL,
+                'user_id' => 1,
+            ),
+            147 => 
+            array (
+                'attribute_list_id' => 3,
+                'comment' => 'ALK13',
+                'created_at' => NULL,
+                'id' => 9313,
+                'name' => 'alk13',
+                'updated_at' => NULL,
+                'user_id' => 1,
+            ),
+            148 => 
+            array (
+                'attribute_list_id' => 3,
+                'comment' => 'ALL IN',
+                'created_at' => NULL,
+                'id' => 9314,
+                'name' => 'all-in',
+                'updated_at' => NULL,
+                'user_id' => 1,
+            ),
+            149 => 
+            array (
+                'attribute_list_id' => 3,
+                'comment' => 'ALPINEFOIL',
+                'created_at' => NULL,
+                'id' => 9315,
+                'name' => 'alpinefoil',
+                'updated_at' => NULL,
+                'user_id' => 1,
+            ),
+            150 => 
+            array (
+                'attribute_list_id' => 3,
+                'comment' => 'AMEX',
+                'created_at' => NULL,
+                'id' => 9316,
+                'name' => 'amex',
+                'updated_at' => NULL,
+                'user_id' => 1,
+            ),
+            151 => 
+            array (
+                'attribute_list_id' => 3,
+                'comment' => 'AMPLID',
+                'created_at' => NULL,
+                'id' => 9317,
+                'name' => 'amplid',
+                'updated_at' => NULL,
+                'user_id' => 1,
+            ),
+            152 => 
+            array (
+                'attribute_list_id' => 3,
+                'comment' => 'ANALOG',
+                'created_at' => NULL,
+                'id' => 9318,
+                'name' => 'analog',
+                'updated_at' => NULL,
+                'user_id' => 1,
+            ),
+            153 => 
+            array (
+                'attribute_list_id' => 3,
+                'comment' => 'ANON',
+                'created_at' => NULL,
+                'id' => 9319,
+                'name' => 'anon',
+                'updated_at' => NULL,
+                'user_id' => 1,
+            ),
+            154 => 
+            array (
+                'attribute_list_id' => 3,
+                'comment' => 'APO',
+                'created_at' => NULL,
+                'id' => 9320,
+                'name' => 'apo',
+                'updated_at' => NULL,
+                'user_id' => 1,
+            ),
+            155 => 
+            array (
+                'attribute_list_id' => 3,
+                'comment' => 'AQUAPAC',
+                'created_at' => NULL,
+                'id' => 9321,
+                'name' => 'aquapac',
+                'updated_at' => NULL,
+                'user_id' => 1,
+            ),
+            156 => 
+            array (
+                'attribute_list_id' => 3,
+                'comment' => 'ARBOR',
+                'created_at' => NULL,
+                'id' => 9322,
+                'name' => 'arbor',
+                'updated_at' => NULL,
+                'user_id' => 1,
+            ),
+            157 => 
+            array (
+                'attribute_list_id' => 3,
+                'comment' => 'ARMADA',
+                'created_at' => NULL,
+                'id' => 9323,
+                'name' => 'armada',
+                'updated_at' => NULL,
+                'user_id' => 1,
+            ),
+            158 => 
+            array (
+                'attribute_list_id' => 3,
+                'comment' => 'ARROW',
+                'created_at' => NULL,
+                'id' => 9324,
+                'name' => 'arrow',
+                'updated_at' => NULL,
+                'user_id' => 1,
+            ),
+            159 => 
+            array (
+                'attribute_list_id' => 3,
+                'comment' => 'ART',
+                'created_at' => NULL,
+                'id' => 9325,
+                'name' => 'art',
+                'updated_at' => NULL,
+                'user_id' => 1,
+            ),
+            160 => 
+            array (
+                'attribute_list_id' => 3,
+                'comment' => 'ARVA',
+                'created_at' => NULL,
+                'id' => 9326,
+                'name' => 'arva',
+                'updated_at' => NULL,
+                'user_id' => 1,
+            ),
+            161 => 
+            array (
+                'attribute_list_id' => 3,
+                'comment' => 'ATAN',
+                'created_at' => NULL,
+                'id' => 9327,
+                'name' => 'atan',
+                'updated_at' => NULL,
+                'user_id' => 1,
+            ),
+            162 => 
+            array (
+                'attribute_list_id' => 3,
+                'comment' => 'ATK',
+                'created_at' => NULL,
+                'id' => 9328,
+                'name' => 'atk',
+                'updated_at' => NULL,
+                'user_id' => 1,
+            ),
+            163 => 
+            array (
+                'attribute_list_id' => 3,
+                'comment' => 'ATOMIC',
+                'created_at' => NULL,
+                'id' => 9329,
+                'name' => 'atomic',
+                'updated_at' => NULL,
+                'user_id' => 1,
+            ),
+            164 => 
+            array (
+                'attribute_list_id' => 3,
+                'comment' => 'B3',
+                'created_at' => NULL,
+                'id' => 9330,
+                'name' => 'b3',
+                'updated_at' => NULL,
+                'user_id' => 1,
+            ),
+            165 => 
+            array (
+                'attribute_list_id' => 3,
+                'comment' => 'BERN',
+                'created_at' => NULL,
+                'id' => 9331,
+                'name' => 'bern',
+                'updated_at' => NULL,
+                'user_id' => 1,
+            ),
+            166 => 
+            array (
+                'attribute_list_id' => 3,
+                'comment' => 'BEST',
+                'created_at' => NULL,
+                'id' => 9332,
+                'name' => 'best',
+                'updated_at' => NULL,
+                'user_id' => 1,
+            ),
+            167 => 
+            array (
+                'attribute_list_id' => 3,
+                'comment' => 'BIC',
+                'created_at' => NULL,
+                'id' => 9333,
+                'name' => 'bic',
+                'updated_at' => NULL,
+                'user_id' => 1,
+            ),
+            168 => 
+            array (
+                'attribute_list_id' => 3,
+                'comment' => 'BILLABONG',
+                'created_at' => NULL,
+                'id' => 9334,
+                'name' => 'billabong',
+                'updated_at' => NULL,
+                'user_id' => 1,
+            ),
+            169 => 
+            array (
+                'attribute_list_id' => 3,
+                'comment' => 'BLACKCROWS',
+                'created_at' => NULL,
+                'id' => 9335,
+                'name' => 'blackcrows',
+                'updated_at' => NULL,
+                'user_id' => 1,
+            ),
+            170 => 
+            array (
+                'attribute_list_id' => 3,
+                'comment' => 'BLACK DIAMOND',
+                'created_at' => NULL,
+                'id' => 9336,
+                'name' => 'black-diamond',
+                'updated_at' => NULL,
+                'user_id' => 1,
+            ),
+            171 => 
+            array (
+                'attribute_list_id' => 3,
+                'comment' => 'BLACK SMITH',
+                'created_at' => NULL,
+                'id' => 9337,
+                'name' => 'black-smith',
+                'updated_at' => NULL,
+                'user_id' => 1,
+            ),
+            172 => 
+            array (
+                'attribute_list_id' => 3,
+                'comment' => 'BLACK WINGS',
+                'created_at' => NULL,
+                'id' => 9338,
+                'name' => 'black-wings',
+                'updated_at' => NULL,
+                'user_id' => 1,
+            ),
+            173 => 
+            array (
+                'attribute_list_id' => 3,
+                'comment' => 'BLIZZARD',
+                'created_at' => NULL,
+                'id' => 9339,
+                'name' => 'blizzard',
+                'updated_at' => NULL,
+                'user_id' => 1,
+            ),
+            174 => 
+            array (
+                'attribute_list_id' => 3,
+                'comment' => 'BOLLE',
+                'created_at' => NULL,
+                'id' => 9340,
+                'name' => 'bolle',
+                'updated_at' => NULL,
+                'user_id' => 1,
+            ),
+            175 => 
+            array (
+                'attribute_list_id' => 3,
+                'comment' => 'BOMBER EYEWEAR',
+                'created_at' => NULL,
+                'id' => 9341,
+                'name' => 'bomber-eyewear',
+                'updated_at' => NULL,
+                'user_id' => 1,
+            ),
+            176 => 
+            array (
+                'attribute_list_id' => 3,
+                'comment' => 'BONZ SUP',
+                'created_at' => NULL,
+                'id' => 9342,
+                'name' => 'bonz-sup',
+                'updated_at' => NULL,
+                'user_id' => 1,
+            ),
+            177 => 
+            array (
+                'attribute_list_id' => 3,
+                'comment' => 'BOOSTER',
+                'created_at' => NULL,
+                'id' => 9343,
+                'name' => 'booster',
+                'updated_at' => NULL,
+                'user_id' => 1,
+            ),
+            178 => 
+            array (
+                'attribute_list_id' => 3,
+                'comment' => 'BOOTDOC',
+                'created_at' => NULL,
+                'id' => 9344,
+                'name' => 'bootdoc',
+                'updated_at' => NULL,
+                'user_id' => 1,
+            ),
+            179 => 
+            array (
+                'attribute_list_id' => 3,
+                'comment' => 'BRAVO',
+                'created_at' => NULL,
+                'id' => 9345,
+                'name' => 'bravo',
+                'updated_at' => NULL,
+                'user_id' => 1,
+            ),
+            180 => 
+            array (
+                'attribute_list_id' => 3,
+                'comment' => 'BRIKO',
+                'created_at' => NULL,
+                'id' => 9346,
+                'name' => 'briko',
+                'updated_at' => NULL,
+                'user_id' => 1,
+            ),
+            181 => 
+            array (
+                'attribute_list_id' => 3,
+                'comment' => 'BRUNOTTI',
+                'created_at' => NULL,
+                'id' => 9347,
+                'name' => 'brunotti',
+                'updated_at' => NULL,
+                'user_id' => 1,
+            ),
+            182 => 
+            array (
+                'attribute_list_id' => 3,
+                'comment' => 'BURTON',
+                'created_at' => NULL,
+                'id' => 9348,
+                'name' => 'burton',
+                'updated_at' => NULL,
+                'user_id' => 1,
+            ),
+            183 => 
+            array (
+                'attribute_list_id' => 3,
+                'comment' => 'CABRINHA',
+                'created_at' => NULL,
+                'id' => 9349,
+                'name' => 'cabrinha',
+                'updated_at' => NULL,
+                'user_id' => 1,
+            ),
+            184 => 
+            array (
+                'attribute_list_id' => 3,
+                'comment' => 'CAPITA',
+                'created_at' => NULL,
+                'id' => 9350,
+                'name' => 'capita',
+                'updated_at' => NULL,
+                'user_id' => 1,
+            ),
+            185 => 
+            array (
+                'attribute_list_id' => 3,
+                'comment' => 'CARVER',
+                'created_at' => NULL,
+                'id' => 9351,
+                'name' => 'carver',
+                'updated_at' => NULL,
+                'user_id' => 1,
+            ),
+            186 => 
+            array (
+                'attribute_list_id' => 3,
+                'comment' => 'CEBE',
+                'created_at' => NULL,
+                'id' => 9352,
+                'name' => 'cebe',
+                'updated_at' => NULL,
+                'user_id' => 1,
+            ),
+            187 => 
+            array (
+                'attribute_list_id' => 3,
+                'comment' => 'CHALLENGER',
+                'created_at' => NULL,
+                'id' => 9353,
+                'name' => 'challenger',
+                'updated_at' => NULL,
+                'user_id' => 1,
+            ),
+            188 => 
+            array (
+                'attribute_list_id' => 3,
+                'comment' => 'CHINOOK',
+                'created_at' => NULL,
+                'id' => 9354,
+                'name' => 'chinook',
+                'updated_at' => NULL,
+                'user_id' => 1,
+            ),
+            189 => 
+            array (
+                'attribute_list_id' => 3,
+                'comment' => 'COAL',
+                'created_at' => NULL,
+                'id' => 9355,
+                'name' => 'coal',
+                'updated_at' => NULL,
+                'user_id' => 1,
+            ),
+            190 => 
+            array (
+                'attribute_list_id' => 3,
+                'comment' => 'COBRA',
+                'created_at' => NULL,
+                'id' => 9356,
+                'name' => 'cobra',
+                'updated_at' => NULL,
+                'user_id' => 1,
+            ),
+            191 => 
+            array (
+                'attribute_list_id' => 3,
+                'comment' => 'COLLTEX',
+                'created_at' => NULL,
+                'id' => 9357,
+                'name' => 'colltex',
+                'updated_at' => NULL,
+                'user_id' => 1,
+            ),
+            192 => 
+            array (
+                'attribute_list_id' => 3,
+                'comment' => 'CONFORMABLE',
+                'created_at' => NULL,
+                'id' => 9358,
+                'name' => 'conformable',
+                'updated_at' => NULL,
+                'user_id' => 1,
+            ),
+            193 => 
+            array (
+                'attribute_list_id' => 3,
+                'comment' => 'CONNELLY',
+                'created_at' => NULL,
+                'id' => 9359,
+                'name' => 'connelly',
+                'updated_at' => NULL,
+                'user_id' => 1,
+            ),
+            194 => 
+            array (
+                'attribute_list_id' => 3,
+                'comment' => 'COPELLO',
+                'created_at' => NULL,
+                'id' => 9360,
+                'name' => 'copello',
+                'updated_at' => NULL,
+                'user_id' => 1,
+            ),
+            195 => 
+            array (
+                'attribute_list_id' => 3,
+                'comment' => 'CORE KITE',
+                'created_at' => NULL,
+                'id' => 9361,
+                'name' => 'core-kite',
+                'updated_at' => NULL,
+                'user_id' => 1,
+            ),
+            196 => 
+            array (
+                'attribute_list_id' => 3,
+                'comment' => 'COREUPT',
+                'created_at' => NULL,
+                'id' => 9362,
+                'name' => 'coreupt',
+                'updated_at' => NULL,
+                'user_id' => 1,
+            ),
+            197 => 
+            array (
+                'attribute_list_id' => 3,
+                'comment' => 'CRAZY FLY',
+                'created_at' => NULL,
+                'id' => 9363,
+                'name' => 'crazy-fly',
+                'updated_at' => NULL,
+                'user_id' => 1,
+            ),
+            198 => 
+            array (
+                'attribute_list_id' => 3,
+                'comment' => 'CREATURES',
+                'created_at' => NULL,
+                'id' => 9364,
+                'name' => 'creatures',
+                'updated_at' => NULL,
+                'user_id' => 1,
+            ),
+            199 => 
+            array (
+                'attribute_list_id' => 3,
+                'comment' => 'DAKINE',
+                'created_at' => NULL,
+                'id' => 9365,
+                'name' => 'dakine',
+                'updated_at' => NULL,
+                'user_id' => 1,
+            ),
+            200 => 
+            array (
+                'attribute_list_id' => 3,
+                'comment' => 'DALBELLO',
+                'created_at' => NULL,
+                'id' => 9366,
+                'name' => 'dalbello',
+                'updated_at' => NULL,
+                'user_id' => 1,
+            ),
+            201 => 
+            array (
+                'attribute_list_id' => 3,
+                'comment' => 'DC SHOES',
+                'created_at' => NULL,
+                'id' => 9367,
+                'name' => 'dc-shoes',
+                'updated_at' => NULL,
+                'user_id' => 1,
+            ),
+            202 => 
+            array (
+                'attribute_list_id' => 3,
+                'comment' => 'DEBOICHET',
+                'created_at' => NULL,
+                'id' => 9368,
+                'name' => 'deboichet',
+                'updated_at' => NULL,
+                'user_id' => 1,
+            ),
+            203 => 
+            array (
+                'attribute_list_id' => 3,
+                'comment' => 'DECATHLON',
+                'created_at' => NULL,
+                'id' => 9369,
+                'name' => 'decathlon',
+                'updated_at' => NULL,
+                'user_id' => 1,
+            ),
+            204 => 
+            array (
+                'attribute_list_id' => 3,
+                'comment' => 'DEELUXE',
+                'created_at' => NULL,
+                'id' => 9370,
+                'name' => 'deeluxe',
+                'updated_at' => NULL,
+                'user_id' => 1,
+            ),
+            205 => 
+            array (
+                'attribute_list_id' => 3,
+                'comment' => 'DIAMIR',
+                'created_at' => NULL,
+                'id' => 9371,
+                'name' => 'diamir',
+                'updated_at' => NULL,
+                'user_id' => 1,
+            ),
+            206 => 
+            array (
+                'attribute_list_id' => 3,
+                'comment' => 'DIVERS',
+                'created_at' => NULL,
+                'id' => 9372,
+                'name' => 'divers',
+                'updated_at' => NULL,
+                'user_id' => 1,
+            ),
+            207 => 
+            array (
+                'attribute_list_id' => 3,
+                'comment' => 'DOUBLE UP',
+                'created_at' => NULL,
+                'id' => 9373,
+                'name' => 'double-up',
+                'updated_at' => NULL,
+                'user_id' => 1,
+            ),
+            208 => 
+            array (
+                'attribute_list_id' => 3,
+                'comment' => 'DPS',
+                'created_at' => NULL,
+                'id' => 9374,
+                'name' => 'dps',
+                'updated_at' => NULL,
+                'user_id' => 1,
+            ),
+            209 => 
+            array (
+                'attribute_list_id' => 3,
+                'comment' => 'DRAKE',
+                'created_at' => NULL,
+                'id' => 9375,
+                'name' => 'drake',
+                'updated_at' => NULL,
+                'user_id' => 1,
+            ),
+            210 => 
+            array (
+                'attribute_list_id' => 3,
+                'comment' => 'DROPS',
+                'created_at' => NULL,
+                'id' => 9376,
+                'name' => 'drops',
+                'updated_at' => NULL,
+                'user_id' => 1,
+            ),
+            211 => 
+            array (
+                'attribute_list_id' => 3,
+                'comment' => 'DUOTONE',
+                'created_at' => NULL,
+                'id' => 9377,
+                'name' => 'duotone',
+                'updated_at' => NULL,
+                'user_id' => 1,
+            ),
+            212 => 
+            array (
+                'attribute_list_id' => 3,
+                'comment' => 'DYNAFIBER',
+                'created_at' => NULL,
+                'id' => 9378,
+                'name' => 'dynafiber',
+                'updated_at' => NULL,
+                'user_id' => 1,
+            ),
+            213 => 
+            array (
+                'attribute_list_id' => 3,
+                'comment' => 'DYNAFIT',
+                'created_at' => NULL,
+                'id' => 9379,
+                'name' => 'dynafit',
+                'updated_at' => NULL,
+                'user_id' => 1,
+            ),
+            214 => 
+            array (
+                'attribute_list_id' => 3,
+                'comment' => 'DYNAMIC',
+                'created_at' => NULL,
+                'id' => 9380,
+                'name' => 'dynamic',
+                'updated_at' => NULL,
+                'user_id' => 1,
+            ),
+            215 => 
+            array (
+                'attribute_list_id' => 3,
+                'comment' => 'DYNASTAR',
+                'created_at' => NULL,
+                'id' => 9381,
+                'name' => 'dynastar',
+                'updated_at' => NULL,
+                'user_id' => 1,
+            ),
+            216 => 
+            array (
+                'attribute_list_id' => 3,
+                'comment' => 'EISBAR',
+                'created_at' => NULL,
+                'id' => 9382,
+                'name' => 'eisbar',
+                'updated_at' => NULL,
+                'user_id' => 1,
+            ),
+            217 => 
+            array (
+                'attribute_list_id' => 3,
+                'comment' => 'ELAN',
+                'created_at' => NULL,
+                'id' => 9383,
+                'name' => 'elan',
+                'updated_at' => NULL,
+                'user_id' => 1,
+            ),
+            218 => 
+            array (
+                'attribute_list_id' => 3,
+                'comment' => 'ELIX',
+                'created_at' => NULL,
+                'id' => 9384,
+                'name' => 'elix',
+                'updated_at' => NULL,
+                'user_id' => 1,
+            ),
+            219 => 
+            array (
+                'attribute_list_id' => 3,
+                'comment' => 'ENERGIAPURA',
+                'created_at' => NULL,
+                'id' => 9385,
+                'name' => 'energiapura',
+                'updated_at' => NULL,
+                'user_id' => 1,
+            ),
+            220 => 
+            array (
+                'attribute_list_id' => 3,
+                'comment' => 'EQ',
+                'created_at' => NULL,
+                'id' => 9386,
+                'name' => 'eq',
+                'updated_at' => NULL,
+                'user_id' => 1,
+            ),
+            221 => 
+            array (
+                'attribute_list_id' => 3,
+                'comment' => 'ERD',
+                'created_at' => NULL,
+                'id' => 9387,
+                'name' => 'erd',
+                'updated_at' => NULL,
+                'user_id' => 1,
+            ),
+            222 => 
+            array (
+                'attribute_list_id' => 3,
+                'comment' => 'EXOCET',
+                'created_at' => NULL,
+                'id' => 9388,
+                'name' => 'exocet',
+                'updated_at' => NULL,
+                'user_id' => 1,
+            ),
+            223 => 
+            array (
+                'attribute_list_id' => 3,
+                'comment' => 'EZZY',
+                'created_at' => NULL,
+                'id' => 9389,
+                'name' => 'ezzy',
+                'updated_at' => NULL,
+                'user_id' => 1,
+            ),
+            224 => 
+            array (
+                'attribute_list_id' => 3,
+                'comment' => 'F2',
+                'created_at' => NULL,
+                'id' => 9390,
+                'name' => 'f2',
+                'updated_at' => NULL,
+                'user_id' => 1,
+            ),
+            225 => 
+            array (
+                'attribute_list_id' => 3,
+                'comment' => 'F4',
+                'created_at' => NULL,
+                'id' => 9391,
+                'name' => 'f4',
+                'updated_at' => NULL,
+                'user_id' => 1,
+            ),
+            226 => 
+            array (
+                'attribute_list_id' => 3,
+                'comment' => 'FACTION',
+                'created_at' => NULL,
+                'id' => 9392,
+                'name' => 'faction',
+                'updated_at' => NULL,
+                'user_id' => 1,
+            ),
+            227 => 
+            array (
+                'attribute_list_id' => 3,
+                'comment' => 'FANATIC',
+                'created_at' => NULL,
+                'id' => 9393,
+                'name' => 'fanatic',
+                'updated_at' => NULL,
+                'user_id' => 1,
+            ),
+            228 => 
+            array (
+                'attribute_list_id' => 3,
+                'comment' => 'FCS',
+                'created_at' => NULL,
+                'id' => 9394,
+                'name' => 'fcs',
+                'updated_at' => NULL,
+                'user_id' => 1,
+            ),
+            229 => 
+            array (
+                'attribute_list_id' => 3,
+                'comment' => 'FEATHER FINS',
+                'created_at' => NULL,
+                'id' => 9395,
+                'name' => 'feather-fins',
+                'updated_at' => NULL,
+                'user_id' => 1,
+            ),
+            230 => 
+            array (
+                'attribute_list_id' => 3,
+                'comment' => 'FIBERSPAR',
+                'created_at' => NULL,
+                'id' => 9396,
+                'name' => 'fiberspar',
+                'updated_at' => NULL,
+                'user_id' => 1,
+            ),
+            231 => 
+            array (
+                'attribute_list_id' => 3,
+                'comment' => 'FIBERTECH',
+                'created_at' => NULL,
+                'id' => 9397,
+                'name' => 'fibertech',
+                'updated_at' => NULL,
+                'user_id' => 1,
+            ),
+            232 => 
+            array (
+                'attribute_list_id' => 3,
+                'comment' => 'FIN\'S',
+                'created_at' => NULL,
+                'id' => 9398,
+                'name' => 'fins',
+                'updated_at' => NULL,
+                'user_id' => 1,
+            ),
+            233 => 
+            array (
+                'attribute_list_id' => 3,
+                'comment' => 'FIREWIRE',
+                'created_at' => NULL,
+                'id' => 9399,
+                'name' => 'firewire',
+                'updated_at' => NULL,
+                'user_id' => 1,
+            ),
+            234 => 
+            array (
+                'attribute_list_id' => 3,
+                'comment' => 'FISCHER',
+                'created_at' => NULL,
+                'id' => 9400,
+                'name' => 'fischer',
+                'updated_at' => NULL,
+                'user_id' => 1,
+            ),
+            235 => 
+            array (
+                'attribute_list_id' => 3,
+                'comment' => 'FLOW',
+                'created_at' => NULL,
+                'id' => 9401,
+                'name' => 'flow',
+                'updated_at' => NULL,
+                'user_id' => 1,
+            ),
+            236 => 
+            array (
+                'attribute_list_id' => 3,
+                'comment' => 'FLYSURFER',
+                'created_at' => NULL,
+                'id' => 9402,
+                'name' => 'flysurfer',
+                'updated_at' => NULL,
+                'user_id' => 1,
+            ),
+            237 => 
+            array (
+                'attribute_list_id' => 3,
+                'comment' => 'FOLLOW',
+                'created_at' => NULL,
+                'id' => 9403,
+                'name' => 'follow',
+                'updated_at' => NULL,
+                'user_id' => 1,
+            ),
+            238 => 
+            array (
+                'attribute_list_id' => 3,
+                'comment' => 'FONE',
+                'created_at' => NULL,
+                'id' => 9404,
+                'name' => 'fone',
+                'updated_at' => NULL,
+                'user_id' => 1,
+            ),
+            239 => 
+            array (
+                'attribute_list_id' => 3,
+                'comment' => 'FORUM',
+                'created_at' => NULL,
+                'id' => 9405,
+                'name' => 'forum',
+                'updated_at' => NULL,
+                'user_id' => 1,
+            ),
+            240 => 
+            array (
+                'attribute_list_id' => 3,
+                'comment' => 'FORWARD WIP',
+                'created_at' => NULL,
+                'id' => 9406,
+                'name' => 'forward-wip',
+                'updated_at' => NULL,
+                'user_id' => 1,
+            ),
+            241 => 
+            array (
+                'attribute_list_id' => 3,
+                'comment' => 'FOURSQUARE',
+                'created_at' => NULL,
+                'id' => 9407,
+                'name' => 'foursquare',
+                'updated_at' => NULL,
+                'user_id' => 1,
+            ),
+            242 => 
+            array (
+                'attribute_list_id' => 3,
+                'comment' => 'FUTURES FINS',
+                'created_at' => NULL,
+                'id' => 9408,
+                'name' => 'futures-fins',
+                'updated_at' => NULL,
+                'user_id' => 1,
+            ),
+            243 => 
+            array (
+                'attribute_list_id' => 3,
+                'comment' => 'GAASTRA',
+                'created_at' => NULL,
+                'id' => 9409,
+                'name' => 'gaastra',
+                'updated_at' => NULL,
+                'user_id' => 1,
+            ),
+            244 => 
+            array (
+                'attribute_list_id' => 3,
+                'comment' => 'GARMIN',
+                'created_at' => NULL,
+                'id' => 9410,
+                'name' => 'garmin',
+                'updated_at' => NULL,
+                'user_id' => 1,
+            ),
+            245 => 
+            array (
+                'attribute_list_id' => 3,
+                'comment' => 'GARMONT',
+                'created_at' => NULL,
+                'id' => 9411,
+                'name' => 'garmont',
+                'updated_at' => NULL,
+                'user_id' => 1,
+            ),
+            246 => 
+            array (
+                'attribute_list_id' => 3,
+                'comment' => 'GASOIL',
+                'created_at' => NULL,
+                'id' => 9412,
+                'name' => 'gasoil',
+                'updated_at' => NULL,
+                'user_id' => 1,
+            ),
+            247 => 
+            array (
+                'attribute_list_id' => 3,
+                'comment' => 'GATH',
+                'created_at' => NULL,
+                'id' => 9413,
+                'name' => 'gath',
+                'updated_at' => NULL,
+                'user_id' => 1,
+            ),
+            248 => 
+            array (
+                'attribute_list_id' => 3,
+                'comment' => 'GATOR',
+                'created_at' => NULL,
+                'id' => 9414,
+                'name' => 'gator',
+                'updated_at' => NULL,
+                'user_id' => 1,
+            ),
+            249 => 
+            array (
+                'attribute_list_id' => 3,
+                'comment' => 'GECKO',
+                'created_at' => NULL,
+                'id' => 9415,
+                'name' => 'gecko',
+                'updated_at' => NULL,
+                'user_id' => 1,
+            ),
+            250 => 
+            array (
+                'attribute_list_id' => 3,
+                'comment' => 'GENETRIX',
+                'created_at' => NULL,
+                'id' => 9416,
+                'name' => 'genetrix',
+                'updated_at' => NULL,
+                'user_id' => 1,
+            ),
+            251 => 
+            array (
+                'attribute_list_id' => 3,
+                'comment' => 'GIN KITEBOARDING',
+                'created_at' => NULL,
+                'id' => 9417,
+                'name' => 'gin-kiteboarding',
+                'updated_at' => NULL,
+                'user_id' => 1,
+            ),
+            252 => 
+            array (
+                'attribute_list_id' => 3,
+                'comment' => 'GIRO',
+                'created_at' => NULL,
+                'id' => 9418,
+                'name' => 'giro',
+                'updated_at' => NULL,
+                'user_id' => 1,
+            ),
+            253 => 
+            array (
+                'attribute_list_id' => 3,
+                'comment' => 'GLISS ATTITUDE',
+                'created_at' => NULL,
+                'id' => 9419,
+                'name' => 'gliss-attitude',
+                'updated_at' => NULL,
+                'user_id' => 1,
+            ),
+            254 => 
+            array (
+                'attribute_list_id' => 3,
+                'comment' => 'GOYA',
+                'created_at' => NULL,
+                'id' => 9420,
+                'name' => 'goya',
+                'updated_at' => NULL,
+                'user_id' => 1,
+            ),
+            255 => 
+            array (
+                'attribute_list_id' => 3,
+                'comment' => 'GREENFIX',
+                'created_at' => NULL,
+                'id' => 9421,
+                'name' => 'greenfix',
+                'updated_at' => NULL,
+                'user_id' => 1,
+            ),
+            256 => 
+            array (
+                'attribute_list_id' => 3,
+                'comment' => 'GUN',
+                'created_at' => NULL,
+                'id' => 9422,
+                'name' => 'gun',
+                'updated_at' => NULL,
+                'user_id' => 1,
+            ),
+            257 => 
+            array (
+                'attribute_list_id' => 3,
+                'comment' => 'HALEAKALA',
+                'created_at' => NULL,
+                'id' => 9423,
+                'name' => 'haleakala',
+                'updated_at' => NULL,
+                'user_id' => 1,
+            ),
+            258 => 
+            array (
+                'attribute_list_id' => 3,
+                'comment' => 'HAMMER',
+                'created_at' => NULL,
+                'id' => 9424,
+                'name' => 'hammer',
+                'updated_at' => NULL,
+                'user_id' => 1,
+            ),
+            259 => 
+            array (
+                'attribute_list_id' => 3,
+                'comment' => 'HANA',
+                'created_at' => NULL,
+                'id' => 9425,
+                'name' => 'hana',
+                'updated_at' => NULL,
+                'user_id' => 1,
+            ),
+            260 => 
+            array (
+                'attribute_list_id' => 3,
+                'comment' => 'HARKEN',
+                'created_at' => NULL,
+                'id' => 9426,
+                'name' => 'harken',
+                'updated_at' => NULL,
+                'user_id' => 1,
+            ),
+            261 => 
+            array (
+                'attribute_list_id' => 3,
+                'comment' => 'HARNESSMOUNT',
+                'created_at' => NULL,
+                'id' => 9427,
+                'name' => 'harnessmount',
+                'updated_at' => NULL,
+                'user_id' => 1,
+            ),
+            262 => 
+            array (
+                'attribute_list_id' => 3,
+                'comment' => 'HAWAIIAN PROLINE',
+                'created_at' => NULL,
+                'id' => 9428,
+                'name' => 'hawaiian-proline',
+                'updated_at' => NULL,
+                'user_id' => 1,
+            ),
+            263 => 
+            array (
+                'attribute_list_id' => 3,
+                'comment' => 'HB SURFKITE',
+                'created_at' => NULL,
+                'id' => 9429,
+                'name' => 'hb-surfkite',
+                'updated_at' => NULL,
+                'user_id' => 1,
+            ),
+            264 => 
+            array (
+                'attribute_list_id' => 3,
+                'comment' => 'HEAD',
+                'created_at' => NULL,
+                'id' => 9430,
+                'name' => 'head',
+                'updated_at' => NULL,
+                'user_id' => 1,
+            ),
+            265 => 
+            array (
+                'attribute_list_id' => 3,
+                'comment' => 'HESTRA',
+                'created_at' => NULL,
+                'id' => 9431,
+                'name' => 'hestra',
+                'updated_at' => NULL,
+                'user_id' => 1,
+            ),
+            266 => 
+            array (
+                'attribute_list_id' => 3,
+                'comment' => 'HI TECH',
+                'created_at' => NULL,
+                'id' => 9432,
+                'name' => 'hi-tech',
+                'updated_at' => NULL,
+                'user_id' => 1,
+            ),
+            267 => 
+            array (
+                'attribute_list_id' => 3,
+                'comment' => 'HIFLY',
+                'created_at' => NULL,
+                'id' => 9433,
+                'name' => 'hifly',
+                'updated_at' => NULL,
+                'user_id' => 1,
+            ),
+            268 => 
+            array (
+                'attribute_list_id' => 3,
+                'comment' => 'HO SPORT',
+                'created_at' => NULL,
+                'id' => 9434,
+                'name' => 'ho-sport',
+                'updated_at' => NULL,
+                'user_id' => 1,
+            ),
+            269 => 
+            array (
+                'attribute_list_id' => 3,
+                'comment' => 'HOFF',
+                'created_at' => NULL,
+                'id' => 9435,
+                'name' => 'hoff',
+                'updated_at' => NULL,
+                'user_id' => 1,
+            ),
+            270 => 
+            array (
+                'attribute_list_id' => 3,
+                'comment' => 'HORUE',
+                'created_at' => NULL,
+                'id' => 9436,
+                'name' => 'horue',
+                'updated_at' => NULL,
+                'user_id' => 1,
+            ),
+            271 => 
+            array (
+                'attribute_list_id' => 3,
+                'comment' => 'HOT SAILS',
+                'created_at' => NULL,
+                'id' => 9437,
+                'name' => 'hot-sails',
+                'updated_at' => NULL,
+                'user_id' => 1,
+            ),
+            272 => 
+            array (
+                'attribute_list_id' => 3,
+                'comment' => 'HOWZIT',
+                'created_at' => NULL,
+                'id' => 9438,
+                'name' => 'howzit',
+                'updated_at' => NULL,
+                'user_id' => 1,
+            ),
+            273 => 
+            array (
+                'attribute_list_id' => 3,
+                'comment' => 'HYDRO',
+                'created_at' => NULL,
+                'id' => 9439,
+                'name' => 'hydro',
+                'updated_at' => NULL,
+                'user_id' => 1,
+            ),
+            274 => 
+            array (
+                'attribute_list_id' => 3,
+                'comment' => 'HYPERLITE',
+                'created_at' => NULL,
+                'id' => 9440,
+                'name' => 'hyperlite',
+                'updated_at' => NULL,
+                'user_id' => 1,
+            ),
+            275 => 
+            array (
+                'attribute_list_id' => 3,
+                'comment' => 'ICETOOLS',
+                'created_at' => NULL,
+                'id' => 9441,
+                'name' => 'icetools',
+                'updated_at' => NULL,
+                'user_id' => 1,
+            ),
+            276 => 
+            array (
+                'attribute_list_id' => 3,
+                'comment' => 'INTUITION',
+                'created_at' => NULL,
+                'id' => 9442,
+                'name' => 'intuition',
+                'updated_at' => NULL,
+                'user_id' => 1,
+            ),
+            277 => 
+            array (
+                'attribute_list_id' => 3,
+                'comment' => 'ION',
+                'created_at' => NULL,
+                'id' => 9443,
+                'name' => 'ion',
+                'updated_at' => NULL,
+                'user_id' => 1,
+            ),
+            278 => 
+            array (
+                'attribute_list_id' => 3,
+                'comment' => 'JDC',
+                'created_at' => NULL,
+                'id' => 9444,
+                'name' => 'jdc',
+                'updated_at' => NULL,
+                'user_id' => 1,
+            ),
+            279 => 
+            array (
+                'attribute_list_id' => 3,
+                'comment' => 'JONES',
+                'created_at' => NULL,
+                'id' => 9445,
+                'name' => 'jones',
+                'updated_at' => NULL,
+                'user_id' => 1,
+            ),
+            280 => 
+            array (
+                'attribute_list_id' => 3,
+                'comment' => 'JP AUSTRALIA',
+                'created_at' => NULL,
+                'id' => 9446,
+                'name' => 'jp-australia',
+                'updated_at' => NULL,
+                'user_id' => 1,
+            ),
+            281 => 
+            array (
+                'attribute_list_id' => 3,
+                'comment' => 'JPK',
+                'created_at' => NULL,
+                'id' => 9447,
+                'name' => 'jpk',
+                'updated_at' => NULL,
+                'user_id' => 1,
+            ),
+            282 => 
+            array (
+                'attribute_list_id' => 3,
+                'comment' => 'JULBO',
+                'created_at' => NULL,
+                'id' => 9448,
+                'name' => 'julbo',
+                'updated_at' => NULL,
+                'user_id' => 1,
+            ),
+            283 => 
+            array (
+                'attribute_list_id' => 3,
+                'comment' => 'K2',
+                'created_at' => NULL,
+                'id' => 9449,
+                'name' => 'k2',
+                'updated_at' => NULL,
+                'user_id' => 1,
+            ),
+            284 => 
+            array (
+                'attribute_list_id' => 3,
+                'comment' => 'K4',
+                'created_at' => NULL,
+                'id' => 9450,
+                'name' => 'k4',
+                'updated_at' => NULL,
+                'user_id' => 1,
+            ),
+            285 => 
+            array (
+                'attribute_list_id' => 3,
+                'comment' => 'KA SAIL',
+                'created_at' => NULL,
+                'id' => 9451,
+                'name' => 'ka-sail',
+                'updated_at' => NULL,
+                'user_id' => 1,
+            ),
+            286 => 
+            array (
+                'attribute_list_id' => 3,
+                'comment' => 'KANULOCK',
+                'created_at' => NULL,
+                'id' => 9452,
+                'name' => 'kanulock',
+                'updated_at' => NULL,
+                'user_id' => 1,
+            ),
+            287 => 
+            array (
+                'attribute_list_id' => 3,
+                'comment' => 'KASTLE',
+                'created_at' => NULL,
+                'id' => 9453,
+                'name' => 'kastle',
+                'updated_at' => NULL,
+                'user_id' => 1,
+            ),
+            288 => 
+            array (
+                'attribute_list_id' => 3,
+                'comment' => 'KESSLER',
+                'created_at' => NULL,
+                'id' => 9454,
+                'name' => 'kessler',
+                'updated_at' => NULL,
+                'user_id' => 1,
+            ),
+            289 => 
+            array (
+                'attribute_list_id' => 3,
+                'comment' => 'KETOS',
+                'created_at' => NULL,
+                'id' => 9455,
+                'name' => 'ketos',
+                'updated_at' => NULL,
+                'user_id' => 1,
+            ),
+            290 => 
+            array (
+                'attribute_list_id' => 3,
+                'comment' => 'KITE ATTITUDE',
+                'created_at' => NULL,
+                'id' => 9456,
+                'name' => 'kite-attitude',
+                'updated_at' => NULL,
+                'user_id' => 1,
+            ),
+            291 => 
+            array (
+                'attribute_list_id' => 3,
+                'comment' => 'KITECLEAT',
+                'created_at' => NULL,
+                'id' => 9457,
+                'name' => 'kitecleat',
+                'updated_at' => NULL,
+                'user_id' => 1,
+            ),
+            292 => 
+            array (
+                'attribute_list_id' => 3,
+                'comment' => 'KITEFIX',
+                'created_at' => NULL,
+                'id' => 9458,
+                'name' => 'kitefix',
+                'updated_at' => NULL,
+                'user_id' => 1,
+            ),
+            293 => 
+            array (
+                'attribute_list_id' => 3,
+                'comment' => 'KOMPERDELL',
+                'created_at' => NULL,
+                'id' => 9459,
+                'name' => 'komperdell',
+                'updated_at' => NULL,
+                'user_id' => 1,
+            ),
+            294 => 
+            array (
+                'attribute_list_id' => 3,
+                'comment' => 'LANGE',
+                'created_at' => NULL,
+                'id' => 9460,
+                'name' => 'lange',
+                'updated_at' => NULL,
+                'user_id' => 1,
+            ),
+            295 => 
+            array (
+                'attribute_list_id' => 3,
+                'comment' => 'LEKI',
+                'created_at' => NULL,
+                'id' => 9461,
+                'name' => 'leki',
+                'updated_at' => NULL,
+                'user_id' => 1,
+            ),
+            296 => 
+            array (
+                'attribute_list_id' => 3,
+                'comment' => 'LIBTECH',
+                'created_at' => NULL,
+                'id' => 9462,
+                'name' => 'libtech',
+                'updated_at' => NULL,
+                'user_id' => 1,
+            ),
+            297 => 
+            array (
+                'attribute_list_id' => 3,
+                'comment' => 'LIQUID FORCE',
+                'created_at' => NULL,
+                'id' => 9463,
+                'name' => 'liquid-force',
+                'updated_at' => NULL,
+                'user_id' => 1,
+            ),
+            298 => 
+            array (
+                'attribute_list_id' => 3,
+                'comment' => 'LISA',
+                'created_at' => NULL,
+                'id' => 9464,
+                'name' => 'lisa',
+                'updated_at' => NULL,
+                'user_id' => 1,
+            ),
+            299 => 
+            array (
+                'attribute_list_id' => 3,
+                'comment' => 'LOFT',
+                'created_at' => NULL,
+                'id' => 9465,
+                'name' => 'loft',
+                'updated_at' => NULL,
+                'user_id' => 1,
+            ),
+            300 => 
+            array (
+                'attribute_list_id' => 3,
+                'comment' => 'LOKAHI',
+                'created_at' => NULL,
+                'id' => 9466,
+                'name' => 'lokahi',
+                'updated_at' => NULL,
+                'user_id' => 1,
+            ),
+            301 => 
+            array (
+                'attribute_list_id' => 3,
+                'comment' => 'LOKE FOIL',
+                'created_at' => NULL,
+                'id' => 9467,
+                'name' => 'loke-foil',
+                'updated_at' => NULL,
+                'user_id' => 1,
+            ),
+            302 => 
+            array (
+                'attribute_list_id' => 3,
+                'comment' => 'MANERA',
+                'created_at' => NULL,
+                'id' => 9468,
+                'name' => 'manera',
+                'updated_at' => NULL,
+                'user_id' => 1,
+            ),
+            303 => 
+            array (
+                'attribute_list_id' => 3,
+                'comment' => 'MANIPURA',
+                'created_at' => NULL,
+                'id' => 9469,
+                'name' => 'manipura',
+                'updated_at' => NULL,
+                'user_id' => 1,
+            ),
+            304 => 
+            array (
+                'attribute_list_id' => 3,
+                'comment' => 'MANUAL',
+                'created_at' => NULL,
+                'id' => 9470,
+                'name' => 'manual',
+                'updated_at' => NULL,
+                'user_id' => 1,
+            ),
+            305 => 
+            array (
+                'attribute_list_id' => 3,
+                'comment' => 'MARKER',
+                'created_at' => NULL,
+                'id' => 9471,
+                'name' => 'marker',
+                'updated_at' => NULL,
+                'user_id' => 1,
+            ),
+            306 => 
+            array (
+                'attribute_list_id' => 3,
+                'comment' => 'MAUI SAILS',
+                'created_at' => NULL,
+                'id' => 9472,
+                'name' => 'maui-sails',
+                'updated_at' => NULL,
+                'user_id' => 1,
+            ),
+            307 => 
+            array (
+                'attribute_list_id' => 3,
+                'comment' => 'MAUI ULTRA FIN',
+                'created_at' => NULL,
+                'id' => 9473,
+                'name' => 'maui-ultra-fin',
+                'updated_at' => NULL,
+                'user_id' => 1,
+            ),
+            308 => 
+            array (
+                'attribute_list_id' => 3,
+                'comment' => 'MAURICE COLE',
+                'created_at' => NULL,
+                'id' => 9474,
+                'name' => 'maurice-cole',
+                'updated_at' => NULL,
+                'user_id' => 1,
+            ),
+            309 => 
+            array (
+                'attribute_list_id' => 3,
+                'comment' => 'MFC',
+                'created_at' => NULL,
+                'id' => 9475,
+                'name' => 'mfc',
+                'updated_at' => NULL,
+                'user_id' => 1,
+            ),
+            310 => 
+            array (
+                'attribute_list_id' => 3,
+                'comment' => 'MICROFIN',
+                'created_at' => NULL,
+                'id' => 9476,
+                'name' => 'microfin',
+                'updated_at' => NULL,
+                'user_id' => 1,
+            ),
+            311 => 
+            array (
+                'attribute_list_id' => 3,
+                'comment' => 'MISTRAL',
+                'created_at' => NULL,
+                'id' => 9477,
+                'name' => 'mistral',
+                'updated_at' => NULL,
+                'user_id' => 1,
+            ),
+            312 => 
+            array (
+                'attribute_list_id' => 3,
+                'comment' => 'MOVEMENT',
+                'created_at' => NULL,
+                'id' => 9478,
+                'name' => 'movement',
+                'updated_at' => NULL,
+                'user_id' => 1,
+            ),
+            313 => 
+            array (
+                'attribute_list_id' => 3,
+                'comment' => 'MUNDAKA',
+                'created_at' => NULL,
+                'id' => 9479,
+                'name' => 'mundaka',
+                'updated_at' => NULL,
+                'user_id' => 1,
+            ),
+            314 => 
+            array (
+                'attribute_list_id' => 3,
+                'comment' => 'MXR',
+                'created_at' => NULL,
+                'id' => 9480,
+                'name' => 'mxr',
+                'updated_at' => NULL,
+                'user_id' => 1,
+            ),
+            315 => 
+            array (
+                'attribute_list_id' => 3,
+                'comment' => 'MYSTIC',
+                'created_at' => NULL,
+                'id' => 9481,
+                'name' => 'mystic',
+                'updated_at' => NULL,
+                'user_id' => 1,
+            ),
+            316 => 
+            array (
+                'attribute_list_id' => 3,
+                'comment' => 'NAISH',
+                'created_at' => NULL,
+                'id' => 9482,
+                'name' => 'naish',
+                'updated_at' => NULL,
+                'user_id' => 1,
+            ),
+            317 => 
+            array (
+                'attribute_list_id' => 3,
+                'comment' => 'NAUTIX',
+                'created_at' => NULL,
+                'id' => 9483,
+                'name' => 'nautix',
+                'updated_at' => NULL,
+                'user_id' => 1,
+            ),
+            318 => 
+            array (
+                'attribute_list_id' => 3,
+                'comment' => 'NEILPRYDE',
+                'created_at' => NULL,
+                'id' => 9484,
+                'name' => 'neilpryde',
+                'updated_at' => NULL,
+                'user_id' => 1,
+            ),
+            319 => 
+            array (
+                'attribute_list_id' => 3,
+                'comment' => 'NEON',
+                'created_at' => NULL,
+                'id' => 9485,
+                'name' => 'neon',
+                'updated_at' => NULL,
+                'user_id' => 1,
+            ),
+            320 => 
+            array (
+                'attribute_list_id' => 3,
+                'comment' => 'NEVIN',
+                'created_at' => NULL,
+                'id' => 9486,
+                'name' => 'nevin',
+                'updated_at' => NULL,
+                'user_id' => 1,
+            ),
+            321 => 
+            array (
+                'attribute_list_id' => 3,
+                'comment' => 'NIC IMPEX',
+                'created_at' => NULL,
+                'id' => 9487,
+                'name' => 'nic-impex',
+                'updated_at' => NULL,
+                'user_id' => 1,
+            ),
+            322 => 
+            array (
+                'attribute_list_id' => 3,
+                'comment' => 'NIDECKER',
+                'created_at' => NULL,
+                'id' => 9488,
+                'name' => 'nidecker',
+                'updated_at' => NULL,
+                'user_id' => 1,
+            ),
+            323 => 
+            array (
+                'attribute_list_id' => 3,
+                'comment' => 'NITRO',
+                'created_at' => NULL,
+                'id' => 9489,
+                'name' => 'nitro',
+                'updated_at' => NULL,
+                'user_id' => 1,
+            ),
+            324 => 
+            array (
+                'attribute_list_id' => 3,
+                'comment' => 'NORDICA',
+                'created_at' => NULL,
+                'id' => 9490,
+                'name' => 'nordica',
+                'updated_at' => NULL,
+                'user_id' => 1,
+            ),
+            325 => 
+            array (
+                'attribute_list_id' => 3,
+                'comment' => 'NORRONA',
+                'created_at' => NULL,
+                'id' => 9491,
+                'name' => 'norrona',
+                'updated_at' => NULL,
+                'user_id' => 1,
+            ),
+            326 => 
+            array (
+                'attribute_list_id' => 3,
+                'comment' => 'NORTH',
+                'created_at' => NULL,
+                'id' => 9492,
+                'name' => 'north',
+                'updated_at' => NULL,
+                'user_id' => 1,
+            ),
+            327 => 
+            array (
+                'attribute_list_id' => 3,
+                'comment' => 'NORTHWAVE',
+                'created_at' => NULL,
+                'id' => 9493,
+                'name' => 'northwave',
+                'updated_at' => NULL,
+                'user_id' => 1,
+            ),
+            328 => 
+            array (
+                'attribute_list_id' => 3,
+                'comment' => 'NOW',
+                'created_at' => NULL,
+                'id' => 9494,
+                'name' => 'now',
+                'updated_at' => NULL,
+                'user_id' => 1,
+            ),
+            329 => 
+            array (
+                'attribute_list_id' => 3,
+                'comment' => 'NSI',
+                'created_at' => NULL,
+                'id' => 9495,
+                'name' => 'nsi',
+                'updated_at' => NULL,
+                'user_id' => 1,
+            ),
+            330 => 
+            array (
+                'attribute_list_id' => 3,
+                'comment' => 'NSP',
+                'created_at' => NULL,
+                'id' => 9496,
+                'name' => 'nsp',
+                'updated_at' => NULL,
+                'user_id' => 1,
+            ),
+            331 => 
+            array (
+                'attribute_list_id' => 3,
+                'comment' => 'OBRIEN',
+                'created_at' => NULL,
+                'id' => 9497,
+                'name' => 'obrien',
+                'updated_at' => NULL,
+                'user_id' => 1,
+            ),
+            332 => 
+            array (
+                'attribute_list_id' => 3,
+                'comment' => 'ONEILL',
+                'created_at' => NULL,
+                'id' => 9498,
+                'name' => 'oneill',
+                'updated_at' => NULL,
+                'user_id' => 1,
+            ),
+            333 => 
+            array (
+                'attribute_list_id' => 3,
+                'comment' => 'OPTIMUM TIME',
+                'created_at' => NULL,
+                'id' => 9499,
+                'name' => 'optimum-time',
+                'updated_at' => NULL,
+                'user_id' => 1,
+            ),
+            334 => 
+            array (
+                'attribute_list_id' => 3,
+                'comment' => 'ORTOVOX',
+                'created_at' => NULL,
+                'id' => 9500,
+                'name' => 'ortovox',
+                'updated_at' => NULL,
+                'user_id' => 1,
+            ),
+            335 => 
+            array (
+                'attribute_list_id' => 3,
+                'comment' => 'OUTSIDE REEF',
+                'created_at' => NULL,
+                'id' => 9501,
+                'name' => 'outside-reef',
+                'updated_at' => NULL,
+                'user_id' => 1,
+            ),
+            336 => 
+            array (
+                'attribute_list_id' => 3,
+                'comment' => 'OXBOW',
+                'created_at' => NULL,
+                'id' => 9502,
+                'name' => 'oxbow',
+                'updated_at' => NULL,
+                'user_id' => 1,
+            ),
+            337 => 
+            array (
+                'attribute_list_id' => 3,
+                'comment' => 'OXYGEN',
+                'created_at' => NULL,
+                'id' => 9503,
+                'name' => 'oxygen',
+                'updated_at' => NULL,
+                'user_id' => 1,
+            ),
+            338 => 
+            array (
+                'attribute_list_id' => 3,
+                'comment' => 'OZED',
+                'created_at' => NULL,
+                'id' => 9504,
+                'name' => 'ozed',
+                'updated_at' => NULL,
+                'user_id' => 1,
+            ),
+            339 => 
+            array (
+                'attribute_list_id' => 3,
+                'comment' => 'OZONE',
+                'created_at' => NULL,
+                'id' => 9505,
+                'name' => 'ozone',
+                'updated_at' => NULL,
+                'user_id' => 1,
+            ),
+            340 => 
+            array (
+                'attribute_list_id' => 3,
+                'comment' => 'PAT LOWE',
+                'created_at' => NULL,
+                'id' => 9506,
+                'name' => 'pat-lowe',
+                'updated_at' => NULL,
+                'user_id' => 1,
+            ),
+            341 => 
+            array (
+                'attribute_list_id' => 3,
+                'comment' => 'PATAGONIA',
+                'created_at' => NULL,
+                'id' => 9507,
+                'name' => 'patagonia',
+                'updated_at' => NULL,
+                'user_id' => 1,
+            ),
+            342 => 
+            array (
+                'attribute_list_id' => 3,
+                'comment' => 'PATRIK',
+                'created_at' => NULL,
+                'id' => 9508,
+                'name' => 'patrik',
+                'updated_at' => NULL,
+                'user_id' => 1,
+            ),
+            343 => 
+            array (
+                'attribute_list_id' => 3,
+                'comment' => 'PHANTOM',
+                'created_at' => NULL,
+                'id' => 9509,
+                'name' => 'phantom',
+                'updated_at' => NULL,
+                'user_id' => 1,
+            ),
+            344 => 
+            array (
+                'attribute_list_id' => 3,
+                'comment' => 'PICTURE',
+                'created_at' => NULL,
+                'id' => 9510,
+                'name' => 'picture',
+                'updated_at' => NULL,
+                'user_id' => 1,
+            ),
+            345 => 
+            array (
+                'attribute_list_id' => 3,
+                'comment' => 'PIEPS',
+                'created_at' => NULL,
+                'id' => 9511,
+                'name' => 'pieps',
+                'updated_at' => NULL,
+                'user_id' => 1,
+            ),
+            346 => 
+            array (
+                'attribute_list_id' => 3,
+                'comment' => 'PLUM',
+                'created_at' => NULL,
+                'id' => 9512,
+                'name' => 'plum',
+                'updated_at' => NULL,
+                'user_id' => 1,
+            ),
+            347 => 
+            array (
+                'attribute_list_id' => 3,
+                'comment' => 'POC',
+                'created_at' => NULL,
+                'id' => 9513,
+                'name' => 'poc',
+                'updated_at' => NULL,
+                'user_id' => 1,
+            ),
+            348 => 
+            array (
+                'attribute_list_id' => 3,
+                'comment' => 'POINT 7',
+                'created_at' => NULL,
+                'id' => 9514,
+                'name' => 'point-7',
+                'updated_at' => NULL,
+                'user_id' => 1,
+            ),
+            349 => 
+            array (
+                'attribute_list_id' => 3,
+                'comment' => 'POWEREX',
+                'created_at' => NULL,
+                'id' => 9515,
+                'name' => 'powerex',
+                'updated_at' => NULL,
+                'user_id' => 1,
+            ),
+            350 => 
+            array (
+                'attribute_list_id' => 3,
+                'comment' => 'PROLIMIT',
+                'created_at' => NULL,
+                'id' => 9516,
+                'name' => 'prolimit',
+                'updated_at' => NULL,
+                'user_id' => 1,
+            ),
+            351 => 
+            array (
+                'attribute_list_id' => 3,
+                'comment' => 'PROTEC',
+                'created_at' => NULL,
+                'id' => 9517,
+                'name' => 'protec',
+                'updated_at' => NULL,
+                'user_id' => 1,
+            ),
+            352 => 
+            array (
+                'attribute_list_id' => 3,
+                'comment' => 'QUATRO',
+                'created_at' => NULL,
+                'id' => 9518,
+                'name' => 'quatro',
+                'updated_at' => NULL,
+                'user_id' => 1,
+            ),
+            353 => 
+            array (
+                'attribute_list_id' => 3,
+                'comment' => 'QUIKSILVER',
+                'created_at' => NULL,
+                'id' => 9519,
+                'name' => 'quiksilver',
+                'updated_at' => NULL,
+                'user_id' => 1,
+            ),
+            354 => 
+            array (
+                'attribute_list_id' => 3,
+                'comment' => 'RADAR',
+                'created_at' => NULL,
+                'id' => 9520,
+                'name' => 'radar',
+                'updated_at' => NULL,
+                'user_id' => 1,
+            ),
+            355 => 
+            array (
+                'attribute_list_id' => 3,
+                'comment' => 'RAICHLE',
+                'created_at' => NULL,
+                'id' => 9521,
+                'name' => 'raichle',
+                'updated_at' => NULL,
+                'user_id' => 1,
+            ),
+            356 => 
+            array (
+                'attribute_list_id' => 3,
+                'comment' => 'RED PADDLE',
+                'created_at' => NULL,
+                'id' => 9522,
+                'name' => 'red-paddle',
+                'updated_at' => NULL,
+                'user_id' => 1,
+            ),
+            357 => 
+            array (
+                'attribute_list_id' => 3,
+                'comment' => 'REEF',
+                'created_at' => NULL,
+                'id' => 9523,
+                'name' => 'reef',
+                'updated_at' => NULL,
+                'user_id' => 1,
+            ),
+            358 => 
+            array (
+                'attribute_list_id' => 3,
+                'comment' => 'REPTILE',
+                'created_at' => NULL,
+                'id' => 9524,
+                'name' => 'reptile',
+                'updated_at' => NULL,
+                'user_id' => 1,
+            ),
+            359 => 
+            array (
+                'attribute_list_id' => 3,
+                'comment' => 'RESTUBE',
+                'created_at' => NULL,
+                'id' => 9525,
+                'name' => 'restube',
+                'updated_at' => NULL,
+                'user_id' => 1,
+            ),
+            360 => 
+            array (
+                'attribute_list_id' => 3,
+                'comment' => 'REUSCH',
+                'created_at' => NULL,
+                'id' => 9526,
+                'name' => 'reusch',
+                'updated_at' => NULL,
+                'user_id' => 1,
+            ),
+            361 => 
+            array (
+                'attribute_list_id' => 3,
+                'comment' => 'RIP CURL',
+                'created_at' => NULL,
+                'id' => 9527,
+                'name' => 'rip-curl',
+                'updated_at' => NULL,
+                'user_id' => 1,
+            ),
+            362 => 
+            array (
+                'attribute_list_id' => 3,
+                'comment' => 'RONIX',
+                'created_at' => NULL,
+                'id' => 9528,
+                'name' => 'ronix',
+                'updated_at' => NULL,
+                'user_id' => 1,
+            ),
+            363 => 
+            array (
+                'attribute_list_id' => 3,
+                'comment' => 'ROSSIGNOL',
+                'created_at' => NULL,
+                'id' => 9529,
+                'name' => 'rossignol',
+                'updated_at' => NULL,
+                'user_id' => 1,
+            ),
+            364 => 
+            array (
+                'attribute_list_id' => 3,
+                'comment' => 'ROTOMOD',
+                'created_at' => NULL,
+                'id' => 9530,
+                'name' => 'rotomod',
+                'updated_at' => NULL,
+                'user_id' => 1,
+            ),
+            365 => 
+            array (
+                'attribute_list_id' => 3,
+                'comment' => 'ROXY',
+                'created_at' => NULL,
+                'id' => 9531,
+                'name' => 'roxy',
+                'updated_at' => NULL,
+                'user_id' => 1,
+            ),
+            366 => 
+            array (
+                'attribute_list_id' => 3,
+                'comment' => 'RRD',
+                'created_at' => NULL,
+                'id' => 9532,
+                'name' => 'rrd',
+                'updated_at' => NULL,
+                'user_id' => 1,
+            ),
+            367 => 
+            array (
+                'attribute_list_id' => 3,
+                'comment' => 'RSC',
+                'created_at' => NULL,
+                'id' => 9533,
+                'name' => 'rsc',
+                'updated_at' => NULL,
+                'user_id' => 1,
+            ),
+            368 => 
+            array (
+                'attribute_list_id' => 3,
+                'comment' => 'RYDE',
+                'created_at' => NULL,
+                'id' => 9534,
+                'name' => 'ryde',
+                'updated_at' => NULL,
+                'user_id' => 1,
+            ),
+            369 => 
+            array (
+                'attribute_list_id' => 3,
+                'comment' => 'S2',
+                'created_at' => NULL,
+                'id' => 9535,
+                'name' => 's2',
+                'updated_at' => NULL,
+                'user_id' => 1,
+            ),
+            370 => 
+            array (
+                'attribute_list_id' => 3,
+                'comment' => 'SAB FOIL',
+                'created_at' => NULL,
+                'id' => 9536,
+                'name' => 'sab-foil',
+                'updated_at' => NULL,
+                'user_id' => 1,
+            ),
+            371 => 
+            array (
+                'attribute_list_id' => 3,
+                'comment' => 'SALOMON',
+                'created_at' => NULL,
+                'id' => 9537,
+                'name' => 'salomon',
+                'updated_at' => NULL,
+                'user_id' => 1,
+            ),
+            372 => 
+            array (
+                'attribute_list_id' => 3,
+                'comment' => 'SANTA CRUZ',
+                'created_at' => NULL,
+                'id' => 9538,
+                'name' => 'santa-cruz',
+                'updated_at' => NULL,
+                'user_id' => 1,
+            ),
+            373 => 
+            array (
+                'attribute_list_id' => 3,
+                'comment' => 'SCARPA',
+                'created_at' => NULL,
+                'id' => 9539,
+                'name' => 'scarpa',
+                'updated_at' => NULL,
+                'user_id' => 1,
+            ),
+            374 => 
+            array (
+                'attribute_list_id' => 3,
+                'comment' => 'SCOTT',
+                'created_at' => NULL,
+                'id' => 9540,
+                'name' => 'scott',
+                'updated_at' => NULL,
+                'user_id' => 1,
+            ),
+            375 => 
+            array (
+                'attribute_list_id' => 3,
+                'comment' => 'SELDEN',
+                'created_at' => NULL,
+                'id' => 9541,
+                'name' => 'selden',
+                'updated_at' => NULL,
+                'user_id' => 1,
+            ),
+            376 => 
+            array (
+                'attribute_list_id' => 3,
+                'comment' => 'SELECT',
+                'created_at' => NULL,
+                'id' => 9542,
+                'name' => 'select',
+                'updated_at' => NULL,
+                'user_id' => 1,
+            ),
+            377 => 
+            array (
+                'attribute_list_id' => 3,
+                'comment' => 'SEVENTYONE PERCENT',
+                'created_at' => NULL,
+                'id' => 9543,
+                'name' => 'seventyone-percent',
+                'updated_at' => NULL,
+                'user_id' => 1,
+            ),
+            378 => 
+            array (
+                'attribute_list_id' => 3,
+                'comment' => 'SEVERNE',
+                'created_at' => NULL,
+                'id' => 9544,
+                'name' => 'severne',
+                'updated_at' => NULL,
+                'user_id' => 1,
+            ),
+            379 => 
+            array (
+                'attribute_list_id' => 3,
+                'comment' => 'SEX WAX',
+                'created_at' => NULL,
+                'id' => 9545,
+                'name' => 'sex-wax',
+                'updated_at' => NULL,
+                'user_id' => 1,
+            ),
+            380 => 
+            array (
+                'attribute_list_id' => 3,
+                'comment' => 'SHRED',
+                'created_at' => NULL,
+                'id' => 9546,
+                'name' => 'shred',
+                'updated_at' => NULL,
+                'user_id' => 1,
+            ),
+            381 => 
+            array (
+                'attribute_list_id' => 3,
+                'comment' => 'SIDE ON',
+                'created_at' => NULL,
+                'id' => 9547,
+                'name' => 'side-on',
+                'updated_at' => NULL,
+                'user_id' => 1,
+            ),
+            382 => 
+            array (
+                'attribute_list_id' => 3,
+                'comment' => 'SIMMER',
+                'created_at' => NULL,
+                'id' => 9548,
+                'name' => 'simmer',
+                'updated_at' => NULL,
+                'user_id' => 1,
+            ),
+            383 => 
+            array (
+                'attribute_list_id' => 3,
+                'comment' => 'SINNER',
+                'created_at' => NULL,
+                'id' => 9549,
+                'name' => 'sinner',
+                'updated_at' => NULL,
+                'user_id' => 1,
+            ),
+            384 => 
+            array (
+                'attribute_list_id' => 3,
+                'comment' => 'SK',
+                'created_at' => NULL,
+                'id' => 9550,
+                'name' => 'sk',
+                'updated_at' => NULL,
+                'user_id' => 1,
+            ),
+            385 => 
+            array (
+                'attribute_list_id' => 3,
+                'comment' => 'SKI MOJO',
+                'created_at' => NULL,
+                'id' => 9551,
+                'name' => 'ski-mojo',
+                'updated_at' => NULL,
+                'user_id' => 1,
+            ),
+            386 => 
+            array (
+                'attribute_list_id' => 3,
+                'comment' => 'SKIMP',
+                'created_at' => NULL,
+                'id' => 9552,
+                'name' => 'skimp',
+                'updated_at' => NULL,
+                'user_id' => 1,
+            ),
+            387 => 
+            array (
+                'attribute_list_id' => 3,
+                'comment' => 'SLINGSHOT',
+                'created_at' => NULL,
+                'id' => 9553,
+                'name' => 'slingshot',
+                'updated_at' => NULL,
+                'user_id' => 1,
+            ),
+            388 => 
+            array (
+                'attribute_list_id' => 3,
+                'comment' => 'SLYTEC',
+                'created_at' => NULL,
+                'id' => 9554,
+                'name' => 'slytec',
+                'updated_at' => NULL,
+                'user_id' => 1,
+            ),
+            389 => 
+            array (
+                'attribute_list_id' => 3,
+                'comment' => 'SMITH',
+                'created_at' => NULL,
+                'id' => 9555,
+                'name' => 'smith',
+                'updated_at' => NULL,
+                'user_id' => 1,
+            ),
+            390 => 
+            array (
+                'attribute_list_id' => 3,
+                'comment' => 'SOLAREZ',
+                'created_at' => NULL,
+                'id' => 9556,
+                'name' => 'solarez',
+                'updated_at' => NULL,
+                'user_id' => 1,
+            ),
+            391 => 
+            array (
+                'attribute_list_id' => 3,
+                'comment' => 'SONNTAG',
+                'created_at' => NULL,
+                'id' => 9557,
+                'name' => 'sonntag',
+                'updated_at' => NULL,
+                'user_id' => 1,
+            ),
+            392 => 
+            array (
+                'attribute_list_id' => 3,
+                'comment' => 'SOORUZ',
+                'created_at' => NULL,
+                'id' => 9558,
+                'name' => 'sooruz',
+                'updated_at' => NULL,
+                'user_id' => 1,
+            ),
+            393 => 
+            array (
+                'attribute_list_id' => 3,
+                'comment' => 'SOUTH POINT',
+                'created_at' => NULL,
+                'id' => 9559,
+                'name' => 'south-point',
+                'updated_at' => NULL,
+                'user_id' => 1,
+            ),
+            394 => 
+            array (
+                'attribute_list_id' => 3,
+                'comment' => 'SPACE DOG',
+                'created_at' => NULL,
+                'id' => 9560,
+                'name' => 'space-dog',
+                'updated_at' => NULL,
+                'user_id' => 1,
+            ),
+            395 => 
+            array (
+                'attribute_list_id' => 3,
+                'comment' => 'SPYDER',
+                'created_at' => NULL,
+                'id' => 9561,
+                'name' => 'spyder',
+                'updated_at' => NULL,
+                'user_id' => 1,
+            ),
+            396 => 
+            array (
+                'attribute_list_id' => 3,
+                'comment' => 'STARBOARD',
+                'created_at' => NULL,
+                'id' => 9562,
+                'name' => 'starboard',
+                'updated_at' => NULL,
+                'user_id' => 1,
+            ),
+            397 => 
+            array (
+                'attribute_list_id' => 3,
+                'comment' => 'STARKITES',
+                'created_at' => NULL,
+                'id' => 9563,
+                'name' => 'starkites',
+                'updated_at' => NULL,
+                'user_id' => 1,
+            ),
+            398 => 
+            array (
+                'attribute_list_id' => 3,
+                'comment' => 'STEREO',
+                'created_at' => NULL,
+                'id' => 9564,
+                'name' => 'stereo',
+                'updated_at' => NULL,
+                'user_id' => 1,
+            ),
+            399 => 
+            array (
+                'attribute_list_id' => 3,
+                'comment' => 'STOCKLI',
+                'created_at' => NULL,
+                'id' => 9565,
+                'name' => 'stockli',
+                'updated_at' => NULL,
+                'user_id' => 1,
+            ),
+            400 => 
+            array (
+                'attribute_list_id' => 3,
+                'comment' => 'STREAMLINED',
+                'created_at' => NULL,
+                'id' => 9566,
+                'name' => 'streamlined',
+                'updated_at' => NULL,
+                'user_id' => 1,
+            ),
+            401 => 
+            array (
+                'attribute_list_id' => 3,
+                'comment' => 'SURF FACTORY',
+                'created_at' => NULL,
+                'id' => 9567,
+                'name' => 'surf-factory',
+                'updated_at' => NULL,
+                'user_id' => 1,
+            ),
+            402 => 
+            array (
+                'attribute_list_id' => 3,
+                'comment' => 'SURF ONE',
+                'created_at' => NULL,
+                'id' => 9568,
+                'name' => 'surf-one',
+                'updated_at' => NULL,
+                'user_id' => 1,
+            ),
+            403 => 
+            array (
+                'attribute_list_id' => 3,
+                'comment' => 'SURFTECH',
+                'created_at' => NULL,
+                'id' => 9569,
+                'name' => 'surftech',
+                'updated_at' => NULL,
+                'user_id' => 1,
+            ),
+            404 => 
+            array (
+                'attribute_list_id' => 3,
+                'comment' => 'SWIX',
+                'created_at' => NULL,
+                'id' => 9570,
+                'name' => 'swix',
+                'updated_at' => NULL,
+                'user_id' => 1,
+            ),
+            405 => 
+            array (
+                'attribute_list_id' => 3,
+                'comment' => 'TAAROA',
+                'created_at' => NULL,
+                'id' => 9571,
+                'name' => 'taaroa',
+                'updated_at' => NULL,
+                'user_id' => 1,
+            ),
+            406 => 
+            array (
+                'attribute_list_id' => 3,
+                'comment' => 'TABOU',
+                'created_at' => NULL,
+                'id' => 9572,
+                'name' => 'tabou',
+                'updated_at' => NULL,
+                'user_id' => 1,
+            ),
+            407 => 
+            array (
+                'attribute_list_id' => 3,
+                'comment' => 'TAHE',
+                'created_at' => NULL,
+                'id' => 9573,
+                'name' => 'tahe',
+                'updated_at' => NULL,
+                'user_id' => 1,
+            ),
+            408 => 
+            array (
+                'attribute_list_id' => 3,
+                'comment' => 'TAKOON',
+                'created_at' => NULL,
+                'id' => 9574,
+                'name' => 'takoon',
+                'updated_at' => NULL,
+                'user_id' => 1,
+            ),
+            409 => 
+            array (
+                'attribute_list_id' => 3,
+                'comment' => 'TAKUMA',
+                'created_at' => NULL,
+                'id' => 9575,
+                'name' => 'takuma',
+                'updated_at' => NULL,
+                'user_id' => 1,
+            ),
+            410 => 
+            array (
+                'attribute_list_id' => 3,
+                'comment' => 'TECHNO LIMIT',
+                'created_at' => NULL,
+                'id' => 9576,
+                'name' => 'techno-limit',
+                'updated_at' => NULL,
+                'user_id' => 1,
+            ),
+            411 => 
+            array (
+                'attribute_list_id' => 3,
+                'comment' => 'TECNICA',
+                'created_at' => NULL,
+                'id' => 9577,
+                'name' => 'tecnica',
+                'updated_at' => NULL,
+                'user_id' => 1,
+            ),
+            412 => 
+            array (
+                'attribute_list_id' => 3,
+                'comment' => 'TECTONICS',
+                'created_at' => NULL,
+                'id' => 9578,
+                'name' => 'tectonics',
+                'updated_at' => NULL,
+                'user_id' => 1,
+            ),
+            413 => 
+            array (
+                'attribute_list_id' => 3,
+                'comment' => 'THE M EQUIPMENT',
+                'created_at' => NULL,
+                'id' => 9579,
+                'name' => 'the-m-equipment',
+                'updated_at' => NULL,
+                'user_id' => 1,
+            ),
+            414 => 
+            array (
+                'attribute_list_id' => 3,
+                'comment' => 'THERMIC',
+                'created_at' => NULL,
+                'id' => 9580,
+                'name' => 'thermic',
+                'updated_at' => NULL,
+                'user_id' => 1,
+            ),
+            415 => 
+            array (
+                'attribute_list_id' => 3,
+                'comment' => 'THIRTYTWO',
+                'created_at' => NULL,
+                'id' => 9581,
+                'name' => 'thirtytwo',
+                'updated_at' => NULL,
+                'user_id' => 1,
+            ),
+            416 => 
+            array (
+                'attribute_list_id' => 3,
+                'comment' => 'THOMMEN T1',
+                'created_at' => NULL,
+                'id' => 9582,
+                'name' => 'thommen-t1',
+                'updated_at' => NULL,
+                'user_id' => 1,
+            ),
+            417 => 
+            array (
+                'attribute_list_id' => 3,
+                'comment' => 'TIGA',
+                'created_at' => NULL,
+                'id' => 9583,
+                'name' => 'tiga',
+                'updated_at' => NULL,
+                'user_id' => 1,
+            ),
+            418 => 
+            array (
+                'attribute_list_id' => 3,
+                'comment' => 'TIKAL',
+                'created_at' => NULL,
+                'id' => 9584,
+                'name' => 'tikal',
+                'updated_at' => NULL,
+                'user_id' => 1,
+            ),
+            419 => 
+            array (
+                'attribute_list_id' => 3,
+                'comment' => 'TOKO',
+                'created_at' => NULL,
+                'id' => 9585,
+                'name' => 'toko',
+                'updated_at' => NULL,
+                'user_id' => 1,
+            ),
+            420 => 
+            array (
+                'attribute_list_id' => 3,
+                'comment' => 'TRAB',
+                'created_at' => NULL,
+                'id' => 9586,
+                'name' => 'trab',
+                'updated_at' => NULL,
+                'user_id' => 1,
+            ),
+            421 => 
+            array (
+                'attribute_list_id' => 3,
+                'comment' => 'TRIONE',
+                'created_at' => NULL,
+                'id' => 9587,
+                'name' => 'trione',
+                'updated_at' => NULL,
+                'user_id' => 1,
+            ),
+            422 => 
+            array (
+                'attribute_list_id' => 3,
+                'comment' => 'UNION',
+                'created_at' => NULL,
+                'id' => 9588,
+                'name' => 'union',
+                'updated_at' => NULL,
+                'user_id' => 1,
+            ),
+            423 => 
+            array (
+                'attribute_list_id' => 3,
+                'comment' => 'UP SAILS',
+                'created_at' => NULL,
+                'id' => 9589,
+                'name' => 'up-sails',
+                'updated_at' => NULL,
+                'user_id' => 1,
+            ),
+            424 => 
+            array (
+                'attribute_list_id' => 3,
+                'comment' => 'UVEX',
+                'created_at' => NULL,
+                'id' => 9590,
+                'name' => 'uvex',
+                'updated_at' => NULL,
+                'user_id' => 1,
+            ),
+            425 => 
+            array (
+                'attribute_list_id' => 3,
+                'comment' => 'UYN',
+                'created_at' => NULL,
+                'id' => 9591,
+                'name' => 'uyn',
+                'updated_at' => NULL,
+                'user_id' => 1,
+            ),
+            426 => 
+            array (
+                'attribute_list_id' => 3,
+                'comment' => 'VANDAL',
+                'created_at' => NULL,
+                'id' => 9592,
+                'name' => 'vandal',
+                'updated_at' => NULL,
+                'user_id' => 1,
+            ),
+            427 => 
+            array (
+                'attribute_list_id' => 3,
+                'comment' => 'VOLA',
+                'created_at' => NULL,
+                'id' => 9593,
+                'name' => 'vola',
+                'updated_at' => NULL,
+                'user_id' => 1,
+            ),
+            428 => 
+            array (
+                'attribute_list_id' => 3,
+                'comment' => 'VOLKL',
+                'created_at' => NULL,
+                'id' => 9594,
+                'name' => 'volkl',
+                'updated_at' => NULL,
+                'user_id' => 1,
+            ),
+            429 => 
+            array (
+                'attribute_list_id' => 3,
+                'comment' => 'WANIKOU',
+                'created_at' => NULL,
+                'id' => 9595,
+                'name' => 'wanikou',
+                'updated_at' => NULL,
+                'user_id' => 1,
+            ),
+            430 => 
+            array (
+                'attribute_list_id' => 3,
+                'comment' => 'WATTS',
+                'created_at' => NULL,
+                'id' => 9596,
+                'name' => 'watts',
+                'updated_at' => NULL,
+                'user_id' => 1,
+            ),
+            431 => 
+            array (
+                'attribute_list_id' => 3,
+                'comment' => 'WERA',
+                'created_at' => NULL,
+                'id' => 9597,
+                'name' => 'wera',
+                'updated_at' => NULL,
+                'user_id' => 1,
+            ),
+            432 => 
+            array (
+                'attribute_list_id' => 3,
+                'comment' => 'WIPIKA',
+                'created_at' => NULL,
+                'id' => 9598,
+                'name' => 'wipika',
+                'updated_at' => NULL,
+                'user_id' => 1,
+            ),
+            433 => 
+            array (
+                'attribute_list_id' => 3,
+                'comment' => 'XBIONIC',
+                'created_at' => NULL,
+                'id' => 9599,
+                'name' => 'xbionic',
+                'updated_at' => NULL,
+                'user_id' => 1,
+            ),
+            434 => 
+            array (
+                'attribute_list_id' => 3,
+                'comment' => 'XO SAIL',
+                'created_at' => NULL,
+                'id' => 9600,
+                'name' => 'xo-sail',
+                'updated_at' => NULL,
+                'user_id' => 1,
+            ),
+            435 => 
+            array (
+                'attribute_list_id' => 3,
+                'comment' => 'XSOCKS',
+                'created_at' => NULL,
+                'id' => 9601,
+                'name' => 'xsocks',
+                'updated_at' => NULL,
+                'user_id' => 1,
+            ),
+            436 => 
+            array (
+                'attribute_list_id' => 3,
+                'comment' => 'XSPAR',
+                'created_at' => NULL,
+                'id' => 9602,
+                'name' => 'xspar',
+                'updated_at' => NULL,
+                'user_id' => 1,
+            ),
+            437 => 
+            array (
+                'attribute_list_id' => 3,
+                'comment' => 'Z FIN',
+                'created_at' => NULL,
+                'id' => 9603,
+                'name' => 'z-fin',
+                'updated_at' => NULL,
+                'user_id' => 1,
+            ),
+            438 => 
+            array (
+                'attribute_list_id' => 3,
+                'comment' => 'ZAG',
+                'created_at' => NULL,
+                'id' => 9604,
+                'name' => 'zag',
+                'updated_at' => NULL,
+                'user_id' => 1,
+            ),
+            439 => 
+            array (
+                'attribute_list_id' => 3,
+                'comment' => 'ZEEKO',
+                'created_at' => NULL,
+                'id' => 9605,
+                'name' => 'zeeko',
+                'updated_at' => NULL,
+                'user_id' => 1,
+            ),
+            440 => 
+            array (
+                'attribute_list_id' => 3,
+                'comment' => 'GNU',
+                'created_at' => NULL,
+                'id' => 9606,
+                'name' => 'gnu',
+                'updated_at' => NULL,
+                'user_id' => 1,
+            ),
         ));
         
         

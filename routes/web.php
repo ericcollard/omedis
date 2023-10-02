@@ -62,6 +62,7 @@ Route::post('/attribute',[AttributeController::class, 'store'])->name('attribute
 Route::get('/attributelist', [AttributeListController::class, 'index'])->name('attributelist.index');
 Route::get('/attributelist/create', [AttributeListController::class, 'create'])->name('attributelist.create')->middleware(['auth:sanctum',config('jetstream.auth_session'),'verified',]);
 Route::get('/attributelist/colors', [AttributeListController::class, 'colors'])->name('attributelist.colors');
+Route::get('/attributelist/brands', [AttributeListController::class, 'brands'])->name('attributelist.brands');
 Route::get('/attributelist/{attributelist}', [AttributeListController::class, 'show'])->name('attributelist.show');
 Route::get('/attributelist/{attributelist}/edit', [AttributeListController::class, 'edit'])->name('attributelist.edit')->middleware(['auth:sanctum',config('jetstream.auth_session'),'verified',]);
 Route::patch('/attributelist/{attributelist}',[AttributeListController::class, 'update'])->name('attributelist.update')->middleware(['auth:sanctum',config('jetstream.auth_session'),'verified',]);

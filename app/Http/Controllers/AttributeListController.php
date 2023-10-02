@@ -138,6 +138,31 @@ class AttributeListController extends Controller
         return redirect(route('attributelist.index'))->with( ['message' => 'Data removed', 'alert' => 'success']);
     }
 
+    public function brands()
+    {
+        $row = 1;
+        $brands = [];
+        if (($handle = fopen('../storage/app/public/marques.csv','r')) !== FALSE) {
+            while (($data = fgetcsv($handle, 1000, ",")) !== FALSE) {
+                $num = count($data);
+                $brands[] = $data[0];
+            }
+            fclose($handle);
+        }
+        foreach  ($brands as $brand) {
+            echo "<p>".$brand.' // '.Str::of($brand)->slug('-').'</p>';
+
+
+            DB::table('attribute_list_values')->insert(
+                array('name' => Str::of($brand)->slug('-'),
+                    'comment' => $brand,
+                    'attribute_list_id' => 3,
+                    'user_id' => 1)
+            );
+
+
+        }
+    }
 
     public function colors()
     {

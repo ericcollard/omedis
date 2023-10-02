@@ -145,9 +145,9 @@ class AttributesTableSeeder extends Seeder
                 'id' => 10,
                 'name' => 'wholesale-price',
                 'required' => 1,
-                'unit_id' => 4,
-                'updated_at' => NULL,
-                'user_id' => 1,
+                'unit_id' => 16,
+                'updated_at' => '2023-10-02 18:36:23',
+                'user_id' => 2,
             ),
             10 => 
             array (
@@ -158,9 +158,9 @@ class AttributesTableSeeder extends Seeder
                 'id' => 11,
                 'name' => 'retail-price',
                 'required' => 1,
-                'unit_id' => 4,
-                'updated_at' => NULL,
-                'user_id' => 1,
+                'unit_id' => 16,
+                'updated_at' => '2023-10-02 18:36:33',
+                'user_id' => 2,
             ),
             11 => 
             array (
@@ -321,14 +321,16 @@ class AttributesTableSeeder extends Seeder
             23 => 
             array (
                 'attribute_list_id' => NULL,
-                'comment' => 'Size in Feets - Variant index attribute',
+                'comment' => 'Size in Feets - Variant index attribute
+You must use the symbol “prime” which is a single quotation mark “ ‘ “ after feet part ... even when there is no inches part.
+Sample : 5\'6 , 5\'4, 5\'2, ... 5\', 4\'9',
                 'created_at' => '2023-09-28 21:22:35',
-                'data_type_id' => 5,
+                'data_type_id' => 2,
                 'id' => 24,
                 'name' => 'size-ft-var',
                 'required' => 0,
                 'unit_id' => 12,
-                'updated_at' => '2023-09-28 21:22:57',
+                'updated_at' => '2023-10-02 15:26:44',
                 'user_id' => 2,
             ),
             24 => 
