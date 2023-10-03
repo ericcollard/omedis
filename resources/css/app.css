@@ -17,3 +17,17 @@ body a {
 .form-text {
     color:#6366f1;
 }
+
+#version {
+    position: absolute;
+    right: 0px;
+    top:0;
+    font-weight: lighter;
+    font-size: small;
+    color: #9ca3af;
+}
+
+#version .value {
+    color: #000;
+    font-weight: bolder;
+}

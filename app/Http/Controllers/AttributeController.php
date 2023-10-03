@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\Attribute;
 use App\Models\AttributeList;
 use App\Models\DataType;
+use App\Models\History;
 use App\Models\Unit;
 use Exception;
 use Illuminate\Http\Request;
@@ -25,6 +26,7 @@ class AttributeController extends Controller
      */
     public function index(AttributeDataTable $dataTable)
     {
+
         return $dataTable->render('attribute.index');
     }
 
