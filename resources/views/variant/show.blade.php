@@ -7,7 +7,7 @@
                     <li class="breadcrumb-item"><a href="{{ route('variant.index') }}">Variants</a></li>
                     <li class="breadcrumb-item active" aria-current="page">{{ $variant->id }}</li>
                 </ol>
-                <p id="version">VERSION<br/><span class="value">{{ \App\Models\history::getLastVersion() }}</span></p>
+                <p id="version">VERSION<br/><span class="value">{{ \App\Models\History::getLastVersion() }}</span></p>
             </nav>
         </h2>
     </x-slot>

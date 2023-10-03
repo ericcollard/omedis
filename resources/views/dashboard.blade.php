@@ -5,7 +5,7 @@
                 <ol class="breadcrumb">
                     <li class="breadcrumb-item"><img src="{{ asset('storage/omedis.png') }}" /></li>
                 </ol>
-                <p id="version">VERSION<br/><span class="value">{{ \App\Models\history::getLastVersion() }}</span></p>
+                <p id="version">VERSION<br/><span class="value">{{ \App\Models\History::getLastVersion() }}</span></p>
             </nav>
         </h2>
     </x-slot>

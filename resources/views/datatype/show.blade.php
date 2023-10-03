@@ -7,7 +7,7 @@
                     <li class="breadcrumb-item"><a href="{{ route('attribute.index') }}">Data type</a></li>
                     <li class="breadcrumb-item active" aria-current="page">{{ $datatype->name }}</li>
                 </ol>
-                <p id="version">VERSION<br/><span class="value">{{ \App\Models\history::getLastVersion() }}</span></p>
+                <p id="version">VERSION<br/><span class="value">{{ \App\Models\History::getLastVersion() }}</span></p>
             </nav>
         </h2>
     </x-slot>

@@ -11,7 +11,7 @@
                         <li class="breadcrumb-item active" aria-current="page">{{ $user->name }}</li>
                     @endif
                 </ol>
-                <p id="version">VERSION<br/><span class="value">{{ \App\Models\history::getLastVersion() }}</span></p>
+                <p id="version">VERSION<br/><span class="value">{{ \App\Models\History::getLastVersion() }}</span></p>
             </nav>
         </h2>
     </x-slot>
