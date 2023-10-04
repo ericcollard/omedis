@@ -73,8 +73,11 @@
                         <br/>- "Housse de flotteur de windsurf"
                         <br/>- ...
                         <br/>The standard is fixing a list of possible values, that each computing systems can relate to his own internal representation.
+                        <br/><br/>
+                        Let's take a 3rd exemple with product pictures : The standard is defining the format,size, type of picture, and the way to supply then.
                         <br/>
-
+                        <br/>The standard is also defining the list of data that have to (required) or can be (optional) supplied for each product, and the way to named each one.
+                        <br/>
                         <br/><img src="{{ asset('storage/onlyonetime.jpg') }}" />
                         <br/>Thanks to this standard, each supplier has only to develop one translation program from his own EPR to OMEDIS.
                         Each retailer has only to develop one translation program from OMEDIS to his own retail management system.
