@@ -51,6 +51,7 @@ Route::delete('/unit/{unit}',[UnitController::class, 'destroy'])->name('unit.des
 Route::post('/unit',[UnitController::class, 'store'])->name('unit.store')->middleware(['auth:sanctum',config('jetstream.auth_session'),'verified',]);
 
 Route::get('/attribute', [AttributeController::class, 'index'])->name('attribute.index');
+Route::get('/attribute/todo', [AttributeController::class, 'todo'])->name('attribute.todo');
 Route::get('/attribute/csvsample', [AttributeController::class, 'csvsample'])->name('attribute.csvsample');
 Route::get('/attribute/create', [AttributeController::class, 'create'])->name('attribute.create')->middleware(['auth:sanctum',config('jetstream.auth_session'),'verified',]);
 Route::get('/attribute/{attribute}', [AttributeController::class, 'show'])->name('attribute.show');

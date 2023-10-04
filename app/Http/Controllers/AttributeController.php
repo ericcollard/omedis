@@ -353,4 +353,9 @@ class AttributeController extends Controller
 
         return view('attribute.csvsample', compact('lines','attributes','errors'));
     }
+
+    public function todo()
+    {
+        return view('attribute.todo');
+    }
 }

@@ -14,17 +14,19 @@ class VariantsTableSeeder extends Seeder
      */
     public function run()
     {
-
+        
 
         \DB::table('variants')->delete();
-
+        
         \DB::table('variants')->insert(array (
-            0 =>
-                array (
-                    'id' => 1,
-                ),
-        )
-        );
-
+            0 => 
+            array (
+                'created_at' => NULL,
+                'id' => 1,
+                'updated_at' => NULL,
+            ),
+        ));
+        
+        
     }
 }
