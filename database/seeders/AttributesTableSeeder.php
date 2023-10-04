@@ -126,15 +126,17 @@ class AttributesTableSeeder extends Seeder
             8 => 
             array (
                 'attribute_list_id' => NULL,
-                'comment' => 'Product picture links, semicolon separated',
+                'comment' => 'Product picture links, semicolon separated, most important first
+We suggest that picture should be square aspect, at least 800x800px, white background, jpeg format
+We suggest that picture should be stored on a cnd, so that processing programs could upload them automatically, provided the link is supplied',
                 'created_at' => NULL,
                 'data_type_id' => 2,
                 'id' => 9,
                 'name' => 'pictures',
                 'required' => 0,
                 'unit_id' => 1,
-                'updated_at' => NULL,
-                'user_id' => 1,
+                'updated_at' => '2023-10-04 13:12:09',
+                'user_id' => 2,
             ),
             9 => 
             array (

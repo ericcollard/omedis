@@ -190,6 +190,19 @@ id uom us "unit", quantity by carton\',required: \'\',attribute_list_id: \'\',un
                 'updated_at' => '2023-10-04 12:30:46',
                 'user_id' => '2',
             ),
+            15 => 
+            array (
+                'action' => 'UPDATE',
+                'created_at' => '2023-10-04 13:12:09',
+                'id' => 16,
+                'model' => 'Attribute',
+                'new_values' => 'name: \'pictures\',comment: \'Product picture links, semicolon separated, most important first
+We suggest that picture should be square aspect, at least 800x800px, white background, jpeg format
+We suggest that picture should be stored on a cnd, so that processing programs could upload them automatically, provided the link is supplied\',required: \'0\',attribute_list_id: \'\',unit_id: \'1\',data_type_id: \'2\'',
+                'old_values' => 'name: \'pictures\',comment: \'Product picture links, semicolon separated\',required: \'0\',attribute_list_id: \'\',unit_id: \'1\',data_type_id: \'2\'',
+                'updated_at' => '2023-10-04 13:12:09',
+                'user_id' => '2',
+            ),
         ));
         
         
