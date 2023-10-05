@@ -401,7 +401,7 @@ class VariantController extends Controller
                 ->with(['alert' => 'success', 'message' => 'Data loaded - file is conform to OMEDIS' ]);
         }
         else {
-            dd($errors);
+            return view('variant.checkfailed', compact('errors'));
         }
 
     }
