@@ -37,6 +37,12 @@ class HistoryDataTable extends DataTable
             ->addColumn('user_id', function ($history) {
                     return "<a href='".route('user.show',$history->user)."'>".$history->user->name."</a>";
             })
+            ->editColumn('created_at', function ($variant) {
+                        if ($variant->created_at)
+                            return $variant->created_at->formatLocalized('%d %B %Y'); //'%d %B %Y %H:%M'  %c
+                        else
+                            return 'Aucune';
+                    })
             ->setRowId('id')
             ->rawColumns(['user_id']);
     }

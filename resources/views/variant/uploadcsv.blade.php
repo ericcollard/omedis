@@ -4,7 +4,7 @@
             <nav style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='currentColor'/%3E%3C/svg%3E&#34;);" aria-label="breadcrumb">
                 <ol class="breadcrumb">
                     <li class="breadcrumb-item"><a href="{{ route('dashboard') }}"><img src="{{ asset('storage/omedis.png') }}" /></a></li>
-                    <li class="breadcrumb-item"><a href="{{ route('variant.index') }}">Variants</a></li>
+                    <li class="breadcrumb-item"><a href="{{ route('variant.index') }}">CSV Validator</a></li>
                 </ol>
                 <p id="version">VERSION<br/><span class="value">{{ \App\Models\History::getLastVersion() }}</span></p>
             </nav>
@@ -15,14 +15,32 @@
         <div class="max-w-7xl mx-auto py-10 sm:px-6 lg:px-8">
 
             <div class="container">
-                <p><a href="{{ route('variant.truncate') }}">Remove all variants</a></p>
-                {{ $dataTable->table() }}
+                <form action="{{ route('variant.decodecsv') }}" method="POST" enctype="multipart/form-data">
+                    @csrf
+
+                    <div class="mb-3">
+                        <label class="form-label" for="inputFile">File:</label>
+                        <input
+                            type="file"
+                            name="file"
+                            id="inputFile"
+                            class="form-control @error('file') is-invalid @enderror">
+
+                        @error('file')
+                        <span class="text-danger">{{ $message }}</span>
+                        @enderror
+                    </div>
+
+                    <div class="mb-3">
+                        <button type="submit" class="btn btn-success">Upload</button>
+                    </div>
+
+                </form>
+
+
             </div>
 
         </div>
     </div>
 
-    @push('scripts')
-        {{ $dataTable->scripts(attributes: ['type' => 'module']) }}
-    @endpush
 </x-app-layout>

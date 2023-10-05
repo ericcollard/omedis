@@ -78,7 +78,7 @@
             <ul>
                 <li><a href="{{ route('attribute.csvsample') }}">Download csv file sample, based on OMEDIS standard</a></li>
                 <li><a href="{{ route('attribute.todo') }}">Download xml file sample, based on OMEDIS standard</a></li>
-                <li><a href="{{ route('attribute.todo') }}">Omedis csv file checker and validator</a></li>
+                <li><a href="{{ route('variant.uploadcsv') }}">Omedis csv file checker and validator</a></li>
                 <li><a href="{{ route('attribute.todo') }}">Omedis xml file checker and validator</a></li>
             </ul>
 

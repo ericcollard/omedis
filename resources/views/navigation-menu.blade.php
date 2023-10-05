@@ -39,6 +39,11 @@
                     <x-nav-link href="{{ route('history.index') }}" :active="request()->routeIs('history.index')">
                         {{ __('History') }}
                     </x-nav-link>
+                    @if (Auth::check() and Auth::user()->hasRole('ROLE_ADMIN'))
+                    <x-nav-link href="{{ route('variant.index') }}" :active="request()->routeIs('variant.index')">
+                        {{ __('Variants') }}
+                    </x-nav-link>
+                    @endif
 
 
                 </div>

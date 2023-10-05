@@ -82,6 +82,9 @@ Route::post('attributelistvalue/{attributelist?}',[AttributeListValueController:
 Route::delete('attributelistvalue/{attributelistvalue}/{attributelist?}',[AttributeListValueController::class, 'destroy'])->name('attributelistvalue.destroy')->middleware(['auth:sanctum',config('jetstream.auth_session'),'verified',]);
 
 Route::get('variant', [VariantController::class, 'index'])->name('variant.index');
+Route::post('variant/decodecsv', [VariantController::class, 'decodecsv'])->name('variant.decodecsv')->middleware(['auth:sanctum',config('jetstream.auth_session'),'verified',]);
+Route::get('variant/uploadcsv', [VariantController::class, 'uploadcsv'])->name('variant.uploadcsv')->middleware(['auth:sanctum',config('jetstream.auth_session'),'verified',]);
+Route::get('variant/truncate', [VariantController::class, 'truncate'])->name('variant.truncate')->middleware(['auth:sanctum',config('jetstream.auth_session'),'verified',]);
 Route::get('variant/{variant}', [VariantController::class, 'show'])->name('variant.show');
 
 Route::get('history', [HistoryController::class, 'index'])->name('history.index');
