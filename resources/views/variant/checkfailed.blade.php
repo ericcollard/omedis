@@ -19,6 +19,11 @@
                     <h4>Validation errors detected during file reading :</h4>
                     <p>{!! $errors !!}</p>
                 @endif
+                <h4 class="mt-4">Validate again</h4>
+
+                    <p><a href="{{ route('variant.uploadcsv') }}">Validate csv file against Omedis</a></p>
+                    <p><a href="{{ route('variant.uploadxml') }}">Validate xml file against Omedis</a></p>
+
             </div>
 
         </div>
