@@ -26,7 +26,7 @@
                     <div class="card-body">
                         <p>{{ __('name') }}: {{ $datatype->name }}</p>
                         <p>{{ __('comment') }}: {{ $datatype->comment }}</p>
-
+                        <p>{{ __('validation string') }}: {{ $datatype->validation_str }}</p>
                         <p>{{ __('Created at') }}: {{ $datatype->created_at }}</p>
                         <p>{{ __('Updated at') }}: {{ $datatype->updated_at }}   by {{ $datatype->user->name }}</p>
 

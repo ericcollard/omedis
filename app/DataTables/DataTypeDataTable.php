@@ -100,6 +100,7 @@ class DataTypeDataTable extends DataTable
             Column::make('id'),
             Column::make('name'),
             Column::make('comment'),
+            Column::make('validation_str'),
             Column::make([
                 'data' => 'action',
                 'title' => '...',

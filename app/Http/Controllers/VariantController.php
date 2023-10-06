@@ -4,12 +4,17 @@ namespace App\Http\Controllers;
 
 use App\DataTables\VariantDataTable;
 use App\Models\Attribute;
+use App\Models\AttributeListValue;
 use App\Models\Variant;
 use App\Models\VariantAttributes;
+use Exception;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Storage;
-use Illuminate\Validation\Rules\File;
+use Illuminate\Support\Facades\Validator;
+use Illuminate\Support\Fluent;
+use Illuminate\Validation\Rule;
+use League\Csv\Reader;
 
 class VariantController extends Controller
 {
@@ -86,11 +91,88 @@ class VariantController extends Controller
         return view('variant.uploadcsv');
     }
 
+    public function validatortest()
+    {
+        //$listValues = ($attribute->attributeList->attributeListValues->pluck('name','id')->toArray());
+
+        $datas = [
+            'val_float' => "2125",
+            'val_money' => "2125.45",
+            'val_int' => "",
+            'val_str' => "-1254 ert puis c'erst comme ça ! 'avec des guillmemenst ",
+            'val_txt' => "-1254 ert puis c'erst comme ça ! 'avec des guillmemenst ",
+            'user_id' => 1,
+            'attribute_id' => 7  // 6 categ, 7 desc
+        ];
+        $rules = [
+            'val_float' => 'required|numeric|decimal:0,4|gt:0',
+            'val_money' => 'required|numeric|decimal:0,2|gt:0',
+            //'val_int' => 'required|numeric|integer|max:12000|gt:0',
+            'val_str' => 'nullable|string|max:255',
+            'val_txt' => 'required|string',
+            'attribute_id' => 'required|exists:attribute_lists,id',
+            'user_id' => 'required|exists:users,id',
+        ];
+        /*
+        $rules['val_int'] = [
+            'numeric',
+            'integer',
+            'max:12000',
+            'gt:0',
+            function ($attribute, $value, $fail,$datas) {
+                if ($value === '125') {
+                    $fail('The '.$attribute.' is invalid.');
+                }
+            },
+        ];*/
+
+
+
+
+        $validator = Validator::make($datas, $rules);
+
+        // val int required si selection
+        $validator->sometimes(['val_int'], 'required', function (Fluent $input) {
+            $attribute_id = $input->attribute_id;
+            $attribute = Attribute::find($attribute_id);
+            if ($attribute->dataType->name == 'selection')
+            {
+                return 1;
+            }
+            else
+                return 0;
+        });
+
+        if ($validator->fails()) {
+            $fieldsWithErrorMessagesArray = $validator->messages()->get('*');
+            echo "<p>Ko :</p>";
+            var_dump($fieldsWithErrorMessagesArray);
+
+        }
+        else
+        {
+            echo "ok";
+        }
+
+
+        return;
+
+    }
+
     public function decodecsv(Request $request)
     {
 
+        /*
+         *         Validator::validate($request->all(), [
+            'file' => [
+                'required',
+                File::types(['csv'])
+            ]
+        ]);
+         */
+
         $request->validate([
-            'file' => 'required|mimes:text,csv|max:2048', //'required|mimes:text/csv|max:2048',
+            'file' => 'required|mimes:csv|max:2048',
         ]);
 
         $fileName = time().'-'.$request->file->getClientOriginalName();
@@ -105,273 +187,77 @@ class VariantController extends Controller
             abort(404, "Impossible to find ".$fileRelPath." file");
         }
 
-        // lecture du fichier
+        // lecture du fichier texte
         try {
-            $fileStream = fopen($fileFullPath, "r");
-        }
-        catch (\Exception $e) {
-            abort(500, "Error when opening ".$filePath."file : ".$e->getMessage());
+            $csvFile = Storage::get($fileRelPath);
+        }  catch (Exception $e) {
+            abort(404, "Impossible to open ".$fileRelPath." file");
         }
 
-        $fieldNames = [];
-        $lines = [];
-        $rowCount = 0;
-        while (($data = fgetcsv($fileStream, 1000, ",")) !== FALSE) {
-            $rowCount++;
-            if ($rowCount == 1)
-                $fieldNames =$data;
-            else
-                $lines[] = $data;
-        }
-        fclose($fileStream);
+        // déchiffrage csv
+        $csv = Reader::createFromString($csvFile);
 
+        $csv->setHeaderOffset(0);
+        try {
+            $fieldNames = $csv->getHeader();
+            $records = $csv->getRecords();
+        } catch (Exception $e) {
+            abort(404, "Errors in the ".$fileRelPath." file ".$e->getMessage());
+        }
+
+        // validation des données
         $errors = "";
 
-        // Vérification de la consistance du csv
-        $sizeTitle = count($fieldNames);
-        foreach ($lines as $key => $line)
-        {
-            if ( count($line) != $sizeTitle)
-            {
-                abort(500, "Line ".$key." has not correct number of items. Waiting for ".$sizeTitle.", found ".count($line)."<br/>".json_encode($line));
-            }
-        }
-
-        // CRéation des variants
-        $variantsArr = [];
-        for ($i = 1; $i <= $sizeTitle; $i++) {
-            $variantsArr[] = [];
-        }
-
-        // vérification de présence des champs obligatoires
+        // validation des champs obligatoires
+        $validationRule = [];
         $resquiredAttributes = Attribute::where('required', '1')->get();
         foreach ($resquiredAttributes as $key => $resquiredAttribute)
         {
-            // vérifier que la valeur est bien dans $listValues
-            if (! $pos = array_search($resquiredAttribute->name, $fieldNames)) {
-                // valeur non valide
-                $errors.= "<br/>Missing required field ".$resquiredAttribute->name;
-            }
+            if ($resquiredAttribute->dataType->name != 'selection')
+                $validationRule[$resquiredAttribute->name] = "required|".$resquiredAttribute->dataType->validation_str;
         }
 
-        // cartographie des champs utilisés
-        $attributes = [];
-        foreach ($fieldNames as $fieldname)
-        {
-            $attribute = Attribute::where('name', $fieldname)->first();
-            if (!$attribute)
-            {
-                $errors.= "<br/>Invalid attribute named ".$fieldname;
-            }
-            $attributes[] = $attribute;
-        }
+        $record_counter = 0;
+        foreach($records as $record) {
+            $record_counter++;
 
-        // vérification des valeurs d'attributs
-        $errors = "";
-        foreach ($attributes as $attribute_key => $attribute)
-        {
-            // champ obligatoire
-            if ($attribute->required == 1)
+            // autres validations (champs non obligatoires & listes)
+            foreach ($record as $attributeName => $attributeValue)
             {
-                foreach ($lines as $key_line => $line)
+                $attribute = Attribute::where('name', $attributeName)->first();
+                if (!$attribute->required)
+                    $validationRule[$attribute->name] = "nullable|".$attribute->dataType->validation_str;
+
+                if ($attribute->dataType->name == 'selection')
                 {
-                    $lineValue = $line[$attribute_key];
-                    if (strlen($lineValue) == 0)
-                    {
-                        $errors.= "<br/>Required value for ".$attribute->name." attribute, line #".$key_line;
-                    }
+                    $validationRule[$attribute->name] =  [
+                        ($attribute->required == 1) ? 'required':'nullable',
+                    Rule::exists('attribute_list_values', 'name')
+                        ->where('attribute_list_id', $attribute->attribute_list_id),
+                    ];
                 }
             }
 
-            switch ($attribute->dataType->name) {
-                case "selection":
-                    // valeurs possibles pour cet attribut
-                    $listValues = ($attribute->attributeList->attributeListValues->pluck('name','id')->toArray());
-                    // balayage des lignes
-                    foreach ($lines as $key_line => $line)
-                    {
-                        $lineValue = $line[$attribute_key];
-                        if (strlen($lineValue) > 0)
-                        {
-                            // vérifier que la valeur est bien dans $listValues
-                            if (! $value_key = array_search($lineValue, $listValues)) {
-                                // valeur non valide
-                                $errors.= "<br/>Invalid value '".$lineValue."' for ".$attribute->name." attribute, line #".$key_line;
-                            }
-                            else
-                            {
-                                $variantAttribute = [
-                                    'attribute_id' => $attribute->id,
-                                    'value_int' => $value_key
-                                ];
-                                $variantsArr[$key_line][] = $variantAttribute;
-                            }
-                        }
-                    }
-                    break;
-                case "string":
-                    foreach ($lines as $key_line => $line)
-                    {
-                        $lineValue = $line[$attribute_key];
-                        if (strlen($lineValue) > 0)
-                        {
-                            if (strlen($lineValue) >= 256)
-                            {
-                                $errors.= "<br/>String too long '".$lineValue."' for ".$attribute->name." attribute, line #".$key_line;
-                            }
-                            else
-                            {
-                                $variantAttribute = [
-                                    'attribute_id' => $attribute->id,
-                                    'value_str' => $lineValue
-                                ];
-                                $variantsArr[$key_line][] = $variantAttribute;
-                            }
-                        }
-                    }
-                    break;
-                case "text":
-                    foreach ($lines as $key_line => $line)
-                    {
-                        $lineValue = $line[$attribute_key];
-                        if (strlen($lineValue) > 0)
-                        {
-                            $variantAttribute = [
-                                'attribute_id' => $attribute->id,
-                                'value_txt' => $lineValue
-                            ];
-                            $variantsArr[$key_line][] = $variantAttribute;
-                        }
-                    }
-                    break;
-                case "boolean":
-                    foreach ($lines as $key_line => $line)
-                    {
-                        $lineValue = $line[$attribute_key];
-                        if (strlen($lineValue) > 0)
-                        {
-                            if ($lineValue != '1' and $lineValue !='0')
-                            {
-                                $errors.= "<br/>Invalid boolean value '".$lineValue."' for ".$attribute->name." attribute : should be 1 or 0, line #".$key_line;
-                            }
-                            else
-                            {
-                                $variantAttribute = [
-                                    'attribute_id' => $attribute->id,
-                                    'value_int' => $lineValue
-                                ];
-                                $variantsArr[$key_line][] = $variantAttribute;
-                            }
-                        }
-                    }
-                    break;
-                case "integer":
-                    foreach ($lines as $key_line => $line)
-                    {
-                        $lineValue = $line[$attribute_key];
-                        if (strlen($lineValue) > 0)
-                        {
-                            if (!is_numeric($lineValue))
-                            {
-                                $errors.= "<br/>Invalid integer value '".$lineValue."' for ".$attribute->name." attribute : should be numeric, line #".$key_line;
-                            }
-                            elseif ((int)$lineValue != (float)$lineValue)
-                            {
-                                $errors.= "<br/>Invalid integer value '".$lineValue."' for ".$attribute->name." attribute : should not have decimal part, line #".$key_line;
-                            }
-                            elseif ((float) $lineValue > 2147483647)
-                            {
-                                $errors.= "<br/>Invalid integer value '".$lineValue."' for ".$attribute->name." attribute : should be less than 2147483647, line #".$key_line;
-                            }
-                            else
-                            {
-                                $variantAttribute = [
-                                    'attribute_id' => $attribute->id,
-                                    'value_int' => (int)$lineValue
-                                ];
-                                $variantsArr[$key_line][] = $variantAttribute;
-                            }
-                        }
-                    }
-                    break;
-                case "float":
-                    foreach ($lines as $key_line => $line)
-                    {
-                        $lineValue = $line[$attribute_key];
-                        if (strlen($lineValue) > 0)
-                        {
-                            if (strpos($lineValue,',') !=0) {
-                                $errors.= "<br/>Invalid float value '".$lineValue."' for ".$attribute->name." attribute : comma character not allowed (seperator should be .)', line #".$key_line;
-                            }
-                            elseif (strpos($lineValue,"'") !=0) {
-                                $errors.= "<br/>Invalid float value '".$lineValue."' for ".$attribute->name." attribute : quote character not allowed', line #".$key_line;
-                            }
-                            elseif (!is_numeric($lineValue))
-                            {
-                                $errors.= "<br/>Invalid float value '".$lineValue."' for ".$attribute->name." attribute : should be numeric, line #".$key_line;
-                            }
-                            else
-                            {
-                                $decimalPart = "";
-                                $pos = strpos($lineValue,'.');
-                                if ($pos >0)
-                                    $decimalPart = substr($lineValue,$pos+1);
-                                if (strlen($decimalPart) > 4)
-                                {
-                                    $errors.= "<br/>Invalid float value '".$lineValue."' for ".$attribute->name." attribute : max 4 digits decimal part, line #".$key_line;
-                                }
-                                else
-                                {
-                                    $variantAttribute = [
-                                        'attribute_id' => $attribute->id,
-                                        'value_float' => (float)$lineValue
-                                    ];
-                                    $variantsArr[$key_line][] = $variantAttribute;
-                                }
-                            }
+            $validator = Validator::make($record, $validationRule);
 
-                        }
+            if ($validator->fails()) {
+                $fieldsWithErrorMessagesArray = $validator->messages()->get('*');
+                foreach ($fieldsWithErrorMessagesArray as $fieldName => $fieldWithErrorMessagesArray) {
+                    $errors.= "<p>";
+                    $errors.= "Line #".$record_counter." - field <strong>".$fieldName."</strong> field value validation errors";
+                    $errors.= "<br/>Erronous supplied value : <span class='text-red-500'>".$validator->getData()[$fieldName]."</span>";
+                    $errors.= "<ul>";
+                    foreach ($fieldWithErrorMessagesArray as $fieldWithErrorMessage) {
+                        $errors.= "<li><i>";
+                        $errors.= $fieldWithErrorMessage;
+                        $errors.= "</i></li>";
                     }
-                    break;
-                case "money":
-                    foreach ($lines as $key_line => $line)
-                    {
-                        $lineValue = $line[$attribute_key];
-                        if (strlen($lineValue) > 0)
-                        {
-                            if (strpos($lineValue,',') !=0) {
-                                $errors.= "<br/>Invalid money value '".$lineValue."' for ".$attribute->name." attribute : comma character not allowed (seperator should be .)', line #".$key_line;
-                            }
-                            elseif (strpos($lineValue,"'") !=0) {
-                                $errors.= "<br/>Invalid money value '".$lineValue."' for ".$attribute->name." attribute : quote character not allowed', line #".$key_line;
-                            }
-                            elseif (!is_numeric($lineValue))
-                            {
-                                $errors.= "<br/>Invalid money value '".$lineValue."' for ".$attribute->name." attribute : should be numeric, line #".$key_line;
-                            }
-                            else
-                            {
-                                $decimalPart = "";
-                                $pos = strpos($lineValue,'.');
-                                if ($pos >0)
-                                    $decimalPart = substr($lineValue,$pos+1);
-                                if (strlen($decimalPart) > 2)
-                                {
-                                    $errors.= "<br/>Invalid money value '".$lineValue."' for ".$attribute->name." attribute : max é digits decimal part, line #".$key_line;
-                                }
-                                else
-                                {
-                                    $variantAttribute = [
-                                        'attribute_id' => $attribute->id,
-                                        'value_float' => (float)$lineValue
-                                    ];
-                                    $variantsArr[$key_line][] = $variantAttribute;
-                                }
-                            }
-                        }
-                    }
-                    break;
+                    $errors.= "</ul>";
+                    $errors.= "</p>";
+
+                }
             }
+
         }
 
         if (strlen($errors) == 0)
@@ -386,15 +272,47 @@ class VariantController extends Controller
             }
 
             // créer les nouveaux variant
-            foreach ($variantsArr as $key_line => $variantArr)
+            foreach($records as $record)
             {
                 $variant = new Variant(['user_id' => Auth::id()]);
                 $variant->save();
-                foreach ($variantArr as $variantAttributeValueArr)
+                foreach ($record as $attributeName => $attributeValue)
                 {
+                    //dd($attributeName,$attributeValue);  // brand > duotone
+                    $attribute = Attribute::where('name', $attributeName)->first();
+                    $variantAttributeValueArr = [];
                     $variantAttributeValueArr['variant_id'] = $variant->id;
+                    $variantAttributeValueArr['attribute_id'] = $attribute->id;
+
+                    switch ($attribute->dataType->name) {
+                        case "selection":
+                            $value_id = AttributeListValue::where('name', $attributeValue)->pluck('id')->first();
+                            $variantAttributeValueArr['value_int'] =$value_id;
+                            break;
+                        case "string":
+                            $variantAttributeValueArr['value_str'] =$attributeValue;
+                            break;
+                        case "text":
+                            $variantAttributeValueArr['value_txt'] =$attributeValue;
+                            break;
+                        case "integer":
+                            $variantAttributeValueArr['value_int'] =(int)$attributeValue;
+                            break;
+                        case "float":
+                            $variantAttributeValueArr['value_float'] =(float)$attributeValue;
+                            break;
+                        case "money":
+                            $variantAttributeValueArr['value_float'] =(float)$attributeValue;
+                            break;
+                        case "boolean":
+                            $variantAttributeValueArr['value_int'] =(int)$attributeValue;
+                            break;
+                    }
+
+                    //dd($variantAttributeValueArr);
                     $variantAttributeValue = new VariantAttributes($variantAttributeValueArr);
                     $variantAttributeValue -> save();
+                    //dd($variantAttributeValue);
                 }
             }
             return redirect()->route('variant.index')
@@ -403,6 +321,6 @@ class VariantController extends Controller
         else {
             return view('variant.checkfailed', compact('errors'));
         }
-
     }
+
 }

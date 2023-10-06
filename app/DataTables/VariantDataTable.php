@@ -46,30 +46,59 @@ class VariantDataTable extends DataTable
                 switch ($variantAttribute->attribute->datatype->name)
                 {
                     case "selection":
-                        $html .= $variantAttribute->attribute->attributeList->attributeListValues->where('id', $variantAttribute->value_int)->first()->name;
+                        if ($variantAttribute->value_int)
+                        {
+                            $attrValue = $variantAttribute->attribute->attributeList->attributeListValues->where('id', $variantAttribute->value_int)->first();
+                            if ($attrValue)
+                                $html .= $attrValue->name;
+                            else
+                                $html .= "nc.";
+                        }
+
                         break;
                     case "string":
-                        $html .= $variantAttribute->value_str;
+                        if ($variantAttribute->value_str)
+                        {
+                            $html .= $variantAttribute->value_str;
+                            if ($variantAttribute->attribute->unit and $variantAttribute->attribute->unit->name != 'none') $html .= $variantAttribute->attribute->unit->name;
+                        }
                         break;
                     case "integer":
-                        $html .= $variantAttribute->value_int;
-                        break;
+                        if ($variantAttribute->value_int)
+                        {
+                            $html .= $variantAttribute->value_int;
+                            if ($variantAttribute->attribute->unit and $variantAttribute->attribute->unit->name != 'none') $html .= $variantAttribute->attribute->unit->name;
+                        }
+                       break;
                     case "float":
-                        $html .= $variantAttribute->value_float;
+                        if ($variantAttribute->value_float)
+                        {
+                            $html .= $variantAttribute->value_float;
+                            if ($variantAttribute->attribute->unit and $variantAttribute->attribute->unit->name != 'none') $html .= $variantAttribute->attribute->unit->name;
+                        }
                         break;
                     case "boolean":
-                        $html .= $variantAttribute->value_int;
+                        if ($variantAttribute->value_int)
+                        {
+                            $html .= $variantAttribute->value_int;
+                            if ($variantAttribute->attribute->unit and $variantAttribute->attribute->unit->name != 'none') $html .= $variantAttribute->attribute->unit->name;
+                        }
                         break;
                     case "money":
-                        $html .= $variantAttribute->value_float;
+                        if ($variantAttribute->value_float)
+                        {
+                            $html .= $variantAttribute->value_float;
+                            if ($variantAttribute->attribute->unit and $variantAttribute->attribute->unit->name != 'none') $html .= $variantAttribute->attribute->unit->name;
+                        }
                         break;
                     case "text":
-                        $html .= $variantAttribute->value_txt;
+                        if ($variantAttribute->value_txt)
+                        {
+                            $html .= $variantAttribute->value_txt;
+                            if ($variantAttribute->attribute->unit and $variantAttribute->attribute->unit->name != 'none') $html .= $variantAttribute->attribute->unit->name;
+                        }
                         break;
                 }
-                if ($variantAttribute->attribute->datatype->name != 'selection' and $variantAttribute->attribute->unit and $variantAttribute->attribute->unit->name != 'none')
-                    $html .= $variantAttribute->attribute->unit->name;
-
                  $html .= "</li>";
             }
             $html .= "</ul>";

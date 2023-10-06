@@ -15,6 +15,7 @@ return new class extends Migration
             $table->id();
             $table->string('name');
             $table->text('comment')->nullable();
+            $table->string('validation_str');
             $table->integer('user_id')->default(1);
             $table->timestamps();
         });

@@ -52,7 +52,6 @@ Route::post('/unit',[UnitController::class, 'store'])->name('unit.store')->middl
 
 Route::get('/attribute', [AttributeController::class, 'index'])->name('attribute.index');
 Route::get('/attribute/todo', [AttributeController::class, 'todo'])->name('attribute.todo');
-Route::get('/attribute/csvsample', [AttributeController::class, 'csvsample'])->name('attribute.csvsample');
 Route::get('/attribute/create', [AttributeController::class, 'create'])->name('attribute.create')->middleware(['auth:sanctum',config('jetstream.auth_session'),'verified',]);
 Route::get('/attribute/{attribute}', [AttributeController::class, 'show'])->name('attribute.show');
 Route::get('/attribute/{attribute}/edit', [AttributeController::class, 'edit'])->name('attribute.edit')->middleware(['auth:sanctum',config('jetstream.auth_session'),'verified',]);
@@ -84,6 +83,8 @@ Route::delete('attributelistvalue/{attributelistvalue}/{attributelist?}',[Attrib
 Route::get('variant', [VariantController::class, 'index'])->name('variant.index');
 Route::post('variant/decodecsv', [VariantController::class, 'decodecsv'])->name('variant.decodecsv')->middleware(['auth:sanctum',config('jetstream.auth_session'),'verified',]);
 Route::get('variant/uploadcsv', [VariantController::class, 'uploadcsv'])->name('variant.uploadcsv')->middleware(['auth:sanctum',config('jetstream.auth_session'),'verified',]);
+Route::get('variant/validatortest', [VariantController::class, 'validatortest'])->name('variant.validatortest')->middleware(['auth:sanctum',config('jetstream.auth_session'),'verified',]);
+
 Route::get('variant/truncate', [VariantController::class, 'truncate'])->name('variant.truncate')->middleware(['auth:sanctum',config('jetstream.auth_session'),'verified',]);
 Route::get('variant/{variant}', [VariantController::class, 'show'])->name('variant.show');
 

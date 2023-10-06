@@ -42,6 +42,7 @@ class DataTypeController extends Controller
         Gate::authorize('udpate-data');
         $this->validate(request(), [
                 'name' =>  'required',
+                'validation_str'=>  'required',
             ]
         );
 
@@ -90,6 +91,7 @@ class DataTypeController extends Controller
         Gate::authorize('udpate-data');
         $request->validate([
             'name' => 'required',
+            'validation_str'=>  'required',
         ]);
 
         $datatype->name = $request->name;

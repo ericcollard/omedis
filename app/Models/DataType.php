@@ -21,6 +21,7 @@ class DataType extends Mymodel
         'name',
         'comment',
         'user_id',
+        'validation_str',
     ];
 
     public static function boot()

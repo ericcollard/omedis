@@ -14,12 +14,12 @@ class UsersTableSeeder extends Seeder
      */
     public function run()
     {
-        
+
 
         \DB::table('users')->delete();
-        
+
         \DB::table('users')->insert(array (
-            0 => 
+            0 =>
             array (
                 'adress' => '17 montée du Cdt Robien',
                 'city' => 'Marseille',
@@ -42,7 +42,7 @@ class UsersTableSeeder extends Seeder
                 'two_factor_secret' => NULL,
                 'updated_at' => '2022-07-21 16:35:50',
             ),
-            1 => 
+            1 =>
             array (
                 'adress' => '17 montée du Cdt Robien',
                 'city' => 'Marseille',
@@ -59,13 +59,13 @@ class UsersTableSeeder extends Seeder
                 'postal_code' => '13011',
                 'profile_photo_path' => NULL,
                 'remember_token' => NULL,
-                'roles' => '["ROLE_CONTRIBUTOR"]',
+                'roles' => '["ROLE_ADMIN"]',
                 'two_factor_confirmed_at' => NULL,
                 'two_factor_recovery_codes' => NULL,
                 'two_factor_secret' => NULL,
                 'updated_at' => '2022-07-21 16:35:50',
             ),
-            2 => 
+            2 =>
             array (
                 'adress' => NULL,
                 'city' => NULL,
@@ -89,7 +89,7 @@ class UsersTableSeeder extends Seeder
                 'updated_at' => '2023-09-27 15:25:16',
             ),
         ));
-        
-        
+
+
     }
 }

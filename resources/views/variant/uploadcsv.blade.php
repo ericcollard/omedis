@@ -15,11 +15,13 @@
         <div class="max-w-7xl mx-auto py-10 sm:px-6 lg:px-8">
 
             <div class="container">
+                <p>Welcome to the OMEDIS csv file validator.</p>
+                <p>By submitting a csv file to this tool, your file will be analysed and you will get a compatibility report again the OMEDIS norm.</p>
                 <form action="{{ route('variant.decodecsv') }}" method="POST" enctype="multipart/form-data">
                     @csrf
 
                     <div class="mb-3">
-                        <label class="form-label" for="inputFile">File:</label>
+                        <label class="form-label" for="inputFile">Your file:</label>
                         <input
                             type="file"
                             name="file"
@@ -32,7 +34,7 @@
                     </div>
 
                     <div class="mb-3">
-                        <button type="submit" class="btn btn-success">Upload</button>
+                        <button type="submit" class="btn btn-success">Submit</button>
                     </div>
 
                 </form>

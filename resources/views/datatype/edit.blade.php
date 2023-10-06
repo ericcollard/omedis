@@ -57,6 +57,15 @@
                                         @enderror
                                     </div>
                                 </div>
+                                <div class="col-xs-12 col-sm-12 col-md-12 mb-4">
+                                    <div class="form-group">
+                                        <strong>Validation string:</strong>
+                                        <textarea rows="4", cols="54" id="validation_str" name="validation_str" style="resize:none" class="form-control" placeholder="validation_str">{{ $datatype->validation_str }}</textarea>
+                                        @error('validation_str')
+                                        <div class="alert alert-danger mt-1 mb-1">{{ $message }}</div>
+                                        @enderror
+                                    </div>
+                                </div>
 
                                 <div class="col-xs-12 col-sm-12 col-md-12 mb-4">
                                     <button type="submit" class="btn btn-primary">Submit</button>

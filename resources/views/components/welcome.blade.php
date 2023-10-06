@@ -76,7 +76,7 @@
 
         <p class="mt-4 text-gray-500 dark:text-gray-400 text-sm leading-relaxed">
             <ul>
-                <li><a href="{{ route('attribute.csvsample') }}">Download csv file sample, based on OMEDIS standard</a></li>
+                <li><a href="{{ URL::to( 'storage/sample.csv')  }}">Download csv file sample, based on OMEDIS standard</a></li>
                 <li><a href="{{ route('attribute.todo') }}">Download xml file sample, based on OMEDIS standard</a></li>
                 <li><a href="{{ route('variant.uploadcsv') }}">Omedis csv file checker and validator</a></li>
                 <li><a href="{{ route('attribute.todo') }}">Omedis xml file checker and validator</a></li>
