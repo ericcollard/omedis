@@ -15,6 +15,8 @@ use Illuminate\Support\Facades\Validator;
 use Illuminate\Support\Fluent;
 use Illuminate\Validation\Rule;
 use League\Csv\Reader;
+use League\Csv\XMLConverter;
+use SimpleXMLElement;
 
 class VariantController extends Controller
 {
@@ -91,86 +93,126 @@ class VariantController extends Controller
         return view('variant.uploadcsv');
     }
 
-    public function validatortest()
+    public function uploadxml()
     {
-        //$listValues = ($attribute->attributeList->attributeListValues->pluck('name','id')->toArray());
+        return view('variant.uploadxml');
+    }
 
-        $datas = [
-            'val_float' => "2125",
-            'val_money' => "2125.45",
-            'val_int' => "",
-            'val_str' => "-1254 ert puis c'erst comme ça ! 'avec des guillmemenst ",
-            'val_txt' => "-1254 ert puis c'erst comme ça ! 'avec des guillmemenst ",
-            'user_id' => 1,
-            'attribute_id' => 7  // 6 categ, 7 desc
-        ];
-        $rules = [
-            'val_float' => 'required|numeric|decimal:0,4|gt:0',
-            'val_money' => 'required|numeric|decimal:0,2|gt:0',
-            //'val_int' => 'required|numeric|integer|max:12000|gt:0',
-            'val_str' => 'nullable|string|max:255',
-            'val_txt' => 'required|string',
-            'attribute_id' => 'required|exists:attribute_lists,id',
-            'user_id' => 'required|exists:users,id',
-        ];
-        /*
-        $rules['val_int'] = [
-            'numeric',
-            'integer',
-            'max:12000',
-            'gt:0',
-            function ($attribute, $value, $fail,$datas) {
-                if ($value === '125') {
-                    $fail('The '.$attribute.' is invalid.');
+    public function process_table_data($records)
+    {
+        // validation des données
+        $errors = "";
+        // validation des champs obligatoires
+        $validationRule = [];
+        $resquiredAttributes = Attribute::where('required', '1')->get();
+        foreach ($resquiredAttributes as $key => $resquiredAttribute) {
+            if ($resquiredAttribute->dataType->name != 'selection')
+                $validationRule[$resquiredAttribute->name] = "required|" . $resquiredAttribute->dataType->validation_str;
+        }
+
+        $record_counter = 0;
+        foreach ($records as $record) {
+            $record_counter++;
+
+            // autres validations (champs non obligatoires & listes)
+            foreach ($record as $attributeName => $attributeValue) {
+                $attribute = Attribute::where('name', $attributeName)->first();
+                if (!$attribute->required)
+                    $validationRule[$attribute->name] = "nullable|" . $attribute->dataType->validation_str;
+
+                if ($attribute->dataType->name == 'selection') {
+                    $validationRule[$attribute->name] = [
+                        ($attribute->required == 1) ? 'required' : 'nullable',
+                        Rule::exists('attribute_list_values', 'name')
+                            ->where('attribute_list_id', $attribute->attribute_list_id),
+                    ];
                 }
-            },
-        ];*/
-
-
-
-
-        $validator = Validator::make($datas, $rules);
-
-        // val int required si selection
-        $validator->sometimes(['val_int'], 'required', function (Fluent $input) {
-            $attribute_id = $input->attribute_id;
-            $attribute = Attribute::find($attribute_id);
-            if ($attribute->dataType->name == 'selection')
-            {
-                return 1;
             }
-            else
-                return 0;
-        });
 
-        if ($validator->fails()) {
-            $fieldsWithErrorMessagesArray = $validator->messages()->get('*');
-            echo "<p>Ko :</p>";
-            var_dump($fieldsWithErrorMessagesArray);
+            $validator = Validator::make($record, $validationRule);
+
+            if ($validator->fails()) {
+                $fieldsWithErrorMessagesArray = $validator->messages()->get('*');
+                foreach ($fieldsWithErrorMessagesArray as $fieldName => $fieldWithErrorMessagesArray) {
+                    $errors .= "<p>";
+                    $errors .= "Line #" . $record_counter . " - field <strong>" . $fieldName . "</strong> field value validation errors";
+                    //dd($validator->getData()[$fieldName],$fieldName,$fieldWithErrorMessagesArray,$validationRule,$record);
+                    $errors .= "<br/>Erronous supplied value : <span class='text-red-500'>" . $validator->getData()[$fieldName] . "</span>";
+                    $errors .= "<ul>";
+                    foreach ($fieldWithErrorMessagesArray as $fieldWithErrorMessage) {
+                        $errors .= "<li><i>";
+                        $errors .= $fieldWithErrorMessage;
+                        $errors .= "</i></li>";
+                    }
+                    $errors .= "</ul>";
+                    $errors .= "</p>";
+
+                }
+            }
+
+            // todo : special validations (pictures, etc.)
 
         }
-        else
-        {
-            echo "ok";
+
+        if (strlen($errors) == 0) {
+            // pas d'erreurs
+
+            // Supprimer les données existantes
+            $variants = Variant::where('user_id', '=', Auth::id())->get();
+            foreach ($variants as $variant) {
+                $variant->delete();
+            }
+
+            // créer les nouveaux variant
+            foreach ($records as $record) {
+                $variant = new Variant(['user_id' => Auth::id()]);
+                $variant->save();
+                foreach ($record as $attributeName => $attributeValue) {
+                    if ($attributeValue) {
+                        //dd($attributeName,$attributeValue);  // brand > duotone
+                        $attribute = Attribute::where('name', $attributeName)->first();
+                        $variantAttributeValueArr = [];
+                        $variantAttributeValueArr['variant_id'] = $variant->id;
+                        $variantAttributeValueArr['attribute_id'] = $attribute->id;
+
+                        switch ($attribute->dataType->name) {
+                            case "selection":
+                                $value_id = AttributeListValue::where('name', $attributeValue)->pluck('id')->first();
+                                $variantAttributeValueArr['value_int'] = $value_id;
+                                break;
+                            case "string":
+                                $variantAttributeValueArr['value_str'] = $attributeValue;
+                                break;
+                            case "text":
+                                $variantAttributeValueArr['value_txt'] = $attributeValue;
+                                break;
+                            case "integer":
+                                $variantAttributeValueArr['value_int'] = (int)$attributeValue;
+                                break;
+                            case "float":
+                                $variantAttributeValueArr['value_float'] = (float)$attributeValue;
+                                break;
+                            case "money":
+                                $variantAttributeValueArr['value_float'] = (float)$attributeValue;
+                                break;
+                            case "boolean":
+                                $variantAttributeValueArr['value_int'] = (int)$attributeValue;
+                                break;
+                        }
+                        $variantAttributeValue = new VariantAttributes($variantAttributeValueArr);
+                        $variantAttributeValue->save();
+
+                    }
+                }
+            }
+
         }
 
-
-        return;
-
+        return $errors;
     }
 
     public function decodecsv(Request $request)
     {
-
-        /*
-         *         Validator::validate($request->all(), [
-            'file' => [
-                'required',
-                File::types(['csv'])
-            ]
-        ]);
-         */
-
         $request->validate([
             'file' => 'required|mimes:csv|max:2048',
         ]);
@@ -198,6 +240,7 @@ class VariantController extends Controller
         $csv = Reader::createFromString($csvFile);
 
         $csv->setHeaderOffset(0);
+        $csv->skipEmptyRecords();
         try {
             $fieldNames = $csv->getHeader();
             $records = $csv->getRecords();
@@ -205,122 +248,59 @@ class VariantController extends Controller
             abort(404, "Errors in the ".$fileRelPath." file ".$e->getMessage());
         }
 
-        // validation des données
-        $errors = "";
-
-        // validation des champs obligatoires
-        $validationRule = [];
-        $resquiredAttributes = Attribute::where('required', '1')->get();
-        foreach ($resquiredAttributes as $key => $resquiredAttribute)
-        {
-            if ($resquiredAttribute->dataType->name != 'selection')
-                $validationRule[$resquiredAttribute->name] = "required|".$resquiredAttribute->dataType->validation_str;
-        }
-
-        $record_counter = 0;
-        foreach($records as $record) {
-            $record_counter++;
-
-            // autres validations (champs non obligatoires & listes)
-            foreach ($record as $attributeName => $attributeValue)
-            {
-                $attribute = Attribute::where('name', $attributeName)->first();
-                if (!$attribute->required)
-                    $validationRule[$attribute->name] = "nullable|".$attribute->dataType->validation_str;
-
-                if ($attribute->dataType->name == 'selection')
-                {
-                    $validationRule[$attribute->name] =  [
-                        ($attribute->required == 1) ? 'required':'nullable',
-                    Rule::exists('attribute_list_values', 'name')
-                        ->where('attribute_list_id', $attribute->attribute_list_id),
-                    ];
-                }
-            }
-
-            $validator = Validator::make($record, $validationRule);
-
-            if ($validator->fails()) {
-                $fieldsWithErrorMessagesArray = $validator->messages()->get('*');
-                foreach ($fieldsWithErrorMessagesArray as $fieldName => $fieldWithErrorMessagesArray) {
-                    $errors.= "<p>";
-                    $errors.= "Line #".$record_counter." - field <strong>".$fieldName."</strong> field value validation errors";
-                    $errors.= "<br/>Erronous supplied value : <span class='text-red-500'>".$validator->getData()[$fieldName]."</span>";
-                    $errors.= "<ul>";
-                    foreach ($fieldWithErrorMessagesArray as $fieldWithErrorMessage) {
-                        $errors.= "<li><i>";
-                        $errors.= $fieldWithErrorMessage;
-                        $errors.= "</i></li>";
-                    }
-                    $errors.= "</ul>";
-                    $errors.= "</p>";
-
-                }
-            }
-
-        }
-
+        $errors = $this->process_table_data($records);
         if (strlen($errors) == 0)
         {
-            // pas d'erreurs
-
-            // Supprimer les données existantes
-            $variants = Variant::where('user_id' ,'=', Auth::id())->get();
-            foreach ($variants as $variant)
-            {
-                $variant->delete();
-            }
-
-            // créer les nouveaux variant
-            foreach($records as $record)
-            {
-                $variant = new Variant(['user_id' => Auth::id()]);
-                $variant->save();
-                foreach ($record as $attributeName => $attributeValue)
-                {
-                    //dd($attributeName,$attributeValue);  // brand > duotone
-                    $attribute = Attribute::where('name', $attributeName)->first();
-                    $variantAttributeValueArr = [];
-                    $variantAttributeValueArr['variant_id'] = $variant->id;
-                    $variantAttributeValueArr['attribute_id'] = $attribute->id;
-
-                    switch ($attribute->dataType->name) {
-                        case "selection":
-                            $value_id = AttributeListValue::where('name', $attributeValue)->pluck('id')->first();
-                            $variantAttributeValueArr['value_int'] =$value_id;
-                            break;
-                        case "string":
-                            $variantAttributeValueArr['value_str'] =$attributeValue;
-                            break;
-                        case "text":
-                            $variantAttributeValueArr['value_txt'] =$attributeValue;
-                            break;
-                        case "integer":
-                            $variantAttributeValueArr['value_int'] =(int)$attributeValue;
-                            break;
-                        case "float":
-                            $variantAttributeValueArr['value_float'] =(float)$attributeValue;
-                            break;
-                        case "money":
-                            $variantAttributeValueArr['value_float'] =(float)$attributeValue;
-                            break;
-                        case "boolean":
-                            $variantAttributeValueArr['value_int'] =(int)$attributeValue;
-                            break;
-                    }
-
-                    //dd($variantAttributeValueArr);
-                    $variantAttributeValue = new VariantAttributes($variantAttributeValueArr);
-                    $variantAttributeValue -> save();
-                    //dd($variantAttributeValue);
-                }
-            }
             return redirect()->route('variant.index')
                 ->with(['alert' => 'success', 'message' => 'Data loaded - file is conform to OMEDIS' ]);
         }
-        else {
+        else
+        {
             return view('variant.checkfailed', compact('errors'));
         }
     }
 
+
+    public function decodexml(Request $request)
+    {
+        $request->validate([
+            'file' => 'required|mimes:xml|max:2048',
+        ]);
+
+        $fileName = time().'-'.$request->file->getClientOriginalName();
+        $request->file->storeAs('uploads', $fileName);
+
+        $fileRelPath = 'uploads/'.$fileName;
+        $fileFullPath = storage_path('app/'.$fileRelPath);
+
+
+        if (!Storage::exists($fileRelPath))
+        {
+            abort(404, "Impossible to find ".$fileRelPath." file");
+        }
+
+        // lecture du fichier texte
+        try {
+            $xmlString = Storage::get($fileRelPath);
+        }  catch (Exception $e) {
+            abort(404, "Impossible to open ".$fileRelPath." file");
+        }
+        $xml = new SimpleXMLElement($xmlString);
+
+        // conversion en tableau`
+        $json = json_encode((array)$xml);
+        $json = str_replace("{}",'""',$json);  // évite les variables tableaux pour les champs vides
+        $records = json_decode($json,TRUE);
+
+        $errors = $this->process_table_data($records['product']);
+        if (strlen($errors) == 0)
+        {
+            return redirect()->route('variant.index')
+                ->with(['alert' => 'success', 'message' => 'Data loaded - file is conform to OMEDIS' ]);
+        }
+        else
+        {
+            return view('variant.checkfailed', compact('errors'));
+        }
+    }
 }
