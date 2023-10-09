@@ -53,7 +53,7 @@
                     </p>
 
                     <h2 id="p3" class="mt-4 text-lg font-semibold text-gray-500 dark:text-white">Why a standard ?</h2>
-                    < class="mt-4 text-gray-500 dark:text-gray-400 text-sm leading-relaxed">
+                    <p class="mt-4 text-gray-500 dark:text-gray-400 text-sm leading-relaxed">
                         As soon as we need to process data with automatic or semi-automatic engine, we need to standardised the format of these data.
                         This standard is a key so that heterogeneous computing systems may exchange data.
                         <br/>
