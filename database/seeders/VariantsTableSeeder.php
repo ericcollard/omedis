@@ -21,129 +21,147 @@ class VariantsTableSeeder extends Seeder
         \DB::table('variants')->insert(array (
             0 => 
             array (
-                'created_at' => '2023-10-05 22:22:51',
                 'id' => 1,
-                'updated_at' => '2023-10-05 22:22:51',
-                'user_id' => '2',
+                'user_id' => 2,
+                'product_id' => 1,
+                'created_at' => '2023-10-09 19:51:51',
+                'updated_at' => '2023-10-09 19:51:51',
             ),
             1 => 
             array (
-                'created_at' => '2023-10-05 22:22:51',
                 'id' => 2,
-                'updated_at' => '2023-10-05 22:22:51',
-                'user_id' => '2',
+                'user_id' => 2,
+                'product_id' => 1,
+                'created_at' => '2023-10-09 19:51:51',
+                'updated_at' => '2023-10-09 19:51:51',
             ),
             2 => 
             array (
-                'created_at' => '2023-10-05 22:22:51',
                 'id' => 3,
-                'updated_at' => '2023-10-05 22:22:51',
-                'user_id' => '2',
+                'user_id' => 2,
+                'product_id' => 1,
+                'created_at' => '2023-10-09 19:51:51',
+                'updated_at' => '2023-10-09 19:51:51',
             ),
             3 => 
             array (
-                'created_at' => '2023-10-05 22:22:51',
                 'id' => 4,
-                'updated_at' => '2023-10-05 22:22:51',
-                'user_id' => '2',
+                'user_id' => 2,
+                'product_id' => 1,
+                'created_at' => '2023-10-09 19:51:51',
+                'updated_at' => '2023-10-09 19:51:51',
             ),
             4 => 
             array (
-                'created_at' => '2023-10-05 22:22:51',
                 'id' => 5,
-                'updated_at' => '2023-10-05 22:22:51',
-                'user_id' => '2',
+                'user_id' => 2,
+                'product_id' => 2,
+                'created_at' => '2023-10-09 19:51:51',
+                'updated_at' => '2023-10-09 19:51:51',
             ),
             5 => 
             array (
-                'created_at' => '2023-10-05 22:22:51',
                 'id' => 6,
-                'updated_at' => '2023-10-05 22:22:51',
-                'user_id' => '2',
+                'user_id' => 2,
+                'product_id' => 2,
+                'created_at' => '2023-10-09 19:51:51',
+                'updated_at' => '2023-10-09 19:51:51',
             ),
             6 => 
             array (
-                'created_at' => '2023-10-05 22:22:51',
                 'id' => 7,
-                'updated_at' => '2023-10-05 22:22:51',
-                'user_id' => '2',
+                'user_id' => 2,
+                'product_id' => 2,
+                'created_at' => '2023-10-09 19:51:51',
+                'updated_at' => '2023-10-09 19:51:51',
             ),
             7 => 
             array (
-                'created_at' => '2023-10-05 22:22:51',
                 'id' => 8,
-                'updated_at' => '2023-10-05 22:22:51',
-                'user_id' => '2',
+                'user_id' => 2,
+                'product_id' => 2,
+                'created_at' => '2023-10-09 19:51:51',
+                'updated_at' => '2023-10-09 19:51:51',
             ),
             8 => 
             array (
-                'created_at' => '2023-10-05 22:22:51',
                 'id' => 9,
-                'updated_at' => '2023-10-05 22:22:51',
-                'user_id' => '2',
+                'user_id' => 2,
+                'product_id' => 3,
+                'created_at' => '2023-10-09 19:51:51',
+                'updated_at' => '2023-10-09 19:51:51',
             ),
             9 => 
             array (
-                'created_at' => '2023-10-05 22:22:51',
                 'id' => 10,
-                'updated_at' => '2023-10-05 22:22:51',
-                'user_id' => '2',
+                'user_id' => 2,
+                'product_id' => 3,
+                'created_at' => '2023-10-09 19:51:51',
+                'updated_at' => '2023-10-09 19:51:51',
             ),
             10 => 
             array (
-                'created_at' => '2023-10-05 22:22:51',
                 'id' => 11,
-                'updated_at' => '2023-10-05 22:22:51',
-                'user_id' => '2',
+                'user_id' => 2,
+                'product_id' => 3,
+                'created_at' => '2023-10-09 19:51:51',
+                'updated_at' => '2023-10-09 19:51:51',
             ),
             11 => 
             array (
-                'created_at' => '2023-10-05 22:22:51',
                 'id' => 12,
-                'updated_at' => '2023-10-05 22:22:51',
-                'user_id' => '2',
+                'user_id' => 2,
+                'product_id' => 3,
+                'created_at' => '2023-10-09 19:51:51',
+                'updated_at' => '2023-10-09 19:51:51',
             ),
             12 => 
             array (
-                'created_at' => '2023-10-05 22:22:51',
                 'id' => 13,
-                'updated_at' => '2023-10-05 22:22:51',
-                'user_id' => '2',
+                'user_id' => 2,
+                'product_id' => 3,
+                'created_at' => '2023-10-09 19:51:51',
+                'updated_at' => '2023-10-09 19:51:51',
             ),
             13 => 
             array (
-                'created_at' => '2023-10-05 22:22:51',
                 'id' => 14,
-                'updated_at' => '2023-10-05 22:22:51',
-                'user_id' => '2',
+                'user_id' => 2,
+                'product_id' => 3,
+                'created_at' => '2023-10-09 19:51:51',
+                'updated_at' => '2023-10-09 19:51:51',
             ),
             14 => 
             array (
-                'created_at' => '2023-10-05 22:22:51',
                 'id' => 15,
-                'updated_at' => '2023-10-05 22:22:51',
-                'user_id' => '2',
+                'user_id' => 2,
+                'product_id' => 3,
+                'created_at' => '2023-10-09 19:51:51',
+                'updated_at' => '2023-10-09 19:51:51',
             ),
             15 => 
             array (
-                'created_at' => '2023-10-05 22:22:51',
                 'id' => 16,
-                'updated_at' => '2023-10-05 22:22:51',
-                'user_id' => '2',
+                'user_id' => 2,
+                'product_id' => 3,
+                'created_at' => '2023-10-09 19:51:51',
+                'updated_at' => '2023-10-09 19:51:51',
             ),
             16 => 
             array (
-                'created_at' => '2023-10-05 22:22:51',
                 'id' => 17,
-                'updated_at' => '2023-10-05 22:22:51',
-                'user_id' => '2',
+                'user_id' => 2,
+                'product_id' => 4,
+                'created_at' => '2023-10-09 19:51:51',
+                'updated_at' => '2023-10-09 19:51:51',
             ),
             17 => 
             array (
-                'created_at' => '2023-10-05 22:22:51',
                 'id' => 18,
-                'updated_at' => '2023-10-05 22:22:51',
-                'user_id' => '2',
+                'user_id' => 2,
+                'product_id' => 5,
+                'created_at' => '2023-10-09 19:51:51',
+                'updated_at' => '2023-10-09 19:51:51',
             ),
         ));
         

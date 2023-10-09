@@ -53,7 +53,7 @@
                     </p>
 
                     <h2 id="p3" class="mt-4 text-lg font-semibold text-gray-500 dark:text-white">Why a standard ?</h2>
-                    <p class="mt-4 text-gray-500 dark:text-gray-400 text-sm leading-relaxed">
+                    < class="mt-4 text-gray-500 dark:text-gray-400 text-sm leading-relaxed">
                         As soon as we need to process data with automatic or semi-automatic engine, we need to standardised the format of these data.
                         This standard is a key so that heterogeneous computing systems may exchange data.
                         <br/>
@@ -75,6 +75,9 @@
                         <br/>The standard is fixing a list of possible values, that each computing systems can relate to his own internal representation.
                         <br/><br/>
                         Let's take a 3rd exemple with product pictures : The standard is defining the format,size, type of picture, and the way to supply then.
+                        <br/>
+                        <br/>Sizes for snowboard boots : 00g265-41 / 26.0 / 260 / 26,0 / 26
+                        <br/>Etc.
                         <br/>
                         <br/>The standard is also defining the list of data that have to (required) or can be (optional) supplied for each product, and the way to named each one.
                         <br/>

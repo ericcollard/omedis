@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\HistoryController;
+use App\Http\Controllers\ProductController;
 use App\Http\Controllers\VariantController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\UserController;
@@ -89,3 +90,8 @@ Route::get('variant/truncate', [VariantController::class, 'truncate'])->name('va
 Route::get('variant/{variant}', [VariantController::class, 'show'])->name('variant.show');
 
 Route::get('history', [HistoryController::class, 'index'])->name('history.index');
+
+Route::get('product', [ProductController::class, 'index'])->name('product.index');
+Route::get('product/truncate', [ProductController::class, 'truncate'])->name('product.truncate')->middleware(['auth:sanctum',config('jetstream.auth_session'),'verified',]);
+Route::get('product/{product}', [ProductController::class, 'show'])->name('product.show');
+

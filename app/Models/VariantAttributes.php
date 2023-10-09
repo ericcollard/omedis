@@ -29,4 +29,68 @@ class VariantAttributes extends Model
     {
         return $this->belongsTo(Variant::class);
     }
+
+    public function toString($summary = 0)
+    {
+        $html = "";
+        if ($summary == 0)
+            $html .= "<strong>".$this->attribute->name."</strong>: ";
+        switch ($this->attribute->datatype->name)
+        {
+            case "selection":
+                if ($this->value_int)
+                {
+                    $attrValue = $this->attribute->attributeList->attributeListValues->where('id', $this->value_int)->first();
+                    if ($attrValue)
+                        $html .= $attrValue->name;
+                    else
+                        $html .= "nc.";
+                }
+
+                break;
+            case "string":
+                if ($this->value_str)
+                {
+                    $html .= $this->value_str;
+                    if ($this->attribute->unit and $this->attribute->unit->name != 'none') $html .= $this->attribute->unit->name;
+                }
+                break;
+            case "integer":
+                if ($this->value_int)
+                {
+                    $html .= $this->value_int;
+                    if ($this->attribute->unit and $this->attribute->unit->name != 'none') $html .= $this->attribute->unit->name;
+                }
+                break;
+            case "float":
+                if ($this->value_float)
+                {
+                    $html .= $this->value_float;
+                    if ($this->attribute->unit and $this->attribute->unit->name != 'none') $html .= $this->attribute->unit->name;
+                }
+                break;
+            case "boolean":
+                if ($this->value_int)
+                {
+                    $html .= $this->value_int;
+                    if ($this->attribute->unit and $this->attribute->unit->name != 'none') $html .= $this->attribute->unit->name;
+                }
+                break;
+            case "money":
+                if ($this->value_float)
+                {
+                    $html .= $this->value_float;
+                    if ($this->attribute->unit and $this->attribute->unit->name != 'none') $html .= $this->attribute->unit->name;
+                }
+                break;
+            case "text":
+                if ($this->value_txt)
+                {
+                    $html .= $this->value_txt;
+                    if ($this->attribute->unit and $this->attribute->unit->name != 'none') $html .= $this->attribute->unit->name;
+                }
+                break;
+        }
+        return $html;
+    }
 }

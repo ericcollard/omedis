@@ -40,9 +40,12 @@
                         {{ __('History') }}
                     </x-nav-link>
                     @if (Auth::check() and Auth::user()->hasRole('ROLE_ADMIN'))
-                    <x-nav-link href="{{ route('variant.index') }}" :active="request()->routeIs('variant.index')">
-                        {{ __('Variants') }}
-                    </x-nav-link>
+                        <x-nav-link href="{{ route('product.index') }}" :active="request()->routeIs('product.index')">
+                            {{ __('Products') }}
+                        </x-nav-link>
+                        <x-nav-link href="{{ route('variant.index') }}" :active="request()->routeIs('variant.index')">
+                            {{ __('Variants') }}
+                        </x-nav-link>
                     @endif
 
 
