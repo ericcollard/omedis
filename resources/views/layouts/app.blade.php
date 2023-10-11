@@ -15,12 +15,21 @@
         @vite(['resources/css/app.css','resources/sass/app.scss', 'resources/js/app.js'])
 
         <!-- Styles -->
+
         @livewireStyles
         <style>
             :root {
                 --bs-secondary-color: #91959b;
             }
+            .field_title {
+                color:palevioletred;
+                font-weight: bold;
+                font-style: italic;
+            }
         </style>
+
+        @stack('styles')
+
     </head>
     <body class="font-sans antialiased">
         <x-banner />

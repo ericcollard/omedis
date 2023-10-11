@@ -1,4 +1,11 @@
 <x-app-layout>
+
+    @push('styles')
+        <style>
+
+        </style>
+    @endpush
+
     <x-slot name="header">
         <h2 class="font-semibold text-xl text-gray-800 dark:text-gray-200 leading-tight" style="position:relative">
             <nav style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='currentColor'/%3E%3C/svg%3E&#34;);" aria-label="breadcrumb">
@@ -25,25 +32,23 @@
                         </h3>
                     </div>
                     <div class="card-body">
-                        <p>{{ __('name') }}: {{ $attribute->name }}</p>
-                        <p>{{ __('comment') }}: {!! $attribute->comment !!}</p>
-                        <p>
+                        <p><span class="field_title">{{ __('name') }}:</span> {{ $attribute->name }}</p>
+                        <p><span class="field_title">{{ __('comment') }}:</span> {!! html_entity_decode($attribute->comment) !!}</p>
+                        <p class="field_title">
                             @if ($attribute->required == 1)
                                 This attribute is <strong>required</strong>
                             @else
                                 This attribute is optional
                             @endif
                         </p>
-                        <p>{{ __('data_type_id') }}: <a href="{{ route('datatype.show',$attribute->dataType) }}">{{ $attribute->dataType->name }}</a></p>
+                        <p><span class="field_title">{{ __('Data type') }}:</span> <a href="{{ route('datatype.show',$attribute->dataType) }}">{{ $attribute->dataType->name }}</a></p>
                         @if ($attribute->attribute_list_id)
-                            <p>{{ __('attribute_list_id') }}: <a href="{{ route('attributelist.show',$attribute->attributeList) }}  ">{{ $attribute->attributeList->name }}</a></p>
+                            <p><span class="field_title">{{ __('Attrinute list') }}:</span> <a href="{{ route('attributelist.show',$attribute->attributeList) }}  ">{{ $attribute->attributeList->name }}</a></p>
                         @endif
                         @if ($attribute->unit_id)
-                            <p>{{ __('unit_id') }}: <a href="{{ route('unit.show',$attribute->unit) }}  ">{{ $attribute->unit->name }}</a></p>
+                            <p><span class="field_title">{{ __('Unit') }}:</span> <a href="{{ route('unit.show',$attribute->unit) }}  ">{{ $attribute->unit->name }}</a></p>
                         @endif
-
-                        <p>{{ __('Created at') }}: {{ $attribute->created_at }}</p>
-                        <p>{{ __('Updated at') }}: {{ $attribute->updated_at }} by {{ $attribute->user->name }}</p>
+                        <p><span class="field_title">{{ __('Updated at') }}:</span> {{ $attribute->updated_at }} by {{ $attribute->user->name }}</p>
 
                     </div>
                 </div>
@@ -52,4 +57,6 @@
 
         </div>
     </div>
+
+
 </x-app-layout>

@@ -96,7 +96,13 @@ class AttributeDataTable extends DataTable
                 else
                     return "";
             })
-            ->rawColumns(['action','data_type_id','attribute_list_id','unit_id','required','name']);    }
+            ->editColumn('comment', function ($attribute) {
+                if (strlen($attribute->comment) < 20)
+                    return $attribute->comment;
+                else
+                    return substr(strip_tags($attribute->comment),0,20)."<a href = ".route('attribute.show',$attribute)."> .....</a>";
+            })
+            ->rawColumns(['action','data_type_id','attribute_list_id','unit_id','required','name','comment']);    }
 
     /**
      * Get the query source of dataTable.
