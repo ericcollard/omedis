@@ -26,10 +26,10 @@
                     </div>
                     <div class="card-body">
                         <p>{{ __('name') }}: {{ $attribute->name }}</p>
-                        <p>{{ __('comment') }}: {{ $attribute->comment }}</p>
+                        <p>{{ __('comment') }}: {!! $attribute->comment !!}</p>
                         <p>
                             @if ($attribute->required == 1)
-                                This attribute is required
+                                This attribute is <strong>required</strong>
                             @else
                                 This attribute is optional
                             @endif

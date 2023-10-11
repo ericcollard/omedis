@@ -23,66 +23,75 @@ class AttributesTableSeeder extends Seeder
             array (
                 'id' => 1,
                 'name' => 'brand',
-                'comment' => 'Product brand',
+                'comment' => 'Product brand
+This name has to be the one of the brand, but not the one of company or distributor
+Exemple : "Duotone" but not "Boards and More".',
                 'required' => 1,
                 'attribute_list_id' => 3,
                 'unit_id' => NULL,
                 'data_type_id' => 1,
-                'user_id' => 1,
+                'user_id' => 2,
                 'created_at' => NULL,
-                'updated_at' => NULL,
+                'updated_at' => '2023-10-11 07:05:37',
             ),
             1 => 
             array (
                 'id' => 2,
                 'name' => 'season',
-                'comment' => 'Year validity for the product, for the case where this product is specific to one season.',
+                'comment' => 'Year validity for the product, for the case where this product is specific to one season. This has to be a year like 2023.
+We suggest that this should be the last year of validity (ie. 2024 for a 23-24 winter season product)',
                 'required' => 0,
                 'attribute_list_id' => NULL,
                 'unit_id' => 1,
                 'data_type_id' => 4,
-                'user_id' => 1,
+                'user_id' => 2,
                 'created_at' => NULL,
-                'updated_at' => NULL,
+                'updated_at' => '2023-10-11 06:38:45',
             ),
             2 => 
             array (
                 'id' => 3,
                 'name' => 'ean',
                 'comment' => 'EAN code : unique identifier for one product variant delivered by GS1 autority or similar',
-                'required' => 1,
+                'required' => 0,
                 'attribute_list_id' => NULL,
                 'unit_id' => 1,
                 'data_type_id' => 2,
-                'user_id' => 1,
+                'user_id' => 2,
                 'created_at' => NULL,
-                'updated_at' => NULL,
+                'updated_at' => '2023-10-11 06:39:06',
             ),
             3 => 
             array (
                 'id' => 4,
                 'name' => 'sku',
-                'comment' => 'SKU code : unique identifier for one product variant for brand internal use',
+                'comment' => 'SKU code : unique identifier for one product variant for brand internal use.
+This code has to be unique for one product, and has to change each time the product is changing technically (even if only graphics).
+It will be used by programs for price updates',
                 'required' => 1,
                 'attribute_list_id' => NULL,
                 'unit_id' => 1,
                 'data_type_id' => 2,
-                'user_id' => 1,
+                'user_id' => 2,
                 'created_at' => NULL,
-                'updated_at' => NULL,
+                'updated_at' => '2023-10-11 06:41:07',
             ),
             4 => 
             array (
                 'id' => 5,
                 'name' => 'name',
-                'comment' => 'Name : official name for trade. Should be as short as possible. Doesnt contain other information that can be found is specialised attribute, like variant data, brand name of year.',
+                'comment' => 'Name : official name for trade. Should be as short as possible.
+Doesn\'t contain other information that can be found is specialized attribute, like variant data, brand name of year.
+For a tee shirt, available in 3 colors and 4 sizes, this will be for exemple : "BRADFORD", and variants data will complete with size and color
+For a tee shirt, available in only one colors and 4 sizes, this will be for exemple : "BRADFORD RED", and variants data will complete with size
+In both case, the name in not containing the category ("TEE") or brand ("PICTURE").',
                 'required' => 1,
                 'attribute_list_id' => NULL,
                 'unit_id' => 1,
                 'data_type_id' => 2,
-                'user_id' => 1,
+                'user_id' => 2,
                 'created_at' => NULL,
-                'updated_at' => NULL,
+                'updated_at' => '2023-10-11 06:52:54',
             ),
             5 => 
             array (
@@ -127,29 +136,30 @@ class AttributesTableSeeder extends Seeder
             array (
                 'id' => 9,
                 'name' => 'pictures',
-                'comment' => 'Product picture links, semicolon separated, no space or special character except _ and -, most important first
-We suggest that picture should be square aspect, at least 800x800px, white background, jpeg format
-We suggest that picture should be stored on a cnd, so that processing programs could upload them automatically, provided the link is supplied',
+                'comment' => 'Product picture links, semicolon separated, no space or special character except _ and -, most important first.
+We suggest that picture should be square aspect, at least 800x800px, white background, jpeg format.
+We suggest that picture should be stored on a cnd, so that processing programs could upload them automatically.',
                 'required' => 0,
                 'attribute_list_id' => NULL,
                 'unit_id' => 1,
                 'data_type_id' => 2,
                 'user_id' => 2,
                 'created_at' => NULL,
-                'updated_at' => '2023-10-04 13:12:09',
+                'updated_at' => '2023-10-11 06:53:50',
             ),
             9 => 
             array (
                 'id' => 10,
                 'name' => 'wholesale-price',
-                'comment' => 'Wholesale Price : Standard purchase price excuding VAT',
+                'comment' => 'Wholesale Price : Standard purchase price excuding VAT.
+This does not include any discount (like volume discount, year discount, client specific discount).',
                 'required' => 1,
                 'attribute_list_id' => NULL,
                 'unit_id' => 16,
                 'data_type_id' => 6,
                 'user_id' => 2,
                 'created_at' => NULL,
-                'updated_at' => '2023-10-02 18:36:23',
+                'updated_at' => '2023-10-11 06:54:37',
             ),
             10 => 
             array (
@@ -168,14 +178,14 @@ We suggest that picture should be stored on a cnd, so that processing programs c
             array (
                 'id' => 12,
                 'name' => 'weight',
-                'comment' => 'Weight for logistic purpose',
+                'comment' => 'Weight of the whole product, for logistic purpose',
                 'required' => 1,
                 'attribute_list_id' => NULL,
                 'unit_id' => 5,
                 'data_type_id' => 5,
-                'user_id' => 1,
+                'user_id' => 2,
                 'created_at' => NULL,
-                'updated_at' => NULL,
+                'updated_at' => '2023-10-11 06:55:05',
             ),
             12 => 
             array (
@@ -220,45 +230,48 @@ We suggest that picture should be stored on a cnd, so that processing programs c
             array (
                 'id' => 16,
                 'name' => 'discount-b2c',
-                'comment' => 'Discounted retail price including VAT',
+                'comment' => 'Discounted suggested retail price including VAT.
+Mainly used for price update during promotional periods.',
                 'required' => 0,
                 'attribute_list_id' => NULL,
                 'unit_id' => 4,
                 'data_type_id' => 6,
-                'user_id' => 1,
+                'user_id' => 2,
                 'created_at' => NULL,
-                'updated_at' => NULL,
+                'updated_at' => '2023-10-11 06:56:30',
             ),
             16 => 
             array (
                 'id' => 17,
                 'name' => 'discount-b2b',
-                'comment' => 'Discounted b2b price excluding VAT',
+                'comment' => 'Discounted b2b price excluding VAT.
+This can be used to store client specific discount, volume discount, year discount etc.',
                 'required' => 0,
                 'attribute_list_id' => NULL,
                 'unit_id' => 4,
                 'data_type_id' => 6,
-                'user_id' => 1,
+                'user_id' => 2,
                 'created_at' => NULL,
-                'updated_at' => NULL,
+                'updated_at' => '2023-10-11 06:57:18',
             ),
             17 => 
             array (
                 'id' => 18,
-                'name' => 'size-m-var',
-                'comment' => 'Size in Meters - Variant index attribute',
+                'name' => 'var-size-m',
+                'comment' => 'Size in Meters.
+Variant index attribute',
                 'required' => 0,
                 'attribute_list_id' => NULL,
                 'unit_id' => 2,
                 'data_type_id' => 5,
                 'user_id' => 2,
                 'created_at' => NULL,
-                'updated_at' => '2023-09-28 21:03:04',
+                'updated_at' => '2023-10-11 06:58:16',
             ),
             18 => 
             array (
                 'id' => 19,
-                'name' => 'size-cm-var',
+                'name' => 'var-size-cm',
                 'comment' => 'Size in Centimeter - Variant index attribute',
                 'required' => 0,
                 'attribute_list_id' => NULL,
@@ -271,7 +284,7 @@ We suggest that picture should be stored on a cnd, so that processing programs c
             19 => 
             array (
                 'id' => 20,
-                'name' => 'size-mm-var',
+                'name' => 'var-size-mm',
                 'comment' => 'Size in Milimeter - Variant index attribute',
                 'required' => 0,
                 'attribute_list_id' => NULL,
@@ -284,7 +297,7 @@ We suggest that picture should be stored on a cnd, so that processing programs c
             20 => 
             array (
                 'id' => 21,
-                'name' => 'surface-m2-var',
+                'name' => 'var-surface-m2',
                 'comment' => 'Surface in Square Meters - Variant index attribute',
                 'required' => 0,
                 'attribute_list_id' => NULL,
@@ -297,7 +310,7 @@ We suggest that picture should be stored on a cnd, so that processing programs c
             21 => 
             array (
                 'id' => 22,
-                'name' => 'surface-cm2-var',
+                'name' => 'var-surface-cm2',
                 'comment' => 'Surface in Square Centimeter - Variant index attribute',
                 'required' => 0,
                 'attribute_list_id' => NULL,
@@ -310,7 +323,7 @@ We suggest that picture should be stored on a cnd, so that processing programs c
             22 => 
             array (
                 'id' => 23,
-                'name' => 'volume-l-var',
+                'name' => 'var-volume-l',
                 'comment' => 'Volume in Liters - Variant index attribute',
                 'required' => 0,
                 'attribute_list_id' => NULL,
@@ -323,7 +336,7 @@ We suggest that picture should be stored on a cnd, so that processing programs c
             23 => 
             array (
                 'id' => 24,
-                'name' => 'size-ft-var',
+                'name' => 'var-size-ft',
                 'comment' => 'Size in Feets - Variant index attribute',
                 'required' => 0,
                 'attribute_list_id' => NULL,
@@ -336,7 +349,7 @@ We suggest that picture should be stored on a cnd, so that processing programs c
             24 => 
             array (
                 'id' => 25,
-                'name' => 'size-inch-var',
+                'name' => 'var-size-inch',
                 'comment' => 'Size in Inches - Variant index attribute',
                 'required' => 0,
                 'attribute_list_id' => NULL,
@@ -349,7 +362,7 @@ We suggest that picture should be stored on a cnd, so that processing programs c
             25 => 
             array (
                 'id' => 26,
-                'name' => 'boot-size-fr-var',
+                'name' => 'var-boot-size-fr',
             'comment' => 'Boot size in French notation (35-36-..43-44) - Variant index attribute',
                 'required' => 0,
                 'attribute_list_id' => NULL,
@@ -362,7 +375,7 @@ We suggest that picture should be stored on a cnd, so that processing programs c
             26 => 
             array (
                 'id' => 27,
-                'name' => 'boot-size-uk-var',
+                'name' => 'var-boot-size-uk',
             'comment' => 'Boot size in Uk notation (6-6.5-7 ... 10-10.5) - Variant index attribute
 Only integer value or x.5 value',
                 'required' => 0,
@@ -376,7 +389,7 @@ Only integer value or x.5 value',
             27 => 
             array (
                 'id' => 28,
-                'name' => 'boot-size-us-var',
+                'name' => 'var-boot-size-us',
             'comment' => 'Boot size in Us notation (6-6.5-7 ... 10-10.5) - Variant index attribute
 Only integer value or x.5 value',
                 'required' => 0,
@@ -390,7 +403,7 @@ Only integer value or x.5 value',
             28 => 
             array (
                 'id' => 29,
-                'name' => 'boot-size-mondo-var',
+                'name' => 'var-boot-size-mondo',
             'comment' => 'Boot size in Mondopoint (25-25.5-26 ... 28-28.5-29) - Variant index attribute
 Only integer value or x.5 value
 This represents the length of the foot in centimeters',
@@ -405,7 +418,7 @@ This represents the length of the foot in centimeters',
             29 => 
             array (
                 'id' => 30,
-                'name' => 'item-nb-var',
+                'name' => 'var-item-nb',
                 'comment' => 'Item number - Variant index attribute
 Various usage',
                 'required' => 0,
@@ -419,7 +432,7 @@ Various usage',
             30 => 
             array (
                 'id' => 31,
-                'name' => 'weight-kg-var',
+                'name' => 'var-weight-kg',
                 'comment' => 'Weight in Kilogram - Variant index attribute',
                 'required' => 0,
                 'attribute_list_id' => NULL,
@@ -432,7 +445,7 @@ Various usage',
             31 => 
             array (
                 'id' => 32,
-                'name' => 'weight-g-var',
+                'name' => 'var-weight-g',
                 'comment' => 'Weight in grams - Variant index attribute',
                 'required' => 0,
                 'attribute_list_id' => NULL,
@@ -445,7 +458,7 @@ Various usage',
             32 => 
             array (
                 'id' => 33,
-                'name' => 'color-var',
+                'name' => 'var-color',
                 'comment' => 'Color - Variant index attribute',
                 'required' => 0,
                 'attribute_list_id' => 1,
@@ -458,7 +471,7 @@ Various usage',
             33 => 
             array (
                 'id' => 34,
-                'name' => 'size-wear-eu-var',
+                'name' => 'var-size-wear-eu',
             'comment' => 'Clothes EU sizing (36-38-40-42) - Variant index attribute',
                 'required' => 0,
                 'attribute_list_id' => 5,
@@ -471,7 +484,7 @@ Various usage',
             34 => 
             array (
                 'id' => 35,
-                'name' => 'size-wear-us-var',
+                'name' => 'var-size-wear-us',
             'comment' => 'Clothes US sizing (2-4-6-8) - Variant index attribute',
                 'required' => 0,
                 'attribute_list_id' => 7,
@@ -484,7 +497,7 @@ Various usage',
             35 => 
             array (
                 'id' => 36,
-                'name' => 'size-wear-uk-var',
+                'name' => 'var-size-wear-uk',
             'comment' => 'Clothes UK sizing (2-4-6-8) - Variant index attribute',
                 'required' => 0,
                 'attribute_list_id' => 6,
@@ -497,7 +510,7 @@ Various usage',
             36 => 
             array (
                 'id' => 37,
-                'name' => 'size-wear-int-var',
+                'name' => 'var-size-wear-int',
             'comment' => 'Clothes International sizing (XXS-XS... L-XL-XXL) - Variant index attribute',
                 'required' => 0,
                 'attribute_list_id' => 4,
