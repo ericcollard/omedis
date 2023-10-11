@@ -13,7 +13,7 @@
             <wholesale-price>742.56</wholesale-price>
             <retail-price>989.99</retail-price>
             <weight>4.8</weight>
-            <surface-m2-var>3.7</surface-m2-var>
+            <var-surface-m2>3.7</var-surface-m2>
         </variant>
         <variant>
             <brand>duotone</brand>
@@ -27,7 +27,7 @@
             <wholesale-price>752.56</wholesale-price>
             <retail-price>1005.99</retail-price>
             <weight>4.9</weight>
-            <surface-m2-var>4.2</surface-m2-var>
+            <var-surface-m2>4.2</var-surface-m2>
         </variant>
         <variant>
             <brand>duotone</brand>
@@ -41,7 +41,7 @@
             <wholesale-price>762.56</wholesale-price>
             <retail-price>1105.99</retail-price>
             <weight>5.0</weight>
-            <surface-m2-var>4.7</surface-m2-var>
+            <var-surface-m2>4.7</var-surface-m2>
         </variant>
         <variant>
             <brand>duotone</brand>
@@ -55,7 +55,7 @@
             <wholesale-price>782.56</wholesale-price>
             <retail-price>1205.99</retail-price>
             <weight>5.1</weight>
-            <surface-m2-var>5.0</surface-m2-var>
+            <var-surface-m2>5.0</var-surface-m2>
         </variant>
     </product>
     <product>
@@ -71,7 +71,7 @@
             <wholesale-price>890.12</wholesale-price>
             <retail-price>1699.99</retail-price>
             <weight>5.4</weight>
-            <size-ft-var>5'2</size-ft-var>
+            <var-size-ft>5'2</var-size-ft>
         </variant>
         <variant>
             <brand>fone</brand>
@@ -84,7 +84,7 @@
             <wholesale-price>890.12</wholesale-price>
             <retail-price>1699.99</retail-price>
             <weight>5.4</weight>
-            <size-ft-var>5'4</size-ft-var>
+            <var-size-ft>5'4</var-size-ft>
         </variant>
     </product>
     <product>
