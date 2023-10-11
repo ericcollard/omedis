@@ -30,6 +30,7 @@
                         <li><i class="fa-regular fa-star fa-2xs"></i> <a href="#p6">OMEDIS more in details</a></li>
                         <li><i class="fa-regular fa-star fa-2xs"></i> <a href="#p7">Data exchange structure</a></li>
                         <li><i class="fa-regular fa-star fa-2xs"></i> <a href="#p8">How to use OMEDIS standard</a></li>
+                        <li><i class="fa-regular fa-star fa-2xs"></i> <a href="#p9">How to collaborate to OMEDIS standard</a></li>
                     </ul>
                 </div>
             </div>
@@ -72,7 +73,7 @@
                         <br/>- "windsurf-protection-boardbag"
                         <br/>- "Housse de flotteur de windsurf"
                         <br/>- ...
-                        <br/>The standard is fixing a list of possible values, that each computing systems can relate to his own internal representation.
+                        <br/>The standard is defining a list of possible values, that each computing systems can relate to his own internal representation.
                         <br/><br/>
                         Let's take a 3rd exemple with product pictures : The standard is defining the format,size, type of picture, and the way to supply then.
                         <br/>
@@ -82,7 +83,7 @@
                         <br/>The standard is also defining the list of data that have to (required) or can be (optional) supplied for each product, and the way to named each one.
                         <br/>
                         <br/><img src="{{ asset('storage/onlyonetime.jpg') }}" />
-                        <br/>Thanks to this standard, each supplier has only to develop one translation program from his own EPR to OMEDIS.
+                        <br/>Thanks to this standard, each supplier has only to develop one translation program from his own ERP to OMEDIS.
                         Each retailer has only to develop one translation program from OMEDIS to his own retail management system.
                         <br/>This avoid multiplicity of translation programs like today, for both side.
                     </p>
@@ -90,10 +91,10 @@
                     <h2 id="p4" class="mt-4 text-lg font-semibold text-gray-500 dark:text-white">What is OMEDIS ?</h2>
                     <p class="mt-4 text-gray-500 dark:text-gray-400 text-sm leading-relaxed">
                         OMEDIS is defining a standard for data exchange between brands, distributors and retailers, related to product data.
-                        This includes technical data like size or weight, business data like wholesale price or retail price,
+                        This includes technical data like size or color, logistical data like weight and dimensions, business data like wholesale price or retail price,
                         marketing data like marketing description or pictures.
                         <br/>
-                        OMEDIS is base on a collective public repository that can be updated by the community, letting everyone be aware of updates.
+                        OMEDIS is based on a collective public repository that can be updated by the community, letting everyone be aware of updates.
                         <br/>
                         OMEDIS is freely accessible, and will stay free lifetime, because standardisation of exchange is a win-win feature for all partners.
                     </p>
@@ -109,18 +110,19 @@
                     <h2 id="p6" class="mt-4 text-lg font-semibold text-gray-500 dark:text-white">OMEDIS more in details</h2>
                     <p class="mt-4 text-gray-500 dark:text-gray-400 text-sm leading-relaxed">
                         OMEDIS is defining
-                        <br/>- A list of units (Ex. Eur, Usd, Liter, Meter, Kilogram), the way to name them, and the way to use them
-                        <br/>- A list of datatype (Ex. String, Currency, Integer, Boolean), and the way to write data for each data type (character coding, delimiters, limits etc.)
-                        <br/>- Attribute list values : for certain type of attributes, values have to be chosen in a closed list of possible values, like colors, categories, brand name, etc.). Omedis is maintaining an up-to-date list of authorized values.
-                        <br/>- The list of attributes describing each product and variant, including mandatory and optional attributes
+                        <br/>- The possible containers for data exchange (ie. csv file, excel file, xml file, api call)
+                        <br/>- The <a href="{{ route('attribute.index') }}">list of attributes</a> describing each product and variant, including mandatory and optional attributes (like brand name, product name, categories, prices)
+                        <br/>- The <a href="{{ route('datatype.index') }}">list of datatype</a> (Ex. String, Currency, Integer, Boolean), and the way to write data for each data type (character coding, delimiters, limits etc.)
+                        <br/>- The <a href="{{ route('unit.index') }}">list of units</a> (Ex. Eur, Usd, Liter, Meter, Kilogram), the way to name them, and the way to use them
+                        <br/>- <a href="{{ route('attributelistvalue.index') }}">Attribute list values</a> : for certain type of attributes, values have to be chosen in a closed list of possible values, like colors, categories, brand name, etc.). Omedis is maintaining an up-to-date list of authorized values.
                     </p>
 
                     <h2 id="p7" class="mt-4 text-lg font-semibold text-gray-500 dark:text-white">Data exchange structure</h2>
                     <p class="mt-4 text-gray-500 dark:text-gray-400 text-sm leading-relaxed">
-                        Once defined the contend and standard of data, let's jump into the structure of exchange (how data are organised and transmitted)
+                        Once defined the content and standard of data, let's jump into the structure of exchange (how data are organised and transmitted)
                         <br/><strong>Data container</strong> : datas can be sent by digital file, or REST API
                         <br/><strong>Data file type</strong> : if using a file, we suggest to use exclusively xml or csv file. We
-                        should avoid excel native file since contend is highly dependant from regional settings of the source computer.
+                        should avoid excel native file since content is highly dependant from regional settings of the source computer. Keep in mind that excel file can be saved as csv.
                         <br/><strong>CSV file (tabular like file)</strong> : if using csv file, please report to the RFC 4180 standard.
                         The field separator has to be comma, end of line CR/LF, coding UTF-8, any field quoted with double quote.
                         First line has to be the list of attribute name, conform to OMEDIS attributes name.
@@ -131,23 +133,28 @@
                         <br/><strong>File contend</strong> : when using a digital file, data has to be organised with records (xml record or csv line) and fields.
                         Each record is representing one product variant.
                         <br/>When using a tabular like file (eg csv), different variant of a same product need to <strong>strictly share the same product name</strong>,
-                        and be declared in consecutive records.
-                        This is the way interpreting programs will group variants in a same product.
-                        With dataset file, this rules is not required since variants are grouped in a "product-template" tag.
+                        and be declared in consecutive records. This is the way interpreting programs will group variants in a same product.
+                        With dataset file, this rules is not required since variants are grouped in a "product" tag.
                     </p>
 
                     <h2 id="p8" class="mt-4 text-lg font-semibold text-gray-500 dark:text-white">How to use OMEDIS standard</h2>
                     <p class="mt-4 text-gray-500 dark:text-gray-400 text-sm leading-relaxed">
-                        Each product variant (corresponding to one EAN code) is represented by one xml record or one csv line
-                        containing :
-                        <br/> > a set of attribute listed in the <a href="{{ route('attribute.index') }}">Attribute repository</a>.
-                        Some of them are required (can't be omitted) like <a href="{{ route('attribute.show',1) }}">name</a>, other are optional
-                        <br/> > for each attribute, one value that is directly depending on the <a href="{{ route('datatype.index',1) }}">datatype</a> declared for this attribute
-                        <br/> > If the datatype is "selection", the value has to be selected in the corresponding attribute value list like <a href="{{ route('attributelist.show',1) }}">color</a>
-                        <br/> > If the datatype is something else, the value is free as soon as it fit the recommandation defined in the datatype like <a href="{{ route('datatype.show',6) }}">money</a>
+                        We suggest that you start by downloading a sample <a href="{{ URL::to( 'storage/sample.csv')  }}">csv</a>
+                        or <a href="{{ URL::to( 'storage/sample.xml')  }}">xml</a> file, so that you will clearly understand the structure of container.
+                    <br/>
+                        Then you can have a look at the list of possible <a href="{{ route('attribute.index') }}">attributes</a> for each product. For each one, you will
+                        find the required datatype and unit.
                         <br/>
-                        <br/>
+                        Now it's time for you to develop a program that can export (if you are a brand) or import (if you are a retailer) data to or from your own IT system.
+                        <br/>This program will be a sort of translator from or to you system.
+                    </p>
 
+                    <h2 id="p9" class="mt-4 text-lg font-semibold text-gray-500 dark:text-white">How to collaborate to OMEDIS standard</h2>
+                    <p class="mt-4 text-gray-500 dark:text-gray-400 text-sm leading-relaxed">
+                        Of course, OMEDIS has to be a common tool for everyone in our industry, so it's very important that it would be well-defined, and be able to cover
+                        a large spectrum of needs.
+                        <br/>The only way is to have a panel of contributors, giving each a part of their knowledge to the community. Everyone is welcome to help.
+                        <br/>The specificities of each branch of our industry is like an evidence in categories, list of possible value for variants etc.
                     </p>
                 </div>
 
