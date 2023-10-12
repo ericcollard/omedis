@@ -30,6 +30,70 @@ class VariantAttributes extends Model
         return $this->belongsTo(Variant::class);
     }
 
+    public function getValue()
+    {
+        switch ($this->attribute->datatype->name)
+        {
+            case "selection":
+                if ($this->value_int)
+                {
+                    $attrValue = $this->attribute->attributeList->attributeListValues->where('id', $this->value_int)->first();
+                    if ($attrValue)
+                    {
+                        $data = [];
+                        if ($attrValue->name)
+                            $data['name'] = $attrValue->name;
+                        if ($attrValue->odoo_name)
+                            $data['odoo_name'] = $attrValue->odoo_name;
+                        return $data;
+                    }
+                    else
+                    {
+                        return null;
+                    }
+                }
+
+                break;
+            case "string":
+                if ($this->value_str)
+                {
+                    return $this->value_str;
+                }
+                break;
+            case "integer":
+                if ($this->value_int)
+                {
+                    return $this->value_int;
+                }
+                break;
+            case "float":
+                if ($this->value_float)
+                {
+                    return $this->value_float;
+                }
+                break;
+            case "boolean":
+                if ($this->value_int)
+                {
+                    return $this->value_int;
+                }
+                break;
+            case "money":
+                if ($this->value_float)
+                {
+                    return $this->value_float;
+                }
+                break;
+            case "text":
+                if ($this->value_txt)
+                {
+                    return $this->value_txt;
+                }
+                break;
+        }
+        return null;
+    }
+
     public function toString($summary = 0)
     {
         $html = "";

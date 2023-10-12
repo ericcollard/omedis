@@ -91,6 +91,15 @@ class AttributeListsTableSeeder extends Seeder
                 'created_at' => '2023-10-04 12:25:31',
                 'updated_at' => '2023-10-04 12:27:15',
             ),
+            8 => 
+            array (
+                'id' => 9,
+                'name' => 'supplier',
+                'comment' => 'Supplier company or distributor',
+                'user_id' => 2,
+                'created_at' => '2023-10-12 21:11:15',
+                'updated_at' => '2023-10-12 21:11:53',
+            ),
         ));
         
         

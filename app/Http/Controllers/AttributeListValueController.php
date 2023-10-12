@@ -106,6 +106,7 @@ class AttributeListValueController extends Controller
         $attributeListValue->name = $request->name;
         $attributeListValue->comment = $request->comment;
         $attributeListValue->attribute_list_id = $request->attribute_list_id;
+        $attributeListValue->odoo_name = $request->odoo_name;
         // logique
         $attributeListValue->applyLogic();
         $attributeListValue->save();

@@ -44,6 +44,193 @@ Exemple : "Duotone" but not "Boards and More".\',required: \'1\',attribute_list_
                 'created_at' => '2023-10-11 07:05:37',
                 'updated_at' => '2023-10-11 07:05:37',
             ),
+            2 => 
+            array (
+                'id' => 3,
+                'model' => 'AttributeListValue',
+                'action' => 'UPDATE',
+                'user_id' => '2',
+                'old_values' => 'name: \'windsurf-sail-wave\',comment: \'windsurf sail wave\',attribute_list_id: \'2\',odoo_name: \'\'',
+                'new_values' => 'name: \'windsurf-sail-wave\',comment: \'windsurf sail wave\',attribute_list_id: \'2\',odoo_name: \'Tous / Windsurf / Voile / Vague\'',
+                'created_at' => '2023-10-12 20:50:09',
+                'updated_at' => '2023-10-12 20:50:09',
+            ),
+            3 => 
+            array (
+                'id' => 4,
+                'model' => 'Attribute',
+                'action' => 'CREATE',
+                'user_id' => '2',
+                'old_values' => 'none',
+                'new_values' => 'name: \'supplier\',comment: \'<p>name of the supplier company</p>\',required: \'1\',attribute_list_id: \'1\',unit_id: \'\',data_type_id: \'1\'',
+                'created_at' => '2023-10-12 21:10:56',
+                'updated_at' => '2023-10-12 21:10:56',
+            ),
+            4 => 
+            array (
+                'id' => 5,
+                'model' => 'Attribute',
+                'action' => 'UPDATE',
+                'user_id' => '2',
+                'old_values' => 'name: \'supplier\',comment: \'<p>name of the supplier company</p>\',required: \'1\',attribute_list_id: \'1\',unit_id: \'\',data_type_id: \'1\'',
+                'new_values' => 'name: \'supplier\',comment: \'<p>name of the supplier company</p>\',required: \'1\',attribute_list_id: \'1\',unit_id: \'\',data_type_id: \'1\'',
+                'created_at' => '2023-10-12 21:10:56',
+                'updated_at' => '2023-10-12 21:10:56',
+            ),
+            5 => 
+            array (
+                'id' => 6,
+                'model' => 'AttributeList',
+                'action' => 'CREATE',
+                'user_id' => '2',
+                'old_values' => 'none',
+                'new_values' => 'id: \'\',name: \'supplier\',comment: \'\'',
+                'created_at' => '2023-10-12 21:11:15',
+                'updated_at' => '2023-10-12 21:11:15',
+            ),
+            6 => 
+            array (
+                'id' => 7,
+                'model' => 'AttributeList',
+                'action' => 'UPDATE',
+                'user_id' => '2',
+                'old_values' => 'id: \'9\',name: \'supplier\',comment: \'\'',
+                'new_values' => 'id: \'9\',name: \'supplier\',comment: \'\'',
+                'created_at' => '2023-10-12 21:11:15',
+                'updated_at' => '2023-10-12 21:11:15',
+            ),
+            7 => 
+            array (
+                'id' => 8,
+                'model' => 'AttributeList',
+                'action' => 'UPDATE',
+                'user_id' => '2',
+                'old_values' => 'id: \'9\',name: \'supplier\',comment: \'\'',
+                'new_values' => 'id: \'9\',name: \'supplier\',comment: \'Supplier company\'',
+                'created_at' => '2023-10-12 21:11:43',
+                'updated_at' => '2023-10-12 21:11:43',
+            ),
+            8 => 
+            array (
+                'id' => 9,
+                'model' => 'AttributeList',
+                'action' => 'UPDATE',
+                'user_id' => '2',
+                'old_values' => 'id: \'9\',name: \'supplier\',comment: \'Supplier company\'',
+                'new_values' => 'id: \'9\',name: \'supplier\',comment: \'Supplier company or distributor\'',
+                'created_at' => '2023-10-12 21:11:53',
+                'updated_at' => '2023-10-12 21:11:53',
+            ),
+            9 => 
+            array (
+                'id' => 10,
+                'model' => 'AttributeListValue',
+                'action' => 'CREATE',
+                'user_id' => '2',
+                'old_values' => 'none',
+                'new_values' => 'name: \'boards-and-more\',comment: \'\',attribute_list_id: \'9\',odoo_name: \'Boards & More gmbh\'',
+                'created_at' => '2023-10-12 21:12:56',
+                'updated_at' => '2023-10-12 21:12:56',
+            ),
+            10 => 
+            array (
+                'id' => 11,
+                'model' => 'AttributeListValue',
+                'action' => 'UPDATE',
+                'user_id' => '2',
+                'old_values' => 'name: \'boards-and-more\',comment: \'\',attribute_list_id: \'9\',odoo_name: \'Boards & More gmbh\'',
+                'new_values' => 'name: \'boards-and-more\',comment: \'\',attribute_list_id: \'9\',odoo_name: \'Boards & More gmbh\'',
+                'created_at' => '2023-10-12 21:12:56',
+                'updated_at' => '2023-10-12 21:12:56',
+            ),
+            11 => 
+            array (
+                'id' => 12,
+                'model' => 'Attribute',
+                'action' => 'UPDATE',
+                'user_id' => '2',
+                'old_values' => 'name: \'supplier\',comment: \'<p>name of the supplier company</p>\',required: \'1\',attribute_list_id: \'1\',unit_id: \'\',data_type_id: \'1\'',
+                'new_values' => 'name: \'supplier\',comment: \'<p>name of the supplier company</p>\',required: \'1\',attribute_list_id: \'9\',unit_id: \'\',data_type_id: \'1\'',
+                'created_at' => '2023-10-12 21:13:18',
+                'updated_at' => '2023-10-12 21:13:18',
+            ),
+            12 => 
+            array (
+                'id' => 13,
+                'model' => 'AttributeListValue',
+                'action' => 'CREATE',
+                'user_id' => '2',
+                'old_values' => 'none',
+                'new_values' => 'name: \'f-one\',comment: \'\',attribute_list_id: \'9\',odoo_name: \'F One\'',
+                'created_at' => '2023-10-12 21:14:43',
+                'updated_at' => '2023-10-12 21:14:43',
+            ),
+            13 => 
+            array (
+                'id' => 14,
+                'model' => 'AttributeListValue',
+                'action' => 'UPDATE',
+                'user_id' => '2',
+                'old_values' => 'name: \'f-one\',comment: \'\',attribute_list_id: \'9\',odoo_name: \'F One\'',
+                'new_values' => 'name: \'f-one\',comment: \'\',attribute_list_id: \'9\',odoo_name: \'F One\'',
+                'created_at' => '2023-10-12 21:14:43',
+                'updated_at' => '2023-10-12 21:14:43',
+            ),
+            14 => 
+            array (
+                'id' => 15,
+                'model' => 'AttributeListValue',
+                'action' => 'CREATE',
+                'user_id' => '2',
+                'old_values' => 'none',
+                'new_values' => 'name: \'vola\',comment: \'\',attribute_list_id: \'9\',odoo_name: \'Vola\'',
+                'created_at' => '2023-10-12 21:14:57',
+                'updated_at' => '2023-10-12 21:14:57',
+            ),
+            15 => 
+            array (
+                'id' => 16,
+                'model' => 'AttributeListValue',
+                'action' => 'UPDATE',
+                'user_id' => '2',
+                'old_values' => 'name: \'vola\',comment: \'\',attribute_list_id: \'9\',odoo_name: \'Vola\'',
+                'new_values' => 'name: \'vola\',comment: \'\',attribute_list_id: \'9\',odoo_name: \'Vola\'',
+                'created_at' => '2023-10-12 21:14:57',
+                'updated_at' => '2023-10-12 21:14:57',
+            ),
+            16 => 
+            array (
+                'id' => 17,
+                'model' => 'AttributeListValue',
+                'action' => 'CREATE',
+                'user_id' => '2',
+                'old_values' => 'none',
+                'new_values' => 'name: \'picture\',comment: \'\',attribute_list_id: \'9\',odoo_name: \'Picture Organic Clothing\'',
+                'created_at' => '2023-10-12 21:18:56',
+                'updated_at' => '2023-10-12 21:18:56',
+            ),
+            17 => 
+            array (
+                'id' => 18,
+                'model' => 'AttributeListValue',
+                'action' => 'UPDATE',
+                'user_id' => '2',
+                'old_values' => 'name: \'picture\',comment: \'\',attribute_list_id: \'9\',odoo_name: \'Picture Organic Clothing\'',
+                'new_values' => 'name: \'picture\',comment: \'\',attribute_list_id: \'9\',odoo_name: \'Picture Organic Clothing\'',
+                'created_at' => '2023-10-12 21:18:56',
+                'updated_at' => '2023-10-12 21:18:56',
+            ),
+            18 => 
+            array (
+                'id' => 19,
+                'model' => 'AttributeListValue',
+                'action' => 'UPDATE',
+                'user_id' => '2',
+                'old_values' => 'name: \'picture\',comment: \'\',attribute_list_id: \'9\',odoo_name: \'Picture Organic Clothing\'',
+                'new_values' => 'name: \'picture-organic-clothing\',comment: \'\',attribute_list_id: \'9\',odoo_name: \'Picture Organic Clothing\'',
+                'created_at' => '2023-10-12 21:19:45',
+                'updated_at' => '2023-10-12 21:19:45',
+            ),
         ));
         
         

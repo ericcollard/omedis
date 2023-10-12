@@ -548,6 +548,19 @@ id uom us "unit", quantity by carton',
                 'created_at' => '2023-10-04 12:30:46',
                 'updated_at' => '2023-10-04 12:30:46',
             ),
+            39 => 
+            array (
+                'id' => 40,
+                'name' => 'supplier',
+                'comment' => '<p>name of the supplier company</p>',
+                'required' => 1,
+                'attribute_list_id' => 9,
+                'unit_id' => NULL,
+                'data_type_id' => 1,
+                'user_id' => 2,
+                'created_at' => '2023-10-12 21:10:56',
+                'updated_at' => '2023-10-12 21:13:18',
+            ),
         ));
         
         

@@ -11,6 +11,7 @@ use App\Models\VariantAttributes;
 use Exception;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Facades\Storage;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Support\Fluent;
@@ -157,6 +158,7 @@ class VariantController extends Controller
                                 ->where('attribute_list_id', $attribute->attribute_list_id),
                         ];
                     }
+
                 }
 
                 $validator = Validator::make($variant, $validationRule);
@@ -181,9 +183,55 @@ class VariantController extends Controller
                 }
 
                 // todo : special validations (pictures, etc.)
+                foreach ($variant as $attributeName => $attributeValue) {
+                    // Pictures field validation
+                    if ($attributeName == "pictures" and strlen($attributeValue > 0))
+                    {
+                        $picturePaths = explode(";", $attributeValue);
+                        foreach ($picturePaths as $picturePath)
+                        {
+                            // formatage lien
+                            if (!strtolower(substr($picturePath,4)) == 'http')
+                            {
+                                $errors .= "Line #" . $record_counter . " - <strong>pictures</strong> field value validation errors";
+                                $errors .= "<br/>Erronous supplied value : <span class='text-red-500'>" . $picturePaths . "</span>";
+                                $errors .= "<br/>picture url ".$picturePath." has to contain 'http' string";
+                            }
+                            // existence fichier
+                            //Log::debug('validate '.$picturePath.' :'.$this->check_url($picturePath));
+                            if ($this->check_url($picturePath) == false) {
+                                $errors .= "Line #" . $record_counter . " - <strong>pictures</strong> field value validation errors";
+                                $errors .= "<br/>picture url: ".$picturePath." can't be reached";
+                            }
+                        }
+
+                    }
+
+                    //season validation
+                    if ($attributeName == "season" and strlen($attributeValue > 0))
+                    {
+                        if ((int)$attributeValue < 1990 or (int)$attributeValue > 2100 ) {
+                            $errors .= "Line #" . $record_counter . " - <strong>season</strong> field value validation errors";
+                            $errors .= "<br/>value ".$attributeValue." should be between 1990 and 2100";
+                        }
+                    }
+
+                }
+
             }
         }
         return $errors;
+    }
+
+    public function check_url($path)
+    {
+        $file_headers = @get_headers($path);
+        if(!$file_headers || $file_headers[0] == 'HTTP/1.1 404 Not Found') {
+            return false;
+        }
+        else {
+            return true;
+        }
     }
 
     public function process_table_data($products,$product_template_supplied = false)
@@ -214,7 +262,9 @@ class VariantController extends Controller
 
                         switch ($attribute->dataType->name) {
                             case "selection":
-                                $value_id = AttributeListValue::where('name', $attributeValue)->pluck('id')->first();
+                                $value_id = AttributeListValue::where('name', $attributeValue)
+                                    ->where('attribute_list_id',$attribute->attribute_list_id)
+                                    ->pluck('id')->first();
                                 $variantAttributeValueArr['value_int'] = $value_id;
                                 break;
                             case "string":
@@ -236,6 +286,10 @@ class VariantController extends Controller
                                 $variantAttributeValueArr['value_int'] = (int)$attributeValue;
                                 break;
                         }
+                        /*
+                        if ($attributeName=='supplier' and $attributeValue=="vola")
+                            dd($variantAttributeValueArr);*/
+
                         $variantAttributeValue = new VariantAttributes($variantAttributeValueArr);
                         $variantAttributeValue->save();
 
@@ -337,7 +391,6 @@ class VariantController extends Controller
         $errors = $this->validate_datas($products);
         if (strlen($errors) == 0)
         {
-
             // extraction des variants
             $this->process_table_data($products);
             return redirect()->route('variant.index')

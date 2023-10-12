@@ -4,6 +4,7 @@ namespace App\DataTables;
 
 use App\Models\AttributeListValue;
 use Illuminate\Database\Eloquent\Builder as QueryBuilder;
+use Illuminate\Support\Facades\Auth;
 use Yajra\DataTables\EloquentDataTable;
 use Yajra\DataTables\Html\Builder as HtmlBuilder;
 use Yajra\DataTables\Html\Button;
@@ -134,21 +135,25 @@ class AttributeListValueDataTable extends DataTable
      */
     public function getColumns(): array
     {
-        return [
+        $columns = [
             Column::make('id'),
-            Column::make('name'),
-            Column::make('comment'),
-            Column::make([
-                'data' => 'attribute_list_id',
-                'title' => 'Attribute list',
-            ]),
-            Column::make([
-                'data' => 'action',
-                'title' => '...',
-                'searchable' => false,
-                'sortable' => false,
-            ]),
-        ];
+            Column::make('name')
+            ];
+        if (Auth::check() and Auth::user()->hasRole('ROLE_ADMIN'))
+            $columns[] = Column::make('odoo_name');
+        $columns[] = Column::make('comment');
+        $columns[] = Column::make([
+            'data' => 'attribute_list_id',
+            'title' => 'Attribute list',
+        ]);
+        $columns[] = Column::make([
+            'data' => 'action',
+            'title' => '...',
+            'searchable' => false,
+            'sortable' => false,
+        ]);
+
+        return $columns;
     }
 
     /**

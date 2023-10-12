@@ -31,36 +31,7 @@
                                 <ul>
                                     @foreach ($variant->variantAttributes as $variantAttribute)
                                         <li>
-                                            <strong>{{ $variantAttribute->attribute->name }}:</strong>
-                                            @switch($variantAttribute->attribute->datatype->name)
-                                                @case("selection")
-                                                {{ $variantAttribute->attribute->attributeList->attributeListValues->where('id', $variantAttribute->value_int)->first()->name }}
-                                                @break
-
-                                                @case("string")
-                                                {{ $variantAttribute->value_str }}
-                                                @break
-
-                                                @case("integer")
-                                                {{ $variantAttribute->value_int }}
-                                                @break
-
-                                                @case("float")
-                                                {{ $variantAttribute->value_float }}
-                                                @break
-
-                                                @case("boolean")
-                                                {{ $variantAttribute->value_int }}
-                                                @break
-
-                                                @case("money")
-                                                {{ $variantAttribute->value_float }}
-                                                @break
-
-                                                @case("text")
-                                                {{ $variantAttribute->value_txt }}
-                                                @break
-                                            @endswitch
+                                            {!! $variantAttribute->toString() !!}
 
                                             @if ($variantAttribute->attribute->datatype->name != 'selection' and $variantAttribute->attribute->unit and $variantAttribute->attribute->unit->name != 'none')
                                                 {{ $variantAttribute->attribute->unit->name }}

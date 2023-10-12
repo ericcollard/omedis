@@ -46,6 +46,15 @@
                         <x-nav-link href="{{ route('variant.index') }}" :active="request()->routeIs('variant.index')">
                             {{ __('Variants') }}
                         </x-nav-link>
+                        <x-nav-link href="{{ route('odoomodel.index') }}" :active="request()->routeIs('odoomodel.index')">
+                            {{ __('Odoo Models') }}
+                        </x-nav-link>
+                        <x-nav-link href="{{ route('odooproductvalue.index') }}" :active="request()->routeIs('odooproductvalue.index')">
+                            {{ __('Odoo product values') }}
+                        </x-nav-link>
+                        <x-nav-link href="{{ route('odoovariantvalue.index') }}" :active="request()->routeIs('odoovariantvalue.index')">
+                            {{ __('Odoo variant values') }}
+                        </x-nav-link>
                     @endif
 
 

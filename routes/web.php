@@ -2,6 +2,9 @@
 
 use App\Http\Controllers\API\ApiProductController;
 use App\Http\Controllers\HistoryController;
+use App\Http\Controllers\OdooModelController;
+use App\Http\Controllers\OdooProductValueController;
+use App\Http\Controllers\OdooVariantValueController;
 use App\Http\Controllers\ProductController;
 use App\Http\Controllers\VariantController;
 use Illuminate\Support\Facades\Route;
@@ -94,7 +97,16 @@ Route::get('history', [HistoryController::class, 'index'])->name('history.index'
 
 Route::get('product', [ProductController::class, 'index'])->name('product.index');
 Route::get('product/truncate', [ProductController::class, 'truncate'])->name('product.truncate')->middleware(['auth:sanctum',config('jetstream.auth_session'),'verified',]);
+Route::get('product/{product}/convert2odoo', [ProductController::class, 'convert2odoo'])->name('product.convert2odoo');
 Route::get('product/{product}', [ProductController::class, 'show'])->name('product.show');
+
+Route::resource('odoomodel', OdooModelController::class);
+Route::resource('odooproductvalue', OdooProductValueController::class);
+Route::resource('odoovariantvalue', OdooVariantValueController::class);
+Route::get('/odoomodel/{odoomodel}/duplicate', [OdooModelController::class, 'duplicate'])->name('odoomodel.duplicate')->middleware(['auth:sanctum',config('jetstream.auth_session'),'verified',]);
+Route::get('/odooproductvalue/{odooproductvalue}/duplicate', [OdooProductValueController::class, 'duplicate'])->name('odooproductvalue.duplicate')->middleware(['auth:sanctum',config('jetstream.auth_session'),'verified',]);
+Route::get('/odoovariantvalue/{odoovariantvalue}/duplicate', [OdooVariantValueController::class, 'duplicate'])->name('odoovariantvalue.duplicate')->middleware(['auth:sanctum',config('jetstream.auth_session'),'verified',]);
+
 
 Route::apiResource("api/products", ApiProductController::class);
 

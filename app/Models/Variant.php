@@ -24,6 +24,9 @@ class Variant extends Model
             foreach($variant->variantAttributes as $variantAttribute) {
                 $variantAttribute->delete();
             }
+            foreach($variant->odooVariantValues as $odooVariantValue) {
+                $odooVariantValue->delete();
+            }
         });
 
     }
@@ -41,4 +44,10 @@ class Variant extends Model
     {
         return $this->belongsTo(Product::class);
     }
+
+    public function odooVariantValues(): HasMany
+    {
+        return $this->hasMany(OdooVariantValue::class);
+    }
+
 }

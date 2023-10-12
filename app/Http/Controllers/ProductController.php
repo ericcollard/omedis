@@ -78,4 +78,11 @@ class ProductController extends Controller
     {
         //
     }
+
+    public function convert2odoo(Product $product)
+    {
+        $product->convert2odoo();
+    }
+
+
 }

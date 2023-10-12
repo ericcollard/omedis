@@ -11,13 +11,11 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('attribute_list_values', function (Blueprint $table) {
+        Schema::create('odoo_product_values', function (Blueprint $table) {
             $table->id();
-            $table->string('name');
-            $table->text('comment')->nullable();
-            $table->foreignId('attribute_list_id')->constrained('attribute_lists')->cascadeOnDelete();
-            $table->integer('user_id')->default(1);
-            $table->string('odoo_name')->nullable();
+            $table->foreignId('product_id')->constrained('products');
+            $table->foreignId('odoo_model_id')->constrained('odoo_models');
+            $table->text('value');
             $table->timestamps();
         });
     }
@@ -27,6 +25,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('attribute_list_values');
+        Schema::dropIfExists('odoo_product_values');
     }
 };

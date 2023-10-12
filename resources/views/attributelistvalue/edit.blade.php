@@ -48,6 +48,19 @@
                                         @enderror
                                     </div>
                                 </div>
+
+                                @if (Auth::check() and Auth::user()->hasRole('ROLE_ADMIN'))
+                                    <div class="col-xs-12 col-sm-12 col-md-12 mb-4">
+                                        <div class="form-group">
+                                            <strong>Odoo name:</strong>
+                                            <input type="text" name="odoo_name" value="{{ $attributelistvalue->odoo_name }}" class="form-control" placeholder="Attribute list odoo value name">
+                                            @error('odoo_name')
+                                            <div class="alert alert-danger mt-1 mb-1">{{ $message }}</div>
+                                            @enderror
+                                        </div>
+                                    </div>
+                                @endif
+
                                 <div class="col-xs-12 col-sm-12 col-md-12 mb-4">
                                     <div class="form-group">
                                         <strong>Comment:</strong>

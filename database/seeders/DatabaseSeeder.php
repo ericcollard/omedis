@@ -25,6 +25,10 @@ class DatabaseSeeder extends Seeder
         $this->call(ProductsTableSeeder::class);
         $this->call(VariantsTableSeeder::class);
         $this->call(VariantAttributesTableSeeder::class);
+        $this->call(OdooModelsTableSeeder::class);
+        $this->call(OdooProductValuesTableSeeder::class);
+        $this->call(OdooVariantValuesTableSeeder::class);
+
 
     }
 }

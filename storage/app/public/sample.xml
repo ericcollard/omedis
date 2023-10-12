@@ -3,6 +3,7 @@
     <product>
         <variant>
             <brand>duotone</brand>
+            <supplier>boards-and-more</supplier>
             <season>2024</season>
             <ean>914578541121</ean>
             <sku>42400-28154-37</sku>
@@ -17,6 +18,7 @@
         </variant>
         <variant>
             <brand>duotone</brand>
+            <supplier>boards-and-more</supplier>
             <season>2024</season>
             <ean>914578541122</ean>
             <sku>42400-28154-42</sku>
@@ -31,6 +33,7 @@
         </variant>
         <variant>
             <brand>duotone</brand>
+            <supplier>boards-and-more</supplier>
             <season>2024</season>
             <ean>914578541123</ean>
             <sku>42400-28154-47</sku>
@@ -45,6 +48,7 @@
         </variant>
         <variant>
             <brand>duotone</brand>
+            <supplier>boards-and-more</supplier>
             <season>2024</season>
             <ean>914578541124</ean>
             <sku>42400-28154-50</sku>
@@ -61,6 +65,7 @@
     <product>
         <variant>
             <brand>fone</brand>
+            <supplier>f-one</supplier>
             <season></season>
             <ean>814578545487</ean>
             <sku>77244-0103-52</sku>
@@ -75,6 +80,7 @@
         </variant>
         <variant>
             <brand>fone</brand>
+            <supplier>f-one</supplier>
             <ean>814578545488</ean>
             <sku>77244-0103-54</sku>
             <name>MITU PRO CARBON</name>
@@ -90,6 +96,7 @@
     <product>
         <variant>
             <brand>vola</brand>
+            <supplier>vola</supplier>
             <ean>57884211455</ean>
             <sku>011132</sku>
             <name>Edgerazor</name>
