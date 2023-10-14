@@ -65,7 +65,11 @@ class Product extends Model
 
     public function convert2odoo()
     {
-        $odooProductvalueData = [];
+        // Suppression des données déjà existantes
+        foreach($this->odooProductValues as $odooProductValue) {
+            $odooProductValue->delete();
+        }
+
         $first_variant = $this->variants()->first();
 
         // partie product_template
@@ -75,7 +79,6 @@ class Product extends Model
         $value = $first_variant->variantAttributes()->where('attribute_id',$attribute->id)->first()->getValue();
         if ($value)
         {
-            dd($value);
             if (key_exists('odoo_name',$value))
             {
                 $odoo_categ_name = $value['odoo_name'];
@@ -92,64 +95,164 @@ class Product extends Model
         if ($this->getVariantCount() == 1)
         {
             //Référence interne
-
             $attribute = Attribute::where('name', 'sku')->first();
-            $value = $first_variant->variantAttributes()->where('attribute_id',$attribute->id)->first()->getValue();
-            if ($value)
+            $valueObj = $first_variant->variantAttributes()->where('attribute_id',$attribute->id)->first();
+            if ($valueObj)
             {
-                $odooModel = OdooModel::where('name', 'product_internal_ref')->first();
-                $obj = OdooProductValue::create([
-                    'product_id' => $this->id,
-                    'odoo_model_id' => $odooModel->id,
-                    'value' => $value
-                ])->save();
+                $value = $valueObj->getValue();
+                if ($value)
+                {
+                    $odooModel = OdooModel::where('name', 'product_internal_ref')->first();
+                    $obj = OdooProductValue::create([
+                        'product_id' => $this->id,
+                        'odoo_model_id' => $odooModel->id,
+                        'value' => $value
+                    ])->save();
+                }
             }
+
             //Code barre
             $attribute = Attribute::where('name', 'ean')->first();
-            $value = $first_variant->variantAttributes()->where('attribute_id',$attribute->id)->first()->getValue();
-            if ($value)
+            $valueObj = $first_variant->variantAttributes()->where('attribute_id',$attribute->id)->first();
+            if ($valueObj)
             {
-                $odooModel = OdooModel::where('name', 'product_barcode')->first();
-                $obj = OdooProductValue::create([
-                    'product_id' => $this->id,
-                    'odoo_model_id' => $odooModel->id,
-                    'value' => $value
-                ])->save();
+                $value = $valueObj->getValue();
+                if ($value) {
+                    $odooModel = OdooModel::where('name', 'product_barcode')->first();
+                    $obj = OdooProductValue::create([
+                        'product_id' => $this->id,
+                        'odoo_model_id' => $odooModel->id,
+                        'value' => $value
+                    ])->save();
+                }
             }
         }
 
         //Nom produit
         $attribute = Attribute::where('name', 'name')->first();
         $value = $first_variant->variantAttributes()->where('attribute_id',$attribute->id)->first()->getValue();
+        $attribute = Attribute::where('name', 'brand')->first();
+        $brandNameArr = $first_variant->variantAttributes()->where('attribute_id',$attribute->id)->first()->getValue();
+        $brandName = $brandNameArr['name'];
+        if (key_exists('odoo_name',$brandNameArr))
+            $brandName = $brandNameArr['odoo_name'];
+        $attribute = Attribute::where('name', 'season')->first();
+        $seasonAttr = $first_variant->variantAttributes()->where('attribute_id',$attribute->id)->first();
+        $season ="";
+        if ($seasonAttr)
+            $season = $seasonAttr->getValue();
         if ($value)
         {
-            $odooModel = OdooModel::where('name', 'name')->first();
+            $odooModel = OdooModel::where('name', 'product_name')->first();
             $obj = OdooProductValue::create([
                 'product_id' => $this->id,
                 'odoo_model_id' => $odooModel->id,
-                'value' => $value
+                'value' => ucfirst(strtolower($brandName))." ".strtoupper($value)." ".$season
             ])->save();
         }
 
         //Description
         $attribute = Attribute::where('name', 'description-short-fr')->first();
-        $value = $first_variant->variantAttributes()->where('attribute_id',$attribute->id)->first()->getValue();
-        if ($value)
+        $valueObj = $first_variant->variantAttributes()->where('attribute_id',$attribute->id)->first();
+        if ($valueObj)
         {
-            $odooModel = OdooModel::where('name', 'sale_description')->first();
-            $obj = OdooProductValue::create([
-                'product_id' => $this->id,
-                'odoo_model_id' => $odooModel->id,
-                'value' => $value
-            ])->save();
+            $value = $valueObj->getValue();
+            if ($value) {
+                if (strlen($value) > 30)
+                    $value = substr($value,0,30)." ...";
+                $odooModel = OdooModel::where('name', 'sale_description')->first();
+                $obj = OdooProductValue::create([
+                    'product_id' => $this->id,
+                    'odoo_model_id' => $odooModel->id,
+                    'value' => $value
+                ])->save();
+            }
+
         }
 
         //Description longue
         $attribute = Attribute::where('name', 'description-long-fr')->first();
-        $value = $first_variant->variantAttributes()->where('attribute_id',$attribute->id)->first()->getValue();
-        if ($value)
+        $valueObj = $first_variant->variantAttributes()->where('attribute_id',$attribute->id)->first();
+        if ($valueObj)
         {
-            $odooModel = OdooModel::where('name', 'website_description')->first();
+            $value = $valueObj->getValue();
+            if ($value) {
+                $odooModel = OdooModel::where('name', 'website_description')->first();
+                $obj = OdooProductValue::create([
+                    'product_id' => $this->id,
+                    'odoo_model_id' => $odooModel->id,
+                    'value' => $value
+                ])->save();
+            }
+        }
+
+        //Fournisseur
+        // si 1 seule variante ou même tarif achat pour chaque variante
+        $attribute = Attribute::where('name', 'wholesale-price')->first();
+        $cnt = 1;
+        if ($this->getVariantCount() > 1)
+        {
+            $a = variantAttributes::where('attribute_id',$attribute->id)
+                ->whereIn('variant_id', $this->variants()->pluck('id'))->select('value_float')->distinct()->pluck('value_float');
+            if ($a)
+                $cnt = count($a);
+        }
+        if ($cnt <=1 )
+        {
+            $valueObj = $first_variant->variantAttributes()->where('attribute_id',$attribute->id)->first();
+            if ($valueObj) {
+                $value = $valueObj->getValue();
+                if ($value) {
+                    $odooModel = OdooModel::where('name', 'product_wholesale_ht')->first();
+                    $obj = OdooProductValue::create([
+                        'product_id' => $this->id,
+                        'odoo_model_id' => $odooModel->id,
+                        'value' => $value
+                    ])->save();
+                }
+            }
+
+            $attribute = Attribute::where('name', 'supplier')->first();
+            $valueObj = $first_variant->variantAttributes()->where('attribute_id',$attribute->id)->first();
+            if ($valueObj) {
+                $valueArr = $valueObj->getValue();
+                if ($valueArr) {
+                    $supplierName = $valueArr['name'];
+                    if (key_exists('odoo_name',$valueArr))
+                        $supplierName = $valueArr['odoo_name'];
+
+                    $odooModel = OdooModel::where('name', 'product_supplier')->first();
+                    $obj = OdooProductValue::create([
+                        'product_id' => $this->id,
+                        'odoo_model_id' => $odooModel->id,
+                        'value' => $supplierName
+                    ])->save();
+                }
+            }
+        }
+
+
+        //Prix vente HT = prix mini des variantes
+        $attribute = Attribute::where('name', 'retail-price')->first();
+        $value = variantAttributes::where('attribute_id',$attribute->id)
+            ->whereIn('variant_id', $this->variants()->pluck('id'))->min('value_float');
+
+        if ($value) {
+            $odooModel = OdooModel::where('name', 'product_retail_ht')->first();
+            $obj = OdooProductValue::create([
+                'product_id' => $this->id,
+                'odoo_model_id' => $odooModel->id,
+                'value' => $value / 1.2
+            ])->save();
+        }
+
+        //Prix discount HT = prix mini des variantes
+        $attribute = Attribute::where('name', 'discount-b2c')->first();
+        $value = variantAttributes::where('attribute_id',$attribute->id)
+            ->whereIn('variant_id', $this->variants()->pluck('id'))->min('value_float');
+
+        if ($value) {
+            $odooModel = OdooModel::where('name', 'product_discount_ht')->first();
             $obj = OdooProductValue::create([
                 'product_id' => $this->id,
                 'odoo_model_id' => $odooModel->id,
@@ -157,23 +260,72 @@ class Product extends Model
             ])->save();
         }
 
-        //Fournisseur
-        // si 1 seule variante ou même tarif achat pour chaque variante
-        $attribute = Attribute::where('name', 'description-long-fr')->first();
+        //Photos
+        $attribute = Attribute::where('name', 'pictures')->first();
+        $valueObj = $first_variant->variantAttributes()->where('attribute_id',$attribute->id)->first();
+        if ($valueObj) {
+            $value = $valueObj->getValue();
+            $picturePathArr = explode(';',$value);
+            $mainPict = "";
+            $additionnalPict = "";
+            if (count($picturePathArr) >= 1)
+            {
+                $mainPict = $picturePathArr[0];
+                $additionnalPict = implode(';',array_slice($picturePathArr,1));
+            }
 
-        //Prix achat HT
-
-        //Prix vente HT
-
-        //Photo
-
-        //Photos additionnelles
+            if (strlen($mainPict) > 0)
+            {
+                $odooModel = OdooModel::where('name', 'main_picture')->first();
+                $obj = OdooProductValue::create([
+                    'product_id' => $this->id,
+                    'odoo_model_id' => $odooModel->id,
+                    'value' => $mainPict
+                ])->save();
+            }
+            //Photos additionnelles
+            if (strlen($additionnalPict) > 0)
+            {
+                $odooModel = OdooModel::where('name', 'alternative_pictures')->first();
+                $obj = OdooProductValue::create([
+                    'product_id' => $this->id,
+                    'odoo_model_id' => $odooModel->id,
+                    'value' => $mainPict
+                ])->save();
+            }
+        }
 
         //Route
+        $odooModel = OdooModel::where('name', 'route')->first();
+        $obj = OdooProductValue::create([
+            'product_id' => $this->id,
+            'odoo_model_id' => $odooModel->id,
+            'value' => 'Acheter'
+        ])->save();
 
         //Type odoo
+        $odooModel = OdooModel::where('name', 'type')->first();
+        $obj = OdooProductValue::create([
+            'product_id' => $this->id,
+            'odoo_model_id' => $odooModel->id,
+            'value' => 'ARTICLE STOCKABLE'
+        ])->save();
 
         //Taxe
+        $odooModel = OdooModel::where('name', 'tax')->first();
+        $obj = OdooProductValue::create([
+            'product_id' => $this->id,
+            'odoo_model_id' => $odooModel->id,
+            'value' => 'TVA 20%'
+        ])->save();
+
+        // conversion des variantes
+        $variants = $this->variants()->get();
+        foreach($variants as $variant)
+        {
+            $variant->convert2odoo();
+        }
+
 
     }
 }

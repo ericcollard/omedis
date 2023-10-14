@@ -21,4 +21,9 @@ class OdooProductValue extends Model
     {
         return $this->belongsTo(Product::class);
     }
+
+    public function odooModel(): BelongsTo
+    {
+        return $this->belongsTo(OdooModel::class);
+    }
 }

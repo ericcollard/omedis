@@ -480,4 +480,12 @@ class VariantController extends Controller
             return view('variant.checkfailed', compact('errors'));
         }
     }
+
+    public function convert2odoo(Variant $variant)
+    {
+        $variant->convert2odoo();
+    }
+
+
+
 }

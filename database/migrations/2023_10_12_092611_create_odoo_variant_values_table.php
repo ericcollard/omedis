@@ -16,6 +16,7 @@ return new class extends Migration
             $table->foreignId('variant_id')->constrained('variants');
             $table->foreignId('odoo_model_id')->constrained('odoo_models');
             $table->text('value');
+            $table->text('attribute_name')->nullable();
             $table->timestamps();
         });
     }

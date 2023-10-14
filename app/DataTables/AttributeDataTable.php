@@ -4,6 +4,7 @@ namespace App\DataTables;
 
 use App\Models\Attribute;
 use Illuminate\Database\Eloquent\Builder as QueryBuilder;
+use Illuminate\Support\Facades\Auth;
 use Yajra\DataTables\EloquentDataTable;
 use Yajra\DataTables\Html\Builder as HtmlBuilder;
 use Yajra\DataTables\Html\Button;
@@ -144,9 +145,14 @@ class AttributeDataTable extends DataTable
      */
     public function getColumns(): array
     {
-        return [
+        $columns1 = [
             Column::make('id'),
             Column::make('name'),
+            ];
+        if (Auth::check() and Auth::user()->hasRole('ROLE_ADMIN'))
+            $columns1[] = Column::make('odoo_name');
+
+        $columns2 = [
             Column::make('comment')->style('width: 200px'),
             Column::make('required'),
             Column::make([
@@ -175,6 +181,7 @@ class AttributeDataTable extends DataTable
                 'sortable' => false,
             ]),
         ];
+        return array_merge($columns1,$columns2);
     }
 
     /**

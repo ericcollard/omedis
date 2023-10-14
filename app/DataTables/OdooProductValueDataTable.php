@@ -53,8 +53,17 @@ class OdooProductValueDataTable extends DataTable
             ->editColumn('id', function ($odooproductvalue) {
                 return "<a href='".route('odooproductvalue.show',$odooproductvalue)."'>".$odooproductvalue->id."</a>";
             })
+            ->editColumn('product_id', function ($odooproductvalue) {
+                return "<a href='".route('product.show',$odooproductvalue->product)."'>".$odooproductvalue->product->id."</a>";
+            })
+            ->editColumn('odoo_model_id', function ($odooproductvalue) {
+                return "<a href='".route('odoomodel.show',$odooproductvalue->odooModel)."'>".$odooproductvalue->odooModel->name."</a>";
+            })
+            ->editColumn('value', function ($odooproductvalue) {
+                return $odooproductvalue->value;
+            })
             ->setRowId('id')
-            ->rawColumns(['id','action']);
+            ->rawColumns(['id','action','product_id','odoo_model_id','value']);
     }
 
     /**
@@ -99,12 +108,16 @@ class OdooProductValueDataTable extends DataTable
     {
         return [
             Column::make('id'),
+            Column::make('product_id'),
+            Column::make('odoo_model_id'),
+            Column::make('value'),
+            /*
             Column::make([
                 'data' => 'action',
                 'title' => '...',
                 'searchable' => false,
                 'sortable' => false,
-            ]),
+            ]),*/
         ];
     }
 

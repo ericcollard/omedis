@@ -91,6 +91,7 @@ Route::post('variant/decodexml', [VariantController::class, 'decodexml'])->name(
 Route::get('variant/uploadcsv', [VariantController::class, 'uploadcsv'])->name('variant.uploadcsv')->middleware(['auth:sanctum',config('jetstream.auth_session'),'verified',]);
 Route::get('variant/uploadxml', [VariantController::class, 'uploadxml'])->name('variant.uploadxml')->middleware(['auth:sanctum',config('jetstream.auth_session'),'verified',]);
 Route::get('variant/truncate', [VariantController::class, 'truncate'])->name('variant.truncate')->middleware(['auth:sanctum',config('jetstream.auth_session'),'verified',]);
+Route::get('variant/{variant}/convert2odoo', [VariantController::class, 'convert2odoo'])->name('variant.convert2odoo');
 Route::get('variant/{variant}', [VariantController::class, 'show'])->name('variant.show');
 
 Route::get('history', [HistoryController::class, 'index'])->name('history.index');

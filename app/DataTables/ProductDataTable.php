@@ -29,7 +29,7 @@ class ProductDataTable extends DataTable
                         return "<a href='".route('user.show',$product->user)."'>".$product->user->name."</a>";
                     })
             ->addColumn('contend', function ($product) {
-                $html = "<p>".$product->toString(1)."</p>";
+                $html = "<p><a href='".route('product.show',$product)."'>".$product->toString(1)."</a></p>";
                 $html .= "<p>".$product->getVariantCount()." variantes</p>";
                 return $html;
                     })

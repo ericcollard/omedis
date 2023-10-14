@@ -80,6 +80,7 @@ class AttributeController extends Controller
     {
         $data = [
             'name' => $attribute->name.'-copy',
+            'odoo_name' => $attribute->odoo_name.'-copy',
             'comment' => $attribute->comment,
             'required' => $attribute->required,
             'attribute_list_id' => $attribute->attribute_list_id,
@@ -129,6 +130,7 @@ class AttributeController extends Controller
 
 
         $attribute->name = $request->name;
+        $attribute->odoo_name = $request->odoo_name;
         $attribute->comment = $request->comment;
         $attribute->required = $request->required;
         if (! $request->required)

@@ -33,6 +33,10 @@
                     </div>
                     <div class="card-body">
                         <p><span class="field_title">{{ __('name') }}:</span> {{ $attribute->name }}</p>
+                        @if (Auth::check() and Auth::user()->hasRole('ROLE_ADMIN'))
+                            <p><span class="field_title">{{ __('Odoo Name') }}:</span> {{ $attribute->odoo_name }}</p>
+                        @endif
+
                         <p><span class="field_title">{{ __('comment') }}:</span> {!! html_entity_decode($attribute->comment) !!}</p>
                         <p class="field_title">
                             @if ($attribute->required == 1)

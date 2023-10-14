@@ -60,6 +60,16 @@
                                         <div class="alert alert-danger mt-1 mb-1">{{ $message }}</div>
                                         @enderror
                                     </div>
+                                    @if (Auth::check() and Auth::user()->hasRole('ROLE_ADMIN'))
+                                    <div class="form-group">
+                                        <label for="odoo_name" class="form-label">Odoo Name</label>
+                                        <input type="text" name="odoo_name" value="{{ old('odoo_name', $attribute->odoo_name) }}" class="form-control" placeholder="attribute odoo name"  aria-describedby="odoonameHelp">
+                                        <div id="odoonameHelp" class="form-text">Name of the attribute in odoo system - for variant attributes</div>
+                                        @error('odoo_name')
+                                        <div class="alert alert-danger mt-1 mb-1">{{ $message }}</div>
+                                        @enderror
+                                    </div>
+                                    @endif
                                 </div>
                                 <div class="col-xs-12 col-sm-12 col-md-12 mb-4">
                                     <div class="form-group">

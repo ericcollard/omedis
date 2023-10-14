@@ -20,6 +20,7 @@ return new class extends Migration
             $table->foreignId('unit_id')->nullable()->constrained('units');
             $table->foreignId('data_type_id')->constrained('data_types');
             $table->integer('user_id')->default(1);
+            $table->string('odoo_name')->nullable();
             $table->timestamps();
         });
     }

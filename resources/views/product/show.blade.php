@@ -47,6 +47,42 @@
 
                     </div>
                 </div>
+
+                <div class="card mt-4">
+                    <div class="card-header">
+                        <h3 class="font-semibold text-xl text-gray-800 dark:text-gray-200 leading-tight" style="position:relative">
+                            <i class="fa-regular fa-user"></i> Odoo data for product #<i>{{ $product->id }}</i>
+                        </h3>
+                    </div>
+                    <div class="card-body">
+                        <p>Product data</p>
+                        <ul>
+                            @foreach ($product->odooProductValues as $odooProductValue)
+                                <li>
+                                    <strong>{{ $odooProductValue->odooModel->name }}:</strong> {{ $odooProductValue->value }}
+                                </li>
+                            @endforeach
+                        </ul>
+                        <p>Variant data</p>
+                        <ul>
+                            @foreach ($product->variants as $variant)
+                                <p>Variant # {{$variant->id}}</p>
+                                <ul>
+                                    @foreach ($variant->odooVariantValues as $odooVariantValue)
+                                        <li>
+                                            <strong>{{ $odooVariantValue->odooModel->name }}:</strong> {{ $odooVariantValue->value }}
+                                            @if ($odooVariantValue->odooModel->name == 'attribute')
+                                                {{ ' ('.$odooVariantValue->attribute_name.')' }}
+                                            @endif
+                                        </li>
+                                    @endforeach
+                                </ul>
+
+                            @endforeach
+                        </ul>
+                    </div>
+                </div>
+
             </div>
 
 

@@ -14,6 +14,7 @@ class Attribute extends Mymodel
 
     protected $fillable = [
         'name',
+        'odoo_name',
         'comment',
         'required',
         'attribute_list_id',

@@ -48,13 +48,20 @@ class OdooVariantValueDataTable extends DataTable
                         </button>
                     </form>
                 ';
-                return $x;
+             return $x;
+                })
+            ->editColumn('variant_id', function ($odoovariantvalue) {
+                return "<a href='".route('variant.show',$odoovariantvalue->variant)."'>".$odoovariantvalue->variant->id."</a>";
             })
+            ->editColumn('odoo_model_id', function ($odoovariantvalue) {
+                return "<a href='".route('odoomodel.show',$odoovariantvalue->odooModel)."'>".$odoovariantvalue->odooModel->name."</a>";
+            })
+
             ->editColumn('id', function ($odoovariantvalue) {
                 return "<a href='".route('odoovariantvalue.show',$odoovariantvalue)."'>".$odoovariantvalue->id."</a>";
             })
             ->setRowId('id')
-            ->rawColumns(['id','action']);
+            ->rawColumns(['id','action','variant_id','odoo_model_id']);
     }
 
     /**
@@ -99,12 +106,17 @@ class OdooVariantValueDataTable extends DataTable
     {
         return [
             Column::make('id'),
+            Column::make('variant_id'),
+            Column::make('odoo_model_id'),
+            Column::make('value'),
+            Column::make('attribute_name'),
+            /*
             Column::make([
                 'data' => 'action',
                 'title' => '...',
                 'searchable' => false,
                 'sortable' => false,
-            ]),
+            ]),*/
         ];
     }
 
