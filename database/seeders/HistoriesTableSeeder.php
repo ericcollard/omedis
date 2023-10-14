@@ -231,6 +231,41 @@ Exemple : "Duotone" but not "Boards and More".\',required: \'1\',attribute_list_
                 'created_at' => '2023-10-12 21:19:45',
                 'updated_at' => '2023-10-12 21:19:45',
             ),
+            19 => 
+            array (
+                'id' => 20,
+                'model' => 'Attribute',
+                'action' => 'UPDATE',
+                'user_id' => '2',
+                'old_values' => 'name: \'brand\',odoo_name: \'\',comment: \'Product brand
+This name has to be the one of the brand, but not the one of company or distributor
+Exemple : "Duotone" but not "Boards and More".\',required: \'1\',attribute_list_id: \'3\',unit_id: \'\',data_type_id: \'1\'',
+                'new_values' => 'name: \'brand\',odoo_name: \'test\',comment: \'<p>Product brand This name has to be the one of the brand, but not the one of company or distributor Exemple : "Duotone" but not "Boards and More".</p>\',required: \'1\',attribute_list_id: \'3\',unit_id: \'\',data_type_id: \'1\'',
+                'created_at' => '2023-10-14 07:43:30',
+                'updated_at' => '2023-10-14 07:43:30',
+            ),
+            20 => 
+            array (
+                'id' => 21,
+                'model' => 'Attribute',
+                'action' => 'UPDATE',
+                'user_id' => '2',
+                'old_values' => 'name: \'brand\',odoo_name: \'test\',comment: \'<p>Product brand This name has to be the one of the brand, but not the one of company or distributor Exemple : "Duotone" but not "Boards and More".</p>\',required: \'1\',attribute_list_id: \'3\',unit_id: \'\',data_type_id: \'1\'',
+                'new_values' => 'name: \'brand\',odoo_name: \'\',comment: \'<p>Product brand This name has to be the one of the brand, but not the one of company or distributor Exemple : "Duotone" but not "Boards and More".</p>\',required: \'1\',attribute_list_id: \'3\',unit_id: \'\',data_type_id: \'1\'',
+                'created_at' => '2023-10-14 07:43:59',
+                'updated_at' => '2023-10-14 07:43:59',
+            ),
+            21 => 
+            array (
+                'id' => 22,
+                'model' => 'Attribute',
+                'action' => 'UPDATE',
+                'user_id' => '2',
+                'old_values' => 'name: \'var-surface-m2\',odoo_name: \'\',comment: \'Surface in Square Meters - Variant index attribute\',required: \'0\',attribute_list_id: \'\',unit_id: \'7\',data_type_id: \'5\'',
+            'new_values' => 'name: \'var-surface-m2\',odoo_name: \'Surface (m2)\',comment: \'<p>Surface in Square Meters - Variant index attribute</p>\',required: \'0\',attribute_list_id: \'\',unit_id: \'7\',data_type_id: \'5\'',
+                'created_at' => '2023-10-14 07:45:51',
+                'updated_at' => '2023-10-14 07:45:51',
+            ),
         ));
         
         
