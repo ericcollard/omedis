@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\API;
 
 use App\Http\Controllers\Controller;
+use App\Models\OdooModel;
 use App\Models\Product;
 use Illuminate\Http\Request;
 
@@ -13,8 +14,34 @@ class ApiProductController extends Controller
      */
     public function index()
     {
-        // On récupère tous les utilisateurs
-        $products = [
+        // Modèle odoo
+        $odoomodels_data = OdooModel::all_to_array();
+
+        // On récupère les données
+        $products = product::all();
+        $products_data = [];
+        $product_cnt = 0;
+        foreach ($products as $product)
+        {
+            $product_cnt++;
+            $products_data[$product_cnt] = [
+                'product' => $product->odoodata_to_array()
+                ,'variants' => []];
+
+            $variant_cnt = 0;
+            foreach ($product->variants as $variant)
+            {
+                $variant_cnt++;
+                $products_data[$product_cnt]['variants'][$variant_cnt] = $variant->odoodata_to_array();
+            }
+        }
+
+        $main_data = [
+            'model' => $odoomodels_data,
+            'products' => $products_data,
+
+        ];
+            /*[
             0 => [
                 "brand" => "duotone",
                 "season" => 2024,
@@ -43,10 +70,10 @@ class ApiProductController extends Controller
                 "wholesale" => 45.82,
                 "retail" => 80.99
             ]
-        ];
+        ];*/
 
         // On retourne les informations des utilisateurs en JSON
-        return response()->json($products);
+        return response()->json($main_data);
     }
 
     /**

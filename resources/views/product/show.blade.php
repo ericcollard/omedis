@@ -21,6 +21,7 @@
                     <div class="card-header">
                         <h3 class="font-semibold text-xl text-gray-800 dark:text-gray-200 leading-tight" style="position:relative">
                             <i class="fa-regular fa-user"></i> Product #<i>{{ $product->id }}</i>
+                            <span style="position:absolute; right:0"><a href=" {{ route('product.convert2odoo',$product) }}">Update Odoo Data</a></span>
                         </h3>
                     </div>
                     <div class="card-body">

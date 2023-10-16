@@ -275,7 +275,7 @@ class Variant extends Model
                     ->orWhereNotNull('variant_attributes.value_int')
                 ->orWhereNotNull('variant_attributes.value_float');
             })
-            ->where('attributes.name','like','var%')
+            ->where('attributes.name','like','var%')  //toto : modifier critère variante
             ->pluck('id');
 
         foreach ($attribute_ids as $attribute_id) {
@@ -286,17 +286,51 @@ class Variant extends Model
             $valueObj = $this->variantAttributes()->where('attribute_id', $attribute->id)->first();
             if ($valueObj) {
                 $name = $valueObj->getValue();
-                if (strlen($name) > 0) {
-                    $obj = OdooVariantValue::create([
-                        'variant_id' => $this->id,
-                        'odoo_model_id' => $odooModel->id,
-                        'value' => $name,
-                        'attribute_name' => $attribute_name
-                    ])->save();
+                if (is_array($name))
+                {
+                    // cas d'un attribut sur sélection
+                    $name = $name['name'];
+                    if (strlen($name) > 0) {
+                        $obj = OdooVariantValue::create([
+                            'variant_id' => $this->id,
+                            'odoo_model_id' => $odooModel->id,
+                            'value' => $name,
+                            'attribute_name' => $attribute_name
+                        ])->save();
+                    }
                 }
+                else
+                {
+                    if (strlen($name) > 0) {
+                        $obj = OdooVariantValue::create([
+                            'variant_id' => $this->id,
+                            'odoo_model_id' => $odooModel->id,
+                            'value' => $name,
+                            'attribute_name' => $attribute_name
+                        ])->save();
+                    }
+                }
+
             }
         }
 
+    }
+
+    public function odoodata_to_array()
+    {
+        $data = [];
+        foreach ($this->odooVariantValues as $odooVariantValue)
+        {
+            if ($odooVariantValue->odooModel->name == 'attribute')
+            {
+                $data['attribute_'.$odooVariantValue->attribute_name] = $odooVariantValue->value;
+            }
+            else
+            {
+                $data[$odooVariantValue->odooModel->name] = $odooVariantValue->value;
+            }
+        }
+        return $data;
     }
 
 }

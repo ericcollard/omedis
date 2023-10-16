@@ -28,4 +28,18 @@ class OdooVariantValue extends Model
     {
         return $this->belongsTo(OdooModel::class);
     }
+
+    public function to_array()
+    {
+        $data = [];
+        if ($this->odooModel->name == 'attribute')
+        {
+            $data['attribute_'.$this->attribute_name] = $this->value;
+        }
+        else
+        {
+            $data[$this->odooModel->name] = $this->value;
+        }
+        return $data;
+    }
 }

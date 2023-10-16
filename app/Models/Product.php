@@ -325,7 +325,15 @@ class Product extends Model
         {
             $variant->convert2odoo();
         }
+    }
 
-
+    public function odoodata_to_array()
+    {
+        $data = [];
+        foreach ($this->odooProductValues as $odooProductValue)
+        {
+            $data[$odooProductValue->odooModel->name] = $odooProductValue->value;
+        }
+        return $data;
     }
 }

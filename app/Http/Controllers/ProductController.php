@@ -82,6 +82,7 @@ class ProductController extends Controller
     public function convert2odoo(Product $product)
     {
         $product->convert2odoo();
+        return redirect(route('product.show',$product))->with( ['message' => 'Data updated', 'alert' => 'success']);
     }
 
 

@@ -46,8 +46,12 @@
                             @endif
                         </p>
                         <p><span class="field_title">{{ __('Data type') }}:</span> <a href="{{ route('datatype.show',$attribute->dataType) }}">{{ $attribute->dataType->name }}</a></p>
+                        @if ($attribute->dataType->name = 'selection')
+                            <i>The authorised values for this attribute are strictly limited to a set of pre-defined values, that are defined in the following list </i>
+                        @endif
+
                         @if ($attribute->attribute_list_id)
-                            <p><span class="field_title">{{ __('Attrinute list') }}:</span> <a href="{{ route('attributelist.show',$attribute->attributeList) }}  ">{{ $attribute->attributeList->name }}</a></p>
+                            <p><span class="field_title">{{ __('Attribute list') }}:</span> <a href="{{ route('attributelist.show',$attribute->attributeList) }}  ">{{ $attribute->attributeList->name }}</a></p>
                         @endif
                         @if ($attribute->unit_id)
                             <p><span class="field_title">{{ __('Unit') }}:</span> <a href="{{ route('unit.show',$attribute->unit) }}  ">{{ $attribute->unit->name }}</a></p>
