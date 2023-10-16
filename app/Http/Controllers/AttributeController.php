@@ -169,4 +169,26 @@ class AttributeController extends Controller
     {
         return view('attribute.todo');
     }
+
+    public function first(Attribute $attribute)
+    {
+        $attribute->moveToStart();
+        return redirect(route('attribute.index'));
+    }
+    public function up(Attribute $attribute)
+    {
+        $attribute->moveOrderUp();
+        return redirect(route('attribute.index'));
+    }
+    public function down(Attribute $attribute)
+    {
+        $attribute->moveOrderDown();
+        return redirect(route('attribute.index'));
+    }
+    public function last(Attribute $attribute)
+    {
+        $attribute->moveToEnd();
+        return redirect(route('attribute.index'));
+    }
+
 }

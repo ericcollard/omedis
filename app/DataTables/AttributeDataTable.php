@@ -43,13 +43,11 @@ class AttributeDataTable extends DataTable
                     <button type="submit" class="btn btn-warning btn-sm">
                         <a href="'.$edit_route.'" style="color: inherit">
                             <i class="fa fa-pencil" aria-hidden="true"></i>
-                                Edit
                             </a>
                     </button>
                     <button type="submit" class="btn btn-warning btn-sm">
                         <a href="'.$duplic_route.'" style="color: inherit">
                             <i class="fa fa-clone" aria-hidden="true"></i>
-                                Duplicate
                             </a>
                     </button>
                     <form class="d-sm-inline-block" action="'.$delete_route.'" method="POST">
@@ -57,9 +55,17 @@ class AttributeDataTable extends DataTable
                     '.method_field("DELETE").'
                     <button type="submit" class="btn btn-danger btn-sm ml-2"
                         onclick="return confirm(\'Are You Sure Want to Delete?\')">
-                        <i class="fa fa-trash" aria-hidden="true"></i> Delete
-                        </button>
+                        <i class="fa fa-trash" aria-hidden="true"></i></button>
                     </form>
+                ';
+                return $x;
+            })
+            ->addColumn('order', function ($row) {
+                $x = '
+                <a href = "'.route('attribute.first',$row->id).'"><i class="fa fa-backward-step" aria-hidden="true"></i></a>
+                    <a href = "'.route('attribute.up',$row->id).'"><i class="fa fa-backward" aria-hidden="true"></i></a>
+                     <a href = "'.route('attribute.down',$row->id).'"><i class="fa fa-forward" aria-hidden="true"></i></a>
+                    <a href = "'.route('attribute.last',$row->id).'"><i class="fa fa-forward-step" aria-hidden="true"></i></a>
                 ';
                 return $x;
             })
@@ -103,7 +109,7 @@ class AttributeDataTable extends DataTable
                 else
                     return substr(strip_tags($attribute->comment),0,20)."<a href = ".route('attribute.show',$attribute)."> .....</a>";
             })
-            ->rawColumns(['action','data_type_id','attribute_list_id','unit_id','required','name','comment']);    }
+            ->rawColumns(['action','order','data_type_id','attribute_list_id','unit_id','required','name','comment']);    }
 
     /**
      * Get the query source of dataTable.
@@ -146,7 +152,8 @@ class AttributeDataTable extends DataTable
     public function getColumns(): array
     {
         $columns1 = [
-            Column::make('id'),
+            Column::make('order_column')->title('Id'),
+            Column::make('order')->title('..')->sortable(false),
             Column::make('name'),
             ];
         if (Auth::check() and Auth::user()->hasRole('ROLE_ADMIN'))

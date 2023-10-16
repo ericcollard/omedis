@@ -58,6 +58,10 @@ Route::post('/unit',[UnitController::class, 'store'])->name('unit.store')->middl
 Route::get('/attribute', [AttributeController::class, 'index'])->name('attribute.index');
 Route::get('/attribute/todo', [AttributeController::class, 'todo'])->name('attribute.todo');
 Route::get('/attribute/create', [AttributeController::class, 'create'])->name('attribute.create')->middleware(['auth:sanctum',config('jetstream.auth_session'),'verified',]);
+Route::get('/attribute/{attribute}/up', [AttributeController::class, 'up'])->name('attribute.up')->middleware(['auth:sanctum',config('jetstream.auth_session'),'verified',]);
+Route::get('/attribute/{attribute}/down', [AttributeController::class, 'down'])->name('attribute.down')->middleware(['auth:sanctum',config('jetstream.auth_session'),'verified',]);
+Route::get('/attribute/{attribute}/first', [AttributeController::class, 'first'])->name('attribute.first')->middleware(['auth:sanctum',config('jetstream.auth_session'),'verified',]);
+Route::get('/attribute/{attribute}/last', [AttributeController::class, 'last'])->name('attribute.last')->middleware(['auth:sanctum',config('jetstream.auth_session'),'verified',]);
 Route::get('/attribute/{attribute}', [AttributeController::class, 'show'])->name('attribute.show');
 Route::get('/attribute/{attribute}/edit', [AttributeController::class, 'edit'])->name('attribute.edit')->middleware(['auth:sanctum',config('jetstream.auth_session'),'verified',]);
 Route::get('/attribute/{attribute}/duplicate', [AttributeController::class, 'duplicate'])->name('attribute.duplicate')->middleware(['auth:sanctum',config('jetstream.auth_session'),'verified',]);

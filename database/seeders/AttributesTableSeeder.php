@@ -30,8 +30,9 @@ class AttributesTableSeeder extends Seeder
                 'data_type_id' => 1,
                 'user_id' => 2,
                 'odoo_name' => NULL,
+                'order_column' => 1,
                 'created_at' => NULL,
-                'updated_at' => '2023-10-14 07:43:59',
+                'updated_at' => '2023-10-16 12:26:49',
             ),
             1 => 
             array (
@@ -45,8 +46,9 @@ We suggest that this should be the last year of validity (ie. 2024 for a 23-24 w
                 'data_type_id' => 4,
                 'user_id' => 2,
                 'odoo_name' => NULL,
+                'order_column' => 3,
                 'created_at' => NULL,
-                'updated_at' => '2023-10-11 06:38:45',
+                'updated_at' => '2023-10-16 12:26:52',
             ),
             2 => 
             array (
@@ -59,8 +61,9 @@ We suggest that this should be the last year of validity (ie. 2024 for a 23-24 w
                 'data_type_id' => 2,
                 'user_id' => 2,
                 'odoo_name' => NULL,
+                'order_column' => 4,
                 'created_at' => NULL,
-                'updated_at' => '2023-10-11 06:39:06',
+                'updated_at' => '2023-10-16 12:26:53',
             ),
             3 => 
             array (
@@ -75,8 +78,9 @@ It will be used by programs for price updates',
                 'data_type_id' => 2,
                 'user_id' => 2,
                 'odoo_name' => NULL,
+                'order_column' => 5,
                 'created_at' => NULL,
-                'updated_at' => '2023-10-11 06:41:07',
+                'updated_at' => '2023-10-16 12:26:54',
             ),
             4 => 
             array (
@@ -93,8 +97,9 @@ In both case, the name in not containing the category ("TEE") or brand ("PICTURE
                 'data_type_id' => 2,
                 'user_id' => 2,
                 'odoo_name' => NULL,
+                'order_column' => 6,
                 'created_at' => NULL,
-                'updated_at' => '2023-10-11 06:52:54',
+                'updated_at' => '2023-10-16 12:26:56',
             ),
             5 => 
             array (
@@ -105,10 +110,11 @@ In both case, the name in not containing the category ("TEE") or brand ("PICTURE
                 'attribute_list_id' => 2,
                 'unit_id' => NULL,
                 'data_type_id' => 1,
-                'user_id' => 1,
+                'user_id' => 2,
                 'odoo_name' => NULL,
+                'order_column' => 7,
                 'created_at' => NULL,
-                'updated_at' => NULL,
+                'updated_at' => '2023-10-16 12:26:57',
             ),
             6 => 
             array (
@@ -119,10 +125,11 @@ In both case, the name in not containing the category ("TEE") or brand ("PICTURE
                 'attribute_list_id' => NULL,
                 'unit_id' => 1,
                 'data_type_id' => 7,
-                'user_id' => 1,
+                'user_id' => 2,
                 'odoo_name' => NULL,
+                'order_column' => 8,
                 'created_at' => NULL,
-                'updated_at' => NULL,
+                'updated_at' => '2023-10-16 12:26:58',
             ),
             7 => 
             array (
@@ -133,10 +140,11 @@ In both case, the name in not containing the category ("TEE") or brand ("PICTURE
                 'attribute_list_id' => NULL,
                 'unit_id' => 1,
                 'data_type_id' => 7,
-                'user_id' => 1,
+                'user_id' => 2,
                 'odoo_name' => NULL,
+                'order_column' => 9,
                 'created_at' => NULL,
-                'updated_at' => NULL,
+                'updated_at' => '2023-10-16 12:27:01',
             ),
             8 => 
             array (
@@ -151,8 +159,9 @@ We suggest that picture should be stored on a cnd, so that processing programs c
                 'data_type_id' => 2,
                 'user_id' => 2,
                 'odoo_name' => NULL,
+                'order_column' => 10,
                 'created_at' => NULL,
-                'updated_at' => '2023-10-11 06:53:50',
+                'updated_at' => '2023-10-16 12:27:21',
             ),
             9 => 
             array (
@@ -166,8 +175,9 @@ This does not include any discount (like volume discount, year discount, client 
                 'data_type_id' => 6,
                 'user_id' => 2,
                 'odoo_name' => NULL,
+                'order_column' => 11,
                 'created_at' => NULL,
-                'updated_at' => '2023-10-11 06:54:37',
+                'updated_at' => '2023-10-16 12:27:25',
             ),
             10 => 
             array (
@@ -180,8 +190,9 @@ This does not include any discount (like volume discount, year discount, client 
                 'data_type_id' => 6,
                 'user_id' => 2,
                 'odoo_name' => NULL,
+                'order_column' => 12,
                 'created_at' => NULL,
-                'updated_at' => '2023-10-02 18:36:33',
+                'updated_at' => '2023-10-16 12:27:44',
             ),
             11 => 
             array (
@@ -194,8 +205,9 @@ This does not include any discount (like volume discount, year discount, client 
                 'data_type_id' => 5,
                 'user_id' => 2,
                 'odoo_name' => NULL,
+                'order_column' => 15,
                 'created_at' => NULL,
-                'updated_at' => '2023-10-11 06:55:05',
+                'updated_at' => '2023-10-16 12:26:24',
             ),
             12 => 
             array (
@@ -208,8 +220,9 @@ This does not include any discount (like volume discount, year discount, client 
                 'data_type_id' => 5,
                 'user_id' => 1,
                 'odoo_name' => NULL,
+                'order_column' => 16,
                 'created_at' => NULL,
-                'updated_at' => NULL,
+                'updated_at' => '2023-10-16 12:26:24',
             ),
             13 => 
             array (
@@ -222,8 +235,9 @@ This does not include any discount (like volume discount, year discount, client 
                 'data_type_id' => 5,
                 'user_id' => 1,
                 'odoo_name' => NULL,
+                'order_column' => 17,
                 'created_at' => NULL,
-                'updated_at' => NULL,
+                'updated_at' => '2023-10-16 12:26:24',
             ),
             14 => 
             array (
@@ -236,8 +250,9 @@ This does not include any discount (like volume discount, year discount, client 
                 'data_type_id' => 5,
                 'user_id' => 1,
                 'odoo_name' => NULL,
+                'order_column' => 18,
                 'created_at' => NULL,
-                'updated_at' => NULL,
+                'updated_at' => '2023-10-16 12:26:24',
             ),
             15 => 
             array (
@@ -251,8 +266,9 @@ Mainly used for price update during promotional periods.',
                 'data_type_id' => 6,
                 'user_id' => 2,
                 'odoo_name' => NULL,
+                'order_column' => 19,
                 'created_at' => NULL,
-                'updated_at' => '2023-10-11 06:56:30',
+                'updated_at' => '2023-10-16 12:26:24',
             ),
             16 => 
             array (
@@ -266,8 +282,9 @@ This can be used to store client specific discount, volume discount, year discou
                 'data_type_id' => 6,
                 'user_id' => 2,
                 'odoo_name' => NULL,
+                'order_column' => 20,
                 'created_at' => NULL,
-                'updated_at' => '2023-10-11 06:57:18',
+                'updated_at' => '2023-10-16 12:26:24',
             ),
             17 => 
             array (
@@ -281,8 +298,9 @@ Variant index attribute',
                 'data_type_id' => 5,
                 'user_id' => 2,
                 'odoo_name' => NULL,
+                'order_column' => 21,
                 'created_at' => NULL,
-                'updated_at' => '2023-10-11 06:58:16',
+                'updated_at' => '2023-10-16 12:26:24',
             ),
             18 => 
             array (
@@ -295,8 +313,9 @@ Variant index attribute',
                 'data_type_id' => 5,
                 'user_id' => 2,
                 'odoo_name' => NULL,
+                'order_column' => 22,
                 'created_at' => '2023-09-28 21:16:38',
-                'updated_at' => '2023-09-28 21:18:29',
+                'updated_at' => '2023-10-16 12:26:24',
             ),
             19 => 
             array (
@@ -309,8 +328,9 @@ Variant index attribute',
                 'data_type_id' => 5,
                 'user_id' => 2,
                 'odoo_name' => NULL,
+                'order_column' => 23,
                 'created_at' => '2023-09-28 21:17:49',
-                'updated_at' => '2023-09-28 21:18:39',
+                'updated_at' => '2023-10-16 12:26:24',
             ),
             20 => 
             array (
@@ -323,8 +343,9 @@ Variant index attribute',
                 'data_type_id' => 5,
                 'user_id' => 2,
             'odoo_name' => 'Surface (m2)',
+                'order_column' => 24,
                 'created_at' => '2023-09-28 21:18:58',
-                'updated_at' => '2023-10-14 07:45:51',
+                'updated_at' => '2023-10-16 12:26:24',
             ),
             21 => 
             array (
@@ -337,8 +358,9 @@ Variant index attribute',
                 'data_type_id' => 5,
                 'user_id' => 2,
                 'odoo_name' => NULL,
+                'order_column' => 25,
                 'created_at' => '2023-09-28 21:19:38',
-                'updated_at' => '2023-09-28 21:19:59',
+                'updated_at' => '2023-10-16 12:26:24',
             ),
             22 => 
             array (
@@ -351,8 +373,9 @@ Variant index attribute',
                 'data_type_id' => 5,
                 'user_id' => 2,
                 'odoo_name' => NULL,
+                'order_column' => 26,
                 'created_at' => '2023-09-28 21:21:44',
-                'updated_at' => '2023-09-28 21:22:14',
+                'updated_at' => '2023-10-16 12:26:24',
             ),
             23 => 
             array (
@@ -365,8 +388,9 @@ Variant index attribute',
                 'data_type_id' => 2,
                 'user_id' => 2,
                 'odoo_name' => NULL,
+                'order_column' => 27,
                 'created_at' => '2023-09-28 21:22:35',
-                'updated_at' => '2023-10-02 18:48:26',
+                'updated_at' => '2023-10-16 12:26:24',
             ),
             24 => 
             array (
@@ -379,8 +403,9 @@ Variant index attribute',
                 'data_type_id' => 5,
                 'user_id' => 2,
                 'odoo_name' => NULL,
+                'order_column' => 28,
                 'created_at' => '2023-09-28 21:23:03',
-                'updated_at' => '2023-09-28 21:23:33',
+                'updated_at' => '2023-10-16 12:26:24',
             ),
             25 => 
             array (
@@ -393,8 +418,9 @@ Variant index attribute',
                 'data_type_id' => 4,
                 'user_id' => 2,
                 'odoo_name' => NULL,
+                'order_column' => 29,
                 'created_at' => '2023-09-28 21:24:04',
-                'updated_at' => '2023-09-28 21:25:56',
+                'updated_at' => '2023-10-16 12:26:24',
             ),
             26 => 
             array (
@@ -408,8 +434,9 @@ Only integer value or x.5 value',
                 'data_type_id' => 5,
                 'user_id' => 2,
                 'odoo_name' => NULL,
+                'order_column' => 30,
                 'created_at' => '2023-09-28 21:26:02',
-                'updated_at' => '2023-09-28 21:27:22',
+                'updated_at' => '2023-10-16 12:26:24',
             ),
             27 => 
             array (
@@ -423,8 +450,9 @@ Only integer value or x.5 value',
                 'data_type_id' => 5,
                 'user_id' => 2,
                 'odoo_name' => NULL,
+                'order_column' => 31,
                 'created_at' => '2023-09-28 21:27:29',
-                'updated_at' => '2023-09-28 21:27:43',
+                'updated_at' => '2023-10-16 12:26:24',
             ),
             28 => 
             array (
@@ -439,8 +467,9 @@ This represents the length of the foot in centimeters',
                 'data_type_id' => 5,
                 'user_id' => 2,
                 'odoo_name' => NULL,
+                'order_column' => 32,
                 'created_at' => '2023-09-28 21:28:38',
-                'updated_at' => '2023-09-28 21:37:36',
+                'updated_at' => '2023-10-16 12:26:24',
             ),
             29 => 
             array (
@@ -454,8 +483,9 @@ Various usage',
                 'data_type_id' => 4,
                 'user_id' => 2,
                 'odoo_name' => NULL,
+                'order_column' => 33,
                 'created_at' => '2023-09-28 21:39:35',
-                'updated_at' => '2023-09-28 21:40:21',
+                'updated_at' => '2023-10-16 12:26:24',
             ),
             30 => 
             array (
@@ -468,8 +498,9 @@ Various usage',
                 'data_type_id' => 5,
                 'user_id' => 2,
                 'odoo_name' => NULL,
+                'order_column' => 34,
                 'created_at' => '2023-09-28 21:40:34',
-                'updated_at' => '2023-09-28 21:41:08',
+                'updated_at' => '2023-10-16 12:26:24',
             ),
             31 => 
             array (
@@ -482,8 +513,9 @@ Various usage',
                 'data_type_id' => 5,
                 'user_id' => 2,
                 'odoo_name' => NULL,
+                'order_column' => 35,
                 'created_at' => '2023-09-28 21:41:12',
-                'updated_at' => '2023-09-28 21:41:26',
+                'updated_at' => '2023-10-16 12:26:24',
             ),
             32 => 
             array (
@@ -496,8 +528,9 @@ Various usage',
                 'data_type_id' => 1,
                 'user_id' => 2,
                 'odoo_name' => NULL,
+                'order_column' => 36,
                 'created_at' => '2023-09-28 21:41:56',
-                'updated_at' => '2023-09-28 21:42:15',
+                'updated_at' => '2023-10-16 12:26:24',
             ),
             33 => 
             array (
@@ -510,8 +543,9 @@ Various usage',
                 'data_type_id' => 1,
                 'user_id' => 2,
                 'odoo_name' => NULL,
+                'order_column' => 37,
                 'created_at' => '2023-09-28 21:42:35',
-                'updated_at' => '2023-09-28 21:47:03',
+                'updated_at' => '2023-10-16 12:26:24',
             ),
             34 => 
             array (
@@ -524,8 +558,9 @@ Various usage',
                 'data_type_id' => 1,
                 'user_id' => 2,
                 'odoo_name' => NULL,
+                'order_column' => 38,
                 'created_at' => '2023-09-28 21:43:43',
-                'updated_at' => '2023-09-28 21:47:16',
+                'updated_at' => '2023-10-16 12:26:24',
             ),
             35 => 
             array (
@@ -538,8 +573,9 @@ Various usage',
                 'data_type_id' => 1,
                 'user_id' => 2,
                 'odoo_name' => NULL,
+                'order_column' => 39,
                 'created_at' => '2023-09-28 21:44:26',
-                'updated_at' => '2023-09-28 21:47:27',
+                'updated_at' => '2023-10-16 12:26:24',
             ),
             36 => 
             array (
@@ -552,8 +588,9 @@ Various usage',
                 'data_type_id' => 1,
                 'user_id' => 2,
                 'odoo_name' => NULL,
+                'order_column' => 40,
                 'created_at' => '2023-09-28 21:45:10',
-                'updated_at' => '2023-09-28 21:47:42',
+                'updated_at' => '2023-10-16 12:26:24',
             ),
             37 => 
             array (
@@ -566,8 +603,9 @@ Various usage',
                 'data_type_id' => 1,
                 'user_id' => 2,
                 'odoo_name' => NULL,
+                'order_column' => 13,
                 'created_at' => '2023-10-04 12:28:07',
-                'updated_at' => '2023-10-04 12:28:23',
+                'updated_at' => '2023-10-16 12:27:44',
             ),
             38 => 
             array (
@@ -582,8 +620,9 @@ id uom us "unit", quantity by carton',
                 'data_type_id' => 4,
                 'user_id' => 2,
                 'odoo_name' => NULL,
+                'order_column' => 14,
                 'created_at' => '2023-10-04 12:30:46',
-                'updated_at' => '2023-10-04 12:30:46',
+                'updated_at' => '2023-10-16 12:27:38',
             ),
             39 => 
             array (
@@ -596,8 +635,9 @@ id uom us "unit", quantity by carton',
                 'data_type_id' => 1,
                 'user_id' => 2,
                 'odoo_name' => NULL,
+                'order_column' => 2,
                 'created_at' => '2023-10-12 21:10:56',
-                'updated_at' => '2023-10-12 21:13:18',
+                'updated_at' => '2023-10-16 12:26:50',
             ),
         ));
         
