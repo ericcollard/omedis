@@ -26,9 +26,9 @@ class AttributeListValuesTableSeeder extends Seeder
                 'comment' => NULL,
                 'attribute_list_id' => 4,
                 'user_id' => 2,
-                'odoo_name' => NULL,
+                'odoo_name' => 'XXS',
                 'created_at' => '2023-09-28 21:48:14',
-                'updated_at' => '2023-09-28 21:48:14',
+                'updated_at' => '2023-10-16 14:11:31',
             ),
             1 => 
             array (
@@ -37,9 +37,9 @@ class AttributeListValuesTableSeeder extends Seeder
                 'comment' => NULL,
                 'attribute_list_id' => 4,
                 'user_id' => 2,
-                'odoo_name' => NULL,
+                'odoo_name' => 'XS',
                 'created_at' => '2023-09-28 21:48:23',
-                'updated_at' => '2023-09-28 21:48:23',
+                'updated_at' => '2023-10-16 14:11:36',
             ),
             2 => 
             array (
@@ -48,9 +48,9 @@ class AttributeListValuesTableSeeder extends Seeder
                 'comment' => NULL,
                 'attribute_list_id' => 4,
                 'user_id' => 2,
-                'odoo_name' => NULL,
+                'odoo_name' => 'S',
                 'created_at' => '2023-09-28 21:48:45',
-                'updated_at' => '2023-09-28 21:48:45',
+                'updated_at' => '2023-10-16 14:11:41',
             ),
             3 => 
             array (
@@ -81,9 +81,9 @@ class AttributeListValuesTableSeeder extends Seeder
                 'comment' => NULL,
                 'attribute_list_id' => 4,
                 'user_id' => 2,
-                'odoo_name' => NULL,
+                'odoo_name' => 'M',
                 'created_at' => '2023-09-28 21:49:23',
-                'updated_at' => '2023-09-28 21:49:23',
+                'updated_at' => '2023-10-16 14:11:52',
             ),
             6 => 
             array (
@@ -114,9 +114,9 @@ class AttributeListValuesTableSeeder extends Seeder
                 'comment' => 'Large tall',
                 'attribute_list_id' => 4,
                 'user_id' => 2,
-                'odoo_name' => NULL,
+                'odoo_name' => 'L',
                 'created_at' => '2023-09-28 21:49:53',
-                'updated_at' => '2023-09-28 21:49:53',
+                'updated_at' => '2023-10-16 14:11:59',
             ),
             9 => 
             array (
@@ -136,9 +136,9 @@ class AttributeListValuesTableSeeder extends Seeder
                 'comment' => NULL,
                 'attribute_list_id' => 4,
                 'user_id' => 2,
-                'odoo_name' => NULL,
+                'odoo_name' => 'XL',
                 'created_at' => '2023-09-28 21:50:13',
-                'updated_at' => '2023-09-28 21:50:13',
+                'updated_at' => '2023-10-16 14:12:07',
             ),
             11 => 
             array (
@@ -147,9 +147,9 @@ class AttributeListValuesTableSeeder extends Seeder
                 'comment' => NULL,
                 'attribute_list_id' => 4,
                 'user_id' => 2,
-                'odoo_name' => NULL,
+                'odoo_name' => 'XXL',
                 'created_at' => '2023-09-28 21:50:18',
-                'updated_at' => '2023-09-28 21:50:18',
+                'updated_at' => '2023-10-16 14:12:15',
             ),
             12 => 
             array (
@@ -52898,10 +52898,10 @@ class AttributeListValuesTableSeeder extends Seeder
                 'name' => 'kitesurf-board-surf',
                 'comment' => 'kitesurf board surf',
                 'attribute_list_id' => 2,
-                'user_id' => 1,
-                'odoo_name' => NULL,
+                'user_id' => 2,
+                'odoo_name' => 'Tous / Kitesurf / Flotteur / Directionnel',
                 'created_at' => NULL,
-                'updated_at' => NULL,
+                'updated_at' => '2023-10-16 22:20:17',
             ),
             306 => 
             array (
@@ -53657,10 +53657,10 @@ class AttributeListValuesTableSeeder extends Seeder
                 'name' => 'ski-maintenance-tools',
                 'comment' => 'ski maintenance tools',
                 'attribute_list_id' => 2,
-                'user_id' => 1,
-                'odoo_name' => NULL,
+                'user_id' => 2,
+                'odoo_name' => 'Tous / Ski alpin / Entretien / Outillage',
                 'created_at' => NULL,
-                'updated_at' => NULL,
+                'updated_at' => '2023-10-16 22:22:16',
             ),
             375 => 
             array (
@@ -54548,10 +54548,10 @@ class AttributeListValuesTableSeeder extends Seeder
                 'name' => 'clothing-technical-jacket-men',
                 'comment' => 'clothing technical jacket men',
                 'attribute_list_id' => 2,
-                'user_id' => 1,
-                'odoo_name' => NULL,
+                'user_id' => 2,
+                'odoo_name' => 'Tous / Equipement / Vêtements / Technique / Veste / Homme',
                 'created_at' => NULL,
-                'updated_at' => NULL,
+                'updated_at' => '2023-10-16 22:21:29',
             ),
             456 => 
             array (

@@ -72,7 +72,8 @@ class ApiProductController extends Controller
             ]
         ];*/
 
-        // On retourne les informations des utilisateurs en JSON
+        // On retourne les informations des utilisateurs en JSON;
+        //dd($main_data);
         return response()->json($main_data);
     }
 

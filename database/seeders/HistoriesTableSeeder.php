@@ -1292,6 +1292,320 @@ id uom us "unit", quantity by carton\',required: \'0\',attribute_list_id: \'\',u
                 'created_at' => '2023-10-16 12:27:44',
                 'updated_at' => '2023-10-16 12:27:44',
             ),
+            104 => 
+            array (
+                'id' => 105,
+                'model' => 'Attribute',
+                'action' => 'UPDATE',
+                'user_id' => '2',
+                'old_values' => 'name: \'var-size-m\',odoo_name: \'\',comment: \'Size in Meters.
+Variant index attribute\',required: \'0\',attribute_list_id: \'\',unit_id: \'2\',data_type_id: \'5\'',
+            'new_values' => 'name: \'var-size-m\',odoo_name: \'Taille (m)\',comment: \'<p>Size in Meters. Variant index attribute</p>\',required: \'0\',attribute_list_id: \'\',unit_id: \'2\',data_type_id: \'5\'',
+                'created_at' => '2023-10-16 14:00:58',
+                'updated_at' => '2023-10-16 14:00:58',
+            ),
+            105 => 
+            array (
+                'id' => 106,
+                'model' => 'Attribute',
+                'action' => 'UPDATE',
+                'user_id' => '2',
+                'old_values' => 'name: \'var-size-cm\',odoo_name: \'\',comment: \'Size in Centimeter - Variant index attribute\',required: \'0\',attribute_list_id: \'\',unit_id: \'3\',data_type_id: \'5\'',
+            'new_values' => 'name: \'var-size-cm\',odoo_name: \'Taille (cm)\',comment: \'<p>Size in Centimeter - Variant index attribute</p>\',required: \'0\',attribute_list_id: \'\',unit_id: \'3\',data_type_id: \'5\'',
+                'created_at' => '2023-10-16 14:01:39',
+                'updated_at' => '2023-10-16 14:01:39',
+            ),
+            106 => 
+            array (
+                'id' => 107,
+                'model' => 'Attribute',
+                'action' => 'UPDATE',
+                'user_id' => '2',
+                'old_values' => 'name: \'var-size-mm\',odoo_name: \'\',comment: \'Size in Milimeter - Variant index attribute\',required: \'0\',attribute_list_id: \'\',unit_id: \'4\',data_type_id: \'5\'',
+            'new_values' => 'name: \'var-size-mm\',odoo_name: \'Taille (mm)\',comment: \'<p>Size in Milimeter - Variant index attribute</p>\',required: \'0\',attribute_list_id: \'\',unit_id: \'4\',data_type_id: \'5\'',
+                'created_at' => '2023-10-16 14:02:12',
+                'updated_at' => '2023-10-16 14:02:12',
+            ),
+            107 => 
+            array (
+                'id' => 108,
+                'model' => 'Attribute',
+                'action' => 'UPDATE',
+                'user_id' => '2',
+                'old_values' => 'name: \'var-surface-cm2\',odoo_name: \'\',comment: \'Surface in Square Centimeter - Variant index attribute\',required: \'0\',attribute_list_id: \'\',unit_id: \'20\',data_type_id: \'5\'',
+            'new_values' => 'name: \'var-surface-cm2\',odoo_name: \'Surface (cm2)\',comment: \'<p>Surface in Square Centimeter - Variant index attribute</p>\',required: \'0\',attribute_list_id: \'\',unit_id: \'20\',data_type_id: \'5\'',
+                'created_at' => '2023-10-16 14:02:38',
+                'updated_at' => '2023-10-16 14:02:38',
+            ),
+            108 => 
+            array (
+                'id' => 109,
+                'model' => 'Attribute',
+                'action' => 'UPDATE',
+                'user_id' => '2',
+                'old_values' => 'name: \'var-volume-l\',odoo_name: \'\',comment: \'Volume in Liters - Variant index attribute\',required: \'0\',attribute_list_id: \'\',unit_id: \'9\',data_type_id: \'5\'',
+            'new_values' => 'name: \'var-volume-l\',odoo_name: \'Volume (L)\',comment: \'<p>Volume in Liters - Variant index attribute</p>\',required: \'0\',attribute_list_id: \'\',unit_id: \'9\',data_type_id: \'5\'',
+                'created_at' => '2023-10-16 14:02:58',
+                'updated_at' => '2023-10-16 14:02:58',
+            ),
+            109 => 
+            array (
+                'id' => 110,
+                'model' => 'Attribute',
+                'action' => 'UPDATE',
+                'user_id' => '2',
+                'old_values' => 'name: \'var-size-ft\',odoo_name: \'\',comment: \'Size in Feets - Variant index attribute\',required: \'0\',attribute_list_id: \'\',unit_id: \'12\',data_type_id: \'2\'',
+            'new_values' => 'name: \'var-size-ft\',odoo_name: \'Taille (pieds)\',comment: \'<p>Size in Feets - Variant index attribute</p>\',required: \'0\',attribute_list_id: \'\',unit_id: \'12\',data_type_id: \'2\'',
+                'created_at' => '2023-10-16 14:03:25',
+                'updated_at' => '2023-10-16 14:03:25',
+            ),
+            110 => 
+            array (
+                'id' => 111,
+                'model' => 'Attribute',
+                'action' => 'UPDATE',
+                'user_id' => '2',
+                'old_values' => 'name: \'var-size-inch\',odoo_name: \'\',comment: \'Size in Inches - Variant index attribute\',required: \'0\',attribute_list_id: \'\',unit_id: \'11\',data_type_id: \'5\'',
+            'new_values' => 'name: \'var-size-inch\',odoo_name: \'Taille (pouces)\',comment: \'<p>Size in Inches - Variant index attribute</p>\',required: \'0\',attribute_list_id: \'\',unit_id: \'11\',data_type_id: \'5\'',
+                'created_at' => '2023-10-16 14:03:58',
+                'updated_at' => '2023-10-16 14:03:58',
+            ),
+            111 => 
+            array (
+                'id' => 112,
+                'model' => 'Attribute',
+                'action' => 'UPDATE',
+                'user_id' => '2',
+            'old_values' => 'name: \'var-boot-size-fr\',odoo_name: \'\',comment: \'Boot size in French notation (35-36-..43-44) - Variant index attribute\',required: \'0\',attribute_list_id: \'\',unit_id: \'1\',data_type_id: \'4\'',
+            'new_values' => 'name: \'var-boot-size-fr\',odoo_name: \'Pointure (Fr)\',comment: \'<p>Boot size in French notation (35-36-..43-44) - Variant index attribute</p>\',required: \'0\',attribute_list_id: \'\',unit_id: \'1\',data_type_id: \'4\'',
+                'created_at' => '2023-10-16 14:04:22',
+                'updated_at' => '2023-10-16 14:04:22',
+            ),
+            112 => 
+            array (
+                'id' => 113,
+                'model' => 'Attribute',
+                'action' => 'UPDATE',
+                'user_id' => '2',
+            'old_values' => 'name: \'var-boot-size-uk\',odoo_name: \'\',comment: \'Boot size in Uk notation (6-6.5-7 ... 10-10.5) - Variant index attribute
+Only integer value or x.5 value\',required: \'0\',attribute_list_id: \'\',unit_id: \'1\',data_type_id: \'5\'',
+            'new_values' => 'name: \'var-boot-size-uk\',odoo_name: \'Pointure (Uk)\',comment: \'<p>Boot size in Uk notation (6-6.5-7 ... 10-10.5) - Variant index attribute Only integer value or x.5 value</p>\',required: \'0\',attribute_list_id: \'\',unit_id: \'1\',data_type_id: \'5\'',
+                'created_at' => '2023-10-16 14:04:39',
+                'updated_at' => '2023-10-16 14:04:39',
+            ),
+            113 => 
+            array (
+                'id' => 114,
+                'model' => 'Attribute',
+                'action' => 'UPDATE',
+                'user_id' => '2',
+            'old_values' => 'name: \'var-boot-size-us\',odoo_name: \'\',comment: \'Boot size in Us notation (6-6.5-7 ... 10-10.5) - Variant index attribute
+Only integer value or x.5 value\',required: \'0\',attribute_list_id: \'\',unit_id: \'1\',data_type_id: \'5\'',
+            'new_values' => 'name: \'var-boot-size-us\',odoo_name: \'Pointure (Us)\',comment: \'<p>Boot size in Us notation (6-6.5-7 ... 10-10.5) - Variant index attribute Only integer value or x.5 value</p>\',required: \'0\',attribute_list_id: \'\',unit_id: \'1\',data_type_id: \'5\'',
+                'created_at' => '2023-10-16 14:05:01',
+                'updated_at' => '2023-10-16 14:05:01',
+            ),
+            114 => 
+            array (
+                'id' => 115,
+                'model' => 'Attribute',
+                'action' => 'UPDATE',
+                'user_id' => '2',
+            'old_values' => 'name: \'var-boot-size-mondo\',odoo_name: \'\',comment: \'Boot size in Mondopoint (25-25.5-26 ... 28-28.5-29) - Variant index attribute
+Only integer value or x.5 value
+This represents the length of the foot in centimeters\',required: \'0\',attribute_list_id: \'\',unit_id: \'1\',data_type_id: \'5\'',
+            'new_values' => 'name: \'var-boot-size-mondo\',odoo_name: \'Pointure (mondo)\',comment: \'<p>Boot size in Mondopoint (25-25.5-26 ... 28-28.5-29) - Variant index attribute Only integer value or x.5 value This represents the length of the foot in centimeters</p>\',required: \'0\',attribute_list_id: \'\',unit_id: \'1\',data_type_id: \'5\'',
+                'created_at' => '2023-10-16 14:05:29',
+                'updated_at' => '2023-10-16 14:05:29',
+            ),
+            115 => 
+            array (
+                'id' => 116,
+                'model' => 'Attribute',
+                'action' => 'UPDATE',
+                'user_id' => '2',
+                'old_values' => 'name: \'var-item-nb\',odoo_name: \'\',comment: \'Item number - Variant index attribute
+Various usage\',required: \'0\',attribute_list_id: \'\',unit_id: \'1\',data_type_id: \'4\'',
+                'new_values' => 'name: \'var-item-nb\',odoo_name: \'Repère\',comment: \'<p>Item number - Variant index attribute Various usage</p>\',required: \'0\',attribute_list_id: \'\',unit_id: \'1\',data_type_id: \'4\'',
+                'created_at' => '2023-10-16 14:05:54',
+                'updated_at' => '2023-10-16 14:05:54',
+            ),
+            116 => 
+            array (
+                'id' => 117,
+                'model' => 'Attribute',
+                'action' => 'UPDATE',
+                'user_id' => '2',
+                'old_values' => 'name: \'var-weight-g\',odoo_name: \'\',comment: \'Weight in grams - Variant index attribute\',required: \'0\',attribute_list_id: \'\',unit_id: \'6\',data_type_id: \'5\'',
+            'new_values' => 'name: \'var-weight-g\',odoo_name: \'Poids (g)\',comment: \'<p>Weight in grams - Variant index attribute</p>\',required: \'0\',attribute_list_id: \'\',unit_id: \'6\',data_type_id: \'5\'',
+                'created_at' => '2023-10-16 14:06:21',
+                'updated_at' => '2023-10-16 14:06:21',
+            ),
+            117 => 
+            array (
+                'id' => 118,
+                'model' => 'Attribute',
+                'action' => 'UPDATE',
+                'user_id' => '2',
+                'old_values' => 'name: \'var-color\',odoo_name: \'\',comment: \'Color - Variant index attribute\',required: \'0\',attribute_list_id: \'1\',unit_id: \'\',data_type_id: \'1\'',
+                'new_values' => 'name: \'var-color\',odoo_name: \'Couleur\',comment: \'<p>Color - Variant index attribute</p>\',required: \'0\',attribute_list_id: \'1\',unit_id: \'\',data_type_id: \'1\'',
+                'created_at' => '2023-10-16 14:06:55',
+                'updated_at' => '2023-10-16 14:06:55',
+            ),
+            118 => 
+            array (
+                'id' => 119,
+                'model' => 'Attribute',
+                'action' => 'UPDATE',
+                'user_id' => '2',
+            'old_values' => 'name: \'var-size-wear-eu\',odoo_name: \'\',comment: \'Clothes EU sizing (36-38-40-42) - Variant index attribute\',required: \'0\',attribute_list_id: \'5\',unit_id: \'\',data_type_id: \'1\'',
+            'new_values' => 'name: \'var-size-wear-eu\',odoo_name: \'Taille Wear\',comment: \'<p>Clothes EU sizing (36-38-40-42) - Variant index attribute</p>\',required: \'0\',attribute_list_id: \'5\',unit_id: \'\',data_type_id: \'1\'',
+                'created_at' => '2023-10-16 14:07:26',
+                'updated_at' => '2023-10-16 14:07:26',
+            ),
+            119 => 
+            array (
+                'id' => 120,
+                'model' => 'Attribute',
+                'action' => 'UPDATE',
+                'user_id' => '2',
+            'old_values' => 'name: \'var-size-wear-us\',odoo_name: \'\',comment: \'Clothes US sizing (2-4-6-8) - Variant index attribute\',required: \'0\',attribute_list_id: \'7\',unit_id: \'\',data_type_id: \'1\'',
+            'new_values' => 'name: \'var-size-wear-us\',odoo_name: \'Taille Wear\',comment: \'<p>Clothes US sizing (2-4-6-8) - Variant index attribute</p>\',required: \'0\',attribute_list_id: \'7\',unit_id: \'\',data_type_id: \'1\'',
+                'created_at' => '2023-10-16 14:07:32',
+                'updated_at' => '2023-10-16 14:07:32',
+            ),
+            120 => 
+            array (
+                'id' => 121,
+                'model' => 'Attribute',
+                'action' => 'UPDATE',
+                'user_id' => '2',
+            'old_values' => 'name: \'var-size-wear-uk\',odoo_name: \'\',comment: \'Clothes UK sizing (2-4-6-8) - Variant index attribute\',required: \'0\',attribute_list_id: \'6\',unit_id: \'\',data_type_id: \'1\'',
+            'new_values' => 'name: \'var-size-wear-uk\',odoo_name: \'Taille Wear\',comment: \'<p>Clothes UK sizing (2-4-6-8) - Variant index attribute</p>\',required: \'0\',attribute_list_id: \'6\',unit_id: \'\',data_type_id: \'1\'',
+                'created_at' => '2023-10-16 14:07:40',
+                'updated_at' => '2023-10-16 14:07:40',
+            ),
+            121 => 
+            array (
+                'id' => 122,
+                'model' => 'Attribute',
+                'action' => 'UPDATE',
+                'user_id' => '2',
+            'old_values' => 'name: \'var-size-wear-int\',odoo_name: \'\',comment: \'Clothes International sizing (XXS-XS... L-XL-XXL) - Variant index attribute\',required: \'0\',attribute_list_id: \'4\',unit_id: \'\',data_type_id: \'1\'',
+            'new_values' => 'name: \'var-size-wear-int\',odoo_name: \'Taille Wear\',comment: \'<p>Clothes International sizing (XXS-XS... L-XL-XXL) - Variant index attribute</p>\',required: \'0\',attribute_list_id: \'4\',unit_id: \'\',data_type_id: \'1\'',
+                'created_at' => '2023-10-16 14:07:50',
+                'updated_at' => '2023-10-16 14:07:50',
+            ),
+            122 => 
+            array (
+                'id' => 123,
+                'model' => 'AttributeListValue',
+                'action' => 'UPDATE',
+                'user_id' => '2',
+                'old_values' => 'name: \'xxs\',comment: \'\',attribute_list_id: \'4\',odoo_name: \'\'',
+                'new_values' => 'name: \'xxs\',comment: \'\',attribute_list_id: \'4\',odoo_name: \'XXS\'',
+                'created_at' => '2023-10-16 14:11:31',
+                'updated_at' => '2023-10-16 14:11:31',
+            ),
+            123 => 
+            array (
+                'id' => 124,
+                'model' => 'AttributeListValue',
+                'action' => 'UPDATE',
+                'user_id' => '2',
+                'old_values' => 'name: \'xs\',comment: \'\',attribute_list_id: \'4\',odoo_name: \'\'',
+                'new_values' => 'name: \'xs\',comment: \'\',attribute_list_id: \'4\',odoo_name: \'XS\'',
+                'created_at' => '2023-10-16 14:11:36',
+                'updated_at' => '2023-10-16 14:11:36',
+            ),
+            124 => 
+            array (
+                'id' => 125,
+                'model' => 'AttributeListValue',
+                'action' => 'UPDATE',
+                'user_id' => '2',
+                'old_values' => 'name: \'s\',comment: \'\',attribute_list_id: \'4\',odoo_name: \'\'',
+                'new_values' => 'name: \'s\',comment: \'\',attribute_list_id: \'4\',odoo_name: \'S\'',
+                'created_at' => '2023-10-16 14:11:41',
+                'updated_at' => '2023-10-16 14:11:41',
+            ),
+            125 => 
+            array (
+                'id' => 126,
+                'model' => 'AttributeListValue',
+                'action' => 'UPDATE',
+                'user_id' => '2',
+                'old_values' => 'name: \'m\',comment: \'\',attribute_list_id: \'4\',odoo_name: \'\'',
+                'new_values' => 'name: \'m\',comment: \'\',attribute_list_id: \'4\',odoo_name: \'M\'',
+                'created_at' => '2023-10-16 14:11:52',
+                'updated_at' => '2023-10-16 14:11:52',
+            ),
+            126 => 
+            array (
+                'id' => 127,
+                'model' => 'AttributeListValue',
+                'action' => 'UPDATE',
+                'user_id' => '2',
+                'old_values' => 'name: \'l\',comment: \'Large tall\',attribute_list_id: \'4\',odoo_name: \'\'',
+                'new_values' => 'name: \'l\',comment: \'Large tall\',attribute_list_id: \'4\',odoo_name: \'L\'',
+                'created_at' => '2023-10-16 14:11:59',
+                'updated_at' => '2023-10-16 14:11:59',
+            ),
+            127 => 
+            array (
+                'id' => 128,
+                'model' => 'AttributeListValue',
+                'action' => 'UPDATE',
+                'user_id' => '2',
+                'old_values' => 'name: \'xl\',comment: \'\',attribute_list_id: \'4\',odoo_name: \'\'',
+                'new_values' => 'name: \'xl\',comment: \'\',attribute_list_id: \'4\',odoo_name: \'XL\'',
+                'created_at' => '2023-10-16 14:12:07',
+                'updated_at' => '2023-10-16 14:12:07',
+            ),
+            128 => 
+            array (
+                'id' => 129,
+                'model' => 'AttributeListValue',
+                'action' => 'UPDATE',
+                'user_id' => '2',
+                'old_values' => 'name: \'xxl\',comment: \'\',attribute_list_id: \'4\',odoo_name: \'\'',
+                'new_values' => 'name: \'xxl\',comment: \'\',attribute_list_id: \'4\',odoo_name: \'XXL\'',
+                'created_at' => '2023-10-16 14:12:15',
+                'updated_at' => '2023-10-16 14:12:15',
+            ),
+            129 => 
+            array (
+                'id' => 130,
+                'model' => 'AttributeListValue',
+                'action' => 'UPDATE',
+                'user_id' => '2',
+                'old_values' => 'name: \'kitesurf-board-surf\',comment: \'kitesurf board surf\',attribute_list_id: \'2\',odoo_name: \'\'',
+                'new_values' => 'name: \'kitesurf-board-surf\',comment: \'kitesurf board surf\',attribute_list_id: \'2\',odoo_name: \'Tous / Kitesurf / Flotteur / Directionnel\'',
+                'created_at' => '2023-10-16 22:20:17',
+                'updated_at' => '2023-10-16 22:20:17',
+            ),
+            130 => 
+            array (
+                'id' => 131,
+                'model' => 'AttributeListValue',
+                'action' => 'UPDATE',
+                'user_id' => '2',
+                'old_values' => 'name: \'clothing-technical-jacket-men\',comment: \'clothing technical jacket men\',attribute_list_id: \'2\',odoo_name: \'\'',
+                'new_values' => 'name: \'clothing-technical-jacket-men\',comment: \'clothing technical jacket men\',attribute_list_id: \'2\',odoo_name: \'Tous / Equipement / Vêtements / Technique / Veste / Homme\'',
+                'created_at' => '2023-10-16 22:21:29',
+                'updated_at' => '2023-10-16 22:21:29',
+            ),
+            131 => 
+            array (
+                'id' => 132,
+                'model' => 'AttributeListValue',
+                'action' => 'UPDATE',
+                'user_id' => '2',
+                'old_values' => 'name: \'ski-maintenance-tools\',comment: \'ski maintenance tools\',attribute_list_id: \'2\',odoo_name: \'\'',
+                'new_values' => 'name: \'ski-maintenance-tools\',comment: \'ski maintenance tools\',attribute_list_id: \'2\',odoo_name: \'Tous / Ski alpin / Entretien / Outillage\'',
+                'created_at' => '2023-10-16 22:22:16',
+                'updated_at' => '2023-10-16 22:22:16',
+            ),
         ));
         
         

@@ -124,7 +124,7 @@ class Variant extends Model
                 if ($valueObj) {
                     $valueArr = $valueObj->getValue();
                     if ($valueArr) {
-                        $supplierName = $valueArr['name'];
+                        $supplierName = $valueArr['name'].'*';
                         if (key_exists('odoo_name',$valueArr))
                             $supplierName = $valueArr['odoo_name'];
 
@@ -223,7 +223,7 @@ class Variant extends Model
         if ($valueObj) {
             $valueArr = $valueObj->getValue();
             if ($valueArr) {
-                $supplierName = $valueArr['name'];
+                $supplierName = $valueArr['name'].'*';
                 if (key_exists('odoo_name',$valueArr))
                     $supplierName = $valueArr['odoo_name'];
 
@@ -275,7 +275,7 @@ class Variant extends Model
                     ->orWhereNotNull('variant_attributes.value_int')
                 ->orWhereNotNull('variant_attributes.value_float');
             })
-            ->where('attributes.name','like','var%')  //toto : modifier critère variante
+            ->whereNotNull('attributes.odoo_name')
             ->pluck('id');
 
         foreach ($attribute_ids as $attribute_id) {
@@ -289,12 +289,16 @@ class Variant extends Model
                 if (is_array($name))
                 {
                     // cas d'un attribut sur sélection
-                    $name = $name['name'];
-                    if (strlen($name) > 0) {
+                    $value = $name['name'].('*');
+                    if (key_exists('odoo_name',$name))
+                    {
+                        $value= $name['odoo_name'];
+                    }
+                    if (strlen($value) > 0) {
                         $obj = OdooVariantValue::create([
                             'variant_id' => $this->id,
                             'odoo_model_id' => $odooModel->id,
-                            'value' => $name,
+                            'value' => $value,
                             'attribute_name' => $attribute_name
                         ])->save();
                     }
