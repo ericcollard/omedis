@@ -24299,10 +24299,10 @@ class AttributeListValuesTableSeeder extends Seeder
                 'name' => 'rooftop-garden',
                 'comment' => 'Rooftop Garden #9ead92',
                 'attribute_list_id' => 1,
-                'user_id' => 1,
-                'odoo_name' => NULL,
+                'user_id' => 2,
+                'odoo_name' => 'Amande',
                 'created_at' => NULL,
-                'updated_at' => NULL,
+                'updated_at' => '2023-11-06 23:44:09',
             ),
             207 => 
             array (
@@ -37932,10 +37932,10 @@ class AttributeListValuesTableSeeder extends Seeder
                 'name' => 'deep-sea-base',
                 'comment' => 'Deep Sea Base #2c2c57',
                 'attribute_list_id' => 1,
-                'user_id' => 1,
-                'odoo_name' => NULL,
+                'user_id' => 2,
+                'odoo_name' => 'Bleu marine',
                 'created_at' => NULL,
-                'updated_at' => NULL,
+                'updated_at' => '2023-11-06 23:43:06',
             ),
             446 => 
             array (
@@ -50236,10 +50236,10 @@ class AttributeListValuesTableSeeder extends Seeder
                 'name' => 'fone',
                 'comment' => 'FONE',
                 'attribute_list_id' => 3,
-                'user_id' => 1,
-                'odoo_name' => NULL,
+                'user_id' => 2,
+                'odoo_name' => 'fone',
                 'created_at' => NULL,
-                'updated_at' => NULL,
+                'updated_at' => '2023-11-06 23:40:32',
             ),
             64 => 
             array (
@@ -51402,10 +51402,10 @@ class AttributeListValuesTableSeeder extends Seeder
                 'name' => 'picture',
                 'comment' => 'PICTURE',
                 'attribute_list_id' => 3,
-                'user_id' => 1,
-                'odoo_name' => NULL,
+                'user_id' => 2,
+                'odoo_name' => 'picture',
                 'created_at' => NULL,
-                'updated_at' => NULL,
+                'updated_at' => '2023-11-06 23:40:46',
             ),
             170 => 
             array (
@@ -52315,10 +52315,10 @@ class AttributeListValuesTableSeeder extends Seeder
                 'name' => 'vola',
                 'comment' => 'VOLA',
                 'attribute_list_id' => 3,
-                'user_id' => 1,
-                'odoo_name' => NULL,
+                'user_id' => 2,
+                'odoo_name' => 'vola',
                 'created_at' => NULL,
-                'updated_at' => NULL,
+                'updated_at' => '2023-11-06 23:45:20',
             ),
             253 => 
             array (

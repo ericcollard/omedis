@@ -1606,6 +1606,61 @@ Various usage\',required: \'0\',attribute_list_id: \'\',unit_id: \'1\',data_type
                 'created_at' => '2023-10-16 22:22:16',
                 'updated_at' => '2023-10-16 22:22:16',
             ),
+            132 => 
+            array (
+                'id' => 133,
+                'model' => 'AttributeListValue',
+                'action' => 'UPDATE',
+                'user_id' => '2',
+                'old_values' => 'name: \'fone\',comment: \'FONE\',attribute_list_id: \'3\',odoo_name: \'\'',
+                'new_values' => 'name: \'fone\',comment: \'FONE\',attribute_list_id: \'3\',odoo_name: \'fone\'',
+                'created_at' => '2023-11-06 23:40:32',
+                'updated_at' => '2023-11-06 23:40:32',
+            ),
+            133 => 
+            array (
+                'id' => 134,
+                'model' => 'AttributeListValue',
+                'action' => 'UPDATE',
+                'user_id' => '2',
+                'old_values' => 'name: \'picture\',comment: \'PICTURE\',attribute_list_id: \'3\',odoo_name: \'\'',
+                'new_values' => 'name: \'picture\',comment: \'PICTURE\',attribute_list_id: \'3\',odoo_name: \'picture\'',
+                'created_at' => '2023-11-06 23:40:46',
+                'updated_at' => '2023-11-06 23:40:46',
+            ),
+            134 => 
+            array (
+                'id' => 135,
+                'model' => 'AttributeListValue',
+                'action' => 'UPDATE',
+                'user_id' => '2',
+                'old_values' => 'name: \'deep-sea-base\',comment: \'Deep Sea Base #2c2c57\',attribute_list_id: \'1\',odoo_name: \'\'',
+                'new_values' => 'name: \'deep-sea-base\',comment: \'Deep Sea Base #2c2c57\',attribute_list_id: \'1\',odoo_name: \'Bleu marine\'',
+                'created_at' => '2023-11-06 23:43:06',
+                'updated_at' => '2023-11-06 23:43:06',
+            ),
+            135 => 
+            array (
+                'id' => 136,
+                'model' => 'AttributeListValue',
+                'action' => 'UPDATE',
+                'user_id' => '2',
+                'old_values' => 'name: \'rooftop-garden\',comment: \'Rooftop Garden #9ead92\',attribute_list_id: \'1\',odoo_name: \'\'',
+                'new_values' => 'name: \'rooftop-garden\',comment: \'Rooftop Garden #9ead92\',attribute_list_id: \'1\',odoo_name: \'Amande\'',
+                'created_at' => '2023-11-06 23:44:09',
+                'updated_at' => '2023-11-06 23:44:09',
+            ),
+            136 => 
+            array (
+                'id' => 137,
+                'model' => 'AttributeListValue',
+                'action' => 'UPDATE',
+                'user_id' => '2',
+                'old_values' => 'name: \'vola\',comment: \'VOLA\',attribute_list_id: \'3\',odoo_name: \'\'',
+                'new_values' => 'name: \'vola\',comment: \'VOLA\',attribute_list_id: \'3\',odoo_name: \'vola\'',
+                'created_at' => '2023-11-06 23:45:20',
+                'updated_at' => '2023-11-06 23:45:20',
+            ),
         ));
         
         
