@@ -14,12 +14,12 @@ class OdooVariantValuesTableSeeder extends Seeder
      */
     public function run()
     {
-        
+
 
         \DB::table('odoo_variant_values')->delete();
-        
+
         \DB::table('odoo_variant_values')->insert(array (
-            0 => 
+            0 =>
             array (
                 'id' => 585,
                 'variant_id' => 1,
@@ -29,7 +29,7 @@ class OdooVariantValuesTableSeeder extends Seeder
                 'created_at' => '2023-10-16 14:19:53',
                 'updated_at' => '2023-10-16 14:19:53',
             ),
-            1 => 
+            1 =>
             array (
                 'id' => 586,
                 'variant_id' => 1,
@@ -39,7 +39,7 @@ class OdooVariantValuesTableSeeder extends Seeder
                 'created_at' => '2023-10-16 14:19:53',
                 'updated_at' => '2023-10-16 14:19:53',
             ),
-            2 => 
+            2 =>
             array (
                 'id' => 587,
                 'variant_id' => 1,
@@ -49,7 +49,7 @@ class OdooVariantValuesTableSeeder extends Seeder
                 'created_at' => '2023-10-16 14:19:53',
                 'updated_at' => '2023-10-16 14:19:53',
             ),
-            3 => 
+            3 =>
             array (
                 'id' => 588,
                 'variant_id' => 1,
@@ -59,7 +59,7 @@ class OdooVariantValuesTableSeeder extends Seeder
                 'created_at' => '2023-10-16 14:19:53',
                 'updated_at' => '2023-10-16 14:19:53',
             ),
-            4 => 
+            4 =>
             array (
                 'id' => 589,
                 'variant_id' => 1,
@@ -69,7 +69,7 @@ class OdooVariantValuesTableSeeder extends Seeder
                 'created_at' => '2023-10-16 14:19:53',
                 'updated_at' => '2023-10-16 14:19:53',
             ),
-            5 => 
+            5 =>
             array (
                 'id' => 590,
                 'variant_id' => 1,
@@ -79,7 +79,7 @@ class OdooVariantValuesTableSeeder extends Seeder
                 'created_at' => '2023-10-16 14:19:53',
                 'updated_at' => '2023-10-16 14:19:53',
             ),
-            6 => 
+            6 =>
             array (
                 'id' => 591,
                 'variant_id' => 1,
@@ -89,7 +89,7 @@ class OdooVariantValuesTableSeeder extends Seeder
                 'created_at' => '2023-10-16 14:19:53',
                 'updated_at' => '2023-10-16 14:19:53',
             ),
-            7 => 
+            7 =>
             array (
                 'id' => 592,
                 'variant_id' => 1,
@@ -99,7 +99,7 @@ class OdooVariantValuesTableSeeder extends Seeder
                 'created_at' => '2023-10-16 14:19:53',
                 'updated_at' => '2023-10-16 14:19:53',
             ),
-            8 => 
+            8 =>
             array (
                 'id' => 593,
                 'variant_id' => 1,
@@ -109,7 +109,7 @@ class OdooVariantValuesTableSeeder extends Seeder
                 'created_at' => '2023-10-16 14:19:53',
                 'updated_at' => '2023-10-16 14:19:53',
             ),
-            9 => 
+            9 =>
             array (
                 'id' => 594,
                 'variant_id' => 1,
@@ -119,7 +119,7 @@ class OdooVariantValuesTableSeeder extends Seeder
                 'created_at' => '2023-10-16 14:19:53',
                 'updated_at' => '2023-10-16 14:19:53',
             ),
-            10 => 
+            10 =>
             array (
                 'id' => 595,
                 'variant_id' => 1,
@@ -129,7 +129,7 @@ class OdooVariantValuesTableSeeder extends Seeder
                 'created_at' => '2023-10-16 14:19:53',
                 'updated_at' => '2023-10-16 14:19:53',
             ),
-            11 => 
+            11 =>
             array (
                 'id' => 596,
                 'variant_id' => 2,
@@ -139,7 +139,7 @@ class OdooVariantValuesTableSeeder extends Seeder
                 'created_at' => '2023-10-16 14:19:53',
                 'updated_at' => '2023-10-16 14:19:53',
             ),
-            12 => 
+            12 =>
             array (
                 'id' => 597,
                 'variant_id' => 2,
@@ -149,7 +149,7 @@ class OdooVariantValuesTableSeeder extends Seeder
                 'created_at' => '2023-10-16 14:19:53',
                 'updated_at' => '2023-10-16 14:19:53',
             ),
-            13 => 
+            13 =>
             array (
                 'id' => 598,
                 'variant_id' => 2,
@@ -159,7 +159,7 @@ class OdooVariantValuesTableSeeder extends Seeder
                 'created_at' => '2023-10-16 14:19:53',
                 'updated_at' => '2023-10-16 14:19:53',
             ),
-            14 => 
+            14 =>
             array (
                 'id' => 599,
                 'variant_id' => 2,
@@ -169,7 +169,7 @@ class OdooVariantValuesTableSeeder extends Seeder
                 'created_at' => '2023-10-16 14:19:53',
                 'updated_at' => '2023-10-16 14:19:53',
             ),
-            15 => 
+            15 =>
             array (
                 'id' => 600,
                 'variant_id' => 2,
@@ -179,7 +179,7 @@ class OdooVariantValuesTableSeeder extends Seeder
                 'created_at' => '2023-10-16 14:19:53',
                 'updated_at' => '2023-10-16 14:19:53',
             ),
-            16 => 
+            16 =>
             array (
                 'id' => 601,
                 'variant_id' => 2,
@@ -189,7 +189,7 @@ class OdooVariantValuesTableSeeder extends Seeder
                 'created_at' => '2023-10-16 14:19:53',
                 'updated_at' => '2023-10-16 14:19:53',
             ),
-            17 => 
+            17 =>
             array (
                 'id' => 602,
                 'variant_id' => 2,
@@ -199,7 +199,7 @@ class OdooVariantValuesTableSeeder extends Seeder
                 'created_at' => '2023-10-16 14:19:53',
                 'updated_at' => '2023-10-16 14:19:53',
             ),
-            18 => 
+            18 =>
             array (
                 'id' => 603,
                 'variant_id' => 2,
@@ -209,7 +209,7 @@ class OdooVariantValuesTableSeeder extends Seeder
                 'created_at' => '2023-10-16 14:19:53',
                 'updated_at' => '2023-10-16 14:19:53',
             ),
-            19 => 
+            19 =>
             array (
                 'id' => 604,
                 'variant_id' => 2,
@@ -219,7 +219,7 @@ class OdooVariantValuesTableSeeder extends Seeder
                 'created_at' => '2023-10-16 14:19:53',
                 'updated_at' => '2023-10-16 14:19:53',
             ),
-            20 => 
+            20 =>
             array (
                 'id' => 605,
                 'variant_id' => 2,
@@ -229,7 +229,7 @@ class OdooVariantValuesTableSeeder extends Seeder
                 'created_at' => '2023-10-16 14:19:53',
                 'updated_at' => '2023-10-16 14:19:53',
             ),
-            21 => 
+            21 =>
             array (
                 'id' => 606,
                 'variant_id' => 2,
@@ -239,7 +239,7 @@ class OdooVariantValuesTableSeeder extends Seeder
                 'created_at' => '2023-10-16 14:19:53',
                 'updated_at' => '2023-10-16 14:19:53',
             ),
-            22 => 
+            22 =>
             array (
                 'id' => 607,
                 'variant_id' => 3,
@@ -249,7 +249,7 @@ class OdooVariantValuesTableSeeder extends Seeder
                 'created_at' => '2023-10-16 14:19:53',
                 'updated_at' => '2023-10-16 14:19:53',
             ),
-            23 => 
+            23 =>
             array (
                 'id' => 608,
                 'variant_id' => 3,
@@ -259,7 +259,7 @@ class OdooVariantValuesTableSeeder extends Seeder
                 'created_at' => '2023-10-16 14:19:53',
                 'updated_at' => '2023-10-16 14:19:53',
             ),
-            24 => 
+            24 =>
             array (
                 'id' => 609,
                 'variant_id' => 3,
@@ -269,7 +269,7 @@ class OdooVariantValuesTableSeeder extends Seeder
                 'created_at' => '2023-10-16 14:19:53',
                 'updated_at' => '2023-10-16 14:19:53',
             ),
-            25 => 
+            25 =>
             array (
                 'id' => 610,
                 'variant_id' => 3,
@@ -279,7 +279,7 @@ class OdooVariantValuesTableSeeder extends Seeder
                 'created_at' => '2023-10-16 14:19:53',
                 'updated_at' => '2023-10-16 14:19:53',
             ),
-            26 => 
+            26 =>
             array (
                 'id' => 611,
                 'variant_id' => 3,
@@ -289,17 +289,17 @@ class OdooVariantValuesTableSeeder extends Seeder
                 'created_at' => '2023-10-16 14:19:53',
                 'updated_at' => '2023-10-16 14:19:53',
             ),
-            27 => 
+            27 =>
             array (
                 'id' => 612,
                 'variant_id' => 3,
                 'odoo_model_id' => 23,
-                'value' => '5',
+                'value' => '5.0',
                 'attribute_name' => NULL,
                 'created_at' => '2023-10-16 14:19:54',
                 'updated_at' => '2023-10-16 14:19:54',
             ),
-            28 => 
+            28 =>
             array (
                 'id' => 613,
                 'variant_id' => 3,
@@ -309,7 +309,7 @@ class OdooVariantValuesTableSeeder extends Seeder
                 'created_at' => '2023-10-16 14:19:54',
                 'updated_at' => '2023-10-16 14:19:54',
             ),
-            29 => 
+            29 =>
             array (
                 'id' => 614,
                 'variant_id' => 3,
@@ -319,7 +319,7 @@ class OdooVariantValuesTableSeeder extends Seeder
                 'created_at' => '2023-10-16 14:19:54',
                 'updated_at' => '2023-10-16 14:19:54',
             ),
-            30 => 
+            30 =>
             array (
                 'id' => 615,
                 'variant_id' => 3,
@@ -329,7 +329,7 @@ class OdooVariantValuesTableSeeder extends Seeder
                 'created_at' => '2023-10-16 14:19:54',
                 'updated_at' => '2023-10-16 14:19:54',
             ),
-            31 => 
+            31 =>
             array (
                 'id' => 616,
                 'variant_id' => 3,
@@ -339,7 +339,7 @@ class OdooVariantValuesTableSeeder extends Seeder
                 'created_at' => '2023-10-16 14:19:54',
                 'updated_at' => '2023-10-16 14:19:54',
             ),
-            32 => 
+            32 =>
             array (
                 'id' => 617,
                 'variant_id' => 3,
@@ -349,7 +349,7 @@ class OdooVariantValuesTableSeeder extends Seeder
                 'created_at' => '2023-10-16 14:19:54',
                 'updated_at' => '2023-10-16 14:19:54',
             ),
-            33 => 
+            33 =>
             array (
                 'id' => 618,
                 'variant_id' => 4,
@@ -359,7 +359,7 @@ class OdooVariantValuesTableSeeder extends Seeder
                 'created_at' => '2023-10-16 14:19:54',
                 'updated_at' => '2023-10-16 14:19:54',
             ),
-            34 => 
+            34 =>
             array (
                 'id' => 619,
                 'variant_id' => 4,
@@ -369,7 +369,7 @@ class OdooVariantValuesTableSeeder extends Seeder
                 'created_at' => '2023-10-16 14:19:54',
                 'updated_at' => '2023-10-16 14:19:54',
             ),
-            35 => 
+            35 =>
             array (
                 'id' => 620,
                 'variant_id' => 4,
@@ -379,7 +379,7 @@ class OdooVariantValuesTableSeeder extends Seeder
                 'created_at' => '2023-10-16 14:19:54',
                 'updated_at' => '2023-10-16 14:19:54',
             ),
-            36 => 
+            36 =>
             array (
                 'id' => 621,
                 'variant_id' => 4,
@@ -389,7 +389,7 @@ class OdooVariantValuesTableSeeder extends Seeder
                 'created_at' => '2023-10-16 14:19:54',
                 'updated_at' => '2023-10-16 14:19:54',
             ),
-            37 => 
+            37 =>
             array (
                 'id' => 622,
                 'variant_id' => 4,
@@ -399,7 +399,7 @@ class OdooVariantValuesTableSeeder extends Seeder
                 'created_at' => '2023-10-16 14:19:54',
                 'updated_at' => '2023-10-16 14:19:54',
             ),
-            38 => 
+            38 =>
             array (
                 'id' => 623,
                 'variant_id' => 4,
@@ -409,7 +409,7 @@ class OdooVariantValuesTableSeeder extends Seeder
                 'created_at' => '2023-10-16 14:19:54',
                 'updated_at' => '2023-10-16 14:19:54',
             ),
-            39 => 
+            39 =>
             array (
                 'id' => 624,
                 'variant_id' => 4,
@@ -419,7 +419,7 @@ class OdooVariantValuesTableSeeder extends Seeder
                 'created_at' => '2023-10-16 14:19:54',
                 'updated_at' => '2023-10-16 14:19:54',
             ),
-            40 => 
+            40 =>
             array (
                 'id' => 625,
                 'variant_id' => 4,
@@ -429,7 +429,7 @@ class OdooVariantValuesTableSeeder extends Seeder
                 'created_at' => '2023-10-16 14:19:54',
                 'updated_at' => '2023-10-16 14:19:54',
             ),
-            41 => 
+            41 =>
             array (
                 'id' => 626,
                 'variant_id' => 4,
@@ -439,7 +439,7 @@ class OdooVariantValuesTableSeeder extends Seeder
                 'created_at' => '2023-10-16 14:19:54',
                 'updated_at' => '2023-10-16 14:19:54',
             ),
-            42 => 
+            42 =>
             array (
                 'id' => 627,
                 'variant_id' => 4,
@@ -449,17 +449,17 @@ class OdooVariantValuesTableSeeder extends Seeder
                 'created_at' => '2023-10-16 14:19:54',
                 'updated_at' => '2023-10-16 14:19:54',
             ),
-            43 => 
+            43 =>
             array (
                 'id' => 628,
                 'variant_id' => 4,
                 'odoo_model_id' => 27,
-                'value' => '5',
-            'attribute_name' => 'Surface (m2)',
+                'value' => '5.0',
+                'attribute_name' => 'Surface (m2)',
                 'created_at' => '2023-10-16 14:19:54',
                 'updated_at' => '2023-10-16 14:19:54',
             ),
-            44 => 
+            44 =>
             array (
                 'id' => 757,
                 'variant_id' => 5,
@@ -469,7 +469,7 @@ class OdooVariantValuesTableSeeder extends Seeder
                 'created_at' => '2023-10-16 22:22:27',
                 'updated_at' => '2023-10-16 22:22:27',
             ),
-            45 => 
+            45 =>
             array (
                 'id' => 758,
                 'variant_id' => 5,
@@ -479,7 +479,7 @@ class OdooVariantValuesTableSeeder extends Seeder
                 'created_at' => '2023-10-16 22:22:27',
                 'updated_at' => '2023-10-16 22:22:27',
             ),
-            46 => 
+            46 =>
             array (
                 'id' => 759,
                 'variant_id' => 5,
@@ -489,7 +489,7 @@ class OdooVariantValuesTableSeeder extends Seeder
                 'created_at' => '2023-10-16 22:22:27',
                 'updated_at' => '2023-10-16 22:22:27',
             ),
-            47 => 
+            47 =>
             array (
                 'id' => 760,
                 'variant_id' => 5,
@@ -499,7 +499,7 @@ class OdooVariantValuesTableSeeder extends Seeder
                 'created_at' => '2023-10-16 22:22:27',
                 'updated_at' => '2023-10-16 22:22:27',
             ),
-            48 => 
+            48 =>
             array (
                 'id' => 761,
                 'variant_id' => 5,
@@ -509,7 +509,7 @@ class OdooVariantValuesTableSeeder extends Seeder
                 'created_at' => '2023-10-16 22:22:27',
                 'updated_at' => '2023-10-16 22:22:27',
             ),
-            49 => 
+            49 =>
             array (
                 'id' => 762,
                 'variant_id' => 5,
@@ -519,7 +519,7 @@ class OdooVariantValuesTableSeeder extends Seeder
                 'created_at' => '2023-10-16 22:22:27',
                 'updated_at' => '2023-10-16 22:22:27',
             ),
-            50 => 
+            50 =>
             array (
                 'id' => 763,
                 'variant_id' => 5,
@@ -529,7 +529,7 @@ class OdooVariantValuesTableSeeder extends Seeder
                 'created_at' => '2023-10-16 22:22:27',
                 'updated_at' => '2023-10-16 22:22:27',
             ),
-            51 => 
+            51 =>
             array (
                 'id' => 764,
                 'variant_id' => 6,
@@ -539,7 +539,7 @@ class OdooVariantValuesTableSeeder extends Seeder
                 'created_at' => '2023-10-16 22:22:27',
                 'updated_at' => '2023-10-16 22:22:27',
             ),
-            52 => 
+            52 =>
             array (
                 'id' => 765,
                 'variant_id' => 6,
@@ -549,7 +549,7 @@ class OdooVariantValuesTableSeeder extends Seeder
                 'created_at' => '2023-10-16 22:22:27',
                 'updated_at' => '2023-10-16 22:22:27',
             ),
-            53 => 
+            53 =>
             array (
                 'id' => 766,
                 'variant_id' => 6,
@@ -559,7 +559,7 @@ class OdooVariantValuesTableSeeder extends Seeder
                 'created_at' => '2023-10-16 22:22:28',
                 'updated_at' => '2023-10-16 22:22:28',
             ),
-            54 => 
+            54 =>
             array (
                 'id' => 767,
                 'variant_id' => 6,
@@ -569,7 +569,7 @@ class OdooVariantValuesTableSeeder extends Seeder
                 'created_at' => '2023-10-16 22:22:28',
                 'updated_at' => '2023-10-16 22:22:28',
             ),
-            55 => 
+            55 =>
             array (
                 'id' => 768,
                 'variant_id' => 6,
@@ -579,7 +579,7 @@ class OdooVariantValuesTableSeeder extends Seeder
                 'created_at' => '2023-10-16 22:22:28',
                 'updated_at' => '2023-10-16 22:22:28',
             ),
-            56 => 
+            56 =>
             array (
                 'id' => 769,
                 'variant_id' => 6,
@@ -589,7 +589,7 @@ class OdooVariantValuesTableSeeder extends Seeder
                 'created_at' => '2023-10-16 22:22:28',
                 'updated_at' => '2023-10-16 22:22:28',
             ),
-            57 => 
+            57 =>
             array (
                 'id' => 770,
                 'variant_id' => 6,
@@ -599,7 +599,7 @@ class OdooVariantValuesTableSeeder extends Seeder
                 'created_at' => '2023-10-16 22:22:28',
                 'updated_at' => '2023-10-16 22:22:28',
             ),
-            58 => 
+            58 =>
             array (
                 'id' => 771,
                 'variant_id' => 7,
@@ -609,7 +609,7 @@ class OdooVariantValuesTableSeeder extends Seeder
                 'created_at' => '2023-10-16 22:22:28',
                 'updated_at' => '2023-10-16 22:22:28',
             ),
-            59 => 
+            59 =>
             array (
                 'id' => 772,
                 'variant_id' => 7,
@@ -619,7 +619,7 @@ class OdooVariantValuesTableSeeder extends Seeder
                 'created_at' => '2023-10-16 22:22:28',
                 'updated_at' => '2023-10-16 22:22:28',
             ),
-            60 => 
+            60 =>
             array (
                 'id' => 773,
                 'variant_id' => 7,
@@ -629,7 +629,7 @@ class OdooVariantValuesTableSeeder extends Seeder
                 'created_at' => '2023-10-16 22:22:28',
                 'updated_at' => '2023-10-16 22:22:28',
             ),
-            61 => 
+            61 =>
             array (
                 'id' => 774,
                 'variant_id' => 7,
@@ -639,7 +639,7 @@ class OdooVariantValuesTableSeeder extends Seeder
                 'created_at' => '2023-10-16 22:22:28',
                 'updated_at' => '2023-10-16 22:22:28',
             ),
-            62 => 
+            62 =>
             array (
                 'id' => 775,
                 'variant_id' => 7,
@@ -649,7 +649,7 @@ class OdooVariantValuesTableSeeder extends Seeder
                 'created_at' => '2023-10-16 22:22:28',
                 'updated_at' => '2023-10-16 22:22:28',
             ),
-            63 => 
+            63 =>
             array (
                 'id' => 776,
                 'variant_id' => 7,
@@ -659,7 +659,7 @@ class OdooVariantValuesTableSeeder extends Seeder
                 'created_at' => '2023-10-16 22:22:28',
                 'updated_at' => '2023-10-16 22:22:28',
             ),
-            64 => 
+            64 =>
             array (
                 'id' => 777,
                 'variant_id' => 7,
@@ -669,7 +669,7 @@ class OdooVariantValuesTableSeeder extends Seeder
                 'created_at' => '2023-10-16 22:22:28',
                 'updated_at' => '2023-10-16 22:22:28',
             ),
-            65 => 
+            65 =>
             array (
                 'id' => 778,
                 'variant_id' => 8,
@@ -679,7 +679,7 @@ class OdooVariantValuesTableSeeder extends Seeder
                 'created_at' => '2023-10-16 22:22:28',
                 'updated_at' => '2023-10-16 22:22:28',
             ),
-            66 => 
+            66 =>
             array (
                 'id' => 779,
                 'variant_id' => 8,
@@ -689,7 +689,7 @@ class OdooVariantValuesTableSeeder extends Seeder
                 'created_at' => '2023-10-16 22:22:28',
                 'updated_at' => '2023-10-16 22:22:28',
             ),
-            67 => 
+            67 =>
             array (
                 'id' => 780,
                 'variant_id' => 8,
@@ -699,7 +699,7 @@ class OdooVariantValuesTableSeeder extends Seeder
                 'created_at' => '2023-10-16 22:22:28',
                 'updated_at' => '2023-10-16 22:22:28',
             ),
-            68 => 
+            68 =>
             array (
                 'id' => 781,
                 'variant_id' => 8,
@@ -709,7 +709,7 @@ class OdooVariantValuesTableSeeder extends Seeder
                 'created_at' => '2023-10-16 22:22:28',
                 'updated_at' => '2023-10-16 22:22:28',
             ),
-            69 => 
+            69 =>
             array (
                 'id' => 782,
                 'variant_id' => 8,
@@ -719,7 +719,7 @@ class OdooVariantValuesTableSeeder extends Seeder
                 'created_at' => '2023-10-16 22:22:28',
                 'updated_at' => '2023-10-16 22:22:28',
             ),
-            70 => 
+            70 =>
             array (
                 'id' => 783,
                 'variant_id' => 8,
@@ -729,7 +729,7 @@ class OdooVariantValuesTableSeeder extends Seeder
                 'created_at' => '2023-10-16 22:22:28',
                 'updated_at' => '2023-10-16 22:22:28',
             ),
-            71 => 
+            71 =>
             array (
                 'id' => 784,
                 'variant_id' => 8,
@@ -739,7 +739,7 @@ class OdooVariantValuesTableSeeder extends Seeder
                 'created_at' => '2023-10-16 22:22:28',
                 'updated_at' => '2023-10-16 22:22:28',
             ),
-            72 => 
+            72 =>
             array (
                 'id' => 785,
                 'variant_id' => 9,
@@ -749,7 +749,7 @@ class OdooVariantValuesTableSeeder extends Seeder
                 'created_at' => '2023-10-16 22:22:57',
                 'updated_at' => '2023-10-16 22:22:57',
             ),
-            73 => 
+            73 =>
             array (
                 'id' => 786,
                 'variant_id' => 9,
@@ -759,7 +759,7 @@ class OdooVariantValuesTableSeeder extends Seeder
                 'created_at' => '2023-10-16 22:22:57',
                 'updated_at' => '2023-10-16 22:22:57',
             ),
-            74 => 
+            74 =>
             array (
                 'id' => 787,
                 'variant_id' => 9,
@@ -769,7 +769,7 @@ class OdooVariantValuesTableSeeder extends Seeder
                 'created_at' => '2023-10-16 22:22:57',
                 'updated_at' => '2023-10-16 22:22:57',
             ),
-            75 => 
+            75 =>
             array (
                 'id' => 788,
                 'variant_id' => 9,
@@ -779,7 +779,7 @@ class OdooVariantValuesTableSeeder extends Seeder
                 'created_at' => '2023-10-16 22:22:57',
                 'updated_at' => '2023-10-16 22:22:57',
             ),
-            76 => 
+            76 =>
             array (
                 'id' => 789,
                 'variant_id' => 9,
@@ -789,7 +789,7 @@ class OdooVariantValuesTableSeeder extends Seeder
                 'created_at' => '2023-10-16 22:22:57',
                 'updated_at' => '2023-10-16 22:22:57',
             ),
-            77 => 
+            77 =>
             array (
                 'id' => 790,
                 'variant_id' => 9,
@@ -799,7 +799,7 @@ class OdooVariantValuesTableSeeder extends Seeder
                 'created_at' => '2023-10-16 22:22:57',
                 'updated_at' => '2023-10-16 22:22:57',
             ),
-            78 => 
+            78 =>
             array (
                 'id' => 791,
                 'variant_id' => 9,
@@ -809,7 +809,7 @@ class OdooVariantValuesTableSeeder extends Seeder
                 'created_at' => '2023-10-16 22:22:57',
                 'updated_at' => '2023-10-16 22:22:57',
             ),
-            79 => 
+            79 =>
             array (
                 'id' => 792,
                 'variant_id' => 9,
@@ -819,7 +819,7 @@ class OdooVariantValuesTableSeeder extends Seeder
                 'created_at' => '2023-10-16 22:22:57',
                 'updated_at' => '2023-10-16 22:22:57',
             ),
-            80 => 
+            80 =>
             array (
                 'id' => 793,
                 'variant_id' => 9,
@@ -829,7 +829,7 @@ class OdooVariantValuesTableSeeder extends Seeder
                 'created_at' => '2023-10-16 22:22:57',
                 'updated_at' => '2023-10-16 22:22:57',
             ),
-            81 => 
+            81 =>
             array (
                 'id' => 794,
                 'variant_id' => 10,
@@ -839,7 +839,7 @@ class OdooVariantValuesTableSeeder extends Seeder
                 'created_at' => '2023-10-16 22:22:57',
                 'updated_at' => '2023-10-16 22:22:57',
             ),
-            82 => 
+            82 =>
             array (
                 'id' => 795,
                 'variant_id' => 10,
@@ -849,7 +849,7 @@ class OdooVariantValuesTableSeeder extends Seeder
                 'created_at' => '2023-10-16 22:22:57',
                 'updated_at' => '2023-10-16 22:22:57',
             ),
-            83 => 
+            83 =>
             array (
                 'id' => 796,
                 'variant_id' => 10,
@@ -859,7 +859,7 @@ class OdooVariantValuesTableSeeder extends Seeder
                 'created_at' => '2023-10-16 22:22:57',
                 'updated_at' => '2023-10-16 22:22:57',
             ),
-            84 => 
+            84 =>
             array (
                 'id' => 797,
                 'variant_id' => 10,
@@ -869,7 +869,7 @@ class OdooVariantValuesTableSeeder extends Seeder
                 'created_at' => '2023-10-16 22:22:57',
                 'updated_at' => '2023-10-16 22:22:57',
             ),
-            85 => 
+            85 =>
             array (
                 'id' => 798,
                 'variant_id' => 10,
@@ -879,7 +879,7 @@ class OdooVariantValuesTableSeeder extends Seeder
                 'created_at' => '2023-10-16 22:22:57',
                 'updated_at' => '2023-10-16 22:22:57',
             ),
-            86 => 
+            86 =>
             array (
                 'id' => 799,
                 'variant_id' => 10,
@@ -889,7 +889,7 @@ class OdooVariantValuesTableSeeder extends Seeder
                 'created_at' => '2023-10-16 22:22:57',
                 'updated_at' => '2023-10-16 22:22:57',
             ),
-            87 => 
+            87 =>
             array (
                 'id' => 800,
                 'variant_id' => 10,
@@ -899,7 +899,7 @@ class OdooVariantValuesTableSeeder extends Seeder
                 'created_at' => '2023-10-16 22:22:57',
                 'updated_at' => '2023-10-16 22:22:57',
             ),
-            88 => 
+            88 =>
             array (
                 'id' => 801,
                 'variant_id' => 10,
@@ -909,7 +909,7 @@ class OdooVariantValuesTableSeeder extends Seeder
                 'created_at' => '2023-10-16 22:22:57',
                 'updated_at' => '2023-10-16 22:22:57',
             ),
-            89 => 
+            89 =>
             array (
                 'id' => 802,
                 'variant_id' => 10,
@@ -919,7 +919,7 @@ class OdooVariantValuesTableSeeder extends Seeder
                 'created_at' => '2023-10-16 22:22:57',
                 'updated_at' => '2023-10-16 22:22:57',
             ),
-            90 => 
+            90 =>
             array (
                 'id' => 803,
                 'variant_id' => 11,
@@ -929,7 +929,7 @@ class OdooVariantValuesTableSeeder extends Seeder
                 'created_at' => '2023-10-16 22:22:57',
                 'updated_at' => '2023-10-16 22:22:57',
             ),
-            91 => 
+            91 =>
             array (
                 'id' => 804,
                 'variant_id' => 11,
@@ -939,7 +939,7 @@ class OdooVariantValuesTableSeeder extends Seeder
                 'created_at' => '2023-10-16 22:22:57',
                 'updated_at' => '2023-10-16 22:22:57',
             ),
-            92 => 
+            92 =>
             array (
                 'id' => 805,
                 'variant_id' => 11,
@@ -949,7 +949,7 @@ class OdooVariantValuesTableSeeder extends Seeder
                 'created_at' => '2023-10-16 22:22:57',
                 'updated_at' => '2023-10-16 22:22:57',
             ),
-            93 => 
+            93 =>
             array (
                 'id' => 806,
                 'variant_id' => 11,
@@ -959,7 +959,7 @@ class OdooVariantValuesTableSeeder extends Seeder
                 'created_at' => '2023-10-16 22:22:57',
                 'updated_at' => '2023-10-16 22:22:57',
             ),
-            94 => 
+            94 =>
             array (
                 'id' => 807,
                 'variant_id' => 11,
@@ -969,7 +969,7 @@ class OdooVariantValuesTableSeeder extends Seeder
                 'created_at' => '2023-10-16 22:22:57',
                 'updated_at' => '2023-10-16 22:22:57',
             ),
-            95 => 
+            95 =>
             array (
                 'id' => 808,
                 'variant_id' => 11,
@@ -979,7 +979,7 @@ class OdooVariantValuesTableSeeder extends Seeder
                 'created_at' => '2023-10-16 22:22:57',
                 'updated_at' => '2023-10-16 22:22:57',
             ),
-            96 => 
+            96 =>
             array (
                 'id' => 809,
                 'variant_id' => 11,
@@ -989,7 +989,7 @@ class OdooVariantValuesTableSeeder extends Seeder
                 'created_at' => '2023-10-16 22:22:57',
                 'updated_at' => '2023-10-16 22:22:57',
             ),
-            97 => 
+            97 =>
             array (
                 'id' => 810,
                 'variant_id' => 11,
@@ -999,7 +999,7 @@ class OdooVariantValuesTableSeeder extends Seeder
                 'created_at' => '2023-10-16 22:22:57',
                 'updated_at' => '2023-10-16 22:22:57',
             ),
-            98 => 
+            98 =>
             array (
                 'id' => 811,
                 'variant_id' => 11,
@@ -1009,7 +1009,7 @@ class OdooVariantValuesTableSeeder extends Seeder
                 'created_at' => '2023-10-16 22:22:57',
                 'updated_at' => '2023-10-16 22:22:57',
             ),
-            99 => 
+            99 =>
             array (
                 'id' => 812,
                 'variant_id' => 12,
@@ -1019,7 +1019,7 @@ class OdooVariantValuesTableSeeder extends Seeder
                 'created_at' => '2023-10-16 22:22:57',
                 'updated_at' => '2023-10-16 22:22:57',
             ),
-            100 => 
+            100 =>
             array (
                 'id' => 813,
                 'variant_id' => 12,
@@ -1029,7 +1029,7 @@ class OdooVariantValuesTableSeeder extends Seeder
                 'created_at' => '2023-10-16 22:22:57',
                 'updated_at' => '2023-10-16 22:22:57',
             ),
-            101 => 
+            101 =>
             array (
                 'id' => 814,
                 'variant_id' => 12,
@@ -1039,7 +1039,7 @@ class OdooVariantValuesTableSeeder extends Seeder
                 'created_at' => '2023-10-16 22:22:57',
                 'updated_at' => '2023-10-16 22:22:57',
             ),
-            102 => 
+            102 =>
             array (
                 'id' => 815,
                 'variant_id' => 12,
@@ -1049,7 +1049,7 @@ class OdooVariantValuesTableSeeder extends Seeder
                 'created_at' => '2023-10-16 22:22:57',
                 'updated_at' => '2023-10-16 22:22:57',
             ),
-            103 => 
+            103 =>
             array (
                 'id' => 816,
                 'variant_id' => 12,
@@ -1059,7 +1059,7 @@ class OdooVariantValuesTableSeeder extends Seeder
                 'created_at' => '2023-10-16 22:22:57',
                 'updated_at' => '2023-10-16 22:22:57',
             ),
-            104 => 
+            104 =>
             array (
                 'id' => 817,
                 'variant_id' => 12,
@@ -1069,7 +1069,7 @@ class OdooVariantValuesTableSeeder extends Seeder
                 'created_at' => '2023-10-16 22:22:57',
                 'updated_at' => '2023-10-16 22:22:57',
             ),
-            105 => 
+            105 =>
             array (
                 'id' => 818,
                 'variant_id' => 12,
@@ -1079,7 +1079,7 @@ class OdooVariantValuesTableSeeder extends Seeder
                 'created_at' => '2023-10-16 22:22:57',
                 'updated_at' => '2023-10-16 22:22:57',
             ),
-            106 => 
+            106 =>
             array (
                 'id' => 819,
                 'variant_id' => 12,
@@ -1089,7 +1089,7 @@ class OdooVariantValuesTableSeeder extends Seeder
                 'created_at' => '2023-10-16 22:22:57',
                 'updated_at' => '2023-10-16 22:22:57',
             ),
-            107 => 
+            107 =>
             array (
                 'id' => 820,
                 'variant_id' => 12,
@@ -1099,7 +1099,7 @@ class OdooVariantValuesTableSeeder extends Seeder
                 'created_at' => '2023-10-16 22:22:58',
                 'updated_at' => '2023-10-16 22:22:58',
             ),
-            108 => 
+            108 =>
             array (
                 'id' => 821,
                 'variant_id' => 13,
@@ -1109,7 +1109,7 @@ class OdooVariantValuesTableSeeder extends Seeder
                 'created_at' => '2023-10-16 22:22:58',
                 'updated_at' => '2023-10-16 22:22:58',
             ),
-            109 => 
+            109 =>
             array (
                 'id' => 822,
                 'variant_id' => 13,
@@ -1119,7 +1119,7 @@ class OdooVariantValuesTableSeeder extends Seeder
                 'created_at' => '2023-10-16 22:22:58',
                 'updated_at' => '2023-10-16 22:22:58',
             ),
-            110 => 
+            110 =>
             array (
                 'id' => 823,
                 'variant_id' => 13,
@@ -1129,7 +1129,7 @@ class OdooVariantValuesTableSeeder extends Seeder
                 'created_at' => '2023-10-16 22:22:58',
                 'updated_at' => '2023-10-16 22:22:58',
             ),
-            111 => 
+            111 =>
             array (
                 'id' => 824,
                 'variant_id' => 13,
@@ -1139,7 +1139,7 @@ class OdooVariantValuesTableSeeder extends Seeder
                 'created_at' => '2023-10-16 22:22:58',
                 'updated_at' => '2023-10-16 22:22:58',
             ),
-            112 => 
+            112 =>
             array (
                 'id' => 825,
                 'variant_id' => 13,
@@ -1149,7 +1149,7 @@ class OdooVariantValuesTableSeeder extends Seeder
                 'created_at' => '2023-10-16 22:22:58',
                 'updated_at' => '2023-10-16 22:22:58',
             ),
-            113 => 
+            113 =>
             array (
                 'id' => 826,
                 'variant_id' => 13,
@@ -1159,7 +1159,7 @@ class OdooVariantValuesTableSeeder extends Seeder
                 'created_at' => '2023-10-16 22:22:58',
                 'updated_at' => '2023-10-16 22:22:58',
             ),
-            114 => 
+            114 =>
             array (
                 'id' => 827,
                 'variant_id' => 13,
@@ -1169,7 +1169,7 @@ class OdooVariantValuesTableSeeder extends Seeder
                 'created_at' => '2023-10-16 22:22:58',
                 'updated_at' => '2023-10-16 22:22:58',
             ),
-            115 => 
+            115 =>
             array (
                 'id' => 828,
                 'variant_id' => 13,
@@ -1179,7 +1179,7 @@ class OdooVariantValuesTableSeeder extends Seeder
                 'created_at' => '2023-10-16 22:22:58',
                 'updated_at' => '2023-10-16 22:22:58',
             ),
-            116 => 
+            116 =>
             array (
                 'id' => 829,
                 'variant_id' => 13,
@@ -1189,7 +1189,7 @@ class OdooVariantValuesTableSeeder extends Seeder
                 'created_at' => '2023-10-16 22:22:58',
                 'updated_at' => '2023-10-16 22:22:58',
             ),
-            117 => 
+            117 =>
             array (
                 'id' => 830,
                 'variant_id' => 14,
@@ -1199,7 +1199,7 @@ class OdooVariantValuesTableSeeder extends Seeder
                 'created_at' => '2023-10-16 22:22:58',
                 'updated_at' => '2023-10-16 22:22:58',
             ),
-            118 => 
+            118 =>
             array (
                 'id' => 831,
                 'variant_id' => 14,
@@ -1209,7 +1209,7 @@ class OdooVariantValuesTableSeeder extends Seeder
                 'created_at' => '2023-10-16 22:22:58',
                 'updated_at' => '2023-10-16 22:22:58',
             ),
-            119 => 
+            119 =>
             array (
                 'id' => 832,
                 'variant_id' => 14,
@@ -1219,7 +1219,7 @@ class OdooVariantValuesTableSeeder extends Seeder
                 'created_at' => '2023-10-16 22:22:58',
                 'updated_at' => '2023-10-16 22:22:58',
             ),
-            120 => 
+            120 =>
             array (
                 'id' => 833,
                 'variant_id' => 14,
@@ -1229,7 +1229,7 @@ class OdooVariantValuesTableSeeder extends Seeder
                 'created_at' => '2023-10-16 22:22:58',
                 'updated_at' => '2023-10-16 22:22:58',
             ),
-            121 => 
+            121 =>
             array (
                 'id' => 834,
                 'variant_id' => 14,
@@ -1239,7 +1239,7 @@ class OdooVariantValuesTableSeeder extends Seeder
                 'created_at' => '2023-10-16 22:22:58',
                 'updated_at' => '2023-10-16 22:22:58',
             ),
-            122 => 
+            122 =>
             array (
                 'id' => 835,
                 'variant_id' => 14,
@@ -1249,7 +1249,7 @@ class OdooVariantValuesTableSeeder extends Seeder
                 'created_at' => '2023-10-16 22:22:58',
                 'updated_at' => '2023-10-16 22:22:58',
             ),
-            123 => 
+            123 =>
             array (
                 'id' => 836,
                 'variant_id' => 14,
@@ -1259,7 +1259,7 @@ class OdooVariantValuesTableSeeder extends Seeder
                 'created_at' => '2023-10-16 22:22:58',
                 'updated_at' => '2023-10-16 22:22:58',
             ),
-            124 => 
+            124 =>
             array (
                 'id' => 837,
                 'variant_id' => 14,
@@ -1269,7 +1269,7 @@ class OdooVariantValuesTableSeeder extends Seeder
                 'created_at' => '2023-10-16 22:22:58',
                 'updated_at' => '2023-10-16 22:22:58',
             ),
-            125 => 
+            125 =>
             array (
                 'id' => 838,
                 'variant_id' => 14,
@@ -1279,7 +1279,7 @@ class OdooVariantValuesTableSeeder extends Seeder
                 'created_at' => '2023-10-16 22:22:58',
                 'updated_at' => '2023-10-16 22:22:58',
             ),
-            126 => 
+            126 =>
             array (
                 'id' => 839,
                 'variant_id' => 15,
@@ -1289,7 +1289,7 @@ class OdooVariantValuesTableSeeder extends Seeder
                 'created_at' => '2023-10-16 22:22:58',
                 'updated_at' => '2023-10-16 22:22:58',
             ),
-            127 => 
+            127 =>
             array (
                 'id' => 840,
                 'variant_id' => 15,
@@ -1299,7 +1299,7 @@ class OdooVariantValuesTableSeeder extends Seeder
                 'created_at' => '2023-10-16 22:22:58',
                 'updated_at' => '2023-10-16 22:22:58',
             ),
-            128 => 
+            128 =>
             array (
                 'id' => 841,
                 'variant_id' => 15,
@@ -1309,7 +1309,7 @@ class OdooVariantValuesTableSeeder extends Seeder
                 'created_at' => '2023-10-16 22:22:58',
                 'updated_at' => '2023-10-16 22:22:58',
             ),
-            129 => 
+            129 =>
             array (
                 'id' => 842,
                 'variant_id' => 15,
@@ -1319,7 +1319,7 @@ class OdooVariantValuesTableSeeder extends Seeder
                 'created_at' => '2023-10-16 22:22:58',
                 'updated_at' => '2023-10-16 22:22:58',
             ),
-            130 => 
+            130 =>
             array (
                 'id' => 843,
                 'variant_id' => 15,
@@ -1329,7 +1329,7 @@ class OdooVariantValuesTableSeeder extends Seeder
                 'created_at' => '2023-10-16 22:22:58',
                 'updated_at' => '2023-10-16 22:22:58',
             ),
-            131 => 
+            131 =>
             array (
                 'id' => 844,
                 'variant_id' => 15,
@@ -1339,7 +1339,7 @@ class OdooVariantValuesTableSeeder extends Seeder
                 'created_at' => '2023-10-16 22:22:58',
                 'updated_at' => '2023-10-16 22:22:58',
             ),
-            132 => 
+            132 =>
             array (
                 'id' => 845,
                 'variant_id' => 15,
@@ -1349,7 +1349,7 @@ class OdooVariantValuesTableSeeder extends Seeder
                 'created_at' => '2023-10-16 22:22:58',
                 'updated_at' => '2023-10-16 22:22:58',
             ),
-            133 => 
+            133 =>
             array (
                 'id' => 846,
                 'variant_id' => 15,
@@ -1359,7 +1359,7 @@ class OdooVariantValuesTableSeeder extends Seeder
                 'created_at' => '2023-10-16 22:22:58',
                 'updated_at' => '2023-10-16 22:22:58',
             ),
-            134 => 
+            134 =>
             array (
                 'id' => 847,
                 'variant_id' => 15,
@@ -1369,7 +1369,7 @@ class OdooVariantValuesTableSeeder extends Seeder
                 'created_at' => '2023-10-16 22:22:58',
                 'updated_at' => '2023-10-16 22:22:58',
             ),
-            135 => 
+            135 =>
             array (
                 'id' => 848,
                 'variant_id' => 16,
@@ -1379,7 +1379,7 @@ class OdooVariantValuesTableSeeder extends Seeder
                 'created_at' => '2023-10-16 22:22:58',
                 'updated_at' => '2023-10-16 22:22:58',
             ),
-            136 => 
+            136 =>
             array (
                 'id' => 849,
                 'variant_id' => 16,
@@ -1389,7 +1389,7 @@ class OdooVariantValuesTableSeeder extends Seeder
                 'created_at' => '2023-10-16 22:22:58',
                 'updated_at' => '2023-10-16 22:22:58',
             ),
-            137 => 
+            137 =>
             array (
                 'id' => 850,
                 'variant_id' => 16,
@@ -1399,7 +1399,7 @@ class OdooVariantValuesTableSeeder extends Seeder
                 'created_at' => '2023-10-16 22:22:58',
                 'updated_at' => '2023-10-16 22:22:58',
             ),
-            138 => 
+            138 =>
             array (
                 'id' => 851,
                 'variant_id' => 16,
@@ -1409,7 +1409,7 @@ class OdooVariantValuesTableSeeder extends Seeder
                 'created_at' => '2023-10-16 22:22:58',
                 'updated_at' => '2023-10-16 22:22:58',
             ),
-            139 => 
+            139 =>
             array (
                 'id' => 852,
                 'variant_id' => 16,
@@ -1419,7 +1419,7 @@ class OdooVariantValuesTableSeeder extends Seeder
                 'created_at' => '2023-10-16 22:22:58',
                 'updated_at' => '2023-10-16 22:22:58',
             ),
-            140 => 
+            140 =>
             array (
                 'id' => 853,
                 'variant_id' => 16,
@@ -1429,7 +1429,7 @@ class OdooVariantValuesTableSeeder extends Seeder
                 'created_at' => '2023-10-16 22:22:58',
                 'updated_at' => '2023-10-16 22:22:58',
             ),
-            141 => 
+            141 =>
             array (
                 'id' => 854,
                 'variant_id' => 16,
@@ -1439,7 +1439,7 @@ class OdooVariantValuesTableSeeder extends Seeder
                 'created_at' => '2023-10-16 22:22:58',
                 'updated_at' => '2023-10-16 22:22:58',
             ),
-            142 => 
+            142 =>
             array (
                 'id' => 855,
                 'variant_id' => 16,
@@ -1449,7 +1449,7 @@ class OdooVariantValuesTableSeeder extends Seeder
                 'created_at' => '2023-10-16 22:22:58',
                 'updated_at' => '2023-10-16 22:22:58',
             ),
-            143 => 
+            143 =>
             array (
                 'id' => 856,
                 'variant_id' => 16,
@@ -1459,7 +1459,7 @@ class OdooVariantValuesTableSeeder extends Seeder
                 'created_at' => '2023-10-16 22:22:58',
                 'updated_at' => '2023-10-16 22:22:58',
             ),
-            144 => 
+            144 =>
             array (
                 'id' => 857,
                 'variant_id' => 17,
@@ -1469,7 +1469,7 @@ class OdooVariantValuesTableSeeder extends Seeder
                 'created_at' => '2023-10-16 22:23:05',
                 'updated_at' => '2023-10-16 22:23:05',
             ),
-            145 => 
+            145 =>
             array (
                 'id' => 858,
                 'variant_id' => 17,
@@ -1479,7 +1479,7 @@ class OdooVariantValuesTableSeeder extends Seeder
                 'created_at' => '2023-10-16 22:23:05',
                 'updated_at' => '2023-10-16 22:23:05',
             ),
-            146 => 
+            146 =>
             array (
                 'id' => 859,
                 'variant_id' => 17,
@@ -1489,7 +1489,7 @@ class OdooVariantValuesTableSeeder extends Seeder
                 'created_at' => '2023-10-16 22:23:05',
                 'updated_at' => '2023-10-16 22:23:05',
             ),
-            147 => 
+            147 =>
             array (
                 'id' => 860,
                 'variant_id' => 17,
@@ -1499,7 +1499,7 @@ class OdooVariantValuesTableSeeder extends Seeder
                 'created_at' => '2023-10-16 22:23:05',
                 'updated_at' => '2023-10-16 22:23:05',
             ),
-            148 => 
+            148 =>
             array (
                 'id' => 861,
                 'variant_id' => 18,
@@ -1509,7 +1509,7 @@ class OdooVariantValuesTableSeeder extends Seeder
                 'created_at' => '2023-10-16 22:23:13',
                 'updated_at' => '2023-10-16 22:23:13',
             ),
-            149 => 
+            149 =>
             array (
                 'id' => 862,
                 'variant_id' => 18,
@@ -1519,7 +1519,7 @@ class OdooVariantValuesTableSeeder extends Seeder
                 'created_at' => '2023-10-16 22:23:13',
                 'updated_at' => '2023-10-16 22:23:13',
             ),
-            150 => 
+            150 =>
             array (
                 'id' => 863,
                 'variant_id' => 18,
@@ -1529,7 +1529,7 @@ class OdooVariantValuesTableSeeder extends Seeder
                 'created_at' => '2023-10-16 22:23:13',
                 'updated_at' => '2023-10-16 22:23:13',
             ),
-            151 => 
+            151 =>
             array (
                 'id' => 864,
                 'variant_id' => 18,
@@ -1540,7 +1540,7 @@ class OdooVariantValuesTableSeeder extends Seeder
                 'updated_at' => '2023-10-16 22:23:13',
             ),
         ));
-        
-        
+
+
     }
 }
