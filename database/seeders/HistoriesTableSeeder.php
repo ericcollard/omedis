@@ -1661,6 +1661,28 @@ Various usage\',required: \'0\',attribute_list_id: \'\',unit_id: \'1\',data_type
                 'updated_at' => '2023-11-06 23:45:20',
                 'user_id' => '2',
             ),
+            137 => 
+            array (
+                'action' => 'UPDATE',
+                'created_at' => '2023-11-20 15:08:53',
+                'id' => 138,
+                'model' => 'AttributeListValue',
+                'new_values' => 'name: \'duotone\',comment: \'DUOTONE\',attribute_list_id: \'3\',odoo_name: \'Duotone\'',
+                'old_values' => 'name: \'duotone\',comment: \'DUOTONE\',attribute_list_id: \'3\',odoo_name: \'\'',
+                'updated_at' => '2023-11-20 15:08:53',
+                'user_id' => '2',
+            ),
+            138 => 
+            array (
+                'action' => 'UPDATE',
+                'created_at' => '2023-11-20 15:09:23',
+                'id' => 139,
+                'model' => 'AttributeListValue',
+                'new_values' => 'name: \'duotone\',comment: \'DUOTONE\',attribute_list_id: \'3\',odoo_name: \'duotone\'',
+                'old_values' => 'name: \'duotone\',comment: \'DUOTONE\',attribute_list_id: \'3\',odoo_name: \'Duotone\'',
+                'updated_at' => '2023-11-20 15:09:23',
+                'user_id' => '2',
+            ),
         ));
         
         

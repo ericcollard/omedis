@@ -49940,9 +49940,9 @@ class AttributeListValuesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'id' => 9377,
                 'name' => 'duotone',
-                'odoo_name' => NULL,
-                'updated_at' => NULL,
-                'user_id' => 1,
+                'odoo_name' => 'duotone',
+                'updated_at' => '2023-11-20 15:09:23',
+                'user_id' => 2,
             ),
             37 => 
             array (

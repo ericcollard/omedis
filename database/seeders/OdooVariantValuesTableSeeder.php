@@ -22,486 +22,6 @@ class OdooVariantValuesTableSeeder extends Seeder
             0 => 
             array (
                 'attribute_name' => NULL,
-                'created_at' => '2023-11-06 23:50:22',
-                'id' => 1041,
-                'odoo_model_id' => 23,
-                'updated_at' => '2023-11-06 23:50:22',
-                'value' => '0.12',
-                'variant_id' => 18,
-            ),
-            1 => 
-            array (
-                'attribute_name' => NULL,
-                'created_at' => '2023-11-06 23:50:22',
-                'id' => 1042,
-                'odoo_model_id' => 24,
-                'updated_at' => '2023-11-06 23:50:22',
-                'value' => '0',
-                'variant_id' => 18,
-            ),
-            2 => 
-            array (
-                'attribute_name' => 'Marque',
-                'created_at' => '2023-11-06 23:50:22',
-                'id' => 1043,
-                'odoo_model_id' => 27,
-                'updated_at' => '2023-11-06 23:50:22',
-                'value' => 'vola',
-                'variant_id' => 18,
-            ),
-            3 => 
-            array (
-                'attribute_name' => 'Type',
-                'created_at' => '2023-11-06 23:50:22',
-                'id' => 1044,
-                'odoo_model_id' => 27,
-                'updated_at' => '2023-11-06 23:50:22',
-                'value' => 'Neuf',
-                'variant_id' => 18,
-            ),
-            4 => 
-            array (
-                'attribute_name' => NULL,
-                'created_at' => '2023-11-20 14:34:53',
-                'id' => 1133,
-                'odoo_model_id' => 16,
-                'updated_at' => '2023-11-20 14:34:53',
-                'value' => '42400-28154-37',
-                'variant_id' => 1,
-            ),
-            5 => 
-            array (
-                'attribute_name' => NULL,
-                'created_at' => '2023-11-20 14:34:53',
-                'id' => 1134,
-                'odoo_model_id' => 17,
-                'updated_at' => '2023-11-20 14:34:53',
-                'value' => '914578541121',
-                'variant_id' => 1,
-            ),
-            6 => 
-            array (
-                'attribute_name' => NULL,
-                'created_at' => '2023-11-20 14:34:53',
-                'id' => 1135,
-                'odoo_model_id' => 20,
-                'updated_at' => '2023-11-20 14:34:53',
-                'value' => '742.56',
-                'variant_id' => 1,
-            ),
-            7 => 
-            array (
-                'attribute_name' => NULL,
-                'created_at' => '2023-11-20 14:34:53',
-                'id' => 1136,
-                'odoo_model_id' => 18,
-                'updated_at' => '2023-11-20 14:34:53',
-                'value' => 'Boards & More gmbh',
-                'variant_id' => 1,
-            ),
-            8 => 
-            array (
-                'attribute_name' => NULL,
-                'created_at' => '2023-11-20 14:34:53',
-                'id' => 1137,
-                'odoo_model_id' => 21,
-                'updated_at' => '2023-11-20 14:34:53',
-                'value' => '824.99166666667',
-                'variant_id' => 1,
-            ),
-            9 => 
-            array (
-                'attribute_name' => NULL,
-                'created_at' => '2023-11-20 14:34:53',
-                'id' => 1138,
-                'odoo_model_id' => 23,
-                'updated_at' => '2023-11-20 14:34:53',
-                'value' => '4.8',
-                'variant_id' => 1,
-            ),
-            10 => 
-            array (
-                'attribute_name' => NULL,
-                'created_at' => '2023-11-20 14:34:53',
-                'id' => 1139,
-                'odoo_model_id' => 24,
-                'updated_at' => '2023-11-20 14:34:53',
-                'value' => '0',
-                'variant_id' => 1,
-            ),
-            11 => 
-            array (
-                'attribute_name' => 'Marque',
-                'created_at' => '2023-11-20 14:34:53',
-                'id' => 1140,
-                'odoo_model_id' => 27,
-                'updated_at' => '2023-11-20 14:34:53',
-                'value' => 'duotone*',
-                'variant_id' => 1,
-            ),
-            12 => 
-            array (
-                'attribute_name' => 'Millésime',
-                'created_at' => '2023-11-20 14:34:53',
-                'id' => 1141,
-                'odoo_model_id' => 27,
-                'updated_at' => '2023-11-20 14:34:53',
-                'value' => '2024',
-                'variant_id' => 1,
-            ),
-            13 => 
-            array (
-                'attribute_name' => 'Type',
-                'created_at' => '2023-11-20 14:34:53',
-                'id' => 1142,
-                'odoo_model_id' => 27,
-                'updated_at' => '2023-11-20 14:34:53',
-                'value' => 'Neuf',
-                'variant_id' => 1,
-            ),
-            14 => 
-            array (
-            'attribute_name' => 'Surface (m2)',
-                'created_at' => '2023-11-20 14:34:53',
-                'id' => 1143,
-                'odoo_model_id' => 27,
-                'updated_at' => '2023-11-20 14:34:53',
-                'value' => '3.7',
-                'variant_id' => 1,
-            ),
-            15 => 
-            array (
-                'attribute_name' => NULL,
-                'created_at' => '2023-11-20 14:34:53',
-                'id' => 1144,
-                'odoo_model_id' => 16,
-                'updated_at' => '2023-11-20 14:34:53',
-                'value' => '42400-28154-42',
-                'variant_id' => 2,
-            ),
-            16 => 
-            array (
-                'attribute_name' => NULL,
-                'created_at' => '2023-11-20 14:34:53',
-                'id' => 1145,
-                'odoo_model_id' => 17,
-                'updated_at' => '2023-11-20 14:34:53',
-                'value' => '914578541122',
-                'variant_id' => 2,
-            ),
-            17 => 
-            array (
-                'attribute_name' => NULL,
-                'created_at' => '2023-11-20 14:34:53',
-                'id' => 1146,
-                'odoo_model_id' => 20,
-                'updated_at' => '2023-11-20 14:34:53',
-                'value' => '752.56',
-                'variant_id' => 2,
-            ),
-            18 => 
-            array (
-                'attribute_name' => NULL,
-                'created_at' => '2023-11-20 14:34:53',
-                'id' => 1147,
-                'odoo_model_id' => 18,
-                'updated_at' => '2023-11-20 14:34:53',
-                'value' => 'Boards & More gmbh',
-                'variant_id' => 2,
-            ),
-            19 => 
-            array (
-                'attribute_name' => NULL,
-                'created_at' => '2023-11-20 14:34:53',
-                'id' => 1148,
-                'odoo_model_id' => 21,
-                'updated_at' => '2023-11-20 14:34:53',
-                'value' => '838.325',
-                'variant_id' => 2,
-            ),
-            20 => 
-            array (
-                'attribute_name' => NULL,
-                'created_at' => '2023-11-20 14:34:53',
-                'id' => 1149,
-                'odoo_model_id' => 23,
-                'updated_at' => '2023-11-20 14:34:53',
-                'value' => '4.9',
-                'variant_id' => 2,
-            ),
-            21 => 
-            array (
-                'attribute_name' => NULL,
-                'created_at' => '2023-11-20 14:34:53',
-                'id' => 1150,
-                'odoo_model_id' => 24,
-                'updated_at' => '2023-11-20 14:34:53',
-                'value' => '0',
-                'variant_id' => 2,
-            ),
-            22 => 
-            array (
-                'attribute_name' => 'Marque',
-                'created_at' => '2023-11-20 14:34:53',
-                'id' => 1151,
-                'odoo_model_id' => 27,
-                'updated_at' => '2023-11-20 14:34:53',
-                'value' => 'duotone*',
-                'variant_id' => 2,
-            ),
-            23 => 
-            array (
-                'attribute_name' => 'Millésime',
-                'created_at' => '2023-11-20 14:34:53',
-                'id' => 1152,
-                'odoo_model_id' => 27,
-                'updated_at' => '2023-11-20 14:34:53',
-                'value' => '2024',
-                'variant_id' => 2,
-            ),
-            24 => 
-            array (
-                'attribute_name' => 'Type',
-                'created_at' => '2023-11-20 14:34:53',
-                'id' => 1153,
-                'odoo_model_id' => 27,
-                'updated_at' => '2023-11-20 14:34:53',
-                'value' => 'Neuf',
-                'variant_id' => 2,
-            ),
-            25 => 
-            array (
-            'attribute_name' => 'Surface (m2)',
-                'created_at' => '2023-11-20 14:34:53',
-                'id' => 1154,
-                'odoo_model_id' => 27,
-                'updated_at' => '2023-11-20 14:34:53',
-                'value' => '4.2',
-                'variant_id' => 2,
-            ),
-            26 => 
-            array (
-                'attribute_name' => NULL,
-                'created_at' => '2023-11-20 14:34:53',
-                'id' => 1155,
-                'odoo_model_id' => 16,
-                'updated_at' => '2023-11-20 14:34:53',
-                'value' => '42400-28154-47',
-                'variant_id' => 3,
-            ),
-            27 => 
-            array (
-                'attribute_name' => NULL,
-                'created_at' => '2023-11-20 14:34:53',
-                'id' => 1156,
-                'odoo_model_id' => 17,
-                'updated_at' => '2023-11-20 14:34:53',
-                'value' => '914578541123',
-                'variant_id' => 3,
-            ),
-            28 => 
-            array (
-                'attribute_name' => NULL,
-                'created_at' => '2023-11-20 14:34:53',
-                'id' => 1157,
-                'odoo_model_id' => 20,
-                'updated_at' => '2023-11-20 14:34:53',
-                'value' => '762.56',
-                'variant_id' => 3,
-            ),
-            29 => 
-            array (
-                'attribute_name' => NULL,
-                'created_at' => '2023-11-20 14:34:53',
-                'id' => 1158,
-                'odoo_model_id' => 18,
-                'updated_at' => '2023-11-20 14:34:53',
-                'value' => 'Boards & More gmbh',
-                'variant_id' => 3,
-            ),
-            30 => 
-            array (
-                'attribute_name' => NULL,
-                'created_at' => '2023-11-20 14:34:53',
-                'id' => 1159,
-                'odoo_model_id' => 21,
-                'updated_at' => '2023-11-20 14:34:53',
-                'value' => '921.65833333333',
-                'variant_id' => 3,
-            ),
-            31 => 
-            array (
-                'attribute_name' => NULL,
-                'created_at' => '2023-11-20 14:34:53',
-                'id' => 1160,
-                'odoo_model_id' => 23,
-                'updated_at' => '2023-11-20 14:34:53',
-                'value' => '5',
-                'variant_id' => 3,
-            ),
-            32 => 
-            array (
-                'attribute_name' => NULL,
-                'created_at' => '2023-11-20 14:34:53',
-                'id' => 1161,
-                'odoo_model_id' => 24,
-                'updated_at' => '2023-11-20 14:34:53',
-                'value' => '0',
-                'variant_id' => 3,
-            ),
-            33 => 
-            array (
-                'attribute_name' => 'Marque',
-                'created_at' => '2023-11-20 14:34:53',
-                'id' => 1162,
-                'odoo_model_id' => 27,
-                'updated_at' => '2023-11-20 14:34:53',
-                'value' => 'duotone*',
-                'variant_id' => 3,
-            ),
-            34 => 
-            array (
-                'attribute_name' => 'Millésime',
-                'created_at' => '2023-11-20 14:34:53',
-                'id' => 1163,
-                'odoo_model_id' => 27,
-                'updated_at' => '2023-11-20 14:34:53',
-                'value' => '2024',
-                'variant_id' => 3,
-            ),
-            35 => 
-            array (
-                'attribute_name' => 'Type',
-                'created_at' => '2023-11-20 14:34:53',
-                'id' => 1164,
-                'odoo_model_id' => 27,
-                'updated_at' => '2023-11-20 14:34:53',
-                'value' => 'Neuf',
-                'variant_id' => 3,
-            ),
-            36 => 
-            array (
-            'attribute_name' => 'Surface (m2)',
-                'created_at' => '2023-11-20 14:34:53',
-                'id' => 1165,
-                'odoo_model_id' => 27,
-                'updated_at' => '2023-11-20 14:34:53',
-                'value' => '4.7',
-                'variant_id' => 3,
-            ),
-            37 => 
-            array (
-                'attribute_name' => NULL,
-                'created_at' => '2023-11-20 14:34:53',
-                'id' => 1166,
-                'odoo_model_id' => 16,
-                'updated_at' => '2023-11-20 14:34:53',
-                'value' => '42400-28154-50',
-                'variant_id' => 4,
-            ),
-            38 => 
-            array (
-                'attribute_name' => NULL,
-                'created_at' => '2023-11-20 14:34:53',
-                'id' => 1167,
-                'odoo_model_id' => 17,
-                'updated_at' => '2023-11-20 14:34:53',
-                'value' => '914578541124',
-                'variant_id' => 4,
-            ),
-            39 => 
-            array (
-                'attribute_name' => NULL,
-                'created_at' => '2023-11-20 14:34:53',
-                'id' => 1168,
-                'odoo_model_id' => 20,
-                'updated_at' => '2023-11-20 14:34:53',
-                'value' => '782.56',
-                'variant_id' => 4,
-            ),
-            40 => 
-            array (
-                'attribute_name' => NULL,
-                'created_at' => '2023-11-20 14:34:53',
-                'id' => 1169,
-                'odoo_model_id' => 18,
-                'updated_at' => '2023-11-20 14:34:53',
-                'value' => 'Boards & More gmbh',
-                'variant_id' => 4,
-            ),
-            41 => 
-            array (
-                'attribute_name' => NULL,
-                'created_at' => '2023-11-20 14:34:53',
-                'id' => 1170,
-                'odoo_model_id' => 21,
-                'updated_at' => '2023-11-20 14:34:53',
-                'value' => '1004.9916666667',
-                'variant_id' => 4,
-            ),
-            42 => 
-            array (
-                'attribute_name' => NULL,
-                'created_at' => '2023-11-20 14:34:53',
-                'id' => 1171,
-                'odoo_model_id' => 23,
-                'updated_at' => '2023-11-20 14:34:53',
-                'value' => '5.1',
-                'variant_id' => 4,
-            ),
-            43 => 
-            array (
-                'attribute_name' => NULL,
-                'created_at' => '2023-11-20 14:34:53',
-                'id' => 1172,
-                'odoo_model_id' => 24,
-                'updated_at' => '2023-11-20 14:34:53',
-                'value' => '0',
-                'variant_id' => 4,
-            ),
-            44 => 
-            array (
-                'attribute_name' => 'Marque',
-                'created_at' => '2023-11-20 14:34:53',
-                'id' => 1173,
-                'odoo_model_id' => 27,
-                'updated_at' => '2023-11-20 14:34:53',
-                'value' => 'duotone*',
-                'variant_id' => 4,
-            ),
-            45 => 
-            array (
-                'attribute_name' => 'Millésime',
-                'created_at' => '2023-11-20 14:34:53',
-                'id' => 1174,
-                'odoo_model_id' => 27,
-                'updated_at' => '2023-11-20 14:34:53',
-                'value' => '2024',
-                'variant_id' => 4,
-            ),
-            46 => 
-            array (
-                'attribute_name' => 'Type',
-                'created_at' => '2023-11-20 14:34:53',
-                'id' => 1175,
-                'odoo_model_id' => 27,
-                'updated_at' => '2023-11-20 14:34:53',
-                'value' => 'Neuf',
-                'variant_id' => 4,
-            ),
-            47 => 
-            array (
-            'attribute_name' => 'Surface (m2)',
-                'created_at' => '2023-11-20 14:34:53',
-                'id' => 1176,
-                'odoo_model_id' => 27,
-                'updated_at' => '2023-11-20 14:34:53',
-                'value' => '5',
-                'variant_id' => 4,
-            ),
-            48 => 
-            array (
-                'attribute_name' => NULL,
                 'created_at' => '2023-11-20 14:35:49',
                 'id' => 1177,
                 'odoo_model_id' => 16,
@@ -509,7 +29,7 @@ class OdooVariantValuesTableSeeder extends Seeder
                 'value' => '77244-0103-52',
                 'variant_id' => 5,
             ),
-            49 => 
+            1 => 
             array (
                 'attribute_name' => NULL,
                 'created_at' => '2023-11-20 14:35:49',
@@ -519,7 +39,7 @@ class OdooVariantValuesTableSeeder extends Seeder
                 'value' => '814578545487',
                 'variant_id' => 5,
             ),
-            50 => 
+            2 => 
             array (
                 'attribute_name' => NULL,
                 'created_at' => '2023-11-20 14:35:49',
@@ -529,7 +49,7 @@ class OdooVariantValuesTableSeeder extends Seeder
                 'value' => '5.4',
                 'variant_id' => 5,
             ),
-            51 => 
+            3 => 
             array (
                 'attribute_name' => NULL,
                 'created_at' => '2023-11-20 14:35:49',
@@ -539,7 +59,7 @@ class OdooVariantValuesTableSeeder extends Seeder
                 'value' => '0',
                 'variant_id' => 5,
             ),
-            52 => 
+            4 => 
             array (
                 'attribute_name' => 'Marque',
                 'created_at' => '2023-11-20 14:35:49',
@@ -549,7 +69,7 @@ class OdooVariantValuesTableSeeder extends Seeder
                 'value' => 'fone',
                 'variant_id' => 5,
             ),
-            53 => 
+            5 => 
             array (
                 'attribute_name' => 'Type',
                 'created_at' => '2023-11-20 14:35:49',
@@ -559,7 +79,7 @@ class OdooVariantValuesTableSeeder extends Seeder
                 'value' => 'Neuf',
                 'variant_id' => 5,
             ),
-            54 => 
+            6 => 
             array (
             'attribute_name' => 'Taille (pieds)',
                 'created_at' => '2023-11-20 14:35:49',
@@ -569,7 +89,7 @@ class OdooVariantValuesTableSeeder extends Seeder
                 'value' => '5\'2',
                 'variant_id' => 5,
             ),
-            55 => 
+            7 => 
             array (
                 'attribute_name' => NULL,
                 'created_at' => '2023-11-20 14:35:50',
@@ -579,7 +99,7 @@ class OdooVariantValuesTableSeeder extends Seeder
                 'value' => '77244-0103-54',
                 'variant_id' => 6,
             ),
-            56 => 
+            8 => 
             array (
                 'attribute_name' => NULL,
                 'created_at' => '2023-11-20 14:35:50',
@@ -589,7 +109,7 @@ class OdooVariantValuesTableSeeder extends Seeder
                 'value' => '814578545488',
                 'variant_id' => 6,
             ),
-            57 => 
+            9 => 
             array (
                 'attribute_name' => NULL,
                 'created_at' => '2023-11-20 14:35:50',
@@ -599,7 +119,7 @@ class OdooVariantValuesTableSeeder extends Seeder
                 'value' => '5.4',
                 'variant_id' => 6,
             ),
-            58 => 
+            10 => 
             array (
                 'attribute_name' => NULL,
                 'created_at' => '2023-11-20 14:35:50',
@@ -609,7 +129,7 @@ class OdooVariantValuesTableSeeder extends Seeder
                 'value' => '0',
                 'variant_id' => 6,
             ),
-            59 => 
+            11 => 
             array (
                 'attribute_name' => 'Marque',
                 'created_at' => '2023-11-20 14:35:50',
@@ -619,7 +139,7 @@ class OdooVariantValuesTableSeeder extends Seeder
                 'value' => 'fone',
                 'variant_id' => 6,
             ),
-            60 => 
+            12 => 
             array (
                 'attribute_name' => 'Type',
                 'created_at' => '2023-11-20 14:35:50',
@@ -629,7 +149,7 @@ class OdooVariantValuesTableSeeder extends Seeder
                 'value' => 'Neuf',
                 'variant_id' => 6,
             ),
-            61 => 
+            13 => 
             array (
             'attribute_name' => 'Taille (pieds)',
                 'created_at' => '2023-11-20 14:35:50',
@@ -639,7 +159,7 @@ class OdooVariantValuesTableSeeder extends Seeder
                 'value' => '5\'4',
                 'variant_id' => 6,
             ),
-            62 => 
+            14 => 
             array (
                 'attribute_name' => NULL,
                 'created_at' => '2023-11-20 14:35:50',
@@ -649,7 +169,7 @@ class OdooVariantValuesTableSeeder extends Seeder
                 'value' => '77244-0103-56',
                 'variant_id' => 7,
             ),
-            63 => 
+            15 => 
             array (
                 'attribute_name' => NULL,
                 'created_at' => '2023-11-20 14:35:50',
@@ -659,7 +179,7 @@ class OdooVariantValuesTableSeeder extends Seeder
                 'value' => '814578545489',
                 'variant_id' => 7,
             ),
-            64 => 
+            16 => 
             array (
                 'attribute_name' => NULL,
                 'created_at' => '2023-11-20 14:35:50',
@@ -669,7 +189,7 @@ class OdooVariantValuesTableSeeder extends Seeder
                 'value' => '5.4',
                 'variant_id' => 7,
             ),
-            65 => 
+            17 => 
             array (
                 'attribute_name' => NULL,
                 'created_at' => '2023-11-20 14:35:50',
@@ -679,7 +199,7 @@ class OdooVariantValuesTableSeeder extends Seeder
                 'value' => '0',
                 'variant_id' => 7,
             ),
-            66 => 
+            18 => 
             array (
                 'attribute_name' => 'Marque',
                 'created_at' => '2023-11-20 14:35:50',
@@ -689,7 +209,7 @@ class OdooVariantValuesTableSeeder extends Seeder
                 'value' => 'fone',
                 'variant_id' => 7,
             ),
-            67 => 
+            19 => 
             array (
                 'attribute_name' => 'Type',
                 'created_at' => '2023-11-20 14:35:50',
@@ -699,7 +219,7 @@ class OdooVariantValuesTableSeeder extends Seeder
                 'value' => 'Neuf',
                 'variant_id' => 7,
             ),
-            68 => 
+            20 => 
             array (
             'attribute_name' => 'Taille (pieds)',
                 'created_at' => '2023-11-20 14:35:50',
@@ -709,7 +229,7 @@ class OdooVariantValuesTableSeeder extends Seeder
                 'value' => '5\'6',
                 'variant_id' => 7,
             ),
-            69 => 
+            21 => 
             array (
                 'attribute_name' => NULL,
                 'created_at' => '2023-11-20 14:35:50',
@@ -719,7 +239,7 @@ class OdooVariantValuesTableSeeder extends Seeder
                 'value' => '77244-0103-58',
                 'variant_id' => 8,
             ),
-            70 => 
+            22 => 
             array (
                 'attribute_name' => NULL,
                 'created_at' => '2023-11-20 14:35:50',
@@ -729,7 +249,7 @@ class OdooVariantValuesTableSeeder extends Seeder
                 'value' => '814578545410',
                 'variant_id' => 8,
             ),
-            71 => 
+            23 => 
             array (
                 'attribute_name' => NULL,
                 'created_at' => '2023-11-20 14:35:50',
@@ -739,7 +259,7 @@ class OdooVariantValuesTableSeeder extends Seeder
                 'value' => '5.4',
                 'variant_id' => 8,
             ),
-            72 => 
+            24 => 
             array (
                 'attribute_name' => NULL,
                 'created_at' => '2023-11-20 14:35:50',
@@ -749,7 +269,7 @@ class OdooVariantValuesTableSeeder extends Seeder
                 'value' => '0',
                 'variant_id' => 8,
             ),
-            73 => 
+            25 => 
             array (
                 'attribute_name' => 'Marque',
                 'created_at' => '2023-11-20 14:35:50',
@@ -759,7 +279,7 @@ class OdooVariantValuesTableSeeder extends Seeder
                 'value' => 'fone',
                 'variant_id' => 8,
             ),
-            74 => 
+            26 => 
             array (
                 'attribute_name' => 'Type',
                 'created_at' => '2023-11-20 14:35:50',
@@ -769,7 +289,7 @@ class OdooVariantValuesTableSeeder extends Seeder
                 'value' => 'Neuf',
                 'variant_id' => 8,
             ),
-            75 => 
+            27 => 
             array (
             'attribute_name' => 'Taille (pieds)',
                 'created_at' => '2023-11-20 14:35:50',
@@ -779,7 +299,7 @@ class OdooVariantValuesTableSeeder extends Seeder
                 'value' => '5\'8',
                 'variant_id' => 8,
             ),
-            76 => 
+            28 => 
             array (
                 'attribute_name' => NULL,
                 'created_at' => '2023-11-20 14:36:03',
@@ -789,7 +309,7 @@ class OdooVariantValuesTableSeeder extends Seeder
                 'value' => 'MVT457_D_01_S',
                 'variant_id' => 9,
             ),
-            77 => 
+            29 => 
             array (
                 'attribute_name' => NULL,
                 'created_at' => '2023-11-20 14:36:03',
@@ -799,7 +319,7 @@ class OdooVariantValuesTableSeeder extends Seeder
                 'value' => '714578589754',
                 'variant_id' => 9,
             ),
-            78 => 
+            30 => 
             array (
                 'attribute_name' => NULL,
                 'created_at' => '2023-11-20 14:36:03',
@@ -809,7 +329,7 @@ class OdooVariantValuesTableSeeder extends Seeder
                 'value' => '2.1',
                 'variant_id' => 9,
             ),
-            79 => 
+            31 => 
             array (
                 'attribute_name' => NULL,
                 'created_at' => '2023-11-20 14:36:03',
@@ -819,7 +339,7 @@ class OdooVariantValuesTableSeeder extends Seeder
                 'value' => '0',
                 'variant_id' => 9,
             ),
-            80 => 
+            32 => 
             array (
                 'attribute_name' => 'Marque',
                 'created_at' => '2023-11-20 14:36:03',
@@ -829,7 +349,7 @@ class OdooVariantValuesTableSeeder extends Seeder
                 'value' => 'picture',
                 'variant_id' => 9,
             ),
-            81 => 
+            33 => 
             array (
                 'attribute_name' => 'Millésime',
                 'created_at' => '2023-11-20 14:36:03',
@@ -839,7 +359,7 @@ class OdooVariantValuesTableSeeder extends Seeder
                 'value' => '2024',
                 'variant_id' => 9,
             ),
-            82 => 
+            34 => 
             array (
                 'attribute_name' => 'Type',
                 'created_at' => '2023-11-20 14:36:03',
@@ -849,7 +369,7 @@ class OdooVariantValuesTableSeeder extends Seeder
                 'value' => 'Neuf',
                 'variant_id' => 9,
             ),
-            83 => 
+            35 => 
             array (
                 'attribute_name' => 'Taille Wear',
                 'created_at' => '2023-11-20 14:36:03',
@@ -859,7 +379,7 @@ class OdooVariantValuesTableSeeder extends Seeder
                 'value' => 'S',
                 'variant_id' => 9,
             ),
-            84 => 
+            36 => 
             array (
                 'attribute_name' => 'Couleur',
                 'created_at' => '2023-11-20 14:36:04',
@@ -869,7 +389,7 @@ class OdooVariantValuesTableSeeder extends Seeder
                 'value' => 'Amande',
                 'variant_id' => 9,
             ),
-            85 => 
+            37 => 
             array (
                 'attribute_name' => NULL,
                 'created_at' => '2023-11-20 14:36:04',
@@ -879,7 +399,7 @@ class OdooVariantValuesTableSeeder extends Seeder
                 'value' => 'MVT457_D_01_M',
                 'variant_id' => 10,
             ),
-            86 => 
+            38 => 
             array (
                 'attribute_name' => NULL,
                 'created_at' => '2023-11-20 14:36:04',
@@ -889,7 +409,7 @@ class OdooVariantValuesTableSeeder extends Seeder
                 'value' => '714578589755',
                 'variant_id' => 10,
             ),
-            87 => 
+            39 => 
             array (
                 'attribute_name' => NULL,
                 'created_at' => '2023-11-20 14:36:04',
@@ -899,7 +419,7 @@ class OdooVariantValuesTableSeeder extends Seeder
                 'value' => '2.1',
                 'variant_id' => 10,
             ),
-            88 => 
+            40 => 
             array (
                 'attribute_name' => NULL,
                 'created_at' => '2023-11-20 14:36:04',
@@ -909,7 +429,7 @@ class OdooVariantValuesTableSeeder extends Seeder
                 'value' => '0',
                 'variant_id' => 10,
             ),
-            89 => 
+            41 => 
             array (
                 'attribute_name' => 'Marque',
                 'created_at' => '2023-11-20 14:36:04',
@@ -919,7 +439,7 @@ class OdooVariantValuesTableSeeder extends Seeder
                 'value' => 'picture',
                 'variant_id' => 10,
             ),
-            90 => 
+            42 => 
             array (
                 'attribute_name' => 'Millésime',
                 'created_at' => '2023-11-20 14:36:04',
@@ -929,7 +449,7 @@ class OdooVariantValuesTableSeeder extends Seeder
                 'value' => '2024',
                 'variant_id' => 10,
             ),
-            91 => 
+            43 => 
             array (
                 'attribute_name' => 'Type',
                 'created_at' => '2023-11-20 14:36:04',
@@ -939,7 +459,7 @@ class OdooVariantValuesTableSeeder extends Seeder
                 'value' => 'Neuf',
                 'variant_id' => 10,
             ),
-            92 => 
+            44 => 
             array (
                 'attribute_name' => 'Taille Wear',
                 'created_at' => '2023-11-20 14:36:04',
@@ -949,7 +469,7 @@ class OdooVariantValuesTableSeeder extends Seeder
                 'value' => 'M',
                 'variant_id' => 10,
             ),
-            93 => 
+            45 => 
             array (
                 'attribute_name' => 'Couleur',
                 'created_at' => '2023-11-20 14:36:04',
@@ -959,7 +479,7 @@ class OdooVariantValuesTableSeeder extends Seeder
                 'value' => 'Amande',
                 'variant_id' => 10,
             ),
-            94 => 
+            46 => 
             array (
                 'attribute_name' => NULL,
                 'created_at' => '2023-11-20 14:36:04',
@@ -969,7 +489,7 @@ class OdooVariantValuesTableSeeder extends Seeder
                 'value' => 'MVT457_D_01_L',
                 'variant_id' => 11,
             ),
-            95 => 
+            47 => 
             array (
                 'attribute_name' => NULL,
                 'created_at' => '2023-11-20 14:36:04',
@@ -979,7 +499,7 @@ class OdooVariantValuesTableSeeder extends Seeder
                 'value' => '714578589756',
                 'variant_id' => 11,
             ),
-            96 => 
+            48 => 
             array (
                 'attribute_name' => NULL,
                 'created_at' => '2023-11-20 14:36:04',
@@ -989,7 +509,7 @@ class OdooVariantValuesTableSeeder extends Seeder
                 'value' => '2.1',
                 'variant_id' => 11,
             ),
-            97 => 
+            49 => 
             array (
                 'attribute_name' => NULL,
                 'created_at' => '2023-11-20 14:36:04',
@@ -999,7 +519,7 @@ class OdooVariantValuesTableSeeder extends Seeder
                 'value' => '0',
                 'variant_id' => 11,
             ),
-            98 => 
+            50 => 
             array (
                 'attribute_name' => 'Marque',
                 'created_at' => '2023-11-20 14:36:04',
@@ -1009,7 +529,7 @@ class OdooVariantValuesTableSeeder extends Seeder
                 'value' => 'picture',
                 'variant_id' => 11,
             ),
-            99 => 
+            51 => 
             array (
                 'attribute_name' => 'Millésime',
                 'created_at' => '2023-11-20 14:36:04',
@@ -1019,7 +539,7 @@ class OdooVariantValuesTableSeeder extends Seeder
                 'value' => '2024',
                 'variant_id' => 11,
             ),
-            100 => 
+            52 => 
             array (
                 'attribute_name' => 'Type',
                 'created_at' => '2023-11-20 14:36:04',
@@ -1029,7 +549,7 @@ class OdooVariantValuesTableSeeder extends Seeder
                 'value' => 'Neuf',
                 'variant_id' => 11,
             ),
-            101 => 
+            53 => 
             array (
                 'attribute_name' => 'Taille Wear',
                 'created_at' => '2023-11-20 14:36:04',
@@ -1039,7 +559,7 @@ class OdooVariantValuesTableSeeder extends Seeder
                 'value' => 'L',
                 'variant_id' => 11,
             ),
-            102 => 
+            54 => 
             array (
                 'attribute_name' => 'Couleur',
                 'created_at' => '2023-11-20 14:36:04',
@@ -1049,7 +569,7 @@ class OdooVariantValuesTableSeeder extends Seeder
                 'value' => 'Amande',
                 'variant_id' => 11,
             ),
-            103 => 
+            55 => 
             array (
                 'attribute_name' => NULL,
                 'created_at' => '2023-11-20 14:36:04',
@@ -1059,7 +579,7 @@ class OdooVariantValuesTableSeeder extends Seeder
                 'value' => 'MVT457_D_01_XL',
                 'variant_id' => 12,
             ),
-            104 => 
+            56 => 
             array (
                 'attribute_name' => NULL,
                 'created_at' => '2023-11-20 14:36:04',
@@ -1069,7 +589,7 @@ class OdooVariantValuesTableSeeder extends Seeder
                 'value' => '714578589757',
                 'variant_id' => 12,
             ),
-            105 => 
+            57 => 
             array (
                 'attribute_name' => NULL,
                 'created_at' => '2023-11-20 14:36:04',
@@ -1079,7 +599,7 @@ class OdooVariantValuesTableSeeder extends Seeder
                 'value' => '2.1',
                 'variant_id' => 12,
             ),
-            106 => 
+            58 => 
             array (
                 'attribute_name' => NULL,
                 'created_at' => '2023-11-20 14:36:04',
@@ -1089,7 +609,7 @@ class OdooVariantValuesTableSeeder extends Seeder
                 'value' => '0',
                 'variant_id' => 12,
             ),
-            107 => 
+            59 => 
             array (
                 'attribute_name' => 'Marque',
                 'created_at' => '2023-11-20 14:36:04',
@@ -1099,7 +619,7 @@ class OdooVariantValuesTableSeeder extends Seeder
                 'value' => 'picture',
                 'variant_id' => 12,
             ),
-            108 => 
+            60 => 
             array (
                 'attribute_name' => 'Millésime',
                 'created_at' => '2023-11-20 14:36:04',
@@ -1109,7 +629,7 @@ class OdooVariantValuesTableSeeder extends Seeder
                 'value' => '2024',
                 'variant_id' => 12,
             ),
-            109 => 
+            61 => 
             array (
                 'attribute_name' => 'Type',
                 'created_at' => '2023-11-20 14:36:04',
@@ -1119,7 +639,7 @@ class OdooVariantValuesTableSeeder extends Seeder
                 'value' => 'Neuf',
                 'variant_id' => 12,
             ),
-            110 => 
+            62 => 
             array (
                 'attribute_name' => 'Taille Wear',
                 'created_at' => '2023-11-20 14:36:04',
@@ -1129,7 +649,7 @@ class OdooVariantValuesTableSeeder extends Seeder
                 'value' => 'XL',
                 'variant_id' => 12,
             ),
-            111 => 
+            63 => 
             array (
                 'attribute_name' => 'Couleur',
                 'created_at' => '2023-11-20 14:36:04',
@@ -1139,7 +659,7 @@ class OdooVariantValuesTableSeeder extends Seeder
                 'value' => 'Amande',
                 'variant_id' => 12,
             ),
-            112 => 
+            64 => 
             array (
                 'attribute_name' => NULL,
                 'created_at' => '2023-11-20 14:36:04',
@@ -1149,7 +669,7 @@ class OdooVariantValuesTableSeeder extends Seeder
                 'value' => 'MVT457_C_01_S',
                 'variant_id' => 13,
             ),
-            113 => 
+            65 => 
             array (
                 'attribute_name' => NULL,
                 'created_at' => '2023-11-20 14:36:04',
@@ -1159,7 +679,7 @@ class OdooVariantValuesTableSeeder extends Seeder
                 'value' => '714578589764',
                 'variant_id' => 13,
             ),
-            114 => 
+            66 => 
             array (
                 'attribute_name' => NULL,
                 'created_at' => '2023-11-20 14:36:04',
@@ -1169,7 +689,7 @@ class OdooVariantValuesTableSeeder extends Seeder
                 'value' => '2.1',
                 'variant_id' => 13,
             ),
-            115 => 
+            67 => 
             array (
                 'attribute_name' => NULL,
                 'created_at' => '2023-11-20 14:36:04',
@@ -1179,7 +699,7 @@ class OdooVariantValuesTableSeeder extends Seeder
                 'value' => '0',
                 'variant_id' => 13,
             ),
-            116 => 
+            68 => 
             array (
                 'attribute_name' => 'Marque',
                 'created_at' => '2023-11-20 14:36:04',
@@ -1189,7 +709,7 @@ class OdooVariantValuesTableSeeder extends Seeder
                 'value' => 'picture',
                 'variant_id' => 13,
             ),
-            117 => 
+            69 => 
             array (
                 'attribute_name' => 'Millésime',
                 'created_at' => '2023-11-20 14:36:04',
@@ -1199,7 +719,7 @@ class OdooVariantValuesTableSeeder extends Seeder
                 'value' => '2024',
                 'variant_id' => 13,
             ),
-            118 => 
+            70 => 
             array (
                 'attribute_name' => 'Type',
                 'created_at' => '2023-11-20 14:36:04',
@@ -1209,7 +729,7 @@ class OdooVariantValuesTableSeeder extends Seeder
                 'value' => 'Neuf',
                 'variant_id' => 13,
             ),
-            119 => 
+            71 => 
             array (
                 'attribute_name' => 'Taille Wear',
                 'created_at' => '2023-11-20 14:36:04',
@@ -1219,7 +739,7 @@ class OdooVariantValuesTableSeeder extends Seeder
                 'value' => 'S',
                 'variant_id' => 13,
             ),
-            120 => 
+            72 => 
             array (
                 'attribute_name' => 'Couleur',
                 'created_at' => '2023-11-20 14:36:04',
@@ -1229,7 +749,7 @@ class OdooVariantValuesTableSeeder extends Seeder
                 'value' => 'Bleu marine',
                 'variant_id' => 13,
             ),
-            121 => 
+            73 => 
             array (
                 'attribute_name' => NULL,
                 'created_at' => '2023-11-20 14:36:04',
@@ -1239,7 +759,7 @@ class OdooVariantValuesTableSeeder extends Seeder
                 'value' => 'MVT457_C_01_S',
                 'variant_id' => 14,
             ),
-            122 => 
+            74 => 
             array (
                 'attribute_name' => NULL,
                 'created_at' => '2023-11-20 14:36:04',
@@ -1249,7 +769,7 @@ class OdooVariantValuesTableSeeder extends Seeder
                 'value' => '714578589765',
                 'variant_id' => 14,
             ),
-            123 => 
+            75 => 
             array (
                 'attribute_name' => NULL,
                 'created_at' => '2023-11-20 14:36:04',
@@ -1259,7 +779,7 @@ class OdooVariantValuesTableSeeder extends Seeder
                 'value' => '2.1',
                 'variant_id' => 14,
             ),
-            124 => 
+            76 => 
             array (
                 'attribute_name' => NULL,
                 'created_at' => '2023-11-20 14:36:04',
@@ -1269,7 +789,7 @@ class OdooVariantValuesTableSeeder extends Seeder
                 'value' => '0',
                 'variant_id' => 14,
             ),
-            125 => 
+            77 => 
             array (
                 'attribute_name' => 'Marque',
                 'created_at' => '2023-11-20 14:36:04',
@@ -1279,7 +799,7 @@ class OdooVariantValuesTableSeeder extends Seeder
                 'value' => 'picture',
                 'variant_id' => 14,
             ),
-            126 => 
+            78 => 
             array (
                 'attribute_name' => 'Millésime',
                 'created_at' => '2023-11-20 14:36:04',
@@ -1289,7 +809,7 @@ class OdooVariantValuesTableSeeder extends Seeder
                 'value' => '2024',
                 'variant_id' => 14,
             ),
-            127 => 
+            79 => 
             array (
                 'attribute_name' => 'Type',
                 'created_at' => '2023-11-20 14:36:04',
@@ -1299,7 +819,7 @@ class OdooVariantValuesTableSeeder extends Seeder
                 'value' => 'Neuf',
                 'variant_id' => 14,
             ),
-            128 => 
+            80 => 
             array (
                 'attribute_name' => 'Taille Wear',
                 'created_at' => '2023-11-20 14:36:04',
@@ -1309,7 +829,7 @@ class OdooVariantValuesTableSeeder extends Seeder
                 'value' => 'M',
                 'variant_id' => 14,
             ),
-            129 => 
+            81 => 
             array (
                 'attribute_name' => 'Couleur',
                 'created_at' => '2023-11-20 14:36:04',
@@ -1319,7 +839,7 @@ class OdooVariantValuesTableSeeder extends Seeder
                 'value' => 'Bleu marine',
                 'variant_id' => 14,
             ),
-            130 => 
+            82 => 
             array (
                 'attribute_name' => NULL,
                 'created_at' => '2023-11-20 14:36:04',
@@ -1329,7 +849,7 @@ class OdooVariantValuesTableSeeder extends Seeder
                 'value' => 'MVT457_C_01_S',
                 'variant_id' => 15,
             ),
-            131 => 
+            83 => 
             array (
                 'attribute_name' => NULL,
                 'created_at' => '2023-11-20 14:36:04',
@@ -1339,7 +859,7 @@ class OdooVariantValuesTableSeeder extends Seeder
                 'value' => '714578589766',
                 'variant_id' => 15,
             ),
-            132 => 
+            84 => 
             array (
                 'attribute_name' => NULL,
                 'created_at' => '2023-11-20 14:36:04',
@@ -1349,7 +869,7 @@ class OdooVariantValuesTableSeeder extends Seeder
                 'value' => '2.1',
                 'variant_id' => 15,
             ),
-            133 => 
+            85 => 
             array (
                 'attribute_name' => NULL,
                 'created_at' => '2023-11-20 14:36:04',
@@ -1359,7 +879,7 @@ class OdooVariantValuesTableSeeder extends Seeder
                 'value' => '0',
                 'variant_id' => 15,
             ),
-            134 => 
+            86 => 
             array (
                 'attribute_name' => 'Marque',
                 'created_at' => '2023-11-20 14:36:04',
@@ -1369,7 +889,7 @@ class OdooVariantValuesTableSeeder extends Seeder
                 'value' => 'picture',
                 'variant_id' => 15,
             ),
-            135 => 
+            87 => 
             array (
                 'attribute_name' => 'Millésime',
                 'created_at' => '2023-11-20 14:36:04',
@@ -1379,7 +899,7 @@ class OdooVariantValuesTableSeeder extends Seeder
                 'value' => '2024',
                 'variant_id' => 15,
             ),
-            136 => 
+            88 => 
             array (
                 'attribute_name' => 'Type',
                 'created_at' => '2023-11-20 14:36:04',
@@ -1389,7 +909,7 @@ class OdooVariantValuesTableSeeder extends Seeder
                 'value' => 'Neuf',
                 'variant_id' => 15,
             ),
-            137 => 
+            89 => 
             array (
                 'attribute_name' => 'Taille Wear',
                 'created_at' => '2023-11-20 14:36:04',
@@ -1399,7 +919,7 @@ class OdooVariantValuesTableSeeder extends Seeder
                 'value' => 'L',
                 'variant_id' => 15,
             ),
-            138 => 
+            90 => 
             array (
                 'attribute_name' => 'Couleur',
                 'created_at' => '2023-11-20 14:36:04',
@@ -1409,7 +929,7 @@ class OdooVariantValuesTableSeeder extends Seeder
                 'value' => 'Bleu marine',
                 'variant_id' => 15,
             ),
-            139 => 
+            91 => 
             array (
                 'attribute_name' => NULL,
                 'created_at' => '2023-11-20 14:36:04',
@@ -1419,7 +939,7 @@ class OdooVariantValuesTableSeeder extends Seeder
                 'value' => 'MVT457_C_01_S',
                 'variant_id' => 16,
             ),
-            140 => 
+            92 => 
             array (
                 'attribute_name' => NULL,
                 'created_at' => '2023-11-20 14:36:04',
@@ -1429,7 +949,7 @@ class OdooVariantValuesTableSeeder extends Seeder
                 'value' => '714578589767',
                 'variant_id' => 16,
             ),
-            141 => 
+            93 => 
             array (
                 'attribute_name' => NULL,
                 'created_at' => '2023-11-20 14:36:04',
@@ -1439,7 +959,7 @@ class OdooVariantValuesTableSeeder extends Seeder
                 'value' => '2.1',
                 'variant_id' => 16,
             ),
-            142 => 
+            94 => 
             array (
                 'attribute_name' => NULL,
                 'created_at' => '2023-11-20 14:36:04',
@@ -1449,7 +969,7 @@ class OdooVariantValuesTableSeeder extends Seeder
                 'value' => '0',
                 'variant_id' => 16,
             ),
-            143 => 
+            95 => 
             array (
                 'attribute_name' => 'Marque',
                 'created_at' => '2023-11-20 14:36:04',
@@ -1459,7 +979,7 @@ class OdooVariantValuesTableSeeder extends Seeder
                 'value' => 'picture',
                 'variant_id' => 16,
             ),
-            144 => 
+            96 => 
             array (
                 'attribute_name' => 'Millésime',
                 'created_at' => '2023-11-20 14:36:04',
@@ -1469,7 +989,7 @@ class OdooVariantValuesTableSeeder extends Seeder
                 'value' => '2024',
                 'variant_id' => 16,
             ),
-            145 => 
+            97 => 
             array (
                 'attribute_name' => 'Type',
                 'created_at' => '2023-11-20 14:36:04',
@@ -1479,7 +999,7 @@ class OdooVariantValuesTableSeeder extends Seeder
                 'value' => 'Neuf',
                 'variant_id' => 16,
             ),
-            146 => 
+            98 => 
             array (
                 'attribute_name' => 'Taille Wear',
                 'created_at' => '2023-11-20 14:36:04',
@@ -1489,7 +1009,7 @@ class OdooVariantValuesTableSeeder extends Seeder
                 'value' => 'XL',
                 'variant_id' => 16,
             ),
-            147 => 
+            99 => 
             array (
                 'attribute_name' => 'Couleur',
                 'created_at' => '2023-11-20 14:36:04',
@@ -1499,7 +1019,7 @@ class OdooVariantValuesTableSeeder extends Seeder
                 'value' => 'Bleu marine',
                 'variant_id' => 16,
             ),
-            148 => 
+            100 => 
             array (
                 'attribute_name' => NULL,
                 'created_at' => '2023-11-20 14:36:23',
@@ -1509,7 +1029,7 @@ class OdooVariantValuesTableSeeder extends Seeder
                 'value' => '0.12',
                 'variant_id' => 17,
             ),
-            149 => 
+            101 => 
             array (
                 'attribute_name' => NULL,
                 'created_at' => '2023-11-20 14:36:23',
@@ -1519,7 +1039,7 @@ class OdooVariantValuesTableSeeder extends Seeder
                 'value' => '0',
                 'variant_id' => 17,
             ),
-            150 => 
+            102 => 
             array (
                 'attribute_name' => 'Marque',
                 'created_at' => '2023-11-20 14:36:23',
@@ -1529,7 +1049,7 @@ class OdooVariantValuesTableSeeder extends Seeder
                 'value' => 'vola',
                 'variant_id' => 17,
             ),
-            151 => 
+            103 => 
             array (
                 'attribute_name' => 'Type',
                 'created_at' => '2023-11-20 14:36:23',
@@ -1538,6 +1058,486 @@ class OdooVariantValuesTableSeeder extends Seeder
                 'updated_at' => '2023-11-20 14:36:23',
                 'value' => 'Neuf',
                 'variant_id' => 17,
+            ),
+            104 => 
+            array (
+                'attribute_name' => NULL,
+                'created_at' => '2023-11-20 15:10:16',
+                'id' => 1281,
+                'odoo_model_id' => 16,
+                'updated_at' => '2023-11-20 15:10:16',
+                'value' => '42400-28154-37',
+                'variant_id' => 1,
+            ),
+            105 => 
+            array (
+                'attribute_name' => NULL,
+                'created_at' => '2023-11-20 15:10:16',
+                'id' => 1282,
+                'odoo_model_id' => 17,
+                'updated_at' => '2023-11-20 15:10:16',
+                'value' => '914578541121',
+                'variant_id' => 1,
+            ),
+            106 => 
+            array (
+                'attribute_name' => NULL,
+                'created_at' => '2023-11-20 15:10:16',
+                'id' => 1283,
+                'odoo_model_id' => 20,
+                'updated_at' => '2023-11-20 15:10:16',
+                'value' => '742.56',
+                'variant_id' => 1,
+            ),
+            107 => 
+            array (
+                'attribute_name' => NULL,
+                'created_at' => '2023-11-20 15:10:16',
+                'id' => 1284,
+                'odoo_model_id' => 18,
+                'updated_at' => '2023-11-20 15:10:16',
+                'value' => 'Boards & More gmbh',
+                'variant_id' => 1,
+            ),
+            108 => 
+            array (
+                'attribute_name' => NULL,
+                'created_at' => '2023-11-20 15:10:16',
+                'id' => 1285,
+                'odoo_model_id' => 21,
+                'updated_at' => '2023-11-20 15:10:16',
+                'value' => '824.99166666667',
+                'variant_id' => 1,
+            ),
+            109 => 
+            array (
+                'attribute_name' => NULL,
+                'created_at' => '2023-11-20 15:10:16',
+                'id' => 1286,
+                'odoo_model_id' => 23,
+                'updated_at' => '2023-11-20 15:10:16',
+                'value' => '4.8',
+                'variant_id' => 1,
+            ),
+            110 => 
+            array (
+                'attribute_name' => NULL,
+                'created_at' => '2023-11-20 15:10:16',
+                'id' => 1287,
+                'odoo_model_id' => 24,
+                'updated_at' => '2023-11-20 15:10:16',
+                'value' => '0',
+                'variant_id' => 1,
+            ),
+            111 => 
+            array (
+                'attribute_name' => 'Marque',
+                'created_at' => '2023-11-20 15:10:16',
+                'id' => 1288,
+                'odoo_model_id' => 27,
+                'updated_at' => '2023-11-20 15:10:16',
+                'value' => 'duotone',
+                'variant_id' => 1,
+            ),
+            112 => 
+            array (
+                'attribute_name' => 'Millésime',
+                'created_at' => '2023-11-20 15:10:16',
+                'id' => 1289,
+                'odoo_model_id' => 27,
+                'updated_at' => '2023-11-20 15:10:16',
+                'value' => '2024',
+                'variant_id' => 1,
+            ),
+            113 => 
+            array (
+                'attribute_name' => 'Type',
+                'created_at' => '2023-11-20 15:10:16',
+                'id' => 1290,
+                'odoo_model_id' => 27,
+                'updated_at' => '2023-11-20 15:10:16',
+                'value' => 'Neuf',
+                'variant_id' => 1,
+            ),
+            114 => 
+            array (
+            'attribute_name' => 'Surface (m2)',
+                'created_at' => '2023-11-20 15:10:16',
+                'id' => 1291,
+                'odoo_model_id' => 27,
+                'updated_at' => '2023-11-20 15:10:16',
+                'value' => '3.7',
+                'variant_id' => 1,
+            ),
+            115 => 
+            array (
+                'attribute_name' => NULL,
+                'created_at' => '2023-11-20 15:10:16',
+                'id' => 1292,
+                'odoo_model_id' => 16,
+                'updated_at' => '2023-11-20 15:10:16',
+                'value' => '42400-28154-42',
+                'variant_id' => 2,
+            ),
+            116 => 
+            array (
+                'attribute_name' => NULL,
+                'created_at' => '2023-11-20 15:10:16',
+                'id' => 1293,
+                'odoo_model_id' => 17,
+                'updated_at' => '2023-11-20 15:10:16',
+                'value' => '914578541122',
+                'variant_id' => 2,
+            ),
+            117 => 
+            array (
+                'attribute_name' => NULL,
+                'created_at' => '2023-11-20 15:10:16',
+                'id' => 1294,
+                'odoo_model_id' => 20,
+                'updated_at' => '2023-11-20 15:10:16',
+                'value' => '752.56',
+                'variant_id' => 2,
+            ),
+            118 => 
+            array (
+                'attribute_name' => NULL,
+                'created_at' => '2023-11-20 15:10:16',
+                'id' => 1295,
+                'odoo_model_id' => 18,
+                'updated_at' => '2023-11-20 15:10:16',
+                'value' => 'Boards & More gmbh',
+                'variant_id' => 2,
+            ),
+            119 => 
+            array (
+                'attribute_name' => NULL,
+                'created_at' => '2023-11-20 15:10:16',
+                'id' => 1296,
+                'odoo_model_id' => 21,
+                'updated_at' => '2023-11-20 15:10:16',
+                'value' => '838.325',
+                'variant_id' => 2,
+            ),
+            120 => 
+            array (
+                'attribute_name' => NULL,
+                'created_at' => '2023-11-20 15:10:16',
+                'id' => 1297,
+                'odoo_model_id' => 23,
+                'updated_at' => '2023-11-20 15:10:16',
+                'value' => '4.9',
+                'variant_id' => 2,
+            ),
+            121 => 
+            array (
+                'attribute_name' => NULL,
+                'created_at' => '2023-11-20 15:10:16',
+                'id' => 1298,
+                'odoo_model_id' => 24,
+                'updated_at' => '2023-11-20 15:10:16',
+                'value' => '0',
+                'variant_id' => 2,
+            ),
+            122 => 
+            array (
+                'attribute_name' => 'Marque',
+                'created_at' => '2023-11-20 15:10:16',
+                'id' => 1299,
+                'odoo_model_id' => 27,
+                'updated_at' => '2023-11-20 15:10:16',
+                'value' => 'duotone',
+                'variant_id' => 2,
+            ),
+            123 => 
+            array (
+                'attribute_name' => 'Millésime',
+                'created_at' => '2023-11-20 15:10:16',
+                'id' => 1300,
+                'odoo_model_id' => 27,
+                'updated_at' => '2023-11-20 15:10:16',
+                'value' => '2024',
+                'variant_id' => 2,
+            ),
+            124 => 
+            array (
+                'attribute_name' => 'Type',
+                'created_at' => '2023-11-20 15:10:16',
+                'id' => 1301,
+                'odoo_model_id' => 27,
+                'updated_at' => '2023-11-20 15:10:16',
+                'value' => 'Neuf',
+                'variant_id' => 2,
+            ),
+            125 => 
+            array (
+            'attribute_name' => 'Surface (m2)',
+                'created_at' => '2023-11-20 15:10:16',
+                'id' => 1302,
+                'odoo_model_id' => 27,
+                'updated_at' => '2023-11-20 15:10:16',
+                'value' => '4.2',
+                'variant_id' => 2,
+            ),
+            126 => 
+            array (
+                'attribute_name' => NULL,
+                'created_at' => '2023-11-20 15:10:16',
+                'id' => 1303,
+                'odoo_model_id' => 16,
+                'updated_at' => '2023-11-20 15:10:16',
+                'value' => '42400-28154-47',
+                'variant_id' => 3,
+            ),
+            127 => 
+            array (
+                'attribute_name' => NULL,
+                'created_at' => '2023-11-20 15:10:16',
+                'id' => 1304,
+                'odoo_model_id' => 17,
+                'updated_at' => '2023-11-20 15:10:16',
+                'value' => '914578541123',
+                'variant_id' => 3,
+            ),
+            128 => 
+            array (
+                'attribute_name' => NULL,
+                'created_at' => '2023-11-20 15:10:16',
+                'id' => 1305,
+                'odoo_model_id' => 20,
+                'updated_at' => '2023-11-20 15:10:16',
+                'value' => '762.56',
+                'variant_id' => 3,
+            ),
+            129 => 
+            array (
+                'attribute_name' => NULL,
+                'created_at' => '2023-11-20 15:10:17',
+                'id' => 1306,
+                'odoo_model_id' => 18,
+                'updated_at' => '2023-11-20 15:10:17',
+                'value' => 'Boards & More gmbh',
+                'variant_id' => 3,
+            ),
+            130 => 
+            array (
+                'attribute_name' => NULL,
+                'created_at' => '2023-11-20 15:10:17',
+                'id' => 1307,
+                'odoo_model_id' => 21,
+                'updated_at' => '2023-11-20 15:10:17',
+                'value' => '921.65833333333',
+                'variant_id' => 3,
+            ),
+            131 => 
+            array (
+                'attribute_name' => NULL,
+                'created_at' => '2023-11-20 15:10:17',
+                'id' => 1308,
+                'odoo_model_id' => 23,
+                'updated_at' => '2023-11-20 15:10:17',
+                'value' => '5',
+                'variant_id' => 3,
+            ),
+            132 => 
+            array (
+                'attribute_name' => NULL,
+                'created_at' => '2023-11-20 15:10:17',
+                'id' => 1309,
+                'odoo_model_id' => 24,
+                'updated_at' => '2023-11-20 15:10:17',
+                'value' => '0',
+                'variant_id' => 3,
+            ),
+            133 => 
+            array (
+                'attribute_name' => 'Marque',
+                'created_at' => '2023-11-20 15:10:17',
+                'id' => 1310,
+                'odoo_model_id' => 27,
+                'updated_at' => '2023-11-20 15:10:17',
+                'value' => 'duotone',
+                'variant_id' => 3,
+            ),
+            134 => 
+            array (
+                'attribute_name' => 'Millésime',
+                'created_at' => '2023-11-20 15:10:17',
+                'id' => 1311,
+                'odoo_model_id' => 27,
+                'updated_at' => '2023-11-20 15:10:17',
+                'value' => '2024',
+                'variant_id' => 3,
+            ),
+            135 => 
+            array (
+                'attribute_name' => 'Type',
+                'created_at' => '2023-11-20 15:10:17',
+                'id' => 1312,
+                'odoo_model_id' => 27,
+                'updated_at' => '2023-11-20 15:10:17',
+                'value' => 'Neuf',
+                'variant_id' => 3,
+            ),
+            136 => 
+            array (
+            'attribute_name' => 'Surface (m2)',
+                'created_at' => '2023-11-20 15:10:17',
+                'id' => 1313,
+                'odoo_model_id' => 27,
+                'updated_at' => '2023-11-20 15:10:17',
+                'value' => '4.7',
+                'variant_id' => 3,
+            ),
+            137 => 
+            array (
+                'attribute_name' => NULL,
+                'created_at' => '2023-11-20 15:10:17',
+                'id' => 1314,
+                'odoo_model_id' => 16,
+                'updated_at' => '2023-11-20 15:10:17',
+                'value' => '42400-28154-50',
+                'variant_id' => 4,
+            ),
+            138 => 
+            array (
+                'attribute_name' => NULL,
+                'created_at' => '2023-11-20 15:10:17',
+                'id' => 1315,
+                'odoo_model_id' => 17,
+                'updated_at' => '2023-11-20 15:10:17',
+                'value' => '914578541124',
+                'variant_id' => 4,
+            ),
+            139 => 
+            array (
+                'attribute_name' => NULL,
+                'created_at' => '2023-11-20 15:10:17',
+                'id' => 1316,
+                'odoo_model_id' => 20,
+                'updated_at' => '2023-11-20 15:10:17',
+                'value' => '782.56',
+                'variant_id' => 4,
+            ),
+            140 => 
+            array (
+                'attribute_name' => NULL,
+                'created_at' => '2023-11-20 15:10:17',
+                'id' => 1317,
+                'odoo_model_id' => 18,
+                'updated_at' => '2023-11-20 15:10:17',
+                'value' => 'Boards & More gmbh',
+                'variant_id' => 4,
+            ),
+            141 => 
+            array (
+                'attribute_name' => NULL,
+                'created_at' => '2023-11-20 15:10:17',
+                'id' => 1318,
+                'odoo_model_id' => 21,
+                'updated_at' => '2023-11-20 15:10:17',
+                'value' => '1004.9916666667',
+                'variant_id' => 4,
+            ),
+            142 => 
+            array (
+                'attribute_name' => NULL,
+                'created_at' => '2023-11-20 15:10:17',
+                'id' => 1319,
+                'odoo_model_id' => 23,
+                'updated_at' => '2023-11-20 15:10:17',
+                'value' => '5.1',
+                'variant_id' => 4,
+            ),
+            143 => 
+            array (
+                'attribute_name' => NULL,
+                'created_at' => '2023-11-20 15:10:17',
+                'id' => 1320,
+                'odoo_model_id' => 24,
+                'updated_at' => '2023-11-20 15:10:17',
+                'value' => '0',
+                'variant_id' => 4,
+            ),
+            144 => 
+            array (
+                'attribute_name' => 'Marque',
+                'created_at' => '2023-11-20 15:10:17',
+                'id' => 1321,
+                'odoo_model_id' => 27,
+                'updated_at' => '2023-11-20 15:10:17',
+                'value' => 'duotone',
+                'variant_id' => 4,
+            ),
+            145 => 
+            array (
+                'attribute_name' => 'Millésime',
+                'created_at' => '2023-11-20 15:10:17',
+                'id' => 1322,
+                'odoo_model_id' => 27,
+                'updated_at' => '2023-11-20 15:10:17',
+                'value' => '2024',
+                'variant_id' => 4,
+            ),
+            146 => 
+            array (
+                'attribute_name' => 'Type',
+                'created_at' => '2023-11-20 15:10:17',
+                'id' => 1323,
+                'odoo_model_id' => 27,
+                'updated_at' => '2023-11-20 15:10:17',
+                'value' => 'Neuf',
+                'variant_id' => 4,
+            ),
+            147 => 
+            array (
+            'attribute_name' => 'Surface (m2)',
+                'created_at' => '2023-11-20 15:10:17',
+                'id' => 1324,
+                'odoo_model_id' => 27,
+                'updated_at' => '2023-11-20 15:10:17',
+                'value' => '5',
+                'variant_id' => 4,
+            ),
+            148 => 
+            array (
+                'attribute_name' => NULL,
+                'created_at' => '2023-11-20 15:10:30',
+                'id' => 1325,
+                'odoo_model_id' => 23,
+                'updated_at' => '2023-11-20 15:10:30',
+                'value' => '0.12',
+                'variant_id' => 18,
+            ),
+            149 => 
+            array (
+                'attribute_name' => NULL,
+                'created_at' => '2023-11-20 15:10:30',
+                'id' => 1326,
+                'odoo_model_id' => 24,
+                'updated_at' => '2023-11-20 15:10:30',
+                'value' => '0',
+                'variant_id' => 18,
+            ),
+            150 => 
+            array (
+                'attribute_name' => 'Marque',
+                'created_at' => '2023-11-20 15:10:30',
+                'id' => 1327,
+                'odoo_model_id' => 27,
+                'updated_at' => '2023-11-20 15:10:30',
+                'value' => 'vola',
+                'variant_id' => 18,
+            ),
+            151 => 
+            array (
+                'attribute_name' => 'Type',
+                'created_at' => '2023-11-20 15:10:31',
+                'id' => 1328,
+                'odoo_model_id' => 27,
+                'updated_at' => '2023-11-20 15:10:31',
+                'value' => 'Neuf',
+                'variant_id' => 18,
             ),
         ));
         
