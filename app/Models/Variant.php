@@ -8,6 +8,7 @@ use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Database\Eloquent\Relations\HasMany;
 use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Log;
 
 class Variant extends Model
 {
@@ -286,6 +287,14 @@ class Variant extends Model
             $valueObj = $this->variantAttributes()->where('attribute_id', $attribute->id)->first();
             if ($valueObj) {
                 $name = $valueObj->getValue();
+
+                // formatage de la surface
+                if ($attribute->name == 'var-surface-m2')
+                {
+                    $numeric_value = (float)$name;
+                    $name = number_format($numeric_value, 1, '.', '');
+                }
+
                 if (is_array($name))
                 {
                     // cas d'un attribut sur sélection
