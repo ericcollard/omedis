@@ -21,38 +21,38 @@ class ProductsTableSeeder extends Seeder
         \DB::table('products')->insert(array (
             0 => 
             array (
-                'id' => 1,
-                'user_id' => '2',
                 'created_at' => '2023-10-12 21:57:50',
+                'id' => 1,
                 'updated_at' => '2023-10-12 21:57:50',
+                'user_id' => '2',
             ),
             1 => 
             array (
-                'id' => 2,
-                'user_id' => '2',
                 'created_at' => '2023-10-12 21:57:50',
+                'id' => 2,
                 'updated_at' => '2023-10-12 21:57:50',
+                'user_id' => '2',
             ),
             2 => 
             array (
-                'id' => 3,
-                'user_id' => '2',
                 'created_at' => '2023-10-12 21:57:50',
+                'id' => 3,
                 'updated_at' => '2023-10-12 21:57:50',
+                'user_id' => '2',
             ),
             3 => 
             array (
-                'id' => 4,
-                'user_id' => '2',
                 'created_at' => '2023-10-12 21:57:51',
+                'id' => 4,
                 'updated_at' => '2023-10-12 21:57:51',
+                'user_id' => '2',
             ),
             4 => 
             array (
-                'id' => 5,
-                'user_id' => '2',
                 'created_at' => '2023-10-12 21:57:51',
+                'id' => 5,
                 'updated_at' => '2023-10-12 21:57:51',
+                'user_id' => '2',
             ),
         ));
         

@@ -151,6 +151,17 @@ class Product extends Model
             ])->save();
         }
 
+        //Marque
+        if ($brandName)
+        {
+            $odooModel = OdooModel::where('name', 'brand_name')->first();
+            $obj = OdooProductValue::create([
+                'product_id' => $this->id,
+                'odoo_model_id' => $odooModel->id,
+                'value' => ucfirst(strtolower($brandName))
+            ])->save();
+        }
+
         //Description
         $attribute = Attribute::where('name', 'description-short-fr')->first();
         $valueObj = $first_variant->variantAttributes()->where('attribute_id',$attribute->id)->first();
