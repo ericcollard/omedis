@@ -1181,503 +1181,503 @@ class OdooVariantValuesTableSeeder extends Seeder
             ),
             116 => 
             array (
-                'id' => 161,
-                'variant_id' => 18,
-                'odoo_model_id' => 23,
-                'value' => '0.12',
-                'attribute_name' => NULL,
-                'created_at' => '2023-11-23 12:11:01',
-                'updated_at' => '2023-11-23 12:11:01',
-            ),
-            117 => 
-            array (
-                'id' => 162,
-                'variant_id' => 18,
-                'odoo_model_id' => 24,
-                'value' => '0',
-                'attribute_name' => NULL,
-                'created_at' => '2023-11-23 12:11:01',
-                'updated_at' => '2023-11-23 12:11:01',
-            ),
-            118 => 
-            array (
-                'id' => 163,
-                'variant_id' => 18,
-                'odoo_model_id' => 27,
-                'value' => 'vola',
-                'attribute_name' => 'Marque',
-                'created_at' => '2023-11-23 12:11:02',
-                'updated_at' => '2023-11-23 12:11:02',
-            ),
-            119 => 
-            array (
-                'id' => 164,
-                'variant_id' => 18,
-                'odoo_model_id' => 27,
-                'value' => 'Neuf',
-                'attribute_name' => 'Type',
-                'created_at' => '2023-11-23 12:11:02',
-                'updated_at' => '2023-11-23 12:11:02',
-            ),
-            120 => 
-            array (
-                'id' => 165,
+                'id' => 211,
                 'variant_id' => 1,
                 'odoo_model_id' => 16,
                 'value' => '42400-28154-37',
                 'attribute_name' => NULL,
-                'created_at' => '2023-11-23 12:54:12',
-                'updated_at' => '2023-11-23 12:54:12',
+                'created_at' => '2023-11-23 13:15:39',
+                'updated_at' => '2023-11-23 13:15:39',
             ),
-            121 => 
+            117 => 
             array (
-                'id' => 166,
+                'id' => 212,
                 'variant_id' => 1,
                 'odoo_model_id' => 17,
                 'value' => '914578541121',
                 'attribute_name' => NULL,
-                'created_at' => '2023-11-23 12:54:12',
-                'updated_at' => '2023-11-23 12:54:12',
+                'created_at' => '2023-11-23 13:15:39',
+                'updated_at' => '2023-11-23 13:15:39',
             ),
-            122 => 
+            118 => 
             array (
-                'id' => 167,
+                'id' => 213,
                 'variant_id' => 1,
                 'odoo_model_id' => 20,
                 'value' => '742.56',
                 'attribute_name' => NULL,
-                'created_at' => '2023-11-23 12:54:12',
-                'updated_at' => '2023-11-23 12:54:12',
+                'created_at' => '2023-11-23 13:15:39',
+                'updated_at' => '2023-11-23 13:15:39',
             ),
-            123 => 
+            119 => 
             array (
-                'id' => 168,
+                'id' => 214,
                 'variant_id' => 1,
                 'odoo_model_id' => 19,
                 'value' => '742.56',
                 'attribute_name' => NULL,
-                'created_at' => '2023-11-23 12:54:12',
-                'updated_at' => '2023-11-23 12:54:12',
+                'created_at' => '2023-11-23 13:15:39',
+                'updated_at' => '2023-11-23 13:15:39',
             ),
-            124 => 
+            120 => 
             array (
-                'id' => 169,
+                'id' => 215,
                 'variant_id' => 1,
                 'odoo_model_id' => 21,
                 'value' => '824.99166666667',
                 'attribute_name' => NULL,
-                'created_at' => '2023-11-23 12:54:12',
-                'updated_at' => '2023-11-23 12:54:12',
+                'created_at' => '2023-11-23 13:15:39',
+                'updated_at' => '2023-11-23 13:15:39',
             ),
-            125 => 
+            121 => 
             array (
-                'id' => 170,
+                'id' => 216,
                 'variant_id' => 1,
                 'odoo_model_id' => 23,
                 'value' => '4.8',
                 'attribute_name' => NULL,
-                'created_at' => '2023-11-23 12:54:12',
-                'updated_at' => '2023-11-23 12:54:12',
+                'created_at' => '2023-11-23 13:15:39',
+                'updated_at' => '2023-11-23 13:15:39',
             ),
-            126 => 
+            122 => 
             array (
-                'id' => 171,
+                'id' => 217,
                 'variant_id' => 1,
                 'odoo_model_id' => 24,
                 'value' => '0',
                 'attribute_name' => NULL,
-                'created_at' => '2023-11-23 12:54:12',
-                'updated_at' => '2023-11-23 12:54:12',
+                'created_at' => '2023-11-23 13:15:39',
+                'updated_at' => '2023-11-23 13:15:39',
             ),
-            127 => 
+            123 => 
             array (
-                'id' => 172,
+                'id' => 218,
                 'variant_id' => 1,
                 'odoo_model_id' => 27,
                 'value' => 'duotone',
                 'attribute_name' => 'Marque',
-                'created_at' => '2023-11-23 12:54:12',
-                'updated_at' => '2023-11-23 12:54:12',
+                'created_at' => '2023-11-23 13:15:39',
+                'updated_at' => '2023-11-23 13:15:39',
             ),
-            128 => 
+            124 => 
             array (
-                'id' => 173,
+                'id' => 219,
                 'variant_id' => 1,
                 'odoo_model_id' => 27,
                 'value' => '2024',
                 'attribute_name' => 'Millésime',
-                'created_at' => '2023-11-23 12:54:12',
-                'updated_at' => '2023-11-23 12:54:12',
+                'created_at' => '2023-11-23 13:15:39',
+                'updated_at' => '2023-11-23 13:15:39',
             ),
-            129 => 
+            125 => 
             array (
-                'id' => 174,
+                'id' => 220,
                 'variant_id' => 1,
                 'odoo_model_id' => 27,
                 'value' => 'Neuf',
                 'attribute_name' => 'Type',
-                'created_at' => '2023-11-23 12:54:12',
-                'updated_at' => '2023-11-23 12:54:12',
+                'created_at' => '2023-11-23 13:15:39',
+                'updated_at' => '2023-11-23 13:15:39',
             ),
-            130 => 
+            126 => 
             array (
-                'id' => 175,
+                'id' => 221,
                 'variant_id' => 1,
                 'odoo_model_id' => 27,
                 'value' => '3.7',
             'attribute_name' => 'Surface (m2)',
-                'created_at' => '2023-11-23 12:54:12',
-                'updated_at' => '2023-11-23 12:54:12',
+                'created_at' => '2023-11-23 13:15:39',
+                'updated_at' => '2023-11-23 13:15:39',
             ),
-            131 => 
+            127 => 
             array (
-                'id' => 176,
+                'id' => 222,
                 'variant_id' => 2,
                 'odoo_model_id' => 16,
                 'value' => '42400-28154-42',
                 'attribute_name' => NULL,
-                'created_at' => '2023-11-23 12:54:12',
-                'updated_at' => '2023-11-23 12:54:12',
+                'created_at' => '2023-11-23 13:15:39',
+                'updated_at' => '2023-11-23 13:15:39',
             ),
-            132 => 
+            128 => 
             array (
-                'id' => 177,
+                'id' => 223,
                 'variant_id' => 2,
                 'odoo_model_id' => 17,
                 'value' => '914578541122',
                 'attribute_name' => NULL,
-                'created_at' => '2023-11-23 12:54:12',
-                'updated_at' => '2023-11-23 12:54:12',
+                'created_at' => '2023-11-23 13:15:39',
+                'updated_at' => '2023-11-23 13:15:39',
             ),
-            133 => 
+            129 => 
             array (
-                'id' => 178,
+                'id' => 224,
                 'variant_id' => 2,
                 'odoo_model_id' => 20,
                 'value' => '752.56',
                 'attribute_name' => NULL,
-                'created_at' => '2023-11-23 12:54:12',
-                'updated_at' => '2023-11-23 12:54:12',
+                'created_at' => '2023-11-23 13:15:39',
+                'updated_at' => '2023-11-23 13:15:39',
             ),
-            134 => 
+            130 => 
             array (
-                'id' => 179,
+                'id' => 225,
                 'variant_id' => 2,
                 'odoo_model_id' => 19,
                 'value' => '752.56',
                 'attribute_name' => NULL,
-                'created_at' => '2023-11-23 12:54:12',
-                'updated_at' => '2023-11-23 12:54:12',
+                'created_at' => '2023-11-23 13:15:39',
+                'updated_at' => '2023-11-23 13:15:39',
             ),
-            135 => 
+            131 => 
             array (
-                'id' => 180,
+                'id' => 226,
                 'variant_id' => 2,
                 'odoo_model_id' => 22,
                 'value' => '586.575',
                 'attribute_name' => NULL,
-                'created_at' => '2023-11-23 12:54:12',
-                'updated_at' => '2023-11-23 12:54:12',
+                'created_at' => '2023-11-23 13:15:39',
+                'updated_at' => '2023-11-23 13:15:39',
             ),
-            136 => 
+            132 => 
             array (
-                'id' => 181,
+                'id' => 227,
                 'variant_id' => 2,
                 'odoo_model_id' => 21,
                 'value' => '838.325',
                 'attribute_name' => NULL,
-                'created_at' => '2023-11-23 12:54:12',
-                'updated_at' => '2023-11-23 12:54:12',
+                'created_at' => '2023-11-23 13:15:39',
+                'updated_at' => '2023-11-23 13:15:39',
             ),
-            137 => 
+            133 => 
             array (
-                'id' => 182,
+                'id' => 228,
                 'variant_id' => 2,
                 'odoo_model_id' => 23,
                 'value' => '4.9',
                 'attribute_name' => NULL,
-                'created_at' => '2023-11-23 12:54:12',
-                'updated_at' => '2023-11-23 12:54:12',
+                'created_at' => '2023-11-23 13:15:39',
+                'updated_at' => '2023-11-23 13:15:39',
             ),
-            138 => 
+            134 => 
             array (
-                'id' => 183,
+                'id' => 229,
                 'variant_id' => 2,
                 'odoo_model_id' => 24,
                 'value' => '0',
                 'attribute_name' => NULL,
-                'created_at' => '2023-11-23 12:54:12',
-                'updated_at' => '2023-11-23 12:54:12',
+                'created_at' => '2023-11-23 13:15:39',
+                'updated_at' => '2023-11-23 13:15:39',
             ),
-            139 => 
+            135 => 
             array (
-                'id' => 184,
+                'id' => 230,
                 'variant_id' => 2,
                 'odoo_model_id' => 27,
                 'value' => 'duotone',
                 'attribute_name' => 'Marque',
-                'created_at' => '2023-11-23 12:54:12',
-                'updated_at' => '2023-11-23 12:54:12',
+                'created_at' => '2023-11-23 13:15:39',
+                'updated_at' => '2023-11-23 13:15:39',
             ),
-            140 => 
+            136 => 
             array (
-                'id' => 185,
+                'id' => 231,
                 'variant_id' => 2,
                 'odoo_model_id' => 27,
                 'value' => '2024',
                 'attribute_name' => 'Millésime',
-                'created_at' => '2023-11-23 12:54:12',
-                'updated_at' => '2023-11-23 12:54:12',
+                'created_at' => '2023-11-23 13:15:39',
+                'updated_at' => '2023-11-23 13:15:39',
             ),
-            141 => 
+            137 => 
             array (
-                'id' => 186,
+                'id' => 232,
                 'variant_id' => 2,
                 'odoo_model_id' => 27,
                 'value' => 'Neuf',
                 'attribute_name' => 'Type',
-                'created_at' => '2023-11-23 12:54:12',
-                'updated_at' => '2023-11-23 12:54:12',
+                'created_at' => '2023-11-23 13:15:39',
+                'updated_at' => '2023-11-23 13:15:39',
             ),
-            142 => 
+            138 => 
             array (
-                'id' => 187,
+                'id' => 233,
                 'variant_id' => 2,
                 'odoo_model_id' => 27,
                 'value' => '4.2',
             'attribute_name' => 'Surface (m2)',
-                'created_at' => '2023-11-23 12:54:12',
-                'updated_at' => '2023-11-23 12:54:12',
+                'created_at' => '2023-11-23 13:15:39',
+                'updated_at' => '2023-11-23 13:15:39',
             ),
-            143 => 
+            139 => 
             array (
-                'id' => 188,
+                'id' => 234,
                 'variant_id' => 3,
                 'odoo_model_id' => 16,
                 'value' => '42400-28154-47',
                 'attribute_name' => NULL,
-                'created_at' => '2023-11-23 12:54:12',
-                'updated_at' => '2023-11-23 12:54:12',
+                'created_at' => '2023-11-23 13:15:39',
+                'updated_at' => '2023-11-23 13:15:39',
             ),
-            144 => 
+            140 => 
             array (
-                'id' => 189,
+                'id' => 235,
                 'variant_id' => 3,
                 'odoo_model_id' => 17,
                 'value' => '914578541123',
                 'attribute_name' => NULL,
-                'created_at' => '2023-11-23 12:54:12',
-                'updated_at' => '2023-11-23 12:54:12',
+                'created_at' => '2023-11-23 13:15:39',
+                'updated_at' => '2023-11-23 13:15:39',
             ),
-            145 => 
+            141 => 
             array (
-                'id' => 190,
+                'id' => 236,
                 'variant_id' => 3,
                 'odoo_model_id' => 20,
                 'value' => '762.56',
                 'attribute_name' => NULL,
-                'created_at' => '2023-11-23 12:54:12',
-                'updated_at' => '2023-11-23 12:54:12',
+                'created_at' => '2023-11-23 13:15:39',
+                'updated_at' => '2023-11-23 13:15:39',
             ),
-            146 => 
+            142 => 
             array (
-                'id' => 191,
+                'id' => 237,
                 'variant_id' => 3,
                 'odoo_model_id' => 19,
                 'value' => '762.56',
                 'attribute_name' => NULL,
-                'created_at' => '2023-11-23 12:54:12',
-                'updated_at' => '2023-11-23 12:54:12',
+                'created_at' => '2023-11-23 13:15:39',
+                'updated_at' => '2023-11-23 13:15:39',
             ),
-            147 => 
+            143 => 
             array (
-                'id' => 192,
+                'id' => 238,
                 'variant_id' => 3,
                 'odoo_model_id' => 22,
                 'value' => '645.15833333333',
                 'attribute_name' => NULL,
-                'created_at' => '2023-11-23 12:54:12',
-                'updated_at' => '2023-11-23 12:54:12',
+                'created_at' => '2023-11-23 13:15:39',
+                'updated_at' => '2023-11-23 13:15:39',
             ),
-            148 => 
+            144 => 
             array (
-                'id' => 193,
+                'id' => 239,
                 'variant_id' => 3,
                 'odoo_model_id' => 21,
                 'value' => '921.65833333333',
                 'attribute_name' => NULL,
-                'created_at' => '2023-11-23 12:54:12',
-                'updated_at' => '2023-11-23 12:54:12',
+                'created_at' => '2023-11-23 13:15:39',
+                'updated_at' => '2023-11-23 13:15:39',
             ),
-            149 => 
+            145 => 
             array (
-                'id' => 194,
+                'id' => 240,
                 'variant_id' => 3,
                 'odoo_model_id' => 23,
                 'value' => '5',
                 'attribute_name' => NULL,
-                'created_at' => '2023-11-23 12:54:12',
-                'updated_at' => '2023-11-23 12:54:12',
+                'created_at' => '2023-11-23 13:15:39',
+                'updated_at' => '2023-11-23 13:15:39',
             ),
-            150 => 
+            146 => 
             array (
-                'id' => 195,
+                'id' => 241,
                 'variant_id' => 3,
                 'odoo_model_id' => 24,
                 'value' => '0',
                 'attribute_name' => NULL,
-                'created_at' => '2023-11-23 12:54:12',
-                'updated_at' => '2023-11-23 12:54:12',
+                'created_at' => '2023-11-23 13:15:39',
+                'updated_at' => '2023-11-23 13:15:39',
             ),
-            151 => 
+            147 => 
             array (
-                'id' => 196,
+                'id' => 242,
                 'variant_id' => 3,
                 'odoo_model_id' => 27,
                 'value' => 'duotone',
                 'attribute_name' => 'Marque',
-                'created_at' => '2023-11-23 12:54:13',
-                'updated_at' => '2023-11-23 12:54:13',
+                'created_at' => '2023-11-23 13:15:39',
+                'updated_at' => '2023-11-23 13:15:39',
             ),
-            152 => 
+            148 => 
             array (
-                'id' => 197,
+                'id' => 243,
                 'variant_id' => 3,
                 'odoo_model_id' => 27,
                 'value' => '2024',
                 'attribute_name' => 'Millésime',
-                'created_at' => '2023-11-23 12:54:13',
-                'updated_at' => '2023-11-23 12:54:13',
+                'created_at' => '2023-11-23 13:15:39',
+                'updated_at' => '2023-11-23 13:15:39',
             ),
-            153 => 
+            149 => 
             array (
-                'id' => 198,
+                'id' => 244,
                 'variant_id' => 3,
                 'odoo_model_id' => 27,
                 'value' => 'Neuf',
                 'attribute_name' => 'Type',
-                'created_at' => '2023-11-23 12:54:13',
-                'updated_at' => '2023-11-23 12:54:13',
+                'created_at' => '2023-11-23 13:15:39',
+                'updated_at' => '2023-11-23 13:15:39',
             ),
-            154 => 
+            150 => 
             array (
-                'id' => 199,
+                'id' => 245,
                 'variant_id' => 3,
                 'odoo_model_id' => 27,
                 'value' => '4.7',
             'attribute_name' => 'Surface (m2)',
-                'created_at' => '2023-11-23 12:54:13',
-                'updated_at' => '2023-11-23 12:54:13',
+                'created_at' => '2023-11-23 13:15:39',
+                'updated_at' => '2023-11-23 13:15:39',
             ),
-            155 => 
+            151 => 
             array (
-                'id' => 200,
+                'id' => 246,
                 'variant_id' => 4,
                 'odoo_model_id' => 16,
                 'value' => '42400-28154-50',
                 'attribute_name' => NULL,
-                'created_at' => '2023-11-23 12:54:13',
-                'updated_at' => '2023-11-23 12:54:13',
+                'created_at' => '2023-11-23 13:15:39',
+                'updated_at' => '2023-11-23 13:15:39',
             ),
-            156 => 
+            152 => 
             array (
-                'id' => 201,
+                'id' => 247,
                 'variant_id' => 4,
                 'odoo_model_id' => 17,
                 'value' => '914578541124',
                 'attribute_name' => NULL,
-                'created_at' => '2023-11-23 12:54:13',
-                'updated_at' => '2023-11-23 12:54:13',
+                'created_at' => '2023-11-23 13:15:39',
+                'updated_at' => '2023-11-23 13:15:39',
             ),
-            157 => 
+            153 => 
             array (
-                'id' => 202,
+                'id' => 248,
                 'variant_id' => 4,
                 'odoo_model_id' => 20,
                 'value' => '782.56',
                 'attribute_name' => NULL,
-                'created_at' => '2023-11-23 12:54:13',
-                'updated_at' => '2023-11-23 12:54:13',
+                'created_at' => '2023-11-23 13:15:39',
+                'updated_at' => '2023-11-23 13:15:39',
             ),
-            158 => 
+            154 => 
             array (
-                'id' => 203,
+                'id' => 249,
                 'variant_id' => 4,
                 'odoo_model_id' => 19,
                 'value' => '782.56',
                 'attribute_name' => NULL,
-                'created_at' => '2023-11-23 12:54:13',
-                'updated_at' => '2023-11-23 12:54:13',
+                'created_at' => '2023-11-23 13:15:39',
+                'updated_at' => '2023-11-23 13:15:39',
             ),
-            159 => 
+            155 => 
             array (
-                'id' => 204,
+                'id' => 250,
                 'variant_id' => 4,
                 'odoo_model_id' => 21,
                 'value' => '1004.9916666667',
                 'attribute_name' => NULL,
-                'created_at' => '2023-11-23 12:54:13',
-                'updated_at' => '2023-11-23 12:54:13',
+                'created_at' => '2023-11-23 13:15:39',
+                'updated_at' => '2023-11-23 13:15:39',
             ),
-            160 => 
+            156 => 
             array (
-                'id' => 205,
+                'id' => 251,
                 'variant_id' => 4,
                 'odoo_model_id' => 23,
                 'value' => '5.1',
                 'attribute_name' => NULL,
-                'created_at' => '2023-11-23 12:54:13',
-                'updated_at' => '2023-11-23 12:54:13',
+                'created_at' => '2023-11-23 13:15:39',
+                'updated_at' => '2023-11-23 13:15:39',
             ),
-            161 => 
+            157 => 
             array (
-                'id' => 206,
+                'id' => 252,
                 'variant_id' => 4,
                 'odoo_model_id' => 24,
                 'value' => '0',
                 'attribute_name' => NULL,
-                'created_at' => '2023-11-23 12:54:13',
-                'updated_at' => '2023-11-23 12:54:13',
+                'created_at' => '2023-11-23 13:15:39',
+                'updated_at' => '2023-11-23 13:15:39',
             ),
-            162 => 
+            158 => 
             array (
-                'id' => 207,
+                'id' => 253,
                 'variant_id' => 4,
                 'odoo_model_id' => 27,
                 'value' => 'duotone',
                 'attribute_name' => 'Marque',
-                'created_at' => '2023-11-23 12:54:13',
-                'updated_at' => '2023-11-23 12:54:13',
+                'created_at' => '2023-11-23 13:15:39',
+                'updated_at' => '2023-11-23 13:15:39',
             ),
-            163 => 
+            159 => 
             array (
-                'id' => 208,
+                'id' => 254,
                 'variant_id' => 4,
                 'odoo_model_id' => 27,
                 'value' => '2024',
                 'attribute_name' => 'Millésime',
-                'created_at' => '2023-11-23 12:54:13',
-                'updated_at' => '2023-11-23 12:54:13',
+                'created_at' => '2023-11-23 13:15:39',
+                'updated_at' => '2023-11-23 13:15:39',
             ),
-            164 => 
+            160 => 
             array (
-                'id' => 209,
+                'id' => 255,
                 'variant_id' => 4,
                 'odoo_model_id' => 27,
                 'value' => 'Neuf',
                 'attribute_name' => 'Type',
-                'created_at' => '2023-11-23 12:54:13',
-                'updated_at' => '2023-11-23 12:54:13',
+                'created_at' => '2023-11-23 13:15:39',
+                'updated_at' => '2023-11-23 13:15:39',
             ),
-            165 => 
+            161 => 
             array (
-                'id' => 210,
+                'id' => 256,
                 'variant_id' => 4,
                 'odoo_model_id' => 27,
                 'value' => '5.0',
             'attribute_name' => 'Surface (m2)',
-                'created_at' => '2023-11-23 12:54:13',
-                'updated_at' => '2023-11-23 12:54:13',
+                'created_at' => '2023-11-23 13:15:39',
+                'updated_at' => '2023-11-23 13:15:39',
+            ),
+            162 => 
+            array (
+                'id' => 257,
+                'variant_id' => 18,
+                'odoo_model_id' => 23,
+                'value' => '0.12',
+                'attribute_name' => NULL,
+                'created_at' => '2023-11-23 13:16:00',
+                'updated_at' => '2023-11-23 13:16:00',
+            ),
+            163 => 
+            array (
+                'id' => 258,
+                'variant_id' => 18,
+                'odoo_model_id' => 24,
+                'value' => '0',
+                'attribute_name' => NULL,
+                'created_at' => '2023-11-23 13:16:00',
+                'updated_at' => '2023-11-23 13:16:00',
+            ),
+            164 => 
+            array (
+                'id' => 259,
+                'variant_id' => 18,
+                'odoo_model_id' => 27,
+                'value' => 'vola',
+                'attribute_name' => 'Marque',
+                'created_at' => '2023-11-23 13:16:00',
+                'updated_at' => '2023-11-23 13:16:00',
+            ),
+            165 => 
+            array (
+                'id' => 260,
+                'variant_id' => 18,
+                'odoo_model_id' => 27,
+                'value' => 'Neuf',
+                'attribute_name' => 'Type',
+                'created_at' => '2023-11-23 13:16:00',
+                'updated_at' => '2023-11-23 13:16:00',
             ),
         ));
         
