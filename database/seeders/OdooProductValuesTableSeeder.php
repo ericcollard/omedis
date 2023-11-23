@@ -25,8 +25,8 @@ class OdooProductValuesTableSeeder extends Seeder
                 'product_id' => 1,
                 'odoo_model_id' => 1,
                 'value' => 'Tous / Windsurf / Voile / Vague',
-                'created_at' => '2023-11-23 09:57:58',
-                'updated_at' => '2023-11-23 09:57:58',
+                'created_at' => '2023-11-23 12:10:32',
+                'updated_at' => '2023-11-23 12:10:32',
             ),
             1 => 
             array (
@@ -34,8 +34,8 @@ class OdooProductValuesTableSeeder extends Seeder
                 'product_id' => 1,
                 'odoo_model_id' => 4,
                 'value' => 'Duotone SUPER_HERO 2024',
-                'created_at' => '2023-11-23 09:57:58',
-                'updated_at' => '2023-11-23 09:57:58',
+                'created_at' => '2023-11-23 12:10:32',
+                'updated_at' => '2023-11-23 12:10:32',
             ),
             2 => 
             array (
@@ -43,8 +43,8 @@ class OdooProductValuesTableSeeder extends Seeder
                 'product_id' => 1,
                 'odoo_model_id' => 7,
                 'value' => 'Duotone',
-                'created_at' => '2023-11-23 09:57:58',
-                'updated_at' => '2023-11-23 09:57:58',
+                'created_at' => '2023-11-23 12:10:32',
+                'updated_at' => '2023-11-23 12:10:32',
             ),
             3 => 
             array (
@@ -52,8 +52,8 @@ class OdooProductValuesTableSeeder extends Seeder
                 'product_id' => 1,
                 'odoo_model_id' => 6,
                 'value' => 'Windsurf sail : variant dependent price',
-                'created_at' => '2023-11-23 09:57:58',
-                'updated_at' => '2023-11-23 09:57:58',
+                'created_at' => '2023-11-23 12:10:32',
+                'updated_at' => '2023-11-23 12:10:32',
             ),
             4 => 
             array (
@@ -61,8 +61,8 @@ class OdooProductValuesTableSeeder extends Seeder
                 'product_id' => 1,
                 'odoo_model_id' => 9,
                 'value' => '824.99166666667',
-                'created_at' => '2023-11-23 09:57:59',
-                'updated_at' => '2023-11-23 09:57:59',
+                'created_at' => '2023-11-23 12:10:32',
+                'updated_at' => '2023-11-23 12:10:32',
             ),
             5 => 
             array (
@@ -70,8 +70,8 @@ class OdooProductValuesTableSeeder extends Seeder
                 'product_id' => 1,
                 'odoo_model_id' => 11,
                 'value' => 'https://cdn.boards-and-more.com/system/product_picture_gallery_pictures/files/6493/5a1d/2648/b000/cc96/391c/original/DTW24_SuperHERO_Rendering_C-01_Screen_72.png',
-                'created_at' => '2023-11-23 09:57:59',
-                'updated_at' => '2023-11-23 09:57:59',
+                'created_at' => '2023-11-23 12:10:33',
+                'updated_at' => '2023-11-23 12:10:33',
             ),
             6 => 
             array (
@@ -79,8 +79,8 @@ class OdooProductValuesTableSeeder extends Seeder
                 'product_id' => 1,
                 'odoo_model_id' => 13,
                 'value' => 'Acheter',
-                'created_at' => '2023-11-23 09:57:59',
-                'updated_at' => '2023-11-23 09:57:59',
+                'created_at' => '2023-11-23 12:10:33',
+                'updated_at' => '2023-11-23 12:10:33',
             ),
             7 => 
             array (
@@ -88,8 +88,8 @@ class OdooProductValuesTableSeeder extends Seeder
                 'product_id' => 1,
                 'odoo_model_id' => 14,
                 'value' => 'ARTICLE STOCKABLE',
-                'created_at' => '2023-11-23 09:57:59',
-                'updated_at' => '2023-11-23 09:57:59',
+                'created_at' => '2023-11-23 12:10:33',
+                'updated_at' => '2023-11-23 12:10:33',
             ),
             8 => 
             array (
@@ -97,8 +97,8 @@ class OdooProductValuesTableSeeder extends Seeder
                 'product_id' => 1,
                 'odoo_model_id' => 15,
                 'value' => 'TVA 20%',
-                'created_at' => '2023-11-23 09:57:59',
-                'updated_at' => '2023-11-23 09:57:59',
+                'created_at' => '2023-11-23 12:10:33',
+                'updated_at' => '2023-11-23 12:10:33',
             ),
             9 => 
             array (
@@ -106,8 +106,8 @@ class OdooProductValuesTableSeeder extends Seeder
                 'product_id' => 2,
                 'odoo_model_id' => 1,
                 'value' => 'Tous / Kitesurf / Flotteur / Directionnel',
-                'created_at' => '2023-11-23 09:58:21',
-                'updated_at' => '2023-11-23 09:58:21',
+                'created_at' => '2023-11-23 12:10:38',
+                'updated_at' => '2023-11-23 12:10:38',
             ),
             10 => 
             array (
@@ -115,8 +115,8 @@ class OdooProductValuesTableSeeder extends Seeder
                 'product_id' => 2,
                 'odoo_model_id' => 4,
                 'value' => 'Fone MITU PRO CARBON ',
-                'created_at' => '2023-11-23 09:58:21',
-                'updated_at' => '2023-11-23 09:58:21',
+                'created_at' => '2023-11-23 12:10:38',
+                'updated_at' => '2023-11-23 12:10:38',
             ),
             11 => 
             array (
@@ -124,8 +124,8 @@ class OdooProductValuesTableSeeder extends Seeder
                 'product_id' => 2,
                 'odoo_model_id' => 7,
                 'value' => 'Fone',
-                'created_at' => '2023-11-23 09:58:21',
-                'updated_at' => '2023-11-23 09:58:21',
+                'created_at' => '2023-11-23 12:10:38',
+                'updated_at' => '2023-11-23 12:10:38',
             ),
             12 => 
             array (
@@ -133,8 +133,8 @@ class OdooProductValuesTableSeeder extends Seeder
                 'product_id' => 2,
                 'odoo_model_id' => 6,
                 'value' => 'Kite surf board : variant independant price',
-                'created_at' => '2023-11-23 09:58:21',
-                'updated_at' => '2023-11-23 09:58:21',
+                'created_at' => '2023-11-23 12:10:38',
+                'updated_at' => '2023-11-23 12:10:38',
             ),
             13 => 
             array (
@@ -142,8 +142,8 @@ class OdooProductValuesTableSeeder extends Seeder
                 'product_id' => 2,
                 'odoo_model_id' => 8,
                 'value' => '890.12',
-                'created_at' => '2023-11-23 09:58:21',
-                'updated_at' => '2023-11-23 09:58:21',
+                'created_at' => '2023-11-23 12:10:38',
+                'updated_at' => '2023-11-23 12:10:38',
             ),
             14 => 
             array (
@@ -151,8 +151,8 @@ class OdooProductValuesTableSeeder extends Seeder
                 'product_id' => 2,
                 'odoo_model_id' => 9,
                 'value' => '1416.6583333333',
-                'created_at' => '2023-11-23 09:58:21',
-                'updated_at' => '2023-11-23 09:58:21',
+                'created_at' => '2023-11-23 12:10:38',
+                'updated_at' => '2023-11-23 12:10:38',
             ),
             15 => 
             array (
@@ -160,8 +160,8 @@ class OdooProductValuesTableSeeder extends Seeder
                 'product_id' => 2,
                 'odoo_model_id' => 11,
                 'value' => 'https://fr.f-one.world/app/uploads/2023/08/mitu-pro-carbon-4-1280x1280.png',
-                'created_at' => '2023-11-23 09:58:21',
-                'updated_at' => '2023-11-23 09:58:21',
+                'created_at' => '2023-11-23 12:10:38',
+                'updated_at' => '2023-11-23 12:10:38',
             ),
             16 => 
             array (
@@ -169,8 +169,8 @@ class OdooProductValuesTableSeeder extends Seeder
                 'product_id' => 2,
                 'odoo_model_id' => 13,
                 'value' => 'Acheter',
-                'created_at' => '2023-11-23 09:58:21',
-                'updated_at' => '2023-11-23 09:58:21',
+                'created_at' => '2023-11-23 12:10:38',
+                'updated_at' => '2023-11-23 12:10:38',
             ),
             17 => 
             array (
@@ -178,8 +178,8 @@ class OdooProductValuesTableSeeder extends Seeder
                 'product_id' => 2,
                 'odoo_model_id' => 14,
                 'value' => 'ARTICLE STOCKABLE',
-                'created_at' => '2023-11-23 09:58:21',
-                'updated_at' => '2023-11-23 09:58:21',
+                'created_at' => '2023-11-23 12:10:38',
+                'updated_at' => '2023-11-23 12:10:38',
             ),
             18 => 
             array (
@@ -187,8 +187,8 @@ class OdooProductValuesTableSeeder extends Seeder
                 'product_id' => 2,
                 'odoo_model_id' => 15,
                 'value' => 'TVA 20%',
-                'created_at' => '2023-11-23 09:58:21',
-                'updated_at' => '2023-11-23 09:58:21',
+                'created_at' => '2023-11-23 12:10:38',
+                'updated_at' => '2023-11-23 12:10:38',
             ),
             19 => 
             array (
@@ -196,8 +196,8 @@ class OdooProductValuesTableSeeder extends Seeder
                 'product_id' => 3,
                 'odoo_model_id' => 1,
                 'value' => 'Tous / Equipement / Vêtements / Technique / Veste / Homme',
-                'created_at' => '2023-11-23 09:58:46',
-                'updated_at' => '2023-11-23 09:58:46',
+                'created_at' => '2023-11-23 12:10:49',
+                'updated_at' => '2023-11-23 12:10:49',
             ),
             20 => 
             array (
@@ -205,8 +205,8 @@ class OdooProductValuesTableSeeder extends Seeder
                 'product_id' => 3,
                 'odoo_model_id' => 4,
                 'value' => 'Picture NAIKOON JKT 2024',
-                'created_at' => '2023-11-23 09:58:46',
-                'updated_at' => '2023-11-23 09:58:46',
+                'created_at' => '2023-11-23 12:10:49',
+                'updated_at' => '2023-11-23 12:10:49',
             ),
             21 => 
             array (
@@ -214,8 +214,8 @@ class OdooProductValuesTableSeeder extends Seeder
                 'product_id' => 3,
                 'odoo_model_id' => 7,
                 'value' => 'Picture',
-                'created_at' => '2023-11-23 09:58:46',
-                'updated_at' => '2023-11-23 09:58:46',
+                'created_at' => '2023-11-23 12:10:49',
+                'updated_at' => '2023-11-23 12:10:49',
             ),
             22 => 
             array (
@@ -223,8 +223,8 @@ class OdooProductValuesTableSeeder extends Seeder
                 'product_id' => 3,
                 'odoo_model_id' => 6,
             'value' => 'Snowboard Jkt: double variant index (color + size)',
-                'created_at' => '2023-11-23 09:58:46',
-                'updated_at' => '2023-11-23 09:58:46',
+                'created_at' => '2023-11-23 12:10:49',
+                'updated_at' => '2023-11-23 12:10:49',
             ),
             23 => 
             array (
@@ -232,8 +232,8 @@ class OdooProductValuesTableSeeder extends Seeder
                 'product_id' => 3,
                 'odoo_model_id' => 8,
                 'value' => '190.42',
-                'created_at' => '2023-11-23 09:58:46',
-                'updated_at' => '2023-11-23 09:58:46',
+                'created_at' => '2023-11-23 12:10:49',
+                'updated_at' => '2023-11-23 12:10:49',
             ),
             24 => 
             array (
@@ -241,8 +241,8 @@ class OdooProductValuesTableSeeder extends Seeder
                 'product_id' => 3,
                 'odoo_model_id' => 9,
                 'value' => '333.33333333333',
-                'created_at' => '2023-11-23 09:58:46',
-                'updated_at' => '2023-11-23 09:58:46',
+                'created_at' => '2023-11-23 12:10:49',
+                'updated_at' => '2023-11-23 12:10:49',
             ),
             25 => 
             array (
@@ -250,8 +250,8 @@ class OdooProductValuesTableSeeder extends Seeder
                 'product_id' => 3,
                 'odoo_model_id' => 11,
                 'value' => 'https://www.picture-organic-clothing.com/dw/image/v2/BGFP_PRD/on/demandware.static/-/Sites-poc-master-catalog/default/dw311e7a10/images/recadre/MVT457_D_01.jpg',
-                'created_at' => '2023-11-23 09:58:46',
-                'updated_at' => '2023-11-23 09:58:46',
+                'created_at' => '2023-11-23 12:10:49',
+                'updated_at' => '2023-11-23 12:10:49',
             ),
             26 => 
             array (
@@ -259,8 +259,8 @@ class OdooProductValuesTableSeeder extends Seeder
                 'product_id' => 3,
                 'odoo_model_id' => 13,
                 'value' => 'Acheter',
-                'created_at' => '2023-11-23 09:58:46',
-                'updated_at' => '2023-11-23 09:58:46',
+                'created_at' => '2023-11-23 12:10:49',
+                'updated_at' => '2023-11-23 12:10:49',
             ),
             27 => 
             array (
@@ -268,8 +268,8 @@ class OdooProductValuesTableSeeder extends Seeder
                 'product_id' => 3,
                 'odoo_model_id' => 14,
                 'value' => 'ARTICLE STOCKABLE',
-                'created_at' => '2023-11-23 09:58:46',
-                'updated_at' => '2023-11-23 09:58:46',
+                'created_at' => '2023-11-23 12:10:49',
+                'updated_at' => '2023-11-23 12:10:49',
             ),
             28 => 
             array (
@@ -277,8 +277,8 @@ class OdooProductValuesTableSeeder extends Seeder
                 'product_id' => 3,
                 'odoo_model_id' => 15,
                 'value' => 'TVA 20%',
-                'created_at' => '2023-11-23 09:58:46',
-                'updated_at' => '2023-11-23 09:58:46',
+                'created_at' => '2023-11-23 12:10:49',
+                'updated_at' => '2023-11-23 12:10:49',
             ),
             29 => 
             array (
@@ -286,8 +286,8 @@ class OdooProductValuesTableSeeder extends Seeder
                 'product_id' => 4,
                 'odoo_model_id' => 1,
                 'value' => 'Tous / Ski alpin / Entretien / Outillage',
-                'created_at' => '2023-11-23 09:59:14',
-                'updated_at' => '2023-11-23 09:59:14',
+                'created_at' => '2023-11-23 12:10:56',
+                'updated_at' => '2023-11-23 12:10:56',
             ),
             30 => 
             array (
@@ -295,8 +295,8 @@ class OdooProductValuesTableSeeder extends Seeder
                 'product_id' => 4,
                 'odoo_model_id' => 2,
                 'value' => '011132',
-                'created_at' => '2023-11-23 09:59:14',
-                'updated_at' => '2023-11-23 09:59:14',
+                'created_at' => '2023-11-23 12:10:56',
+                'updated_at' => '2023-11-23 12:10:56',
             ),
             31 => 
             array (
@@ -304,8 +304,8 @@ class OdooProductValuesTableSeeder extends Seeder
                 'product_id' => 4,
                 'odoo_model_id' => 3,
                 'value' => '57884211455',
-                'created_at' => '2023-11-23 09:59:14',
-                'updated_at' => '2023-11-23 09:59:14',
+                'created_at' => '2023-11-23 12:10:56',
+                'updated_at' => '2023-11-23 12:10:56',
             ),
             32 => 
             array (
@@ -313,8 +313,8 @@ class OdooProductValuesTableSeeder extends Seeder
                 'product_id' => 4,
                 'odoo_model_id' => 4,
                 'value' => 'Vola EDGERAZOR ',
-                'created_at' => '2023-11-23 09:59:14',
-                'updated_at' => '2023-11-23 09:59:14',
+                'created_at' => '2023-11-23 12:10:56',
+                'updated_at' => '2023-11-23 12:10:56',
             ),
             33 => 
             array (
@@ -322,8 +322,8 @@ class OdooProductValuesTableSeeder extends Seeder
                 'product_id' => 4,
                 'odoo_model_id' => 7,
                 'value' => 'Vola',
-                'created_at' => '2023-11-23 09:59:14',
-                'updated_at' => '2023-11-23 09:59:14',
+                'created_at' => '2023-11-23 12:10:56',
+                'updated_at' => '2023-11-23 12:10:56',
             ),
             34 => 
             array (
@@ -331,8 +331,8 @@ class OdooProductValuesTableSeeder extends Seeder
                 'product_id' => 4,
                 'odoo_model_id' => 6,
                 'value' => 'Ski maintenance tool : no variant product',
-                'created_at' => '2023-11-23 09:59:14',
-                'updated_at' => '2023-11-23 09:59:14',
+                'created_at' => '2023-11-23 12:10:56',
+                'updated_at' => '2023-11-23 12:10:56',
             ),
             35 => 
             array (
@@ -340,8 +340,8 @@ class OdooProductValuesTableSeeder extends Seeder
                 'product_id' => 4,
                 'odoo_model_id' => 8,
                 'value' => '32.56',
-                'created_at' => '2023-11-23 09:59:14',
-                'updated_at' => '2023-11-23 09:59:14',
+                'created_at' => '2023-11-23 12:10:56',
+                'updated_at' => '2023-11-23 12:10:56',
             ),
             36 => 
             array (
@@ -349,17 +349,17 @@ class OdooProductValuesTableSeeder extends Seeder
                 'product_id' => 4,
                 'odoo_model_id' => 9,
                 'value' => '49.991666666667',
-                'created_at' => '2023-11-23 09:59:14',
-                'updated_at' => '2023-11-23 09:59:14',
+                'created_at' => '2023-11-23 12:10:56',
+                'updated_at' => '2023-11-23 12:10:56',
             ),
             37 => 
             array (
                 'id' => 38,
                 'product_id' => 4,
                 'odoo_model_id' => 11,
-                'value' => 'http://img.vola.fr/articles/5c87372aa070909c9412c968520cf1ea2fd13b5c.png_750x608_max.png',
-                'created_at' => '2023-11-23 09:59:14',
-                'updated_at' => '2023-11-23 09:59:14',
+                'value' => 'http://img.vola.fr/articles/bb63218cbc4815a67c160fa90384f9e20c03c517.png_750x608_max.png',
+                'created_at' => '2023-11-23 12:10:56',
+                'updated_at' => '2023-11-23 12:10:56',
             ),
             38 => 
             array (
@@ -367,8 +367,8 @@ class OdooProductValuesTableSeeder extends Seeder
                 'product_id' => 4,
                 'odoo_model_id' => 13,
                 'value' => 'Acheter',
-                'created_at' => '2023-11-23 09:59:14',
-                'updated_at' => '2023-11-23 09:59:14',
+                'created_at' => '2023-11-23 12:10:56',
+                'updated_at' => '2023-11-23 12:10:56',
             ),
             39 => 
             array (
@@ -376,8 +376,8 @@ class OdooProductValuesTableSeeder extends Seeder
                 'product_id' => 4,
                 'odoo_model_id' => 14,
                 'value' => 'ARTICLE STOCKABLE',
-                'created_at' => '2023-11-23 09:59:14',
-                'updated_at' => '2023-11-23 09:59:14',
+                'created_at' => '2023-11-23 12:10:56',
+                'updated_at' => '2023-11-23 12:10:56',
             ),
             40 => 
             array (
@@ -385,8 +385,8 @@ class OdooProductValuesTableSeeder extends Seeder
                 'product_id' => 4,
                 'odoo_model_id' => 15,
                 'value' => 'TVA 20%',
-                'created_at' => '2023-11-23 09:59:14',
-                'updated_at' => '2023-11-23 09:59:14',
+                'created_at' => '2023-11-23 12:10:56',
+                'updated_at' => '2023-11-23 12:10:56',
             ),
             41 => 
             array (
@@ -394,8 +394,8 @@ class OdooProductValuesTableSeeder extends Seeder
                 'product_id' => 5,
                 'odoo_model_id' => 1,
                 'value' => 'Tous / Ski alpin / Entretien / Outillage',
-                'created_at' => '2023-11-23 09:59:34',
-                'updated_at' => '2023-11-23 09:59:34',
+                'created_at' => '2023-11-23 12:11:01',
+                'updated_at' => '2023-11-23 12:11:01',
             ),
             42 => 
             array (
@@ -403,8 +403,8 @@ class OdooProductValuesTableSeeder extends Seeder
                 'product_id' => 5,
                 'odoo_model_id' => 2,
                 'value' => '011051',
-                'created_at' => '2023-11-23 09:59:34',
-                'updated_at' => '2023-11-23 09:59:34',
+                'created_at' => '2023-11-23 12:11:01',
+                'updated_at' => '2023-11-23 12:11:01',
             ),
             43 => 
             array (
@@ -412,8 +412,8 @@ class OdooProductValuesTableSeeder extends Seeder
                 'product_id' => 5,
                 'odoo_model_id' => 3,
                 'value' => '57884211454',
-                'created_at' => '2023-11-23 09:59:34',
-                'updated_at' => '2023-11-23 09:59:34',
+                'created_at' => '2023-11-23 12:11:01',
+                'updated_at' => '2023-11-23 12:11:01',
             ),
             44 => 
             array (
@@ -421,8 +421,8 @@ class OdooProductValuesTableSeeder extends Seeder
                 'product_id' => 5,
                 'odoo_model_id' => 4,
                 'value' => 'Vola OUTILS POUR CHANTS PRO ',
-                'created_at' => '2023-11-23 09:59:34',
-                'updated_at' => '2023-11-23 09:59:34',
+                'created_at' => '2023-11-23 12:11:01',
+                'updated_at' => '2023-11-23 12:11:01',
             ),
             45 => 
             array (
@@ -430,8 +430,8 @@ class OdooProductValuesTableSeeder extends Seeder
                 'product_id' => 5,
                 'odoo_model_id' => 7,
                 'value' => 'Vola',
-                'created_at' => '2023-11-23 09:59:34',
-                'updated_at' => '2023-11-23 09:59:34',
+                'created_at' => '2023-11-23 12:11:01',
+                'updated_at' => '2023-11-23 12:11:01',
             ),
             46 => 
             array (
@@ -439,8 +439,8 @@ class OdooProductValuesTableSeeder extends Seeder
                 'product_id' => 5,
                 'odoo_model_id' => 6,
                 'value' => 'Ski maintenance tool : no variant product',
-                'created_at' => '2023-11-23 09:59:34',
-                'updated_at' => '2023-11-23 09:59:34',
+                'created_at' => '2023-11-23 12:11:01',
+                'updated_at' => '2023-11-23 12:11:01',
             ),
             47 => 
             array (
@@ -448,8 +448,8 @@ class OdooProductValuesTableSeeder extends Seeder
                 'product_id' => 5,
                 'odoo_model_id' => 8,
                 'value' => '52.56',
-                'created_at' => '2023-11-23 09:59:34',
-                'updated_at' => '2023-11-23 09:59:34',
+                'created_at' => '2023-11-23 12:11:01',
+                'updated_at' => '2023-11-23 12:11:01',
             ),
             48 => 
             array (
@@ -457,44 +457,53 @@ class OdooProductValuesTableSeeder extends Seeder
                 'product_id' => 5,
                 'odoo_model_id' => 9,
                 'value' => '74.991666666667',
-                'created_at' => '2023-11-23 09:59:34',
-                'updated_at' => '2023-11-23 09:59:34',
+                'created_at' => '2023-11-23 12:11:01',
+                'updated_at' => '2023-11-23 12:11:01',
             ),
             49 => 
             array (
                 'id' => 50,
                 'product_id' => 5,
-                'odoo_model_id' => 11,
-                'value' => 'http://img.vola.fr/articles/9a1fbe1a78b74854e8d9c82164e28512b2a765f3.png_750x608_max.png',
-                'created_at' => '2023-11-23 09:59:34',
-                'updated_at' => '2023-11-23 09:59:34',
+                'odoo_model_id' => 10,
+                'value' => '67.425',
+                'created_at' => '2023-11-23 12:11:01',
+                'updated_at' => '2023-11-23 12:11:01',
             ),
             50 => 
             array (
                 'id' => 51,
                 'product_id' => 5,
-                'odoo_model_id' => 13,
-                'value' => 'Acheter',
-                'created_at' => '2023-11-23 09:59:34',
-                'updated_at' => '2023-11-23 09:59:34',
+                'odoo_model_id' => 11,
+                'value' => 'http://img.vola.fr/articles/9a1fbe1a78b74854e8d9c82164e28512b2a765f3.png_750x608_max.png',
+                'created_at' => '2023-11-23 12:11:01',
+                'updated_at' => '2023-11-23 12:11:01',
             ),
             51 => 
             array (
                 'id' => 52,
                 'product_id' => 5,
-                'odoo_model_id' => 14,
-                'value' => 'ARTICLE STOCKABLE',
-                'created_at' => '2023-11-23 09:59:34',
-                'updated_at' => '2023-11-23 09:59:34',
+                'odoo_model_id' => 13,
+                'value' => 'Acheter',
+                'created_at' => '2023-11-23 12:11:01',
+                'updated_at' => '2023-11-23 12:11:01',
             ),
             52 => 
             array (
                 'id' => 53,
                 'product_id' => 5,
+                'odoo_model_id' => 14,
+                'value' => 'ARTICLE STOCKABLE',
+                'created_at' => '2023-11-23 12:11:01',
+                'updated_at' => '2023-11-23 12:11:01',
+            ),
+            53 => 
+            array (
+                'id' => 54,
+                'product_id' => 5,
                 'odoo_model_id' => 15,
                 'value' => 'TVA 20%',
-                'created_at' => '2023-11-23 09:59:34',
-                'updated_at' => '2023-11-23 09:59:34',
+                'created_at' => '2023-11-23 12:11:01',
+                'updated_at' => '2023-11-23 12:11:01',
             ),
         ));
         

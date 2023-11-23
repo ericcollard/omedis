@@ -26,8 +26,8 @@ class OdooVariantValuesTableSeeder extends Seeder
                 'odoo_model_id' => 16,
                 'value' => '42400-28154-37',
                 'attribute_name' => NULL,
-                'created_at' => '2023-11-23 09:57:59',
-                'updated_at' => '2023-11-23 09:57:59',
+                'created_at' => '2023-11-23 12:10:33',
+                'updated_at' => '2023-11-23 12:10:33',
             ),
             1 => 
             array (
@@ -36,8 +36,8 @@ class OdooVariantValuesTableSeeder extends Seeder
                 'odoo_model_id' => 17,
                 'value' => '914578541121',
                 'attribute_name' => NULL,
-                'created_at' => '2023-11-23 09:57:59',
-                'updated_at' => '2023-11-23 09:57:59',
+                'created_at' => '2023-11-23 12:10:33',
+                'updated_at' => '2023-11-23 12:10:33',
             ),
             2 => 
             array (
@@ -46,8 +46,8 @@ class OdooVariantValuesTableSeeder extends Seeder
                 'odoo_model_id' => 20,
                 'value' => '742.56',
                 'attribute_name' => NULL,
-                'created_at' => '2023-11-23 09:57:59',
-                'updated_at' => '2023-11-23 09:57:59',
+                'created_at' => '2023-11-23 12:10:33',
+                'updated_at' => '2023-11-23 12:10:33',
             ),
             3 => 
             array (
@@ -56,8 +56,8 @@ class OdooVariantValuesTableSeeder extends Seeder
                 'odoo_model_id' => 19,
                 'value' => '742.56',
                 'attribute_name' => NULL,
-                'created_at' => '2023-11-23 09:57:59',
-                'updated_at' => '2023-11-23 09:57:59',
+                'created_at' => '2023-11-23 12:10:33',
+                'updated_at' => '2023-11-23 12:10:33',
             ),
             4 => 
             array (
@@ -66,8 +66,8 @@ class OdooVariantValuesTableSeeder extends Seeder
                 'odoo_model_id' => 21,
                 'value' => '824.99166666667',
                 'attribute_name' => NULL,
-                'created_at' => '2023-11-23 09:57:59',
-                'updated_at' => '2023-11-23 09:57:59',
+                'created_at' => '2023-11-23 12:10:33',
+                'updated_at' => '2023-11-23 12:10:33',
             ),
             5 => 
             array (
@@ -76,8 +76,8 @@ class OdooVariantValuesTableSeeder extends Seeder
                 'odoo_model_id' => 23,
                 'value' => '4.8',
                 'attribute_name' => NULL,
-                'created_at' => '2023-11-23 09:57:59',
-                'updated_at' => '2023-11-23 09:57:59',
+                'created_at' => '2023-11-23 12:10:33',
+                'updated_at' => '2023-11-23 12:10:33',
             ),
             6 => 
             array (
@@ -86,8 +86,8 @@ class OdooVariantValuesTableSeeder extends Seeder
                 'odoo_model_id' => 24,
                 'value' => '0',
                 'attribute_name' => NULL,
-                'created_at' => '2023-11-23 09:57:59',
-                'updated_at' => '2023-11-23 09:57:59',
+                'created_at' => '2023-11-23 12:10:33',
+                'updated_at' => '2023-11-23 12:10:33',
             ),
             7 => 
             array (
@@ -96,8 +96,8 @@ class OdooVariantValuesTableSeeder extends Seeder
                 'odoo_model_id' => 27,
                 'value' => 'duotone',
                 'attribute_name' => 'Marque',
-                'created_at' => '2023-11-23 09:57:59',
-                'updated_at' => '2023-11-23 09:57:59',
+                'created_at' => '2023-11-23 12:10:33',
+                'updated_at' => '2023-11-23 12:10:33',
             ),
             8 => 
             array (
@@ -106,8 +106,8 @@ class OdooVariantValuesTableSeeder extends Seeder
                 'odoo_model_id' => 27,
                 'value' => '2024',
                 'attribute_name' => 'Millésime',
-                'created_at' => '2023-11-23 09:57:59',
-                'updated_at' => '2023-11-23 09:57:59',
+                'created_at' => '2023-11-23 12:10:33',
+                'updated_at' => '2023-11-23 12:10:33',
             ),
             9 => 
             array (
@@ -116,8 +116,8 @@ class OdooVariantValuesTableSeeder extends Seeder
                 'odoo_model_id' => 27,
                 'value' => 'Neuf',
                 'attribute_name' => 'Type',
-                'created_at' => '2023-11-23 09:57:59',
-                'updated_at' => '2023-11-23 09:57:59',
+                'created_at' => '2023-11-23 12:10:33',
+                'updated_at' => '2023-11-23 12:10:33',
             ),
             10 => 
             array (
@@ -126,8 +126,8 @@ class OdooVariantValuesTableSeeder extends Seeder
                 'odoo_model_id' => 27,
                 'value' => '3.7',
             'attribute_name' => 'Surface (m2)',
-                'created_at' => '2023-11-23 09:57:59',
-                'updated_at' => '2023-11-23 09:57:59',
+                'created_at' => '2023-11-23 12:10:33',
+                'updated_at' => '2023-11-23 12:10:33',
             ),
             11 => 
             array (
@@ -136,8 +136,8 @@ class OdooVariantValuesTableSeeder extends Seeder
                 'odoo_model_id' => 16,
                 'value' => '42400-28154-42',
                 'attribute_name' => NULL,
-                'created_at' => '2023-11-23 09:57:59',
-                'updated_at' => '2023-11-23 09:57:59',
+                'created_at' => '2023-11-23 12:10:33',
+                'updated_at' => '2023-11-23 12:10:33',
             ),
             12 => 
             array (
@@ -146,8 +146,8 @@ class OdooVariantValuesTableSeeder extends Seeder
                 'odoo_model_id' => 17,
                 'value' => '914578541122',
                 'attribute_name' => NULL,
-                'created_at' => '2023-11-23 09:57:59',
-                'updated_at' => '2023-11-23 09:57:59',
+                'created_at' => '2023-11-23 12:10:33',
+                'updated_at' => '2023-11-23 12:10:33',
             ),
             13 => 
             array (
@@ -156,8 +156,8 @@ class OdooVariantValuesTableSeeder extends Seeder
                 'odoo_model_id' => 20,
                 'value' => '752.56',
                 'attribute_name' => NULL,
-                'created_at' => '2023-11-23 09:57:59',
-                'updated_at' => '2023-11-23 09:57:59',
+                'created_at' => '2023-11-23 12:10:33',
+                'updated_at' => '2023-11-23 12:10:33',
             ),
             14 => 
             array (
@@ -166,8 +166,8 @@ class OdooVariantValuesTableSeeder extends Seeder
                 'odoo_model_id' => 19,
                 'value' => '752.56',
                 'attribute_name' => NULL,
-                'created_at' => '2023-11-23 09:57:59',
-                'updated_at' => '2023-11-23 09:57:59',
+                'created_at' => '2023-11-23 12:10:33',
+                'updated_at' => '2023-11-23 12:10:33',
             ),
             15 => 
             array (
@@ -176,8 +176,8 @@ class OdooVariantValuesTableSeeder extends Seeder
                 'odoo_model_id' => 21,
                 'value' => '838.325',
                 'attribute_name' => NULL,
-                'created_at' => '2023-11-23 09:57:59',
-                'updated_at' => '2023-11-23 09:57:59',
+                'created_at' => '2023-11-23 12:10:33',
+                'updated_at' => '2023-11-23 12:10:33',
             ),
             16 => 
             array (
@@ -186,8 +186,8 @@ class OdooVariantValuesTableSeeder extends Seeder
                 'odoo_model_id' => 23,
                 'value' => '4.9',
                 'attribute_name' => NULL,
-                'created_at' => '2023-11-23 09:57:59',
-                'updated_at' => '2023-11-23 09:57:59',
+                'created_at' => '2023-11-23 12:10:33',
+                'updated_at' => '2023-11-23 12:10:33',
             ),
             17 => 
             array (
@@ -196,8 +196,8 @@ class OdooVariantValuesTableSeeder extends Seeder
                 'odoo_model_id' => 24,
                 'value' => '0',
                 'attribute_name' => NULL,
-                'created_at' => '2023-11-23 09:57:59',
-                'updated_at' => '2023-11-23 09:57:59',
+                'created_at' => '2023-11-23 12:10:33',
+                'updated_at' => '2023-11-23 12:10:33',
             ),
             18 => 
             array (
@@ -206,8 +206,8 @@ class OdooVariantValuesTableSeeder extends Seeder
                 'odoo_model_id' => 27,
                 'value' => 'duotone',
                 'attribute_name' => 'Marque',
-                'created_at' => '2023-11-23 09:57:59',
-                'updated_at' => '2023-11-23 09:57:59',
+                'created_at' => '2023-11-23 12:10:33',
+                'updated_at' => '2023-11-23 12:10:33',
             ),
             19 => 
             array (
@@ -216,8 +216,8 @@ class OdooVariantValuesTableSeeder extends Seeder
                 'odoo_model_id' => 27,
                 'value' => '2024',
                 'attribute_name' => 'Millésime',
-                'created_at' => '2023-11-23 09:57:59',
-                'updated_at' => '2023-11-23 09:57:59',
+                'created_at' => '2023-11-23 12:10:33',
+                'updated_at' => '2023-11-23 12:10:33',
             ),
             20 => 
             array (
@@ -226,8 +226,8 @@ class OdooVariantValuesTableSeeder extends Seeder
                 'odoo_model_id' => 27,
                 'value' => 'Neuf',
                 'attribute_name' => 'Type',
-                'created_at' => '2023-11-23 09:57:59',
-                'updated_at' => '2023-11-23 09:57:59',
+                'created_at' => '2023-11-23 12:10:33',
+                'updated_at' => '2023-11-23 12:10:33',
             ),
             21 => 
             array (
@@ -236,8 +236,8 @@ class OdooVariantValuesTableSeeder extends Seeder
                 'odoo_model_id' => 27,
                 'value' => '4.2',
             'attribute_name' => 'Surface (m2)',
-                'created_at' => '2023-11-23 09:57:59',
-                'updated_at' => '2023-11-23 09:57:59',
+                'created_at' => '2023-11-23 12:10:33',
+                'updated_at' => '2023-11-23 12:10:33',
             ),
             22 => 
             array (
@@ -246,8 +246,8 @@ class OdooVariantValuesTableSeeder extends Seeder
                 'odoo_model_id' => 16,
                 'value' => '42400-28154-47',
                 'attribute_name' => NULL,
-                'created_at' => '2023-11-23 09:57:59',
-                'updated_at' => '2023-11-23 09:57:59',
+                'created_at' => '2023-11-23 12:10:33',
+                'updated_at' => '2023-11-23 12:10:33',
             ),
             23 => 
             array (
@@ -256,8 +256,8 @@ class OdooVariantValuesTableSeeder extends Seeder
                 'odoo_model_id' => 17,
                 'value' => '914578541123',
                 'attribute_name' => NULL,
-                'created_at' => '2023-11-23 09:57:59',
-                'updated_at' => '2023-11-23 09:57:59',
+                'created_at' => '2023-11-23 12:10:33',
+                'updated_at' => '2023-11-23 12:10:33',
             ),
             24 => 
             array (
@@ -266,8 +266,8 @@ class OdooVariantValuesTableSeeder extends Seeder
                 'odoo_model_id' => 20,
                 'value' => '762.56',
                 'attribute_name' => NULL,
-                'created_at' => '2023-11-23 09:57:59',
-                'updated_at' => '2023-11-23 09:57:59',
+                'created_at' => '2023-11-23 12:10:33',
+                'updated_at' => '2023-11-23 12:10:33',
             ),
             25 => 
             array (
@@ -276,8 +276,8 @@ class OdooVariantValuesTableSeeder extends Seeder
                 'odoo_model_id' => 19,
                 'value' => '762.56',
                 'attribute_name' => NULL,
-                'created_at' => '2023-11-23 09:57:59',
-                'updated_at' => '2023-11-23 09:57:59',
+                'created_at' => '2023-11-23 12:10:33',
+                'updated_at' => '2023-11-23 12:10:33',
             ),
             26 => 
             array (
@@ -286,8 +286,8 @@ class OdooVariantValuesTableSeeder extends Seeder
                 'odoo_model_id' => 21,
                 'value' => '921.65833333333',
                 'attribute_name' => NULL,
-                'created_at' => '2023-11-23 09:57:59',
-                'updated_at' => '2023-11-23 09:57:59',
+                'created_at' => '2023-11-23 12:10:33',
+                'updated_at' => '2023-11-23 12:10:33',
             ),
             27 => 
             array (
@@ -296,8 +296,8 @@ class OdooVariantValuesTableSeeder extends Seeder
                 'odoo_model_id' => 23,
                 'value' => '5',
                 'attribute_name' => NULL,
-                'created_at' => '2023-11-23 09:57:59',
-                'updated_at' => '2023-11-23 09:57:59',
+                'created_at' => '2023-11-23 12:10:33',
+                'updated_at' => '2023-11-23 12:10:33',
             ),
             28 => 
             array (
@@ -306,8 +306,8 @@ class OdooVariantValuesTableSeeder extends Seeder
                 'odoo_model_id' => 24,
                 'value' => '0',
                 'attribute_name' => NULL,
-                'created_at' => '2023-11-23 09:57:59',
-                'updated_at' => '2023-11-23 09:57:59',
+                'created_at' => '2023-11-23 12:10:33',
+                'updated_at' => '2023-11-23 12:10:33',
             ),
             29 => 
             array (
@@ -316,8 +316,8 @@ class OdooVariantValuesTableSeeder extends Seeder
                 'odoo_model_id' => 27,
                 'value' => 'duotone',
                 'attribute_name' => 'Marque',
-                'created_at' => '2023-11-23 09:57:59',
-                'updated_at' => '2023-11-23 09:57:59',
+                'created_at' => '2023-11-23 12:10:33',
+                'updated_at' => '2023-11-23 12:10:33',
             ),
             30 => 
             array (
@@ -326,8 +326,8 @@ class OdooVariantValuesTableSeeder extends Seeder
                 'odoo_model_id' => 27,
                 'value' => '2024',
                 'attribute_name' => 'Millésime',
-                'created_at' => '2023-11-23 09:57:59',
-                'updated_at' => '2023-11-23 09:57:59',
+                'created_at' => '2023-11-23 12:10:33',
+                'updated_at' => '2023-11-23 12:10:33',
             ),
             31 => 
             array (
@@ -336,8 +336,8 @@ class OdooVariantValuesTableSeeder extends Seeder
                 'odoo_model_id' => 27,
                 'value' => 'Neuf',
                 'attribute_name' => 'Type',
-                'created_at' => '2023-11-23 09:57:59',
-                'updated_at' => '2023-11-23 09:57:59',
+                'created_at' => '2023-11-23 12:10:33',
+                'updated_at' => '2023-11-23 12:10:33',
             ),
             32 => 
             array (
@@ -346,8 +346,8 @@ class OdooVariantValuesTableSeeder extends Seeder
                 'odoo_model_id' => 27,
                 'value' => '4.7',
             'attribute_name' => 'Surface (m2)',
-                'created_at' => '2023-11-23 09:57:59',
-                'updated_at' => '2023-11-23 09:57:59',
+                'created_at' => '2023-11-23 12:10:33',
+                'updated_at' => '2023-11-23 12:10:33',
             ),
             33 => 
             array (
@@ -356,8 +356,8 @@ class OdooVariantValuesTableSeeder extends Seeder
                 'odoo_model_id' => 16,
                 'value' => '42400-28154-50',
                 'attribute_name' => NULL,
-                'created_at' => '2023-11-23 09:57:59',
-                'updated_at' => '2023-11-23 09:57:59',
+                'created_at' => '2023-11-23 12:10:33',
+                'updated_at' => '2023-11-23 12:10:33',
             ),
             34 => 
             array (
@@ -366,8 +366,8 @@ class OdooVariantValuesTableSeeder extends Seeder
                 'odoo_model_id' => 17,
                 'value' => '914578541124',
                 'attribute_name' => NULL,
-                'created_at' => '2023-11-23 09:57:59',
-                'updated_at' => '2023-11-23 09:57:59',
+                'created_at' => '2023-11-23 12:10:33',
+                'updated_at' => '2023-11-23 12:10:33',
             ),
             35 => 
             array (
@@ -376,8 +376,8 @@ class OdooVariantValuesTableSeeder extends Seeder
                 'odoo_model_id' => 20,
                 'value' => '782.56',
                 'attribute_name' => NULL,
-                'created_at' => '2023-11-23 09:57:59',
-                'updated_at' => '2023-11-23 09:57:59',
+                'created_at' => '2023-11-23 12:10:33',
+                'updated_at' => '2023-11-23 12:10:33',
             ),
             36 => 
             array (
@@ -386,8 +386,8 @@ class OdooVariantValuesTableSeeder extends Seeder
                 'odoo_model_id' => 19,
                 'value' => '782.56',
                 'attribute_name' => NULL,
-                'created_at' => '2023-11-23 09:57:59',
-                'updated_at' => '2023-11-23 09:57:59',
+                'created_at' => '2023-11-23 12:10:33',
+                'updated_at' => '2023-11-23 12:10:33',
             ),
             37 => 
             array (
@@ -396,8 +396,8 @@ class OdooVariantValuesTableSeeder extends Seeder
                 'odoo_model_id' => 21,
                 'value' => '1004.9916666667',
                 'attribute_name' => NULL,
-                'created_at' => '2023-11-23 09:57:59',
-                'updated_at' => '2023-11-23 09:57:59',
+                'created_at' => '2023-11-23 12:10:33',
+                'updated_at' => '2023-11-23 12:10:33',
             ),
             38 => 
             array (
@@ -406,8 +406,8 @@ class OdooVariantValuesTableSeeder extends Seeder
                 'odoo_model_id' => 23,
                 'value' => '5.1',
                 'attribute_name' => NULL,
-                'created_at' => '2023-11-23 09:57:59',
-                'updated_at' => '2023-11-23 09:57:59',
+                'created_at' => '2023-11-23 12:10:33',
+                'updated_at' => '2023-11-23 12:10:33',
             ),
             39 => 
             array (
@@ -416,8 +416,8 @@ class OdooVariantValuesTableSeeder extends Seeder
                 'odoo_model_id' => 24,
                 'value' => '0',
                 'attribute_name' => NULL,
-                'created_at' => '2023-11-23 09:57:59',
-                'updated_at' => '2023-11-23 09:57:59',
+                'created_at' => '2023-11-23 12:10:33',
+                'updated_at' => '2023-11-23 12:10:33',
             ),
             40 => 
             array (
@@ -426,8 +426,8 @@ class OdooVariantValuesTableSeeder extends Seeder
                 'odoo_model_id' => 27,
                 'value' => 'duotone',
                 'attribute_name' => 'Marque',
-                'created_at' => '2023-11-23 09:57:59',
-                'updated_at' => '2023-11-23 09:57:59',
+                'created_at' => '2023-11-23 12:10:33',
+                'updated_at' => '2023-11-23 12:10:33',
             ),
             41 => 
             array (
@@ -436,8 +436,8 @@ class OdooVariantValuesTableSeeder extends Seeder
                 'odoo_model_id' => 27,
                 'value' => '2024',
                 'attribute_name' => 'Millésime',
-                'created_at' => '2023-11-23 09:57:59',
-                'updated_at' => '2023-11-23 09:57:59',
+                'created_at' => '2023-11-23 12:10:33',
+                'updated_at' => '2023-11-23 12:10:33',
             ),
             42 => 
             array (
@@ -446,8 +446,8 @@ class OdooVariantValuesTableSeeder extends Seeder
                 'odoo_model_id' => 27,
                 'value' => 'Neuf',
                 'attribute_name' => 'Type',
-                'created_at' => '2023-11-23 09:57:59',
-                'updated_at' => '2023-11-23 09:57:59',
+                'created_at' => '2023-11-23 12:10:33',
+                'updated_at' => '2023-11-23 12:10:33',
             ),
             43 => 
             array (
@@ -456,8 +456,8 @@ class OdooVariantValuesTableSeeder extends Seeder
                 'odoo_model_id' => 27,
                 'value' => '5.0',
             'attribute_name' => 'Surface (m2)',
-                'created_at' => '2023-11-23 09:57:59',
-                'updated_at' => '2023-11-23 09:57:59',
+                'created_at' => '2023-11-23 12:10:33',
+                'updated_at' => '2023-11-23 12:10:33',
             ),
             44 => 
             array (
@@ -466,8 +466,8 @@ class OdooVariantValuesTableSeeder extends Seeder
                 'odoo_model_id' => 16,
                 'value' => '77244-0103-52',
                 'attribute_name' => NULL,
-                'created_at' => '2023-11-23 09:58:21',
-                'updated_at' => '2023-11-23 09:58:21',
+                'created_at' => '2023-11-23 12:10:38',
+                'updated_at' => '2023-11-23 12:10:38',
             ),
             45 => 
             array (
@@ -476,8 +476,8 @@ class OdooVariantValuesTableSeeder extends Seeder
                 'odoo_model_id' => 17,
                 'value' => '814578545487',
                 'attribute_name' => NULL,
-                'created_at' => '2023-11-23 09:58:21',
-                'updated_at' => '2023-11-23 09:58:21',
+                'created_at' => '2023-11-23 12:10:38',
+                'updated_at' => '2023-11-23 12:10:38',
             ),
             46 => 
             array (
@@ -486,8 +486,8 @@ class OdooVariantValuesTableSeeder extends Seeder
                 'odoo_model_id' => 20,
                 'value' => '890.12',
                 'attribute_name' => NULL,
-                'created_at' => '2023-11-23 09:58:21',
-                'updated_at' => '2023-11-23 09:58:21',
+                'created_at' => '2023-11-23 12:10:38',
+                'updated_at' => '2023-11-23 12:10:38',
             ),
             47 => 
             array (
@@ -496,8 +496,8 @@ class OdooVariantValuesTableSeeder extends Seeder
                 'odoo_model_id' => 23,
                 'value' => '5.4',
                 'attribute_name' => NULL,
-                'created_at' => '2023-11-23 09:58:22',
-                'updated_at' => '2023-11-23 09:58:22',
+                'created_at' => '2023-11-23 12:10:38',
+                'updated_at' => '2023-11-23 12:10:38',
             ),
             48 => 
             array (
@@ -506,8 +506,8 @@ class OdooVariantValuesTableSeeder extends Seeder
                 'odoo_model_id' => 24,
                 'value' => '0',
                 'attribute_name' => NULL,
-                'created_at' => '2023-11-23 09:58:22',
-                'updated_at' => '2023-11-23 09:58:22',
+                'created_at' => '2023-11-23 12:10:38',
+                'updated_at' => '2023-11-23 12:10:38',
             ),
             49 => 
             array (
@@ -516,8 +516,8 @@ class OdooVariantValuesTableSeeder extends Seeder
                 'odoo_model_id' => 27,
                 'value' => 'fone',
                 'attribute_name' => 'Marque',
-                'created_at' => '2023-11-23 09:58:22',
-                'updated_at' => '2023-11-23 09:58:22',
+                'created_at' => '2023-11-23 12:10:38',
+                'updated_at' => '2023-11-23 12:10:38',
             ),
             50 => 
             array (
@@ -526,8 +526,8 @@ class OdooVariantValuesTableSeeder extends Seeder
                 'odoo_model_id' => 27,
                 'value' => 'Neuf',
                 'attribute_name' => 'Type',
-                'created_at' => '2023-11-23 09:58:22',
-                'updated_at' => '2023-11-23 09:58:22',
+                'created_at' => '2023-11-23 12:10:38',
+                'updated_at' => '2023-11-23 12:10:38',
             ),
             51 => 
             array (
@@ -536,8 +536,8 @@ class OdooVariantValuesTableSeeder extends Seeder
                 'odoo_model_id' => 27,
                 'value' => '5\'2',
             'attribute_name' => 'Taille (pieds)',
-                'created_at' => '2023-11-23 09:58:22',
-                'updated_at' => '2023-11-23 09:58:22',
+                'created_at' => '2023-11-23 12:10:38',
+                'updated_at' => '2023-11-23 12:10:38',
             ),
             52 => 
             array (
@@ -546,8 +546,8 @@ class OdooVariantValuesTableSeeder extends Seeder
                 'odoo_model_id' => 16,
                 'value' => '77244-0103-54',
                 'attribute_name' => NULL,
-                'created_at' => '2023-11-23 09:58:22',
-                'updated_at' => '2023-11-23 09:58:22',
+                'created_at' => '2023-11-23 12:10:38',
+                'updated_at' => '2023-11-23 12:10:38',
             ),
             53 => 
             array (
@@ -556,8 +556,8 @@ class OdooVariantValuesTableSeeder extends Seeder
                 'odoo_model_id' => 17,
                 'value' => '814578545488',
                 'attribute_name' => NULL,
-                'created_at' => '2023-11-23 09:58:22',
-                'updated_at' => '2023-11-23 09:58:22',
+                'created_at' => '2023-11-23 12:10:38',
+                'updated_at' => '2023-11-23 12:10:38',
             ),
             54 => 
             array (
@@ -566,8 +566,8 @@ class OdooVariantValuesTableSeeder extends Seeder
                 'odoo_model_id' => 20,
                 'value' => '890.12',
                 'attribute_name' => NULL,
-                'created_at' => '2023-11-23 09:58:22',
-                'updated_at' => '2023-11-23 09:58:22',
+                'created_at' => '2023-11-23 12:10:38',
+                'updated_at' => '2023-11-23 12:10:38',
             ),
             55 => 
             array (
@@ -576,8 +576,8 @@ class OdooVariantValuesTableSeeder extends Seeder
                 'odoo_model_id' => 23,
                 'value' => '5.4',
                 'attribute_name' => NULL,
-                'created_at' => '2023-11-23 09:58:22',
-                'updated_at' => '2023-11-23 09:58:22',
+                'created_at' => '2023-11-23 12:10:38',
+                'updated_at' => '2023-11-23 12:10:38',
             ),
             56 => 
             array (
@@ -586,8 +586,8 @@ class OdooVariantValuesTableSeeder extends Seeder
                 'odoo_model_id' => 24,
                 'value' => '0',
                 'attribute_name' => NULL,
-                'created_at' => '2023-11-23 09:58:22',
-                'updated_at' => '2023-11-23 09:58:22',
+                'created_at' => '2023-11-23 12:10:38',
+                'updated_at' => '2023-11-23 12:10:38',
             ),
             57 => 
             array (
@@ -596,8 +596,8 @@ class OdooVariantValuesTableSeeder extends Seeder
                 'odoo_model_id' => 27,
                 'value' => 'fone',
                 'attribute_name' => 'Marque',
-                'created_at' => '2023-11-23 09:58:22',
-                'updated_at' => '2023-11-23 09:58:22',
+                'created_at' => '2023-11-23 12:10:38',
+                'updated_at' => '2023-11-23 12:10:38',
             ),
             58 => 
             array (
@@ -606,8 +606,8 @@ class OdooVariantValuesTableSeeder extends Seeder
                 'odoo_model_id' => 27,
                 'value' => 'Neuf',
                 'attribute_name' => 'Type',
-                'created_at' => '2023-11-23 09:58:22',
-                'updated_at' => '2023-11-23 09:58:22',
+                'created_at' => '2023-11-23 12:10:38',
+                'updated_at' => '2023-11-23 12:10:38',
             ),
             59 => 
             array (
@@ -616,8 +616,8 @@ class OdooVariantValuesTableSeeder extends Seeder
                 'odoo_model_id' => 27,
                 'value' => '5\'4',
             'attribute_name' => 'Taille (pieds)',
-                'created_at' => '2023-11-23 09:58:22',
-                'updated_at' => '2023-11-23 09:58:22',
+                'created_at' => '2023-11-23 12:10:38',
+                'updated_at' => '2023-11-23 12:10:38',
             ),
             60 => 
             array (
@@ -626,8 +626,8 @@ class OdooVariantValuesTableSeeder extends Seeder
                 'odoo_model_id' => 16,
                 'value' => '77244-0103-56',
                 'attribute_name' => NULL,
-                'created_at' => '2023-11-23 09:58:22',
-                'updated_at' => '2023-11-23 09:58:22',
+                'created_at' => '2023-11-23 12:10:38',
+                'updated_at' => '2023-11-23 12:10:38',
             ),
             61 => 
             array (
@@ -636,8 +636,8 @@ class OdooVariantValuesTableSeeder extends Seeder
                 'odoo_model_id' => 17,
                 'value' => '814578545489',
                 'attribute_name' => NULL,
-                'created_at' => '2023-11-23 09:58:22',
-                'updated_at' => '2023-11-23 09:58:22',
+                'created_at' => '2023-11-23 12:10:38',
+                'updated_at' => '2023-11-23 12:10:38',
             ),
             62 => 
             array (
@@ -646,8 +646,8 @@ class OdooVariantValuesTableSeeder extends Seeder
                 'odoo_model_id' => 20,
                 'value' => '890.12',
                 'attribute_name' => NULL,
-                'created_at' => '2023-11-23 09:58:22',
-                'updated_at' => '2023-11-23 09:58:22',
+                'created_at' => '2023-11-23 12:10:38',
+                'updated_at' => '2023-11-23 12:10:38',
             ),
             63 => 
             array (
@@ -656,8 +656,8 @@ class OdooVariantValuesTableSeeder extends Seeder
                 'odoo_model_id' => 23,
                 'value' => '5.4',
                 'attribute_name' => NULL,
-                'created_at' => '2023-11-23 09:58:22',
-                'updated_at' => '2023-11-23 09:58:22',
+                'created_at' => '2023-11-23 12:10:38',
+                'updated_at' => '2023-11-23 12:10:38',
             ),
             64 => 
             array (
@@ -666,8 +666,8 @@ class OdooVariantValuesTableSeeder extends Seeder
                 'odoo_model_id' => 24,
                 'value' => '0',
                 'attribute_name' => NULL,
-                'created_at' => '2023-11-23 09:58:22',
-                'updated_at' => '2023-11-23 09:58:22',
+                'created_at' => '2023-11-23 12:10:38',
+                'updated_at' => '2023-11-23 12:10:38',
             ),
             65 => 
             array (
@@ -676,8 +676,8 @@ class OdooVariantValuesTableSeeder extends Seeder
                 'odoo_model_id' => 27,
                 'value' => 'fone',
                 'attribute_name' => 'Marque',
-                'created_at' => '2023-11-23 09:58:22',
-                'updated_at' => '2023-11-23 09:58:22',
+                'created_at' => '2023-11-23 12:10:38',
+                'updated_at' => '2023-11-23 12:10:38',
             ),
             66 => 
             array (
@@ -686,8 +686,8 @@ class OdooVariantValuesTableSeeder extends Seeder
                 'odoo_model_id' => 27,
                 'value' => 'Neuf',
                 'attribute_name' => 'Type',
-                'created_at' => '2023-11-23 09:58:22',
-                'updated_at' => '2023-11-23 09:58:22',
+                'created_at' => '2023-11-23 12:10:38',
+                'updated_at' => '2023-11-23 12:10:38',
             ),
             67 => 
             array (
@@ -696,8 +696,8 @@ class OdooVariantValuesTableSeeder extends Seeder
                 'odoo_model_id' => 27,
                 'value' => '5\'6',
             'attribute_name' => 'Taille (pieds)',
-                'created_at' => '2023-11-23 09:58:22',
-                'updated_at' => '2023-11-23 09:58:22',
+                'created_at' => '2023-11-23 12:10:38',
+                'updated_at' => '2023-11-23 12:10:38',
             ),
             68 => 
             array (
@@ -706,8 +706,8 @@ class OdooVariantValuesTableSeeder extends Seeder
                 'odoo_model_id' => 16,
                 'value' => '77244-0103-58',
                 'attribute_name' => NULL,
-                'created_at' => '2023-11-23 09:58:22',
-                'updated_at' => '2023-11-23 09:58:22',
+                'created_at' => '2023-11-23 12:10:38',
+                'updated_at' => '2023-11-23 12:10:38',
             ),
             69 => 
             array (
@@ -716,8 +716,8 @@ class OdooVariantValuesTableSeeder extends Seeder
                 'odoo_model_id' => 17,
                 'value' => '814578545410',
                 'attribute_name' => NULL,
-                'created_at' => '2023-11-23 09:58:22',
-                'updated_at' => '2023-11-23 09:58:22',
+                'created_at' => '2023-11-23 12:10:38',
+                'updated_at' => '2023-11-23 12:10:38',
             ),
             70 => 
             array (
@@ -726,8 +726,8 @@ class OdooVariantValuesTableSeeder extends Seeder
                 'odoo_model_id' => 20,
                 'value' => '890.12',
                 'attribute_name' => NULL,
-                'created_at' => '2023-11-23 09:58:22',
-                'updated_at' => '2023-11-23 09:58:22',
+                'created_at' => '2023-11-23 12:10:38',
+                'updated_at' => '2023-11-23 12:10:38',
             ),
             71 => 
             array (
@@ -736,8 +736,8 @@ class OdooVariantValuesTableSeeder extends Seeder
                 'odoo_model_id' => 23,
                 'value' => '5.4',
                 'attribute_name' => NULL,
-                'created_at' => '2023-11-23 09:58:22',
-                'updated_at' => '2023-11-23 09:58:22',
+                'created_at' => '2023-11-23 12:10:38',
+                'updated_at' => '2023-11-23 12:10:38',
             ),
             72 => 
             array (
@@ -746,8 +746,8 @@ class OdooVariantValuesTableSeeder extends Seeder
                 'odoo_model_id' => 24,
                 'value' => '0',
                 'attribute_name' => NULL,
-                'created_at' => '2023-11-23 09:58:22',
-                'updated_at' => '2023-11-23 09:58:22',
+                'created_at' => '2023-11-23 12:10:38',
+                'updated_at' => '2023-11-23 12:10:38',
             ),
             73 => 
             array (
@@ -756,8 +756,8 @@ class OdooVariantValuesTableSeeder extends Seeder
                 'odoo_model_id' => 27,
                 'value' => 'fone',
                 'attribute_name' => 'Marque',
-                'created_at' => '2023-11-23 09:58:22',
-                'updated_at' => '2023-11-23 09:58:22',
+                'created_at' => '2023-11-23 12:10:38',
+                'updated_at' => '2023-11-23 12:10:38',
             ),
             74 => 
             array (
@@ -766,8 +766,8 @@ class OdooVariantValuesTableSeeder extends Seeder
                 'odoo_model_id' => 27,
                 'value' => 'Neuf',
                 'attribute_name' => 'Type',
-                'created_at' => '2023-11-23 09:58:22',
-                'updated_at' => '2023-11-23 09:58:22',
+                'created_at' => '2023-11-23 12:10:38',
+                'updated_at' => '2023-11-23 12:10:38',
             ),
             75 => 
             array (
@@ -776,8 +776,8 @@ class OdooVariantValuesTableSeeder extends Seeder
                 'odoo_model_id' => 27,
                 'value' => '5\'8',
             'attribute_name' => 'Taille (pieds)',
-                'created_at' => '2023-11-23 09:58:22',
-                'updated_at' => '2023-11-23 09:58:22',
+                'created_at' => '2023-11-23 12:10:38',
+                'updated_at' => '2023-11-23 12:10:38',
             ),
             76 => 
             array (
@@ -786,8 +786,8 @@ class OdooVariantValuesTableSeeder extends Seeder
                 'odoo_model_id' => 16,
                 'value' => 'MVT457_D_01_S',
                 'attribute_name' => NULL,
-                'created_at' => '2023-11-23 09:58:46',
-                'updated_at' => '2023-11-23 09:58:46',
+                'created_at' => '2023-11-23 12:10:49',
+                'updated_at' => '2023-11-23 12:10:49',
             ),
             77 => 
             array (
@@ -796,8 +796,8 @@ class OdooVariantValuesTableSeeder extends Seeder
                 'odoo_model_id' => 17,
                 'value' => '714578589754',
                 'attribute_name' => NULL,
-                'created_at' => '2023-11-23 09:58:46',
-                'updated_at' => '2023-11-23 09:58:46',
+                'created_at' => '2023-11-23 12:10:49',
+                'updated_at' => '2023-11-23 12:10:49',
             ),
             78 => 
             array (
@@ -806,8 +806,8 @@ class OdooVariantValuesTableSeeder extends Seeder
                 'odoo_model_id' => 20,
                 'value' => '190.42',
                 'attribute_name' => NULL,
-                'created_at' => '2023-11-23 09:58:46',
-                'updated_at' => '2023-11-23 09:58:46',
+                'created_at' => '2023-11-23 12:10:49',
+                'updated_at' => '2023-11-23 12:10:49',
             ),
             79 => 
             array (
@@ -816,8 +816,8 @@ class OdooVariantValuesTableSeeder extends Seeder
                 'odoo_model_id' => 23,
                 'value' => '2.1',
                 'attribute_name' => NULL,
-                'created_at' => '2023-11-23 09:58:46',
-                'updated_at' => '2023-11-23 09:58:46',
+                'created_at' => '2023-11-23 12:10:49',
+                'updated_at' => '2023-11-23 12:10:49',
             ),
             80 => 
             array (
@@ -826,8 +826,8 @@ class OdooVariantValuesTableSeeder extends Seeder
                 'odoo_model_id' => 24,
                 'value' => '0',
                 'attribute_name' => NULL,
-                'created_at' => '2023-11-23 09:58:46',
-                'updated_at' => '2023-11-23 09:58:46',
+                'created_at' => '2023-11-23 12:10:49',
+                'updated_at' => '2023-11-23 12:10:49',
             ),
             81 => 
             array (
@@ -836,8 +836,8 @@ class OdooVariantValuesTableSeeder extends Seeder
                 'odoo_model_id' => 27,
                 'value' => 'picture',
                 'attribute_name' => 'Marque',
-                'created_at' => '2023-11-23 09:58:46',
-                'updated_at' => '2023-11-23 09:58:46',
+                'created_at' => '2023-11-23 12:10:49',
+                'updated_at' => '2023-11-23 12:10:49',
             ),
             82 => 
             array (
@@ -846,8 +846,8 @@ class OdooVariantValuesTableSeeder extends Seeder
                 'odoo_model_id' => 27,
                 'value' => '2024',
                 'attribute_name' => 'Millésime',
-                'created_at' => '2023-11-23 09:58:46',
-                'updated_at' => '2023-11-23 09:58:46',
+                'created_at' => '2023-11-23 12:10:49',
+                'updated_at' => '2023-11-23 12:10:49',
             ),
             83 => 
             array (
@@ -856,8 +856,8 @@ class OdooVariantValuesTableSeeder extends Seeder
                 'odoo_model_id' => 27,
                 'value' => 'Neuf',
                 'attribute_name' => 'Type',
-                'created_at' => '2023-11-23 09:58:46',
-                'updated_at' => '2023-11-23 09:58:46',
+                'created_at' => '2023-11-23 12:10:49',
+                'updated_at' => '2023-11-23 12:10:49',
             ),
             84 => 
             array (
@@ -866,8 +866,8 @@ class OdooVariantValuesTableSeeder extends Seeder
                 'odoo_model_id' => 27,
                 'value' => 'S',
                 'attribute_name' => 'Taille Wear',
-                'created_at' => '2023-11-23 09:58:46',
-                'updated_at' => '2023-11-23 09:58:46',
+                'created_at' => '2023-11-23 12:10:49',
+                'updated_at' => '2023-11-23 12:10:49',
             ),
             85 => 
             array (
@@ -876,8 +876,8 @@ class OdooVariantValuesTableSeeder extends Seeder
                 'odoo_model_id' => 27,
                 'value' => 'Amande',
                 'attribute_name' => 'Couleur',
-                'created_at' => '2023-11-23 09:58:46',
-                'updated_at' => '2023-11-23 09:58:46',
+                'created_at' => '2023-11-23 12:10:49',
+                'updated_at' => '2023-11-23 12:10:49',
             ),
             86 => 
             array (
@@ -886,8 +886,8 @@ class OdooVariantValuesTableSeeder extends Seeder
                 'odoo_model_id' => 16,
                 'value' => 'MVT457_D_01_M',
                 'attribute_name' => NULL,
-                'created_at' => '2023-11-23 09:58:46',
-                'updated_at' => '2023-11-23 09:58:46',
+                'created_at' => '2023-11-23 12:10:49',
+                'updated_at' => '2023-11-23 12:10:49',
             ),
             87 => 
             array (
@@ -896,8 +896,8 @@ class OdooVariantValuesTableSeeder extends Seeder
                 'odoo_model_id' => 17,
                 'value' => '714578589755',
                 'attribute_name' => NULL,
-                'created_at' => '2023-11-23 09:58:46',
-                'updated_at' => '2023-11-23 09:58:46',
+                'created_at' => '2023-11-23 12:10:49',
+                'updated_at' => '2023-11-23 12:10:49',
             ),
             88 => 
             array (
@@ -906,8 +906,8 @@ class OdooVariantValuesTableSeeder extends Seeder
                 'odoo_model_id' => 20,
                 'value' => '190.42',
                 'attribute_name' => NULL,
-                'created_at' => '2023-11-23 09:58:46',
-                'updated_at' => '2023-11-23 09:58:46',
+                'created_at' => '2023-11-23 12:10:49',
+                'updated_at' => '2023-11-23 12:10:49',
             ),
             89 => 
             array (
@@ -916,8 +916,8 @@ class OdooVariantValuesTableSeeder extends Seeder
                 'odoo_model_id' => 23,
                 'value' => '2.1',
                 'attribute_name' => NULL,
-                'created_at' => '2023-11-23 09:58:46',
-                'updated_at' => '2023-11-23 09:58:46',
+                'created_at' => '2023-11-23 12:10:49',
+                'updated_at' => '2023-11-23 12:10:49',
             ),
             90 => 
             array (
@@ -926,8 +926,8 @@ class OdooVariantValuesTableSeeder extends Seeder
                 'odoo_model_id' => 24,
                 'value' => '0',
                 'attribute_name' => NULL,
-                'created_at' => '2023-11-23 09:58:46',
-                'updated_at' => '2023-11-23 09:58:46',
+                'created_at' => '2023-11-23 12:10:49',
+                'updated_at' => '2023-11-23 12:10:49',
             ),
             91 => 
             array (
@@ -936,8 +936,8 @@ class OdooVariantValuesTableSeeder extends Seeder
                 'odoo_model_id' => 27,
                 'value' => 'picture',
                 'attribute_name' => 'Marque',
-                'created_at' => '2023-11-23 09:58:46',
-                'updated_at' => '2023-11-23 09:58:46',
+                'created_at' => '2023-11-23 12:10:50',
+                'updated_at' => '2023-11-23 12:10:50',
             ),
             92 => 
             array (
@@ -946,8 +946,8 @@ class OdooVariantValuesTableSeeder extends Seeder
                 'odoo_model_id' => 27,
                 'value' => '2024',
                 'attribute_name' => 'Millésime',
-                'created_at' => '2023-11-23 09:58:46',
-                'updated_at' => '2023-11-23 09:58:46',
+                'created_at' => '2023-11-23 12:10:50',
+                'updated_at' => '2023-11-23 12:10:50',
             ),
             93 => 
             array (
@@ -956,8 +956,8 @@ class OdooVariantValuesTableSeeder extends Seeder
                 'odoo_model_id' => 27,
                 'value' => 'Neuf',
                 'attribute_name' => 'Type',
-                'created_at' => '2023-11-23 09:58:46',
-                'updated_at' => '2023-11-23 09:58:46',
+                'created_at' => '2023-11-23 12:10:50',
+                'updated_at' => '2023-11-23 12:10:50',
             ),
             94 => 
             array (
@@ -966,8 +966,8 @@ class OdooVariantValuesTableSeeder extends Seeder
                 'odoo_model_id' => 27,
                 'value' => 'M',
                 'attribute_name' => 'Taille Wear',
-                'created_at' => '2023-11-23 09:58:46',
-                'updated_at' => '2023-11-23 09:58:46',
+                'created_at' => '2023-11-23 12:10:50',
+                'updated_at' => '2023-11-23 12:10:50',
             ),
             95 => 
             array (
@@ -976,8 +976,8 @@ class OdooVariantValuesTableSeeder extends Seeder
                 'odoo_model_id' => 27,
                 'value' => 'Amande',
                 'attribute_name' => 'Couleur',
-                'created_at' => '2023-11-23 09:58:46',
-                'updated_at' => '2023-11-23 09:58:46',
+                'created_at' => '2023-11-23 12:10:50',
+                'updated_at' => '2023-11-23 12:10:50',
             ),
             96 => 
             array (
@@ -986,8 +986,8 @@ class OdooVariantValuesTableSeeder extends Seeder
                 'odoo_model_id' => 16,
                 'value' => 'MVT457_D_01_L',
                 'attribute_name' => NULL,
-                'created_at' => '2023-11-23 09:58:46',
-                'updated_at' => '2023-11-23 09:58:46',
+                'created_at' => '2023-11-23 12:10:50',
+                'updated_at' => '2023-11-23 12:10:50',
             ),
             97 => 
             array (
@@ -996,8 +996,8 @@ class OdooVariantValuesTableSeeder extends Seeder
                 'odoo_model_id' => 17,
                 'value' => '714578589756',
                 'attribute_name' => NULL,
-                'created_at' => '2023-11-23 09:58:46',
-                'updated_at' => '2023-11-23 09:58:46',
+                'created_at' => '2023-11-23 12:10:50',
+                'updated_at' => '2023-11-23 12:10:50',
             ),
             98 => 
             array (
@@ -1006,8 +1006,8 @@ class OdooVariantValuesTableSeeder extends Seeder
                 'odoo_model_id' => 20,
                 'value' => '190.42',
                 'attribute_name' => NULL,
-                'created_at' => '2023-11-23 09:58:46',
-                'updated_at' => '2023-11-23 09:58:46',
+                'created_at' => '2023-11-23 12:10:50',
+                'updated_at' => '2023-11-23 12:10:50',
             ),
             99 => 
             array (
@@ -1016,8 +1016,8 @@ class OdooVariantValuesTableSeeder extends Seeder
                 'odoo_model_id' => 23,
                 'value' => '2.1',
                 'attribute_name' => NULL,
-                'created_at' => '2023-11-23 09:58:46',
-                'updated_at' => '2023-11-23 09:58:46',
+                'created_at' => '2023-11-23 12:10:50',
+                'updated_at' => '2023-11-23 12:10:50',
             ),
             100 => 
             array (
@@ -1026,8 +1026,8 @@ class OdooVariantValuesTableSeeder extends Seeder
                 'odoo_model_id' => 24,
                 'value' => '0',
                 'attribute_name' => NULL,
-                'created_at' => '2023-11-23 09:58:46',
-                'updated_at' => '2023-11-23 09:58:46',
+                'created_at' => '2023-11-23 12:10:50',
+                'updated_at' => '2023-11-23 12:10:50',
             ),
             101 => 
             array (
@@ -1036,8 +1036,8 @@ class OdooVariantValuesTableSeeder extends Seeder
                 'odoo_model_id' => 27,
                 'value' => 'picture',
                 'attribute_name' => 'Marque',
-                'created_at' => '2023-11-23 09:58:46',
-                'updated_at' => '2023-11-23 09:58:46',
+                'created_at' => '2023-11-23 12:10:50',
+                'updated_at' => '2023-11-23 12:10:50',
             ),
             102 => 
             array (
@@ -1046,8 +1046,8 @@ class OdooVariantValuesTableSeeder extends Seeder
                 'odoo_model_id' => 27,
                 'value' => '2024',
                 'attribute_name' => 'Millésime',
-                'created_at' => '2023-11-23 09:58:46',
-                'updated_at' => '2023-11-23 09:58:46',
+                'created_at' => '2023-11-23 12:10:50',
+                'updated_at' => '2023-11-23 12:10:50',
             ),
             103 => 
             array (
@@ -1056,8 +1056,8 @@ class OdooVariantValuesTableSeeder extends Seeder
                 'odoo_model_id' => 27,
                 'value' => 'Neuf',
                 'attribute_name' => 'Type',
-                'created_at' => '2023-11-23 09:58:46',
-                'updated_at' => '2023-11-23 09:58:46',
+                'created_at' => '2023-11-23 12:10:50',
+                'updated_at' => '2023-11-23 12:10:50',
             ),
             104 => 
             array (
@@ -1066,8 +1066,8 @@ class OdooVariantValuesTableSeeder extends Seeder
                 'odoo_model_id' => 27,
                 'value' => 'L',
                 'attribute_name' => 'Taille Wear',
-                'created_at' => '2023-11-23 09:58:46',
-                'updated_at' => '2023-11-23 09:58:46',
+                'created_at' => '2023-11-23 12:10:50',
+                'updated_at' => '2023-11-23 12:10:50',
             ),
             105 => 
             array (
@@ -1076,8 +1076,8 @@ class OdooVariantValuesTableSeeder extends Seeder
                 'odoo_model_id' => 27,
                 'value' => 'Amande',
                 'attribute_name' => 'Couleur',
-                'created_at' => '2023-11-23 09:58:46',
-                'updated_at' => '2023-11-23 09:58:46',
+                'created_at' => '2023-11-23 12:10:50',
+                'updated_at' => '2023-11-23 12:10:50',
             ),
             106 => 
             array (
@@ -1086,8 +1086,8 @@ class OdooVariantValuesTableSeeder extends Seeder
                 'odoo_model_id' => 16,
                 'value' => 'MVT457_D_01_XL',
                 'attribute_name' => NULL,
-                'created_at' => '2023-11-23 09:58:46',
-                'updated_at' => '2023-11-23 09:58:46',
+                'created_at' => '2023-11-23 12:10:50',
+                'updated_at' => '2023-11-23 12:10:50',
             ),
             107 => 
             array (
@@ -1096,8 +1096,8 @@ class OdooVariantValuesTableSeeder extends Seeder
                 'odoo_model_id' => 17,
                 'value' => '714578589757',
                 'attribute_name' => NULL,
-                'created_at' => '2023-11-23 09:58:46',
-                'updated_at' => '2023-11-23 09:58:46',
+                'created_at' => '2023-11-23 12:10:50',
+                'updated_at' => '2023-11-23 12:10:50',
             ),
             108 => 
             array (
@@ -1106,8 +1106,8 @@ class OdooVariantValuesTableSeeder extends Seeder
                 'odoo_model_id' => 20,
                 'value' => '190.42',
                 'attribute_name' => NULL,
-                'created_at' => '2023-11-23 09:58:46',
-                'updated_at' => '2023-11-23 09:58:46',
+                'created_at' => '2023-11-23 12:10:50',
+                'updated_at' => '2023-11-23 12:10:50',
             ),
             109 => 
             array (
@@ -1116,8 +1116,8 @@ class OdooVariantValuesTableSeeder extends Seeder
                 'odoo_model_id' => 23,
                 'value' => '2.1',
                 'attribute_name' => NULL,
-                'created_at' => '2023-11-23 09:58:46',
-                'updated_at' => '2023-11-23 09:58:46',
+                'created_at' => '2023-11-23 12:10:50',
+                'updated_at' => '2023-11-23 12:10:50',
             ),
             110 => 
             array (
@@ -1126,8 +1126,8 @@ class OdooVariantValuesTableSeeder extends Seeder
                 'odoo_model_id' => 24,
                 'value' => '0',
                 'attribute_name' => NULL,
-                'created_at' => '2023-11-23 09:58:46',
-                'updated_at' => '2023-11-23 09:58:46',
+                'created_at' => '2023-11-23 12:10:50',
+                'updated_at' => '2023-11-23 12:10:50',
             ),
             111 => 
             array (
@@ -1136,8 +1136,8 @@ class OdooVariantValuesTableSeeder extends Seeder
                 'odoo_model_id' => 27,
                 'value' => 'picture',
                 'attribute_name' => 'Marque',
-                'created_at' => '2023-11-23 09:58:46',
-                'updated_at' => '2023-11-23 09:58:46',
+                'created_at' => '2023-11-23 12:10:50',
+                'updated_at' => '2023-11-23 12:10:50',
             ),
             112 => 
             array (
@@ -1146,8 +1146,8 @@ class OdooVariantValuesTableSeeder extends Seeder
                 'odoo_model_id' => 27,
                 'value' => '2024',
                 'attribute_name' => 'Millésime',
-                'created_at' => '2023-11-23 09:58:46',
-                'updated_at' => '2023-11-23 09:58:46',
+                'created_at' => '2023-11-23 12:10:50',
+                'updated_at' => '2023-11-23 12:10:50',
             ),
             113 => 
             array (
@@ -1156,8 +1156,8 @@ class OdooVariantValuesTableSeeder extends Seeder
                 'odoo_model_id' => 27,
                 'value' => 'Neuf',
                 'attribute_name' => 'Type',
-                'created_at' => '2023-11-23 09:58:46',
-                'updated_at' => '2023-11-23 09:58:46',
+                'created_at' => '2023-11-23 12:10:50',
+                'updated_at' => '2023-11-23 12:10:50',
             ),
             114 => 
             array (
@@ -1166,8 +1166,8 @@ class OdooVariantValuesTableSeeder extends Seeder
                 'odoo_model_id' => 27,
                 'value' => 'XL',
                 'attribute_name' => 'Taille Wear',
-                'created_at' => '2023-11-23 09:58:46',
-                'updated_at' => '2023-11-23 09:58:46',
+                'created_at' => '2023-11-23 12:10:50',
+                'updated_at' => '2023-11-23 12:10:50',
             ),
             115 => 
             array (
@@ -1176,8 +1176,8 @@ class OdooVariantValuesTableSeeder extends Seeder
                 'odoo_model_id' => 27,
                 'value' => 'Amande',
                 'attribute_name' => 'Couleur',
-                'created_at' => '2023-11-23 09:58:46',
-                'updated_at' => '2023-11-23 09:58:46',
+                'created_at' => '2023-11-23 12:10:50',
+                'updated_at' => '2023-11-23 12:10:50',
             ),
             116 => 
             array (
@@ -1186,8 +1186,8 @@ class OdooVariantValuesTableSeeder extends Seeder
                 'odoo_model_id' => 16,
                 'value' => 'MVT457_C_01_S',
                 'attribute_name' => NULL,
-                'created_at' => '2023-11-23 09:58:46',
-                'updated_at' => '2023-11-23 09:58:46',
+                'created_at' => '2023-11-23 12:10:50',
+                'updated_at' => '2023-11-23 12:10:50',
             ),
             117 => 
             array (
@@ -1196,8 +1196,8 @@ class OdooVariantValuesTableSeeder extends Seeder
                 'odoo_model_id' => 17,
                 'value' => '714578589764',
                 'attribute_name' => NULL,
-                'created_at' => '2023-11-23 09:58:46',
-                'updated_at' => '2023-11-23 09:58:46',
+                'created_at' => '2023-11-23 12:10:50',
+                'updated_at' => '2023-11-23 12:10:50',
             ),
             118 => 
             array (
@@ -1206,8 +1206,8 @@ class OdooVariantValuesTableSeeder extends Seeder
                 'odoo_model_id' => 20,
                 'value' => '190.42',
                 'attribute_name' => NULL,
-                'created_at' => '2023-11-23 09:58:46',
-                'updated_at' => '2023-11-23 09:58:46',
+                'created_at' => '2023-11-23 12:10:50',
+                'updated_at' => '2023-11-23 12:10:50',
             ),
             119 => 
             array (
@@ -1216,8 +1216,8 @@ class OdooVariantValuesTableSeeder extends Seeder
                 'odoo_model_id' => 23,
                 'value' => '2.1',
                 'attribute_name' => NULL,
-                'created_at' => '2023-11-23 09:58:46',
-                'updated_at' => '2023-11-23 09:58:46',
+                'created_at' => '2023-11-23 12:10:50',
+                'updated_at' => '2023-11-23 12:10:50',
             ),
             120 => 
             array (
@@ -1226,8 +1226,8 @@ class OdooVariantValuesTableSeeder extends Seeder
                 'odoo_model_id' => 24,
                 'value' => '0',
                 'attribute_name' => NULL,
-                'created_at' => '2023-11-23 09:58:46',
-                'updated_at' => '2023-11-23 09:58:46',
+                'created_at' => '2023-11-23 12:10:50',
+                'updated_at' => '2023-11-23 12:10:50',
             ),
             121 => 
             array (
@@ -1236,8 +1236,8 @@ class OdooVariantValuesTableSeeder extends Seeder
                 'odoo_model_id' => 27,
                 'value' => 'picture',
                 'attribute_name' => 'Marque',
-                'created_at' => '2023-11-23 09:58:46',
-                'updated_at' => '2023-11-23 09:58:46',
+                'created_at' => '2023-11-23 12:10:50',
+                'updated_at' => '2023-11-23 12:10:50',
             ),
             122 => 
             array (
@@ -1246,8 +1246,8 @@ class OdooVariantValuesTableSeeder extends Seeder
                 'odoo_model_id' => 27,
                 'value' => '2024',
                 'attribute_name' => 'Millésime',
-                'created_at' => '2023-11-23 09:58:46',
-                'updated_at' => '2023-11-23 09:58:46',
+                'created_at' => '2023-11-23 12:10:50',
+                'updated_at' => '2023-11-23 12:10:50',
             ),
             123 => 
             array (
@@ -1256,8 +1256,8 @@ class OdooVariantValuesTableSeeder extends Seeder
                 'odoo_model_id' => 27,
                 'value' => 'Neuf',
                 'attribute_name' => 'Type',
-                'created_at' => '2023-11-23 09:58:46',
-                'updated_at' => '2023-11-23 09:58:46',
+                'created_at' => '2023-11-23 12:10:50',
+                'updated_at' => '2023-11-23 12:10:50',
             ),
             124 => 
             array (
@@ -1266,8 +1266,8 @@ class OdooVariantValuesTableSeeder extends Seeder
                 'odoo_model_id' => 27,
                 'value' => 'S',
                 'attribute_name' => 'Taille Wear',
-                'created_at' => '2023-11-23 09:58:46',
-                'updated_at' => '2023-11-23 09:58:46',
+                'created_at' => '2023-11-23 12:10:50',
+                'updated_at' => '2023-11-23 12:10:50',
             ),
             125 => 
             array (
@@ -1276,8 +1276,8 @@ class OdooVariantValuesTableSeeder extends Seeder
                 'odoo_model_id' => 27,
                 'value' => 'Bleu marine',
                 'attribute_name' => 'Couleur',
-                'created_at' => '2023-11-23 09:58:46',
-                'updated_at' => '2023-11-23 09:58:46',
+                'created_at' => '2023-11-23 12:10:50',
+                'updated_at' => '2023-11-23 12:10:50',
             ),
             126 => 
             array (
@@ -1286,8 +1286,8 @@ class OdooVariantValuesTableSeeder extends Seeder
                 'odoo_model_id' => 16,
                 'value' => 'MVT457_C_01_S',
                 'attribute_name' => NULL,
-                'created_at' => '2023-11-23 09:58:46',
-                'updated_at' => '2023-11-23 09:58:46',
+                'created_at' => '2023-11-23 12:10:50',
+                'updated_at' => '2023-11-23 12:10:50',
             ),
             127 => 
             array (
@@ -1296,8 +1296,8 @@ class OdooVariantValuesTableSeeder extends Seeder
                 'odoo_model_id' => 17,
                 'value' => '714578589765',
                 'attribute_name' => NULL,
-                'created_at' => '2023-11-23 09:58:46',
-                'updated_at' => '2023-11-23 09:58:46',
+                'created_at' => '2023-11-23 12:10:50',
+                'updated_at' => '2023-11-23 12:10:50',
             ),
             128 => 
             array (
@@ -1306,8 +1306,8 @@ class OdooVariantValuesTableSeeder extends Seeder
                 'odoo_model_id' => 20,
                 'value' => '190.42',
                 'attribute_name' => NULL,
-                'created_at' => '2023-11-23 09:58:46',
-                'updated_at' => '2023-11-23 09:58:46',
+                'created_at' => '2023-11-23 12:10:50',
+                'updated_at' => '2023-11-23 12:10:50',
             ),
             129 => 
             array (
@@ -1316,8 +1316,8 @@ class OdooVariantValuesTableSeeder extends Seeder
                 'odoo_model_id' => 23,
                 'value' => '2.1',
                 'attribute_name' => NULL,
-                'created_at' => '2023-11-23 09:58:46',
-                'updated_at' => '2023-11-23 09:58:46',
+                'created_at' => '2023-11-23 12:10:50',
+                'updated_at' => '2023-11-23 12:10:50',
             ),
             130 => 
             array (
@@ -1326,8 +1326,8 @@ class OdooVariantValuesTableSeeder extends Seeder
                 'odoo_model_id' => 24,
                 'value' => '0',
                 'attribute_name' => NULL,
-                'created_at' => '2023-11-23 09:58:46',
-                'updated_at' => '2023-11-23 09:58:46',
+                'created_at' => '2023-11-23 12:10:50',
+                'updated_at' => '2023-11-23 12:10:50',
             ),
             131 => 
             array (
@@ -1336,8 +1336,8 @@ class OdooVariantValuesTableSeeder extends Seeder
                 'odoo_model_id' => 27,
                 'value' => 'picture',
                 'attribute_name' => 'Marque',
-                'created_at' => '2023-11-23 09:58:46',
-                'updated_at' => '2023-11-23 09:58:46',
+                'created_at' => '2023-11-23 12:10:50',
+                'updated_at' => '2023-11-23 12:10:50',
             ),
             132 => 
             array (
@@ -1346,8 +1346,8 @@ class OdooVariantValuesTableSeeder extends Seeder
                 'odoo_model_id' => 27,
                 'value' => '2024',
                 'attribute_name' => 'Millésime',
-                'created_at' => '2023-11-23 09:58:46',
-                'updated_at' => '2023-11-23 09:58:46',
+                'created_at' => '2023-11-23 12:10:50',
+                'updated_at' => '2023-11-23 12:10:50',
             ),
             133 => 
             array (
@@ -1356,8 +1356,8 @@ class OdooVariantValuesTableSeeder extends Seeder
                 'odoo_model_id' => 27,
                 'value' => 'Neuf',
                 'attribute_name' => 'Type',
-                'created_at' => '2023-11-23 09:58:46',
-                'updated_at' => '2023-11-23 09:58:46',
+                'created_at' => '2023-11-23 12:10:50',
+                'updated_at' => '2023-11-23 12:10:50',
             ),
             134 => 
             array (
@@ -1366,8 +1366,8 @@ class OdooVariantValuesTableSeeder extends Seeder
                 'odoo_model_id' => 27,
                 'value' => 'M',
                 'attribute_name' => 'Taille Wear',
-                'created_at' => '2023-11-23 09:58:47',
-                'updated_at' => '2023-11-23 09:58:47',
+                'created_at' => '2023-11-23 12:10:50',
+                'updated_at' => '2023-11-23 12:10:50',
             ),
             135 => 
             array (
@@ -1376,8 +1376,8 @@ class OdooVariantValuesTableSeeder extends Seeder
                 'odoo_model_id' => 27,
                 'value' => 'Bleu marine',
                 'attribute_name' => 'Couleur',
-                'created_at' => '2023-11-23 09:58:47',
-                'updated_at' => '2023-11-23 09:58:47',
+                'created_at' => '2023-11-23 12:10:50',
+                'updated_at' => '2023-11-23 12:10:50',
             ),
             136 => 
             array (
@@ -1386,8 +1386,8 @@ class OdooVariantValuesTableSeeder extends Seeder
                 'odoo_model_id' => 16,
                 'value' => 'MVT457_C_01_S',
                 'attribute_name' => NULL,
-                'created_at' => '2023-11-23 09:58:47',
-                'updated_at' => '2023-11-23 09:58:47',
+                'created_at' => '2023-11-23 12:10:50',
+                'updated_at' => '2023-11-23 12:10:50',
             ),
             137 => 
             array (
@@ -1396,8 +1396,8 @@ class OdooVariantValuesTableSeeder extends Seeder
                 'odoo_model_id' => 17,
                 'value' => '714578589766',
                 'attribute_name' => NULL,
-                'created_at' => '2023-11-23 09:58:47',
-                'updated_at' => '2023-11-23 09:58:47',
+                'created_at' => '2023-11-23 12:10:50',
+                'updated_at' => '2023-11-23 12:10:50',
             ),
             138 => 
             array (
@@ -1406,8 +1406,8 @@ class OdooVariantValuesTableSeeder extends Seeder
                 'odoo_model_id' => 20,
                 'value' => '190.42',
                 'attribute_name' => NULL,
-                'created_at' => '2023-11-23 09:58:47',
-                'updated_at' => '2023-11-23 09:58:47',
+                'created_at' => '2023-11-23 12:10:50',
+                'updated_at' => '2023-11-23 12:10:50',
             ),
             139 => 
             array (
@@ -1416,8 +1416,8 @@ class OdooVariantValuesTableSeeder extends Seeder
                 'odoo_model_id' => 23,
                 'value' => '2.1',
                 'attribute_name' => NULL,
-                'created_at' => '2023-11-23 09:58:47',
-                'updated_at' => '2023-11-23 09:58:47',
+                'created_at' => '2023-11-23 12:10:50',
+                'updated_at' => '2023-11-23 12:10:50',
             ),
             140 => 
             array (
@@ -1426,8 +1426,8 @@ class OdooVariantValuesTableSeeder extends Seeder
                 'odoo_model_id' => 24,
                 'value' => '0',
                 'attribute_name' => NULL,
-                'created_at' => '2023-11-23 09:58:47',
-                'updated_at' => '2023-11-23 09:58:47',
+                'created_at' => '2023-11-23 12:10:50',
+                'updated_at' => '2023-11-23 12:10:50',
             ),
             141 => 
             array (
@@ -1436,8 +1436,8 @@ class OdooVariantValuesTableSeeder extends Seeder
                 'odoo_model_id' => 27,
                 'value' => 'picture',
                 'attribute_name' => 'Marque',
-                'created_at' => '2023-11-23 09:58:47',
-                'updated_at' => '2023-11-23 09:58:47',
+                'created_at' => '2023-11-23 12:10:50',
+                'updated_at' => '2023-11-23 12:10:50',
             ),
             142 => 
             array (
@@ -1446,8 +1446,8 @@ class OdooVariantValuesTableSeeder extends Seeder
                 'odoo_model_id' => 27,
                 'value' => '2024',
                 'attribute_name' => 'Millésime',
-                'created_at' => '2023-11-23 09:58:47',
-                'updated_at' => '2023-11-23 09:58:47',
+                'created_at' => '2023-11-23 12:10:50',
+                'updated_at' => '2023-11-23 12:10:50',
             ),
             143 => 
             array (
@@ -1456,8 +1456,8 @@ class OdooVariantValuesTableSeeder extends Seeder
                 'odoo_model_id' => 27,
                 'value' => 'Neuf',
                 'attribute_name' => 'Type',
-                'created_at' => '2023-11-23 09:58:47',
-                'updated_at' => '2023-11-23 09:58:47',
+                'created_at' => '2023-11-23 12:10:50',
+                'updated_at' => '2023-11-23 12:10:50',
             ),
             144 => 
             array (
@@ -1466,8 +1466,8 @@ class OdooVariantValuesTableSeeder extends Seeder
                 'odoo_model_id' => 27,
                 'value' => 'L',
                 'attribute_name' => 'Taille Wear',
-                'created_at' => '2023-11-23 09:58:47',
-                'updated_at' => '2023-11-23 09:58:47',
+                'created_at' => '2023-11-23 12:10:50',
+                'updated_at' => '2023-11-23 12:10:50',
             ),
             145 => 
             array (
@@ -1476,8 +1476,8 @@ class OdooVariantValuesTableSeeder extends Seeder
                 'odoo_model_id' => 27,
                 'value' => 'Bleu marine',
                 'attribute_name' => 'Couleur',
-                'created_at' => '2023-11-23 09:58:47',
-                'updated_at' => '2023-11-23 09:58:47',
+                'created_at' => '2023-11-23 12:10:50',
+                'updated_at' => '2023-11-23 12:10:50',
             ),
             146 => 
             array (
@@ -1486,8 +1486,8 @@ class OdooVariantValuesTableSeeder extends Seeder
                 'odoo_model_id' => 16,
                 'value' => 'MVT457_C_01_S',
                 'attribute_name' => NULL,
-                'created_at' => '2023-11-23 09:58:47',
-                'updated_at' => '2023-11-23 09:58:47',
+                'created_at' => '2023-11-23 12:10:50',
+                'updated_at' => '2023-11-23 12:10:50',
             ),
             147 => 
             array (
@@ -1496,8 +1496,8 @@ class OdooVariantValuesTableSeeder extends Seeder
                 'odoo_model_id' => 17,
                 'value' => '714578589767',
                 'attribute_name' => NULL,
-                'created_at' => '2023-11-23 09:58:47',
-                'updated_at' => '2023-11-23 09:58:47',
+                'created_at' => '2023-11-23 12:10:50',
+                'updated_at' => '2023-11-23 12:10:50',
             ),
             148 => 
             array (
@@ -1506,8 +1506,8 @@ class OdooVariantValuesTableSeeder extends Seeder
                 'odoo_model_id' => 20,
                 'value' => '190.42',
                 'attribute_name' => NULL,
-                'created_at' => '2023-11-23 09:58:47',
-                'updated_at' => '2023-11-23 09:58:47',
+                'created_at' => '2023-11-23 12:10:50',
+                'updated_at' => '2023-11-23 12:10:50',
             ),
             149 => 
             array (
@@ -1516,8 +1516,8 @@ class OdooVariantValuesTableSeeder extends Seeder
                 'odoo_model_id' => 23,
                 'value' => '2.1',
                 'attribute_name' => NULL,
-                'created_at' => '2023-11-23 09:58:47',
-                'updated_at' => '2023-11-23 09:58:47',
+                'created_at' => '2023-11-23 12:10:50',
+                'updated_at' => '2023-11-23 12:10:50',
             ),
             150 => 
             array (
@@ -1526,8 +1526,8 @@ class OdooVariantValuesTableSeeder extends Seeder
                 'odoo_model_id' => 24,
                 'value' => '0',
                 'attribute_name' => NULL,
-                'created_at' => '2023-11-23 09:58:47',
-                'updated_at' => '2023-11-23 09:58:47',
+                'created_at' => '2023-11-23 12:10:50',
+                'updated_at' => '2023-11-23 12:10:50',
             ),
             151 => 
             array (
@@ -1536,8 +1536,8 @@ class OdooVariantValuesTableSeeder extends Seeder
                 'odoo_model_id' => 27,
                 'value' => 'picture',
                 'attribute_name' => 'Marque',
-                'created_at' => '2023-11-23 09:58:47',
-                'updated_at' => '2023-11-23 09:58:47',
+                'created_at' => '2023-11-23 12:10:50',
+                'updated_at' => '2023-11-23 12:10:50',
             ),
             152 => 
             array (
@@ -1546,8 +1546,8 @@ class OdooVariantValuesTableSeeder extends Seeder
                 'odoo_model_id' => 27,
                 'value' => '2024',
                 'attribute_name' => 'Millésime',
-                'created_at' => '2023-11-23 09:58:47',
-                'updated_at' => '2023-11-23 09:58:47',
+                'created_at' => '2023-11-23 12:10:50',
+                'updated_at' => '2023-11-23 12:10:50',
             ),
             153 => 
             array (
@@ -1556,8 +1556,8 @@ class OdooVariantValuesTableSeeder extends Seeder
                 'odoo_model_id' => 27,
                 'value' => 'Neuf',
                 'attribute_name' => 'Type',
-                'created_at' => '2023-11-23 09:58:47',
-                'updated_at' => '2023-11-23 09:58:47',
+                'created_at' => '2023-11-23 12:10:50',
+                'updated_at' => '2023-11-23 12:10:50',
             ),
             154 => 
             array (
@@ -1566,8 +1566,8 @@ class OdooVariantValuesTableSeeder extends Seeder
                 'odoo_model_id' => 27,
                 'value' => 'XL',
                 'attribute_name' => 'Taille Wear',
-                'created_at' => '2023-11-23 09:58:47',
-                'updated_at' => '2023-11-23 09:58:47',
+                'created_at' => '2023-11-23 12:10:50',
+                'updated_at' => '2023-11-23 12:10:50',
             ),
             155 => 
             array (
@@ -1576,8 +1576,8 @@ class OdooVariantValuesTableSeeder extends Seeder
                 'odoo_model_id' => 27,
                 'value' => 'Bleu marine',
                 'attribute_name' => 'Couleur',
-                'created_at' => '2023-11-23 09:58:47',
-                'updated_at' => '2023-11-23 09:58:47',
+                'created_at' => '2023-11-23 12:10:50',
+                'updated_at' => '2023-11-23 12:10:50',
             ),
             156 => 
             array (
@@ -1586,8 +1586,8 @@ class OdooVariantValuesTableSeeder extends Seeder
                 'odoo_model_id' => 23,
                 'value' => '0.12',
                 'attribute_name' => NULL,
-                'created_at' => '2023-11-23 09:59:14',
-                'updated_at' => '2023-11-23 09:59:14',
+                'created_at' => '2023-11-23 12:10:56',
+                'updated_at' => '2023-11-23 12:10:56',
             ),
             157 => 
             array (
@@ -1596,8 +1596,8 @@ class OdooVariantValuesTableSeeder extends Seeder
                 'odoo_model_id' => 24,
                 'value' => '0',
                 'attribute_name' => NULL,
-                'created_at' => '2023-11-23 09:59:14',
-                'updated_at' => '2023-11-23 09:59:14',
+                'created_at' => '2023-11-23 12:10:56',
+                'updated_at' => '2023-11-23 12:10:56',
             ),
             158 => 
             array (
@@ -1606,8 +1606,8 @@ class OdooVariantValuesTableSeeder extends Seeder
                 'odoo_model_id' => 27,
                 'value' => 'vola',
                 'attribute_name' => 'Marque',
-                'created_at' => '2023-11-23 09:59:15',
-                'updated_at' => '2023-11-23 09:59:15',
+                'created_at' => '2023-11-23 12:10:56',
+                'updated_at' => '2023-11-23 12:10:56',
             ),
             159 => 
             array (
@@ -1616,8 +1616,8 @@ class OdooVariantValuesTableSeeder extends Seeder
                 'odoo_model_id' => 27,
                 'value' => 'Neuf',
                 'attribute_name' => 'Type',
-                'created_at' => '2023-11-23 09:59:15',
-                'updated_at' => '2023-11-23 09:59:15',
+                'created_at' => '2023-11-23 12:10:56',
+                'updated_at' => '2023-11-23 12:10:56',
             ),
             160 => 
             array (
@@ -1626,8 +1626,8 @@ class OdooVariantValuesTableSeeder extends Seeder
                 'odoo_model_id' => 23,
                 'value' => '0.12',
                 'attribute_name' => NULL,
-                'created_at' => '2023-11-23 09:59:34',
-                'updated_at' => '2023-11-23 09:59:34',
+                'created_at' => '2023-11-23 12:11:01',
+                'updated_at' => '2023-11-23 12:11:01',
             ),
             161 => 
             array (
@@ -1636,8 +1636,8 @@ class OdooVariantValuesTableSeeder extends Seeder
                 'odoo_model_id' => 24,
                 'value' => '0',
                 'attribute_name' => NULL,
-                'created_at' => '2023-11-23 09:59:34',
-                'updated_at' => '2023-11-23 09:59:34',
+                'created_at' => '2023-11-23 12:11:01',
+                'updated_at' => '2023-11-23 12:11:01',
             ),
             162 => 
             array (
@@ -1646,8 +1646,8 @@ class OdooVariantValuesTableSeeder extends Seeder
                 'odoo_model_id' => 27,
                 'value' => 'vola',
                 'attribute_name' => 'Marque',
-                'created_at' => '2023-11-23 09:59:34',
-                'updated_at' => '2023-11-23 09:59:34',
+                'created_at' => '2023-11-23 12:11:02',
+                'updated_at' => '2023-11-23 12:11:02',
             ),
             163 => 
             array (
@@ -1656,8 +1656,8 @@ class OdooVariantValuesTableSeeder extends Seeder
                 'odoo_model_id' => 27,
                 'value' => 'Neuf',
                 'attribute_name' => 'Type',
-                'created_at' => '2023-11-23 09:59:34',
-                'updated_at' => '2023-11-23 09:59:34',
+                'created_at' => '2023-11-23 12:11:02',
+                'updated_at' => '2023-11-23 12:11:02',
             ),
         ));
         

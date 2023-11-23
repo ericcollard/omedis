@@ -105,6 +105,7 @@
             <pictures>http://img.vola.fr/articles/5c87372aa070909c9412c968520cf1ea2fd13b5c.png_750x608_max.png</pictures>
             <wholesale-price>32.56</wholesale-price>
             <retail-price>59.99</retail-price>
+            <discount-b2c>53.99</discount-b2c>
             <weight>0.115</weight>
         </variant>
     </product>
