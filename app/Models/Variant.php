@@ -97,8 +97,23 @@ class Variant extends Model
             }
 
             //Fournisseur
-            // si différents tarif achat pour chaque variante
             $attribute = Attribute::where('name', 'wholesale-price')->first();
+            $valueObj = $this->variantAttributes()->where('attribute_id',$attribute->id)->first();
+
+            // cout variante (sera mis à jour si stock null)
+            if ($valueObj) {
+                $value = $valueObj->getValue();
+                if ($value) {
+                    $odooModel = OdooModel::where('name', 'variant_cost_ht')->first();
+                    $obj = OdooVariantValue::create([
+                        'variant_id' => $this->id,
+                        'odoo_model_id' => $odooModel->id,
+                        'value' => $value
+                    ])->save();
+                }
+            }
+
+            // si différents tarif achat pour chaque variante
             $cnt = 1;
             $a = variantAttributes::where('attribute_id',$attribute->id)
                 ->whereIn('variant_id', $this->product->variants()->pluck('id'))->select('value_float')->distinct()->pluck('value_float');
@@ -107,7 +122,6 @@ class Variant extends Model
 
             if ($cnt >1 )
             {
-                $valueObj = $this->variantAttributes()->where('attribute_id',$attribute->id)->first();
                 if ($valueObj) {
                     $value = $valueObj->getValue();
                     if ($value) {
@@ -120,6 +134,7 @@ class Variant extends Model
                     }
                 }
 
+                /*
                 $attribute = Attribute::where('name', 'supplier')->first();
                 $valueObj = $this->variantAttributes()->where('attribute_id',$attribute->id)->first();
                 if ($valueObj) {
@@ -137,6 +152,9 @@ class Variant extends Model
                         ])->save();
                     }
                 }
+                */
+
+
             }
 
             // si différents tarif promo pour chaque variante

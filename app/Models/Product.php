@@ -223,6 +223,8 @@ class Product extends Model
                 }
             }
 
+            /*
+            // fournisseur calculé à partir de la marque dans odoo avec les étiquettes
             $attribute = Attribute::where('name', 'supplier')->first();
             $valueObj = $first_variant->variantAttributes()->where('attribute_id',$attribute->id)->first();
             if ($valueObj) {
@@ -240,6 +242,7 @@ class Product extends Model
                     ])->save();
                 }
             }
+            */
         }
 
 
