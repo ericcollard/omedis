@@ -260,18 +260,23 @@ class Product extends Model
             ])->save();
         }
 
-        //Prix discount HT = prix mini des variantes
+        //Prix discount HT = prix mini des variantes, si chaque variante a un prix promo
         $attribute = Attribute::where('name', 'discount-b2c')->first();
-        $value = variantAttributes::where('attribute_id',$attribute->id)
-            ->whereIn('variant_id', $this->variants()->pluck('id'))->min('value_float');
+        $nb_values =  variantAttributes::where('attribute_id',$attribute->id)
+            ->whereIn('variant_id', $this->variants()->pluck('id'))->count();
+        if ($nb_values == $this->getVariantCount())
+        {
+            $value = variantAttributes::where('attribute_id',$attribute->id)
+                ->whereIn('variant_id', $this->variants()->pluck('id'))->min('value_float');
 
-        if ($value) {
-            $odooModel = OdooModel::where('name', 'product_discount_ht')->first();
-            $obj = OdooProductValue::create([
-                'product_id' => $this->id,
-                'odoo_model_id' => $odooModel->id,
-                'value' => $value / 1.2
-            ])->save();
+            if ($value) {
+                $odooModel = OdooModel::where('name', 'product_discount_ht')->first();
+                $obj = OdooProductValue::create([
+                    'product_id' => $this->id,
+                    'odoo_model_id' => $odooModel->id,
+                    'value' => $value / 1.2
+                ])->save();
+            }
         }
 
         //Photos
