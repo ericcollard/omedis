@@ -2773,7 +2773,7 @@ class VariantAttributesTableSeeder extends Seeder
                 'variant_id' => 18,
                 'attribute_id' => 7,
                 'value_str' => NULL,
-                'value_txt' => 'Ski maintenance tool : no variant product',
+                'value_txt' => 'Ski maintenance tool : no variant product, discount retail price',
                 'value_int' => NULL,
                 'value_float' => NULL,
                 'created_at' => '2023-10-12 21:57:51',
@@ -2838,6 +2838,30 @@ class VariantAttributesTableSeeder extends Seeder
                 'value_float' => 80.91,
                 'created_at' => '2023-10-12 21:57:51',
                 'updated_at' => '2023-10-12 21:57:51',
+            ),
+            235 => 
+            array (
+                'id' => 236,
+                'variant_id' => 2,
+                'attribute_id' => 16,
+                'value_str' => NULL,
+                'value_txt' => NULL,
+                'value_int' => NULL,
+                'value_float' => 703.89,
+                'created_at' => '2023-10-12 21:57:50',
+                'updated_at' => '2023-10-12 21:57:50',
+            ),
+            236 => 
+            array (
+                'id' => 237,
+                'variant_id' => 3,
+                'attribute_id' => 16,
+                'value_str' => NULL,
+                'value_txt' => NULL,
+                'value_int' => NULL,
+                'value_float' => 774.19,
+                'created_at' => '2023-10-12 21:57:50',
+                'updated_at' => '2023-10-12 21:57:50',
             ),
         ));
         

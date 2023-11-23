@@ -21,87 +21,6 @@ class OdooProductValuesTableSeeder extends Seeder
         \DB::table('odoo_product_values')->insert(array (
             0 => 
             array (
-                'id' => 1,
-                'product_id' => 1,
-                'odoo_model_id' => 1,
-                'value' => 'Tous / Windsurf / Voile / Vague',
-                'created_at' => '2023-11-23 12:10:32',
-                'updated_at' => '2023-11-23 12:10:32',
-            ),
-            1 => 
-            array (
-                'id' => 2,
-                'product_id' => 1,
-                'odoo_model_id' => 4,
-                'value' => 'Duotone SUPER_HERO 2024',
-                'created_at' => '2023-11-23 12:10:32',
-                'updated_at' => '2023-11-23 12:10:32',
-            ),
-            2 => 
-            array (
-                'id' => 3,
-                'product_id' => 1,
-                'odoo_model_id' => 7,
-                'value' => 'Duotone',
-                'created_at' => '2023-11-23 12:10:32',
-                'updated_at' => '2023-11-23 12:10:32',
-            ),
-            3 => 
-            array (
-                'id' => 4,
-                'product_id' => 1,
-                'odoo_model_id' => 6,
-                'value' => 'Windsurf sail : variant dependent price',
-                'created_at' => '2023-11-23 12:10:32',
-                'updated_at' => '2023-11-23 12:10:32',
-            ),
-            4 => 
-            array (
-                'id' => 5,
-                'product_id' => 1,
-                'odoo_model_id' => 9,
-                'value' => '824.99166666667',
-                'created_at' => '2023-11-23 12:10:32',
-                'updated_at' => '2023-11-23 12:10:32',
-            ),
-            5 => 
-            array (
-                'id' => 6,
-                'product_id' => 1,
-                'odoo_model_id' => 11,
-                'value' => 'https://cdn.boards-and-more.com/system/product_picture_gallery_pictures/files/6493/5a1d/2648/b000/cc96/391c/original/DTW24_SuperHERO_Rendering_C-01_Screen_72.png',
-                'created_at' => '2023-11-23 12:10:33',
-                'updated_at' => '2023-11-23 12:10:33',
-            ),
-            6 => 
-            array (
-                'id' => 7,
-                'product_id' => 1,
-                'odoo_model_id' => 13,
-                'value' => 'Acheter',
-                'created_at' => '2023-11-23 12:10:33',
-                'updated_at' => '2023-11-23 12:10:33',
-            ),
-            7 => 
-            array (
-                'id' => 8,
-                'product_id' => 1,
-                'odoo_model_id' => 14,
-                'value' => 'ARTICLE STOCKABLE',
-                'created_at' => '2023-11-23 12:10:33',
-                'updated_at' => '2023-11-23 12:10:33',
-            ),
-            8 => 
-            array (
-                'id' => 9,
-                'product_id' => 1,
-                'odoo_model_id' => 15,
-                'value' => 'TVA 20%',
-                'created_at' => '2023-11-23 12:10:33',
-                'updated_at' => '2023-11-23 12:10:33',
-            ),
-            9 => 
-            array (
                 'id' => 10,
                 'product_id' => 2,
                 'odoo_model_id' => 1,
@@ -109,7 +28,7 @@ class OdooProductValuesTableSeeder extends Seeder
                 'created_at' => '2023-11-23 12:10:38',
                 'updated_at' => '2023-11-23 12:10:38',
             ),
-            10 => 
+            1 => 
             array (
                 'id' => 11,
                 'product_id' => 2,
@@ -118,7 +37,7 @@ class OdooProductValuesTableSeeder extends Seeder
                 'created_at' => '2023-11-23 12:10:38',
                 'updated_at' => '2023-11-23 12:10:38',
             ),
-            11 => 
+            2 => 
             array (
                 'id' => 12,
                 'product_id' => 2,
@@ -127,7 +46,7 @@ class OdooProductValuesTableSeeder extends Seeder
                 'created_at' => '2023-11-23 12:10:38',
                 'updated_at' => '2023-11-23 12:10:38',
             ),
-            12 => 
+            3 => 
             array (
                 'id' => 13,
                 'product_id' => 2,
@@ -136,7 +55,7 @@ class OdooProductValuesTableSeeder extends Seeder
                 'created_at' => '2023-11-23 12:10:38',
                 'updated_at' => '2023-11-23 12:10:38',
             ),
-            13 => 
+            4 => 
             array (
                 'id' => 14,
                 'product_id' => 2,
@@ -145,7 +64,7 @@ class OdooProductValuesTableSeeder extends Seeder
                 'created_at' => '2023-11-23 12:10:38',
                 'updated_at' => '2023-11-23 12:10:38',
             ),
-            14 => 
+            5 => 
             array (
                 'id' => 15,
                 'product_id' => 2,
@@ -154,7 +73,7 @@ class OdooProductValuesTableSeeder extends Seeder
                 'created_at' => '2023-11-23 12:10:38',
                 'updated_at' => '2023-11-23 12:10:38',
             ),
-            15 => 
+            6 => 
             array (
                 'id' => 16,
                 'product_id' => 2,
@@ -163,7 +82,7 @@ class OdooProductValuesTableSeeder extends Seeder
                 'created_at' => '2023-11-23 12:10:38',
                 'updated_at' => '2023-11-23 12:10:38',
             ),
-            16 => 
+            7 => 
             array (
                 'id' => 17,
                 'product_id' => 2,
@@ -172,7 +91,7 @@ class OdooProductValuesTableSeeder extends Seeder
                 'created_at' => '2023-11-23 12:10:38',
                 'updated_at' => '2023-11-23 12:10:38',
             ),
-            17 => 
+            8 => 
             array (
                 'id' => 18,
                 'product_id' => 2,
@@ -181,7 +100,7 @@ class OdooProductValuesTableSeeder extends Seeder
                 'created_at' => '2023-11-23 12:10:38',
                 'updated_at' => '2023-11-23 12:10:38',
             ),
-            18 => 
+            9 => 
             array (
                 'id' => 19,
                 'product_id' => 2,
@@ -190,7 +109,7 @@ class OdooProductValuesTableSeeder extends Seeder
                 'created_at' => '2023-11-23 12:10:38',
                 'updated_at' => '2023-11-23 12:10:38',
             ),
-            19 => 
+            10 => 
             array (
                 'id' => 20,
                 'product_id' => 3,
@@ -199,7 +118,7 @@ class OdooProductValuesTableSeeder extends Seeder
                 'created_at' => '2023-11-23 12:10:49',
                 'updated_at' => '2023-11-23 12:10:49',
             ),
-            20 => 
+            11 => 
             array (
                 'id' => 21,
                 'product_id' => 3,
@@ -208,7 +127,7 @@ class OdooProductValuesTableSeeder extends Seeder
                 'created_at' => '2023-11-23 12:10:49',
                 'updated_at' => '2023-11-23 12:10:49',
             ),
-            21 => 
+            12 => 
             array (
                 'id' => 22,
                 'product_id' => 3,
@@ -217,7 +136,7 @@ class OdooProductValuesTableSeeder extends Seeder
                 'created_at' => '2023-11-23 12:10:49',
                 'updated_at' => '2023-11-23 12:10:49',
             ),
-            22 => 
+            13 => 
             array (
                 'id' => 23,
                 'product_id' => 3,
@@ -226,7 +145,7 @@ class OdooProductValuesTableSeeder extends Seeder
                 'created_at' => '2023-11-23 12:10:49',
                 'updated_at' => '2023-11-23 12:10:49',
             ),
-            23 => 
+            14 => 
             array (
                 'id' => 24,
                 'product_id' => 3,
@@ -235,7 +154,7 @@ class OdooProductValuesTableSeeder extends Seeder
                 'created_at' => '2023-11-23 12:10:49',
                 'updated_at' => '2023-11-23 12:10:49',
             ),
-            24 => 
+            15 => 
             array (
                 'id' => 25,
                 'product_id' => 3,
@@ -244,7 +163,7 @@ class OdooProductValuesTableSeeder extends Seeder
                 'created_at' => '2023-11-23 12:10:49',
                 'updated_at' => '2023-11-23 12:10:49',
             ),
-            25 => 
+            16 => 
             array (
                 'id' => 26,
                 'product_id' => 3,
@@ -253,7 +172,7 @@ class OdooProductValuesTableSeeder extends Seeder
                 'created_at' => '2023-11-23 12:10:49',
                 'updated_at' => '2023-11-23 12:10:49',
             ),
-            26 => 
+            17 => 
             array (
                 'id' => 27,
                 'product_id' => 3,
@@ -262,7 +181,7 @@ class OdooProductValuesTableSeeder extends Seeder
                 'created_at' => '2023-11-23 12:10:49',
                 'updated_at' => '2023-11-23 12:10:49',
             ),
-            27 => 
+            18 => 
             array (
                 'id' => 28,
                 'product_id' => 3,
@@ -271,7 +190,7 @@ class OdooProductValuesTableSeeder extends Seeder
                 'created_at' => '2023-11-23 12:10:49',
                 'updated_at' => '2023-11-23 12:10:49',
             ),
-            28 => 
+            19 => 
             array (
                 'id' => 29,
                 'product_id' => 3,
@@ -280,7 +199,7 @@ class OdooProductValuesTableSeeder extends Seeder
                 'created_at' => '2023-11-23 12:10:49',
                 'updated_at' => '2023-11-23 12:10:49',
             ),
-            29 => 
+            20 => 
             array (
                 'id' => 30,
                 'product_id' => 4,
@@ -289,7 +208,7 @@ class OdooProductValuesTableSeeder extends Seeder
                 'created_at' => '2023-11-23 12:10:56',
                 'updated_at' => '2023-11-23 12:10:56',
             ),
-            30 => 
+            21 => 
             array (
                 'id' => 31,
                 'product_id' => 4,
@@ -298,7 +217,7 @@ class OdooProductValuesTableSeeder extends Seeder
                 'created_at' => '2023-11-23 12:10:56',
                 'updated_at' => '2023-11-23 12:10:56',
             ),
-            31 => 
+            22 => 
             array (
                 'id' => 32,
                 'product_id' => 4,
@@ -307,7 +226,7 @@ class OdooProductValuesTableSeeder extends Seeder
                 'created_at' => '2023-11-23 12:10:56',
                 'updated_at' => '2023-11-23 12:10:56',
             ),
-            32 => 
+            23 => 
             array (
                 'id' => 33,
                 'product_id' => 4,
@@ -316,7 +235,7 @@ class OdooProductValuesTableSeeder extends Seeder
                 'created_at' => '2023-11-23 12:10:56',
                 'updated_at' => '2023-11-23 12:10:56',
             ),
-            33 => 
+            24 => 
             array (
                 'id' => 34,
                 'product_id' => 4,
@@ -325,7 +244,7 @@ class OdooProductValuesTableSeeder extends Seeder
                 'created_at' => '2023-11-23 12:10:56',
                 'updated_at' => '2023-11-23 12:10:56',
             ),
-            34 => 
+            25 => 
             array (
                 'id' => 35,
                 'product_id' => 4,
@@ -334,7 +253,7 @@ class OdooProductValuesTableSeeder extends Seeder
                 'created_at' => '2023-11-23 12:10:56',
                 'updated_at' => '2023-11-23 12:10:56',
             ),
-            35 => 
+            26 => 
             array (
                 'id' => 36,
                 'product_id' => 4,
@@ -343,7 +262,7 @@ class OdooProductValuesTableSeeder extends Seeder
                 'created_at' => '2023-11-23 12:10:56',
                 'updated_at' => '2023-11-23 12:10:56',
             ),
-            36 => 
+            27 => 
             array (
                 'id' => 37,
                 'product_id' => 4,
@@ -352,7 +271,7 @@ class OdooProductValuesTableSeeder extends Seeder
                 'created_at' => '2023-11-23 12:10:56',
                 'updated_at' => '2023-11-23 12:10:56',
             ),
-            37 => 
+            28 => 
             array (
                 'id' => 38,
                 'product_id' => 4,
@@ -361,7 +280,7 @@ class OdooProductValuesTableSeeder extends Seeder
                 'created_at' => '2023-11-23 12:10:56',
                 'updated_at' => '2023-11-23 12:10:56',
             ),
-            38 => 
+            29 => 
             array (
                 'id' => 39,
                 'product_id' => 4,
@@ -370,7 +289,7 @@ class OdooProductValuesTableSeeder extends Seeder
                 'created_at' => '2023-11-23 12:10:56',
                 'updated_at' => '2023-11-23 12:10:56',
             ),
-            39 => 
+            30 => 
             array (
                 'id' => 40,
                 'product_id' => 4,
@@ -379,7 +298,7 @@ class OdooProductValuesTableSeeder extends Seeder
                 'created_at' => '2023-11-23 12:10:56',
                 'updated_at' => '2023-11-23 12:10:56',
             ),
-            40 => 
+            31 => 
             array (
                 'id' => 41,
                 'product_id' => 4,
@@ -388,7 +307,7 @@ class OdooProductValuesTableSeeder extends Seeder
                 'created_at' => '2023-11-23 12:10:56',
                 'updated_at' => '2023-11-23 12:10:56',
             ),
-            41 => 
+            32 => 
             array (
                 'id' => 42,
                 'product_id' => 5,
@@ -397,7 +316,7 @@ class OdooProductValuesTableSeeder extends Seeder
                 'created_at' => '2023-11-23 12:11:01',
                 'updated_at' => '2023-11-23 12:11:01',
             ),
-            42 => 
+            33 => 
             array (
                 'id' => 43,
                 'product_id' => 5,
@@ -406,7 +325,7 @@ class OdooProductValuesTableSeeder extends Seeder
                 'created_at' => '2023-11-23 12:11:01',
                 'updated_at' => '2023-11-23 12:11:01',
             ),
-            43 => 
+            34 => 
             array (
                 'id' => 44,
                 'product_id' => 5,
@@ -415,7 +334,7 @@ class OdooProductValuesTableSeeder extends Seeder
                 'created_at' => '2023-11-23 12:11:01',
                 'updated_at' => '2023-11-23 12:11:01',
             ),
-            44 => 
+            35 => 
             array (
                 'id' => 45,
                 'product_id' => 5,
@@ -424,7 +343,7 @@ class OdooProductValuesTableSeeder extends Seeder
                 'created_at' => '2023-11-23 12:11:01',
                 'updated_at' => '2023-11-23 12:11:01',
             ),
-            45 => 
+            36 => 
             array (
                 'id' => 46,
                 'product_id' => 5,
@@ -433,7 +352,7 @@ class OdooProductValuesTableSeeder extends Seeder
                 'created_at' => '2023-11-23 12:11:01',
                 'updated_at' => '2023-11-23 12:11:01',
             ),
-            46 => 
+            37 => 
             array (
                 'id' => 47,
                 'product_id' => 5,
@@ -442,7 +361,7 @@ class OdooProductValuesTableSeeder extends Seeder
                 'created_at' => '2023-11-23 12:11:01',
                 'updated_at' => '2023-11-23 12:11:01',
             ),
-            47 => 
+            38 => 
             array (
                 'id' => 48,
                 'product_id' => 5,
@@ -451,7 +370,7 @@ class OdooProductValuesTableSeeder extends Seeder
                 'created_at' => '2023-11-23 12:11:01',
                 'updated_at' => '2023-11-23 12:11:01',
             ),
-            48 => 
+            39 => 
             array (
                 'id' => 49,
                 'product_id' => 5,
@@ -460,7 +379,7 @@ class OdooProductValuesTableSeeder extends Seeder
                 'created_at' => '2023-11-23 12:11:01',
                 'updated_at' => '2023-11-23 12:11:01',
             ),
-            49 => 
+            40 => 
             array (
                 'id' => 50,
                 'product_id' => 5,
@@ -469,7 +388,7 @@ class OdooProductValuesTableSeeder extends Seeder
                 'created_at' => '2023-11-23 12:11:01',
                 'updated_at' => '2023-11-23 12:11:01',
             ),
-            50 => 
+            41 => 
             array (
                 'id' => 51,
                 'product_id' => 5,
@@ -478,7 +397,7 @@ class OdooProductValuesTableSeeder extends Seeder
                 'created_at' => '2023-11-23 12:11:01',
                 'updated_at' => '2023-11-23 12:11:01',
             ),
-            51 => 
+            42 => 
             array (
                 'id' => 52,
                 'product_id' => 5,
@@ -487,7 +406,7 @@ class OdooProductValuesTableSeeder extends Seeder
                 'created_at' => '2023-11-23 12:11:01',
                 'updated_at' => '2023-11-23 12:11:01',
             ),
-            52 => 
+            43 => 
             array (
                 'id' => 53,
                 'product_id' => 5,
@@ -496,7 +415,7 @@ class OdooProductValuesTableSeeder extends Seeder
                 'created_at' => '2023-11-23 12:11:01',
                 'updated_at' => '2023-11-23 12:11:01',
             ),
-            53 => 
+            44 => 
             array (
                 'id' => 54,
                 'product_id' => 5,
@@ -504,6 +423,96 @@ class OdooProductValuesTableSeeder extends Seeder
                 'value' => 'TVA 20%',
                 'created_at' => '2023-11-23 12:11:01',
                 'updated_at' => '2023-11-23 12:11:01',
+            ),
+            45 => 
+            array (
+                'id' => 55,
+                'product_id' => 1,
+                'odoo_model_id' => 1,
+                'value' => 'Tous / Windsurf / Voile / Vague',
+                'created_at' => '2023-11-23 12:54:12',
+                'updated_at' => '2023-11-23 12:54:12',
+            ),
+            46 => 
+            array (
+                'id' => 56,
+                'product_id' => 1,
+                'odoo_model_id' => 4,
+                'value' => 'Duotone SUPER_HERO 2024',
+                'created_at' => '2023-11-23 12:54:12',
+                'updated_at' => '2023-11-23 12:54:12',
+            ),
+            47 => 
+            array (
+                'id' => 57,
+                'product_id' => 1,
+                'odoo_model_id' => 7,
+                'value' => 'Duotone',
+                'created_at' => '2023-11-23 12:54:12',
+                'updated_at' => '2023-11-23 12:54:12',
+            ),
+            48 => 
+            array (
+                'id' => 58,
+                'product_id' => 1,
+                'odoo_model_id' => 6,
+                'value' => 'Windsurf sail : variant dependent price',
+                'created_at' => '2023-11-23 12:54:12',
+                'updated_at' => '2023-11-23 12:54:12',
+            ),
+            49 => 
+            array (
+                'id' => 59,
+                'product_id' => 1,
+                'odoo_model_id' => 9,
+                'value' => '824.99166666667',
+                'created_at' => '2023-11-23 12:54:12',
+                'updated_at' => '2023-11-23 12:54:12',
+            ),
+            50 => 
+            array (
+                'id' => 60,
+                'product_id' => 1,
+                'odoo_model_id' => 10,
+                'value' => '586.575',
+                'created_at' => '2023-11-23 12:54:12',
+                'updated_at' => '2023-11-23 12:54:12',
+            ),
+            51 => 
+            array (
+                'id' => 61,
+                'product_id' => 1,
+                'odoo_model_id' => 11,
+                'value' => 'https://cdn.boards-and-more.com/system/product_picture_gallery_pictures/files/6493/5a1d/2648/b000/cc96/391c/original/DTW24_SuperHERO_Rendering_C-01_Screen_72.png',
+                'created_at' => '2023-11-23 12:54:12',
+                'updated_at' => '2023-11-23 12:54:12',
+            ),
+            52 => 
+            array (
+                'id' => 62,
+                'product_id' => 1,
+                'odoo_model_id' => 13,
+                'value' => 'Acheter',
+                'created_at' => '2023-11-23 12:54:12',
+                'updated_at' => '2023-11-23 12:54:12',
+            ),
+            53 => 
+            array (
+                'id' => 63,
+                'product_id' => 1,
+                'odoo_model_id' => 14,
+                'value' => 'ARTICLE STOCKABLE',
+                'created_at' => '2023-11-23 12:54:12',
+                'updated_at' => '2023-11-23 12:54:12',
+            ),
+            54 => 
+            array (
+                'id' => 64,
+                'product_id' => 1,
+                'odoo_model_id' => 15,
+                'value' => 'TVA 20%',
+                'created_at' => '2023-11-23 12:54:12',
+                'updated_at' => '2023-11-23 12:54:12',
             ),
         ));
         
