@@ -16,6 +16,9 @@
 
             <div class="container">
                 <p><a href="{{ route('product.truncate') }}">Remove all products</a></p>
+                <p><a href="{{ route('variant.uploadcsv') }}">Import products from csv</a></p>
+                <p><a href="{{ route('variant.uploadxml') }}">Import products from xml</a></p>
+
                 {{ $dataTable->table() }}
             </div>
 

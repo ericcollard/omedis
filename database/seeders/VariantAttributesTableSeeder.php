@@ -28,8 +28,8 @@ class VariantAttributesTableSeeder extends Seeder
                 'value_txt' => NULL,
                 'value_int' => 9377,
                 'value_float' => NULL,
-                'created_at' => '2023-10-12 21:57:50',
-                'updated_at' => '2023-10-12 21:57:50',
+                'created_at' => '2024-01-03 09:54:31',
+                'updated_at' => '2024-01-03 09:54:31',
             ),
             1 => 
             array (
@@ -40,8 +40,8 @@ class VariantAttributesTableSeeder extends Seeder
                 'value_txt' => NULL,
                 'value_int' => 9819,
                 'value_float' => NULL,
-                'created_at' => '2023-10-12 21:57:50',
-                'updated_at' => '2023-10-12 21:57:50',
+                'created_at' => '2024-01-03 09:54:31',
+                'updated_at' => '2024-01-03 09:54:31',
             ),
             2 => 
             array (
@@ -52,8 +52,8 @@ class VariantAttributesTableSeeder extends Seeder
                 'value_txt' => NULL,
                 'value_int' => 2024,
                 'value_float' => NULL,
-                'created_at' => '2023-10-12 21:57:50',
-                'updated_at' => '2023-10-12 21:57:50',
+                'created_at' => '2024-01-03 09:54:31',
+                'updated_at' => '2024-01-03 09:54:31',
             ),
             3 => 
             array (
@@ -64,8 +64,8 @@ class VariantAttributesTableSeeder extends Seeder
                 'value_txt' => NULL,
                 'value_int' => NULL,
                 'value_float' => NULL,
-                'created_at' => '2023-10-12 21:57:50',
-                'updated_at' => '2023-10-12 21:57:50',
+                'created_at' => '2024-01-03 09:54:31',
+                'updated_at' => '2024-01-03 09:54:31',
             ),
             4 => 
             array (
@@ -76,8 +76,8 @@ class VariantAttributesTableSeeder extends Seeder
                 'value_txt' => NULL,
                 'value_int' => NULL,
                 'value_float' => NULL,
-                'created_at' => '2023-10-12 21:57:50',
-                'updated_at' => '2023-10-12 21:57:50',
+                'created_at' => '2024-01-03 09:54:31',
+                'updated_at' => '2024-01-03 09:54:31',
             ),
             5 => 
             array (
@@ -88,8 +88,8 @@ class VariantAttributesTableSeeder extends Seeder
                 'value_txt' => NULL,
                 'value_int' => NULL,
                 'value_float' => NULL,
-                'created_at' => '2023-10-12 21:57:50',
-                'updated_at' => '2023-10-12 21:57:50',
+                'created_at' => '2024-01-03 09:54:31',
+                'updated_at' => '2024-01-03 09:54:31',
             ),
             6 => 
             array (
@@ -100,8 +100,8 @@ class VariantAttributesTableSeeder extends Seeder
                 'value_txt' => NULL,
                 'value_int' => 9615,
                 'value_float' => NULL,
-                'created_at' => '2023-10-12 21:57:50',
-                'updated_at' => '2023-10-12 21:57:50',
+                'created_at' => '2024-01-03 09:54:31',
+                'updated_at' => '2024-01-03 09:54:31',
             ),
             7 => 
             array (
@@ -112,8 +112,8 @@ class VariantAttributesTableSeeder extends Seeder
                 'value_txt' => 'Windsurf sail : variant dependent price',
                 'value_int' => NULL,
                 'value_float' => NULL,
-                'created_at' => '2023-10-12 21:57:50',
-                'updated_at' => '2023-10-12 21:57:50',
+                'created_at' => '2024-01-03 09:54:31',
+                'updated_at' => '2024-01-03 09:54:31',
             ),
             8 => 
             array (
@@ -124,8 +124,8 @@ class VariantAttributesTableSeeder extends Seeder
                 'value_txt' => NULL,
                 'value_int' => NULL,
                 'value_float' => NULL,
-                'created_at' => '2023-10-12 21:57:50',
-                'updated_at' => '2023-10-12 21:57:50',
+                'created_at' => '2024-01-03 09:54:31',
+                'updated_at' => '2024-01-03 09:54:31',
             ),
             9 => 
             array (
@@ -136,8 +136,8 @@ class VariantAttributesTableSeeder extends Seeder
                 'value_txt' => NULL,
                 'value_int' => NULL,
                 'value_float' => 742.56,
-                'created_at' => '2023-10-12 21:57:50',
-                'updated_at' => '2023-10-12 21:57:50',
+                'created_at' => '2024-01-03 09:54:31',
+                'updated_at' => '2024-01-03 09:54:31',
             ),
             10 => 
             array (
@@ -148,8 +148,8 @@ class VariantAttributesTableSeeder extends Seeder
                 'value_txt' => NULL,
                 'value_int' => NULL,
                 'value_float' => 989.99,
-                'created_at' => '2023-10-12 21:57:50',
-                'updated_at' => '2023-10-12 21:57:50',
+                'created_at' => '2024-01-03 09:54:31',
+                'updated_at' => '2024-01-03 09:54:31',
             ),
             11 => 
             array (
@@ -160,8 +160,8 @@ class VariantAttributesTableSeeder extends Seeder
                 'value_txt' => NULL,
                 'value_int' => NULL,
                 'value_float' => 4.8,
-                'created_at' => '2023-10-12 21:57:50',
-                'updated_at' => '2023-10-12 21:57:50',
+                'created_at' => '2024-01-03 09:54:31',
+                'updated_at' => '2024-01-03 09:54:31',
             ),
             12 => 
             array (
@@ -172,8 +172,8 @@ class VariantAttributesTableSeeder extends Seeder
                 'value_txt' => NULL,
                 'value_int' => NULL,
                 'value_float' => 3.7,
-                'created_at' => '2023-10-12 21:57:50',
-                'updated_at' => '2023-10-12 21:57:50',
+                'created_at' => '2024-01-03 09:54:31',
+                'updated_at' => '2024-01-03 09:54:31',
             ),
             13 => 
             array (
@@ -184,8 +184,8 @@ class VariantAttributesTableSeeder extends Seeder
                 'value_txt' => NULL,
                 'value_int' => 9377,
                 'value_float' => NULL,
-                'created_at' => '2023-10-12 21:57:50',
-                'updated_at' => '2023-10-12 21:57:50',
+                'created_at' => '2024-01-03 09:54:32',
+                'updated_at' => '2024-01-03 09:54:32',
             ),
             14 => 
             array (
@@ -196,8 +196,8 @@ class VariantAttributesTableSeeder extends Seeder
                 'value_txt' => NULL,
                 'value_int' => 9819,
                 'value_float' => NULL,
-                'created_at' => '2023-10-12 21:57:50',
-                'updated_at' => '2023-10-12 21:57:50',
+                'created_at' => '2024-01-03 09:54:32',
+                'updated_at' => '2024-01-03 09:54:32',
             ),
             15 => 
             array (
@@ -208,8 +208,8 @@ class VariantAttributesTableSeeder extends Seeder
                 'value_txt' => NULL,
                 'value_int' => 2024,
                 'value_float' => NULL,
-                'created_at' => '2023-10-12 21:57:50',
-                'updated_at' => '2023-10-12 21:57:50',
+                'created_at' => '2024-01-03 09:54:32',
+                'updated_at' => '2024-01-03 09:54:32',
             ),
             16 => 
             array (
@@ -220,8 +220,8 @@ class VariantAttributesTableSeeder extends Seeder
                 'value_txt' => NULL,
                 'value_int' => NULL,
                 'value_float' => NULL,
-                'created_at' => '2023-10-12 21:57:50',
-                'updated_at' => '2023-10-12 21:57:50',
+                'created_at' => '2024-01-03 09:54:32',
+                'updated_at' => '2024-01-03 09:54:32',
             ),
             17 => 
             array (
@@ -232,8 +232,8 @@ class VariantAttributesTableSeeder extends Seeder
                 'value_txt' => NULL,
                 'value_int' => NULL,
                 'value_float' => NULL,
-                'created_at' => '2023-10-12 21:57:50',
-                'updated_at' => '2023-10-12 21:57:50',
+                'created_at' => '2024-01-03 09:54:32',
+                'updated_at' => '2024-01-03 09:54:32',
             ),
             18 => 
             array (
@@ -244,8 +244,8 @@ class VariantAttributesTableSeeder extends Seeder
                 'value_txt' => NULL,
                 'value_int' => NULL,
                 'value_float' => NULL,
-                'created_at' => '2023-10-12 21:57:50',
-                'updated_at' => '2023-10-12 21:57:50',
+                'created_at' => '2024-01-03 09:54:32',
+                'updated_at' => '2024-01-03 09:54:32',
             ),
             19 => 
             array (
@@ -256,8 +256,8 @@ class VariantAttributesTableSeeder extends Seeder
                 'value_txt' => NULL,
                 'value_int' => 9615,
                 'value_float' => NULL,
-                'created_at' => '2023-10-12 21:57:50',
-                'updated_at' => '2023-10-12 21:57:50',
+                'created_at' => '2024-01-03 09:54:32',
+                'updated_at' => '2024-01-03 09:54:32',
             ),
             20 => 
             array (
@@ -268,8 +268,8 @@ class VariantAttributesTableSeeder extends Seeder
                 'value_txt' => 'Windsurf sail : variant dependent price',
                 'value_int' => NULL,
                 'value_float' => NULL,
-                'created_at' => '2023-10-12 21:57:50',
-                'updated_at' => '2023-10-12 21:57:50',
+                'created_at' => '2024-01-03 09:54:32',
+                'updated_at' => '2024-01-03 09:54:32',
             ),
             21 => 
             array (
@@ -280,8 +280,8 @@ class VariantAttributesTableSeeder extends Seeder
                 'value_txt' => NULL,
                 'value_int' => NULL,
                 'value_float' => NULL,
-                'created_at' => '2023-10-12 21:57:50',
-                'updated_at' => '2023-10-12 21:57:50',
+                'created_at' => '2024-01-03 09:54:32',
+                'updated_at' => '2024-01-03 09:54:32',
             ),
             22 => 
             array (
@@ -292,8 +292,8 @@ class VariantAttributesTableSeeder extends Seeder
                 'value_txt' => NULL,
                 'value_int' => NULL,
                 'value_float' => 752.56,
-                'created_at' => '2023-10-12 21:57:50',
-                'updated_at' => '2023-10-12 21:57:50',
+                'created_at' => '2024-01-03 09:54:32',
+                'updated_at' => '2024-01-03 09:54:32',
             ),
             23 => 
             array (
@@ -304,8 +304,8 @@ class VariantAttributesTableSeeder extends Seeder
                 'value_txt' => NULL,
                 'value_int' => NULL,
                 'value_float' => 1005.99,
-                'created_at' => '2023-10-12 21:57:50',
-                'updated_at' => '2023-10-12 21:57:50',
+                'created_at' => '2024-01-03 09:54:32',
+                'updated_at' => '2024-01-03 09:54:32',
             ),
             24 => 
             array (
@@ -316,8 +316,8 @@ class VariantAttributesTableSeeder extends Seeder
                 'value_txt' => NULL,
                 'value_int' => NULL,
                 'value_float' => 4.9,
-                'created_at' => '2023-10-12 21:57:50',
-                'updated_at' => '2023-10-12 21:57:50',
+                'created_at' => '2024-01-03 09:54:32',
+                'updated_at' => '2024-01-03 09:54:32',
             ),
             25 => 
             array (
@@ -328,8 +328,8 @@ class VariantAttributesTableSeeder extends Seeder
                 'value_txt' => NULL,
                 'value_int' => NULL,
                 'value_float' => 4.2,
-                'created_at' => '2023-10-12 21:57:50',
-                'updated_at' => '2023-10-12 21:57:50',
+                'created_at' => '2024-01-03 09:54:32',
+                'updated_at' => '2024-01-03 09:54:32',
             ),
             26 => 
             array (
@@ -340,8 +340,8 @@ class VariantAttributesTableSeeder extends Seeder
                 'value_txt' => NULL,
                 'value_int' => 9377,
                 'value_float' => NULL,
-                'created_at' => '2023-10-12 21:57:50',
-                'updated_at' => '2023-10-12 21:57:50',
+                'created_at' => '2024-01-03 09:54:32',
+                'updated_at' => '2024-01-03 09:54:32',
             ),
             27 => 
             array (
@@ -352,8 +352,8 @@ class VariantAttributesTableSeeder extends Seeder
                 'value_txt' => NULL,
                 'value_int' => 9819,
                 'value_float' => NULL,
-                'created_at' => '2023-10-12 21:57:50',
-                'updated_at' => '2023-10-12 21:57:50',
+                'created_at' => '2024-01-03 09:54:32',
+                'updated_at' => '2024-01-03 09:54:32',
             ),
             28 => 
             array (
@@ -364,8 +364,8 @@ class VariantAttributesTableSeeder extends Seeder
                 'value_txt' => NULL,
                 'value_int' => 2024,
                 'value_float' => NULL,
-                'created_at' => '2023-10-12 21:57:50',
-                'updated_at' => '2023-10-12 21:57:50',
+                'created_at' => '2024-01-03 09:54:32',
+                'updated_at' => '2024-01-03 09:54:32',
             ),
             29 => 
             array (
@@ -376,8 +376,8 @@ class VariantAttributesTableSeeder extends Seeder
                 'value_txt' => NULL,
                 'value_int' => NULL,
                 'value_float' => NULL,
-                'created_at' => '2023-10-12 21:57:50',
-                'updated_at' => '2023-10-12 21:57:50',
+                'created_at' => '2024-01-03 09:54:32',
+                'updated_at' => '2024-01-03 09:54:32',
             ),
             30 => 
             array (
@@ -388,8 +388,8 @@ class VariantAttributesTableSeeder extends Seeder
                 'value_txt' => NULL,
                 'value_int' => NULL,
                 'value_float' => NULL,
-                'created_at' => '2023-10-12 21:57:50',
-                'updated_at' => '2023-10-12 21:57:50',
+                'created_at' => '2024-01-03 09:54:32',
+                'updated_at' => '2024-01-03 09:54:32',
             ),
             31 => 
             array (
@@ -400,8 +400,8 @@ class VariantAttributesTableSeeder extends Seeder
                 'value_txt' => NULL,
                 'value_int' => NULL,
                 'value_float' => NULL,
-                'created_at' => '2023-10-12 21:57:50',
-                'updated_at' => '2023-10-12 21:57:50',
+                'created_at' => '2024-01-03 09:54:32',
+                'updated_at' => '2024-01-03 09:54:32',
             ),
             32 => 
             array (
@@ -412,8 +412,8 @@ class VariantAttributesTableSeeder extends Seeder
                 'value_txt' => NULL,
                 'value_int' => 9615,
                 'value_float' => NULL,
-                'created_at' => '2023-10-12 21:57:50',
-                'updated_at' => '2023-10-12 21:57:50',
+                'created_at' => '2024-01-03 09:54:32',
+                'updated_at' => '2024-01-03 09:54:32',
             ),
             33 => 
             array (
@@ -424,8 +424,8 @@ class VariantAttributesTableSeeder extends Seeder
                 'value_txt' => 'Windsurf sail : variant dependent price',
                 'value_int' => NULL,
                 'value_float' => NULL,
-                'created_at' => '2023-10-12 21:57:50',
-                'updated_at' => '2023-10-12 21:57:50',
+                'created_at' => '2024-01-03 09:54:32',
+                'updated_at' => '2024-01-03 09:54:32',
             ),
             34 => 
             array (
@@ -436,8 +436,8 @@ class VariantAttributesTableSeeder extends Seeder
                 'value_txt' => NULL,
                 'value_int' => NULL,
                 'value_float' => NULL,
-                'created_at' => '2023-10-12 21:57:50',
-                'updated_at' => '2023-10-12 21:57:50',
+                'created_at' => '2024-01-03 09:54:32',
+                'updated_at' => '2024-01-03 09:54:32',
             ),
             35 => 
             array (
@@ -448,8 +448,8 @@ class VariantAttributesTableSeeder extends Seeder
                 'value_txt' => NULL,
                 'value_int' => NULL,
                 'value_float' => 762.56,
-                'created_at' => '2023-10-12 21:57:50',
-                'updated_at' => '2023-10-12 21:57:50',
+                'created_at' => '2024-01-03 09:54:32',
+                'updated_at' => '2024-01-03 09:54:32',
             ),
             36 => 
             array (
@@ -460,8 +460,8 @@ class VariantAttributesTableSeeder extends Seeder
                 'value_txt' => NULL,
                 'value_int' => NULL,
                 'value_float' => 1105.99,
-                'created_at' => '2023-10-12 21:57:50',
-                'updated_at' => '2023-10-12 21:57:50',
+                'created_at' => '2024-01-03 09:54:32',
+                'updated_at' => '2024-01-03 09:54:32',
             ),
             37 => 
             array (
@@ -472,8 +472,8 @@ class VariantAttributesTableSeeder extends Seeder
                 'value_txt' => NULL,
                 'value_int' => NULL,
                 'value_float' => 5.0,
-                'created_at' => '2023-10-12 21:57:50',
-                'updated_at' => '2023-10-12 21:57:50',
+                'created_at' => '2024-01-03 09:54:32',
+                'updated_at' => '2024-01-03 09:54:32',
             ),
             38 => 
             array (
@@ -484,8 +484,8 @@ class VariantAttributesTableSeeder extends Seeder
                 'value_txt' => NULL,
                 'value_int' => NULL,
                 'value_float' => 4.7,
-                'created_at' => '2023-10-12 21:57:50',
-                'updated_at' => '2023-10-12 21:57:50',
+                'created_at' => '2024-01-03 09:54:32',
+                'updated_at' => '2024-01-03 09:54:32',
             ),
             39 => 
             array (
@@ -496,8 +496,8 @@ class VariantAttributesTableSeeder extends Seeder
                 'value_txt' => NULL,
                 'value_int' => 9377,
                 'value_float' => NULL,
-                'created_at' => '2023-10-12 21:57:50',
-                'updated_at' => '2023-10-12 21:57:50',
+                'created_at' => '2024-01-03 09:54:32',
+                'updated_at' => '2024-01-03 09:54:32',
             ),
             40 => 
             array (
@@ -508,8 +508,8 @@ class VariantAttributesTableSeeder extends Seeder
                 'value_txt' => NULL,
                 'value_int' => 9819,
                 'value_float' => NULL,
-                'created_at' => '2023-10-12 21:57:50',
-                'updated_at' => '2023-10-12 21:57:50',
+                'created_at' => '2024-01-03 09:54:32',
+                'updated_at' => '2024-01-03 09:54:32',
             ),
             41 => 
             array (
@@ -520,8 +520,8 @@ class VariantAttributesTableSeeder extends Seeder
                 'value_txt' => NULL,
                 'value_int' => 2024,
                 'value_float' => NULL,
-                'created_at' => '2023-10-12 21:57:50',
-                'updated_at' => '2023-10-12 21:57:50',
+                'created_at' => '2024-01-03 09:54:32',
+                'updated_at' => '2024-01-03 09:54:32',
             ),
             42 => 
             array (
@@ -532,8 +532,8 @@ class VariantAttributesTableSeeder extends Seeder
                 'value_txt' => NULL,
                 'value_int' => NULL,
                 'value_float' => NULL,
-                'created_at' => '2023-10-12 21:57:50',
-                'updated_at' => '2023-10-12 21:57:50',
+                'created_at' => '2024-01-03 09:54:32',
+                'updated_at' => '2024-01-03 09:54:32',
             ),
             43 => 
             array (
@@ -544,8 +544,8 @@ class VariantAttributesTableSeeder extends Seeder
                 'value_txt' => NULL,
                 'value_int' => NULL,
                 'value_float' => NULL,
-                'created_at' => '2023-10-12 21:57:50',
-                'updated_at' => '2023-10-12 21:57:50',
+                'created_at' => '2024-01-03 09:54:32',
+                'updated_at' => '2024-01-03 09:54:32',
             ),
             44 => 
             array (
@@ -556,8 +556,8 @@ class VariantAttributesTableSeeder extends Seeder
                 'value_txt' => NULL,
                 'value_int' => NULL,
                 'value_float' => NULL,
-                'created_at' => '2023-10-12 21:57:50',
-                'updated_at' => '2023-10-12 21:57:50',
+                'created_at' => '2024-01-03 09:54:32',
+                'updated_at' => '2024-01-03 09:54:32',
             ),
             45 => 
             array (
@@ -568,8 +568,8 @@ class VariantAttributesTableSeeder extends Seeder
                 'value_txt' => NULL,
                 'value_int' => 9615,
                 'value_float' => NULL,
-                'created_at' => '2023-10-12 21:57:50',
-                'updated_at' => '2023-10-12 21:57:50',
+                'created_at' => '2024-01-03 09:54:32',
+                'updated_at' => '2024-01-03 09:54:32',
             ),
             46 => 
             array (
@@ -580,8 +580,8 @@ class VariantAttributesTableSeeder extends Seeder
                 'value_txt' => 'Windsurf sail : variant dependent price',
                 'value_int' => NULL,
                 'value_float' => NULL,
-                'created_at' => '2023-10-12 21:57:50',
-                'updated_at' => '2023-10-12 21:57:50',
+                'created_at' => '2024-01-03 09:54:32',
+                'updated_at' => '2024-01-03 09:54:32',
             ),
             47 => 
             array (
@@ -592,8 +592,8 @@ class VariantAttributesTableSeeder extends Seeder
                 'value_txt' => NULL,
                 'value_int' => NULL,
                 'value_float' => NULL,
-                'created_at' => '2023-10-12 21:57:50',
-                'updated_at' => '2023-10-12 21:57:50',
+                'created_at' => '2024-01-03 09:54:32',
+                'updated_at' => '2024-01-03 09:54:32',
             ),
             48 => 
             array (
@@ -604,8 +604,8 @@ class VariantAttributesTableSeeder extends Seeder
                 'value_txt' => NULL,
                 'value_int' => NULL,
                 'value_float' => 782.56,
-                'created_at' => '2023-10-12 21:57:50',
-                'updated_at' => '2023-10-12 21:57:50',
+                'created_at' => '2024-01-03 09:54:32',
+                'updated_at' => '2024-01-03 09:54:32',
             ),
             49 => 
             array (
@@ -616,8 +616,8 @@ class VariantAttributesTableSeeder extends Seeder
                 'value_txt' => NULL,
                 'value_int' => NULL,
                 'value_float' => 1205.99,
-                'created_at' => '2023-10-12 21:57:50',
-                'updated_at' => '2023-10-12 21:57:50',
+                'created_at' => '2024-01-03 09:54:32',
+                'updated_at' => '2024-01-03 09:54:32',
             ),
             50 => 
             array (
@@ -628,8 +628,8 @@ class VariantAttributesTableSeeder extends Seeder
                 'value_txt' => NULL,
                 'value_int' => NULL,
                 'value_float' => 5.1,
-                'created_at' => '2023-10-12 21:57:50',
-                'updated_at' => '2023-10-12 21:57:50',
+                'created_at' => '2024-01-03 09:54:32',
+                'updated_at' => '2024-01-03 09:54:32',
             ),
             51 => 
             array (
@@ -640,8 +640,8 @@ class VariantAttributesTableSeeder extends Seeder
                 'value_txt' => NULL,
                 'value_int' => NULL,
                 'value_float' => 5.0,
-                'created_at' => '2023-10-12 21:57:50',
-                'updated_at' => '2023-10-12 21:57:50',
+                'created_at' => '2024-01-03 09:54:32',
+                'updated_at' => '2024-01-03 09:54:32',
             ),
             52 => 
             array (
@@ -652,8 +652,8 @@ class VariantAttributesTableSeeder extends Seeder
                 'value_txt' => NULL,
                 'value_int' => 9404,
                 'value_float' => NULL,
-                'created_at' => '2023-10-12 21:57:50',
-                'updated_at' => '2023-10-12 21:57:50',
+                'created_at' => '2024-01-03 09:54:32',
+                'updated_at' => '2024-01-03 09:54:32',
             ),
             53 => 
             array (
@@ -664,8 +664,8 @@ class VariantAttributesTableSeeder extends Seeder
                 'value_txt' => NULL,
                 'value_int' => 9820,
                 'value_float' => NULL,
-                'created_at' => '2023-10-12 21:57:50',
-                'updated_at' => '2023-10-12 21:57:50',
+                'created_at' => '2024-01-03 09:54:32',
+                'updated_at' => '2024-01-03 09:54:32',
             ),
             54 => 
             array (
@@ -676,8 +676,8 @@ class VariantAttributesTableSeeder extends Seeder
                 'value_txt' => NULL,
                 'value_int' => NULL,
                 'value_float' => NULL,
-                'created_at' => '2023-10-12 21:57:50',
-                'updated_at' => '2023-10-12 21:57:50',
+                'created_at' => '2024-01-03 09:54:32',
+                'updated_at' => '2024-01-03 09:54:32',
             ),
             55 => 
             array (
@@ -688,8 +688,8 @@ class VariantAttributesTableSeeder extends Seeder
                 'value_txt' => NULL,
                 'value_int' => NULL,
                 'value_float' => NULL,
-                'created_at' => '2023-10-12 21:57:50',
-                'updated_at' => '2023-10-12 21:57:50',
+                'created_at' => '2024-01-03 09:54:32',
+                'updated_at' => '2024-01-03 09:54:32',
             ),
             56 => 
             array (
@@ -700,8 +700,8 @@ class VariantAttributesTableSeeder extends Seeder
                 'value_txt' => NULL,
                 'value_int' => NULL,
                 'value_float' => NULL,
-                'created_at' => '2023-10-12 21:57:50',
-                'updated_at' => '2023-10-12 21:57:50',
+                'created_at' => '2024-01-03 09:54:32',
+                'updated_at' => '2024-01-03 09:54:32',
             ),
             57 => 
             array (
@@ -712,8 +712,8 @@ class VariantAttributesTableSeeder extends Seeder
                 'value_txt' => NULL,
                 'value_int' => 9646,
                 'value_float' => NULL,
-                'created_at' => '2023-10-12 21:57:50',
-                'updated_at' => '2023-10-12 21:57:50',
+                'created_at' => '2024-01-03 09:54:32',
+                'updated_at' => '2024-01-03 09:54:32',
             ),
             58 => 
             array (
@@ -724,8 +724,8 @@ class VariantAttributesTableSeeder extends Seeder
                 'value_txt' => 'Kite surf board : variant independant price',
                 'value_int' => NULL,
                 'value_float' => NULL,
-                'created_at' => '2023-10-12 21:57:50',
-                'updated_at' => '2023-10-12 21:57:50',
+                'created_at' => '2024-01-03 09:54:32',
+                'updated_at' => '2024-01-03 09:54:32',
             ),
             59 => 
             array (
@@ -736,8 +736,8 @@ class VariantAttributesTableSeeder extends Seeder
                 'value_txt' => NULL,
                 'value_int' => NULL,
                 'value_float' => NULL,
-                'created_at' => '2023-10-12 21:57:50',
-                'updated_at' => '2023-10-12 21:57:50',
+                'created_at' => '2024-01-03 09:54:32',
+                'updated_at' => '2024-01-03 09:54:32',
             ),
             60 => 
             array (
@@ -748,8 +748,8 @@ class VariantAttributesTableSeeder extends Seeder
                 'value_txt' => NULL,
                 'value_int' => NULL,
                 'value_float' => 890.12,
-                'created_at' => '2023-10-12 21:57:50',
-                'updated_at' => '2023-10-12 21:57:50',
+                'created_at' => '2024-01-03 09:54:32',
+                'updated_at' => '2024-01-03 09:54:32',
             ),
             61 => 
             array (
@@ -760,8 +760,8 @@ class VariantAttributesTableSeeder extends Seeder
                 'value_txt' => NULL,
                 'value_int' => NULL,
                 'value_float' => 1699.99,
-                'created_at' => '2023-10-12 21:57:50',
-                'updated_at' => '2023-10-12 21:57:50',
+                'created_at' => '2024-01-03 09:54:32',
+                'updated_at' => '2024-01-03 09:54:32',
             ),
             62 => 
             array (
@@ -772,8 +772,8 @@ class VariantAttributesTableSeeder extends Seeder
                 'value_txt' => NULL,
                 'value_int' => NULL,
                 'value_float' => 5.4,
-                'created_at' => '2023-10-12 21:57:50',
-                'updated_at' => '2023-10-12 21:57:50',
+                'created_at' => '2024-01-03 09:54:32',
+                'updated_at' => '2024-01-03 09:54:32',
             ),
             63 => 
             array (
@@ -784,8 +784,8 @@ class VariantAttributesTableSeeder extends Seeder
                 'value_txt' => NULL,
                 'value_int' => NULL,
                 'value_float' => NULL,
-                'created_at' => '2023-10-12 21:57:50',
-                'updated_at' => '2023-10-12 21:57:50',
+                'created_at' => '2024-01-03 09:54:32',
+                'updated_at' => '2024-01-03 09:54:32',
             ),
             64 => 
             array (
@@ -796,8 +796,8 @@ class VariantAttributesTableSeeder extends Seeder
                 'value_txt' => NULL,
                 'value_int' => 9404,
                 'value_float' => NULL,
-                'created_at' => '2023-10-12 21:57:50',
-                'updated_at' => '2023-10-12 21:57:50',
+                'created_at' => '2024-01-03 09:54:32',
+                'updated_at' => '2024-01-03 09:54:32',
             ),
             65 => 
             array (
@@ -808,8 +808,8 @@ class VariantAttributesTableSeeder extends Seeder
                 'value_txt' => NULL,
                 'value_int' => 9820,
                 'value_float' => NULL,
-                'created_at' => '2023-10-12 21:57:50',
-                'updated_at' => '2023-10-12 21:57:50',
+                'created_at' => '2024-01-03 09:54:32',
+                'updated_at' => '2024-01-03 09:54:32',
             ),
             66 => 
             array (
@@ -820,8 +820,8 @@ class VariantAttributesTableSeeder extends Seeder
                 'value_txt' => NULL,
                 'value_int' => NULL,
                 'value_float' => NULL,
-                'created_at' => '2023-10-12 21:57:50',
-                'updated_at' => '2023-10-12 21:57:50',
+                'created_at' => '2024-01-03 09:54:32',
+                'updated_at' => '2024-01-03 09:54:32',
             ),
             67 => 
             array (
@@ -832,8 +832,8 @@ class VariantAttributesTableSeeder extends Seeder
                 'value_txt' => NULL,
                 'value_int' => NULL,
                 'value_float' => NULL,
-                'created_at' => '2023-10-12 21:57:50',
-                'updated_at' => '2023-10-12 21:57:50',
+                'created_at' => '2024-01-03 09:54:32',
+                'updated_at' => '2024-01-03 09:54:32',
             ),
             68 => 
             array (
@@ -844,8 +844,8 @@ class VariantAttributesTableSeeder extends Seeder
                 'value_txt' => NULL,
                 'value_int' => NULL,
                 'value_float' => NULL,
-                'created_at' => '2023-10-12 21:57:50',
-                'updated_at' => '2023-10-12 21:57:50',
+                'created_at' => '2024-01-03 09:54:32',
+                'updated_at' => '2024-01-03 09:54:32',
             ),
             69 => 
             array (
@@ -856,8 +856,8 @@ class VariantAttributesTableSeeder extends Seeder
                 'value_txt' => NULL,
                 'value_int' => 9646,
                 'value_float' => NULL,
-                'created_at' => '2023-10-12 21:57:50',
-                'updated_at' => '2023-10-12 21:57:50',
+                'created_at' => '2024-01-03 09:54:32',
+                'updated_at' => '2024-01-03 09:54:32',
             ),
             70 => 
             array (
@@ -868,8 +868,8 @@ class VariantAttributesTableSeeder extends Seeder
                 'value_txt' => 'Kite surf board : variant independant price',
                 'value_int' => NULL,
                 'value_float' => NULL,
-                'created_at' => '2023-10-12 21:57:50',
-                'updated_at' => '2023-10-12 21:57:50',
+                'created_at' => '2024-01-03 09:54:32',
+                'updated_at' => '2024-01-03 09:54:32',
             ),
             71 => 
             array (
@@ -880,8 +880,8 @@ class VariantAttributesTableSeeder extends Seeder
                 'value_txt' => NULL,
                 'value_int' => NULL,
                 'value_float' => NULL,
-                'created_at' => '2023-10-12 21:57:50',
-                'updated_at' => '2023-10-12 21:57:50',
+                'created_at' => '2024-01-03 09:54:32',
+                'updated_at' => '2024-01-03 09:54:32',
             ),
             72 => 
             array (
@@ -892,8 +892,8 @@ class VariantAttributesTableSeeder extends Seeder
                 'value_txt' => NULL,
                 'value_int' => NULL,
                 'value_float' => 890.12,
-                'created_at' => '2023-10-12 21:57:50',
-                'updated_at' => '2023-10-12 21:57:50',
+                'created_at' => '2024-01-03 09:54:32',
+                'updated_at' => '2024-01-03 09:54:32',
             ),
             73 => 
             array (
@@ -904,8 +904,8 @@ class VariantAttributesTableSeeder extends Seeder
                 'value_txt' => NULL,
                 'value_int' => NULL,
                 'value_float' => 1699.99,
-                'created_at' => '2023-10-12 21:57:50',
-                'updated_at' => '2023-10-12 21:57:50',
+                'created_at' => '2024-01-03 09:54:32',
+                'updated_at' => '2024-01-03 09:54:32',
             ),
             74 => 
             array (
@@ -916,8 +916,8 @@ class VariantAttributesTableSeeder extends Seeder
                 'value_txt' => NULL,
                 'value_int' => NULL,
                 'value_float' => 5.4,
-                'created_at' => '2023-10-12 21:57:50',
-                'updated_at' => '2023-10-12 21:57:50',
+                'created_at' => '2024-01-03 09:54:32',
+                'updated_at' => '2024-01-03 09:54:32',
             ),
             75 => 
             array (
@@ -928,8 +928,8 @@ class VariantAttributesTableSeeder extends Seeder
                 'value_txt' => NULL,
                 'value_int' => NULL,
                 'value_float' => NULL,
-                'created_at' => '2023-10-12 21:57:50',
-                'updated_at' => '2023-10-12 21:57:50',
+                'created_at' => '2024-01-03 09:54:32',
+                'updated_at' => '2024-01-03 09:54:32',
             ),
             76 => 
             array (
@@ -940,8 +940,8 @@ class VariantAttributesTableSeeder extends Seeder
                 'value_txt' => NULL,
                 'value_int' => 9404,
                 'value_float' => NULL,
-                'created_at' => '2023-10-12 21:57:50',
-                'updated_at' => '2023-10-12 21:57:50',
+                'created_at' => '2024-01-03 09:54:32',
+                'updated_at' => '2024-01-03 09:54:32',
             ),
             77 => 
             array (
@@ -952,8 +952,8 @@ class VariantAttributesTableSeeder extends Seeder
                 'value_txt' => NULL,
                 'value_int' => 9820,
                 'value_float' => NULL,
-                'created_at' => '2023-10-12 21:57:50',
-                'updated_at' => '2023-10-12 21:57:50',
+                'created_at' => '2024-01-03 09:54:32',
+                'updated_at' => '2024-01-03 09:54:32',
             ),
             78 => 
             array (
@@ -964,8 +964,8 @@ class VariantAttributesTableSeeder extends Seeder
                 'value_txt' => NULL,
                 'value_int' => NULL,
                 'value_float' => NULL,
-                'created_at' => '2023-10-12 21:57:50',
-                'updated_at' => '2023-10-12 21:57:50',
+                'created_at' => '2024-01-03 09:54:32',
+                'updated_at' => '2024-01-03 09:54:32',
             ),
             79 => 
             array (
@@ -976,8 +976,8 @@ class VariantAttributesTableSeeder extends Seeder
                 'value_txt' => NULL,
                 'value_int' => NULL,
                 'value_float' => NULL,
-                'created_at' => '2023-10-12 21:57:50',
-                'updated_at' => '2023-10-12 21:57:50',
+                'created_at' => '2024-01-03 09:54:32',
+                'updated_at' => '2024-01-03 09:54:32',
             ),
             80 => 
             array (
@@ -988,8 +988,8 @@ class VariantAttributesTableSeeder extends Seeder
                 'value_txt' => NULL,
                 'value_int' => NULL,
                 'value_float' => NULL,
-                'created_at' => '2023-10-12 21:57:50',
-                'updated_at' => '2023-10-12 21:57:50',
+                'created_at' => '2024-01-03 09:54:32',
+                'updated_at' => '2024-01-03 09:54:32',
             ),
             81 => 
             array (
@@ -1000,8 +1000,8 @@ class VariantAttributesTableSeeder extends Seeder
                 'value_txt' => NULL,
                 'value_int' => 9646,
                 'value_float' => NULL,
-                'created_at' => '2023-10-12 21:57:50',
-                'updated_at' => '2023-10-12 21:57:50',
+                'created_at' => '2024-01-03 09:54:32',
+                'updated_at' => '2024-01-03 09:54:32',
             ),
             82 => 
             array (
@@ -1012,8 +1012,8 @@ class VariantAttributesTableSeeder extends Seeder
                 'value_txt' => 'Kite surf board : variant independant price',
                 'value_int' => NULL,
                 'value_float' => NULL,
-                'created_at' => '2023-10-12 21:57:50',
-                'updated_at' => '2023-10-12 21:57:50',
+                'created_at' => '2024-01-03 09:54:32',
+                'updated_at' => '2024-01-03 09:54:32',
             ),
             83 => 
             array (
@@ -1024,8 +1024,8 @@ class VariantAttributesTableSeeder extends Seeder
                 'value_txt' => NULL,
                 'value_int' => NULL,
                 'value_float' => NULL,
-                'created_at' => '2023-10-12 21:57:50',
-                'updated_at' => '2023-10-12 21:57:50',
+                'created_at' => '2024-01-03 09:54:32',
+                'updated_at' => '2024-01-03 09:54:32',
             ),
             84 => 
             array (
@@ -1036,8 +1036,8 @@ class VariantAttributesTableSeeder extends Seeder
                 'value_txt' => NULL,
                 'value_int' => NULL,
                 'value_float' => 890.12,
-                'created_at' => '2023-10-12 21:57:50',
-                'updated_at' => '2023-10-12 21:57:50',
+                'created_at' => '2024-01-03 09:54:32',
+                'updated_at' => '2024-01-03 09:54:32',
             ),
             85 => 
             array (
@@ -1048,8 +1048,8 @@ class VariantAttributesTableSeeder extends Seeder
                 'value_txt' => NULL,
                 'value_int' => NULL,
                 'value_float' => 1699.99,
-                'created_at' => '2023-10-12 21:57:50',
-                'updated_at' => '2023-10-12 21:57:50',
+                'created_at' => '2024-01-03 09:54:32',
+                'updated_at' => '2024-01-03 09:54:32',
             ),
             86 => 
             array (
@@ -1060,8 +1060,8 @@ class VariantAttributesTableSeeder extends Seeder
                 'value_txt' => NULL,
                 'value_int' => NULL,
                 'value_float' => 5.4,
-                'created_at' => '2023-10-12 21:57:50',
-                'updated_at' => '2023-10-12 21:57:50',
+                'created_at' => '2024-01-03 09:54:32',
+                'updated_at' => '2024-01-03 09:54:32',
             ),
             87 => 
             array (
@@ -1072,8 +1072,8 @@ class VariantAttributesTableSeeder extends Seeder
                 'value_txt' => NULL,
                 'value_int' => NULL,
                 'value_float' => NULL,
-                'created_at' => '2023-10-12 21:57:50',
-                'updated_at' => '2023-10-12 21:57:50',
+                'created_at' => '2024-01-03 09:54:32',
+                'updated_at' => '2024-01-03 09:54:32',
             ),
             88 => 
             array (
@@ -1084,8 +1084,8 @@ class VariantAttributesTableSeeder extends Seeder
                 'value_txt' => NULL,
                 'value_int' => 9404,
                 'value_float' => NULL,
-                'created_at' => '2023-10-12 21:57:50',
-                'updated_at' => '2023-10-12 21:57:50',
+                'created_at' => '2024-01-03 09:54:32',
+                'updated_at' => '2024-01-03 09:54:32',
             ),
             89 => 
             array (
@@ -1096,8 +1096,8 @@ class VariantAttributesTableSeeder extends Seeder
                 'value_txt' => NULL,
                 'value_int' => 9820,
                 'value_float' => NULL,
-                'created_at' => '2023-10-12 21:57:50',
-                'updated_at' => '2023-10-12 21:57:50',
+                'created_at' => '2024-01-03 09:54:32',
+                'updated_at' => '2024-01-03 09:54:32',
             ),
             90 => 
             array (
@@ -1108,8 +1108,8 @@ class VariantAttributesTableSeeder extends Seeder
                 'value_txt' => NULL,
                 'value_int' => NULL,
                 'value_float' => NULL,
-                'created_at' => '2023-10-12 21:57:50',
-                'updated_at' => '2023-10-12 21:57:50',
+                'created_at' => '2024-01-03 09:54:32',
+                'updated_at' => '2024-01-03 09:54:32',
             ),
             91 => 
             array (
@@ -1120,8 +1120,8 @@ class VariantAttributesTableSeeder extends Seeder
                 'value_txt' => NULL,
                 'value_int' => NULL,
                 'value_float' => NULL,
-                'created_at' => '2023-10-12 21:57:50',
-                'updated_at' => '2023-10-12 21:57:50',
+                'created_at' => '2024-01-03 09:54:32',
+                'updated_at' => '2024-01-03 09:54:32',
             ),
             92 => 
             array (
@@ -1132,8 +1132,8 @@ class VariantAttributesTableSeeder extends Seeder
                 'value_txt' => NULL,
                 'value_int' => NULL,
                 'value_float' => NULL,
-                'created_at' => '2023-10-12 21:57:50',
-                'updated_at' => '2023-10-12 21:57:50',
+                'created_at' => '2024-01-03 09:54:32',
+                'updated_at' => '2024-01-03 09:54:32',
             ),
             93 => 
             array (
@@ -1144,8 +1144,8 @@ class VariantAttributesTableSeeder extends Seeder
                 'value_txt' => NULL,
                 'value_int' => 9646,
                 'value_float' => NULL,
-                'created_at' => '2023-10-12 21:57:50',
-                'updated_at' => '2023-10-12 21:57:50',
+                'created_at' => '2024-01-03 09:54:32',
+                'updated_at' => '2024-01-03 09:54:32',
             ),
             94 => 
             array (
@@ -1156,8 +1156,8 @@ class VariantAttributesTableSeeder extends Seeder
                 'value_txt' => 'Kite surf board : variant independant price',
                 'value_int' => NULL,
                 'value_float' => NULL,
-                'created_at' => '2023-10-12 21:57:50',
-                'updated_at' => '2023-10-12 21:57:50',
+                'created_at' => '2024-01-03 09:54:32',
+                'updated_at' => '2024-01-03 09:54:32',
             ),
             95 => 
             array (
@@ -1168,8 +1168,8 @@ class VariantAttributesTableSeeder extends Seeder
                 'value_txt' => NULL,
                 'value_int' => NULL,
                 'value_float' => NULL,
-                'created_at' => '2023-10-12 21:57:50',
-                'updated_at' => '2023-10-12 21:57:50',
+                'created_at' => '2024-01-03 09:54:32',
+                'updated_at' => '2024-01-03 09:54:32',
             ),
             96 => 
             array (
@@ -1180,8 +1180,8 @@ class VariantAttributesTableSeeder extends Seeder
                 'value_txt' => NULL,
                 'value_int' => NULL,
                 'value_float' => 890.12,
-                'created_at' => '2023-10-12 21:57:50',
-                'updated_at' => '2023-10-12 21:57:50',
+                'created_at' => '2024-01-03 09:54:32',
+                'updated_at' => '2024-01-03 09:54:32',
             ),
             97 => 
             array (
@@ -1192,8 +1192,8 @@ class VariantAttributesTableSeeder extends Seeder
                 'value_txt' => NULL,
                 'value_int' => NULL,
                 'value_float' => 1699.99,
-                'created_at' => '2023-10-12 21:57:50',
-                'updated_at' => '2023-10-12 21:57:50',
+                'created_at' => '2024-01-03 09:54:32',
+                'updated_at' => '2024-01-03 09:54:32',
             ),
             98 => 
             array (
@@ -1204,8 +1204,8 @@ class VariantAttributesTableSeeder extends Seeder
                 'value_txt' => NULL,
                 'value_int' => NULL,
                 'value_float' => 5.4,
-                'created_at' => '2023-10-12 21:57:50',
-                'updated_at' => '2023-10-12 21:57:50',
+                'created_at' => '2024-01-03 09:54:32',
+                'updated_at' => '2024-01-03 09:54:32',
             ),
             99 => 
             array (
@@ -1216,8 +1216,8 @@ class VariantAttributesTableSeeder extends Seeder
                 'value_txt' => NULL,
                 'value_int' => NULL,
                 'value_float' => NULL,
-                'created_at' => '2023-10-12 21:57:50',
-                'updated_at' => '2023-10-12 21:57:50',
+                'created_at' => '2024-01-03 09:54:32',
+                'updated_at' => '2024-01-03 09:54:32',
             ),
             100 => 
             array (
@@ -1228,8 +1228,8 @@ class VariantAttributesTableSeeder extends Seeder
                 'value_txt' => NULL,
                 'value_int' => 9510,
                 'value_float' => NULL,
-                'created_at' => '2023-10-12 21:57:50',
-                'updated_at' => '2023-10-12 21:57:50',
+                'created_at' => '2024-01-03 09:54:33',
+                'updated_at' => '2024-01-03 09:54:33',
             ),
             101 => 
             array (
@@ -1240,8 +1240,8 @@ class VariantAttributesTableSeeder extends Seeder
                 'value_txt' => NULL,
                 'value_int' => 9822,
                 'value_float' => NULL,
-                'created_at' => '2023-10-12 21:57:50',
-                'updated_at' => '2023-10-12 21:57:50',
+                'created_at' => '2024-01-03 09:54:33',
+                'updated_at' => '2024-01-03 09:54:33',
             ),
             102 => 
             array (
@@ -1252,8 +1252,8 @@ class VariantAttributesTableSeeder extends Seeder
                 'value_txt' => NULL,
                 'value_int' => 2024,
                 'value_float' => NULL,
-                'created_at' => '2023-10-12 21:57:50',
-                'updated_at' => '2023-10-12 21:57:50',
+                'created_at' => '2024-01-03 09:54:33',
+                'updated_at' => '2024-01-03 09:54:33',
             ),
             103 => 
             array (
@@ -1264,8 +1264,8 @@ class VariantAttributesTableSeeder extends Seeder
                 'value_txt' => NULL,
                 'value_int' => NULL,
                 'value_float' => NULL,
-                'created_at' => '2023-10-12 21:57:50',
-                'updated_at' => '2023-10-12 21:57:50',
+                'created_at' => '2024-01-03 09:54:33',
+                'updated_at' => '2024-01-03 09:54:33',
             ),
             104 => 
             array (
@@ -1276,8 +1276,8 @@ class VariantAttributesTableSeeder extends Seeder
                 'value_txt' => NULL,
                 'value_int' => NULL,
                 'value_float' => NULL,
-                'created_at' => '2023-10-12 21:57:50',
-                'updated_at' => '2023-10-12 21:57:50',
+                'created_at' => '2024-01-03 09:54:33',
+                'updated_at' => '2024-01-03 09:54:33',
             ),
             105 => 
             array (
@@ -1288,8 +1288,8 @@ class VariantAttributesTableSeeder extends Seeder
                 'value_txt' => NULL,
                 'value_int' => NULL,
                 'value_float' => NULL,
-                'created_at' => '2023-10-12 21:57:50',
-                'updated_at' => '2023-10-12 21:57:50',
+                'created_at' => '2024-01-03 09:54:33',
+                'updated_at' => '2024-01-03 09:54:33',
             ),
             106 => 
             array (
@@ -1300,8 +1300,8 @@ class VariantAttributesTableSeeder extends Seeder
                 'value_txt' => NULL,
                 'value_int' => 9796,
                 'value_float' => NULL,
-                'created_at' => '2023-10-12 21:57:50',
-                'updated_at' => '2023-10-12 21:57:50',
+                'created_at' => '2024-01-03 09:54:33',
+                'updated_at' => '2024-01-03 09:54:33',
             ),
             107 => 
             array (
@@ -1312,8 +1312,8 @@ class VariantAttributesTableSeeder extends Seeder
             'value_txt' => 'Snowboard Jkt: double variant index (color + size)',
                 'value_int' => NULL,
                 'value_float' => NULL,
-                'created_at' => '2023-10-12 21:57:50',
-                'updated_at' => '2023-10-12 21:57:50',
+                'created_at' => '2024-01-03 09:54:33',
+                'updated_at' => '2024-01-03 09:54:33',
             ),
             108 => 
             array (
@@ -1324,8 +1324,8 @@ class VariantAttributesTableSeeder extends Seeder
                 'value_txt' => NULL,
                 'value_int' => NULL,
                 'value_float' => NULL,
-                'created_at' => '2023-10-12 21:57:50',
-                'updated_at' => '2023-10-12 21:57:50',
+                'created_at' => '2024-01-03 09:54:33',
+                'updated_at' => '2024-01-03 09:54:33',
             ),
             109 => 
             array (
@@ -1336,8 +1336,8 @@ class VariantAttributesTableSeeder extends Seeder
                 'value_txt' => NULL,
                 'value_int' => NULL,
                 'value_float' => 190.42,
-                'created_at' => '2023-10-12 21:57:50',
-                'updated_at' => '2023-10-12 21:57:50',
+                'created_at' => '2024-01-03 09:54:33',
+                'updated_at' => '2024-01-03 09:54:33',
             ),
             110 => 
             array (
@@ -1348,8 +1348,8 @@ class VariantAttributesTableSeeder extends Seeder
                 'value_txt' => NULL,
                 'value_int' => NULL,
                 'value_float' => 400.0,
-                'created_at' => '2023-10-12 21:57:50',
-                'updated_at' => '2023-10-12 21:57:50',
+                'created_at' => '2024-01-03 09:54:33',
+                'updated_at' => '2024-01-03 09:54:33',
             ),
             111 => 
             array (
@@ -1360,8 +1360,8 @@ class VariantAttributesTableSeeder extends Seeder
                 'value_txt' => NULL,
                 'value_int' => NULL,
                 'value_float' => 2.1,
-                'created_at' => '2023-10-12 21:57:50',
-                'updated_at' => '2023-10-12 21:57:50',
+                'created_at' => '2024-01-03 09:54:33',
+                'updated_at' => '2024-01-03 09:54:33',
             ),
             112 => 
             array (
@@ -1372,8 +1372,8 @@ class VariantAttributesTableSeeder extends Seeder
                 'value_txt' => NULL,
                 'value_int' => 395,
                 'value_float' => NULL,
-                'created_at' => '2023-10-12 21:57:50',
-                'updated_at' => '2023-10-12 21:57:50',
+                'created_at' => '2024-01-03 09:54:33',
+                'updated_at' => '2024-01-03 09:54:33',
             ),
             113 => 
             array (
@@ -1384,8 +1384,8 @@ class VariantAttributesTableSeeder extends Seeder
                 'value_txt' => NULL,
                 'value_int' => 7047,
                 'value_float' => NULL,
-                'created_at' => '2023-10-12 21:57:50',
-                'updated_at' => '2023-10-12 21:57:50',
+                'created_at' => '2024-01-03 09:54:33',
+                'updated_at' => '2024-01-03 09:54:33',
             ),
             114 => 
             array (
@@ -1396,8 +1396,8 @@ class VariantAttributesTableSeeder extends Seeder
                 'value_txt' => NULL,
                 'value_int' => 9510,
                 'value_float' => NULL,
-                'created_at' => '2023-10-12 21:57:50',
-                'updated_at' => '2023-10-12 21:57:50',
+                'created_at' => '2024-01-03 09:54:33',
+                'updated_at' => '2024-01-03 09:54:33',
             ),
             115 => 
             array (
@@ -1408,8 +1408,8 @@ class VariantAttributesTableSeeder extends Seeder
                 'value_txt' => NULL,
                 'value_int' => 9822,
                 'value_float' => NULL,
-                'created_at' => '2023-10-12 21:57:50',
-                'updated_at' => '2023-10-12 21:57:50',
+                'created_at' => '2024-01-03 09:54:33',
+                'updated_at' => '2024-01-03 09:54:33',
             ),
             116 => 
             array (
@@ -1420,8 +1420,8 @@ class VariantAttributesTableSeeder extends Seeder
                 'value_txt' => NULL,
                 'value_int' => 2024,
                 'value_float' => NULL,
-                'created_at' => '2023-10-12 21:57:50',
-                'updated_at' => '2023-10-12 21:57:50',
+                'created_at' => '2024-01-03 09:54:33',
+                'updated_at' => '2024-01-03 09:54:33',
             ),
             117 => 
             array (
@@ -1432,8 +1432,8 @@ class VariantAttributesTableSeeder extends Seeder
                 'value_txt' => NULL,
                 'value_int' => NULL,
                 'value_float' => NULL,
-                'created_at' => '2023-10-12 21:57:50',
-                'updated_at' => '2023-10-12 21:57:50',
+                'created_at' => '2024-01-03 09:54:33',
+                'updated_at' => '2024-01-03 09:54:33',
             ),
             118 => 
             array (
@@ -1444,8 +1444,8 @@ class VariantAttributesTableSeeder extends Seeder
                 'value_txt' => NULL,
                 'value_int' => NULL,
                 'value_float' => NULL,
-                'created_at' => '2023-10-12 21:57:50',
-                'updated_at' => '2023-10-12 21:57:50',
+                'created_at' => '2024-01-03 09:54:33',
+                'updated_at' => '2024-01-03 09:54:33',
             ),
             119 => 
             array (
@@ -1456,8 +1456,8 @@ class VariantAttributesTableSeeder extends Seeder
                 'value_txt' => NULL,
                 'value_int' => NULL,
                 'value_float' => NULL,
-                'created_at' => '2023-10-12 21:57:50',
-                'updated_at' => '2023-10-12 21:57:50',
+                'created_at' => '2024-01-03 09:54:33',
+                'updated_at' => '2024-01-03 09:54:33',
             ),
             120 => 
             array (
@@ -1468,8 +1468,8 @@ class VariantAttributesTableSeeder extends Seeder
                 'value_txt' => NULL,
                 'value_int' => 9796,
                 'value_float' => NULL,
-                'created_at' => '2023-10-12 21:57:50',
-                'updated_at' => '2023-10-12 21:57:50',
+                'created_at' => '2024-01-03 09:54:33',
+                'updated_at' => '2024-01-03 09:54:33',
             ),
             121 => 
             array (
@@ -1480,8 +1480,8 @@ class VariantAttributesTableSeeder extends Seeder
             'value_txt' => 'Snowboard Jkt: double variant index (color + size)',
                 'value_int' => NULL,
                 'value_float' => NULL,
-                'created_at' => '2023-10-12 21:57:50',
-                'updated_at' => '2023-10-12 21:57:50',
+                'created_at' => '2024-01-03 09:54:33',
+                'updated_at' => '2024-01-03 09:54:33',
             ),
             122 => 
             array (
@@ -1492,8 +1492,8 @@ class VariantAttributesTableSeeder extends Seeder
                 'value_txt' => NULL,
                 'value_int' => NULL,
                 'value_float' => NULL,
-                'created_at' => '2023-10-12 21:57:50',
-                'updated_at' => '2023-10-12 21:57:50',
+                'created_at' => '2024-01-03 09:54:33',
+                'updated_at' => '2024-01-03 09:54:33',
             ),
             123 => 
             array (
@@ -1504,8 +1504,8 @@ class VariantAttributesTableSeeder extends Seeder
                 'value_txt' => NULL,
                 'value_int' => NULL,
                 'value_float' => 190.42,
-                'created_at' => '2023-10-12 21:57:50',
-                'updated_at' => '2023-10-12 21:57:50',
+                'created_at' => '2024-01-03 09:54:33',
+                'updated_at' => '2024-01-03 09:54:33',
             ),
             124 => 
             array (
@@ -1516,8 +1516,8 @@ class VariantAttributesTableSeeder extends Seeder
                 'value_txt' => NULL,
                 'value_int' => NULL,
                 'value_float' => 400.0,
-                'created_at' => '2023-10-12 21:57:50',
-                'updated_at' => '2023-10-12 21:57:50',
+                'created_at' => '2024-01-03 09:54:33',
+                'updated_at' => '2024-01-03 09:54:33',
             ),
             125 => 
             array (
@@ -1528,8 +1528,8 @@ class VariantAttributesTableSeeder extends Seeder
                 'value_txt' => NULL,
                 'value_int' => NULL,
                 'value_float' => 2.1,
-                'created_at' => '2023-10-12 21:57:50',
-                'updated_at' => '2023-10-12 21:57:50',
+                'created_at' => '2024-01-03 09:54:33',
+                'updated_at' => '2024-01-03 09:54:33',
             ),
             126 => 
             array (
@@ -1540,8 +1540,8 @@ class VariantAttributesTableSeeder extends Seeder
                 'value_txt' => NULL,
                 'value_int' => 398,
                 'value_float' => NULL,
-                'created_at' => '2023-10-12 21:57:50',
-                'updated_at' => '2023-10-12 21:57:50',
+                'created_at' => '2024-01-03 09:54:33',
+                'updated_at' => '2024-01-03 09:54:33',
             ),
             127 => 
             array (
@@ -1552,8 +1552,8 @@ class VariantAttributesTableSeeder extends Seeder
                 'value_txt' => NULL,
                 'value_int' => 7047,
                 'value_float' => NULL,
-                'created_at' => '2023-10-12 21:57:50',
-                'updated_at' => '2023-10-12 21:57:50',
+                'created_at' => '2024-01-03 09:54:33',
+                'updated_at' => '2024-01-03 09:54:33',
             ),
             128 => 
             array (
@@ -1564,8 +1564,8 @@ class VariantAttributesTableSeeder extends Seeder
                 'value_txt' => NULL,
                 'value_int' => 9510,
                 'value_float' => NULL,
-                'created_at' => '2023-10-12 21:57:50',
-                'updated_at' => '2023-10-12 21:57:50',
+                'created_at' => '2024-01-03 09:54:33',
+                'updated_at' => '2024-01-03 09:54:33',
             ),
             129 => 
             array (
@@ -1576,8 +1576,8 @@ class VariantAttributesTableSeeder extends Seeder
                 'value_txt' => NULL,
                 'value_int' => 9822,
                 'value_float' => NULL,
-                'created_at' => '2023-10-12 21:57:50',
-                'updated_at' => '2023-10-12 21:57:50',
+                'created_at' => '2024-01-03 09:54:33',
+                'updated_at' => '2024-01-03 09:54:33',
             ),
             130 => 
             array (
@@ -1588,8 +1588,8 @@ class VariantAttributesTableSeeder extends Seeder
                 'value_txt' => NULL,
                 'value_int' => 2024,
                 'value_float' => NULL,
-                'created_at' => '2023-10-12 21:57:50',
-                'updated_at' => '2023-10-12 21:57:50',
+                'created_at' => '2024-01-03 09:54:33',
+                'updated_at' => '2024-01-03 09:54:33',
             ),
             131 => 
             array (
@@ -1600,8 +1600,8 @@ class VariantAttributesTableSeeder extends Seeder
                 'value_txt' => NULL,
                 'value_int' => NULL,
                 'value_float' => NULL,
-                'created_at' => '2023-10-12 21:57:50',
-                'updated_at' => '2023-10-12 21:57:50',
+                'created_at' => '2024-01-03 09:54:33',
+                'updated_at' => '2024-01-03 09:54:33',
             ),
             132 => 
             array (
@@ -1612,8 +1612,8 @@ class VariantAttributesTableSeeder extends Seeder
                 'value_txt' => NULL,
                 'value_int' => NULL,
                 'value_float' => NULL,
-                'created_at' => '2023-10-12 21:57:50',
-                'updated_at' => '2023-10-12 21:57:50',
+                'created_at' => '2024-01-03 09:54:33',
+                'updated_at' => '2024-01-03 09:54:33',
             ),
             133 => 
             array (
@@ -1624,8 +1624,8 @@ class VariantAttributesTableSeeder extends Seeder
                 'value_txt' => NULL,
                 'value_int' => NULL,
                 'value_float' => NULL,
-                'created_at' => '2023-10-12 21:57:50',
-                'updated_at' => '2023-10-12 21:57:50',
+                'created_at' => '2024-01-03 09:54:33',
+                'updated_at' => '2024-01-03 09:54:33',
             ),
             134 => 
             array (
@@ -1636,8 +1636,8 @@ class VariantAttributesTableSeeder extends Seeder
                 'value_txt' => NULL,
                 'value_int' => 9796,
                 'value_float' => NULL,
-                'created_at' => '2023-10-12 21:57:50',
-                'updated_at' => '2023-10-12 21:57:50',
+                'created_at' => '2024-01-03 09:54:33',
+                'updated_at' => '2024-01-03 09:54:33',
             ),
             135 => 
             array (
@@ -1648,8 +1648,8 @@ class VariantAttributesTableSeeder extends Seeder
             'value_txt' => 'Snowboard Jkt: double variant index (color + size)',
                 'value_int' => NULL,
                 'value_float' => NULL,
-                'created_at' => '2023-10-12 21:57:50',
-                'updated_at' => '2023-10-12 21:57:50',
+                'created_at' => '2024-01-03 09:54:33',
+                'updated_at' => '2024-01-03 09:54:33',
             ),
             136 => 
             array (
@@ -1660,8 +1660,8 @@ class VariantAttributesTableSeeder extends Seeder
                 'value_txt' => NULL,
                 'value_int' => NULL,
                 'value_float' => NULL,
-                'created_at' => '2023-10-12 21:57:50',
-                'updated_at' => '2023-10-12 21:57:50',
+                'created_at' => '2024-01-03 09:54:33',
+                'updated_at' => '2024-01-03 09:54:33',
             ),
             137 => 
             array (
@@ -1672,8 +1672,8 @@ class VariantAttributesTableSeeder extends Seeder
                 'value_txt' => NULL,
                 'value_int' => NULL,
                 'value_float' => 190.42,
-                'created_at' => '2023-10-12 21:57:50',
-                'updated_at' => '2023-10-12 21:57:50',
+                'created_at' => '2024-01-03 09:54:33',
+                'updated_at' => '2024-01-03 09:54:33',
             ),
             138 => 
             array (
@@ -1684,8 +1684,8 @@ class VariantAttributesTableSeeder extends Seeder
                 'value_txt' => NULL,
                 'value_int' => NULL,
                 'value_float' => 400.0,
-                'created_at' => '2023-10-12 21:57:50',
-                'updated_at' => '2023-10-12 21:57:50',
+                'created_at' => '2024-01-03 09:54:33',
+                'updated_at' => '2024-01-03 09:54:33',
             ),
             139 => 
             array (
@@ -1696,8 +1696,8 @@ class VariantAttributesTableSeeder extends Seeder
                 'value_txt' => NULL,
                 'value_int' => NULL,
                 'value_float' => 2.1,
-                'created_at' => '2023-10-12 21:57:50',
-                'updated_at' => '2023-10-12 21:57:50',
+                'created_at' => '2024-01-03 09:54:33',
+                'updated_at' => '2024-01-03 09:54:33',
             ),
             140 => 
             array (
@@ -1708,8 +1708,8 @@ class VariantAttributesTableSeeder extends Seeder
                 'value_txt' => NULL,
                 'value_int' => 401,
                 'value_float' => NULL,
-                'created_at' => '2023-10-12 21:57:50',
-                'updated_at' => '2023-10-12 21:57:50',
+                'created_at' => '2024-01-03 09:54:33',
+                'updated_at' => '2024-01-03 09:54:33',
             ),
             141 => 
             array (
@@ -1720,8 +1720,8 @@ class VariantAttributesTableSeeder extends Seeder
                 'value_txt' => NULL,
                 'value_int' => 7047,
                 'value_float' => NULL,
-                'created_at' => '2023-10-12 21:57:50',
-                'updated_at' => '2023-10-12 21:57:50',
+                'created_at' => '2024-01-03 09:54:33',
+                'updated_at' => '2024-01-03 09:54:33',
             ),
             142 => 
             array (
@@ -1732,8 +1732,8 @@ class VariantAttributesTableSeeder extends Seeder
                 'value_txt' => NULL,
                 'value_int' => 9510,
                 'value_float' => NULL,
-                'created_at' => '2023-10-12 21:57:50',
-                'updated_at' => '2023-10-12 21:57:50',
+                'created_at' => '2024-01-03 09:54:33',
+                'updated_at' => '2024-01-03 09:54:33',
             ),
             143 => 
             array (
@@ -1744,8 +1744,8 @@ class VariantAttributesTableSeeder extends Seeder
                 'value_txt' => NULL,
                 'value_int' => 9822,
                 'value_float' => NULL,
-                'created_at' => '2023-10-12 21:57:51',
-                'updated_at' => '2023-10-12 21:57:51',
+                'created_at' => '2024-01-03 09:54:33',
+                'updated_at' => '2024-01-03 09:54:33',
             ),
             144 => 
             array (
@@ -1756,8 +1756,8 @@ class VariantAttributesTableSeeder extends Seeder
                 'value_txt' => NULL,
                 'value_int' => 2024,
                 'value_float' => NULL,
-                'created_at' => '2023-10-12 21:57:51',
-                'updated_at' => '2023-10-12 21:57:51',
+                'created_at' => '2024-01-03 09:54:33',
+                'updated_at' => '2024-01-03 09:54:33',
             ),
             145 => 
             array (
@@ -1768,8 +1768,8 @@ class VariantAttributesTableSeeder extends Seeder
                 'value_txt' => NULL,
                 'value_int' => NULL,
                 'value_float' => NULL,
-                'created_at' => '2023-10-12 21:57:51',
-                'updated_at' => '2023-10-12 21:57:51',
+                'created_at' => '2024-01-03 09:54:33',
+                'updated_at' => '2024-01-03 09:54:33',
             ),
             146 => 
             array (
@@ -1780,8 +1780,8 @@ class VariantAttributesTableSeeder extends Seeder
                 'value_txt' => NULL,
                 'value_int' => NULL,
                 'value_float' => NULL,
-                'created_at' => '2023-10-12 21:57:51',
-                'updated_at' => '2023-10-12 21:57:51',
+                'created_at' => '2024-01-03 09:54:33',
+                'updated_at' => '2024-01-03 09:54:33',
             ),
             147 => 
             array (
@@ -1792,8 +1792,8 @@ class VariantAttributesTableSeeder extends Seeder
                 'value_txt' => NULL,
                 'value_int' => NULL,
                 'value_float' => NULL,
-                'created_at' => '2023-10-12 21:57:51',
-                'updated_at' => '2023-10-12 21:57:51',
+                'created_at' => '2024-01-03 09:54:33',
+                'updated_at' => '2024-01-03 09:54:33',
             ),
             148 => 
             array (
@@ -1804,8 +1804,8 @@ class VariantAttributesTableSeeder extends Seeder
                 'value_txt' => NULL,
                 'value_int' => 9796,
                 'value_float' => NULL,
-                'created_at' => '2023-10-12 21:57:51',
-                'updated_at' => '2023-10-12 21:57:51',
+                'created_at' => '2024-01-03 09:54:33',
+                'updated_at' => '2024-01-03 09:54:33',
             ),
             149 => 
             array (
@@ -1816,8 +1816,8 @@ class VariantAttributesTableSeeder extends Seeder
             'value_txt' => 'Snowboard Jkt: double variant index (color + size)',
                 'value_int' => NULL,
                 'value_float' => NULL,
-                'created_at' => '2023-10-12 21:57:51',
-                'updated_at' => '2023-10-12 21:57:51',
+                'created_at' => '2024-01-03 09:54:33',
+                'updated_at' => '2024-01-03 09:54:33',
             ),
             150 => 
             array (
@@ -1828,8 +1828,8 @@ class VariantAttributesTableSeeder extends Seeder
                 'value_txt' => NULL,
                 'value_int' => NULL,
                 'value_float' => NULL,
-                'created_at' => '2023-10-12 21:57:51',
-                'updated_at' => '2023-10-12 21:57:51',
+                'created_at' => '2024-01-03 09:54:33',
+                'updated_at' => '2024-01-03 09:54:33',
             ),
             151 => 
             array (
@@ -1840,8 +1840,8 @@ class VariantAttributesTableSeeder extends Seeder
                 'value_txt' => NULL,
                 'value_int' => NULL,
                 'value_float' => 190.42,
-                'created_at' => '2023-10-12 21:57:51',
-                'updated_at' => '2023-10-12 21:57:51',
+                'created_at' => '2024-01-03 09:54:33',
+                'updated_at' => '2024-01-03 09:54:33',
             ),
             152 => 
             array (
@@ -1852,8 +1852,8 @@ class VariantAttributesTableSeeder extends Seeder
                 'value_txt' => NULL,
                 'value_int' => NULL,
                 'value_float' => 400.0,
-                'created_at' => '2023-10-12 21:57:51',
-                'updated_at' => '2023-10-12 21:57:51',
+                'created_at' => '2024-01-03 09:54:33',
+                'updated_at' => '2024-01-03 09:54:33',
             ),
             153 => 
             array (
@@ -1864,8 +1864,8 @@ class VariantAttributesTableSeeder extends Seeder
                 'value_txt' => NULL,
                 'value_int' => NULL,
                 'value_float' => 2.1,
-                'created_at' => '2023-10-12 21:57:51',
-                'updated_at' => '2023-10-12 21:57:51',
+                'created_at' => '2024-01-03 09:54:33',
+                'updated_at' => '2024-01-03 09:54:33',
             ),
             154 => 
             array (
@@ -1876,8 +1876,8 @@ class VariantAttributesTableSeeder extends Seeder
                 'value_txt' => NULL,
                 'value_int' => 403,
                 'value_float' => NULL,
-                'created_at' => '2023-10-12 21:57:51',
-                'updated_at' => '2023-10-12 21:57:51',
+                'created_at' => '2024-01-03 09:54:33',
+                'updated_at' => '2024-01-03 09:54:33',
             ),
             155 => 
             array (
@@ -1888,8 +1888,8 @@ class VariantAttributesTableSeeder extends Seeder
                 'value_txt' => NULL,
                 'value_int' => 7047,
                 'value_float' => NULL,
-                'created_at' => '2023-10-12 21:57:51',
-                'updated_at' => '2023-10-12 21:57:51',
+                'created_at' => '2024-01-03 09:54:33',
+                'updated_at' => '2024-01-03 09:54:33',
             ),
             156 => 
             array (
@@ -1900,8 +1900,8 @@ class VariantAttributesTableSeeder extends Seeder
                 'value_txt' => NULL,
                 'value_int' => 9510,
                 'value_float' => NULL,
-                'created_at' => '2023-10-12 21:57:51',
-                'updated_at' => '2023-10-12 21:57:51',
+                'created_at' => '2024-01-03 09:54:33',
+                'updated_at' => '2024-01-03 09:54:33',
             ),
             157 => 
             array (
@@ -1912,8 +1912,8 @@ class VariantAttributesTableSeeder extends Seeder
                 'value_txt' => NULL,
                 'value_int' => 9822,
                 'value_float' => NULL,
-                'created_at' => '2023-10-12 21:57:51',
-                'updated_at' => '2023-10-12 21:57:51',
+                'created_at' => '2024-01-03 09:54:33',
+                'updated_at' => '2024-01-03 09:54:33',
             ),
             158 => 
             array (
@@ -1924,8 +1924,8 @@ class VariantAttributesTableSeeder extends Seeder
                 'value_txt' => NULL,
                 'value_int' => 2024,
                 'value_float' => NULL,
-                'created_at' => '2023-10-12 21:57:51',
-                'updated_at' => '2023-10-12 21:57:51',
+                'created_at' => '2024-01-03 09:54:33',
+                'updated_at' => '2024-01-03 09:54:33',
             ),
             159 => 
             array (
@@ -1936,8 +1936,8 @@ class VariantAttributesTableSeeder extends Seeder
                 'value_txt' => NULL,
                 'value_int' => NULL,
                 'value_float' => NULL,
-                'created_at' => '2023-10-12 21:57:51',
-                'updated_at' => '2023-10-12 21:57:51',
+                'created_at' => '2024-01-03 09:54:33',
+                'updated_at' => '2024-01-03 09:54:33',
             ),
             160 => 
             array (
@@ -1948,8 +1948,8 @@ class VariantAttributesTableSeeder extends Seeder
                 'value_txt' => NULL,
                 'value_int' => NULL,
                 'value_float' => NULL,
-                'created_at' => '2023-10-12 21:57:51',
-                'updated_at' => '2023-10-12 21:57:51',
+                'created_at' => '2024-01-03 09:54:33',
+                'updated_at' => '2024-01-03 09:54:33',
             ),
             161 => 
             array (
@@ -1960,8 +1960,8 @@ class VariantAttributesTableSeeder extends Seeder
                 'value_txt' => NULL,
                 'value_int' => NULL,
                 'value_float' => NULL,
-                'created_at' => '2023-10-12 21:57:51',
-                'updated_at' => '2023-10-12 21:57:51',
+                'created_at' => '2024-01-03 09:54:33',
+                'updated_at' => '2024-01-03 09:54:33',
             ),
             162 => 
             array (
@@ -1972,8 +1972,8 @@ class VariantAttributesTableSeeder extends Seeder
                 'value_txt' => NULL,
                 'value_int' => 9796,
                 'value_float' => NULL,
-                'created_at' => '2023-10-12 21:57:51',
-                'updated_at' => '2023-10-12 21:57:51',
+                'created_at' => '2024-01-03 09:54:33',
+                'updated_at' => '2024-01-03 09:54:33',
             ),
             163 => 
             array (
@@ -1984,8 +1984,8 @@ class VariantAttributesTableSeeder extends Seeder
             'value_txt' => 'Snowboard Jkt: double variant index (color + size)',
                 'value_int' => NULL,
                 'value_float' => NULL,
-                'created_at' => '2023-10-12 21:57:51',
-                'updated_at' => '2023-10-12 21:57:51',
+                'created_at' => '2024-01-03 09:54:33',
+                'updated_at' => '2024-01-03 09:54:33',
             ),
             164 => 
             array (
@@ -1996,8 +1996,8 @@ class VariantAttributesTableSeeder extends Seeder
                 'value_txt' => NULL,
                 'value_int' => NULL,
                 'value_float' => NULL,
-                'created_at' => '2023-10-12 21:57:51',
-                'updated_at' => '2023-10-12 21:57:51',
+                'created_at' => '2024-01-03 09:54:33',
+                'updated_at' => '2024-01-03 09:54:33',
             ),
             165 => 
             array (
@@ -2008,8 +2008,8 @@ class VariantAttributesTableSeeder extends Seeder
                 'value_txt' => NULL,
                 'value_int' => NULL,
                 'value_float' => 190.42,
-                'created_at' => '2023-10-12 21:57:51',
-                'updated_at' => '2023-10-12 21:57:51',
+                'created_at' => '2024-01-03 09:54:33',
+                'updated_at' => '2024-01-03 09:54:33',
             ),
             166 => 
             array (
@@ -2020,8 +2020,8 @@ class VariantAttributesTableSeeder extends Seeder
                 'value_txt' => NULL,
                 'value_int' => NULL,
                 'value_float' => 400.0,
-                'created_at' => '2023-10-12 21:57:51',
-                'updated_at' => '2023-10-12 21:57:51',
+                'created_at' => '2024-01-03 09:54:33',
+                'updated_at' => '2024-01-03 09:54:33',
             ),
             167 => 
             array (
@@ -2032,8 +2032,8 @@ class VariantAttributesTableSeeder extends Seeder
                 'value_txt' => NULL,
                 'value_int' => NULL,
                 'value_float' => 2.1,
-                'created_at' => '2023-10-12 21:57:51',
-                'updated_at' => '2023-10-12 21:57:51',
+                'created_at' => '2024-01-03 09:54:33',
+                'updated_at' => '2024-01-03 09:54:33',
             ),
             168 => 
             array (
@@ -2044,8 +2044,8 @@ class VariantAttributesTableSeeder extends Seeder
                 'value_txt' => NULL,
                 'value_int' => 395,
                 'value_float' => NULL,
-                'created_at' => '2023-10-12 21:57:51',
-                'updated_at' => '2023-10-12 21:57:51',
+                'created_at' => '2024-01-03 09:54:33',
+                'updated_at' => '2024-01-03 09:54:33',
             ),
             169 => 
             array (
@@ -2056,8 +2056,8 @@ class VariantAttributesTableSeeder extends Seeder
                 'value_txt' => NULL,
                 'value_int' => 8286,
                 'value_float' => NULL,
-                'created_at' => '2023-10-12 21:57:51',
-                'updated_at' => '2023-10-12 21:57:51',
+                'created_at' => '2024-01-03 09:54:33',
+                'updated_at' => '2024-01-03 09:54:33',
             ),
             170 => 
             array (
@@ -2068,8 +2068,8 @@ class VariantAttributesTableSeeder extends Seeder
                 'value_txt' => NULL,
                 'value_int' => 9510,
                 'value_float' => NULL,
-                'created_at' => '2023-10-12 21:57:51',
-                'updated_at' => '2023-10-12 21:57:51',
+                'created_at' => '2024-01-03 09:54:33',
+                'updated_at' => '2024-01-03 09:54:33',
             ),
             171 => 
             array (
@@ -2080,8 +2080,8 @@ class VariantAttributesTableSeeder extends Seeder
                 'value_txt' => NULL,
                 'value_int' => 9822,
                 'value_float' => NULL,
-                'created_at' => '2023-10-12 21:57:51',
-                'updated_at' => '2023-10-12 21:57:51',
+                'created_at' => '2024-01-03 09:54:33',
+                'updated_at' => '2024-01-03 09:54:33',
             ),
             172 => 
             array (
@@ -2092,8 +2092,8 @@ class VariantAttributesTableSeeder extends Seeder
                 'value_txt' => NULL,
                 'value_int' => 2024,
                 'value_float' => NULL,
-                'created_at' => '2023-10-12 21:57:51',
-                'updated_at' => '2023-10-12 21:57:51',
+                'created_at' => '2024-01-03 09:54:33',
+                'updated_at' => '2024-01-03 09:54:33',
             ),
             173 => 
             array (
@@ -2104,8 +2104,8 @@ class VariantAttributesTableSeeder extends Seeder
                 'value_txt' => NULL,
                 'value_int' => NULL,
                 'value_float' => NULL,
-                'created_at' => '2023-10-12 21:57:51',
-                'updated_at' => '2023-10-12 21:57:51',
+                'created_at' => '2024-01-03 09:54:33',
+                'updated_at' => '2024-01-03 09:54:33',
             ),
             174 => 
             array (
@@ -2116,8 +2116,8 @@ class VariantAttributesTableSeeder extends Seeder
                 'value_txt' => NULL,
                 'value_int' => NULL,
                 'value_float' => NULL,
-                'created_at' => '2023-10-12 21:57:51',
-                'updated_at' => '2023-10-12 21:57:51',
+                'created_at' => '2024-01-03 09:54:33',
+                'updated_at' => '2024-01-03 09:54:33',
             ),
             175 => 
             array (
@@ -2128,8 +2128,8 @@ class VariantAttributesTableSeeder extends Seeder
                 'value_txt' => NULL,
                 'value_int' => NULL,
                 'value_float' => NULL,
-                'created_at' => '2023-10-12 21:57:51',
-                'updated_at' => '2023-10-12 21:57:51',
+                'created_at' => '2024-01-03 09:54:33',
+                'updated_at' => '2024-01-03 09:54:33',
             ),
             176 => 
             array (
@@ -2140,8 +2140,8 @@ class VariantAttributesTableSeeder extends Seeder
                 'value_txt' => NULL,
                 'value_int' => 9796,
                 'value_float' => NULL,
-                'created_at' => '2023-10-12 21:57:51',
-                'updated_at' => '2023-10-12 21:57:51',
+                'created_at' => '2024-01-03 09:54:33',
+                'updated_at' => '2024-01-03 09:54:33',
             ),
             177 => 
             array (
@@ -2152,8 +2152,8 @@ class VariantAttributesTableSeeder extends Seeder
             'value_txt' => 'Snowboard Jkt: double variant index (color + size)',
                 'value_int' => NULL,
                 'value_float' => NULL,
-                'created_at' => '2023-10-12 21:57:51',
-                'updated_at' => '2023-10-12 21:57:51',
+                'created_at' => '2024-01-03 09:54:33',
+                'updated_at' => '2024-01-03 09:54:33',
             ),
             178 => 
             array (
@@ -2164,8 +2164,8 @@ class VariantAttributesTableSeeder extends Seeder
                 'value_txt' => NULL,
                 'value_int' => NULL,
                 'value_float' => NULL,
-                'created_at' => '2023-10-12 21:57:51',
-                'updated_at' => '2023-10-12 21:57:51',
+                'created_at' => '2024-01-03 09:54:33',
+                'updated_at' => '2024-01-03 09:54:33',
             ),
             179 => 
             array (
@@ -2176,8 +2176,8 @@ class VariantAttributesTableSeeder extends Seeder
                 'value_txt' => NULL,
                 'value_int' => NULL,
                 'value_float' => 190.42,
-                'created_at' => '2023-10-12 21:57:51',
-                'updated_at' => '2023-10-12 21:57:51',
+                'created_at' => '2024-01-03 09:54:33',
+                'updated_at' => '2024-01-03 09:54:33',
             ),
             180 => 
             array (
@@ -2188,8 +2188,8 @@ class VariantAttributesTableSeeder extends Seeder
                 'value_txt' => NULL,
                 'value_int' => NULL,
                 'value_float' => 400.0,
-                'created_at' => '2023-10-12 21:57:51',
-                'updated_at' => '2023-10-12 21:57:51',
+                'created_at' => '2024-01-03 09:54:33',
+                'updated_at' => '2024-01-03 09:54:33',
             ),
             181 => 
             array (
@@ -2200,8 +2200,8 @@ class VariantAttributesTableSeeder extends Seeder
                 'value_txt' => NULL,
                 'value_int' => NULL,
                 'value_float' => 2.1,
-                'created_at' => '2023-10-12 21:57:51',
-                'updated_at' => '2023-10-12 21:57:51',
+                'created_at' => '2024-01-03 09:54:33',
+                'updated_at' => '2024-01-03 09:54:33',
             ),
             182 => 
             array (
@@ -2212,8 +2212,8 @@ class VariantAttributesTableSeeder extends Seeder
                 'value_txt' => NULL,
                 'value_int' => 398,
                 'value_float' => NULL,
-                'created_at' => '2023-10-12 21:57:51',
-                'updated_at' => '2023-10-12 21:57:51',
+                'created_at' => '2024-01-03 09:54:33',
+                'updated_at' => '2024-01-03 09:54:33',
             ),
             183 => 
             array (
@@ -2224,8 +2224,8 @@ class VariantAttributesTableSeeder extends Seeder
                 'value_txt' => NULL,
                 'value_int' => 8286,
                 'value_float' => NULL,
-                'created_at' => '2023-10-12 21:57:51',
-                'updated_at' => '2023-10-12 21:57:51',
+                'created_at' => '2024-01-03 09:54:33',
+                'updated_at' => '2024-01-03 09:54:33',
             ),
             184 => 
             array (
@@ -2236,8 +2236,8 @@ class VariantAttributesTableSeeder extends Seeder
                 'value_txt' => NULL,
                 'value_int' => 9510,
                 'value_float' => NULL,
-                'created_at' => '2023-10-12 21:57:51',
-                'updated_at' => '2023-10-12 21:57:51',
+                'created_at' => '2024-01-03 09:54:33',
+                'updated_at' => '2024-01-03 09:54:33',
             ),
             185 => 
             array (
@@ -2248,8 +2248,8 @@ class VariantAttributesTableSeeder extends Seeder
                 'value_txt' => NULL,
                 'value_int' => 9822,
                 'value_float' => NULL,
-                'created_at' => '2023-10-12 21:57:51',
-                'updated_at' => '2023-10-12 21:57:51',
+                'created_at' => '2024-01-03 09:54:33',
+                'updated_at' => '2024-01-03 09:54:33',
             ),
             186 => 
             array (
@@ -2260,8 +2260,8 @@ class VariantAttributesTableSeeder extends Seeder
                 'value_txt' => NULL,
                 'value_int' => 2024,
                 'value_float' => NULL,
-                'created_at' => '2023-10-12 21:57:51',
-                'updated_at' => '2023-10-12 21:57:51',
+                'created_at' => '2024-01-03 09:54:33',
+                'updated_at' => '2024-01-03 09:54:33',
             ),
             187 => 
             array (
@@ -2272,8 +2272,8 @@ class VariantAttributesTableSeeder extends Seeder
                 'value_txt' => NULL,
                 'value_int' => NULL,
                 'value_float' => NULL,
-                'created_at' => '2023-10-12 21:57:51',
-                'updated_at' => '2023-10-12 21:57:51',
+                'created_at' => '2024-01-03 09:54:33',
+                'updated_at' => '2024-01-03 09:54:33',
             ),
             188 => 
             array (
@@ -2284,8 +2284,8 @@ class VariantAttributesTableSeeder extends Seeder
                 'value_txt' => NULL,
                 'value_int' => NULL,
                 'value_float' => NULL,
-                'created_at' => '2023-10-12 21:57:51',
-                'updated_at' => '2023-10-12 21:57:51',
+                'created_at' => '2024-01-03 09:54:33',
+                'updated_at' => '2024-01-03 09:54:33',
             ),
             189 => 
             array (
@@ -2296,8 +2296,8 @@ class VariantAttributesTableSeeder extends Seeder
                 'value_txt' => NULL,
                 'value_int' => NULL,
                 'value_float' => NULL,
-                'created_at' => '2023-10-12 21:57:51',
-                'updated_at' => '2023-10-12 21:57:51',
+                'created_at' => '2024-01-03 09:54:33',
+                'updated_at' => '2024-01-03 09:54:33',
             ),
             190 => 
             array (
@@ -2308,8 +2308,8 @@ class VariantAttributesTableSeeder extends Seeder
                 'value_txt' => NULL,
                 'value_int' => 9796,
                 'value_float' => NULL,
-                'created_at' => '2023-10-12 21:57:51',
-                'updated_at' => '2023-10-12 21:57:51',
+                'created_at' => '2024-01-03 09:54:33',
+                'updated_at' => '2024-01-03 09:54:33',
             ),
             191 => 
             array (
@@ -2320,8 +2320,8 @@ class VariantAttributesTableSeeder extends Seeder
             'value_txt' => 'Snowboard Jkt: double variant index (color + size)',
                 'value_int' => NULL,
                 'value_float' => NULL,
-                'created_at' => '2023-10-12 21:57:51',
-                'updated_at' => '2023-10-12 21:57:51',
+                'created_at' => '2024-01-03 09:54:33',
+                'updated_at' => '2024-01-03 09:54:33',
             ),
             192 => 
             array (
@@ -2332,8 +2332,8 @@ class VariantAttributesTableSeeder extends Seeder
                 'value_txt' => NULL,
                 'value_int' => NULL,
                 'value_float' => NULL,
-                'created_at' => '2023-10-12 21:57:51',
-                'updated_at' => '2023-10-12 21:57:51',
+                'created_at' => '2024-01-03 09:54:33',
+                'updated_at' => '2024-01-03 09:54:33',
             ),
             193 => 
             array (
@@ -2344,8 +2344,8 @@ class VariantAttributesTableSeeder extends Seeder
                 'value_txt' => NULL,
                 'value_int' => NULL,
                 'value_float' => 190.42,
-                'created_at' => '2023-10-12 21:57:51',
-                'updated_at' => '2023-10-12 21:57:51',
+                'created_at' => '2024-01-03 09:54:33',
+                'updated_at' => '2024-01-03 09:54:33',
             ),
             194 => 
             array (
@@ -2356,8 +2356,8 @@ class VariantAttributesTableSeeder extends Seeder
                 'value_txt' => NULL,
                 'value_int' => NULL,
                 'value_float' => 400.0,
-                'created_at' => '2023-10-12 21:57:51',
-                'updated_at' => '2023-10-12 21:57:51',
+                'created_at' => '2024-01-03 09:54:33',
+                'updated_at' => '2024-01-03 09:54:33',
             ),
             195 => 
             array (
@@ -2368,8 +2368,8 @@ class VariantAttributesTableSeeder extends Seeder
                 'value_txt' => NULL,
                 'value_int' => NULL,
                 'value_float' => 2.1,
-                'created_at' => '2023-10-12 21:57:51',
-                'updated_at' => '2023-10-12 21:57:51',
+                'created_at' => '2024-01-03 09:54:33',
+                'updated_at' => '2024-01-03 09:54:33',
             ),
             196 => 
             array (
@@ -2380,8 +2380,8 @@ class VariantAttributesTableSeeder extends Seeder
                 'value_txt' => NULL,
                 'value_int' => 401,
                 'value_float' => NULL,
-                'created_at' => '2023-10-12 21:57:51',
-                'updated_at' => '2023-10-12 21:57:51',
+                'created_at' => '2024-01-03 09:54:33',
+                'updated_at' => '2024-01-03 09:54:33',
             ),
             197 => 
             array (
@@ -2392,8 +2392,8 @@ class VariantAttributesTableSeeder extends Seeder
                 'value_txt' => NULL,
                 'value_int' => 8286,
                 'value_float' => NULL,
-                'created_at' => '2023-10-12 21:57:51',
-                'updated_at' => '2023-10-12 21:57:51',
+                'created_at' => '2024-01-03 09:54:33',
+                'updated_at' => '2024-01-03 09:54:33',
             ),
             198 => 
             array (
@@ -2404,8 +2404,8 @@ class VariantAttributesTableSeeder extends Seeder
                 'value_txt' => NULL,
                 'value_int' => 9510,
                 'value_float' => NULL,
-                'created_at' => '2023-10-12 21:57:51',
-                'updated_at' => '2023-10-12 21:57:51',
+                'created_at' => '2024-01-03 09:54:33',
+                'updated_at' => '2024-01-03 09:54:33',
             ),
             199 => 
             array (
@@ -2416,8 +2416,8 @@ class VariantAttributesTableSeeder extends Seeder
                 'value_txt' => NULL,
                 'value_int' => 9822,
                 'value_float' => NULL,
-                'created_at' => '2023-10-12 21:57:51',
-                'updated_at' => '2023-10-12 21:57:51',
+                'created_at' => '2024-01-03 09:54:33',
+                'updated_at' => '2024-01-03 09:54:33',
             ),
             200 => 
             array (
@@ -2428,8 +2428,8 @@ class VariantAttributesTableSeeder extends Seeder
                 'value_txt' => NULL,
                 'value_int' => 2024,
                 'value_float' => NULL,
-                'created_at' => '2023-10-12 21:57:51',
-                'updated_at' => '2023-10-12 21:57:51',
+                'created_at' => '2024-01-03 09:54:33',
+                'updated_at' => '2024-01-03 09:54:33',
             ),
             201 => 
             array (
@@ -2440,8 +2440,8 @@ class VariantAttributesTableSeeder extends Seeder
                 'value_txt' => NULL,
                 'value_int' => NULL,
                 'value_float' => NULL,
-                'created_at' => '2023-10-12 21:57:51',
-                'updated_at' => '2023-10-12 21:57:51',
+                'created_at' => '2024-01-03 09:54:33',
+                'updated_at' => '2024-01-03 09:54:33',
             ),
             202 => 
             array (
@@ -2452,8 +2452,8 @@ class VariantAttributesTableSeeder extends Seeder
                 'value_txt' => NULL,
                 'value_int' => NULL,
                 'value_float' => NULL,
-                'created_at' => '2023-10-12 21:57:51',
-                'updated_at' => '2023-10-12 21:57:51',
+                'created_at' => '2024-01-03 09:54:33',
+                'updated_at' => '2024-01-03 09:54:33',
             ),
             203 => 
             array (
@@ -2464,8 +2464,8 @@ class VariantAttributesTableSeeder extends Seeder
                 'value_txt' => NULL,
                 'value_int' => NULL,
                 'value_float' => NULL,
-                'created_at' => '2023-10-12 21:57:51',
-                'updated_at' => '2023-10-12 21:57:51',
+                'created_at' => '2024-01-03 09:54:33',
+                'updated_at' => '2024-01-03 09:54:33',
             ),
             204 => 
             array (
@@ -2476,8 +2476,8 @@ class VariantAttributesTableSeeder extends Seeder
                 'value_txt' => NULL,
                 'value_int' => 9796,
                 'value_float' => NULL,
-                'created_at' => '2023-10-12 21:57:51',
-                'updated_at' => '2023-10-12 21:57:51',
+                'created_at' => '2024-01-03 09:54:33',
+                'updated_at' => '2024-01-03 09:54:33',
             ),
             205 => 
             array (
@@ -2488,8 +2488,8 @@ class VariantAttributesTableSeeder extends Seeder
             'value_txt' => 'Snowboard Jkt: double variant index (color + size)',
                 'value_int' => NULL,
                 'value_float' => NULL,
-                'created_at' => '2023-10-12 21:57:51',
-                'updated_at' => '2023-10-12 21:57:51',
+                'created_at' => '2024-01-03 09:54:33',
+                'updated_at' => '2024-01-03 09:54:33',
             ),
             206 => 
             array (
@@ -2500,8 +2500,8 @@ class VariantAttributesTableSeeder extends Seeder
                 'value_txt' => NULL,
                 'value_int' => NULL,
                 'value_float' => NULL,
-                'created_at' => '2023-10-12 21:57:51',
-                'updated_at' => '2023-10-12 21:57:51',
+                'created_at' => '2024-01-03 09:54:33',
+                'updated_at' => '2024-01-03 09:54:33',
             ),
             207 => 
             array (
@@ -2512,8 +2512,8 @@ class VariantAttributesTableSeeder extends Seeder
                 'value_txt' => NULL,
                 'value_int' => NULL,
                 'value_float' => 190.42,
-                'created_at' => '2023-10-12 21:57:51',
-                'updated_at' => '2023-10-12 21:57:51',
+                'created_at' => '2024-01-03 09:54:33',
+                'updated_at' => '2024-01-03 09:54:33',
             ),
             208 => 
             array (
@@ -2524,8 +2524,8 @@ class VariantAttributesTableSeeder extends Seeder
                 'value_txt' => NULL,
                 'value_int' => NULL,
                 'value_float' => 400.0,
-                'created_at' => '2023-10-12 21:57:51',
-                'updated_at' => '2023-10-12 21:57:51',
+                'created_at' => '2024-01-03 09:54:33',
+                'updated_at' => '2024-01-03 09:54:33',
             ),
             209 => 
             array (
@@ -2536,8 +2536,8 @@ class VariantAttributesTableSeeder extends Seeder
                 'value_txt' => NULL,
                 'value_int' => NULL,
                 'value_float' => 2.1,
-                'created_at' => '2023-10-12 21:57:51',
-                'updated_at' => '2023-10-12 21:57:51',
+                'created_at' => '2024-01-03 09:54:33',
+                'updated_at' => '2024-01-03 09:54:33',
             ),
             210 => 
             array (
@@ -2548,8 +2548,8 @@ class VariantAttributesTableSeeder extends Seeder
                 'value_txt' => NULL,
                 'value_int' => 403,
                 'value_float' => NULL,
-                'created_at' => '2023-10-12 21:57:51',
-                'updated_at' => '2023-10-12 21:57:51',
+                'created_at' => '2024-01-03 09:54:33',
+                'updated_at' => '2024-01-03 09:54:33',
             ),
             211 => 
             array (
@@ -2560,8 +2560,8 @@ class VariantAttributesTableSeeder extends Seeder
                 'value_txt' => NULL,
                 'value_int' => 8286,
                 'value_float' => NULL,
-                'created_at' => '2023-10-12 21:57:51',
-                'updated_at' => '2023-10-12 21:57:51',
+                'created_at' => '2024-01-03 09:54:33',
+                'updated_at' => '2024-01-03 09:54:33',
             ),
             212 => 
             array (
@@ -2572,8 +2572,8 @@ class VariantAttributesTableSeeder extends Seeder
                 'value_txt' => NULL,
                 'value_int' => 9593,
                 'value_float' => NULL,
-                'created_at' => '2023-10-12 21:57:51',
-                'updated_at' => '2023-10-12 21:57:51',
+                'created_at' => '2024-01-03 09:54:34',
+                'updated_at' => '2024-01-03 09:54:34',
             ),
             213 => 
             array (
@@ -2584,8 +2584,8 @@ class VariantAttributesTableSeeder extends Seeder
                 'value_txt' => NULL,
                 'value_int' => 9821,
                 'value_float' => NULL,
-                'created_at' => '2023-10-12 21:57:51',
-                'updated_at' => '2023-10-12 21:57:51',
+                'created_at' => '2024-01-03 09:54:34',
+                'updated_at' => '2024-01-03 09:54:34',
             ),
             214 => 
             array (
@@ -2596,8 +2596,8 @@ class VariantAttributesTableSeeder extends Seeder
                 'value_txt' => NULL,
                 'value_int' => NULL,
                 'value_float' => NULL,
-                'created_at' => '2023-10-12 21:57:51',
-                'updated_at' => '2023-10-12 21:57:51',
+                'created_at' => '2024-01-03 09:54:34',
+                'updated_at' => '2024-01-03 09:54:34',
             ),
             215 => 
             array (
@@ -2608,8 +2608,8 @@ class VariantAttributesTableSeeder extends Seeder
                 'value_txt' => NULL,
                 'value_int' => NULL,
                 'value_float' => NULL,
-                'created_at' => '2023-10-12 21:57:51',
-                'updated_at' => '2023-10-12 21:57:51',
+                'created_at' => '2024-01-03 09:54:34',
+                'updated_at' => '2024-01-03 09:54:34',
             ),
             216 => 
             array (
@@ -2620,8 +2620,8 @@ class VariantAttributesTableSeeder extends Seeder
                 'value_txt' => NULL,
                 'value_int' => NULL,
                 'value_float' => NULL,
-                'created_at' => '2023-10-12 21:57:51',
-                'updated_at' => '2023-10-12 21:57:51',
+                'created_at' => '2024-01-03 09:54:34',
+                'updated_at' => '2024-01-03 09:54:34',
             ),
             217 => 
             array (
@@ -2632,8 +2632,8 @@ class VariantAttributesTableSeeder extends Seeder
                 'value_txt' => NULL,
                 'value_int' => 9715,
                 'value_float' => NULL,
-                'created_at' => '2023-10-12 21:57:51',
-                'updated_at' => '2023-10-12 21:57:51',
+                'created_at' => '2024-01-03 09:54:34',
+                'updated_at' => '2024-01-03 09:54:34',
             ),
             218 => 
             array (
@@ -2644,20 +2644,20 @@ class VariantAttributesTableSeeder extends Seeder
                 'value_txt' => 'Ski maintenance tool : no variant product',
                 'value_int' => NULL,
                 'value_float' => NULL,
-                'created_at' => '2023-10-12 21:57:51',
-                'updated_at' => '2023-10-12 21:57:51',
+                'created_at' => '2024-01-03 09:54:34',
+                'updated_at' => '2024-01-03 09:54:34',
             ),
             219 => 
             array (
                 'id' => 220,
                 'variant_id' => 17,
                 'attribute_id' => 9,
-                'value_str' => 'http://img.vola.fr/articles/bb63218cbc4815a67c160fa90384f9e20c03c517.png_750x608_max.png',
+                'value_str' => 'http://img.vola.fr/articles/5c87372aa070909c9412c968520cf1ea2fd13b5c.png_750x608_max.png',
                 'value_txt' => NULL,
                 'value_int' => NULL,
                 'value_float' => NULL,
-                'created_at' => '2023-10-12 21:57:51',
-                'updated_at' => '2023-10-12 21:57:51',
+                'created_at' => '2024-01-03 09:54:34',
+                'updated_at' => '2024-01-03 09:54:34',
             ),
             220 => 
             array (
@@ -2668,8 +2668,8 @@ class VariantAttributesTableSeeder extends Seeder
                 'value_txt' => NULL,
                 'value_int' => NULL,
                 'value_float' => 32.56,
-                'created_at' => '2023-10-12 21:57:51',
-                'updated_at' => '2023-10-12 21:57:51',
+                'created_at' => '2024-01-03 09:54:34',
+                'updated_at' => '2024-01-03 09:54:34',
             ),
             221 => 
             array (
@@ -2680,8 +2680,8 @@ class VariantAttributesTableSeeder extends Seeder
                 'value_txt' => NULL,
                 'value_int' => NULL,
                 'value_float' => 59.99,
-                'created_at' => '2023-10-12 21:57:51',
-                'updated_at' => '2023-10-12 21:57:51',
+                'created_at' => '2024-01-03 09:54:34',
+                'updated_at' => '2024-01-03 09:54:34',
             ),
             222 => 
             array (
@@ -2692,8 +2692,8 @@ class VariantAttributesTableSeeder extends Seeder
                 'value_txt' => NULL,
                 'value_int' => NULL,
                 'value_float' => 0.12,
-                'created_at' => '2023-10-12 21:57:51',
-                'updated_at' => '2023-10-12 21:57:51',
+                'created_at' => '2024-01-03 09:54:34',
+                'updated_at' => '2024-01-03 09:54:34',
             ),
             223 => 
             array (
@@ -2704,8 +2704,8 @@ class VariantAttributesTableSeeder extends Seeder
                 'value_txt' => NULL,
                 'value_int' => 9593,
                 'value_float' => NULL,
-                'created_at' => '2023-10-12 21:57:51',
-                'updated_at' => '2023-10-12 21:57:51',
+                'created_at' => '2024-01-03 09:54:34',
+                'updated_at' => '2024-01-03 09:54:34',
             ),
             224 => 
             array (
@@ -2716,8 +2716,8 @@ class VariantAttributesTableSeeder extends Seeder
                 'value_txt' => NULL,
                 'value_int' => 9821,
                 'value_float' => NULL,
-                'created_at' => '2023-10-12 21:57:51',
-                'updated_at' => '2023-10-12 21:57:51',
+                'created_at' => '2024-01-03 09:54:34',
+                'updated_at' => '2024-01-03 09:54:34',
             ),
             225 => 
             array (
@@ -2728,8 +2728,8 @@ class VariantAttributesTableSeeder extends Seeder
                 'value_txt' => NULL,
                 'value_int' => NULL,
                 'value_float' => NULL,
-                'created_at' => '2023-10-12 21:57:51',
-                'updated_at' => '2023-10-12 21:57:51',
+                'created_at' => '2024-01-03 09:54:34',
+                'updated_at' => '2024-01-03 09:54:34',
             ),
             226 => 
             array (
@@ -2740,8 +2740,8 @@ class VariantAttributesTableSeeder extends Seeder
                 'value_txt' => NULL,
                 'value_int' => NULL,
                 'value_float' => NULL,
-                'created_at' => '2023-10-12 21:57:51',
-                'updated_at' => '2023-10-12 21:57:51',
+                'created_at' => '2024-01-03 09:54:34',
+                'updated_at' => '2024-01-03 09:54:34',
             ),
             227 => 
             array (
@@ -2752,8 +2752,8 @@ class VariantAttributesTableSeeder extends Seeder
                 'value_txt' => NULL,
                 'value_int' => NULL,
                 'value_float' => NULL,
-                'created_at' => '2023-10-12 21:57:51',
-                'updated_at' => '2023-10-12 21:57:51',
+                'created_at' => '2024-01-03 09:54:34',
+                'updated_at' => '2024-01-03 09:54:34',
             ),
             228 => 
             array (
@@ -2764,8 +2764,8 @@ class VariantAttributesTableSeeder extends Seeder
                 'value_txt' => NULL,
                 'value_int' => 9715,
                 'value_float' => NULL,
-                'created_at' => '2023-10-12 21:57:51',
-                'updated_at' => '2023-10-12 21:57:51',
+                'created_at' => '2024-01-03 09:54:34',
+                'updated_at' => '2024-01-03 09:54:34',
             ),
             229 => 
             array (
@@ -2773,11 +2773,11 @@ class VariantAttributesTableSeeder extends Seeder
                 'variant_id' => 18,
                 'attribute_id' => 7,
                 'value_str' => NULL,
-                'value_txt' => 'Ski maintenance tool : no variant product, discount retail price',
+                'value_txt' => 'Ski maintenance tool : no variant product',
                 'value_int' => NULL,
                 'value_float' => NULL,
-                'created_at' => '2023-10-12 21:57:51',
-                'updated_at' => '2023-10-12 21:57:51',
+                'created_at' => '2024-01-03 09:54:34',
+                'updated_at' => '2024-01-03 09:54:34',
             ),
             230 => 
             array (
@@ -2788,8 +2788,8 @@ class VariantAttributesTableSeeder extends Seeder
                 'value_txt' => NULL,
                 'value_int' => NULL,
                 'value_float' => NULL,
-                'created_at' => '2023-10-12 21:57:51',
-                'updated_at' => '2023-10-12 21:57:51',
+                'created_at' => '2024-01-03 09:54:34',
+                'updated_at' => '2024-01-03 09:54:34',
             ),
             231 => 
             array (
@@ -2800,8 +2800,8 @@ class VariantAttributesTableSeeder extends Seeder
                 'value_txt' => NULL,
                 'value_int' => NULL,
                 'value_float' => 52.56,
-                'created_at' => '2023-10-12 21:57:51',
-                'updated_at' => '2023-10-12 21:57:51',
+                'created_at' => '2024-01-03 09:54:34',
+                'updated_at' => '2024-01-03 09:54:34',
             ),
             232 => 
             array (
@@ -2812,8 +2812,8 @@ class VariantAttributesTableSeeder extends Seeder
                 'value_txt' => NULL,
                 'value_int' => NULL,
                 'value_float' => 89.99,
-                'created_at' => '2023-10-12 21:57:51',
-                'updated_at' => '2023-10-12 21:57:51',
+                'created_at' => '2024-01-03 09:54:34',
+                'updated_at' => '2024-01-03 09:54:34',
             ),
             233 => 
             array (
@@ -2824,44 +2824,8 @@ class VariantAttributesTableSeeder extends Seeder
                 'value_txt' => NULL,
                 'value_int' => NULL,
                 'value_float' => 0.12,
-                'created_at' => '2023-10-12 21:57:51',
-                'updated_at' => '2023-10-12 21:57:51',
-            ),
-            234 => 
-            array (
-                'id' => 235,
-                'variant_id' => 18,
-                'attribute_id' => 16,
-                'value_str' => NULL,
-                'value_txt' => NULL,
-                'value_int' => NULL,
-                'value_float' => 80.91,
-                'created_at' => '2023-10-12 21:57:51',
-                'updated_at' => '2023-10-12 21:57:51',
-            ),
-            235 => 
-            array (
-                'id' => 236,
-                'variant_id' => 2,
-                'attribute_id' => 16,
-                'value_str' => NULL,
-                'value_txt' => NULL,
-                'value_int' => NULL,
-                'value_float' => 703.89,
-                'created_at' => '2023-10-12 21:57:50',
-                'updated_at' => '2023-10-12 21:57:50',
-            ),
-            236 => 
-            array (
-                'id' => 237,
-                'variant_id' => 3,
-                'attribute_id' => 16,
-                'value_str' => NULL,
-                'value_txt' => NULL,
-                'value_int' => NULL,
-                'value_float' => 774.19,
-                'created_at' => '2023-10-12 21:57:50',
-                'updated_at' => '2023-10-12 21:57:50',
+                'created_at' => '2024-01-03 09:54:34',
+                'updated_at' => '2024-01-03 09:54:34',
             ),
         ));
         

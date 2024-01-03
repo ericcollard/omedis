@@ -34,10 +34,6 @@
                                         <li>
                                             {!! $variantAttribute->toString() !!}
 
-                                            @if ($variantAttribute->attribute->datatype->name != 'selection' and $variantAttribute->attribute->unit and $variantAttribute->attribute->unit->name != 'none')
-                                                {{ $variantAttribute->attribute->unit->name }}
-                                            @endif
-
                                         </li>
                                     @endforeach
                                 </ul>

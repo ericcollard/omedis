@@ -11,6 +11,7 @@ use App\Models\VariantAttributes;
 use Exception;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Facades\Storage;
 use Illuminate\Support\Facades\Validator;
@@ -30,18 +31,6 @@ class VariantController extends Controller
         return $dataTable->render('variant.index');
     }
 
-    public function truncate()
-    {
-
-        $variants = Variant::all();
-        foreach ($variants as $variant)
-        {
-            $variant->delete();
-        }
-
-        return redirect()->route('variant.index')
-            ->with(['alert' => 'success', 'message' => 'table truncated' ]);
-    }
     /**
      * Show the form for creating a new resource.
      */
@@ -296,6 +285,8 @@ class VariantController extends Controller
                     }
                 }
             }
+
+            $product->convert2odoo();
         }
     }
 
@@ -393,7 +384,7 @@ class VariantController extends Controller
         {
             // extraction des variants
             $this->process_table_data($products);
-            return redirect()->route('variant.index')
+            return redirect()->route('product.index')
                 ->with(['alert' => 'success', 'message' => 'Data loaded - file is conform to OMEDIS' ]);
         }
         else
@@ -472,7 +463,7 @@ class VariantController extends Controller
         if (strlen($errors) == 0)
         {
             $this->process_table_data($products);
-            return redirect()->route('variant.index')
+            return redirect()->route('product.index')
                 ->with(['alert' => 'success', 'message' => 'Data loaded - file is conform to OMEDIS' ]);
         }
         else

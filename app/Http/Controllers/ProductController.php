@@ -7,6 +7,7 @@ use App\Models\Attribute;
 use App\Models\Product;
 use App\Models\Variant;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 
 class ProductController extends Controller
 {
@@ -20,15 +21,16 @@ class ProductController extends Controller
 
     public function truncate()
     {
-
-        $products = Product::all();
-        foreach ($products as $product)
-        {
-            $product->delete();
-        }
+        DB::statement('SET FOREIGN_KEY_CHECKS=0;');
+        DB::table('variant_attributes')->truncate();
+        DB::table('variants')->truncate();
+        DB::table('products')->truncate();
+        DB::table('odoo_variant_values')->truncate();
+        DB::table('odoo_product_values')->truncate();
+        DB::statement('SET FOREIGN_KEY_CHECKS=1;');
 
         return redirect()->route('product.index')
-            ->with(['alert' => 'success', 'message' => 'table truncated' ]);
+            ->with(['alert' => 'success', 'message' => 'All product data truncated' ]);
     }
 
     /**
