@@ -33,17 +33,21 @@
 
                         <hr>
                         <h4>List of values</h4>
-                        <p><a href="{{ route('attributelistvalue.import',$attributelist) }}  ">import values</a></p>
-                        <p>
-                        <form class="d-sm-inline-block" action="{{  route('attributelistvalue.destroyall',$attributelist) }}" method="POST">
-                            {{ csrf_field() }}
-                            {{ method_field("DELETE") }}
-                            <button type="submit" class="btn btn-danger btn-sm ml-2"
-                                    onclick="return confirm(\'Are You Sure Want to Delete?\')">
-                                <i class="fa fa-trash" aria-hidden="true"></i> Delete all values
-                            </button>
-                        </form>
-                        </P>
+
+                        @if (Auth::check() and Auth::user()->hasRole('ROLE_ADMIN'))
+                            <p><a href="{{ route('attributelistvalue.import',$attributelist) }}  ">import values</a></p>
+                            <p>
+                            <form class="d-sm-inline-block" action="{{  route('attributelistvalue.destroyall',$attributelist) }}" method="POST">
+                                {{ csrf_field() }}
+                                {{ method_field("DELETE") }}
+                                <button type="submit" class="btn btn-danger btn-sm ml-2"
+                                        onclick="return confirm(\'Are You Sure Want to Delete?\')">
+                                    <i class="fa fa-trash" aria-hidden="true"></i> Delete all values
+                                </button>
+                            </form>
+                            </P>
+                        @endif
+
 
                         <div class="container mt-4">
                             {{ $dataTable->table() }}
