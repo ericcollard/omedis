@@ -49241,13 +49241,13 @@ class AttributeListValuesTableSeeder extends Seeder
             473 => 
             array (
                 'id' => 10594,
-                'name' => 'boards-&-more',
+                'name' => 'boards-and-more',
                 'comment' => NULL,
                 'attribute_list_id' => 9,
                 'user_id' => 2,
                 'odoo_name' => 'Boards & More gmbh',
                 'created_at' => '2024-01-22 15:49:33',
-                'updated_at' => '2024-01-22 15:49:33',
+                'updated_at' => '2024-01-31 17:31:17',
             ),
             474 => 
             array (
@@ -50970,13 +50970,13 @@ class AttributeListValuesTableSeeder extends Seeder
             130 => 
             array (
                 'id' => 10751,
-                'name' => 'vola-racing',
+                'name' => 'vola',
                 'comment' => NULL,
                 'attribute_list_id' => 9,
                 'user_id' => 2,
                 'odoo_name' => 'Vola Racing',
                 'created_at' => '2024-01-22 15:49:34',
-                'updated_at' => '2024-01-22 15:49:34',
+                'updated_at' => '2024-01-31 17:32:01',
             ),
             131 => 
             array (
