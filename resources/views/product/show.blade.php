@@ -21,7 +21,9 @@
                     <div class="card-header">
                         <h3 class="font-semibold text-xl text-gray-800 dark:text-gray-200 leading-tight" style="position:relative">
                             <i class="fa-regular fa-user"></i> Product #<i>{{ $product->id }}</i>
-                            <span style="position:absolute; right:0"><a href=" {{ route('product.convert2odoo',$product) }}">Update Odoo Data</a></span>
+                            @if (Auth::check() and Auth::user()->hasRole('ROLE_ADMIN'))
+                                <span style="position:absolute; right:0"><a href=" {{ route('product.convert2odoo',$product) }}">Update Odoo Data</a></span>
+                            @endif
                         </h3>
                     </div>
                     <div class="card-body">
@@ -43,7 +45,8 @@
                     </div>
                 </div>
 
-                <div class="card mt-4">
+                @if (Auth::check() and Auth::user()->hasRole('ROLE_ADMIN'))
+                    <div class="card mt-4">
                     <div class="card-header">
                         <h3 class="font-semibold text-xl text-gray-800 dark:text-gray-200 leading-tight" style="position:relative">
                             <i class="fa-regular fa-user"></i> Odoo data for product #<i>{{ $product->id }}</i>
@@ -82,6 +85,8 @@
 
                     </div>
                 </div>
+
+                @endif
 
             </div>
 
