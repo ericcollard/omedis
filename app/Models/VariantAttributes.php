@@ -90,6 +90,12 @@ class VariantAttributes extends Model
                     return $this->value_txt;
                 }
                 break;
+            case "url":
+                if ($this->value_txt)
+                {
+                    return $this->value_txt;
+                }
+                break;
         }
         return null;
     }
@@ -152,6 +158,17 @@ class VariantAttributes extends Model
                 {
                     $html .= $this->value_txt;
                     if ($this->attribute->unit and $this->attribute->unit->name != 'none') $html .= $this->attribute->unit->name;
+                }
+                break;
+            case "url":
+                if ($this->value_txt)
+                {
+                    $pictsArr = explode(";", $this->value_txt);
+                    foreach ($pictsArr as $picUrl)
+                    {
+                        $html .= "<img src='".$picUrl."' width = 50 height = 50 max-width=50>";
+                    }
+
                 }
                 break;
         }

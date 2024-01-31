@@ -27,19 +27,21 @@
                     <div class="card-body">
                         <p>This product has {{ $product->getVariantCount() }} variants</p>
                         <ul>
-                            @foreach ($master_data as $key => $master_data_variant)
-                                <li>
-                                    <p>variant #{{ $key + 1 }}</p>
-                                    <ul>
-                                        @foreach ($master_data_variant as $master_data_variant_attribute)
-                                            <li>
-                                                {{$master_data_variant_attribute[0]}} : {{$master_data_variant_attribute[1]}}
-                                            </li>
-                                        @endforeach
-                                    </ul>
-                                </li>
+                        @foreach ($product->variants as $variant)
+                            <li>
+                                <ul>
+                                    @foreach ($variant->variantAttributes as $variantAttribute)
+                                        <li>
+                                            {!! $variantAttribute->toString() !!}
+
+                                        </li>
+                                    @endforeach
+                                </ul>
+                                <p><br/></p>
+                            </li>
                         @endforeach
                         </ul>
+
                     </div>
                 </div>
 
@@ -52,34 +54,29 @@
                     <div class="card-body">
                         <p>Product data</p>
                         <ul>
-                            @foreach ($odoo_product_data as $key => $odoo_product_value)
+                            @foreach ($product->odooProductValues as $odooProductValue)
                                 <li>
-                                    {{$odoo_product_value[0]}} : {{$odoo_product_value[1]}}
+                                    <strong>{{ $odooProductValue->odooModel->name }}:</strong> {{ $odooProductValue->value }}
                                 </li>
                             @endforeach
                         </ul>
-
                         <p>Variant data</p>
                         <ul>
-                            @foreach ($odoo_variants_data as $key => $odoo_variant_data)
-                                <li>
-                                    <p>variant #{{ $key + 1 }}</p>
-                                    <ul>
-                                        @foreach ($odoo_variant_data as $odoo_variant_data_attribute)
-                                            <li>
-                                                @if ($odoo_variant_data_attribute[0] == "attribute")
-                                                    {{$odoo_variant_data_attribute[2]}} : {{$odoo_variant_data_attribute[1]}}
-                                                @else
-                                                    {{$odoo_variant_data_attribute[0]}} : {{$odoo_variant_data_attribute[1]}}
-                                                @endif
+                            @foreach ($product->variants as $variant)
+                                <p>Variant # {{$variant->id}}</p>
+                                <ul>
+                                    @foreach ($variant->odooVariantValues as $odooVariantValue)
+                                        <li>
+                                            <strong>{{ $odooVariantValue->odooModel->name }}:</strong> {{ $odooVariantValue->value }}
+                                            @if ($odooVariantValue->odooModel->name == 'attribute')
+                                                {{ ' ('.$odooVariantValue->attribute_name.')' }}
+                                            @endif
+                                        </li>
+                                    @endforeach
+                                </ul>
 
-                                            </li>
-                                        @endforeach
-                                    </ul>
-                                </li>
                             @endforeach
                         </ul>
-
                     </div>
                 </div>
 

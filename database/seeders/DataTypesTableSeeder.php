@@ -84,10 +84,20 @@ class DataTypesTableSeeder extends Seeder
                 'id' => 7,
                 'name' => 'text',
                 'comment' => 'Text field without length limit. Utf-8 encoded characters.',
-                'validation_str' => 'string|max:255',
-                'user_id' => 1,
+                'validation_str' => 'string',
+                'user_id' => 2,
                 'created_at' => NULL,
-                'updated_at' => NULL,
+                'updated_at' => '2024-01-04 14:37:54',
+            ),
+            7 => 
+            array (
+                'id' => 8,
+                'name' => 'url',
+                'comment' => 'Text field without length limit. Utf-8 encoded characters.',
+                'validation_str' => 'string',
+                'user_id' => 2,
+                'created_at' => '2024-01-04 12:06:06',
+                'updated_at' => '2024-01-04 14:38:15',
             ),
         ));
         

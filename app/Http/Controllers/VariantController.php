@@ -274,6 +274,9 @@ class VariantController extends Controller
                             case "boolean":
                                 $variantAttributeValueArr['value_int'] = (int)$attributeValue;
                                 break;
+                            case "url":
+                                $variantAttributeValueArr['value_txt'] = $attributeValue;
+                                break;
                         }
                         /*
                         if ($attributeName=='supplier' and $attributeValue=="vola")

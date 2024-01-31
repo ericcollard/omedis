@@ -66,26 +66,14 @@ class AttributeListController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(AttributeList $attributeList)
+    public function show(AttributeListValueDataTable $dataTable,AttributeList $attributelist)
     {
 
-        foreach ($attributeList->attributeListValues as $attributeListValue) {
-            if ($attributeListValue->comment) {
-                $pos = strpos($attributeListValue->comment, '#');
-                if ($pos > 0) {
-                    $hex = substr($attributeListValue->comment, $pos + 1, 6);
-                    if (ctype_xdigit($hex)) {
-                        $outStr = "";
-                        $outStr .= "<svg width='20' height='20'>";
-                        $outStr .= " <rect width='20' height='20' style='fill:#" . $hex . "'/>";
-                        $outStr .= "</svg>";
-                        $attributeListValue->hex = $outStr;
-                    }
-                }
-            }
+        if ($attributelist)
+            $dataTable->with('attributelist', $attributelist);
 
-        }
-        return view('attributelist.show', compact('attributeList'));
+        return $dataTable->render('attributelistvalue.index',compact('attributelist'));
+
     }
 
     /**

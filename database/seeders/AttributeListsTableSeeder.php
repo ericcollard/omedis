@@ -100,6 +100,15 @@ class AttributeListsTableSeeder extends Seeder
                 'created_at' => '2023-10-12 21:11:15',
                 'updated_at' => '2023-10-12 21:11:53',
             ),
+            9 => 
+            array (
+                'id' => 10,
+                'name' => 'size-dbl',
+                'comment' => 'Taille double',
+                'user_id' => 2,
+                'created_at' => '2024-01-04 13:52:46',
+                'updated_at' => '2024-01-04 13:52:46',
+            ),
         ));
         
         

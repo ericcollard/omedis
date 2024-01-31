@@ -309,7 +309,7 @@ class Product extends Model
                 $obj = OdooProductValue::create([
                     'product_id' => $this->id,
                     'odoo_model_id' => $odooModel->id,
-                    'value' => $mainPict
+                    'value' => $additionnalPict
                 ])->save();
             }
         }

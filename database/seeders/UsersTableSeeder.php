@@ -52,7 +52,7 @@ class UsersTableSeeder extends Seeder
                 'two_factor_secret' => NULL,
                 'two_factor_recovery_codes' => NULL,
                 'two_factor_confirmed_at' => NULL,
-                'remember_token' => NULL,
+                'remember_token' => 'c3Fz51IlkUYyJ9mHaOjoh5anHpHqVSNG9lsvfbcmiD2J6cpVFC1M0DX1i6GC',
                 'current_team_id' => NULL,
                 'profile_photo_path' => NULL,
                 'roles' => '["ROLE_ADMIN"]',

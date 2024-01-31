@@ -150,18 +150,16 @@ In both case, the name in not containing the category ("TEE") or brand ("PICTURE
             array (
                 'id' => 9,
                 'name' => 'pictures',
-                'comment' => 'Product picture links, semicolon separated, no space or special character except _ and -, most important first.
-We suggest that picture should be square aspect, at least 800x800px, white background, jpeg format.
-We suggest that picture should be stored on a cnd, so that processing programs could upload them automatically.',
+                'comment' => '<p>Product picture links, semicolon separated, no space or special character except _ and -, most important first. We suggest that picture should be square aspect, at least 800x800px, white background, jpeg format. We suggest that picture should be stored on a cnd, so that processing programs could upload them automatically.</p>',
                 'required' => 0,
                 'attribute_list_id' => NULL,
                 'unit_id' => 1,
-                'data_type_id' => 2,
+                'data_type_id' => 8,
                 'user_id' => 2,
                 'odoo_name' => NULL,
                 'order_column' => 10,
                 'created_at' => NULL,
-                'updated_at' => '2023-10-16 12:27:21',
+                'updated_at' => '2024-01-04 12:07:58',
             ),
             9 => 
             array (
@@ -417,9 +415,9 @@ This can be used to store client specific discount, volume discount, year discou
                 'data_type_id' => 4,
                 'user_id' => 2,
             'odoo_name' => 'Pointure (Fr)',
-                'order_column' => 29,
+                'order_column' => 30,
                 'created_at' => '2023-09-28 21:24:04',
-                'updated_at' => '2023-10-16 14:04:22',
+                'updated_at' => '2024-01-04 14:28:44',
             ),
             26 => 
             array (
@@ -432,9 +430,9 @@ This can be used to store client specific discount, volume discount, year discou
                 'data_type_id' => 5,
                 'user_id' => 2,
             'odoo_name' => 'Pointure (Uk)',
-                'order_column' => 30,
+                'order_column' => 31,
                 'created_at' => '2023-09-28 21:26:02',
-                'updated_at' => '2023-10-16 14:04:39',
+                'updated_at' => '2024-01-04 14:28:37',
             ),
             27 => 
             array (
@@ -447,9 +445,9 @@ This can be used to store client specific discount, volume discount, year discou
                 'data_type_id' => 5,
                 'user_id' => 2,
             'odoo_name' => 'Pointure (Us)',
-                'order_column' => 31,
+                'order_column' => 32,
                 'created_at' => '2023-09-28 21:27:29',
-                'updated_at' => '2023-10-16 14:05:01',
+                'updated_at' => '2024-01-04 14:28:34',
             ),
             28 => 
             array (
@@ -462,9 +460,9 @@ This can be used to store client specific discount, volume discount, year discou
                 'data_type_id' => 5,
                 'user_id' => 2,
             'odoo_name' => 'Pointure (mondo)',
-                'order_column' => 32,
+                'order_column' => 33,
                 'created_at' => '2023-09-28 21:28:38',
-                'updated_at' => '2023-10-16 14:05:29',
+                'updated_at' => '2024-01-04 14:28:30',
             ),
             29 => 
             array (
@@ -477,9 +475,9 @@ This can be used to store client specific discount, volume discount, year discou
                 'data_type_id' => 4,
                 'user_id' => 2,
                 'odoo_name' => 'Repère',
-                'order_column' => 33,
+                'order_column' => 34,
                 'created_at' => '2023-09-28 21:39:35',
-                'updated_at' => '2023-10-16 14:05:54',
+                'updated_at' => '2024-01-04 14:28:26',
             ),
             30 => 
             array (
@@ -492,9 +490,9 @@ This can be used to store client specific discount, volume discount, year discou
                 'data_type_id' => 5,
                 'user_id' => 2,
                 'odoo_name' => NULL,
-                'order_column' => 34,
+                'order_column' => 35,
                 'created_at' => '2023-09-28 21:40:34',
-                'updated_at' => '2023-10-16 12:26:24',
+                'updated_at' => '2024-01-04 14:28:21',
             ),
             31 => 
             array (
@@ -507,9 +505,9 @@ This can be used to store client specific discount, volume discount, year discou
                 'data_type_id' => 5,
                 'user_id' => 2,
             'odoo_name' => 'Poids (g)',
-                'order_column' => 35,
+                'order_column' => 36,
                 'created_at' => '2023-09-28 21:41:12',
-                'updated_at' => '2023-10-16 14:06:21',
+                'updated_at' => '2024-01-04 14:28:18',
             ),
             32 => 
             array (
@@ -522,9 +520,9 @@ This can be used to store client specific discount, volume discount, year discou
                 'data_type_id' => 1,
                 'user_id' => 2,
                 'odoo_name' => 'Couleur',
-                'order_column' => 36,
+                'order_column' => 37,
                 'created_at' => '2023-09-28 21:41:56',
-                'updated_at' => '2023-10-16 14:06:55',
+                'updated_at' => '2024-01-04 14:28:15',
             ),
             33 => 
             array (
@@ -537,9 +535,9 @@ This can be used to store client specific discount, volume discount, year discou
                 'data_type_id' => 1,
                 'user_id' => 2,
                 'odoo_name' => 'Taille Wear',
-                'order_column' => 37,
+                'order_column' => 38,
                 'created_at' => '2023-09-28 21:42:35',
-                'updated_at' => '2023-10-16 14:07:26',
+                'updated_at' => '2024-01-04 14:28:12',
             ),
             34 => 
             array (
@@ -552,9 +550,9 @@ This can be used to store client specific discount, volume discount, year discou
                 'data_type_id' => 1,
                 'user_id' => 2,
                 'odoo_name' => 'Taille Wear',
-                'order_column' => 38,
+                'order_column' => 39,
                 'created_at' => '2023-09-28 21:43:43',
-                'updated_at' => '2023-10-16 14:07:32',
+                'updated_at' => '2024-01-04 14:28:07',
             ),
             35 => 
             array (
@@ -567,9 +565,9 @@ This can be used to store client specific discount, volume discount, year discou
                 'data_type_id' => 1,
                 'user_id' => 2,
                 'odoo_name' => 'Taille Wear',
-                'order_column' => 39,
+                'order_column' => 40,
                 'created_at' => '2023-09-28 21:44:26',
-                'updated_at' => '2023-10-16 14:07:40',
+                'updated_at' => '2024-01-04 14:27:59',
             ),
             36 => 
             array (
@@ -582,9 +580,9 @@ This can be used to store client specific discount, volume discount, year discou
                 'data_type_id' => 1,
                 'user_id' => 2,
                 'odoo_name' => 'Taille Wear',
-                'order_column' => 40,
+                'order_column' => 41,
                 'created_at' => '2023-09-28 21:45:10',
-                'updated_at' => '2023-10-16 14:07:50',
+                'updated_at' => '2024-01-04 14:27:47',
             ),
             37 => 
             array (
@@ -632,6 +630,21 @@ id uom us "unit", quantity by carton',
                 'order_column' => 2,
                 'created_at' => '2023-10-12 21:10:56',
                 'updated_at' => '2023-10-16 12:26:50',
+            ),
+            40 => 
+            array (
+                'id' => 41,
+                'name' => 'var-size-dble',
+                'comment' => '<p>Taille double</p>',
+                'required' => 0,
+                'attribute_list_id' => NULL,
+                'unit_id' => 1,
+                'data_type_id' => 2,
+                'user_id' => 2,
+                'odoo_name' => 'Taille double',
+                'order_column' => 29,
+                'created_at' => '2024-01-04 13:51:49',
+                'updated_at' => '2024-01-04 14:28:44',
             ),
         ));
         

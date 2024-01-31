@@ -96,6 +96,7 @@ class DataTypeController extends Controller
 
         $datatype->name = $request->name;
         $datatype->comment = $request->comment;
+        $datatype->validation_str = $request->validation_str;
         // logique
         $datatype->applyLogic();
         $datatype->save();

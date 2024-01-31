@@ -82,12 +82,17 @@ Route::post('/attributelist',[AttributeListController::class, 'store'])->name('a
 
 // attributelistvalue avec paramètre optionnel pour transmettre le contexte
 Route::get('attributelistvalue/show/{attributelistvalue}', [AttributeListValueController::class, 'show'])->name('attributelistvalue.show');
+Route::get('attributelistvalue/import/{attributelist}', [AttributeListValueController::class, 'import'])->name('attributelistvalue.import');
 Route::get('attributelistvalue/{attributelistvalue}/edit/{attributelist?}', [AttributeListValueController::class, 'edit'])->name('attributelistvalue.edit')->middleware(['auth:sanctum',config('jetstream.auth_session'),'verified',]);
 Route::get('attributelistvalue/create/{attributelist?}', [AttributeListValueController::class, 'create'])->name('attributelistvalue.create')->middleware(['auth:sanctum',config('jetstream.auth_session'),'verified',]);
 Route::get('attributelistvalue/{attributelist?}', [AttributeListValueController::class, 'index'])->name('attributelistvalue.index');
 Route::patch('attributelistvalue/{attributelistvalue}/{attributelist?}',[AttributeListValueController::class, 'update'])->name('attributelistvalue.update')->middleware(['auth:sanctum',config('jetstream.auth_session'),'verified',]);
 Route::post('attributelistvalue/{attributelist?}',[AttributeListValueController::class, 'store'])->name('attributelistvalue.store')->middleware(['auth:sanctum',config('jetstream.auth_session'),'verified',]);
+Route::delete('attributelistvalue/{attributelist}',[AttributeListValueController::class, 'destroyall'])->name('attributelistvalue.destroyall')->middleware(['auth:sanctum',config('jetstream.auth_session'),'verified',]);
 Route::delete('attributelistvalue/{attributelistvalue}/{attributelist?}',[AttributeListValueController::class, 'destroy'])->name('attributelistvalue.destroy')->middleware(['auth:sanctum',config('jetstream.auth_session'),'verified',]);
+Route::post('attributelistvalue/decodecsv/{attributelist}', [AttributeListValueController::class, 'decodecsv'])->name('attributelistvalue.decodecsv')->middleware(['auth:sanctum',config('jetstream.auth_session'),'verified',]);
+
+
 
 Route::get('variant', [VariantController::class, 'index'])->name('variant.index');
 Route::post('variant/decodecsv', [VariantController::class, 'decodecsv'])->name('variant.decodecsv')->middleware(['auth:sanctum',config('jetstream.auth_session'),'verified',]);
@@ -103,6 +108,10 @@ Route::get('product', [ProductController::class, 'index'])->name('product.index'
 Route::get('product/truncate', [ProductController::class, 'truncate'])->name('product.truncate')->middleware(['auth:sanctum',config('jetstream.auth_session'),'verified',]);
 Route::get('product/{product}/convert2odoo', [ProductController::class, 'convert2odoo'])->name('product.convert2odoo');
 Route::get('product/{product}', [ProductController::class, 'show'])->name('product.show');
+Route::get('/product/{product}/edit', [ProductController::class, 'edit'])->name('product.edit')->middleware(['auth:sanctum',config('jetstream.auth_session'),'verified',]);
+Route::patch('/product/{product}',[ProductController::class, 'update'])->name('product.update')->middleware(['auth:sanctum',config('jetstream.auth_session'),'verified',]);
+Route::delete('/product/{product}',[ProductController::class, 'destroy'])->name('product.destroy')->middleware(['auth:sanctum',config('jetstream.auth_session'),'verified',]);
+Route::post('/product',[ProductController::class, 'store'])->name('product.store')->middleware(['auth:sanctum',config('jetstream.auth_session'),'verified',]);
 
 Route::resource('odoomodel', OdooModelController::class);
 Route::resource('odooproductvalue', OdooProductValueController::class);
