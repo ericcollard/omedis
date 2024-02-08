@@ -96,42 +96,62 @@ class Variant extends Model
                 }
             }
 
-            //Fournisseur
-            $attribute = Attribute::where('name', 'wholesale-price')->first();
-            $valueObj = $this->variantAttributes()->where('attribute_id',$attribute->id)->first();
+            //Tarif achat
+
+            $purchasePrice = false;
+
+            $attributeWholesalePrice = Attribute::where('name', 'wholesale-price')->first();
+            $wholesalePriceValueObj = $this->variantAttributes()->where('attribute_id',$attributeWholesalePrice->id)->first();
+
+            $attributeDscB2b = Attribute::where('name', 'discount-b2b')->first();
+            $attributeDscB2bValueObj = $this->variantAttributes()->where('attribute_id',$attributeDscB2b->id)->first();
+            if ($attributeDscB2bValueObj) {
+                $purchasePrice = $attributeDscB2bValueObj->getValue();
+            }
+            else
+            {
+                // pas de prix net achat discount fourni
+                if ($wholesalePriceValueObj) {
+                    $purchasePrice = $wholesalePriceValueObj->getValue();
+
+                    if (!$attributeDscB2bValueObj) {
+                        $attributeDscB2bPc = Attribute::where('name', 'discount-b2b-pc')->first();
+                        $attributeDscB2bPcValueObj = $this->variantAttributes()->where('attribute_id',$attributeDscB2bPc->id)->first();
+
+                        if ($attributeDscB2bPcValueObj) {
+                            $purchasePrice = $purchasePrice * (1-$attributeDscB2bPcValueObj->getValue());
+                        }
+                    }
+                }
+            }
+
 
             // cout variante (sera mis à jour si stock null)
-            if ($valueObj) {
-                $value = $valueObj->getValue();
-                if ($value) {
+            if ($purchasePrice) {
                     $odooModel = OdooModel::where('name', 'variant_cost_ht')->first();
                     $obj = OdooVariantValue::create([
                         'variant_id' => $this->id,
                         'odoo_model_id' => $odooModel->id,
-                        'value' => $odooModel->format_value($value)
+                        'value' => $odooModel->format_value($purchasePrice)
                     ])->save();
-                }
             }
 
             // si différents tarif achat pour chaque variante
             $cnt = 1;
-            $a = variantAttributes::where('attribute_id',$attribute->id)
+            $a = variantAttributes::where('attribute_id',$attributeWholesalePrice->id)
                 ->whereIn('variant_id', $this->product->variants()->pluck('id'))->select('value_float')->distinct()->pluck('value_float');
             if ($a)
                 $cnt = count($a);
 
             if ($cnt >1 )
             {
-                if ($valueObj) {
-                    $value = $valueObj->getValue();
-                    if ($value) {
-                        $odooModel = OdooModel::where('name', 'variant_wholesale_ht')->first();
-                        $obj = OdooVariantValue::create([
-                            'variant_id' => $this->id,
-                            'odoo_model_id' => $odooModel->id,
-                            'value' => $odooModel->format_value($value)
-                        ])->save();
-                    }
+                if ($purchasePrice) {
+                    $odooModel = OdooModel::where('name', 'variant_wholesale_ht')->first();
+                    $obj = OdooVariantValue::create([
+                        'variant_id' => $this->id,
+                        'odoo_model_id' => $odooModel->id,
+                        'value' => $odooModel->format_value($purchasePrice)
+                    ])->save();
                 }
 
                 /*

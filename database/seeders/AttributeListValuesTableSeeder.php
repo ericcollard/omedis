@@ -29692,9 +29692,9 @@ class AttributeListValuesTableSeeder extends Seeder
                 'comment' => 'Master Sword Blue #00ffee',
                 'attribute_list_id' => 1,
                 'user_id' => 1,
-                'odoo_name' => NULL,
+                'odoo_name' => 'Aigue-marine',
                 'created_at' => NULL,
-                'updated_at' => NULL,
+                'updated_at' => '2024-02-08 17:20:23',
             ),
             197 => 
             array (
@@ -31650,9 +31650,9 @@ class AttributeListValuesTableSeeder extends Seeder
                 'comment' => 'Ocean Blues #508693',
                 'attribute_list_id' => 1,
                 'user_id' => 1,
-                'odoo_name' => NULL,
+                'odoo_name' => 'Bleu paon',
                 'created_at' => NULL,
-                'updated_at' => NULL,
+                'updated_at' => '2024-02-08 17:34:15',
             ),
             375 => 
             array (
@@ -35227,9 +35227,9 @@ class AttributeListValuesTableSeeder extends Seeder
                 'comment' => 'Deep Sky Blue #0d75f8',
                 'attribute_list_id' => 1,
                 'user_id' => 1,
-                'odoo_name' => NULL,
+                'odoo_name' => 'Bleu',
                 'created_at' => NULL,
-                'updated_at' => NULL,
+                'updated_at' => '2024-02-08 17:18:59',
             ),
             200 => 
             array (
