@@ -74,7 +74,7 @@ class Variant extends Model
                     $obj = OdooVariantValue::create([
                         'variant_id' => $this->id,
                         'odoo_model_id' => $odooModel->id,
-                        'value' => $value
+                        'value' => $odooModel->format_value($value)
                     ])->save();
                 }
             }
@@ -91,7 +91,7 @@ class Variant extends Model
                     $obj = OdooVariantValue::create([
                         'variant_id' => $this->id,
                         'odoo_model_id' => $odooModel->id,
-                        'value' => $value
+                        'value' => $odooModel->format_value($value)
                     ])->save();
                 }
             }
@@ -108,7 +108,7 @@ class Variant extends Model
                     $obj = OdooVariantValue::create([
                         'variant_id' => $this->id,
                         'odoo_model_id' => $odooModel->id,
-                        'value' => $value
+                        'value' => $odooModel->format_value($value)
                     ])->save();
                 }
             }
@@ -129,7 +129,7 @@ class Variant extends Model
                         $obj = OdooVariantValue::create([
                             'variant_id' => $this->id,
                             'odoo_model_id' => $odooModel->id,
-                            'value' => $value
+                            'value' => $odooModel->format_value($value)
                         ])->save();
                     }
                 }
@@ -174,7 +174,7 @@ class Variant extends Model
                         $obj = OdooVariantValue::create([
                             'variant_id' => $this->id,
                             'odoo_model_id' => $odooModel->id,
-                            'value' => $value / 1.2
+                            'value' => $odooModel->format_value($value / 1.2)
                         ])->save();
                     }
                 }
@@ -197,7 +197,7 @@ class Variant extends Model
                         $obj = OdooVariantValue::create([
                             'variant_id' => $this->id,
                             'odoo_model_id' => $odooModel->id,
-                            'value' => $value / 1.2
+                            'value' => $odooModel->format_value($value / 1.2)
                         ])->save();
                     }
                 }
@@ -218,7 +218,7 @@ class Variant extends Model
                 $obj = OdooVariantValue::create([
                     'variant_id' => $this->id,
                     'odoo_model_id' => $odooModel->id,
-                    'value' => $value
+                    'value' => $odooModel->format_value($value)
                 ])->save();
             }
         }
@@ -228,7 +228,7 @@ class Variant extends Model
         $obj = OdooVariantValue::create([
             'variant_id' => $this->id,
             'odoo_model_id' => $odooModel->id,
-            'value' => 0.0
+            'value' => '0.00'
         ])->save();
 
 
@@ -250,7 +250,7 @@ class Variant extends Model
                 $obj = OdooVariantValue::create([
                     'variant_id' => $this->id,
                     'odoo_model_id' => $odooModel->id,
-                    'value' => $supplierName,
+                    'value' => $odooModel->format_value($supplierName),
                     'attribute_name' => 'Marque'
                 ])->save();
             }
@@ -263,11 +263,11 @@ class Variant extends Model
             $name = $valueObj->getValue();
             if (strlen($name)>0)
             {
-             $odooModel = OdooModel::where('name', 'attribute')->first();
+                $odooModel = OdooModel::where('name', 'attribute')->first();
                 $obj = OdooVariantValue::create([
                     'variant_id' => $this->id,
                     'odoo_model_id' => $odooModel->id,
-                    'value' => $name,
+                    'value' => $odooModel->format_value($name),
                     'attribute_name' => 'Millésime'
                 ])->save();
             }
@@ -325,7 +325,7 @@ class Variant extends Model
                         $obj = OdooVariantValue::create([
                             'variant_id' => $this->id,
                             'odoo_model_id' => $odooModel->id,
-                            'value' => $value,
+                            'value' => $odooModel->format_value($value),
                             'attribute_name' => $attribute_name
                         ])->save();
                     }
@@ -336,7 +336,7 @@ class Variant extends Model
                         $obj = OdooVariantValue::create([
                             'variant_id' => $this->id,
                             'odoo_model_id' => $odooModel->id,
-                            'value' => $name,
+                            'value' => $odooModel->format_value($name),
                             'attribute_name' => $attribute_name
                         ])->save();
                     }

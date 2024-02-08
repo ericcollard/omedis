@@ -148,6 +148,9 @@ class VariantController extends Controller
                         ];
                     }
 
+                    // correction des nombres
+
+
                 }
 
                 $validator = Validator::make($variant, $validationRule);
@@ -296,7 +299,10 @@ class VariantController extends Controller
     public function decodecsv(Request $request)
     {
         $request->validate([
-            'file' => 'required|mimes:csv|max:2048',
+            'file' => 'required|mimes:csv,txt|max:2048',
+            'delimiter' => 'required',
+            'enclosure' => 'required',
+            'escape' => 'required'
         ]);
 
         $fileName = time().'-'.$request->file->getClientOriginalName();
@@ -304,7 +310,9 @@ class VariantController extends Controller
 
         $fileRelPath = 'uploads/'.$fileName;
         $fileFullPath = storage_path('app/'.$fileRelPath);
-
+        $delimiter = $request->delimiter;
+        $enclosure = $request->enclosure;
+        $escape = $request->escape;
 
         if (!Storage::exists($fileRelPath))
         {
@@ -320,6 +328,9 @@ class VariantController extends Controller
 
         // déchiffrage csv
         $csv = Reader::createFromString($csvFile);
+        $csv->setDelimiter($delimiter);
+        $csv->setEnclosure($enclosure);
+        $csv->setEscape($escape);
 
         $csv->setHeaderOffset(0);
         $csv->skipEmptyRecords();
@@ -328,6 +339,27 @@ class VariantController extends Controller
             $records = $csv->getRecords();
         } catch (Exception $e) {
             abort(404, "Errors in the ".$fileRelPath." file ".$e->getMessage());
+        }
+
+        // vérification que tous les champs soient valides
+        log::debug($fieldNames);
+        $invalidFields = '';
+        foreach ($fieldNames as $fieldName) {
+            if (strlen(trim($fieldName)) == 0)
+            {
+                $invalidFields = $invalidFields . 'empty fieldname,';
+            }
+            else
+            {
+                $attribute = Attribute::where('name', $fieldName)->first();
+                if (!$attribute)
+                {
+                    $invalidFields = $invalidFields . $fieldName . ',';
+                }
+            }
+        }
+        if (strlen($invalidFields)>0) {
+            abort(403, "Errors in the ".$fileRelPath." file. Following fields are not valid : ".$invalidFields);
         }
 
         // classement des variants avant détection des produits
@@ -380,6 +412,9 @@ class VariantController extends Controller
             }
             $products['product'][$product_counter]['variant'][] = $variant_data;
         }
+
+        Log::debug($products);
+
 
         // validation des variants
         $errors = $this->validate_datas($products);

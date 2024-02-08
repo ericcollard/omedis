@@ -12,6 +12,7 @@ use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Gate;
 use Illuminate\Support\Facades\URL;
 use PhpParser\Node\NullableType;
+use Illuminate\Support\Facades\Log;
 
 class ProductController extends Controller
 {
@@ -113,7 +114,7 @@ class ProductController extends Controller
 
                 }
             $master_data[] = $imported_variant_data;
-
+            log::debug($imported_variant_data);
         }
 
 

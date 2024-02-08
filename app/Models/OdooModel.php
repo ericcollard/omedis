@@ -50,4 +50,17 @@ class OdooModel extends Model
         return $odoomodels_data;
     }
 
+    public function format_value($input_value)
+    {
+        switch ($this->type) {
+            case "string":
+                return $input_value;
+            case "float":
+                return number_format($input_value, 2, '.', '');
+            case "image":
+                return $input_value;
+        }
+        return $input_value;
+    }
+
 }

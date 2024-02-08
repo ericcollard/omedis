@@ -34,6 +34,31 @@
                     </div>
 
                     <div class="mb-3">
+                        <label class="form-label" for="delimiter">Csv delimiter character</label>
+                        <select name="delimiter" id="delimiter">
+                            <option value=";" selected="selected">;</option>
+                            <option value=",">,</option>
+                        </select>
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label mt-3" for="enlosure">Csv enclosure character</label>
+                        <select name="enclosure" id="enclosure">
+                            <option value='"' selected="selected">"</option>
+                            <option value="'">'</option>
+                            <option value="|">|</option>
+                        </select>
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label mt-3" for="escape">Csv escape character</label>
+                        <select name="escape" id="escape">
+                            <option value="\" selected="selected">\</option>
+                            <option value="\\">\\</option>
+                        </select>
+                    </div>
+
+                    <div class="mb-3">
                         <button type="submit" class="btn btn-success">Submit</button>
                     </div>
 
