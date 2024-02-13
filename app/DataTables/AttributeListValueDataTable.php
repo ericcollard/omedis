@@ -4,14 +4,18 @@ namespace App\DataTables;
 
 use App\Models\AttributeListValue;
 use Illuminate\Database\Eloquent\Builder as QueryBuilder;
+use Illuminate\Support\Collection;
 use Illuminate\Support\Facades\Auth;
 use Yajra\DataTables\EloquentDataTable;
+use Yajra\DataTables\Html\Builder;
 use Yajra\DataTables\Html\Builder as HtmlBuilder;
 use Yajra\DataTables\Html\Button;
 use Yajra\DataTables\Html\Column;
 use Yajra\DataTables\Html\Editor\Editor;
 use Yajra\DataTables\Html\Editor\Fields;
 use Yajra\DataTables\Services\DataTable;
+use Illuminate\Support\Facades\Log;
+use Yajra\DataTables\Utilities\Request;
 
 class AttributeListValueDataTable extends DataTable
 {
@@ -20,8 +24,22 @@ class AttributeListValueDataTable extends DataTable
         'id',
         'name',
         'comment',
-        'attribute_list_id'
+        'attribute_list_id',
     ];
+
+
+    public function __construct()
+    {
+        parent::__construct();
+
+        if (Auth::check() and Auth::user()->hasRole('ROLE_ADMIN'))
+        {
+            if (!array_key_exists('odoo_name',$this->exportColumns))
+                $this->exportColumns[] ='odoo_name';
+        }
+    }
+
+
 
 
     /**
@@ -140,7 +158,17 @@ class AttributeListValueDataTable extends DataTable
             Column::make('name')
             ];
         if (Auth::check() and Auth::user()->hasRole('ROLE_ADMIN'))
+        {
             $columns[] = Column::make('odoo_name');
+            //if (!array_key_exists('odoo_name',$this->exportColumns))
+            //    $this->exportColumns[] ='odoo_name';
+        }
+        else
+        {
+            //if (array_key_exists('odoo_name',$this->exportColumns))
+            //    unset($this->exportColumns['odoo_name']);
+        }
+
         $columns[] = Column::make('comment');
         $columns[] = Column::make([
             'data' => 'attribute_list_id',
