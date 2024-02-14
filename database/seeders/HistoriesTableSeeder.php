@@ -49669,6 +49669,94 @@ class HistoriesTableSeeder extends Seeder
                 'created_at' => '2024-02-13 15:46:18',
                 'updated_at' => '2024-02-13 15:46:18',
             ),
+            12 => 
+            array (
+                'id' => 7656,
+                'model' => 'AttributeListValue',
+                'action' => 'CREATE',
+                'user_id' => '1',
+                'old_values' => 'none',
+                'new_values' => 'name: \'ocean\',comment: \'ocean blue #009dc4\',attribute_list_id: \'1\',odoo_name: \'ocean\'',
+                'created_at' => '2024-02-14 08:15:06',
+                'updated_at' => '2024-02-14 08:15:06',
+            ),
+            13 => 
+            array (
+                'id' => 7657,
+                'model' => 'AttributeListValue',
+                'action' => 'UPDATE',
+                'user_id' => '1',
+                'old_values' => 'name: \'ocean\',comment: \'ocean blue #009dc4\',attribute_list_id: \'1\',odoo_name: \'ocean\'',
+                'new_values' => 'name: \'ocean\',comment: \'ocean blue #009dc4\',attribute_list_id: \'1\',odoo_name: \'ocean\'',
+                'created_at' => '2024-02-14 08:15:06',
+                'updated_at' => '2024-02-14 08:15:06',
+            ),
+            14 => 
+            array (
+                'id' => 7658,
+                'model' => 'AttributeListValue',
+                'action' => 'CREATE',
+                'user_id' => '1',
+                'old_values' => 'none',
+                'new_values' => 'name: \'thym\',comment: \'thym green #737b6c\',attribute_list_id: \'1\',odoo_name: \'thym\'',
+                'created_at' => '2024-02-14 08:22:07',
+                'updated_at' => '2024-02-14 08:22:07',
+            ),
+            15 => 
+            array (
+                'id' => 7659,
+                'model' => 'AttributeListValue',
+                'action' => 'UPDATE',
+                'user_id' => '1',
+                'old_values' => 'name: \'thym\',comment: \'thym green #737b6c\',attribute_list_id: \'1\',odoo_name: \'thym\'',
+                'new_values' => 'name: \'thym\',comment: \'thym green #737b6c\',attribute_list_id: \'1\',odoo_name: \'thym\'',
+                'created_at' => '2024-02-14 08:22:07',
+                'updated_at' => '2024-02-14 08:22:07',
+            ),
+            16 => 
+            array (
+                'id' => 7660,
+                'model' => 'AttributeListValue',
+                'action' => 'CREATE',
+                'user_id' => '1',
+                'old_values' => 'none',
+                'new_values' => 'name: \'lagoped\',comment: \'lagoped brand\',attribute_list_id: \'3\',odoo_name: \'LAGOPED\'',
+                'created_at' => '2024-02-14 08:44:14',
+                'updated_at' => '2024-02-14 08:44:14',
+            ),
+            17 => 
+            array (
+                'id' => 7661,
+                'model' => 'AttributeListValue',
+                'action' => 'UPDATE',
+                'user_id' => '1',
+                'old_values' => 'name: \'lagoped\',comment: \'lagoped brand\',attribute_list_id: \'3\',odoo_name: \'LAGOPED\'',
+                'new_values' => 'name: \'lagoped\',comment: \'lagoped brand\',attribute_list_id: \'3\',odoo_name: \'LAGOPED\'',
+                'created_at' => '2024-02-14 08:44:14',
+                'updated_at' => '2024-02-14 08:44:14',
+            ),
+            18 => 
+            array (
+                'id' => 7662,
+                'model' => 'AttributeListValue',
+                'action' => 'CREATE',
+                'user_id' => '1',
+                'old_values' => 'none',
+                'new_values' => 'name: \'lagoped\',comment: \'\',attribute_list_id: \'9\',odoo_name: \'Lagoped\'',
+                'created_at' => '2024-02-14 08:45:31',
+                'updated_at' => '2024-02-14 08:45:31',
+            ),
+            19 => 
+            array (
+                'id' => 7663,
+                'model' => 'AttributeListValue',
+                'action' => 'UPDATE',
+                'user_id' => '1',
+                'old_values' => 'name: \'lagoped\',comment: \'\',attribute_list_id: \'9\',odoo_name: \'Lagoped\'',
+                'new_values' => 'name: \'lagoped\',comment: \'\',attribute_list_id: \'9\',odoo_name: \'Lagoped\'',
+                'created_at' => '2024-02-14 08:45:31',
+                'updated_at' => '2024-02-14 08:45:31',
+            ),
         ));
         
         

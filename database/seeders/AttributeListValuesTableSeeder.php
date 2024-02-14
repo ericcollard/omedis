@@ -9844,6 +9844,50 @@ class AttributeListValuesTableSeeder extends Seeder
                 'created_at' => '2024-02-13 15:46:18',
                 'updated_at' => '2024-02-13 15:46:18',
             ),
+            393 => 
+            array (
+                'id' => 11461,
+                'name' => 'ocean',
+                'comment' => 'ocean blue #009dc4',
+                'attribute_list_id' => 1,
+                'user_id' => 1,
+                'odoo_name' => 'ocean',
+                'created_at' => '2024-02-14 08:15:06',
+                'updated_at' => '2024-02-14 08:15:06',
+            ),
+            394 => 
+            array (
+                'id' => 11462,
+                'name' => 'thym',
+                'comment' => 'thym green #737b6c',
+                'attribute_list_id' => 1,
+                'user_id' => 1,
+                'odoo_name' => 'thym',
+                'created_at' => '2024-02-14 08:22:07',
+                'updated_at' => '2024-02-14 08:22:07',
+            ),
+            395 => 
+            array (
+                'id' => 11463,
+                'name' => 'lagoped',
+                'comment' => 'lagoped brand',
+                'attribute_list_id' => 3,
+                'user_id' => 1,
+                'odoo_name' => 'LAGOPED',
+                'created_at' => '2024-02-14 08:44:14',
+                'updated_at' => '2024-02-14 08:44:14',
+            ),
+            396 => 
+            array (
+                'id' => 11464,
+                'name' => 'lagoped',
+                'comment' => NULL,
+                'attribute_list_id' => 9,
+                'user_id' => 1,
+                'odoo_name' => 'Lagoped',
+                'created_at' => '2024-02-14 08:45:31',
+                'updated_at' => '2024-02-14 08:45:31',
+            ),
         ));
         
         
