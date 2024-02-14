@@ -18,7 +18,9 @@
                 <p><a href="{{ route('product.truncate') }}">Remove all products</a></p>
                 <p><a href="{{ route('variant.uploadcsv') }}">Import products from csv</a></p>
                 <p><a href="{{ route('variant.uploadxml') }}">Import products from xml</a></p>
-
+                @if (Auth::check() and Auth::user()->hasRole('ROLE_ADMIN'))
+                    <p><a href="{{ route('product.convert2odooAll') }}">Update Odoo data</a></p>
+                @endif
                 {{ $dataTable->table() }}
             </div>
 

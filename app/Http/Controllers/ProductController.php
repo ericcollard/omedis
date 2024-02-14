@@ -181,6 +181,19 @@ class ProductController extends Controller
         //
     }
 
+
+    public function convert2odooAll()
+    {
+        $products = Product::all();
+        foreach ($products as $product) {
+            $product->convert2odoo();
+        }
+
+        return redirect()->route('product.index')
+            ->with(['alert' => 'success', 'message' => 'Odoo data updated' ]);
+    }
+
+
     public function convert2odoo(Product $product)
     {
         $product->convert2odoo();

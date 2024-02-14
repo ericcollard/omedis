@@ -38,17 +38,16 @@ class AttributesTableSeeder extends Seeder
             array (
                 'id' => 2,
                 'name' => 'season',
-                'comment' => 'Year validity for the product, for the case where this product is specific to one season. This has to be a year like 2023.
-We suggest that this should be the last year of validity (ie. 2024 for a 23-24 winter season product)',
+            'comment' => '<p>Year validity for the product, for the case where this product is specific to one season. This has to be a year like 2023. We suggest that this should be the last year of validity (ie. 2024 for a 23-24 winter season product)</p>',
                 'required' => 0,
                 'attribute_list_id' => NULL,
                 'unit_id' => 1,
-                'data_type_id' => 4,
+                'data_type_id' => 9,
                 'user_id' => 1,
                 'odoo_name' => NULL,
                 'order_column' => 3,
                 'created_at' => NULL,
-                'updated_at' => '2024-02-08 17:37:04',
+                'updated_at' => '2024-02-14 10:39:46',
             ),
             2 => 
             array (

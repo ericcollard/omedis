@@ -95,7 +95,8 @@ Route::post('attributelistvalue/decodecsv/{attributelist}', [AttributeListValueC
 
 
 Route::get('variant', [VariantController::class, 'index'])->name('variant.index');
-Route::post('variant/decodecsv', [VariantController::class, 'decodecsv'])->name('variant.decodecsv')->middleware(['auth:sanctum',config('jetstream.auth_session'),'verified',]);
+Route::post('variant/validatecsv', [VariantController::class, 'validatecsv'])->name('variant.validatecsv')->middleware(['auth:sanctum',config('jetstream.auth_session'),'verified',]);
+Route::get('variant/importcsv/{fileName}/{delimiter}/{enclosure}/{escape}', [VariantController::class, 'importcsv'])->name('variant.importcsv')->middleware(['auth:sanctum',config('jetstream.auth_session'),'verified',]);
 Route::post('variant/decodexml', [VariantController::class, 'decodexml'])->name('variant.decodexml')->middleware(['auth:sanctum',config('jetstream.auth_session'),'verified',]);
 Route::get('variant/uploadcsv', [VariantController::class, 'uploadcsv'])->name('variant.uploadcsv')->middleware(['auth:sanctum',config('jetstream.auth_session'),'verified',]);
 Route::get('variant/uploadxml', [VariantController::class, 'uploadxml'])->name('variant.uploadxml')->middleware(['auth:sanctum',config('jetstream.auth_session'),'verified',]);
@@ -106,6 +107,7 @@ Route::get('history', [HistoryController::class, 'index'])->name('history.index'
 
 Route::get('product', [ProductController::class, 'index'])->name('product.index');
 Route::get('product/truncate', [ProductController::class, 'truncate'])->name('product.truncate')->middleware(['auth:sanctum',config('jetstream.auth_session'),'verified',]);
+Route::get('product/convert2odooAll', [ProductController::class, 'convert2odooAll'])->name('product.convert2odooAll');
 Route::get('product/{product}/convert2odoo', [ProductController::class, 'convert2odoo'])->name('product.convert2odoo');
 Route::get('product/{product}', [ProductController::class, 'show'])->name('product.show');
 Route::get('/product/{product}/edit', [ProductController::class, 'edit'])->name('product.edit')->middleware(['auth:sanctum',config('jetstream.auth_session'),'verified',]);

@@ -99,6 +99,16 @@ class DataTypesTableSeeder extends Seeder
                 'created_at' => '2024-01-04 12:06:06',
                 'updated_at' => '2024-01-04 14:38:15',
             ),
+            8 => 
+            array (
+                'id' => 9,
+                'name' => 'year',
+                'comment' => 'Number representing a year',
+                'validation_str' => 'numeric|integer|min:1950|max:2050',
+                'user_id' => 1,
+                'created_at' => '2024-02-14 10:39:03',
+                'updated_at' => '2024-02-14 10:39:03',
+            ),
         ));
         
         

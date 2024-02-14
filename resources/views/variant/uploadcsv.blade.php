@@ -17,7 +17,7 @@
             <div class="container">
                 <p>Welcome to the OMEDIS csv file validator.</p>
                 <p>By submitting a csv file to this tool, your file will be analysed and you will get a compatibility report again the OMEDIS norm.</p>
-                <form action="{{ route('variant.decodecsv') }}" method="POST" enctype="multipart/form-data">
+                <form action="{{ route('variant.validatecsv') }}" method="POST" enctype="multipart/form-data">
                     @csrf
 
                     <div class="mb-3">

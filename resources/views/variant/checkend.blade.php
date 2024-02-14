@@ -18,6 +18,10 @@
                 @if ($errors != "")
                     <h4>Validation errors detected during file reading :</h4>
                     <p>{!! $errors !!}</p>
+                @else
+                    <h4>Validation sucessfull :</h4>
+                    <p>Good news : your data are conform to OMEDIS norm !</p>
+                    <p><a href="{{ route('variant.importcsv',['fileName' => $fileName, 'delimiter' => $delimiter, 'enclosure'=>$enclosure , 'escape'=>$escape]) }}">Try product integration</a></p>
                 @endif
                 <h4 class="mt-4">Validate again</h4>
 

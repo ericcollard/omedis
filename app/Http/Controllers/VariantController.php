@@ -89,21 +89,44 @@ class VariantController extends Controller
         return view('variant.uploadxml');
     }
 
-    public function validate_datas($products)
+    public function validate_datas($products,$fieldNames)
     {
-        // validation des données
-        $errors = "";
-        // validation des champs obligatoires
+        // liste des champs à valider
+        $attributeList = [];
+        $attributes = Attribute::where('required', '1')->get();
+        foreach ($attributes as $key => $attribute) {
+            $attributeList[] = $attribute->name;
+        }
+        foreach ($fieldNames as $fieldName) {
+            if (!in_array($fieldName,$attributeList))
+            {
+                $attributeList[] = $fieldName;
+            }
+        }
+        //log::debug($attributeList);
+
+        // règles de validation des champs
         $validationRule = [];
-        $resquiredAttributes = Attribute::where('required', '1')->get();
-        foreach ($resquiredAttributes as $key => $resquiredAttribute) {
-            if ($resquiredAttribute->dataType->name != 'selection')
-                $validationRule[$resquiredAttribute->name] = "required|" . $resquiredAttribute->dataType->validation_str;
+
+        foreach ($attributeList as $key => $attributeName) {
+            $attribute = Attribute::where('name', $attributeName)->first();
+            if ($attribute->dataType->name != 'selection') {
+                $validationRule[$attribute->name] = ($attribute->required == 1) ? 'required' : 'nullable'."|" . $attribute->dataType->validation_str;
+            }
+            else
+            {
+                $validationRule[$attribute->name] = [
+                    ($attribute->required == 1) ? 'required' : 'nullable',
+                    Rule::exists('attribute_list_values', 'name')
+                        ->where('attribute_list_id', $attribute->attribute_list_id),
+                ];
+            }
         }
 
-        // todo : vaidation structure
+        //log::debug($validationRule);
 
         $record_counter = 0;
+        $errors = "";
         if (!key_exists('product',$products))
         {
             $errors .= "<p>File structural error : missing 'product' tag. See OMEDIS documentation</p>";
@@ -131,28 +154,9 @@ class VariantController extends Controller
                 // autres validations (champs non obligatoires & listes)
                 if (!is_array($variant))
                 {
-                    dd($variant);
                     $errors .= "<p>File structural error : need to have array of attributes. See OMEDIS documentation</p>";
                     return $errors;
                 }
-                foreach ($variant as $attributeName => $attributeValue) {
-                    $attribute = Attribute::where('name', $attributeName)->first();
-                    if (!$attribute->required)
-                        $validationRule[$attribute->name] = "nullable|" . $attribute->dataType->validation_str;
-
-                    if ($attribute->dataType->name == 'selection') {
-                        $validationRule[$attribute->name] = [
-                            ($attribute->required == 1) ? 'required' : 'nullable',
-                            Rule::exists('attribute_list_values', 'name')
-                                ->where('attribute_list_id', $attribute->attribute_list_id),
-                        ];
-                    }
-
-                    // correction des nombres
-
-
-                }
-
                 $validator = Validator::make($variant, $validationRule);
 
                 if ($validator->fails()) {
@@ -186,7 +190,7 @@ class VariantController extends Controller
                             if (!strtolower(substr($picturePath,4)) == 'http')
                             {
                                 $errors .= "Line #" . $record_counter . " - <strong>pictures</strong> field value validation errors";
-                                $errors .= "<br/>Erronous supplied value : <span class='text-red-500'>" . $picturePaths . "</span>";
+                                $errors .= "<br/>Erronous supplied value : <span class='text-red-500'>" . $picturePath . "</span>";
                                 $errors .= "<br/>picture url ".$picturePath." has to contain 'http' string";
                             }
                             // existence fichier
@@ -198,20 +202,11 @@ class VariantController extends Controller
                         }
 
                     }
-
-                    //season validation
-                    if ($attributeName == "season" and strlen($attributeValue > 0))
-                    {
-                        if ((int)$attributeValue < 1990 or (int)$attributeValue > 2100 ) {
-                            $errors .= "Line #" . $record_counter . " - <strong>season</strong> field value validation errors";
-                            $errors .= "<br/>value ".$attributeValue." should be between 1990 and 2100";
-                        }
-                    }
-
                 }
-
             }
         }
+
+
         return $errors;
     }
 
@@ -226,12 +221,19 @@ class VariantController extends Controller
         }
     }
 
-    public function process_table_data($products,$product_template_supplied = false)
+    public function process_table_data($products,$fieldNames,$product_template_supplied = false)
     {
         // Supprimer les données existantes
         $variants = Variant::where('user_id', '=', Auth::id())->get();
         foreach ($variants as $variant) {
             $variant->delete();
+        }
+
+        // Attributs
+        $attributes = [];
+        foreach ($fieldNames as $fieldName) {
+            $attribute = Attribute::where('name', $fieldName)->first();
+            $attributes[$fieldName] = $attribute;
         }
 
         // créer les nouveaux variant
@@ -246,8 +248,7 @@ class VariantController extends Controller
                 $variant->save();
                 foreach ($variantData as $attributeName => $attributeValue) {
                     if ($attributeValue) {
-                        //dd($attributeName,$attributeValue);  // brand > duotone
-                        $attribute = Attribute::where('name', $attributeName)->first();
+                        $attribute = $attributes[$attributeName];
                         $variantAttributeValueArr = [];
                         $variantAttributeValueArr['variant_id'] = $variant->id;
                         $variantAttributeValueArr['attribute_id'] = $attribute->id;
@@ -292,28 +293,16 @@ class VariantController extends Controller
                 }
             }
 
-            $product->convert2odoo();
+            //$product->convert2odoo();
         }
     }
 
-    public function decodecsv(Request $request)
-    {
-        $request->validate([
-            'file' => 'required|mimes:csv,txt|max:2048',
-            'delimiter' => 'required',
-            'enclosure' => 'required',
-            'escape' => 'required'
-        ]);
 
-        $fileName = time().'-'.$request->file->getClientOriginalName();
-        $request->file->storeAs('uploads', $fileName);
+    public function decodecsv($fileName,$delimiter,$enclosure,$escape)
+    {
+        $output = [];
 
         $fileRelPath = 'uploads/'.$fileName;
-        $fileFullPath = storage_path('app/'.$fileRelPath);
-        $delimiter = $request->delimiter;
-        $enclosure = $request->enclosure;
-        $escape = $request->escape;
-
         if (!Storage::exists($fileRelPath))
         {
             abort(404, "Impossible to find ".$fileRelPath." file");
@@ -342,7 +331,6 @@ class VariantController extends Controller
         }
 
         // vérification que tous les champs soient valides
-        log::debug($fieldNames);
         $invalidFields = '';
         foreach ($fieldNames as $fieldName) {
             if (strlen(trim($fieldName)) == 0)
@@ -364,7 +352,7 @@ class VariantController extends Controller
 
         // classement des variants avant détection des produits
         $records->rewind();
-        if ($records->current()['season'])
+        if (array_key_exists('season',$records->current()))
         {
             $records = $csv->sorted(function(array $recordA, array $recordB)
             {
@@ -413,23 +401,52 @@ class VariantController extends Controller
             $products['product'][$product_counter]['variant'][] = $variant_data;
         }
 
-        Log::debug($products);
+        $output['products'] = $products;
+        $output['fieldNames'] = $fieldNames;
+        return $output;
+    }
 
+
+    public function validatecsv(Request $request)
+    {
+        $request->validate([
+            'file' => 'required|mimes:csv,txt|max:2048',
+            'delimiter' => 'required',
+            'enclosure' => 'required',
+            'escape' => 'required'
+        ]);
+
+        $fileName = time().'-'.$request->file->getClientOriginalName();
+        $request->file->storeAs('uploads', $fileName);
+
+        $fileRelPath = 'uploads/'.$fileName;
+        $delimiter = $request->delimiter;
+        $enclosure = $request->enclosure;
+        $escape = $request->escape;
+
+        $data = $this->decodecsv($fileName,$delimiter,$enclosure,$escape);
 
         // validation des variants
-        $errors = $this->validate_datas($products);
-        if (strlen($errors) == 0)
-        {
-            // extraction des variants
-            $this->process_table_data($products);
-            return redirect()->route('product.index')
-                ->with(['alert' => 'success', 'message' => 'Data loaded - file is conform to OMEDIS' ]);
-        }
-        else
-        {
-            return view('variant.checkfailed', compact('errors'));
-        }
+        $errors = $this->validate_datas($data['products'],$data['fieldNames']);
+
+        Log::debug($data['products']);
+        Log::debug($errors);
+
+        return view('variant.checkend', compact('errors','fileName','delimiter','enclosure','escape'));
+
     }
+
+    public function importcsv($fileName,$delimiter,$enclosure,$escape)
+    {
+        log::debug($fileName);
+        $data = $this->decodecsv($fileName,$delimiter,$enclosure,$escape);
+        $this->process_table_data($data['products'],$data['fieldNames']);
+
+        return redirect()->route('product.index')
+            ->with(['alert' => 'success', 'message' => 'Data loaded' ]);
+    }
+
+
 
 
     public function decodexml(Request $request)
