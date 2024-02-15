@@ -77,16 +77,15 @@ class Product extends Model
 
         //Catégorie commerciale
         $attribute = Attribute::where('name', 'category')->first();
-
-        $odoo_categ_name = null;
-        $value = $first_variant->variantAttributes()->where('attribute_id',$attribute->id)->first()->getValue();
+        $valueObj = $first_variant->variantAttributes()->where('attribute_id',$attribute->id)->first();
+        if ($valueObj) $value = $valueObj->getValue();
         if ($value)
         {
             $odooModel = OdooModel::where('name', 'commercial_category')->first();
             $obj = OdooProductValue::create([
                 'product_id' => $this->id,
                 'odoo_model_id' => $odooModel->id,
-                'value' => $value
+                'value' => $odooModel->format_value($value)
             ])->save();
         }
 
@@ -105,7 +104,7 @@ class Product extends Model
                     $obj = OdooProductValue::create([
                         'product_id' => $this->id,
                         'odoo_model_id' => $odooModel->id,
-                        'value' => $value
+                        'value' => $odooModel->format_value($value)
                     ])->save();
                 }
             }
@@ -121,7 +120,7 @@ class Product extends Model
                     $obj = OdooProductValue::create([
                         'product_id' => $this->id,
                         'odoo_model_id' => $odooModel->id,
-                        'value' => $value
+                        'value' => $odooModel->format_value($value)
                     ])->save();
                 }
             }
@@ -130,30 +129,26 @@ class Product extends Model
         //Nom produit
 
         $attribute = Attribute::where('name', 'name')->first();
-        $productName = $first_variant->variantAttributes()->where('attribute_id',$attribute->id)->first()->getValue();
-
-        log::debug('brand-name attribute');
+        $productNameObj = $first_variant->variantAttributes()->where('attribute_id',$attribute->id)->first();
+        if ($productNameObj) $productName = $productNameObj->getValue();
         $attribute = Attribute::where('name', 'brand')->first();
-        log::debug($attribute);
-        log::debug('fisrt variant attribute');
-        log::debug($first_variant->variantAttributes()->where('attribute_id',$attribute->id)->first());
-
-        $brandName = $first_variant->variantAttributes()->where('attribute_id',$attribute->id)->first()->getValue();
-        log::debug($brandName);
-
+        $brandNameObj = $first_variant->variantAttributes()->where('attribute_id',$attribute->id)->first();
+        if ($brandNameObj) $brandName = $brandNameObj->getValue();
         $attribute = Attribute::where('name', 'season')->first();
-        $seasonName = $first_variant->variantAttributes()->where('attribute_id',$attribute->id)->first()->getValue();
+        $seasonNameObj = $first_variant->variantAttributes()->where('attribute_id',$attribute->id)->first();
+        if ($seasonNameObj) $seasonName = $seasonNameObj->getValue();
+
         if ($productName)
         {
             $fullproductName = strtoupper($productName);
-            if ($brandName) $fullproductName = ucfirst(strtolower($brandName))." ".$fullproductName;
-            if ($seasonName) $fullproductName = $fullproductName." ".$seasonName;
+            if (isset($brandName)) $fullproductName = ucfirst(strtolower($brandName))." ".$fullproductName;
+            if (isset($seasonName)) $fullproductName = $fullproductName." ".$seasonName;
 
             $odooModel = OdooModel::where('name', 'product_name')->first();
             $obj = OdooProductValue::create([
                 'product_id' => $this->id,
                 'odoo_model_id' => $odooModel->id,
-                'value' => $fullproductName
+                'value' => $odooModel->format_value($fullproductName)
             ])->save();
         }
 
@@ -164,7 +159,7 @@ class Product extends Model
             $obj = OdooProductValue::create([
                 'product_id' => $this->id,
                 'odoo_model_id' => $odooModel->id,
-                'value' => $brandName
+                'value' => $odooModel->format_value($brandName)
             ])->save();
         }
 
@@ -181,7 +176,7 @@ class Product extends Model
                 $obj = OdooProductValue::create([
                     'product_id' => $this->id,
                     'odoo_model_id' => $odooModel->id,
-                    'value' => $value
+                    'value' => $odooModel->format_value($value)
                 ])->save();
             }
 
@@ -198,7 +193,7 @@ class Product extends Model
                 $obj = OdooProductValue::create([
                     'product_id' => $this->id,
                     'odoo_model_id' => $odooModel->id,
-                    'value' => $value
+                    'value' => $odooModel->format_value($value)
                 ])->save();
             }
         }
@@ -224,7 +219,7 @@ class Product extends Model
                     $obj = OdooProductValue::create([
                         'product_id' => $this->id,
                         'odoo_model_id' => $odooModel->id,
-                        'value' => $value
+                        'value' => $odooModel->format_value($value)
                     ])->save();
                 }
             }
@@ -262,7 +257,7 @@ class Product extends Model
             $obj = OdooProductValue::create([
                 'product_id' => $this->id,
                 'odoo_model_id' => $odooModel->id,
-                'value' => $value / 1.2
+                'value' => $odooModel->format_value($value / 1.2)
             ])->save();
         }
 
@@ -280,7 +275,7 @@ class Product extends Model
                 $obj = OdooProductValue::create([
                     'product_id' => $this->id,
                     'odoo_model_id' => $odooModel->id,
-                    'value' => $value / 1.2
+                    'value' => $odooModel->format_value($value / 1.2)
                 ])->save();
             }
         }
@@ -305,7 +300,7 @@ class Product extends Model
                 $obj = OdooProductValue::create([
                     'product_id' => $this->id,
                     'odoo_model_id' => $odooModel->id,
-                    'value' => $mainPict
+                    'value' => $odooModel->format_value($mainPict)
                 ])->save();
             }
             //Photos additionnelles
@@ -315,7 +310,7 @@ class Product extends Model
                 $obj = OdooProductValue::create([
                     'product_id' => $this->id,
                     'odoo_model_id' => $odooModel->id,
-                    'value' => $additionnalPict
+                    'value' => $odooModel->format_value($additionnalPict)
                 ])->save();
             }
         }

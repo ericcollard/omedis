@@ -34,8 +34,6 @@ class VariantAttributes extends Model
 
     public function getValue()
     {
-        log::debug($this);
-        log::debug('getValue '.$this->attribute->name.'/'.$this->attribute->attribute_list_id.'/'.$this->value_int);
         switch ($this->attribute->datatype->name)
         {
             case "selection":
@@ -48,7 +46,6 @@ class VariantAttributes extends Model
                         ->first();
                     if ($attr_value)
                     {
-                        log::debug('GetValue : '.$this->attribute->value_int.' '.$attr_value->name);
                         if ($attr_value->odoo_name) {
                             return $attr_value->odoo_name;
                         }
@@ -56,7 +53,6 @@ class VariantAttributes extends Model
                         {
                             return $attr_value->name." *";
                         }
-
                     }
                     else
                         return null;
