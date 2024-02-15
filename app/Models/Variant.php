@@ -289,15 +289,6 @@ class Variant extends Model
             }
         }
 
-        //Type
-        $odooModel = OdooModel::where('name', 'attribute')->first();
-        $obj = OdooVariantValue::create([
-            'variant_id' => $this->id,
-            'odoo_model_id' => $odooModel->id,
-            'value' => 'Neuf',
-            'attribute_name' => 'Type'
-        ])->save();
-
         //Photos
         $attribute = Attribute::where('name', 'pictures')->first();
         $valueObj = $this->variantAttributes()->where('attribute_id',$attribute->id)->first();
@@ -321,6 +312,15 @@ class Variant extends Model
                 ])->save();
             }
         }
+
+        //Type
+        $odooModel = OdooModel::where('name', 'attribute')->first();
+        $obj = OdooVariantValue::create([
+            'variant_id' => $this->id,
+            'odoo_model_id' => $odooModel->id,
+            'value' => 'Neuf',
+            'attribute_name' => 'Type'
+        ])->save();
 
 
         //Autres attributs
