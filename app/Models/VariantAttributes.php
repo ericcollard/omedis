@@ -5,6 +5,8 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
+use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Log;
 
 class VariantAttributes extends Model
 {
@@ -32,27 +34,33 @@ class VariantAttributes extends Model
 
     public function getValue()
     {
+        log::debug($this);
+        log::debug('getValue '.$this->attribute->name.'/'.$this->attribute->attribute_list_id.'/'.$this->value_int);
         switch ($this->attribute->datatype->name)
         {
             case "selection":
                 if ($this->value_int)
                 {
-                    $attrValue = $this->attribute->attributeList->attributeListValues->where('id', $this->value_int)->first();
-                    if ($attrValue)
+                    $attr_value = DB::table('attribute_list_values')
+                        ->where('attribute_list_values.attribute_list_id',$this->attribute->attribute_list_id)
+                        ->where('attribute_list_values.id',$this->value_int)
+                        ->select('name','odoo_name')
+                        ->first();
+                    if ($attr_value)
                     {
-                        $data = [];
-                        if ($attrValue->name)
-                            $data['name'] = $attrValue->name;
-                        if ($attrValue->odoo_name)
-                            $data['odoo_name'] = $attrValue->odoo_name;
-                        return $data;
+                        log::debug('GetValue : '.$this->attribute->value_int.' '.$attr_value->name);
+                        if ($attr_value->odoo_name) {
+                            return $attr_value->odoo_name;
+                        }
+                        else
+                        {
+                            return $attr_value->name." *";
+                        }
+
                     }
                     else
-                    {
                         return null;
-                    }
                 }
-
                 break;
             case "string":
                 if ($this->value_str)
@@ -94,6 +102,12 @@ class VariantAttributes extends Model
                 if ($this->value_txt)
                 {
                     return $this->value_txt;
+                }
+                break;
+            case "year":
+                if ($this->value_int)
+                {
+                    return (int)$this->value_int;
                 }
                 break;
         }

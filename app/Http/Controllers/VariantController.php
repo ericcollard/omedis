@@ -183,6 +183,7 @@ class VariantController extends Controller
                     // Pictures field validation
                     if ($attributeName == "pictures" and strlen($attributeValue > 0))
                     {
+                        log::debug($attributeValue);
                         $picturePaths = explode(";", $attributeValue);
                         foreach ($picturePaths as $picturePath)
                         {
@@ -278,7 +279,11 @@ class VariantController extends Controller
                             case "boolean":
                                 $variantAttributeValueArr['value_int'] = (int)$attributeValue;
                                 break;
+                            case "year":
+                                $variantAttributeValueArr['value_int'] = (int)$attributeValue;
+                                break;
                             case "url":
+                                log:debug($attributeValue);
                                 $variantAttributeValueArr['value_txt'] = $attributeValue;
                                 break;
                         }
@@ -296,7 +301,6 @@ class VariantController extends Controller
             //$product->convert2odoo();
         }
     }
-
 
     public function decodecsv($fileName,$delimiter,$enclosure,$escape)
     {
@@ -406,7 +410,6 @@ class VariantController extends Controller
         return $output;
     }
 
-
     public function validatecsv(Request $request)
     {
         $request->validate([
@@ -445,9 +448,6 @@ class VariantController extends Controller
         return redirect()->route('product.index')
             ->with(['alert' => 'success', 'message' => 'Data loaded' ]);
     }
-
-
-
 
     public function decodexml(Request $request)
     {

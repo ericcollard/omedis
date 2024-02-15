@@ -260,12 +260,8 @@ class Variant extends Model
         $attribute = Attribute::where('name', 'brand')->first();
         $valueObj = $this->variantAttributes()->where('attribute_id',$attribute->id)->first();
         if ($valueObj) {
-            $valueArr = $valueObj->getValue();
-            if ($valueArr) {
-                $supplierName = $valueArr['name'].'*';
-                if (key_exists('odoo_name',$valueArr))
-                    $supplierName = $valueArr['odoo_name'];
-
+            $supplierName = $valueObj->getValue();
+            if ($supplierName) {
                 $odooModel = OdooModel::where('name', 'attribute')->first();
                 $obj = OdooVariantValue::create([
                     'variant_id' => $this->id,
@@ -280,14 +276,14 @@ class Variant extends Model
         $attribute = Attribute::where('name', 'season')->first();
         $valueObj = $this->variantAttributes()->where('attribute_id',$attribute->id)->first();
         if ($valueObj) {
-            $name = $valueObj->getValue();
-            if (strlen($name)>0)
+            $value = $valueObj->getValue();
+            if ($value)
             {
                 $odooModel = OdooModel::where('name', 'attribute')->first();
                 $obj = OdooVariantValue::create([
                     'variant_id' => $this->id,
                     'odoo_model_id' => $odooModel->id,
-                    'value' => $odooModel->format_value($name),
+                    'value' => $odooModel->format_value((string)$value),
                     'attribute_name' => 'Millésime'
                 ])->save();
             }
@@ -301,6 +297,31 @@ class Variant extends Model
             'value' => 'Neuf',
             'attribute_name' => 'Type'
         ])->save();
+
+        //Photos
+        $attribute = Attribute::where('name', 'pictures')->first();
+        $valueObj = $this->variantAttributes()->where('attribute_id',$attribute->id)->first();
+        if ($valueObj) {
+            $value = $valueObj->getValue();
+            $picturePathArr = explode(';',$value);
+            $mainPict = "";
+            if (count($picturePathArr) >= 1)
+            {
+                $mainPict = $picturePathArr[0];
+            }
+
+            if (strlen($mainPict) > 0)
+            {
+                $odooModel = OdooModel::where('name', 'variant_picture')->first();
+                $obj = OdooVariantValue::create([
+                    'variant_id' => $this->id,
+                    'odoo_model_id' => $odooModel->id,
+                    'value' => $mainPict,
+                    'attribute_name' => 'variant_picture'
+                ])->save();
+            }
+        }
+
 
         //Autres attributs
         // Attributs variantes
@@ -324,42 +345,26 @@ class Variant extends Model
                 $attribute_name = $attribute->odoo_name;
             $valueObj = $this->variantAttributes()->where('attribute_id', $attribute->id)->first();
             if ($valueObj) {
-                $name = $valueObj->getValue();
+                $value = $valueObj->getValue();
 
                 // formatage de la surface
                 if ($attribute->name == 'var-surface-m2')
                 {
-                    $numeric_value = (float)$name;
+                    $numeric_value = (float)$value;
                     $name = number_format($numeric_value, 1, '.', '');
-                }
-
-                if (is_array($name))
-                {
-                    // cas d'un attribut sur sélection
-                    $value = $name['name'].('*');
-                    if (key_exists('odoo_name',$name))
-                    {
-                        $value= $name['odoo_name'];
-                    }
-                    if (strlen($value) > 0) {
-                        $obj = OdooVariantValue::create([
-                            'variant_id' => $this->id,
-                            'odoo_model_id' => $odooModel->id,
-                            'value' => $odooModel->format_value($value),
-                            'attribute_name' => $attribute_name
-                        ])->save();
-                    }
                 }
                 else
                 {
-                    if (strlen($name) > 0) {
-                        $obj = OdooVariantValue::create([
-                            'variant_id' => $this->id,
-                            'odoo_model_id' => $odooModel->id,
-                            'value' => $odooModel->format_value($name),
-                            'attribute_name' => $attribute_name
-                        ])->save();
-                    }
+                    $name = (string)$value;
+                }
+
+                if (strlen($name) > 0) {
+                    $obj = OdooVariantValue::create([
+                        'variant_id' => $this->id,
+                        'odoo_model_id' => $odooModel->id,
+                        'value' => $odooModel->format_value($name),
+                        'attribute_name' => $attribute_name
+                    ])->save();
                 }
 
             }

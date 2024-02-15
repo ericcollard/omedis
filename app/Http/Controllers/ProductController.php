@@ -109,7 +109,14 @@ class ProductController extends Controller
                         case "url":
                             $value = $variant_attribute->value_txt;
                             break;
+                        case "year":
+                            $value = $variant_attribute->value_int;
+                            break;
                     }
+
+                    //$odoo_value = null;
+                    //$value = $variant_attribute->getValue($odoo_value);
+
                     $imported_variant_data[] = [$variant_attribute->attribute_name,$value ];
 
                 }
@@ -197,6 +204,7 @@ class ProductController extends Controller
     public function convert2odoo(Product $product)
     {
         $product->convert2odoo();
+        //return view('errors.minimal');
         return redirect(route('product.show',$product))->with( ['message' => 'Data updated', 'alert' => 'success']);
     }
 

@@ -6,6 +6,7 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Database\Eloquent\Relations\HasMany;
+use Illuminate\Support\Facades\Log;
 
 class Product extends Model
 {
@@ -76,19 +77,17 @@ class Product extends Model
 
         //Catégorie commerciale
         $attribute = Attribute::where('name', 'category')->first();
+
+        $odoo_categ_name = null;
         $value = $first_variant->variantAttributes()->where('attribute_id',$attribute->id)->first()->getValue();
         if ($value)
         {
-            if (key_exists('odoo_name',$value))
-            {
-                $odoo_categ_name = $value['odoo_name'];
-                $odooModel = OdooModel::where('name', 'commercial_category')->first();
-                $obj = OdooProductValue::create([
-                    'product_id' => $this->id,
-                    'odoo_model_id' => $odooModel->id,
-                    'value' => $odoo_categ_name
-                ])->save();
-            }
+            $odooModel = OdooModel::where('name', 'commercial_category')->first();
+            $obj = OdooProductValue::create([
+                'product_id' => $this->id,
+                'odoo_model_id' => $odooModel->id,
+                'value' => $value
+            ])->save();
         }
 
         //Référence interne
@@ -129,25 +128,32 @@ class Product extends Model
         }
 
         //Nom produit
+
         $attribute = Attribute::where('name', 'name')->first();
-        $value = $first_variant->variantAttributes()->where('attribute_id',$attribute->id)->first()->getValue();
+        $productName = $first_variant->variantAttributes()->where('attribute_id',$attribute->id)->first()->getValue();
+
+        log::debug('brand-name attribute');
         $attribute = Attribute::where('name', 'brand')->first();
-        $brandNameArr = $first_variant->variantAttributes()->where('attribute_id',$attribute->id)->first()->getValue();
-        $brandName = $brandNameArr['name'];
-        if (key_exists('odoo_name',$brandNameArr))
-            $brandName = $brandNameArr['odoo_name'];
+        log::debug($attribute);
+        log::debug('fisrt variant attribute');
+        log::debug($first_variant->variantAttributes()->where('attribute_id',$attribute->id)->first());
+
+        $brandName = $first_variant->variantAttributes()->where('attribute_id',$attribute->id)->first()->getValue();
+        log::debug($brandName);
+
         $attribute = Attribute::where('name', 'season')->first();
-        $seasonAttr = $first_variant->variantAttributes()->where('attribute_id',$attribute->id)->first();
-        $season ="";
-        if ($seasonAttr)
-            $season = $seasonAttr->getValue();
-        if ($value)
+        $seasonName = $first_variant->variantAttributes()->where('attribute_id',$attribute->id)->first()->getValue();
+        if ($productName)
         {
+            $fullproductName = strtoupper($productName);
+            if ($brandName) $fullproductName = ucfirst(strtolower($brandName))." ".$fullproductName;
+            if ($seasonName) $fullproductName = $fullproductName." ".$seasonName;
+
             $odooModel = OdooModel::where('name', 'product_name')->first();
             $obj = OdooProductValue::create([
                 'product_id' => $this->id,
                 'odoo_model_id' => $odooModel->id,
-                'value' => ucfirst(strtolower($brandName))." ".strtoupper($value)." ".$season
+                'value' => $fullproductName
             ])->save();
         }
 
@@ -158,7 +164,7 @@ class Product extends Model
             $obj = OdooProductValue::create([
                 'product_id' => $this->id,
                 'odoo_model_id' => $odooModel->id,
-                'value' => ucfirst(strtolower($brandName))
+                'value' => $brandName
             ])->save();
         }
 
