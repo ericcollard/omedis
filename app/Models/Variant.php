@@ -353,6 +353,11 @@ class Variant extends Model
                     $numeric_value = (float)$value;
                     $name = number_format($numeric_value, 1, '.', '');
                 }
+                elseif ($attribute->name == 'var-volume-l')
+                {
+                    $numeric_value = (float)$value;
+                    $name = number_format($numeric_value, 0, '.', '');
+                }
                 else
                 {
                     $name = (string)$value;
