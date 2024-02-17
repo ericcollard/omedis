@@ -396,12 +396,12 @@ This can be used to store client specific discount, volume discount, year discou
                 'required' => 0,
                 'attribute_list_id' => NULL,
                 'unit_id' => 11,
-                'data_type_id' => 5,
-                'user_id' => 2,
+                'data_type_id' => 2,
+                'user_id' => 1,
             'odoo_name' => 'Taille (pouces)',
                 'order_column' => 29,
                 'created_at' => '2023-09-28 21:23:03',
-                'updated_at' => '2024-02-08 17:36:57',
+                'updated_at' => '2024-02-17 16:59:42',
             ),
             25 => 
             array (

@@ -62,6 +62,8 @@ class Variant extends Model
 
         if ($this->product->getVariantCount() > 1)
         {
+            $ean = "";
+
             // Référence interne variante
             $attribute = Attribute::where('name', 'sku')->first();
             $valueObj = $this->variantAttributes()->where('attribute_id',$attribute->id)->first();
@@ -76,10 +78,11 @@ class Variant extends Model
                         'odoo_model_id' => $odooModel->id,
                         'value' => $odooModel->format_value($value)
                     ])->save();
+                    $ean = $value;
                 }
             }
 
-            //Code barre variante
+            //Code barre variante (dans tous les cas, si vide, on met de sku)
             $attribute = Attribute::where('name', 'ean')->first();
             $valueObj = $this->variantAttributes()->where('attribute_id',$attribute->id)->first();
             if ($valueObj)
@@ -87,14 +90,19 @@ class Variant extends Model
                 $value = $valueObj->getValue();
                 if ($value)
                 {
-                    $odooModel = OdooModel::where('name', 'variant_barcode')->first();
-                    $obj = OdooVariantValue::create([
-                        'variant_id' => $this->id,
-                        'odoo_model_id' => $odooModel->id,
-                        'value' => $odooModel->format_value($value)
-                    ])->save();
+                    $ean = $value;
                 }
             }
+
+            if (strlen($ean)>0) {
+                $odooModel = OdooModel::where('name', 'variant_barcode')->first();
+                $obj = OdooVariantValue::create([
+                    'variant_id' => $this->id,
+                    'odoo_model_id' => $odooModel->id,
+                    'value' => $odooModel->format_value($ean)
+                ])->save();
+            }
+
 
             //Tarif achat
 
@@ -374,7 +382,7 @@ class Variant extends Model
                     $numeric_value = (float)$value;
                     $name = number_format($numeric_value, 1, '.', '');
                 }
-                elseif ($attribute->name == 'var-volume-l')
+                elseif (in_array($attribute->name, ['var-size-m','var-size-cm','var-size-mm','var-surface-cm2','var-volume-l']))
                 {
                     $numeric_value = (float)$value;
                     $name = number_format($numeric_value, 0, '.', '');

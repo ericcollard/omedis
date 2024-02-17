@@ -92,6 +92,8 @@ class Product extends Model
         //Référence interne
         if ($this->getVariantCount() == 1)
         {
+            $ean = "";
+
             //Référence interne
             $attribute = Attribute::where('name', 'sku')->first();
             $valueObj = $first_variant->variantAttributes()->where('attribute_id',$attribute->id)->first();
@@ -106,6 +108,7 @@ class Product extends Model
                         'odoo_model_id' => $odooModel->id,
                         'value' => $odooModel->format_value($value)
                     ])->save();
+                    $ean = $value;
                 }
             }
 
@@ -116,14 +119,19 @@ class Product extends Model
             {
                 $value = $valueObj->getValue();
                 if ($value) {
-                    $odooModel = OdooModel::where('name', 'product_barcode')->first();
-                    $obj = OdooProductValue::create([
-                        'product_id' => $this->id,
-                        'odoo_model_id' => $odooModel->id,
-                        'value' => $odooModel->format_value($value)
-                    ])->save();
+                    $ean = $value;
                 }
             }
+
+            if (strlen($ean)>0) {
+                $odooModel = OdooModel::where('name', 'product_barcode')->first();
+                $obj = OdooProductValue::create([
+                    'product_id' => $this->id,
+                    'odoo_model_id' => $odooModel->id,
+                    'value' => $odooModel->format_value($ean)
+                ])->save();
+            }
+
         }
 
         //Nom produit
