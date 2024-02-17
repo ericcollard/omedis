@@ -42,4 +42,26 @@ class OdooVariantValue extends Model
         }
         return $data;
     }
+
+    public static function createFromModel($odoo_model_name, $variant_id, $value, $attribute_name = null)
+    {
+        $odooModel = OdooModel::where('name', $odoo_model_name)->first();
+        if ($odooModel)
+        {
+            $data =[
+                'variant_id' => $variant_id,
+                'odoo_model_id' => $odooModel->id,
+                'value' => $odooModel->format_value($value)
+            ];
+            if ($attribute_name)
+                $data['attribute_name'] = $attribute_name;
+
+            $obj = OdooVariantValue::create($data)->save();
+        }
+        else
+        {
+            abort(404, $odoo_model_name. " odoo model name does not exist.");
+        }
+
+    }
 }

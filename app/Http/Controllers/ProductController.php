@@ -121,7 +121,6 @@ class ProductController extends Controller
 
                 }
             $master_data[] = $imported_variant_data;
-            log::debug($imported_variant_data);
         }
 
 
@@ -153,9 +152,8 @@ class ProductController extends Controller
             $odoo_variants_data[] = $odoo_variant_data;
         }
 
-
-
-        //var_dump($odoo_variants_data);
+        $rep = $product->getAttributeValue('main_picture');
+        log::debug($rep);
 
         return view('product.show', compact('product','master_data','odoo_product_data','odoo_variants_data'));
     }
@@ -204,7 +202,7 @@ class ProductController extends Controller
     public function convert2odoo(Product $product)
     {
         $product->convert2odoo();
-        return view('errors.minimal');
+        //return view('errors.minimal');
         return redirect(route('product.show',$product))->with( ['message' => 'Data updated', 'alert' => 'success']);
     }
 
