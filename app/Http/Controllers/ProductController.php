@@ -204,7 +204,7 @@ class ProductController extends Controller
     public function convert2odoo(Product $product)
     {
         $product->convert2odoo();
-        //return view('errors.minimal');
+        return view('errors.minimal');
         return redirect(route('product.show',$product))->with( ['message' => 'Data updated', 'alert' => 'success']);
     }
 

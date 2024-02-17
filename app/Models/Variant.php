@@ -303,13 +303,34 @@ class Variant extends Model
 
             if (strlen($mainPict) > 0)
             {
-                $odooModel = OdooModel::where('name', 'variant_picture')->first();
-                $obj = OdooVariantValue::create([
-                    'variant_id' => $this->id,
-                    'odoo_model_id' => $odooModel->id,
-                    'value' => $mainPict,
-                    'attribute_name' => 'variant_picture'
-                ])->save();
+                // ne l'ajouter que si ce n'est pas la même que sur le produit principal
+                $odooModel = OdooModel::where('name', 'main_picture')->first();
+                $productPictureObj = OdooProductValue::where('product_id',$this->product->id)
+                                                ->where('odoo_model_id',$odooModel->id)
+                                                ->select('value')
+                                                ->first();
+                //log::debug("Variante avec picture");
+                //log::debug($mainPict);
+                //log::debug($productPictureObj);
+
+                if ($productPictureObj) {
+
+                    if ($productPictureObj->value == $mainPict) {
+                        $mainPict = "";
+                        //log::debug("Même image");
+                    }
+                }
+
+                if (strlen($mainPict)> 0) {
+                    $odooModel = OdooModel::where('name', 'variant_picture')->first();
+                    $obj = OdooVariantValue::create([
+                        'variant_id' => $this->id,
+                        'odoo_model_id' => $odooModel->id,
+                        'value' => $mainPict,
+                        'attribute_name' => 'variant_picture'
+                    ])->save();
+                }
+
             }
         }
 
