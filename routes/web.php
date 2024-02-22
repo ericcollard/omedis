@@ -106,6 +106,7 @@ Route::get('variant/{variant}', [VariantController::class, 'show'])->name('varia
 Route::get('history', [HistoryController::class, 'index'])->name('history.index');
 
 Route::get('product', [ProductController::class, 'index'])->name('product.index');
+Route::get('product/datatable', [ProductController::class, 'datatable'])->name('product.datatable');
 Route::get('product/truncate', [ProductController::class, 'truncate'])->name('product.truncate')->middleware(['auth:sanctum',config('jetstream.auth_session'),'verified',]);
 Route::get('product/convert2odooAll', [ProductController::class, 'convert2odooAll'])->name('product.convert2odooAll');
 Route::get('product/{product}/convert2odoo', [ProductController::class, 'convert2odoo'])->name('product.convert2odoo');

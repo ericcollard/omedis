@@ -208,8 +208,9 @@ class Product extends Model
         //Prix vente HT = prix mini des variantes
         $value = $this->getVariantsMinAttributeValue('retail-price');
         if ($value) {
+            log::debug($value);
             $value = $value / 1.2;
-            OdooProductValue::createFromModel('product_retail_ht', $this->id, $variantAttributeValue);
+            OdooProductValue::createFromModel('product_retail_ht', $this->id, $value);
         }
 
         //Prix discount HT = prix mini des variantes, si chaque variante a un prix promo

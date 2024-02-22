@@ -206,5 +206,10 @@ class ProductController extends Controller
         return redirect(route('product.show',$product))->with( ['message' => 'Data updated', 'alert' => 'success']);
     }
 
+    public function datatable()
+    {
+        return view('product.datatable');
+    }
+
 
 }
