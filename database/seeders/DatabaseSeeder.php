@@ -9,18 +9,22 @@ class DatabaseSeeder extends Seeder
     /**
      * Seed the application's database.
      */
-    public function run()
+    public function run(): void
     {
-        \DB::table('users')->delete();
-        \DB::table('users')->insert(array (
-            0 =>
-                array (
-                    'id' => 1,
-                    'name' => 'Administrateur général',
-                    'email' => 'eric.collard@free.fr',
-                    'password' => '$2y$10$Qy.UROfMdVwkZKQlopVjWOapcHwDxLeLIG.4z7E.AJ7C0x2nv7b8e',
-                ),
-        ));
-
+        $this->call(UsersTableSeeder::class);
+        $this->call(DataTypesTableSeeder::class);
+        $this->call(UnitsTableSeeder::class);
+        $this->call(AttributeListsTableSeeder::class);
+        $this->call(AttributeListValuesTableSeeder::class);
+        $this->call(AttributesTableSeeder::class);
+        $this->call(HistoriesTableSeeder::class);
+        $this->call(ProductsTableSeeder::class);
+        $this->call(VariantsTableSeeder::class);
+        $this->call(VariantAttributesTableSeeder::class);
+        $this->call(OdooModelsTableSeeder::class);
+        $this->call(OdooProductValuesTableSeeder::class);
+        $this->call(OdooVariantValuesTableSeeder::class);
+        $this->call(ParametersTableSeeder::class);
+        $this->call(DatafilesTableSeeder::class);
     }
 }

@@ -27,6 +27,11 @@ class User extends Authenticatable
         'name',
         'email',
         'password',
+        'roles',
+        'phone',
+        'last_login',
+        'comment',
+        'email_verified_at'
     ];
 
     /**
@@ -42,6 +47,17 @@ class User extends Authenticatable
     ];
 
     /**
+     * The attributes that should be cast.
+     *
+     * @var array<string, string>
+     */
+    protected $casts = [
+        'email_verified_at' => 'datetime',
+        'last_login' => 'datetime',
+        'roles' => 'array',
+    ];
+
+    /**
      * The accessors to append to the model's array form.
      *
      * @var array<int, string>
@@ -50,16 +66,34 @@ class User extends Authenticatable
         'profile_photo_url',
     ];
 
-    /**
-     * Get the attributes that should be cast.
-     *
-     * @return array<string, string>
-     */
-    protected function casts(): array
+    public function getRoles(): array
     {
-        return [
-            'email_verified_at' => 'datetime',
-            'password' => 'hashed',
-        ];
+        $roles = $this->getAttribute('roles');
+        if (is_null($roles)) {
+            $roles = [];
+        }
+
+        return $roles;
     }
+
+    public function hasRole($role): bool
+    {
+        return in_array($role, $this->getRoles());
+    }
+
+    public function isAdmin()
+    {
+        if ($this->hasRole('ROLE_ADMIN')) {
+            return true;
+        }
+        return false;
+    }
+    public function isContributor()
+    {
+        if ($this->hasRole('ROLE_CONTRIBUTOR')) {
+            return true;
+        }
+        return false;
+    }
+
 }
