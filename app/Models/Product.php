@@ -160,7 +160,7 @@ class Product extends Model
             abort(404, "the ".$attribute_name. " does not exist.");
 
         $cnt = 1;
-        $a = VariantAttribute::where('attribute_id',$attributeObj->id)
+        $a = variantAttribute::where('attribute_id',$attributeObj->id)
             ->whereIn('variant_id', $this->variants()->pluck('id'))
             ->select('value_float')
             ->distinct()
@@ -176,12 +176,29 @@ class Product extends Model
     public function getVariantsMinAttributeValue($attribute_name)
     {
         $attribute = Attribute::where('name', $attribute_name)->first();
-        $value = VariantAttribute::where('attribute_id',$attribute->id)
+        $value = variantAttribute::where('attribute_id',$attribute->id)
             ->whereIn('variant_id', $this->variants()->pluck('id'))
             ->min('value_float');
 
         return $value;
 
+    }
+
+    public function getVariantsLongestAttributeValue($attribute_name)
+    {
+        $longest_description_obj = DB::table('variant_attributes')
+            ->select('value_txt')
+            ->join('variants','variant_attributes.variant_id','=','variants.id')
+            ->join('attributes','variant_attributes.attribute_id','=','attributes.id')
+            ->where('variants.product_id','=',$this->id)
+            ->where('attributes.name','=',$attribute_name)
+            ->whereNotNull('value_txt')
+            ->orderBy(DB::raw("LENGTH(value_txt)"),'desc')
+            ->first();
+        if ($longest_description_obj)
+            return $longest_description_obj->value_txt;
+        else
+            return null;
     }
 
     public function convert2odoo($discount_b2b_override,$discount_b2b_pc)
@@ -254,7 +271,7 @@ class Product extends Model
             OdooProductValue::createFromModel('brand_name', $this->id, $brandName);
 
         //Description
-        $variantAttributeValue = $first_variant->getVariantAttributeValue('description-short-fr');
+        $variantAttributeValue = $this->getVariantsLongestAttributeValue('description-short-fr');
         if ($variantAttributeValue)
         {
             if (strlen($variantAttributeValue) > 30)
@@ -262,7 +279,7 @@ class Product extends Model
             OdooProductValue::createFromModel('sale_description', $this->id, $variantAttributeValue);
         }
 
-        $variantAttributeValue = $first_variant->getVariantAttributeValue('description-long-fr');
+        $variantAttributeValue = $this->getVariantsLongestAttributeValue('description-long-fr');
         if ($variantAttributeValue)
             OdooProductValue::createFromModel('website_description', $this->id, $variantAttributeValue);
 
@@ -294,7 +311,7 @@ class Product extends Model
 
         //Prix discount HT = prix mini des variantes, si chaque variante a un prix promo
         $attribute = Attribute::where('name', 'discount-b2c')->first();
-        $nb_values =  VariantAttribute::where('attribute_id',$attribute->id)
+        $nb_values =  variantAttribute::where('attribute_id',$attribute->id)
             ->whereIn('variant_id', $this->variants()->pluck('id'))->count();
         if ($nb_values == $this->getVariantCount())
         {

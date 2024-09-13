@@ -128,7 +128,7 @@
 
                             <div class="font-[sans-serif] max-w-md mx-auto mt-4 text-gray-500 dark:text-gray-400 text-sm ">
                                 <div  class="flex items-center justify-between w-full">
-                                    <livewire:receiver-component />
+                                    <livewire:ingest-receiver-component />
                                 </div>
                             </div>
 
@@ -218,7 +218,7 @@
                         <div>
                             <div class="font-[sans-serif] max-w-md mx-auto mt-4 text-gray-500 dark:text-gray-400 text-sm ">
                                 <div  class="flex items-center justify-between w-full">
-                                    <livewire:receiver-component />
+                                    <livewire:convert-receiver-component />
                                 </div>
                             </div>
                         </div>

@@ -2,12 +2,13 @@
 
 namespace App\Jobs;
 
-use App\Events\TriggerEvent;
+use App\Events\IngestMessageEvent;
 use App\Imports\ImportHelpers;
 use App\Models\Attribute;
 use App\Models\Product;
 use App\Models\Variant;
 use App\Models\VariantAttribute;
+use App\Models\VariantAttributes;
 use Illuminate\Bus\Queueable;
 use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Foundation\Bus\Dispatchable;
@@ -33,11 +34,16 @@ class IngestData implements ShouldQueue
      */
     public function handle(): void
     {
+        set_time_limit(60);
         $attributes = Attribute::all();
-        //Product::truncate();
+        Product::truncate();
+        IngestMessageEvent::dispatch('Base produit nettoyée avant import');
+
+        $totalNb = ImportHelpers::getBulkProductCount();
+        $currentIndex = 1;
 
         foreach (ImportHelpers::getProductsIds() as $product_id) {
-
+            IngestMessageEvent::dispatch('Produit '.$currentIndex.'/'.$totalNb);
             $product = Product::create([
                 'user_id' => ImportHelpers::getCurrentUserIdOrAbort(),
                 'selected' => 1,
@@ -93,8 +99,34 @@ class IngestData implements ShouldQueue
                             $product->save();
                         }
                     }
+
                 }
             }
+
+            $currentIndex++;
         }
+        IngestMessageEvent::dispatch('Terminé');
+    }
+
+    public function wait()
+    {
+        $debut_script = microtime(true);
+        $i = 0;
+        $debut_boucle = null;
+        while ($i < 6)
+        {
+            if (!$debut_boucle)
+                $debut_boucle = microtime(true);
+            if (microtime(true) - $debut_boucle >= 1)
+            {
+                // Instructions
+                // ...
+                IngestMessageEvent::dispatch('Process started '.(string)$i.' second ago');
+                $i++;
+                $debut_boucle = false;
+            }
+            usleep(10); // Pour éviter que la boucle ne fasse trop de tours pour rien
+        }
+        IngestMessageEvent::dispatch('Le script a duré '.(microtime(true) - $debut_script).' ('.$i.' boucles)');
     }
 }

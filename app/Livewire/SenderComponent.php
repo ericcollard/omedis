@@ -2,7 +2,7 @@
 
 namespace App\Livewire;
 
-use App\Events\TriggerEvent;
+use App\Events\IngestMessageEvent;
 use Livewire\Component;
 
 class SenderComponent extends Component
@@ -13,7 +13,7 @@ class SenderComponent extends Component
 
     public function trigger()
     {
-        TriggerEvent::dispatch($this->message);
+        IngestMessageEvent::dispatch($this->message);
     }
 
     public function render()
