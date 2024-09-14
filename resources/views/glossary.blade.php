@@ -21,7 +21,7 @@
                         </div>
                         <p class="mt-4 text-red-500 font-semibold dark:text-gray-400 text-sm leading-relaxed">
                             Understanding what we are talking about, and sharing the same langage is the first basis of a collaboration project !
-                            In the current page, we are defining some words that are used everywhere in the OMEDIS standard.
+                            In the current page, we are defining some words and concepts that are used everywhere in the OMEDIS standard.
                         </p>
                     </div>
 
@@ -83,9 +83,9 @@
                                     </svg>
                                     Gerenal philosophy
                                 </p>
-                                <div class="text-gray-500 font-bold text-xl mb-2">Splitting is better</div>
+                                <div class="text-gray-500 font-bold text-xl mb-2">Splitting is the key</div>
                                 <p class=" text-gray-500 dark:text-gray-400 text-sm leading-relaxed">Since data will be handled by algorithms, and used in diverse applications,
-                                    pièces of information have to be separated and clearly identified. so that each application can use data as wanted.</p>
+                                    pieces of information have to be separated and clearly identified, so that each application can use data as wanted.</p>
                                 <p class="mt-4 text-gray-500 dark:text-gray-400 text-sm leading-relaxed">Lets take the exemple of one product name : "Duotone SuperHero HD blue 4.7 2025 Sail"</p>
 
                                 <div class=" grid grid-cols-2">

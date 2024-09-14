@@ -42,6 +42,13 @@
 
                 </div>
 
+                <div class="bg-gray-200 bg-opacity-25 grid grid-cols-1 gap-6 lg:gap-8 p-6 lg:p-8">
+                    <p class="mt-4 text-red-500 font-semibold dark:text-gray-400 text-sm leading-relaxed">
+                        Understanding what we are talking about, and sharing the same langage is the first basis of a collaboration project !
+                        In the <a href="{{  route('glossary')}}">glossary</a>, we are defining some words and concepts that are used everywhere in the OMEDIS standard. We suggest you start by reading this.
+                    </p>
+                </div>
+
                 <div class="bg-gray-200 bg-opacity-25 grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8 p-6 lg:p-8">
 
                     <div>
