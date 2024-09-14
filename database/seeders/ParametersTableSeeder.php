@@ -23,7 +23,7 @@ class ParametersTableSeeder extends Seeder
             array (
                 'id' => 1,
                 'name' => 'version',
-                'value' => '2.0',
+                'value' => '2.2',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),

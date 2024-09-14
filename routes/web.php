@@ -34,6 +34,7 @@ Route::get('/attribute-list-values/{attributeListId?}', AttributeListValueCompon
 Route::get('/units/{unitId?}', UnitComponent::class)->name('units');
 Route::get('/datatypes/{datatypeId?}', DataTypeComponent::class)->name('datatypes');
 Route::get('/containers', [MainController::class, 'containers'])->name('containers');
+Route::get('/glossary', [MainController::class, 'glossary'])->name('glossary');
 Route::get('/import_init', [MainController::class, 'import_init'])->name('import_init');
 Route::apiResource("api/products", ProductController::class);
 Route::get('/upload_datafile', UploadDatafileComponent::class)->name('upload_datafile');

@@ -41,6 +41,12 @@ class MainController extends Controller
         return view('containers');
     }
 
+    public function glossary() {
+        return view('glossary');
+    }
+
+
+
     public function my_test() {
 
         /*
