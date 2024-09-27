@@ -37,9 +37,11 @@
                             <x-input-error for="name"  class="block w-full"/>
                         </div>
                         <div class="mb-5">
+                            @if (Auth::check() and Auth::user()->hasRole('ROLE_ADMIN'))
                             <x-label for="odoo_name" value="odoo_name" />
                             <x-input type="text" wire:model="odoo_name" name="odoo_name"  class="block w-full"/>
                             <x-input-error for="odoo_name"  class="block w-full"/>
+                            @endif
                         </div>
                     </div>
 
