@@ -19,7 +19,7 @@ class AttributesExport implements FromCollection, WithHeadings
     public function headings(): array
     {
         $selectList = [];
-        if (auth()->user()->isAdmin())
+        if (auth()->check() and auth()->user()->isAdmin())
         {
             $selectList =  ['id','name','odoo_name','comment','required','list','unit','datatype'];
 
@@ -40,7 +40,7 @@ class AttributesExport implements FromCollection, WithHeadings
             'attribute_lists.name as list',
             'units.name as unit',
             'data_types.name as datatype'];
-        if (auth()->user()->isAdmin())
+        if (auth()->check() and auth()->user()->isAdmin())
         {
             $selectList = ['attributes.id as id',
                 'attributes.name as name',
