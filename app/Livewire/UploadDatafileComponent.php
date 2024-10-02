@@ -26,6 +26,7 @@ class UploadDatafileComponent extends Component
     public $odoo_data = '';
     public $discount_b2b_pc;
     public $discount_b2b_override;
+
     public function ingest()
     {
         log::debug('ingest');
@@ -53,6 +54,12 @@ class UploadDatafileComponent extends Component
 
     public function save()
     {
+        if (!$this->datafile)
+        {
+            abort(404, "No data file");
+        }
+
+
         $fileName = time().'-'.$this->datafile->getClientOriginalName();
         $this->datafile->storeAs(path:'datafile',name: $fileName);
 

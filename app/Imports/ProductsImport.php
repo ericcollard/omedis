@@ -70,24 +70,11 @@ class ProductsImport implements ToCollection, WithHeadingRow, WithCalculatedForm
                 //log::debug($attribute_name.' < '.$value);
             }
             log::debug('Inserting bulk data - Insertion in DB');
-            //log::debug($data);
+            log::debug($data);
             DB::table('product_bulk_import')->insert($data);
 
         }
 
     }
-
-    /*
-    public function registerEvents(): array
-    {
-        return [
-            ImportFailed::class => function($event) {
-                //dispatch(new NotifyAdminOfFailedImport($this->user, $event->getException()->getMessage());
-                log::debug('Inserting bulk data - ImportFailed');
-                abort(500,);
-            },
-        ];
-    }
-    */
 
 }

@@ -210,6 +210,7 @@ class Product extends Model
 
         $first_variant = $this->variants()->first();
         $variant_cnt = $this->variants()->count();
+        $selectedMainPictureOriginalPath = null;
 
         // partie product_template
 
@@ -330,27 +331,40 @@ class Product extends Model
             ->where('variants.product_id','=',$this->id)
             ->where('attributes.name','=','pictures')
             ->distinct()->get();
-        $nb_pictures = count($pictureSets);
 
-        if ($nb_pictures > 0)
+        if (count($pictureSets) > 0)
         {
-            // on prend le premier
+            // si il y a plusieures variantes avec photos on prend le premier
             $variantAttributeValue = $pictureSets[0]->value_txt;
             $picturePathArr = explode(';',$variantAttributeValue);
-            $mainPict = "";
-            $additionnalPict = "";
-            if (count($picturePathArr) >= 1)
+
+            if (count($picturePathArr) > 0)
             {
-                $mainPict = $picturePathArr[0];
-                $additionnalPict = implode(';',array_slice($picturePathArr,1));
+                // nom des fichiers images
+                $selectedMainPictureOriginalPath = $picturePathArr[0];
+                $filebaseName = ImportHelpers::getProductPictureBaseFileName($productName,$brandName,$seasonName,0);
+                if ($newUrl = ImportHelpers::DownloadPicture($selectedMainPictureOriginalPath,$filebaseName))
+                {
+                    OdooProductValue::createFromModel('main_picture', $this->id, $newUrl);
+                }
+
             }
 
-            if (strlen($mainPict) > 0)
-                OdooProductValue::createFromModel('main_picture', $this->id, $mainPict);
-
-            //Photos additionnelles
-            if (strlen($additionnalPict) > 0)
+            if (count($picturePathArr) > 1)
+            {
+                $alternPictArr = [];
+                for ($index = 1; $index < count($picturePathArr); $index++)
+                {
+                    // nom des fichiers images
+                    $filebaseName = ImportHelpers::getProductPictureBaseFileName($productName,$brandName,$seasonName,$index);
+                    if ($newUrl = ImportHelpers::DownloadPicture($picturePathArr[$index],$filebaseName))
+                    {
+                        $alternPictArr[] = $newUrl;
+                    }
+                }
+                $additionnalPict = implode(';',$alternPictArr);
                 OdooProductValue::createFromModel('alternative_pictures', $this->id, $additionnalPict);
+            }
         }
 
 
@@ -367,7 +381,7 @@ class Product extends Model
         $variants = $this->variants()->get();
         foreach($variants as $variant)
         {
-            $variant->convert2odoo($discount_b2b_override,$discount_b2b_pc);
+            $variant->convert2odoo($discount_b2b_override,$discount_b2b_pc,$selectedMainPictureOriginalPath);
         }
     }
 

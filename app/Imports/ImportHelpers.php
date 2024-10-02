@@ -7,11 +7,14 @@ use Carbon\Carbon;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Collection;
 use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Http;
 use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Facades\Schema;
 use Illuminate\Support\Facades\Storage;
 use Illuminate\Support\Facades\Validator;
+use Illuminate\Support\Str;
 use Illuminate\Validation\Rule;
+use Intervention\Image\Laravel\Facades\Image;
 use Maatwebsite\Excel\Facades\Excel;
 
 
@@ -198,7 +201,7 @@ class ImportHelpers
             ->select("id","wholesale-price",DB::raw("CONCAT(brand,name,ifnull(season,'')) as full_name"))
             ->where('user_id','=',ImportHelpers::getCurrentUserIdOrnull())
             ->orderBy('full_name','asc')
-            ->orderBy('wholesale-price','asc')
+            ->orderByRaw("CAST(`wholesale-price` AS DECIMAL(10,6))")
             ->orderBy('id','asc')
             ->get();
 
@@ -243,6 +246,106 @@ class ImportHelpers
         }
 
         return strlen($value) - strrpos($value, '.') - 1;
+    }
+
+    public static function getProductPictureBaseFileName($productName,$brandName,$seasonName, $pictureIndex )
+    {
+        $filebaseName = Str::slug($productName, '_');
+        if (strlen($brandName) > 0)
+            $filebaseName .= "_".Str::slug($brandName, '_');
+        if (strlen($seasonName) > 0)
+            $filebaseName .= "_".Str::slug($seasonName, '_');
+        if ($pictureIndex > 0)
+            $filebaseName .= "_".strval($pictureIndex);
+        return $filebaseName;
+    }
+
+    /**
+     * Calculer la couleur moyenne des bords.
+     *
+     * @param array $colors
+     * @return string
+     */
+    private static function averageColor(array $colors)
+    {
+        $totalR = $totalG = $totalB = 0;
+        $colorCount = count($colors);
+
+        foreach ($colors as $color) {
+            // Convertir la couleur hexadécimale en RGB
+            list($r, $g, $b) = sscanf($color, "#%02x%02x%02x");
+
+            $totalR += $r;
+            $totalG += $g;
+            $totalB += $b;
+        }
+
+        // Calculer la couleur moyenne
+        $avgR = round($totalR / $colorCount);
+        $avgG = round($totalG / $colorCount);
+        $avgB = round($totalB / $colorCount);
+
+        // Retourner la couleur hexadécimale moyenne
+        return sprintf("#%02x%02x%02x", $avgR, $avgG, $avgB);
+    }
+
+    public static function DownloadPicture($url,$newFileName)
+    {
+        log::debug('Vérification image '.$url);
+        $publicUrl = false;
+
+        // vérification existance URL
+        $headers = @get_headers($url);
+        if ($headers && strpos($headers[0],'200') !== false)
+        {
+            log::debug('Vérification image '.$url.' > ok');
+            try {
+                // Télécharger l'image à partir de l'URL
+                $imageContents = file_get_contents($url);
+
+                $image = Image::read($imageContents);
+
+                // Obtenir les dimensions de l'image
+                $width = $image->Width();
+                $height = $image->Height();
+
+                // Calculer la taille du carré basé sur le côté le plus grand
+                $maxSize = max($width, $height);
+
+                // Détecter les couleurs des bords de l'image
+                $topColor = $image->pickColor(0, 0); // Couleur en haut à gauche
+                $bottomColor = $image->pickColor(0, $height - 1); // Couleur en bas à gauche
+                $leftColor = $image->pickColor(0, 0); // Couleur à gauche
+                $rightColor = $image->pickColor($width - 1, 0); // Couleur à droite
+
+                // Utiliser une couleur moyenne des bords
+                $borderColor = self::averageColor([$topColor, $bottomColor, $leftColor, $rightColor]);
+
+                // Redimensionner le canevas de l'image en ajoutant des bordures
+                $image->resizeCanvas($maxSize, $maxSize, $borderColor, 'center' );
+
+                // Générer un nom de fichier unique avec l'extension appropriée
+                $ext = 'jpg';
+
+                // Sauvegarder l'image dans le stockage
+                $quality = 80;
+                $finalFileName = $newFileName.'.'.$ext;
+                Storage::disk('pictures')->put($finalFileName, (string) $image->encodeByExtension('jpg', progressive: true, quality: 80));
+
+                log::debug('Fichier créé :'.$finalFileName);
+                $publicUrl = Storage::disk('pictures')->url($finalFileName);
+                log::debug('Url publique :'.$publicUrl);
+
+            } catch (\Exception $e) {
+                abort(404, 'Une erreur s\'est produite : ' . $e->getMessage());
+            }
+        }
+        else
+        {
+            log::debug('Vérification image '.$url.' > ko');
+        }
+
+        return $publicUrl;
     }
 
     public static function checkAttributesValues()
@@ -367,7 +470,7 @@ class ImportHelpers
             ->select('id')
             ->where('product_id','=',$product_id)
             ->where('user_id','=',ImportHelpers::getCurrentUserIdOrnull())
-            ->orderBy('wholesale-price')
+            ->orderBy('order')
             ->get()->pluck('id');
     }
 

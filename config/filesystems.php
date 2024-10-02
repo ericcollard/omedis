@@ -60,6 +60,14 @@ return [
             'throw' => false,
         ],
 
+        'pictures' => [
+            'driver' => 'local',
+            'root' => storage_path('app/public/pictures'),
+            'url' => env('APP_URL').'/storage/pictures',
+            'visibility' => 'public',
+            'throw' => false,
+        ],
+
         's3' => [
             'driver' => 's3',
             'key' => env('AWS_ACCESS_KEY_ID'),

@@ -14,12 +14,12 @@ class DataTypesTableSeeder extends Seeder
      */
     public function run()
     {
-        
+
 
         \DB::table('data_types')->delete();
-        
+
         \DB::table('data_types')->insert(array (
-            0 => 
+            0 =>
             array (
                 'id' => 1,
                 'name' => 'selection',
@@ -30,7 +30,7 @@ class DataTypesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => '2024-03-14 10:05:08',
             ),
-            1 => 
+            1 =>
             array (
                 'id' => 2,
                 'name' => 'string',
@@ -41,7 +41,7 @@ class DataTypesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => '2024-03-14 10:05:08',
             ),
-            2 => 
+            2 =>
             array (
                 'id' => 3,
                 'name' => 'boolean',
@@ -52,7 +52,7 @@ class DataTypesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => '2024-03-14 10:05:08',
             ),
-            3 => 
+            3 =>
             array (
                 'id' => 4,
                 'name' => 'integer',
@@ -63,7 +63,7 @@ class DataTypesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => '2024-03-14 10:05:08',
             ),
-            4 => 
+            4 =>
             array (
                 'id' => 5,
                 'name' => 'float',
@@ -74,7 +74,7 @@ class DataTypesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => '2024-03-14 10:05:08',
             ),
-            5 => 
+            5 =>
             array (
                 'id' => 6,
                 'name' => 'money',
@@ -85,7 +85,7 @@ class DataTypesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => '2024-03-14 10:05:08',
             ),
-            6 => 
+            6 =>
             array (
                 'id' => 7,
                 'name' => 'text',
@@ -96,7 +96,7 @@ class DataTypesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => '2024-03-14 10:05:08',
             ),
-            7 => 
+            7 =>
             array (
                 'id' => 8,
                 'name' => 'url',
@@ -107,7 +107,7 @@ class DataTypesTableSeeder extends Seeder
                 'created_at' => '2024-01-04 12:06:06',
                 'updated_at' => '2024-03-27 18:13:26',
             ),
-            8 => 
+            8 =>
             array (
                 'id' => 9,
                 'name' => 'year',
@@ -118,7 +118,7 @@ class DataTypesTableSeeder extends Seeder
                 'created_at' => '2024-02-14 10:39:03',
                 'updated_at' => '2024-03-14 10:05:08',
             ),
-            9 => 
+            9 =>
             array (
                 'id' => 11,
                 'name' => 'percent',
@@ -129,7 +129,7 @@ class DataTypesTableSeeder extends Seeder
                 'created_at' => '2024-03-27 22:45:50',
                 'updated_at' => '2024-03-27 22:47:37',
             ),
-            10 => 
+            10 =>
             array (
                 'id' => 12,
                 'name' => 'feet',
@@ -140,18 +140,18 @@ class DataTypesTableSeeder extends Seeder
                 'created_at' => '2024-03-27 22:58:31',
                 'updated_at' => '2024-04-20 16:45:06',
             ),
-            11 => 
+            11 =>
             array (
                 'id' => 13,
                 'name' => 'inch',
-                'comment' => 'The notation has to be with like N"M where N is representing inches, and M subdivision. M has to be between 0 and 11',
-            'validation_str' => 'regex:/^\\d+"(([0-9]\\|1[01])?)$/',
+                'comment' => "The notation has to be with like N''M where N is representing inches, and M subdivision. M has to be between 0 and 11. Separation is a double prime.",
+            'validation_str' => "regex:/^\\d+''(([0-9]\\|1[01])?)$/",
                 'user_id' => 1,
                 'sort' => 0,
                 'created_at' => '2024-03-28 00:22:55',
                 'updated_at' => '2024-04-20 16:45:38',
             ),
-            12 => 
+            12 =>
             array (
                 'id' => 14,
                 'name' => 'double',
@@ -163,7 +163,7 @@ class DataTypesTableSeeder extends Seeder
                 'updated_at' => '2024-03-28 00:29:55',
             ),
         ));
-        
-        
+
+
     }
 }

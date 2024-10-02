@@ -8,7 +8,6 @@ use App\Models\Attribute;
 use App\Models\Product;
 use App\Models\Variant;
 use App\Models\VariantAttribute;
-use App\Models\VariantAttributes;
 use Illuminate\Bus\Queueable;
 use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Foundation\Bus\Dispatchable;
@@ -19,6 +18,10 @@ use Illuminate\Support\Facades\Log;
 
 class IngestData implements ShouldQueue
 {
+    /**
+     * This job is importing Bulkdata into product/variant table
+     */
+
     use Dispatchable, InteractsWithQueue, Queueable, SerializesModels;
     public $timeout = 60;
     /**
@@ -98,6 +101,7 @@ class IngestData implements ShouldQueue
                             }
                             $product->save();
                         }
+
                     }
 
                 }

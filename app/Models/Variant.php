@@ -2,6 +2,7 @@
 
 namespace App\Models;
 
+use App\Imports\ImportHelpers;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
@@ -86,7 +87,7 @@ class Variant extends Model
         return null;
     }
 
-    public function convert2odoo($discount_b2b_override,$discount_b2b_pc)
+    public function convert2odoo($discount_b2b_override,$discount_b2b_pc,$selectedMainPictureOriginalPath)
     {
         // Suppression des données déjà existantes
         foreach ($this->odooVariantValues as $odooProductValue) {
@@ -244,16 +245,18 @@ class Variant extends Model
 
             if (strlen($mainPict) > 0)
             {
-                $productMainPictureValue = $this->product->getOdooProductValue('main_picture');
                 // ne l'ajouter que si ce n'est pas la même que sur le produit principal
-                if ($productMainPictureValue) {
-                    if ($productMainPictureValue == $mainPict) {
+
+                if ($selectedMainPictureOriginalPath) {
+                    if ($selectedMainPictureOriginalPath == $mainPict) {
                         $mainPict = "";
                     }
                 }
 
                 if (strlen($mainPict)> 0) {
-                    OdooVariantValue::createFromModel( 'variant_picture',$this->id,$mainPict);
+                    $filebaseName = ImportHelpers::getProductPictureBaseFileName($this->product->name,$this->product->name,$this->product->season,$ean);
+                    $newUrl = ImportHelpers::DownloadPicture($mainPict,$filebaseName);
+                    OdooVariantValue::createFromModel( 'variant_picture',$this->id,$newUrl);
                 }
 
             }
