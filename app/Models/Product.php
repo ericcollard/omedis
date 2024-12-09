@@ -103,6 +103,13 @@ class Product extends Model
             $pictures = $this->getOdooProductValue('main_picture');
             if ($pictures)
                 $html .= '<img src="'.$pictures.'" style="height:200px">';
+            $altern = $this->getOdooProductValue('alternative_pictures');
+            if ($altern)
+            {
+                $picturePathArr = explode(';',$altern);
+                foreach ($picturePathArr as $picturePath)
+                    $html .= '<img src="'.$picturePath.'" style="height:200px">';
+            }
             $html .= '</div>';
             $html .= '</div>';
 

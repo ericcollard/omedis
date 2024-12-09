@@ -75,11 +75,11 @@ class ProductsTable extends DataTableComponent
             LinkColumn::make('Odoo')
                 ->title(fn($row) => 'See')
                 ->location(fn($row) => route('product_odoo_data', $row->id)),
-            Column::make('Variants')
+            /*Column::make('Variants')
                 ->label(
                     fn($row, Column $column) => $row->getVariantsAbstarct()
                 )
-                ->html()->collapseAlways(),
+                ->html()->collapseAlways(),*/
             Column::make("Id", "id")
                 ->sortable()->collapseAlways(),
             Column::make("Created by", "user.name")
