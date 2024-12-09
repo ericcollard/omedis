@@ -40,10 +40,32 @@ class Product extends Model
 
     public static function truncate()
     {
+        /*
         $products = self::where('user_id','=',ImportHelpers::getCurrentUserIdOrnull())
             ->get();
         foreach ($products as $product)
             $product->delete();
+        */
+        $UserId = ImportHelpers::getCurrentUserIdOrnull();
+        if ($UserId)
+        {
+            DB::table('odoo_variant_values')
+                ->join('variants', 'variants.id', '=', 'odoo_variant_values.variant_id')
+                ->where('variants.user_id',$UserId)->delete();
+            DB::table('variant_attributes')
+                ->join('variants', 'variants.id', '=', 'variant_attributes.variant_id')
+                ->where('variants.user_id',$UserId)->delete();
+            DB::table('variants')->where('user_id', $UserId)->delete();
+
+
+            DB::table('odoo_product_values')
+                ->join('products', 'products.id', '=', 'odoo_product_values.product_id')
+                ->where('products.user_id', $UserId)->delete();
+
+            DB::table('products')->where('user_id', $UserId)->delete();
+        }
+
+
     }
 
     public function variants(): HasMany
