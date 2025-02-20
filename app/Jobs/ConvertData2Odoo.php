@@ -15,7 +15,7 @@ use Illuminate\Support\Facades\Log;
 class ConvertData2Odoo implements ShouldQueue
 {
     use Dispatchable, InteractsWithQueue, Queueable, SerializesModels;
-    public $timeout = 60;
+    public $timeout = 120;
     public $discount_b2b_override;
     public $discount_b2b_pc;
 
@@ -33,7 +33,7 @@ class ConvertData2Odoo implements ShouldQueue
      */
     public function handle(): void
     {
-        set_time_limit(60);
+        set_time_limit(120);
         //log::debug('ConvertData2Odoo handle');
         $products = Product::getSelected();
 

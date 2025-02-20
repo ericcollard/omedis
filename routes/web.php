@@ -38,7 +38,8 @@ Route::get('/glossary', [MainController::class, 'glossary'])->name('glossary');
 Route::get('/import_init', [MainController::class, 'import_init'])->name('import_init');
 Route::apiResource("api/products", ProductController::class);
 Route::get('/upload_datafile', UploadDatafileComponent::class)->name('upload_datafile');
-
+Route::get('/product_data/{product_id}', [MainController::class, 'product_data'])->name('product_data');
+Route::get('/picture_extract', [MainController::class, 'extract_picture_links'])->name('extract_picture_links');
 Route::middleware([
     'auth:sanctum',
     config('jetstream.auth_session'),

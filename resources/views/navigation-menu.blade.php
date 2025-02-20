@@ -100,8 +100,8 @@
                                 File validator
                             </x-dropdown-link>
                             @if (Auth::check() and Auth::user()->hasRole('ROLE_ADMIN'))
-                            <x-dropdown-link href="{{ route('my_test') }}">
-                                test
+                            <x-dropdown-link href="{{ route('extract_picture_links') }}">
+                                Extract pictures (AFS)
                             </x-dropdown-link>
                             @endif
                         </x-slot>

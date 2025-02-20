@@ -25,6 +25,7 @@ class Product extends Model
         'selected'
     ];
 
+
     public static function boot()
     {
         parent::boot();
@@ -96,14 +97,22 @@ class Product extends Model
         if ($odoo == 0)
         {
             // Extraction des données standard
-            $MainAttributes = Attribute::whereIn('name',['brand','season','name'])->get();
-            foreach ($MainAttributes as $key => $MainAttribute)
+
+            if ($summary == 1)
             {
-                $variantAttribute = $this->variants[0]->variantAttributes->where('attribute_id',$MainAttribute->id)->first();
-                if (strlen($html) > 0)
-                    $html .= " - ";
-                if ($variantAttribute)
-                    $html .=$variantAttribute->toString($summary);
+                $html .= $this->name . " - " . $this->season . " - " .$this->brand . " - " . $this->category;
+            }
+            else
+            {
+                $html .= '<h3>Variants</h3>';
+                $html .= '<ul>';
+                foreach ($this->variants()->get() as $variant)
+                {
+                    $html .= '<li>';
+                    $html .= $variant->toString($odoo);
+                    $html .= '</li>';
+                }
+                $html .= '</ul>';
             }
         }
         else
@@ -318,18 +327,26 @@ class Product extends Model
         if (!$this->hasVariantsMultipleValues('wholesale-price'))
         {
             // appliquer la remise b2b !!!
-            $discountedB2bPcValue = $first_variant->getVariantAttributeValue('discount-b2b-pc');
-
-            // Tenir compte de l'override si nécessaire
-            if ($discount_b2b_override == 1)
+            $discountedB2bPriceValue = $first_variant->getVariantAttributeValue('discount-b2b');
+            if ($discountedB2bPriceValue)
             {
-                $discountedB2bPcValue = $discount_b2b_pc/100.0; // il est donné en %
+                $purchasePrice = $discountedB2bPriceValue;
             }
+            else
+            {
+                $discountedB2bPcValue = $first_variant->getVariantAttributeValue('discount-b2b-pc');
 
-            $variantAttributeValue = $first_variant->getVariantAttributeValue('wholesale-price');
-            if ($discountedB2bPcValue)
-                $variantAttributeValue =  $variantAttributeValue * (1-$discountedB2bPcValue);
-            OdooProductValue::createFromModel('product_wholesale_ht', $this->id, $variantAttributeValue);
+                // Tenir compte de l'override si nécessaire
+                if ($discount_b2b_override == 1)
+                {
+                    $discountedB2bPcValue = $discount_b2b_pc/100.0; // il est donné en %
+                }
+
+                $purchasePrice = $first_variant->getVariantAttributeValue('wholesale-price');
+                if ($discountedB2bPcValue)
+                    $purchasePrice =  $purchasePrice * (1-$discountedB2bPcValue);
+            }
+            OdooProductValue::createFromModel('product_wholesale_ht', $this->id, $purchasePrice);
         }
 
         //Prix vente HT = prix mini des variantes

@@ -123,6 +123,17 @@ class ImportHelpers
         }
     }
 
+    public static function checkImportedData()
+    {
+        self::resetError();
+        self::checkMandatoryAttributes();
+        self::checkMandatoryCombinedAttributes();
+        self::detectProductsAndSort();
+        self::checkAttributesValues();
+        self::checkUnicityOfValues();
+        self::checkVariantAttributes();
+    }
+
     public static function resetError()
     {
         DB::table('product_bulk_import')
@@ -451,31 +462,33 @@ class ImportHelpers
         return DB::table('product_bulk_import')->distinct()->count('product_id');
     }
 
-    public static function getProductsIds()
+    public static function getProductsIds($owner_user_id)
     {
         // pour chaque produit
         return DB::table('product_bulk_import')
             ->select('product_id')
             ->distinct()
             ->whereNotNull('product_id')
-            ->where('user_id','=',ImportHelpers::getCurrentUserIdOrnull())
+            ->where('user_id','=',$owner_user_id)
             ->orderBy('product_id')
             ->get()->pluck('product_id');
     }
 
-    public static function getVariantsId($product_id)
+    public static function getVariantsId($product_id,$owner_user_id)
     {
         // pour chaque produit
         return DB::table('product_bulk_import')
             ->select('id')
             ->where('product_id','=',$product_id)
-            ->where('user_id','=',ImportHelpers::getCurrentUserIdOrnull())
+            ->where('user_id','=',$owner_user_id)
             ->orderBy('order')
             ->get()->pluck('id');
     }
 
     public static function checkVariantAttributes()
     {
+        $user_id = ImportHelpers::getCurrentUserIdOrnull();
+
         // variantes d'un produit toutes différentes et définissant des vraies variantes
         $var_attributes = Attribute::where('name','like','var%')
             ->select('name')
@@ -489,14 +502,14 @@ class ImportHelpers
         }
 
         // pour chaque produit
-        foreach (self::getProductsIds() as $product_id)
+        foreach (self::getProductsIds($user_id) as $product_id)
         {
             // recherche des attributs non nuls définissant la variante
             $variant_attributes = [];
             $product_tags = DB::table('product_bulk_import')
                 ->select(                    $select_list                )
                 ->where('product_id','=',$product_id)
-                ->where('user_id','=',ImportHelpers::getCurrentUserIdOrnull())
+                ->where('user_id','=',$user_id)
                 ->get();
             foreach($product_tags[0] as $key => $value)
             {
@@ -529,7 +542,7 @@ class ImportHelpers
                 $products_variant_attributes_mix = DB::table('product_bulk_import')
                     ->select('id',DB::raw($select_mix_str.' as mix'))
                     ->where('product_id','=',$product_id)
-                    ->where('user_id','=',ImportHelpers::getCurrentUserIdOrnull())
+                    ->where('user_id','=',$user_id)
                     ->whereRaw($select_mix_str." like '%#%'")
                     ->get();
                 //log::debug($products_variant_attributes_mix);
@@ -548,7 +561,7 @@ class ImportHelpers
                 $products_variant_non_unique = DB::table('product_bulk_import')
                     ->select(DB::raw('count(*) as cnt'),DB::raw($select_mix_str.' as mix'))
                     ->where('product_id','=',$product_id)
-                    ->where('user_id','=',ImportHelpers::getCurrentUserIdOrnull())
+                    ->where('user_id','=',$user_id)
                     ->whereRaw($select_mix_str." not like '%#%'")
                     ->groupBy('mix')
                     ->havingRaw('count(*) > 1')
@@ -564,7 +577,7 @@ class ImportHelpers
                         $lines_variant_non_unique = DB::table('product_bulk_import')
                             ->select('id',DB::raw($select_mix_str.' as mix'))
                             ->where('product_id','=',$product_id)
-                            ->where('user_id','=',ImportHelpers::getCurrentUserIdOrnull())
+                            ->where('user_id','=',$user_id)
                             ->whereRaw($select_mix_str. '= "'.$mix.'"')
                             ->get();
                         //log::debug('lines_variant_non_unique');
@@ -647,16 +660,7 @@ class ImportHelpers
         return $report_str;
     }
 
-    public static function checkImportedData()
-    {
-        self::resetError();
-        self::checkMandatoryAttributes();
-        self::checkMandatoryCombinedAttributes();
-        self::detectProductsAndSort();
-        self::checkAttributesValues();
-        self::checkUnicityOfValues();
-        self::checkVariantAttributes();
-    }
+
 
 
 

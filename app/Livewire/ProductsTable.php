@@ -67,11 +67,9 @@ class ProductsTable extends DataTableComponent
                 ->sortable()->searchable()->excludeFromColumnSelect(),
             Column::make("Category", "category")
                 ->sortable()->searchable()->excludeFromColumnSelect(),
-            Column::make('Variant Nb')
-                ->label(
-                    fn($row, Column $column) => $row->getVariantCount()
-                )
-                ->html(),
+            LinkColumn::make('Variants')
+                ->title(fn($row) => $row->getVariantCount())
+                ->location(fn($row) => route('product_data', $row->id)),
             LinkColumn::make('Odoo')
                 ->title(fn($row) => 'See')
                 ->location(fn($row) => route('product_odoo_data', $row->id)),

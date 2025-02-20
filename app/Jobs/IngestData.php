@@ -23,7 +23,7 @@ class IngestData implements ShouldQueue
      */
 
     use Dispatchable, InteractsWithQueue, Queueable, SerializesModels;
-    public $timeout = 60;
+    public $timeout = 120;
     /**
      * Create a new job instance.
      */
@@ -37,35 +37,41 @@ class IngestData implements ShouldQueue
      */
     public function handle(): void
     {
-        set_time_limit(60);
+        set_time_limit(120);
         $attributes = Attribute::all();
         Product::truncate();
         IngestMessageEvent::dispatch('Base produit nettoyée avant import');
 
         $totalNb = ImportHelpers::getBulkProductCount();
         $currentIndex = 1;
+        $current_user_id = ImportHelpers::getCurrentUserIdOrAbort();
 
-        foreach (ImportHelpers::getProductsIds() as $product_id) {
+
+        foreach (ImportHelpers::getProductsIds($current_user_id) as $bulkproduct_id) {
+
+            // traitement du produit $bulkproduct_id
+
             IngestMessageEvent::dispatch('Produit '.$currentIndex.'/'.$totalNb);
+
             $product = Product::create([
-                'user_id' => ImportHelpers::getCurrentUserIdOrAbort(),
+                'user_id' => $current_user_id,
                 'selected' => 1,
             ]);
             //log::debug('produit créé : '.$product->id);
 
             $variant_cnt = 0;
-            foreach (ImportHelpers::getVariantsId($product_id) as $id)
+            foreach (ImportHelpers::getVariantsId($bulkproduct_id,$current_user_id) as $bulkvariant_id)
             {
                 $variant = Variant::create([
-                    'user_id' => ImportHelpers::getCurrentUserIdOrAbort(),
+                    'user_id' => $current_user_id,
                     'product_id' => $product->id
                 ]);
                 $variant_cnt++;
                 //log::debug('variante créé : '.$variant->id);
 
+
                 $product_fields = DB::table('product_bulk_import')
-                    ->where('id','=',$id)
-                    ->where('user_id','=',ImportHelpers::getCurrentUserIdOrAbort())
+                    ->where('id','=',$bulkvariant_id)
                     ->first();
 
                 foreach ($attributes as $attribute)
@@ -105,6 +111,8 @@ class IngestData implements ShouldQueue
                     }
 
                 }
+
+
             }
 
             $currentIndex++;
